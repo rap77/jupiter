@@ -1,0 +1,83 @@
+PL/SQL V1 Conversion Summary - Form: JUP800
+
+WHEN-VALIDATE-ITEM (CONTROL.USUARIO)
+  ERROR 201 at line 3, column 11
+    identifier 'USUARIOS' must be declared
+
+WHEN-NEW-ITEM-INSTANCE (CONTROL.NUSUARIO)
+
+KEY-DELREC (MODULOS_USR)
+
+KEY-UP (MODULOS_USR)
+
+KEY-DOWN (MODULOS_USR)
+
+WHENUTTONPRESSED (TOOLBAR.HELP)
+  ERROR 201 at line 4, column 25
+    identifier 'DEPARTAMENTO' must be declared
+  ERROR 341 at line 2, column 12
+    declaration of cursor 'C1' is incomplete or malformed
+  ERROR 320 at line 10, column 22
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 201 at line 12, column 20
+    identifier 'DEPTOS' must be declared
+
+WHEN-BUTTON-PRESSED (TOOLBAR)
+
+APAGAR_ITEM (Procedure Body)
+
+BUTTON_PROC (Procedure Body)
+  Converted:  Insert a RETURN NULL; statement at line 33 column 3
+
+MENSAJES* (Procedure Body)
+  ERROR 201 at line 12, column 13
+    identifier 'ERRORES' must be declared
+  ERROR 201 at line 20, column 17
+    identifier 'ERRORES' must be declared
+  Converted:  CHAR to VARCHAR2 at line 9 column 21
+
+PRENDER_ITEM (Procedure Body)
+
+KEY-PRVBLK (Form)
+
+ON-ERROR (Form)
+
+ON-MESSAGE (Form)
+
+WHEN-NEW-FORM-INSTANCE (Form)
+  ERROR 201 at line 6, column 8
+    identifier 'DUAL' must be declared
+
+WHEN-TIMER-EXPIRED (Form)
+  ERROR 201 at line 2, column 1
+    identifier 'HINT.SHOWBUTTONHELPHANDLER' must be declared
+
+WHEN-MOUSE-ENTER (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.SHOWBUTTONHELP' must be declared
+
+WHEN-MOUSE-DOWN (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
+
+WHEN-MOUSE-UP (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
+
+POST-TEXT-ITEM (Form)
+
+KEY-HELP (Form)
+  ERROR 201 at line 17, column 10
+    identifier 'AYUDA' must be declared
+
+KEY-PREV-ITEM (Form)
+
+KEY-CQUERY (Form)
+
+KEY-COMMIT (Form)
+
+KEY-NEXT-ITEM (Form)
+
+KEY-EXIT (Form)
+
+KEY-OTHERS (Form)

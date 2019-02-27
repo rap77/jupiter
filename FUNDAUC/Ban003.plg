@@ -1,0 +1,156 @@
+Resumen de Conversión de PL/SQL V1 - Pantalla: NOM002
+
+TOOLBAR (Especificación Paquete)
+
+DLL (Especificación Paquete)
+
+WHEN-BUTTON-PRESSED (TOOLBAR)
+
+WHEN-NEW-ITEM-INSTANCE (CIAS.CI_CODIGO)
+
+WHEN-VALIDATE-ITEM (CIAS.CI_NACFUNC)
+
+KEY-NXTBLK (CIAS)
+
+ON-CHECK-DELETE-MASTER (CIAS)
+  ERROR 201 en línea 10, columna 19
+    el identificador 'CUENTAS_CIA' debe declararse
+  ERROR 320 en línea 10, columna 12
+    la declaración del tipo de expresión es incompleta o con forma inadecuada
+  Sin Convertir:  CHAR a VARCHAR2 en línea 5 columna 16
+
+ON-POPULATE-DETAILS (CIAS)
+  Sin Convertir:  CHAR a VARCHAR2 en línea 5 columna 15
+  Sin Convertir:  CHAR a VARCHAR2 en línea 6 columna 15
+
+KEY-DELREC (CIAS)
+  ERROR 201 en línea 2, columna 43
+    el identificador 'JUPITER.CONTRATOS_EMP' debe declararse
+  ERROR 320 en línea 2, columna 34
+    la declaración del tipo de expresión es incompleta o con forma inadecuada
+  Sin Convertir:  CHAR a VARCHAR2 en línea 4 columna 20
+
+KEY-LISTVAL (CUENTAS_CIA.CCI_BANCO)
+
+KEY-PRVBLK (CUENTAS_CIA.CCI_BANCO)
+
+WHEN-NEW-ITEM-INSTANCE (CUENTAS_CIA.CCI_BANCO)
+
+WHEN-VALIDATE-ITEM (CUENTAS_CIA.CCI_BANCO)
+  ERROR 201 en línea 3, columna 12
+    el identificador 'BANCOS' debe declararse
+
+POST-CHANGE (CUENTAS_CIA.CCI_BANCO)
+  ERROR 201 en línea 3, columna 12
+    el identificador 'BANCOS' debe declararse
+
+WHEN-VALIDATE-ITEM (CUENTAS_CIA.CCI_TIPO)
+
+DLL (Package Body)
+  Sin Convertir:  Sustituyendo LENGTH(...) por NVL(LENGTH(...), 0) en línea 38 columna 30
+
+BUTTON_PROC (Cuerpo del Procedimiento)
+  Sin Convertir:  Inserte una sentencia RETURN NULL; en línea 33 columna 3
+
+TOOLBAR (Package Body)
+
+PRENDER_ITEM (Cuerpo del Procedimiento)
+
+APAGAR_ITEM (Cuerpo del Procedimiento)
+
+MENSAJES* (Cuerpo del Procedimiento)
+  ERROR 201 en línea 12, columna 13
+    el identificador 'ERRORES' debe declararse
+  ERROR 201 en línea 20, columna 17
+    el identificador 'ERRORES' debe declararse
+  Sin Convertir:  CHAR a VARCHAR2 en línea 9 columna 21
+
+CHECK_PACKAGE_FAILURE (Cuerpo del Procedimiento)
+
+QUERY_MASTER_DETAILS (Cuerpo del Procedimiento)
+  Sin Convertir:  CHAR a VARCHAR2 en línea 1 columna 55
+  Sin Convertir:  CHAR a VARCHAR2 en línea 2 columna 10
+  Sin Convertir:  CHAR a VARCHAR2 en línea 3 columna 10
+
+CLEAR_ALL_MASTER_DETAILS (Cuerpo del Procedimiento)
+  Sin Convertir:  CHAR a VARCHAR2 en línea 2 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 3 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 4 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 5 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 6 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 7 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 8 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 9 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 11 columna 45
+  Sin Convertir:  CHAR a VARCHAR2 en línea 12 columna 10
+  Sin Convertir:  CHAR a VARCHAR2 en línea 13 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 14 columna 12
+  Sin Convertir:  CHAR a VARCHAR2 en línea 15 columna 12
+
+ON-CLEAR-DETAILS (Pantalla)
+
+ON-ERROR (Pantalla)
+
+ON-MESSAGE (Pantalla)
+
+WHEN-NEW-FORM-INSTANCE (Pantalla)
+  ERROR 201 en línea 6, columna 8
+    el identificador 'DUAL' debe declararse
+
+WHEN-TIMER-EXPIRED (Pantalla)
+  ERROR 201 en línea 2, columna 1
+    el identificador 'HINT.SHOWBUTTONHELPHANDLER' debe declararse
+
+WHEN-MOUSE-ENTER (Pantalla)
+  ERROR 201 en línea 1, columna 1
+    el identificador 'HINT.SHOWBUTTONHELP' debe declararse
+
+WHEN-MOUSE-DOWN (Pantalla)
+  ERROR 201 en línea 1, columna 1
+    el identificador 'HINT.HIDEBUTTONHELP' debe declararse
+
+WHEN-MOUSE-UP (Pantalla)
+  ERROR 201 en línea 1, columna 1
+    el identificador 'HINT.HIDEBUTTONHELP' debe declararse
+
+WHEN-NEW-RECORD-INSTANCE (Pantalla)
+
+KEY-DELREC (Pantalla)
+
+POST-TEXT-ITEM (Pantalla)
+
+KEY-HELP (Pantalla)
+  ERROR 201 en línea 17, columna 10
+    el identificador 'AYUDA' debe declararse
+
+KEY-PREV-ITEM (Pantalla)
+
+KEY-DOWN (Pantalla)
+
+KEY-UP (Pantalla)
+
+KEY-ENTQRY (Pantalla)
+
+KEY-EXEQRY (Pantalla)
+
+KEY-CQUERY (Pantalla)
+
+KEY-CLRREC (Pantalla)
+
+KEY-COMMIT (Pantalla)
+
+KEY-NEXT-ITEM (Pantalla)
+
+KEY-EXIT (Pantalla)
+
+KEY-OTHERS (Pantalla)
+
+WHEN-WINDOW-DEACTIVATED (Pantalla)
+  ERROR 201 en línea 1, columna 1
+    el identificador 'HINT.HIDEBUTTONHELP' debe declararse
+
+KEY-MENU (Pantalla)
+
+WHEN-WINDOW-CLOSED (Pantalla)
+  ERROR 201 en línea 1, columna 1
+    el identificador 'HINT.HIDEBUTTONHELP' debe declararse

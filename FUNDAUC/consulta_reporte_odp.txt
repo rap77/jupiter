@@ -1,0 +1,39 @@
+select tipo_reporte,ci_descripcion,tipo, decode(concepto,'2','SUELDO PERSONAL','1','SUELDO PERSONAL','29','SUELDO PERSONAL', cp_descrip) cp_descrip, tipo_p, cp_tipo, cp_cuenta, sum(decode(cp_tipo,'A',monto,0)) debitos, sum(decode(cp_tipo,'D',monto,0)) creditos 
+from (
+select 
+decode(mn_cia,1,decode(mn_tiponom,2,1,8,2),3) tipo_reporte,
+ci_descripcion,
+decode(ce_dept,'10','OBRERO','ADMINISTRATIVO')  tipo_p,
+decode(mn_tiponom,2,'EMPLEADO',8,'DIRECTIVO') tipo,
+mn_fecha,
+decode(ce_dept,'10',decode(mn_concepto,19,1,2,1,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto),decode(mn_tiponom,2,decode(mn_concepto,19,2,240,986,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto),8,decode(mn_concepto,19,29,2,29,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto))) concepto,
+mn_concepto,
+sum(mn_monto) monto
+from movi_nomhis,
+contratos_emp, 
+cias, 
+empleados
+--,conceptos
+where to_char(mn_fecha,'MMYYYY')='072017'
+and mn_empleado=em_numero
+and mn_empleado=ce_empleado
+and em_numero=ce_empleado
+and mn_concepto not in (100,909,200)
+and mn_cia=ci_codigo
+and mn_tiponom in (2,8)
+and mn_cia=ce_cia
+and mn_monto<>0
+group by
+decode(mn_cia,1,decode(mn_tiponom,2,1,8,2),3),
+ci_descripcion,
+decode(ce_dept,'10','OBRERO','ADMINISTRATIVO'),
+decode(mn_tiponom,2,'EMPLEADO',8,'DIRECTIVO'),
+decode(ce_dept,'10',decode(mn_concepto,19,1,2,1,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto),decode(mn_tiponom,2,decode(mn_concepto,19,2,240,986,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto),8,decode(mn_concepto,19,29,2,29,123,940,916,940,925,940,937,940,943,940,942,940,944,940,950,940,101,918,914,917,898,917,mn_concepto))),
+mn_concepto,
+mn_fecha
+--,decode(ce_dept,'10','4.01.01.10.00',decode(mn_tiponom,2,'4.01.01.10.01',8,'4.01.01.01.02')))
+--order by 1,3,2,5
+) a, conceptos c
+where a.concepto=c.cp_codigo
+group by tipo_reporte,ci_descripcion,tipo, decode(concepto,'2','SUELDO PERSONAL','1','SUELDO PERSONAL','29','SUELDO PERSONAL', cp_descrip), tipo_p, cp_tipo, cp_cuenta
+order by 1,2,3,6,7,4

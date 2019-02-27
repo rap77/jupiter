@@ -1,0 +1,37 @@
+PL/SQL V1 Conversion Summary - Form: CRCTA
+
+WHEN-BUTTON-PRESSED (BLOCK6.OKB)
+  ERROR 201 at line 3, column 25
+    identifier 'CUENTAS_PLAN' must be declared
+  ERROR 341 at line 2, column 12
+    declaration of cursor 'C1' is incomplete or malformed
+  ERROR 320 at line 9, column 22
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 11, column 18
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 12, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 15, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 18, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 21, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 24, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 320 at line 27, column 30
+    the declaration of the type of this expression is incomplete or malformed
+  ERROR 201 at line 31, column 15
+    identifier 'CUENTAS_PLAN' must be declared
+  ERROR 320 at line 37, column 27
+    the declaration of the type of this expression is incomplete or malformed
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 12 column 11
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 15 column 11
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 18 column 11
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 21 column 11
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 24 column 11
+  Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 27 column 11
+
+INSERTA_CUENTA* (Procedure Body)
+  ERROR 201 at line 3, column 22
+    identifier 'CUENTAS_PLAN' must be declared

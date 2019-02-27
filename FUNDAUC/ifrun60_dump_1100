@@ -1,0 +1,42 @@
+[01/16/19 13:52:51 Hora estándar de Venezuela]::Client Status [ConnId=0, PID=1100]
+	>> ERROR: Abnormal termination, Error Code: C0000005 ACCESS_VIOLATION
+
+======================= STACK DUMP =======================
+
+Fault address:  5D42C442 01:0005B442
+Module: C:\orant\bin\ifcom60.dll
+
+System Information:
+Operating System: Windows NT Version 6.1 Build 7601 Service Pack 1
+Command line: IFDBG60 -SsL09@
+FORM/BLOCK/FIELD: :.
+Last Trigger:  - (No error number)
+Last Builtin:  - (No error number)
+
+Registers:
+EAX:00000101
+EBX:0000001E
+ECX:00000003
+EDX:017059B4
+ESI:025BFF10
+EDI:0012F65C
+CS:EIP:001B:5D42C442
+SS:ESP:0023:0012F5D4  EBP:00000101
+DS:0023  ES:0023  FS:003B  GS:0000
+Flags:00010202
+
+
+Call stack:
+Address   Frame
+5D42C442  0012F61C  sifrd
+5DEFC001  0012F6A0  if4cal
+67F0B447  0012F7A8  ldxmfn
+679C44E0  0012F7D8  lxt24s
+67F0C7B2  0012F83C  ldxpv
+67F27F56  0012F848  sltsmnr
+67F484AD  0012F868  ssltssigmask
+5D42C7AF  0012F938  simmal
+5DF1939A  0012F93C  ifzcal
+5DF34AAF  0012F958  ifzcal
+5DF18CCD  0012F998  ifzcal
+

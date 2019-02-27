@@ -1,0 +1,19 @@
+function Cuentas return cv.comp_cv is
+   Ctas_cv   cv.comp_cv; 
+   TotalE    Number;
+begin
+	  Open Ctas_cv for
+      Select Rec_Cuenta,substr(Rec_Descrip,1,30) Rec_Descrip, Rec_Nivel, Rec_GrupoBal,
+             Rec_Monto1 + ((Nvl(Rec_Monto4,0)+Rec_Monto2) - (Nvl(Rec_Monto5,0)+Rec_Monto3)) SalAct, 
+             Rec_Cuenta2, Decode(Substr(Rec_GrupoBal,1,1),4,4,5,5,6,6,7,7,8,8,9,9), Rec_FlgBal,
+             Decode(Substr(Rec_GrupoBal,1,1),4,4,5,5,6,6,7,7,8,8,9,9)
+        From Reportes_Con
+       Where Rec_GrupoBal is not Null
+         And Rec_Cia    = :Cia
+         And Rec_Plan   = :Plan
+         And Rec_Codigo = 'CON410'
+         And SubStr(Rec_Cuenta2,1,1) In (4,5,6,7,8,9)
+       Order by To_Char(Rec_GrupoBal), Rec_Linea; 
+      
+    Return Ctas_cv;
+end;

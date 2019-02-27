@@ -1,0 +1,68 @@
+PL/SQL V1 Conversion Summary - Form: JUP003
+
+TOOLBAR (Package Spec)
+
+DLL (Package Spec)
+
+WHEN-BUTTON-PRESSED (TOOLBAR.PREVIOUS_BLOCK)
+
+WHEN-BUTTON-PRESSED (TOOLBAR)
+
+WHEN-VALIDATE-ITEM (USUARIOS.US_USERNAME)
+
+WHEN-VALIDATE-ITEM (USUARIOS.US_NIVEL)
+
+DLL (Package Body)
+  Not Converted:  Replacing LENGTH(...) with NVL(LENGTH(...), 0) at line 38 column 30
+
+BUTTON_PROC (Procedure Body)
+  Not Converted:  Insert a RETURN NULL; statement at line 33 column 3
+
+TOOLBAR (Package Body)
+
+PRENDER_ITEM (Procedure Body)
+
+APAGAR_ITEM (Procedure Body)
+
+MENSAJES* (Procedure Body)
+  ERROR 201 at line 12, column 13
+    identifier 'ERRORES' must be declared
+  ERROR 201 at line 20, column 17
+    identifier 'ERRORES' must be declared
+  Not Converted:  CHAR to VARCHAR2 at line 9 column 21
+
+WHEN-NEW-FORM-INSTANCE (Form)
+  ERROR 201 at line 6, column 8
+    identifier 'DUAL' must be declared
+
+WHEN-TIMER-EXPIRED (Form)
+  ERROR 201 at line 2, column 1
+    identifier 'HINT.SHOWBUTTONHELPHANDLER' must be declared
+
+WHEN-MOUSE-ENTER (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.SHOWBUTTONHELP' must be declared
+
+WHEN-MOUSE-DOWN (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
+
+WHEN-MOUSE-UP (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
+
+ON-ERROR (Form)
+
+ON-MESSAGE (Form)
+
+WHEN-NEW-RECORD-INSTANCE (Form)
+
+WHEN-WINDOW-DEACTIVATED (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
+
+KEY-MENU (Form)
+
+WHEN-WINDOW-CLOSED (Form)
+  ERROR 201 at line 1, column 1
+    identifier 'HINT.HIDEBUTTONHELP' must be declared
