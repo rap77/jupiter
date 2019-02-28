@@ -1,0 +1,91 @@
+--------------------------------------------------------
+-- Archivo creado  - miércoles-febrero-13-2019   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table OP_MAESTRO
+--------------------------------------------------------
+
+  CREATE TABLE "JUPITER"."OP_MAESTRO" 
+   (	"OPM_ID" NUMBER, 
+	"OPM_CIA" NUMBER(2,0), 
+	"OPM_TIPO" NUMBER(3,0), 
+	"OPM_DEPTO" VARCHAR2(3 BYTE), 
+	"OPM_NUMERO" NUMBER(4,0), 
+	"OPM_PERIODO" NUMBER(2,0), 
+	"OPM_FECEMI" DATE, 
+	"OPM_MONTO" NUMBER(12,2), 
+	"OPM_BENEFICIARIO" VARCHAR2(6 BYTE), 
+	"OPM_DESCRIPCION" VARCHAR2(2000 BYTE), 
+	"OPM_USRCRE" VARCHAR2(8 BYTE), 
+	"OPM_USRMOD" VARCHAR2(8 BYTE), 
+	"OPM_STATUS" NUMBER(2,0) DEFAULT NULL
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  TABLESPACE "JUPITER" ;
+ 
+
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_ID" IS 'Id de la orden de pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_CIA" IS 'Programa a que pertenece la orden';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_TIPO" IS 'Tipo de orden de pago: Ej. Nómina, Pago a proveedores de bienes y servicios, avance a justificar, etc';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_DEPTO" IS 'Siglas del Departamento que genera la orden';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_NUMERO" IS 'Numero de Orden de Pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_PERIODO" IS 'Periodo de la orden de pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_FECEMI" IS 'Fecha de Emisión de la Orden de Pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_MONTO" IS 'Monto total de la orden de Pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_BENEFICIARIO" IS 'Beneficiario del Pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_DESCRIPCION" IS 'Descripcion del Concepto del Pago';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_USRCRE" IS 'Usuario que prepara la orden';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_USRMOD" IS 'utimo usuario que modifico la orden';
+ 
+   COMMENT ON COLUMN "JUPITER"."OP_MAESTRO"."OPM_STATUS" IS 'Estado de la Orden';
+ 
+   COMMENT ON TABLE "JUPITER"."OP_MAESTRO"  IS 'Tabla que guarda las ordenes de pago automaticas y manuales de fundauc';
+REM INSERTING into JUPITER.OP_MAESTRO
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index OP_MAESTRO_PK
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "JUPITER"."OP_MAESTRO_PK" ON "JUPITER"."OP_MAESTRO" ("OPM_ID") 
+  PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOCOMPRESS LOGGING
+  TABLESPACE "JUPITER" ;
+--------------------------------------------------------
+--  Constraints for Table OP_MAESTRO
+--------------------------------------------------------
+
+  ALTER TABLE "JUPITER"."OP_MAESTRO" ADD CONSTRAINT "OP_MAESTRO_PK" PRIMARY KEY ("OPM_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOCOMPRESS LOGGING
+  TABLESPACE "JUPITER"  ENABLE;
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_ID" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_CIA" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_TIPO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_DEPTO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_NUMERO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_PERIODO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_FECEMI" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_MONTO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_BENEFICIARIO" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_DESCRIPCION" NOT NULL ENABLE);
+ 
+  ALTER TABLE "JUPITER"."OP_MAESTRO" MODIFY ("OPM_STATUS" NOT NULL ENABLE);
