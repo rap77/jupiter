@@ -5,7 +5,7 @@
 --  DDL for Function GET_CIAHV
 --------------------------------------------------------
 
-  CREATE OR REPLACE EDITIONABLE FUNCTION "JUPITER"."GET_CIAHV" (
+  CREATE OR REPLACE FUNCTION "JUPITER"."GET_CIAHV" (
     v_emp IN NUMBER,
     v_fnom DATE
 ) RETURN NUMBER AS

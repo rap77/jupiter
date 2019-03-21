@@ -1,4 +1,4 @@
-CREATE OR REPLACE FORCE EDITIONABLE VIEW "JUPITER"."V_NOM_MAESTRO" (
+CREATE OR REPLACE FORCE VIEW "JUPITER"."V_NOM_MAESTRO" (
     "VNM_ID",
     "VNM_CIA",
     "VNM_TIPONOM",
@@ -9,11 +9,11 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "JUPITER"."V_NOM_MAESTRO" (
     "VNM_TOTALNOMINA"
 ) AS
     SELECT
-        to_char(mn_fecha,'YYYYMMDD')||lpad(mn_cia,2,'0')||lpad(mn_tiponom,2,'0')||mn_frecuencia id,
-        mn_cia,
-        mn_tiponom,
-        mn_frecuencia,
-        mn_fecha,
+        to_char(mn_fecha,'YYYYMMDD')||lpad(mn_cia,2,'0')||lpad(mn_tiponom,2,'0')||mn_frecuencia VNM_ID,
+        mn_cia VNM_CIA,
+        mn_tiponom VNM_TIPONOM,
+        mn_frecuencia VNM_FRECUENCIA,
+        mn_fecha VNM_FECHA,
         CASE
                 WHEN tn_ordinaria = 'S' THEN
                     DECODE(mn_frecuencia, 2, '1RA QUINCENA', 4, '2DA QUINCENA')
@@ -27,8 +27,8 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "JUPITER"."V_NOM_MAESTRO" (
         || '|'
         || TRIM(TO_CHAR(mn_fecha, 'MONTH'))
         || ','
-        || TO_CHAR(mn_fecha, 'YYYY') descripcion,
-        COUNT(DISTINCT mn_empleado) cant_trab,
+        || TO_CHAR(mn_fecha, 'YYYY') VNM_DESCRIPCION,
+        COUNT(DISTINCT mn_empleado) VNM_NUMTRAB,
         SUM(
             CASE
                 WHEN cp_tipo = 'A' THEN
@@ -36,7 +36,7 @@ CREATE OR REPLACE FORCE EDITIONABLE VIEW "JUPITER"."V_NOM_MAESTRO" (
                 ELSE
                     mn_monto * - 1
             END
-        ) total_nomina
+        ) VNM_TOTALNOMINA
     FROM
         movi_nom,
         tipos_nom,

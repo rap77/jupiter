@@ -5,7 +5,7 @@
 --  DDL for Function GET_CONTRATOHV
 --------------------------------------------------------
 
-  CREATE OR REPLACE EDITIONABLE FUNCTION "JUPITER"."GET_CONTRATOHV" (
+  CREATE OR REPLACE FUNCTION "JUPITER"."GET_CONTRATOHV" (
     v_emp IN NUMBER,
     v_fnom DATE
 ) RETURN NUMBER AS
