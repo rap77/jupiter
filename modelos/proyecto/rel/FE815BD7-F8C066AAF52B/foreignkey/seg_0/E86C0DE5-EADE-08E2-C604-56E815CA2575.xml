@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E86C0DE5-EADE-08E2-C604-56E815CA2575" containerWithKeyObject="835A1A86-118B-3F88-C283-E7DD8B0F50F5" localFKIndex="915A2600-D830-1755-E342-8F0143E4D901" name="DIR_TP_VIA_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8B111066-DAAF-9A33-78C0-65D4C76C0E62</importedID>
+<referredTableLongName>GL TIPOS VIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>29880A57-EC0F-A740-A04D-C2DABC651DC8</referredTableID>
+<keyObject>2A531769-0B20-D842-D2AB-E7ADDB494663</keyObject>
+<referredKeyID>2A531769-0B20-D842-D2AB-E7ADDB494663</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

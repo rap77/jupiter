@@ -1,0 +1,237 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="9883838B-6623-2BAF-788A-1255CD45E849" name="SG_USUARIOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Usuarios de los sistemas</comment>
+<commentInRDBMS>Usuarios de los sistemas</commentInRDBMS>
+<generatorID>96EC983D-5DEB-B9A0-B590-D66ABEEFB504</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>USU</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="BAFE9786-67CD-2EA5-5597-3514211F8C3F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<generatorID>AE521A40-D075-0795-405C-CE3A792E7670</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN" id="A454A3B4-1135-869B-DC2D-E0107088A8A2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Cuenta de Conexíon del Usuario.</comment>
+<commentInRDBMS>Cuenta de Conexíon del Usuario.</commentInRDBMS>
+<generatorID>88F518BB-63B6-AB82-5292-72FF2A0E0189</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CLAVE" id="C66F60AC-890C-9B67-A7F6-AF928F83B6F3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Contraseña del Usuario</comment>
+<commentInRDBMS>Contraseña del Usuario</commentInRDBMS>
+<generatorID>4BA58B4F-C7D6-3F08-A10F-A2570CE7A91B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CREADO_EL" id="46948E48-49C9-CC5A-0E0F-4E754C2D0A3D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Fecha de la Contraseña</comment>
+<commentInRDBMS>Fecha de la Contraseña</commentInRDBMS>
+<generatorID>E327FB7E-9C59-C20D-0B13-715E8D8C6323</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA_1619296754</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FEC_CAMBIO_CLAVE" id="068AE6FC-1E4D-F6D9-7D27-E8CDC847B6A0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>fecha cuando cambio la contraseña</comment>
+<commentInRDBMS>fecha cuando cambio la contraseña</commentInRDBMS>
+<generatorID>855E66E7-2FF5-D017-9DA5-8A23CFE2394D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA_791425479</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FEC_ULT_ENTRADA" id="4E2035BE-BD0A-9D76-3A12-63D4FE11F3AE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Fecha de la ultima vez que entro al sistema</comment>
+<commentInRDBMS>Fecha de la ultima vez que entro al sistema</commentInRDBMS>
+<generatorID>D35FE202-1E8A-701B-4DA1-BB2424B54B33</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA_742397503</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ACTIVO" id="0CCBBBB3-91EF-BBEB-B703-40A5FCCED381">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Está Activo el Usuario?</comment>
+<commentInRDBMS>Está Activo el Usuario?</commentInRDBMS>
+<generatorID>EA8C6831-95F9-5823-67A4-BBDDF4D87F0E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_1211562213</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EXPIRADO" id="2B807578-4B7F-4C13-B1E6-0B7E5D9B43F4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>El usuario esta expirado?</comment>
+<commentInRDBMS>El usuario esta expirado?</commentInRDBMS>
+<generatorID>566D1EAA-DAF5-8E97-1440-7F06F675CF3E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_605223752</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BLOQUEADO" id="AF0093CF-3AE7-0EF8-5CAB-A4F8BBEF877A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>El usuario esta bloqueado?</comment>
+<commentInRDBMS>El usuario esta bloqueado?</commentInRDBMS>
+<generatorID>8CDE5F95-A533-D3D2-9BFF-D94ADDF512B1</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_555097223</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LOGIN INTRANET" id="471A805E-8F40-D5C0-245D-3DA3F111A760">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-11 00:54:12 UTC</createdTime>
+<comment>usuario de la intranet</comment>
+<commentInRDBMS>usuario de la intranet</commentInRDBMS>
+<generatorID>515F6789-4D06-551B-3C58-56D10DEBD925</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2855C723-FC80-1015-83DE-61E4CD0B930B" name="SG_USUARIOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>91E7BDF1-3D3C-84C1-3FB6-4C7AFB2E4BCB</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>AE521A40-D075-0795-405C-CE3A792E7670</newElementsIDs>
+<usedAttributes>
+<attributeRef>BAFE9786-67CD-2EA5-5597-3514211F8C3F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

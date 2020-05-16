@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="94005B3C-C08F-5D16-29E4-4659F1EDB23B" name="IN_FORMA_ADQUISICION">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Informacion sobre la Forma en que se Adquirió el Bien]]></commentInRDBMS>
+<generatorID>A18DE68A-B3A4-2B62-E25D-E932EA62269D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="445C361B-1B5F-D20F-5394-414DF18BE42F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único de la forma de Adquisición]]></commentInRDBMS>
+<generatorID>32EA0F03-0BFE-69F8-B2DF-8D02A6C7C124</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD_ORIGEN" id="FFACBE0C-C07F-8824-DB26-59B4288A40D8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Codigo del Origen de la Adquisicion]]></commentInRDBMS>
+<generatorID>6AD2C0D7-3DF9-DDB4-6B95-EA8C7B7D1A8B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_TIPO_FORMA_ADQ" id="2FCC9EB8-4683-E758-BDDD-23603C9F2C0B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del tipo de forma de adquisición]]></commentInRDBMS>
+<generatorID>15E0188E-13F1-402C-6F9B-CA945A4019FC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E4890D45-9567-84D5-3A15-196824351FD8</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_FORMA_ADQ" id="28AF63EF-4F72-7906-DFCA-E595A689403F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>F55B071A-5D3A-CB13-96F4-BDA13390772B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID_BIEN" id="4A7D1C56-85B9-F38D-BE3B-29D96B4632A8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador único del bien]]></commentInRDBMS>
+<generatorID>AC0D9007-4768-8954-33FD-05AFB5EB9ED1</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1627162555</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9347A970-1B64-FBD4-A546-039B9CE72485</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFAF76E3-675A-ABE3-36D2-49E5A4485D5B" name="IN_FORMA_ADQUISICION_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>7B8EBC3B-63A1-C371-93E7-8AEA435D3A85</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>445C361B-1B5F-D20F-5394-414DF18BE42F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

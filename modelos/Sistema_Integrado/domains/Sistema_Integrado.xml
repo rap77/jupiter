@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="Sistema_Integrado">
+<domains>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_CHAR_1v1" id="0BD943A0-C4A1-A38C-C181-7AD8FC92A407">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:45:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>17DCAFE7-53F8-530D-2A94-501D304A5376</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1 CHARv1" id="3721C621-7815-FB34-8BF7-9F67CEC015D0">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:08:15 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>DFD01063-052C-BD22-8952-DFEE11325A3D</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_CHAR_2v1" id="8A688C07-1551-8CE3-A275-DA90C730D822">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:08:15 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>2</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT025</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="IDv1" id="A2F6CF81-D7B5-E8B2-12E4-53B32F0FEA58">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:45:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>05B35573-8C9F-1F34-7252-3B2FF719CA6A</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypeSize>0</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_240_BYTEv1" id="A6D6EA11-4A16-33B1-7AB5-64AD8BF69961">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:08:15 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>1848C593-7964-79CC-A365-8317A300C17D</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>240 BYTE</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_6_2v1" id="CCF790C9-EA25-8B27-3AAC-44CB9BF316A3">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:08:15 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>C9C5A213-BFD6-8075-FC06-68D6D66F3808</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_3_0v1" id="CD871236-714F-CDC6-32B7-20733B021BCC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:08:15 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>DE260B81-9939-841F-C400-6B0C308EBF64</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>0</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT019</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_20_obligatoriov1" id="E0EAC4E9-5AF6-9F06-C8E2-26E073C9A50A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:51:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>BDE73B0E-53CD-AC87-E8FB-D79679172F97</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+<Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_80 BYTEv1" id="E8557F7C-9A41-A39B-3A80-1DCA12952055">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:45:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<remoteDesignID>9482C864-AC97-DE99-2973-20F8FC85C65B</remoteDesignID>
+<remoteObjectID>5F6B42F8-2A8D-0AD7-BCFA-803628850554</remoteObjectID>
+<remoteObjectRelativeStorageName>/domains/fundauc_Domains.xml</remoteObjectRelativeStorageName>
+<avTSortOrder>0</avTSortOrder>
+<dataTypePrecision>0</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<fileName>Sistema_Integrado</fileName>
+<logicalDatatype>LOGDT024</logicalDatatype>
+</Domain>
+</domains>
+</DomainFile>

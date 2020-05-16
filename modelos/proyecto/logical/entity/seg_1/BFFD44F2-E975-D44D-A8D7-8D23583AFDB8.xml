@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="BFFD44F2-E975-D44D-A8D7-8D23583AFDB8" name="GL TIPOS ZONAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Zona: EJ. Urbanizacion, sector, barrio, conjunto residencial]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Zona: EJ. Urbanizacion, sector, barrio, conjunto residencial]]></commentInRDBMS>
+<generatorID>45458A5D-BD5F-6914-3D33-E667520C1BA3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_ZON</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="108D8BBE-91C6-32A1-005A-B7F4A8F2743D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[id del tipo de la zona]]></comment>
+<commentInRDBMS><![CDATA[id del tipo de la zona]]></commentInRDBMS>
+<generatorID>6D8262F1-01C6-D3D4-5C47-633969051CD6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1346779569</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="ED3E686C-3F26-58C7-45FD-81250F6A2AF0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Zona]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Zona]]></commentInRDBMS>
+<generatorID>D780C78F-3D12-1311-D1D5-380EC9A3F69C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A22232C3-7457-359E-B52E-99AC69BACEE8" name="GL_TIPOS_ZONAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>8DC41E98-732E-6B76-EA01-CA21A47F55A5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>108D8BBE-91C6-32A1-005A-B7F4A8F2743D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

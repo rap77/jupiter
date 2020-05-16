@@ -1,0 +1,338 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03941457-E00B-7C31-83C2-E96914FFB9BA" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MATERIALES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MATERIALES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[MATERIALES]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MAT" id="CA5E9BEE-E30F-4B52-3E2C-3836735B7669">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>ID_MAT</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_MAT]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO" id="32CE1DAF-B928-8789-ABB6-990280355AEB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13B43C72-FACE-4212-A628-830107DA35C3" referredColumn="94482FD4-E4A8-BB46-4386-63619D6E7828"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="52A9DE13-9359-F0A3-713B-8DDAF84851F5">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_CURSO" id="9EF999A1-1A0C-5654-902C-305DDDA453DC">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>ID_CURSO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_CURSO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTO" id="93E7C062-5D5D-ED6A-F706-C04D7CDD0738">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>EVENTO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[EVENTO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL" id="29E019FA-D4FC-FEF1-2077-49380C9549EE">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>NIVEL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[NIVEL]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IVA_EXENTO" id="B707C6A4-F88E-A3A7-75CC-AD16FDCD39DF">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>IVA_EXENTO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[IVA_EXENTO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="8B21B7A5-7DE4-198F-E96F-85A8B40F45BB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ACTIVO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="AD62AD43-1232-68E6-4CF3-A2E8DA91EF25">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de material]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>MATERIALES_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>MATERIALES_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="SECCION_ID" id="F3A35096-AF41-9DB4-C977-48136B08F379">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>SECCION_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de Seccion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FF870A23-D0EE-615F-A0A4-C864CB09AB92" referredColumn="6BCC3576-AE6C-C26B-828B-B6F85E437611"/>
+</associations>
+</Column>
+<Column name="CREADO_POR" id="CC1A793E-F311-16F9-1BEC-643E44138BF3">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>CREADO_POR</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuario quien creo el material]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<defaultValue>coalesce(sys_context(&apos;APEX$SESSION&apos;, &apos;app_user&apos;), regexp_substr(sys_context(&apos;userenv&apos;, &apos;client_identifier&apos;
+    ), &apos;^[^:]*&apos;), sys_context(&apos;userenv&apos;, &apos;session_user&apos;))</defaultValue>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_EL" id="41B7DD0F-4268-9173-03D3-D9B738B00FE2">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>CREADO_EL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha en que se creo el material]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_POR" id="907FB799-82C4-4269-3D18-A6A5FDE6D837">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>MODIFICADO_POR</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuario quien modifico el material]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_EL" id="83EB9074-67CC-5B2E-163C-C00DB9A69D3D">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>MODIFICADO_EL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[fecha cuando se modifico el material]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COHORTE_ID" id="CC5EE79E-F300-A9AE-3898-7F90BB404A94">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MATERIALES</sourceObjSchema>
+<sourceObjName>COHORTE_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CF28FFF-E446-0143-8E42-FD171ED52C17" referredColumn="C56515A2-4A0F-F812-DCF8-B97FD0C548DC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="99736759-F454-1831-ADD0-CADE503F66AB" name="MATERIALES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MATERIALES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD62AD43-1232-68E6-4CF3-A2E8DA91EF25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B91B6E5E-A2FA-826B-9947-2F86D7B48D82" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MATERIALES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MATERIALES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD62AD43-1232-68E6-4CF3-A2E8DA91EF25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB08E7B9-B4C2-E148-F605-C4DC2218D55F" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MATERIALES_UK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MATERIALES_UK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA5E9BEE-E30F-4B52-3E2C-3836735B7669"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CA00FD9-F869-E191-4089-794C5C15D15C" name="MATERIALES_COHORTES_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC5EE79E-F300-A9AE-3898-7F90BB404A94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B5B2BAE4-2DB8-B392-02E1-50753EF7084B" name="MATERIALES_SECCIONES_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3A35096-AF41-9DB4-C977-48136B08F379"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E09A1BD-AB8C-2B5F-D556-A2C7B6D41184" name="MATERIALES_TIPO_MATERIAL_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32CE1DAF-B928-8789-ABB6-990280355AEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

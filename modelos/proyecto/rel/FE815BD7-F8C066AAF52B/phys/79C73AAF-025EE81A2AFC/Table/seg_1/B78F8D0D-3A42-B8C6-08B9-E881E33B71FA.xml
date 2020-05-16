@@ -1,0 +1,38 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TS_USOS_CUENTAS" directorySegmentName="seg_1" id="B78F8D0D-3A42-B8C6-08B9-E881E33B71FA">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="3A5AC00B-FD15-B782-3503-E484CAFB8475">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="C87661D6-7052-C037-4777-BDE1331DAE88">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TS_USO_CUENTA_PK" id="071F878D-7577-64CD-3386-470ABF6D3824">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TS_USOS_CUENTAS_PK" id="228A008A-8A56-5593-4798-6A78FF44D2A4">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

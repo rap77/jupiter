@@ -1,0 +1,212 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5127F9F6-DF07-6CDA-1F71-CE87C8CA36A7" name="GL_INF_NACIMIENTOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Informacion del Nacimiento de la Persona, datos exactos de la partida de nacimiento]]></comment>
+<commentInRDBMS><![CDATA[Informacion del Nacimiento de la Persona, datos exactos de la partida de nacimiento]]></commentInRDBMS>
+<generatorID>E2A0415F-2B90-50CD-EFC2-A665BC9F5175</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>INF_NAC</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1C38F228-4356-DDA9-CF1D-978C935C5EEF">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>444855CB-CE03-164F-994C-9AE614D7771B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID2" id="0F9D3A1D-0C93-8B1E-D1B7-72E98B5CB696">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 13:18:22 UTC</createdTime>
+<generatorID>7F3809A7-DC9D-F58D-9F99-35343FA68953</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>713C5A01-473B-6945-4C34-6380274ACE65</referedAttribute>
+<sourceType>Derived</sourceType>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAIS_ID" id="5DD0968B-D99E-DC60-A671-FE1621DA7CD0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<generatorID>11BB5F29-CAA2-3951-B358-A07557503E4C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9FD2E400-2DC0-5E55-C2F5-EA305F7083EF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NRO ACTA NCTO" id="FAABCB58-71F6-6C70-A510-CE323AA614D3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Numero del Acta de Nacimiento]]></comment>
+<commentInRDBMS><![CDATA[Numero del Acta de Nacimiento]]></commentInRDBMS>
+<generatorID>21D99230-C8A7-70F1-3305-4C3AF61C5FE9</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TOMO REGISTRO" id="10CF7338-7B8D-B9AE-CE36-3BD853FCBCFE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tomo del Registro de Nacimiento]]></comment>
+<commentInRDBMS><![CDATA[Tomo del Registro de Nacimiento]]></commentInRDBMS>
+<generatorID>DBD2A644-E334-74D5-E6D1-628645D4FD21</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FOLIO REGISTRO" id="A38742AE-CA0B-0D07-6103-17BBBB9D236E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>CF45A8A3-E2D0-7389-75F3-65285BAA5F36</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_10}_1584673741</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="CEDULA MADRE" id="30B1585C-4FDC-33A1-AF5F-5A8C9EFADFD3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>85EA6E7B-F647-9C03-9DD9-9287ACBB727C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CEDULA PADRE" id="7033CD87-178C-750F-D607-91660C7E5FF4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>343CF974-248E-1136-C97C-5A9A4C9C11EC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIU_ID" id="7398E770-C198-21CD-18A8-9DB2D2A19E62">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Ciudad Población o Caserio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Ciudad Población o Caserio.]]></commentInRDBMS>
+<generatorID>CC4E2938-2625-5AE0-B2FA-A0A735D710D6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E58C7063-DA2B-017F-27DF-C5E1B1610C2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EST_ID" id="C41C40CA-0313-818D-EA56-53B9CA63DA0F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></commentInRDBMS>
+<generatorID>BC4F05B6-1F96-70B4-2770-07762F9AF2B9</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>31710E58-88E8-FE74-BF5A-30B89D52F7CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MUN_ID" id="0132B553-026E-1AD5-096C-AC32871BCAFC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<generatorID>BC3EA9AD-0EAE-035E-FABE-7A55953E4EC5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C1B2E7DD-0945-1BA3-2C3B-CF0172F1FD29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68AB17D4-6F2A-57B3-7EA3-4EA08B8CA1A0" name="GL_INF_NACIMIENTOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>232E1DE1-4522-44DB-7F2B-1341CE21A7FF</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>1C38F228-4356-DDA9-CF1D-978C935C5EEF</newElementsIDs>
+<usedAttributes>
+<attributeRef>1C38F228-4356-DDA9-CF1D-978C935C5EEF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

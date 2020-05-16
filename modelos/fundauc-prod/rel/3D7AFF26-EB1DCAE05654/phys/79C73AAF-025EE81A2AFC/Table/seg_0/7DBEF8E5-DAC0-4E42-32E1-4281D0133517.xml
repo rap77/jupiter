@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TIPO_MATERIAL" directorySegmentName="seg_0" id="7DBEF8E5-DAC0-4E42-32E1-4281D0133517">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CTC" id="30258CF6-A140-676A-E69B-D7D9E371AA2B">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CFP" id="3A011AA8-BB8C-75AF-5214-1CD418452366">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USA_SECCION" id="64F74F5A-E13B-06F0-1429-8982B21BA135">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="IDIOMAS" id="74A754F3-1887-5A6E-BBF3-1E3A570A8163">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ABREV" id="94482FD4-E4A8-BB46-4386-63619D6E7828">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="F06DFCF7-45E4-55C7-77C7-9B79B0C20B20">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_TIPO_MATERIAL" id="B9595056-6425-BBDF-E78F-65CF7E04DAC3">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_TIPO_MATERIAL" id="65259E90-324D-58BF-E8F3-A3BB41B825ED">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>B9595056-6425-BBDF-E78F-65CF7E04DAC3</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,162 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="814D2998-E471-F912-FB61-37B1FDEB52DF" name="RH_TRABAJADOR">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Trabajadores de la Institucion</commentInRDBMS>
+<generatorID>7869C902-91AF-CFDC-6A8F-9AFB95859704</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="32F4EA4F-C42D-F624-2F26-D4CF2D9161BB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<generatorID>4AC601D7-06D8-330A-2765-FD3365C7E2C0</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1244562833</constraintName>
+<referedAttribute>713C5A01-473B-6945-4C34-6380274ACE65</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_INGRESO" id="5253D856-A29F-99BC-C5F2-06FB3AA609DB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha de Ingreso del Trabajador en la Institucion</commentInRDBMS>
+<generatorID>2F59F713-7429-7B2D-6BF4-94885A71E6BC</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA}_829315911</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_EGRESO" id="84F91D0D-7DE5-4D0C-C76C-1626123616A8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha de Egreso del Trabajador en la Institucion</commentInRDBMS>
+<generatorID>B561168A-CD48-E8AA-37A0-BB8C72E516AE</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA}_1153985746</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_EFECTIVA_NOMINA" id="66F450F1-8309-42F0-18B3-F8BD80B59621">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha en que fue efectiva la entrada del trabajador en nomina</commentInRDBMS>
+<generatorID>5A2BBBA9-E694-F363-E6F7-8A5CA7ED68EB</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA}_2036819085</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_VENC_CONTRATO" id="50C41EAB-8614-8D14-6C16-64B04561301F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha de Vencimiento de Contrato</commentInRDBMS>
+<generatorID>74C8A041-E999-B04D-4520-F9C58D90D7C2</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA}_875187316</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="179EF60F-1BC6-DA00-CB20-9AAA97B4022A" name="RH_TRABAJADOR_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>9244CDFF-F1B8-DB1D-6ECD-18CEE4802EB0</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>32F4EA4F-C42D-F624-2F26-D4CF2D9161BB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

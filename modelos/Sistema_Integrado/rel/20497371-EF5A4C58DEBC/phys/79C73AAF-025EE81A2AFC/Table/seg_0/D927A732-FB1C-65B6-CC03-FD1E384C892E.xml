@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_PAISES" directorySegmentName="seg_0" id="D927A732-FB1C-65B6-CC03-FD1E384C892E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="1A0335D5-F681-41EB-3655-B61C3DC69194">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NACIONALIDAD" id="4607E73E-4829-AF20-47C5-78DA3C81D52F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_ISO" id="4B133056-B7EA-E6E0-F3AD-DA233335BF40">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONEDA_ID" id="59CA72AA-15C0-31BA-CBA2-BE7FBDEDD78B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DISCADO_INTERNACIONAL" id="66F7886B-66F9-6A50-FEA1-FE51AD676F60">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTINENTE_ID" id="BD0FC064-8CA9-F6B3-264F-489DEAF7C3BD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PAIS_PK" id="A7ACAE6F-98ED-6867-2352-5ECF26934114">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PAIS_MONEDA_FK" id="5B0E055C-B7BD-A141-E389-F5F9372DF003">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:12:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PAIS_CONTINENTE_FK" id="8E637B8B-6D05-0F01-5E5A-AA3E6FB84C82">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:12:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PAISES_PK" id="7E1C49D6-9475-55BF-E142-F3E8BDD19E0F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

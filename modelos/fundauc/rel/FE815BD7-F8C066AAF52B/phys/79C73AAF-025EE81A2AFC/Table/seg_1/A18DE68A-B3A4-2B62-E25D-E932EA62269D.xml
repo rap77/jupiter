@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="IN_FORMA_ADQUISICION" directorySegmentName="seg_1" id="A18DE68A-B3A4-2B62-E25D-E932EA62269D">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:49 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="32EA0F03-0BFE-69F8-B2DF-8D02A6C7C124">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COD_ORIGEN" id="6AD2C0D7-3DF9-DDB4-6B95-EA8C7B7D1A8B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_BIEN" id="8294A105-BFBD-60FB-F9E0-A10C43216427">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_FORMA_ADQ" id="F55B071A-5D3A-CB13-96F4-BDA13390772B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_TIPO_FORMA_ADQ" id="F8914A1A-24D8-278D-5FCB-1C3DB387279C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IN_FORMA_ADQUISICION_PK" id="607EAF67-1AEA-E479-DDDA-B3AF59D770B1">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IN_FORMA_ADQUISICION_FK1" id="11A2FF47-A7B4-9183-019E-5069FBE0888C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IN_FORMA_ADQUISICION_FK0" id="9D82AE4E-0AE1-5E5F-1525-0B528BD94349">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IN_FORMA_ADQUISICION_PK" id="7B8EBC3B-63A1-C371-93E7-8AEA435D3A85">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92E03193-4D28-21AC-73BC-8E36F1B60BC8" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_ESTADOS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_ESTADOS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<comment><![CDATA[Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>EST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="99813B72-EB0D-FF0A-E79D-B0BA3587FA76">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ESTADOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_EST_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_EST_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="PAIS_ID" id="DD0AD61F-5BD6-07BA-4607-5B6D363A5BA6">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ESTADOS</sourceObjSchema>
+<sourceObjName>PAIS_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ES_PA_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ES_PA_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6B4D0CCE-1B4D-04A2-5B58-8EBCEA69CE78" referredColumn="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="507D7860-12E1-D472-F131-16FF361CB976">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ESTADOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<comment><![CDATA[Nombre del Estado, Departamento o Provincia. Ej: Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Estado, Departamento o Provincia. Ej: Carabobo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ES_NOMBRE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AA8F4A81-4284-E611-0A96-E73203151D24" name="ESTADOS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>ESTADOS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99813B72-EB0D-FF0A-E79D-B0BA3587FA76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B3315B4-3582-2732-F210-7B4564F291D4" name="ESTADO_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>ESTADO_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99813B72-EB0D-FF0A-E79D-B0BA3587FA76"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="631B7FD8-A668-769C-4AAE-D128A751BE46" name="EST_PAISES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:15:08 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD0AD61F-5BD6-07BA-4607-5B6D363A5BA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

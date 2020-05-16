@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="70BF17A7-2F38-C1EE-EC0C-894BC5E9E294" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="NIVELES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>NIVELES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>NIVELES</comment>
+<commentInRDBMS>NIVELES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_METODO" id="7C1C32CC-4776-4FB6-AAA5-BF893B574A21">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>NIVELES</sourceObjSchema>
+<sourceObjName>ID_METODO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_METODO</comment>
+<commentInRDBMS>ID_METODO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL" id="D552B026-8E8E-C885-7F71-9CB1BFC139E4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>NIVELES</sourceObjSchema>
+<sourceObjName>NIVEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NIVEL</comment>
+<commentInRDBMS>NIVEL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORAS" id="94DC9E7C-1BCD-784C-E727-B3B0EDCD9499">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>NIVELES</sourceObjSchema>
+<sourceObjName>HORAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>HORAS</comment>
+<commentInRDBMS>HORAS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTA_MINIMA" id="E4A008FC-8D2A-E845-C0D6-42879F00297A">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>NIVELES</sourceObjSchema>
+<sourceObjName>NOTA_MINIMA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NOTA_MINIMA</comment>
+<commentInRDBMS>NOTA_MINIMA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREV" id="B41C2C75-CC97-13EE-2639-9B19BF5FBB6E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>NIVELES</sourceObjSchema>
+<sourceObjName>ABREV</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ABREV</comment>
+<commentInRDBMS>ABREV</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD2229CA-D8F7-4EDB-DC0F-634A53C29913" name="PK_NIVEL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_NIVEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>PK_NIVEL</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C1C32CC-4776-4FB6-AAA5-BF893B574A21"/>
+<colUsage columnID="D552B026-8E8E-C885-7F71-9CB1BFC139E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="90C40BC3-753E-96EB-5265-35181CE77AB0" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PK_NIVEL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_NIVEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>PK_NIVEL</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C1C32CC-4776-4FB6-AAA5-BF893B574A21"/>
+<colUsage columnID="D552B026-8E8E-C885-7F71-9CB1BFC139E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

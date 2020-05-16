@@ -1,0 +1,34 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SECCIONES_TRG" directorySegmentName="seg_0" id="C44CC2BC-1A05-E5E4-7B5A-32886011A660">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SECCIONES_TRG</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[declare
+    PRAGMA AUTONOMOUS_TRANSACTION;
+begin
+
+  <<COLUMN_SEQUENCES>>
+  BEGIN
+    IF INSERTING AND :NEW.ID IS NULL THEN
+      SELECT SECCIONES_SEQ.NEXTVAL INTO :NEW.ID FROM SYS.DUAL;
+      :NEW.CREADO_POR := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'), '^[^:]*'), sys_context('userenv', 'session_user'));
+      :NEW.CREADO_EL := SYSDATE;
+ --     :NEW.ID_SECCION := utl_inscripciones.getcodigoseccion (:NEW.ID_METODO,:NEW.NIVEL,:NEW.MODALIDAD, :NEW.PERIODO,:NEW.ID_HORARIO );
+
+    ELSIF UPDATING THEN
+ --     :NEW.ID_SECCION := utl_inscripciones.getcodigoseccion (:NEW.ID_METODO,:NEW.NIVEL,:NEW.MODALIDAD, :NEW.PERIODO,:NEW.ID_HORARIO );
+ --      :NEW.ID_SECCION := :NEW.ID_METODO||','||:NEW.NIVEL||','||:NEW.MODALIDAD||','||:NEW.PERIODO||','||:NEW.ID_HORARIO;
+      :NEW.MODIFICADO_POR := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'), '^[^:]*'), sys_context('userenv', 'session_user'));
+      :NEW.MODIFICADO_EL := SYSDATE;
+    END IF;
+  END COLUMN_SEQUENCES;
+end;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>2B5E8ABF-19C3-A881-D5D9-87A35FB97156</table>
+</TriggerOraclev10g>

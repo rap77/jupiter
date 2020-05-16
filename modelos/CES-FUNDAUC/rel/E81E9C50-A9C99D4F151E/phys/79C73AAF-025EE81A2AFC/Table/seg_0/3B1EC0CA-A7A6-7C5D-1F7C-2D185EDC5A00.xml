@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TIPOS_DOC" directorySegmentName="seg_0" id="3B1EC0CA-A7A6-7C5D-1F7C-2D185EDC5A00">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>10401428-D454-BA1D-9354-9CED063AB4CD</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TD_NOMBRE" id="0A4AAE64-4E56-AC75-29C0-5AE01339BFEF">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_USRMOD" id="1A9C1D28-B865-2EDB-2B6D-3DB1FC8C9E03">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_USRCRE" id="22808413-5111-EE58-49C3-D6DF3E722839">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_CODIGO" id="705A616E-71BF-A5C6-9C9D-6202AC90DA2C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_ABRV" id="768BBD47-31E1-27AE-95DB-FAEF36FB89F1">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_FECMOD" id="825E9BFF-A3E5-EFEF-6432-398F7A20382A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TD_FECCRE" id="DBF2C7AC-9816-A557-AABC-5D2076ED3486">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

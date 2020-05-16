@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PONDERACION_NIVELES" directorySegmentName="seg_0" id="51CF37DE-96A5-7E36-629E-E5202689396A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>10401428-D454-BA1D-9354-9CED063AB4CD</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NIVEL" id="4FCA1E43-FAAD-EB3C-FE5F-243B14A01847">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PORCENTAJE" id="6351AB80-B08E-84CF-5E72-98824A193FA4">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_METODO" id="C448BFE4-2EEE-0520-BDDF-FE6BA2186B4F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

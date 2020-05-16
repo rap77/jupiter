@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5586CB51-6110-46A2-74FD-29F623773402" containerWithKeyObject="2B5E8ABF-19C3-A881-D5D9-87A35FB97156" localFKIndex="4C43BFEE-5A90-6987-AA29-91EACC305C4B" name="SECCIONES_METODOS_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SECCIONES_METODOS_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.METODOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CC0B8BDE-0F62-1B74-6E5D-778CB78A74BD</referredTableID>
+<keyObject>E6B718B0-37F1-29D7-E263-3DF78EB6F674</keyObject>
+<referredKeyID>E6B718B0-37F1-29D7-E263-3DF78EB6F674</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_METODO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

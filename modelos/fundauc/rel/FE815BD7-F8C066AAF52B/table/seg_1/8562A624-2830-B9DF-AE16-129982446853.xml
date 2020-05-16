@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="8562A624-2830-B9DF-AE16-129982446853" name="GL LETRAS RIF TIPOS ID">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0F38D8AD-29F4-DB36-1AC6-7B299A149BC7</importedID>
+<ordsAlias>gl_letras_rif_tipos_id</ordsAlias>
+<abbreviation>LET_RIF_TP_ID</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LET_RIF_ID" id="EC011AF1-155D-FCE4-F7B5-65A8011BF8E4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P ]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P ]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8B0A5B2D-CCBF-CA66-5AAB-AC57A695B693</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="649B3501-EF53-9A35-9728-E4D65E63A413" referredColumn="6B0F7925-330C-04E9-6198-E88A90B38970"/>
+</associations>
+</Column>
+<Column name="TP_DOCID_ID" id="E9048960-ED79-DAB4-27F2-6427569B42D5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0F4B0C6B-D3F0-C031-5DD7-80D242ABD1A8</importedID>
+<constraintName>ID}_407704439</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="78E2486C-A0A7-5915-DC27-98A1BDF4FFCE" referredColumn="35AB4889-06DA-9C1B-948C-F2713DE64F85"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FA27441F-EF16-F9FC-685F-35B4703925BE" name="LET_RIF_TP_ID_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F6289942-0473-6B8F-039D-F6B760581D16</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC011AF1-155D-FCE4-F7B5-65A8011BF8E4"/>
+<colUsage columnID="E9048960-ED79-DAB4-27F2-6427569B42D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8340D7FD-62C8-C05E-1BC5-9B3C4487EAFE" name="LET_RIF_TIPO_ID_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B84D0021-08EC-5237-C64F-2556A5EEAE32</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC011AF1-155D-FCE4-F7B5-65A8011BF8E4"/>
+<colUsage columnID="E9048960-ED79-DAB4-27F2-6427569B42D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADD77CB8-B7AE-DD17-FBAC-97FF36546707" name="LRIF_TID_LRIF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EC011AF1-155D-FCE4-F7B5-65A8011BF8E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DF90718-FFA8-F58E-3E4B-FBED030412AE" name="LRIF_TID_TPDOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9048960-ED79-DAB4-27F2-6427569B42D5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

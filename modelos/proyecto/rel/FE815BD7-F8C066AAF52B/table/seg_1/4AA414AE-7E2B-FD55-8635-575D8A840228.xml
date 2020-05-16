@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4AA414AE-7E2B-FD55-8635-575D8A840228" name="GL_PERSONAS_CUENTASBAN">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<comment><![CDATA[Relacion entre Personas y Cuentas Bancarias]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre Personas y Cuentas Bancarias]]></commentInRDBMS>
+<generatorID>E41EB4C4-EA29-0385-BC5D-98D6F0B00207</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<abbreviation>PER_CTA_BAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CTA_BAN_ID" id="6D7959ED-D669-99EE-2751-4AC4B9B703DA">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Cuenta Bancaria]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Cuenta Bancaria]]></commentInRDBMS>
+<generatorID>83059CF0-7F5E-8FEB-5EE9-9688C62BA727</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="50CC07C8-D34F-DA65-50C8-328439E135BE" referredColumn="5B475642-0253-6220-8B04-4EB091C47705"/>
+</associations>
+</Column>
+<Column name="PER_JUR_PER_ID" id="D4CB30CC-345D-2245-2D4D-90BCD1F711A8">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de Persona]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de Persona]]></commentInRDBMS>
+<generatorID>8846FB9E-194F-5FBF-34EA-7734994FAB61</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BFF8646-7161-8DC0-3DE2-96215F752F34" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6AFB697-F0E5-6F29-488F-CF83BBDE09E4" name="GL_PERSONAS_CUENTASBAN_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<generatorID>6B13AECA-C8BC-E65F-46CB-40B04B653054</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7959ED-D669-99EE-2751-4AC4B9B703DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B2612A00-5237-5A4F-A03D-689A62098F6B" name="GL_PERSONAS_CUENTASBAN_TS_CUENTAS_BANCARIAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<generatorID>230601C6-9C9F-A8C2-D310-277886CF6215</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D7959ED-D669-99EE-2751-4AC4B9B703DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B640AC66-E584-5575-D791-69CE191FB745" name="GL_PERSONAS_CUENTASBAN_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<generatorID>1C4B16B7-00D0-E951-24BF-A7B6B368CAD5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4CB30CC-345D-2245-2D4D-90BCD1F711A8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,394 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="92C9500D-835D-F376-2A31-C837F490EDE6" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PROFESOR">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PROFESOR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>PROFESOR</comment>
+<commentInRDBMS>PROFESOR</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CEDULA_PROF" id="F36DBA3A-FE2F-268D-F204-D4A7E2C001F4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>CEDULA_PROF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CEDULA_PROF</comment>
+<commentInRDBMS>CEDULA_PROF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NACIONALIDAD" id="5691E5C0-3642-7462-4C54-B197B4372350">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>NACIONALIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NACIONALIDAD</comment>
+<commentInRDBMS>NACIONALIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="52857A3A-CE3E-709E-CE56-7459AE33DDD0">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NOMBRE</comment>
+<commentInRDBMS>NOMBRE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELF_HAB" id="BAC6D5F4-BC2D-DB7A-351F-53384F8064E9">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>TELF_HAB</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>TELF_HAB</comment>
+<commentInRDBMS>TELF_HAB</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TELF_CEL" id="A2F74D1C-6948-1B5F-12C1-3EE6DFB37793">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>TELF_CEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>TELF_CEL</comment>
+<commentInRDBMS>TELF_CEL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14 BYTE</dataTypeSize>
+<ownDataTypeParameters>14 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="FFC30C70-E116-C10A-6554-C57D944766E1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CIUDAD</comment>
+<commentInRDBMS>CIUDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTADO" id="E46D211A-617E-D231-4492-9D79A3C18D50">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>ESTADO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ESTADO</comment>
+<commentInRDBMS>ESTADO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="0B08A521-19DF-BFD9-1A8C-1825411533A0">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>EMAIL</comment>
+<commentInRDBMS>EMAIL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEXO" id="DFF7E4FA-A94F-EE25-44C4-21E57AD94BD2">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>SEXO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>SEXO</comment>
+<commentInRDBMS>SEXO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDO_CIVIL" id="28F37100-2CB6-629F-5C9A-2F093ED77BB0">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>EDO_CIVIL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>EDO_CIVIL</comment>
+<commentInRDBMS>EDO_CIVIL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GRADO_INS" id="4FF57C65-9E78-E37E-1FD5-111350F6CE13">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>GRADO_INS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>GRADO_INS</comment>
+<commentInRDBMS>GRADO_INS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROFESION" id="53878827-7281-7A37-94DE-B1E8A1184068">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>PROFESION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PROFESION</comment>
+<commentInRDBMS>PROFESION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NAC" id="1C85B112-259C-8554-4A34-F4FF0300A1D0">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>FECHA_NAC</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_NAC</comment>
+<commentInRDBMS>FECHA_NAC</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="00B0802C-6783-856F-12B3-7D8F7E1872A5">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>STATUS</comment>
+<commentInRDBMS>STATUS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_PROF" id="915FA4D8-990C-047F-7A3E-AEADC67B5F15">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>ID_TIPO_PROF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_TIPO_PROF</comment>
+<commentInRDBMS>ID_TIPO_PROF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E513318D-C01D-CBF1-283C-29DCC282A526" referredColumn="ABA45600-B4B3-EAA5-6DB0-5B43E6FA5B59"/>
+</associations>
+</Column>
+<Column name="RIF" id="6ADD734E-34B8-5004-DDB1-F355834ACED6">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>RIF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>RIF</comment>
+<commentInRDBMS>RIF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEDE" id="DF5C88FF-4117-2D7A-2011-E8043E283BF1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>SEDE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>SEDE</comment>
+<commentInRDBMS>SEDE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APELLIDO" id="50104B97-E2E8-0AF1-FB2D-147E145F7100">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>APELLIDO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>APELLIDO</comment>
+<commentInRDBMS>APELLIDO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ZONA" id="959643C7-223D-309E-39EC-A88CBC05B90F">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PROFESOR</sourceObjSchema>
+<sourceObjName>ZONA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ZONA</comment>
+<commentInRDBMS>ZONA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIRECCION" id="83438EA6-837B-98F8-EAC9-DB4AF049CABD">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:51:44 UTC</createdTime>
+<comment>DIRECCION</comment>
+<commentInRDBMS>DIRECCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B2BD270-5EF6-E488-BE8F-6556CB740995" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PROFESOR_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018599</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>PROFESOR_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F36DBA3A-FE2F-268D-F204-D4A7E2C001F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99F4D6A9-E597-8A81-7A5F-D2FC543A4347" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018599">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018599</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>9603B252-D3DF-EF7D-436F-D593461E81B9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F36DBA3A-FE2F-268D-F204-D4A7E2C001F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C2EA908-F42D-2454-37C1-831BB968C489" name="PROF_TP_PROF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="915FA4D8-990C-047F-7A3E-AEADC67B5F15"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,40 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CE_ESTUDIANTE" directorySegmentName="seg_1" id="99C694D5-54A7-6E52-D2EE-307D49C52588">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="A13AC7D5-A7CF-B568-CB26-BF950436C5B7">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ESTUDIANTE_PK" id="ED8C1AF9-97B1-EE96-12DD-564451ECCB04">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_FK0" id="9E44AD9E-2BF0-7309-D999-72345530004F">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CE_ESTUDIANTE_PK" id="3C4B3381-49DF-CE3A-D004-2C0BD9DB4949">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

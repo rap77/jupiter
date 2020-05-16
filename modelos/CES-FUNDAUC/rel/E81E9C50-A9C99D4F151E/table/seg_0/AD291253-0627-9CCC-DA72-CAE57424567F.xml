@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AD291253-0627-9CCC-DA72-CAE57424567F" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="FACTURA_DEPOSITO">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FACTURA_DEPOSITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>FACTURA_DEPOSITO</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPOSITO_ID" id="4443C451-4CD5-47BF-9C40-B16761ADF029">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:12:42 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0CBA5EA6-26ED-C589-ED48-CC5001A1DAEF" referredColumn="641F62B7-DFCC-012B-ACAF-90B954C68BA9"/>
+</associations>
+</Column>
+<Column name="FACTURA_ID" id="6236D9EA-D814-8DE2-7038-D063A9B1B69A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:13:07 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="712822D1-9A4C-BAE1-0DCF-A0AEEF38C779" referredColumn="8DDC5525-02F5-C981-CF92-AF7595BC1D4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F3509AE2-C01D-1D8F-C007-9C505AA8B39D" name="FACTURA_DEPOSITO_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:13:35 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6236D9EA-D814-8DE2-7038-D063A9B1B69A"/>
+<colUsage columnID="4443C451-4CD5-47BF-9C40-B16761ADF029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="96BAE2A0-39CA-81D5-5E10-6C5924A3326E" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="FACTURA_DEPOSITO_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FACTURA_DEPOSITO_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:07:41 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>DA05B31E-7E9A-9643-DA63-A67EFFE171A9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6236D9EA-D814-8DE2-7038-D063A9B1B69A"/>
+<colUsage columnID="4443C451-4CD5-47BF-9C40-B16761ADF029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="48D91E29-6923-1DB0-C2D0-0E0C400CC3A6" name="FACTURA_DEPOSITO_DEPOSITO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:12:41 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4443C451-4CD5-47BF-9C40-B16761ADF029"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42AF5E57-DD03-F1CD-DD7D-71B0A0950348" name="FACTURA_DEPOSITO_FACTURA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:13:07 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6236D9EA-D814-8DE2-7038-D063A9B1B69A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

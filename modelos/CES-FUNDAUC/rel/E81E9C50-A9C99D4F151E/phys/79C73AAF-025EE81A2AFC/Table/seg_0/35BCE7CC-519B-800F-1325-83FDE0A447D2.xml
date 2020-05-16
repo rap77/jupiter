@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FACTURA_AC" directorySegmentName="seg_0" id="35BCE7CC-519B-800F-1325-83FDE0A447D2">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>2FBD57B4-FFD1-98A5-1F24-19332913B003</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="RIF" id="0C2A2F0E-EBBE-12D7-47BD-6944FBE53017">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USUARIO" id="2FC1C13D-4153-18A2-8B7A-147862E36CDF">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEDULA_EST" id="519D9152-0C53-A7FC-70EA-B0A59F208F84">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIR_FISCAL" id="55D55F2F-E294-78CE-E7B5-44E5211CC24E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_CLIENTE" id="64C30BE7-A09E-E9F6-73F1-6464B4AE6C4A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO" id="712CCC38-B5CA-8D7E-CAD9-799E657DF410">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="P_IVA" id="73E5B5C5-EB8F-9570-7617-168E9A30786F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAJA" id="8CE0B794-F3AA-36AE-25C6-068FDC7EA60B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTO" id="90278A47-C849-492D-B081-4F45A57956B2">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXCESO" id="9B953F87-3BAE-4421-168C-473F06D3709C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MONTO_IVA" id="A0453161-7765-D175-10F3-A81315018DF9">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROG_ACADEMICO" id="A10DB425-EC1C-1218-DA5D-F90ED52DF50D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE_EST" id="A3D7853E-2739-360B-C161-74BD11869E25">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BS_DESCUENTO" id="A7685B51-CD0F-91B8-445C-30F3D655092C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_EMI" id="A9C5BFB8-AC1A-1033-8FF0-9AE4A3DD67C7">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_FACT" id="AAD40D04-915F-E240-F023-4EF078942665">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONTABILIDAD" id="AB41E020-A288-8277-E211-2CECFD70FC82">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="C0D8405F-1B74-83B1-86DF-4CE2F2E3634F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROGRAMA" id="C14669B2-F112-B0EF-D86E-7ACD4867099E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VENDEDOR" id="F2F37668-B5D7-F921-7468-660E6C806C5D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FLETE" id="F4DC602C-B554-6684-6F61-A3083224CA25">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+</TableProxyOraclev12c>

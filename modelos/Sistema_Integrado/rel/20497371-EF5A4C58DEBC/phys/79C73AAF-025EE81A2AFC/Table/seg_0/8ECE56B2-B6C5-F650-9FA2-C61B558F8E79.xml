@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_ESTADOS_CIVILES" directorySegmentName="seg_0" id="8ECE56B2-B6C5-F650-9FA2-C61B558F8E79">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:27:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="2EAC8BC9-0DCB-FCC6-4D2E-D7EE24BF4AB6">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:27:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="2F5BC215-7372-D909-FAFF-32AAB6B90BB8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:27:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ESTADO_CIVIL_PK" id="8D4F0D27-3FD6-C449-1BA0-47CA4AAA835B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:27:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ESTADOS_CIVILES_PK" id="B6D505CF-5685-6C88-45B0-6BE305C31BAC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:27:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="GL_TASA_CAMBIO" directorySegmentName="seg_1" id="2E148E2A-7F4D-698B-DE6B-FC7B77EC3FCA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="TASA_CAMBIO" id="28B6A861-CF34-1472-E8A0-A8DD93F15636">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ID" id="521C089A-71DD-307A-0D39-4CF53425CF28">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_INICIO" id="5282BB75-874D-8C50-7C34-596E735D6197">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_MONEDA_CAMBIO" id="77141272-50D6-D507-9C69-D0B55E7C419F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_FIN" id="9A514B49-F1A7-A6D1-B7D0-3041CB5B669B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_MONEDA_BASE" id="B8B9619F-E6EC-C494-D3DE-DA1C5DE889BB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GL_TASA_CAMBIO_PK" id="5D5FFDA6-B3BB-AF1E-732C-424D087D7B6E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GL_TASA_CAMBIO_AK1" id="B7EB7AA6-065D-4DC9-2B00-499844CDC0C2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_TASA_CAMBIO_FK0" id="2E66FE6E-2856-2B72-6A7F-0EF0B64CECE7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_TASA_CAMBIO_FK1" id="A7760DA0-524E-BF98-182E-E005B5C6955E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GL_TASA_CAMBIO_PK" id="C3A3ACBE-F307-703B-DF58-49CA8EFD4936">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="GL_TASA_CAMBIO_AK1" id="8911E32A-152A-F247-CC24-5AB3460E948E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev11g>

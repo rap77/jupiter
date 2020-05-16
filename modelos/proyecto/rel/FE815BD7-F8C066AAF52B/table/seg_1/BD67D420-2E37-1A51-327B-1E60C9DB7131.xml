@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BD67D420-2E37-1A51-327B-1E60C9DB7131" name="TS_BANCOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Entidad Bancaria. 4 Banco Provincial.]]></comment>
+<commentInRDBMS><![CDATA[Entidad Bancaria. 4 Banco Provincial.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CF9CA654-0888-44E3-B24E-A95B5852E762</importedID>
+<abbreviation>BAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PER_JUR_PER_ID" id="4DA7388C-1C60-6BC5-822D-10DF0EA9D842">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>26C90EDB-4381-DEEE-E154-4DE85C8B4435</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_13571</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="7B2CC7A7-6768-33AA-EB46-FAB3C1905555" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="82E56272-8E16-6986-AB57-821CCBE09869" name="TS_BANCOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>763CB69E-406B-883C-FEF5-63631BA62796</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DA7388C-1C60-6BC5-822D-10DF0EA9D842"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F5A98C5-DD7E-6DAF-A0D3-7D590C59FE9B" name="TS_BANCO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>96FA3257-892B-E135-A6DD-CF712A147678</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DA7388C-1C60-6BC5-822D-10DF0EA9D842"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EBF3F0A-6717-CCC0-E47B-38EB7F7232B6" name="TS_BANCOS_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DA7388C-1C60-6BC5-822D-10DF0EA9D842"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

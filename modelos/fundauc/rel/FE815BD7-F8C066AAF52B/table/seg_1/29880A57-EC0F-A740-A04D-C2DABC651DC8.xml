@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="29880A57-EC0F-A740-A04D-C2DABC651DC8" name="GL TIPOS VIAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.</comment>
+<commentInRDBMS>Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>06EC25AB-FB3B-3D16-898D-7D2B3506E6F5</importedID>
+<ordsAlias>gl_tipos_vias</ordsAlias>
+<abbreviation>TP_VIA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E87890D1-B591-4044-D930-BB655CE59FC4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Tipo de Via.</comment>
+<commentInRDBMS>Número de Identificación Interno del Tipo de Via.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2E77B1C6-6048-D07B-71AC-EE6FC1466C7A</importedID>
+<constraintName>ID}_1261384826</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="C9D9D5D8-AB9D-D899-D5D2-3934AE657FFC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.</comment>
+<commentInRDBMS>Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CF7F9320-589D-929E-910C-66BEE1D50BD4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A531769-0B20-D842-D2AB-E7ADDB494663" name="GL_TIPOS_VIAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8B8C8265-3957-EFC9-6728-8B93B0C5E686</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E87890D1-B591-4044-D930-BB655CE59FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F6E16C85-0B2E-81D6-4B8C-4862A530C0F3" name="GL_TIPO_VIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>93024745-A7CB-019A-3713-7EFDF7C28ECF</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E87890D1-B591-4044-D930-BB655CE59FC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

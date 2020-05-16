@@ -1,0 +1,459 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1C48BDBD-7B21-A8B6-53B0-559179BE2211" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SECCIONES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SECCIONES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>SECCIONES</comment>
+<commentInRDBMS>SECCIONES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SECCION" id="872016B5-49DC-D94D-734C-F07872B2BE66">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>ID_SECCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_SECCION</comment>
+<commentInRDBMS>ID_SECCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_METODO" id="62869972-6268-3C76-D8AC-2D74BBDBC776">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>ID_METODO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_METODO</comment>
+<commentInRDBMS>ID_METODO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6ED8657F-152C-1B05-29C5-5130ADF6448A" referredColumn="CEC23256-843A-4D04-86A2-4C096921063F"/>
+</associations>
+</Column>
+<Column name="NIVEL" id="4617C9FB-61D7-CB6D-3C6E-518AF25794A1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>NIVEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>NIVEL</comment>
+<commentInRDBMS>NIVEL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_SALON" id="759CF63F-BFC7-7C4D-185F-1A305957E30E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>ID_SALON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_SALON</comment>
+<commentInRDBMS>ID_SALON</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAFDB6FC-20A0-5A4D-D81E-87E24646C9AB" referredColumn="2799FB9F-5CE1-4C85-B59B-45699DE1ADAA"/>
+</associations>
+</Column>
+<Column name="TOPE" id="1A0D08C9-D485-1690-16B2-3D14746B976B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>TOPE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>TOPE</comment>
+<commentInRDBMS>TOPE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="972199AD-0F0D-9F4F-CFB1-F78C2F6B88DE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>STATUS</comment>
+<commentInRDBMS>STATUS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANT_ACTUAL" id="0669D119-6DA9-2DA1-8BEC-015F4C425AB4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>CANT_ACTUAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CANT_ACTUAL</comment>
+<commentInRDBMS>CANT_ACTUAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EDIF" id="949426F8-F030-528D-37F5-581044826C98">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>ID_EDIF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_EDIF</comment>
+<commentInRDBMS>ID_EDIF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAFDB6FC-20A0-5A4D-D81E-87E24646C9AB" referredColumn="2AB58880-9F37-5E89-BE32-9DE22FAC6643"/>
+</associations>
+</Column>
+<Column name="HORARIO" id="00D79D58-EED8-B512-1402-A356956B3E97">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>HORARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>HORARIO</comment>
+<commentInRDBMS>HORARIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>17 BYTE</dataTypeSize>
+<ownDataTypeParameters>17 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEDULA_PROF" id="000A2360-515D-7229-6B8B-2FCDC76DDAFE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>CEDULA_PROF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CEDULA_PROF</comment>
+<commentInRDBMS>CEDULA_PROF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FA96A114-08A0-77AF-B41F-82B6156A2266" referredColumn="F36DBA3A-FE2F-268D-F204-D4A7E2C001F4"/>
+</associations>
+</Column>
+<Column name="MODALIDAD" id="D1F449BC-A00C-EF7E-F798-A78ECBB9E494">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>MODALIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MODALIDAD</comment>
+<commentInRDBMS>MODALIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36C4A751-C2CB-6EF8-C0F3-020F45B519B4" referredColumn="5B193EB1-3DBC-7229-F105-F8BA8B89ECE4"/>
+<colAssociation fkAssociation="6DB37E62-8637-84AA-4F76-2A7B52F940D5" referredColumn="55AB52FA-A158-EC16-54B5-D7B4B4DD7089"/>
+</associations>
+</Column>
+<Column name="FEC_INICIO" id="426ED3F4-8BE3-B157-42ED-CA2233BDF806">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>FEC_INICIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>FEC_INICIO</comment>
+<commentInRDBMS>FEC_INICIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIODO" id="1AA89CD2-8FF9-06F7-8A4F-BAEB0F49E739">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>PERIODO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>PERIODO</comment>
+<commentInRDBMS>PERIODO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_HORARIO" id="2A1AB8E2-5FAB-4057-5248-21DC5C97712D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:26:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36C4A751-C2CB-6EF8-C0F3-020F45B519B4" referredColumn="88525277-66D7-B768-748A-581C45068448"/>
+</associations>
+</Column>
+<Column name="ID_CALENDARIO" id="37E50257-59E9-8406-3F39-EB7571F60A46">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SECCIONES</sourceObjSchema>
+<sourceObjName>ID_CALENDARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>31651092-2613-01E6-86DF-10950C7773B3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0AD662D9-FED8-114F-9EF3-795CF981BA18" referredColumn="6A65EF56-47CB-ADBB-14C6-B149672C2CC2"/>
+</associations>
+</Column>
+<Column name="ID" id="AA0C499F-EA8F-ACFD-4229-128D01E5C380">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:40:57 UTC</createdTime>
+<comment>Identificador Unico de la Seccion</comment>
+<commentInRDBMS>Identificador Unico de la Seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_POR" directorySegmentName="seg_0" id="6C9894B0-7A9D-C6DD-34F3-359FE487EF72">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:10:27 UTC</createdTime>
+<comment>usuario quien crea la seccion</comment>
+<commentInRDBMS>usuario quien crea la seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_EL" directorySegmentName="seg_0" id="4488A82D-A0A9-2E62-93FF-1CF9CE6CDEDE">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:11:25 UTC</createdTime>
+<comment>Fecha de Creacion</comment>
+<commentInRDBMS>Fecha de Creacion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_POR" directorySegmentName="seg_0" id="E1F550C4-C5D0-E7A5-164E-BD7C3CDF6086">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:11:25 UTC</createdTime>
+<comment>usuario quien modifica la seccion</comment>
+<commentInRDBMS>usuario quien modifica la seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_EL" directorySegmentName="seg_0" id="5E21BAE2-A0C3-17A1-0962-FBC24C481786">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:12:02 UTC</createdTime>
+<comment>Fecha de Modificacion</comment>
+<commentInRDBMS>Fecha de Modificacion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76E583FA-5C58-E180-007D-DBA2AD837FA6" name="SECCIONES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SECCIONES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>SECCIONES_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA0C499F-EA8F-ACFD-4229-128D01E5C380"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="754C92BE-4DBA-CF44-5862-98EBDC91A0B6" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SECCIONES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SECCIONES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>SECCIONES_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA0C499F-EA8F-ACFD-4229-128D01E5C380"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A98D6129-69FE-A475-F4DF-C10ED9185E61" name="SECCIONES_UK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:42:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="872016B5-49DC-D94D-734C-F07872B2BE66"/>
+<colUsage columnID="62869972-6268-3C76-D8AC-2D74BBDBC776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A0583667-BC5C-CCD1-F7AA-DDEE34722F50" name="SECCIONES_METODOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:11:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62869972-6268-3C76-D8AC-2D74BBDBC776"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="10B0280C-6CE7-4144-8962-93730B26C4D0" name="SECCIONES_SALONES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:16:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="759CF63F-BFC7-7C4D-185F-1A305957E30E"/>
+<colUsage columnID="949426F8-F030-528D-37F5-581044826C98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="193948A3-B40C-7511-8BB9-690E3E6D9E80" name="SECCIONES_MODALIDADES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:24:43 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1F449BC-A00C-EF7E-F798-A78ECBB9E494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0166F217-7F3D-425E-A4BD-27172C4830B7" name="SECCIONES_HORARIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:26:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A1AB8E2-5FAB-4057-5248-21DC5C97712D"/>
+<colUsage columnID="D1F449BC-A00C-EF7E-F798-A78ECBB9E494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0AA2B524-8AC9-BF6E-926A-19C47615B119" name="SECCIONES_PROFESOR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:30:18 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="000A2360-515D-7229-6B8B-2FCDC76DDAFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04636984-C9C4-9E0D-3DE3-609E514ABCAC" name="SECCIONES_CALENDARIOS_DETALLE_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:34:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="37E50257-59E9-8406-3F39-EB7571F60A46"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

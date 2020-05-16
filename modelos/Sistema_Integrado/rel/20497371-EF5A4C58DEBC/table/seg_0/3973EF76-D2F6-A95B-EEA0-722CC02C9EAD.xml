@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3973EF76-D2F6-A95B-EEA0-722CC02C9EAD" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PERSONAS_JURIDICAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONAS_JURIDICAS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:30:31 UTC</createdTime>
+<comment><![CDATA[Persona Juridica. Ej: 1 Centro Clinico Guerra Mendez.]]></comment>
+<commentInRDBMS><![CDATA[Persona Juridica. Ej: 1 Centro Clinico Guerra Mendez.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>PER_JUR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BA01FED1-FEBC-6191-7EBF-1CA5113D3EB3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_JURIDICAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:30:31 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PJUR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PJUR_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C9CF9BFB-95D4-01C7-882D-F9BF6303FD06" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="NOMBRE_COMERCIAL" id="6A86CE00-889A-139D-D6A0-56B997FAB017">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_JURIDICAS</sourceObjSchema>
+<sourceObjName>NOMBRE_COMERCIAL</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:30:31 UTC</createdTime>
+<comment><![CDATA[Nombre Comercial de la Persona Juridica. Puede ser diferente de la Razón social de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Nombre Comercial de la Persona Juridica. Puede ser diferente de la Razón social de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PJUR_NOM</notNullConstraintName>
+</Column>
+<Column name="REG_MERCANTIL" id="4AA91362-2C4D-B9C3-7989-C6B03ABA8EA4">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:30:19 UTC</createdTime>
+<comment><![CDATA[Información del Registro Mercantil]]></comment>
+<commentInRDBMS><![CDATA[Información del Registro Mercantil]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOMO_REC_MERC" id="6200C74A-912D-CF87-10CC-630C2AC7FFDF">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:30:19 UTC</createdTime>
+<comment><![CDATA[Tomo del Registro Mercantil]]></comment>
+<commentInRDBMS><![CDATA[Tomo del Registro Mercantil]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FOLIO_REG_MERC" id="1C2420A3-E869-4967-A947-C3C9AED153BD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:30:19 UTC</createdTime>
+<comment><![CDATA[Folio del Registro Mercantil]]></comment>
+<commentInRDBMS><![CDATA[Folio del Registro Mercantil]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HOJA_REG_MERC" id="CB59269B-1BE3-D459-66C9-CBAD8E1CB8F9">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:30:19 UTC</createdTime>
+<comment><![CDATA[Hoja del Registro Mercantil]]></comment>
+<commentInRDBMS><![CDATA[Hoja del Registro Mercantil]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_REG_MERC" id="F7D05D7C-8F3D-B8E8-3E2E-862C9FEBEBEE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:30:19 UTC</createdTime>
+<comment><![CDATA[Fecha de Registro Mercantil]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Registro Mercantil]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0556298D-92A8-AFC8-826B-6F13849D5095" name="GL_PERSONAS_JURIDICAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONAS_JURIDICAS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:30:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA01FED1-FEBC-6191-7EBF-1CA5113D3EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C3C6847-FE00-6934-BA34-7D9815F6FC47" name="GL_PERSONA_JURIDICA_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONA_JURIDICA_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:30:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA01FED1-FEBC-6191-7EBF-1CA5113D3EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91819219-3C8F-002F-ECA2-C53DA61893E7" name="PER_JUR_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:31:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA01FED1-FEBC-6191-7EBF-1CA5113D3EB3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

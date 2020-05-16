@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UNI_ORG_TP_UNI_ORG_FK" directorySegmentName="seg_2" id="625F6BB2-5C2A-D3C4-8324-F72F03C53963">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>1ECD243A-BFAD-3AA6-54AA-384389911AC7</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>60D5A8AC-B0F1-236C-4389-F360D787EC05</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E8F65042-23FD-BA4B-0A36-36B686272855</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D05C36C9-766C-0876-9E5A-EC4861C075E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

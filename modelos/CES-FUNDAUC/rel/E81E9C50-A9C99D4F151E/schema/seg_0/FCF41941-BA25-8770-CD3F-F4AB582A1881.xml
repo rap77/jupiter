@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="CES" directorySegmentName="seg_0" id="FCF41941-BA25-8770-CD3F-F4AB582A1881">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:49 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</SchemaObject>

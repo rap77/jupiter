@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="98600DA1-C33A-FCB8-D46C-381B13163367" name="GL_MEDICO">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla de Medicos que laboran en la institucion]]></commentInRDBMS>
+<generatorID>8006F684-F1F7-3C97-A2C1-4766BD208CE0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TIPO_MEDICO" id="05B32C31-A2AF-28B4-7A87-9215BB2735D5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico del tipo de medico]]></commentInRDBMS>
+<generatorID>15F95EB7-17CD-5C04-5391-001F8EC5F19B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_705105345</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E5FE7B3E-6435-2D46-7E4C-91C376E71B95</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="MATRICULA_MS" id="FB74FA06-E041-FEDA-7C94-3529FD509672">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>49D31149-1E03-5157-BC86-7779983CEC21</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_10}_2074374375</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID" id="ED2A7F8D-2B51-DCA0-7566-9A7BC0CEEE33">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<generatorID>B9CCEA96-858B-C10B-B456-0EF78B703C9B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_13114</constraintName>
+<referedAttribute>713C5A01-473B-6945-4C34-6380274ACE65</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DD3D3E4A-2EEA-C461-09FD-359CA118700A" name="GL_MEDICO_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6037841C-0C94-561C-AE8D-3063A04B3F81</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B9CCEA96-858B-C10B-B456-0EF78B703C9B</newElementsIDs>
+<usedAttributes>
+<attributeRef>ED2A7F8D-2B51-DCA0-7566-9A7BC0CEEE33</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

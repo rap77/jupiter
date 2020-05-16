@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="62153F2C-883F-D844-543B-3E8C6C92F914" containerWithKeyObject="1AC2B42B-764A-15B1-1BC8-93453BF7F0B2" localFKIndex="D4601CA5-5E46-FDFB-7658-D22FAF88C9D5" name="LET_RIF_TP_PER_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>LET_RIF_TP_PER_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_TIPOS_PERSONAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>173FF7B7-4831-113C-4381-240B5DAA7406</referredTableID>
+<keyObject>6E1415B9-10A8-5A0D-8B97-251B1650B03C</keyObject>
+<referredKeyID>6E1415B9-10A8-5A0D-8B97-251B1650B03C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CE_SALON" directorySegmentName="seg_1" id="4F5B7A25-4405-4057-AC3D-EAAAB806F5E3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GL_UNIDADES_ORG_GL_PERSONAS_ID" id="2235BB12-88F1-4891-FDCF-E39BD96611B9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBICACION" id="483CE2A6-051E-4CEE-AB28-21CD8C121C77">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAPACIDAD" id="5F63A6BE-C0AD-C7C3-162C-E24CEC14F98E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="750AF8E2-3853-6A85-1D31-FB635A617B98">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="75225939-228B-956E-CD32-CDCFB36153EB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_SALON_ID" id="F7A8CE53-D358-0C43-C1E6-7C97520E9D4E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALON_PK" id="73F38C61-208E-FF5B-795E-410FA7534807">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<logging></logging>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SALON_GL_UNIDADES_ORG_FK" id="8EA2CCB4-A064-EF38-3744-857DE327FFA6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SALON_TIPO_SALON_FK" id="C76E3059-E563-3EF1-D814-1AE146B008C3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SALON_PK" id="6CBB5C65-0091-2C25-D7DC-41B78B233611">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

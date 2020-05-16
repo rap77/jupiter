@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9A54FC88-A407-5C85-4219-B15A5B6237F9" name="GL_MARCA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Marcas elaboradas por Fabricantes]]></comment>
+<commentInRDBMS><![CDATA[Marcas elaboradas por Fabricantes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1338D580-DC8D-4B2A-FC26-16B805F756D0</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MARCA" id="2983FD65-BD7B-896D-2C5E-DCB891915CAE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Marca]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Marca]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>60620F1C-BDE8-0E8E-138C-E68DD0443783</importedID>
+<constraintName>ID}_1031584226</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_FABRICANTE" id="56CFEAED-9831-F134-5644-8F32815A7BEC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DC0E5092-BEEE-0EE1-B7E1-3713DD9BC225</importedID>
+<constraintName>ID}_66050257</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="BF0E4165-8C76-06B5-EC14-078252C07375" referredColumn="B46F0EDA-292D-4A8F-63C7-F266F81CB2C8"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="BC7BE53F-9608-CDE8-7443-C7B467009D2E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Marca]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Marca]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6FA34457-3FA5-450F-7D55-E253FA64513E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="25124BF1-CC92-2D23-B438-3B99D1971091" name="GL_MARCAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CF80E5B4-A305-B7BC-3ABF-BC7736A0BD6F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2983FD65-BD7B-896D-2C5E-DCB891915CAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="183B3ACD-8536-93C2-1904-A23B609A191A" name="GL_MARCAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>ACDC010E-8750-07E6-E52C-6AED05618235</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2983FD65-BD7B-896D-2C5E-DCB891915CAE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2778D97E-0F15-0465-020F-741274359DFB" name="GL_MARCA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56CFEAED-9831-F134-5644-8F32815A7BEC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="30A4448D-66A2-7776-915B-AAABA46D10AC" containerWithKeyObject="3A2CBE07-39BB-771B-22B6-55DCD560FDFD" localFKIndex="D4C4A22C-102C-6D65-07D8-D539EFD5F498" name="ESTUDIANTE_CONDICIONES_ESPECIALES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:00:04 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.CONDICIONES_ESPECIALES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B42BBC66-0E4C-A3C6-53EA-5EDEA4EE1CD4</referredTableID>
+<keyObject>432A33D9-DFAC-064D-2837-4B7FFB0D4267</keyObject>
+<referredKeyID>432A33D9-DFAC-064D-2837-4B7FFB0D4267</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CONDICION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

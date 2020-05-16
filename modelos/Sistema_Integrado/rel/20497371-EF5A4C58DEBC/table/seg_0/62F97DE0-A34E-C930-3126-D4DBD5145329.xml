@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="62F97DE0-A34E-C930-3126-D4DBD5145329" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PERSONAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.]]></comment>
+<commentInRDBMS><![CDATA[Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0BE04BD5-B45C-0E3C-C7C9-246152D129F5">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>gl_personas_seq</autoIncrementSequenceName>
+<autoIncrementTriggerName>GL_PERSONAS_TRG</autoIncrementTriggerName>
+<notNullConstraintName>NN_PER_ID</notNullConstraintName>
+</Column>
+<Column name="TP_PER_ID" id="BFE7C883-C579-F67E-0AF4-FDB842BEAE02">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS</sourceObjSchema>
+<sourceObjName>TP_PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PER_TPER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PER_TPER_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="4B72E09D-9CBE-30AA-045C-0C3303C3C3F8" referredColumn="C3B7F110-304D-1B06-1C8F-6E0950A5220A"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="ACA6C9C5-F7D4-DD3E-7E9D-A8FC238A0665">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Nombre Completo o Razón Social de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Nombre Completo o Razón Social de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PER_NOM</notNullConstraintName>
+</Column>
+<Column name="INSTANCIAS" id="A557D493-E565-B52C-4F6E-33461B5847E9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS</sourceObjSchema>
+<sourceObjName>INSTANCIAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC]]></comment>
+<commentInRDBMS><![CDATA[Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="240618E9-BDA3-B7AD-CD6A-E53772E56524" name="GL_PERSONAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONAS_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F06C8413-1EB0-0453-4CAC-D9F3174D8836" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PERSONAS_ID_IDX">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PER_ID_IDX</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="665CE1C2-CE0A-B594-007B-AD8D02C0D2D9" name="GL_PERSONAS_GL_TIPOS_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BFE7C883-C579-F67E-0AF4-FDB842BEAE02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

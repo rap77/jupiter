@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B708377A-C34D-3A00-8C09-677FC74B2A9F" name="INSCRIPCIONES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:16:36 UTC</createdTime>
+<comment>Tabla de Inscripciones</comment>
+<commentInRDBMS>Tabla de Inscripciones</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<ordsAlias>table_80</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="99C4D594-EE95-9F83-BF1B-E435B224E299">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:18:38 UTC</createdTime>
+<comment>Identificador unico de la iscripcion del estudiante en el curso</comment>
+<commentInRDBMS>Identificador unico de la iscripcion del estudiante en el curso</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INS" id="6AEB1D18-9730-9494-F1DD-EDF72163684D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:21:27 UTC</createdTime>
+<comment>Fecha de la Inscripcion</comment>
+<commentInRDBMS>Fecha de la Inscripcion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_MATRICULA" id="F57D5DEB-EF9B-E49D-3C1A-90C1546F3B17">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:25:16 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="048EE61C-5A36-B918-4D9B-6C11A523F06E" referredColumn="CD0C8DE2-7766-5C58-560C-FEDD1E00832A"/>
+</associations>
+</Column>
+<Column name="FECHA_PAGO" id="57011667-8CE1-E875-7DA0-8EEA5A9181E4">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:32:58 UTC</createdTime>
+<commentInRDBMS>Fecha de Pago de la Inscripcion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTATUS" id="63D2C1DA-13EC-CB48-F072-FFC62459045F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:30:26 UTC</createdTime>
+<commentInRDBMS>Estado de laInscripcion Ej, Pre-Inscripcion, Inscripcion Efectiva, Inscripcion Anulada, Inscripcion Exonerada, Inactiva</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECCION_ID" id="F2A8B1B3-582D-7A7C-BBC0-8311E2A66DA8">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:41:31 UTC</createdTime>
+<comment>Identificador Unico de la Seccion</comment>
+<commentInRDBMS>Identificador Unico de la Seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B04203F7-60A0-FD3C-CAEC-AC73FC38F708" referredColumn="AA0C499F-EA8F-ACFD-4229-128D01E5C380"/>
+</associations>
+</Column>
+<Column name="FACTURA_ID" id="03C5F657-43B4-CD74-60C1-1755219AC86B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-15 00:33:44 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7A53DCA6-EDEE-2505-C789-0AE081153945" referredColumn="8DDC5525-02F5-C981-CF92-AF7595BC1D4D"/>
+</associations>
+</Column>
+<Column name="CREADO_POR" id="D4DB93B5-04DB-3125-4341-B225B59C4E4D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-20 13:46:09 UTC</createdTime>
+<comment>Usuario quien creo la Inscripcion</comment>
+<commentInRDBMS>Usuario quien creo la Inscripcion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<defaultValue>coalesce(sys_context(&apos;APEX$SESSION&apos;, &apos;app_user&apos;), regexp_substr(sys_context(&apos;userenv&apos;, &apos;client_identifier&apos;&lt;br/&gt;    ), &apos;^[^:]*&apos;), sys_context(&apos;userenv&apos;, &apos;session_user&apos;))</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B49369ED-2EC9-0F74-8A62-B3DB24481AA6" name="INSCRIPCIONES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:21:27 UTC</createdTime>
+<notes>Restriccion de Clave Primaria de inscripciones</notes>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C4D594-EE95-9F83-BF1B-E435B224E299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2474FFF2-3C46-649A-C8FA-77AF7C6FED18" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="INSCRIPCIONES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>EDC43581-C54C-EED3-2F8E-A08526458243</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C4D594-EE95-9F83-BF1B-E435B224E299"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B490E9A-5AE2-BA81-E772-FD2F3D5813AA" name="INSCRIPCIONES_ESTUDIANTE_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:25:16 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F57D5DEB-EF9B-E49D-3C1A-90C1546F3B17"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C5A30BE-0BE8-00CC-D0F0-28DE7C775A6A" name="INSCRIPCIONES_SECCIONES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:25:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F2A8B1B3-582D-7A7C-BBC0-8311E2A66DA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="31C1078F-7E54-7A21-115E-2EE72F993567" name="INSCRIPCIONES_FACTURA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:51:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03C5F657-43B4-CD74-60C1-1755219AC86B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

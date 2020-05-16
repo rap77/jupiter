@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_PREFIJOS_TIPO_DOCID" directorySegmentName="seg_0" id="DBDF19C4-92A1-1561-C3BA-9CCC878E1C50">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1CEF85FD-166F-44C6-F75C-7826DBA4DD47</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PREF_DOCID_ID" id="40B8D619-7B04-8355-70ED-59C65CC74BB4">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="TP_DOCID_ID" id="B1DBC466-283A-8D79-E65D-1DDAF2C1F4A2">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<enable>NO</enable>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+<validate>NO</validate>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PREF_ID_TIPO_ID_PK" id="73658EBB-F9E5-680D-4FD7-88FA5CAD0CC0">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<segment>A808E627-3855-8B0F-9D33-3910A3418E30</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PREF_TP_DOCID_FK1" id="08FD5F88-9EEB-2AB9-43D2-F51DB4A90F23">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GL_PREFIJOS_TIPO_DOCID_PK" id="3926AD50-8E69-5EA3-CEF6-2291ED82EC79">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<enable>NO</enable>
+<indexSort>SORTED</indexSort>
+<validate>NO</validate>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

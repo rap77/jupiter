@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TS_BANCOS" directorySegmentName="seg_0" id="07DF1C93-9BBE-1649-903D-C63B3FD446DE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TS_BANCO_PK" id="C6299A6B-37DD-E828-79E7-58D77BACEC83">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TS_BANCOS_PK" id="D14F8590-7C37-CF08-A684-9335C75141A8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

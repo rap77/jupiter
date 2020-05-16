@@ -1,0 +1,249 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_PERSONAS_NATURALES" directorySegmentName="seg_0" id="0C5423A8-50C5-DD45-ED48-1BE83A22112C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="GACETA_ID" id="0121F805-6E1A-42BE-7051-4E9AF6DC203A">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADO_LICENCIA" id="062F81FE-0656-B4A0-E4E1-2DB914149AC7">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USA_LENTES" id="06E2E0BD-E45B-B671-7ADA-BD9CC087F424">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FECHA_NACIMIENTO" id="10087C08-98C3-75E7-48FA-85F3E158F8F0">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TALLA" id="1548033D-9627-63CE-222A-BC96BEAEDE84">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADO_ACADEMICO_ID" id="1AA7FE77-7D6F-F009-01AB-5201DD4B96FA">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_EXCEPCIONAL" id="21CFB184-FE2D-7A1B-996A-5668D3A2B43B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="FECHA_DECESO" id="232ADF2F-4D9C-0BAB-C611-3862A034F650">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIMER_APELLIDO" id="260D2204-08E0-15ED-5222-DE829D0D90DD">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TRATAMIENTO_ID" id="292BE433-C172-16C6-53EF-F9068B105A22">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENERO_ID" id="2A72A893-112F-7036-48F8-20EE3F19EC9E">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INF_NACIMIENTO_ID" id="2D27AC0C-1B9E-4586-FB6E-35B6A520F076">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDO_NOMBRE" id="2F2D5336-2056-5CCC-B067-7AA40647C2D9">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDO_APELLIDO" id="3571F6FE-EBAB-02D9-5B8A-EEEE610522FF">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="3EB169CB-398D-1DCA-9211-21E89BA06B36">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFECTOS_FISICOS" id="5CB9BB60-BD93-6A33-A997-FE1CEA79C43B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OCUPACION_ID" id="7456B467-53D7-C771-7D80-251F8126DCBD">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_DIESTRO" id="7BD76970-FC62-CAA3-5744-2A8081DE174E">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NIVEL_ESTUDIO_ID" id="7BEC930C-9853-3D2D-7116-CAC047E30DBA">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APELLIDO_CASADA" id="95C645E3-A0C9-1BCC-4FC8-C51A82B3465B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_DISCAPACITADA" id="9C09753E-ED40-BE76-F11C-8169B0ACCE56">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAIS_ID" id="A01761A8-9D7B-15AF-AF81-EA73BE851BD6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRUPO_SANGUINEO_ID" id="B12BE56E-797C-7A44-52AF-9F7243F8E35E">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROFESION_ID" id="B8031BAB-3E2E-5078-A6D3-0497B6227EDA">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIMER_NOMBRE" id="C715A3B2-3E65-DFD9-3F4A-F0AEC776494F">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ETNIA_ID" id="C8CA4E07-B906-73DD-FE5A-1CE8D415E6FB">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_CIVIL_ID" id="CA66FB69-A622-FAC1-FC2C-905288B8A912">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESO" id="CCE17737-BA88-A96C-F7E0-E40887A59D0D">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTATURA" id="EE8FF69D-B390-8165-6ABA-3D8D23865A04">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GL_PERSONA_NATURAL_PK" id="C48DC810-8143-3F7B-5C5A-F14111DAC272">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_OCUPACIONES_FK" id="0A517024-B127-5C98-D639-B39F2D60CDD4">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GRA_ACA_FK" id="0DD383AA-3CD7-0BDE-50A0-C5B31EC56752">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_TRATAMIENTOS_FK" id="1DD40E93-87C6-A31D-F3CB-AB5EAE4FD094">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GRP_SAN_FK" id="2E1CE0DA-1A67-F122-8C66-B6BDD0ABEB3D">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_PERSONA_NATURAL_FK2" id="37D7E1A8-2BE0-0072-1B5D-F0E77A64CB03">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_ESTADOS_CIVILES_FK" id="4779551F-E92A-85C7-4FF3-E416CE745EC9">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_GENEROS_FK" id="611FBA62-71B0-0C05-8D1E-A22B3C9533A9">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_PERSONA_NATURAL_FK9" id="672098E1-6503-385B-D87F-3A2B50195842">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_INF_NACIMIENTOS_FK" id="6F033FD5-BF2B-D2FF-F701-B96783A35936">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_PER_FK" id="6F82328F-A0A7-F79A-E934-CE8F8B766CEE">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GL_PAISES_FK" id="748BCE97-631F-F231-E566-5B2E2885E904">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_PERSONA_NATURAL_FK6" id="94774749-B575-157F-2DF0-7A733C02C694">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_PERSONA_NATURAL_FK3" id="B0096548-1E20-5E0B-67EE-0738FCE1BDF6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GL_PERSONAS_NATURALES_PK" id="F211FDE7-F29B-5C59-3968-A29508CAA073">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CHECK_CONSTRAINT_USAGE_11333" id="7B0F2FAC-A7E2-7E4E-0C51-7664955D77C4">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

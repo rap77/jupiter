@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="USU_ROL_ROL_FK" directorySegmentName="seg_2" id="A827021F-475F-214D-B55B-78E39A7F595F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>35BB8D97-5D7C-46A7-9C66-9EDFF7DEF283</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>EB0D8C66-F044-C354-0651-62AC186A51C2</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D0E2B97E-0DB9-D7BD-203F-79CD59ECFF27</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>59778A25-C29B-06AD-6529-B5F26FEDAE0D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

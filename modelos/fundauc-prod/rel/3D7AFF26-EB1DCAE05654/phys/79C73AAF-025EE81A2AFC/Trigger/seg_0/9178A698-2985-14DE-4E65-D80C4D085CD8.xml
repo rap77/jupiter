@@ -1,0 +1,386 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_INSCRIPCIONES_BID" directorySegmentName="seg_0" id="9178A698-2985-14DE-4E65-D80C4D085CD8">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>T_INSCRIPCIONES_BID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+    p_factura_rec           fundauc.tapi_factura.factura_rt;
+    p_estudiante_rec        fundauc.tapi_estudiante.estudiante_rt;
+    p_cond_especial_rec     fundauc.tapi_condiciones_especiales.condiciones_especiales_rt;
+    p_detalle_factura_rec   fundauc.tapi_detalle_factura.detalle_factura_rt;
+    p_material_mat_rec      fundauc.utl_materiales.detalle_factura_rt;
+    p_hoja_vida_est_rec     fundauc.tapi_hoja_vida_est.hoja_vida_est_rt;
+    l_precio                NUMBER := 0;
+    l_fact_id               NUMBER := 0;
+    l_modalidad             NUMBER := 0;
+    P_IGNORE_NULLS          BOOLEAN;
+    l_facid                 NUMBER := 0;
+    l_renglonid             NUMBER := 0;
+BEGIN
+    IF
+        inserting  --si esta insertando
+    THEN
+        --llena registro estudiante con el numero de matricula
+        p_estudiante_rec := tapi_estudiante.rt(p_matricula =>:new.est_matricula);
+        --llena registro de condicion especial
+        p_cond_especial_rec := tapi_condiciones_especiales.rt(p_id_condicion => p_estudiante_rec.condicion_especial);
+
+        -- si el codigo de la seccion no esta vacio
+        if :NEW.SECCION_ID is not null then
+            -- llena la variable modalidad de la seccion
+            SELECT
+                modalidad
+            INTO
+                l_modalidad
+            FROM
+                TABLE ( tapi_secciones.tt(:new.seccion_id) );
+        end if;
+
+        -- si el codigo de la cohorte no es nulo
+        if :NEW.COHORTE_ID is not null then
+            SELECT
+                id_modalidad
+            INTO
+                l_modalidad
+            FROM
+                TABLE ( tapi_cohortes.tt(:new.cohorte_id) );
+        end if;
+
+        -- si la condicion especial no es EXONERADO o no es suspendido
+        IF
+            p_estudiante_rec.condicion_especial != 5 OR :new.es_suspendido != 'S'
+        THEN
+            -- llena registro de factura
+            p_factura_rec.id_fact := NULL;
+            p_factura_rec.tipo := 'FA';
+            p_factura_rec.cedula_est := p_estudiante_rec.cedula_est;
+            p_factura_rec.nombre_cliente := p_estudiante_rec.nombre
+            || ' '
+            || p_estudiante_rec.apellido;
+            p_factura_rec.fecha_emi := NULL;
+            p_factura_rec.monto := 0;
+            p_factura_rec.p_iva := 0;
+            p_factura_rec.monto_iva := 0;
+            p_factura_rec.flete := 0;
+            p_factura_rec.bs_descuento := 0;
+            p_factura_rec.dir_fiscal := p_estudiante_rec.direccion;
+            p_factura_rec.rif := p_estudiante_rec.cedula_est;
+            p_factura_rec.status := 'PC';
+            p_factura_rec.programa := global.getval('SEDE');
+            p_factura_rec.prog_academico := to_number(global.getval('PROG') );
+            p_factura_rec.creado_por := coalesce(sys_context('APEX$SESSION','app_user'),regexp_substr(sys_context('userenv','client_identifier'
+),'^[^:]*'),sys_context('userenv','session_user') );
+            p_factura_rec.creado_el := SYSDATE;
+            p_factura_rec.monto_exento := 0;
+            p_factura_rec.base_imponible := 0;
+            p_factura_rec.escredito := 'N';
+            p_factura_rec.id := factura_seq.nextval;
+
+            --inserta registro de factura
+            tapi_factura.ins(p_factura_rec => p_factura_rec);
+
+            --inserta en inscripcion_factura
+            INSERT INTO inscripcion_factura (
+                inscripcion_id,
+                factura_id
+            ) VALUES (
+                :new.id,
+                p_factura_rec.id
+            );
+
+            -- si el tipo de estudiante es NUEVO INGRESO
+            IF
+                p_estudiante_rec.id_tipo_est = 0
+            THEN
+                --llena el registro de materiales con el codigo de la seccion y el tipo de material CURSO
+                p_material_mat_rec := utl_materiales.getrecdetallefac(:new.seccion_id,'C');
+                -- llena el registro del detalle de la factura del CURSO
+                p_detalle_factura_rec.renglon := detalle_factura_seq.nextval;
+                p_detalle_factura_rec.tipo_item := p_material_mat_rec.tipo_item;
+                p_detalle_factura_rec.item := p_material_mat_rec.item;
+                p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+                p_detalle_factura_rec.cantidad := p_material_mat_rec.cantidad;
+                p_detalle_factura_rec.p_unidad := p_material_mat_rec.p_unidad;
+                p_detalle_factura_rec.bs_descuento := p_material_mat_rec.bs_descuento;
+                p_detalle_factura_rec.subtotal := p_material_mat_rec.subtotal;
+                p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+                p_detalle_factura_rec.factura_id := p_factura_rec.id;
+
+                --inserta el detalle de la factura de CURSO
+                tapi_detalle_factura.ins(p_detalle_factura_rec => p_detalle_factura_rec);
+
+                --llena registro de la hojade vida para CURSO
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 2;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+
+                --si es seccion
+                if :NEW.SECCION_ID is not null then
+                  -- elcampometadata con el json del seccion
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+                end if; 
+                --si es chorte
+                if :NEW.COHORTE_ID is not null then
+                  --llena el campo metadata con el json de la cohorte
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+                end if;  
+                --llena el campo observacion con el estatus de la inscripcion
+                p_hoja_vida_est_rec.observacion := upper(utl_inscripciones.getdesstatus(:new.estatus) );
+                --inserta en la hoja de vida para CURSO
+                tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+
+                -- llena registro de material con el codigo de INSCRIPCION
+                p_material_mat_rec := utl_materiales.getrecdetallefac('IN01');
+                -- llena el registro de detalle de factura de INSCRIPCION
+                p_detalle_factura_rec.renglon := detalle_factura_seq.nextval;
+                p_detalle_factura_rec.tipo_item := p_material_mat_rec.tipo_item;
+                p_detalle_factura_rec.item := p_material_mat_rec.item;
+                p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+                p_detalle_factura_rec.cantidad := p_material_mat_rec.cantidad;
+                p_detalle_factura_rec.p_unidad := p_material_mat_rec.p_unidad;
+                p_detalle_factura_rec.bs_descuento := p_material_mat_rec.bs_descuento;
+                p_detalle_factura_rec.subtotal := p_material_mat_rec.subtotal;
+                p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+                p_detalle_factura_rec.factura_id := p_factura_rec.id;
+                -- Inserta detalle de factura de INSCRIPCION
+                tapi_detalle_factura.ins(p_detalle_factura_rec => p_detalle_factura_rec);
+
+                -- llena registro hoja de vida para INSCRIPCION
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 1;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                p_hoja_vida_est_rec.metadata := NULL;
+                p_hoja_vida_est_rec.observacion := 'PAGO DE INSCRIPCION';
+
+                -- Inserta en hoja de vida para INSCRIPCION
+                tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+            ELSE --si el tipo de estudiante no es NUEVO INGRESO
+                --llena registro materiales con info de CURSO
+                p_material_mat_rec := utl_materiales.getrecdetallefac(:new.seccion_id,'C');
+                --llena registro del detalle factura para CURSO 
+                p_detalle_factura_rec.renglon := detalle_factura_seq.nextval;
+                p_detalle_factura_rec.tipo_item := p_material_mat_rec.tipo_item;
+                p_detalle_factura_rec.item := p_material_mat_rec.item;
+                p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+                p_detalle_factura_rec.cantidad := p_material_mat_rec.cantidad;
+                p_detalle_factura_rec.p_unidad := p_material_mat_rec.p_unidad;
+                p_detalle_factura_rec.bs_descuento := p_material_mat_rec.bs_descuento;
+                p_detalle_factura_rec.subtotal := p_material_mat_rec.subtotal;
+                p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+                p_detalle_factura_rec.factura_id := p_factura_rec.id;
+                --inserta detalle factura para CURSO
+                tapi_detalle_factura.ins(p_detalle_factura_rec => p_detalle_factura_rec);
+                -- llena registro hoja de vida para CURSO
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 2;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                --si es seccion
+                if :NEW.SECCION_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+                end if; 
+                --si es cohorte
+                if :NEW.COHORTE_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+                end if;  
+                -- lleno observacion con el estado del la inscripcion
+                p_hoja_vida_est_rec.observacion := upper(utl_inscripciones.getdesstatus(:new.estatus) );
+                --inserta registro de hoja de vida para CURSO
+                tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+
+                -- llena registro de materiales con el concepto de INSCRIPCION
+                p_material_mat_rec := utl_materiales.getrecdetallefac('IN01');
+                p_detalle_factura_rec.renglon := detalle_factura_seq.nextval;
+                p_detalle_factura_rec.tipo_item := p_material_mat_rec.tipo_item;
+                p_detalle_factura_rec.item := p_material_mat_rec.item;
+                p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+                p_detalle_factura_rec.cantidad := p_material_mat_rec.cantidad;
+                p_detalle_factura_rec.p_unidad := p_material_mat_rec.p_unidad;
+                p_detalle_factura_rec.bs_descuento := p_material_mat_rec.bs_descuento;
+                p_detalle_factura_rec.subtotal := p_material_mat_rec.subtotal;
+                p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+                p_detalle_factura_rec.factura_id := p_factura_rec.id;
+                --inserta registro de detalle de facatura para INSCRIPCION
+                tapi_detalle_factura.ins(p_detalle_factura_rec => p_detalle_factura_rec);
+                --llena registro hoja de vida para INSCRIPCION
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 1;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                p_hoja_vida_est_rec.metadata := NULL;
+                p_hoja_vida_est_rec.observacion := 'PAGO DE INSCRIPCION';
+                --Inserta registro hoja de vida para inscripcion
+                tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+
+
+            END IF; -- fin si el estudiante es NUEVO ingreso o no
+
+            --si el estudiante tiene algun tipo de DESCUENTO
+            IF
+                p_cond_especial_rec.descuento IS NOT NULL
+            THEN
+                --llena registro de materia con el DESCUENTO
+                p_material_mat_rec := utl_materiales.getrecdetallefac(p_cond_especial_rec.descuento);
+                -- recalcula el precio con el descuento
+              --  l_precio := ( ( ( p_detalle_factura_rec.cantidad * p_detalle_factura_rec.p_unidad ) * p_cond_especial_rec.porcentaje ) / 100 ) *-1;
+                --actualiza la tabla de precios
+              /*  UPDATE precios
+                    SET
+                        precio1 = l_precio
+                WHERE
+                    id = p_material_mat_rec.materiales_id;*/
+                --llena registro detalle_factura con el DESCUENTO
+                p_detalle_factura_rec.renglon := detalle_factura_seq.nextval;
+                p_detalle_factura_rec.tipo_item := p_material_mat_rec.tipo_item;
+                p_detalle_factura_rec.item := p_material_mat_rec.item;
+                p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+                p_detalle_factura_rec.cantidad := p_material_mat_rec.cantidad;
+                p_detalle_factura_rec.p_unidad := p_material_mat_rec.p_unidad; --l_precio; --
+                p_detalle_factura_rec.bs_descuento := p_material_mat_rec.bs_descuento;
+                p_detalle_factura_rec.subtotal := p_material_mat_rec.subtotal;
+                p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+                p_detalle_factura_rec.factura_id := p_factura_rec.id;
+                --inserta registro en detalle_factura para DESCUENTO
+                tapi_detalle_factura.ins(p_detalle_factura_rec => p_detalle_factura_rec);
+                --llena registro hova de vida para DESCUENTO
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 53;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                --si es seccion
+                if :NEW.SECCION_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+                end if; 
+                --si es cohorte
+                if :NEW.COHORTE_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+                end if;  
+                p_hoja_vida_est_rec.observacion := 'Descuento del '
+                || p_cond_especial_rec.porcentaje
+                || '%, por condición especial ('
+                || p_cond_especial_rec.descripcion
+                || ')';
+                -- inserta en hoja de vida para DESCUENTO
+                tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+            END IF; -- fin si tiene descuento
+
+        ELSE -- si el estudiante esta EXONERADO o es SUSPENDIDO
+            --si es exonerado
+            if :NEW.es_exonerado = 'S' then
+                --llena registro de hoja de vida para EXONERADO O BECADO
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 29;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                --si es seccion
+                if :NEW.SECCION_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+                end if; 
+                --si es cohorte
+                if :NEW.COHORTE_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+                end if;  
+                p_hoja_vida_est_rec.observacion := 'ESTUDIANTE EXONERADO O BECADO';
+
+             --   tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+            elsif :NEW.es_suspendido = 'S' then -- Si es Suspendido
+                --llena registro de hoja de vida para SUSPENDIDO
+                p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+                p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+                p_hoja_vida_est_rec.evento_id := 51;
+                p_hoja_vida_est_rec.fecha := systimestamp;
+                --si es seccion
+                if :NEW.SECCION_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+                end if; 
+                --si es cohorte
+                if :NEW.COHORTE_ID is not null then
+                  p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+                end if;  
+                p_hoja_vida_est_rec.observacion := 'ESTUDIANTE SUSPENDIO CURSO';
+
+              END IF; --fin si es exonerado o suspendido
+              -- inserta hoja de vida para EXONERADO O BECADO
+              tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+
+        end if;
+
+    ELSIF deleting THEN --si esta borrando registro
+        -- trae el id de la factura de la inscripcion
+        SELECT
+            factura_id
+        INTO
+            l_fact_id
+        FROM
+            inscripcion_factura
+        WHERE
+            inscripcion_id =:old.id;
+        --elimina registro de inscripcion factura
+        DELETE FROM inscripcion_factura
+        WHERE
+            inscripcion_id =:old.id;
+        --elimina registro detalle de la factura
+        DELETE FROM detalle_factura WHERE
+            factura_id = l_fact_id;
+        --elimina registro de factura
+        DELETE FROM factura WHERE
+            id = l_fact_id;
+    ELSIF updating THEN -- si esta modificando inscripcion
+
+        -- si cambio el codigo de la seccion
+        if :NEW.SECCION_ID<>:OLD.SECCION_ID then
+          -- trae el id de la factura de inscripcion_factura
+          select factura_id into l_facid from inscripcion_factura where inscripcion_id = :OLD.ID;
+          -- trae el renglon del detalle de la factura donde sea curso
+          select renglon into l_renglonid from detalle_factura where factura_id = l_facid and tipo_item='C';
+
+          -- llena el registro de materiales con la nueva seccion
+          p_material_mat_rec := utl_materiales.getrecdetallefac(:new.seccion_id,'C');
+
+          P_IGNORE_NULLS := TRUE;
+
+          -- llena el registro del detalle de la factura a modificar
+          p_detalle_factura_rec.renglon := l_renglonid;
+          p_detalle_factura_rec.item := p_material_mat_rec.item;
+          p_detalle_factura_rec.materiales_id := p_material_mat_rec.materiales_id;
+          p_detalle_factura_rec.descripcion := p_material_mat_rec.descripcion;
+
+          --modifica registro del detalle de factura
+          TAPI_DETALLE_FACTURA.UPD(
+            P_DETALLE_FACTURA_REC => P_DETALLE_FACTURA_REC,
+            P_IGNORE_NULLS => P_IGNORE_NULLS
+          );
+            -- llena registro de hoja de vida CAMBIO DE SECCION
+            p_hoja_vida_est_rec.id := hoja_vida_est_seq.nextval;
+            p_hoja_vida_est_rec.matricula :=:new.est_matricula;
+            p_hoja_vida_est_rec.evento_id := 66;
+            p_hoja_vida_est_rec.fecha := systimestamp;
+            --si es seccion
+            if :NEW.SECCION_ID is not null then
+              p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'S',:new.seccion_id);
+            end if; 
+            --si es cohorte
+            if :NEW.COHORTE_ID is not null then
+              p_hoja_vida_est_rec.metadata := get_inscripcion_json(:new.id,'C',:new.cohorte_id);
+            end if;  
+            p_hoja_vida_est_rec.observacion := 'CAMBIO DE SECCION '||utl_inscripciones.getSeccionCod(:OLD.SECCION_ID)||' PARA '||utl_inscripciones.getSeccionCod(:NEW.SECCION_ID);
+            --inserta registro de hoja de vida
+            tapi_hoja_vida_est.ins(p_hoja_vida_est_rec);
+         end if;
+   END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>CCA2DD7B-9392-63DC-5D5B-BDAA26975D7A</table>
+</TriggerOraclev10g>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_COHORTES_AUID" directorySegmentName="seg_0" id="8E3601E0-E7D0-4F1F-7A56-B7226F1C5EB1">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>T_COHORTES_AUID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+  l_fecha date;
+  l_precio number;
+  l_id_curso varchar2(10);
+  l_des_curso varchar(255);
+  l_ciudad    varchar2(255);
+  P_MATERIALES_REC FUNDAUC.TAPI_MATERIALES.MATERIALES_RT;
+  P_PRECIOS_REC FUNDAUC.TAPI_PRECIOS.PRECIOS_RT;
+
+begin
+  BEGIN
+    select fecha_ini into l_fecha from calendarios_detalle
+    where id = :NEW.PERIODO;
+
+    if :NEW.TIPO_DIPLO in ('DP','PC') then
+        select id_diplomado, descripcion into l_id_curso, l_des_curso from diplomados
+        where id = :NEW.DIPLOMADO_ID;
+
+        select upper(nombre) into l_ciudad from ciudades
+        where id_ciudad = :NEW.ID_CIUDAD;
+    elsif :NEW.TIPO_DIPLO = 'IC' then
+        l_id_curso := :NEW.ID_METODO;
+    end if;
+
+    select max(precio1) into l_precio from precios
+    where tipo_item = 'C';
+    IF INSERTING THEN
+      --Inserta Secciones nuevas
+
+            P_MATERIALES_REC.id_mat := :NEW.CODIGO;
+            P_MATERIALES_REC.tipo := :NEW.TIPO_DIPLO;
+            if :NEW.TIPO_DIPLO in ('DP','PC') then
+              P_MATERIALES_REC.descripcion := l_des_curso||' - '||l_ciudad;
+            elsif :NEW.TIPO_DIPLO = 'IC' then
+              P_MATERIALES_REC.descripcion := :NEW.ID_METODO||'|NIVEL '||lpad(:OLD.nivel,2,'0')||'|'||UTL_HORARIOS.GETHORARIO(:NEW.ID_HORARIO)||'|'||to_char(l_fecha,'DD/MM/YYYY')||'|'||utl_modalidades.getModalidad(:NEW.id_modalidad);
+            end if;
+            P_MATERIALES_REC.id_curso := l_id_curso;
+            P_MATERIALES_REC.evento := 2;
+            P_MATERIALES_REC.nivel := :NEW.NIVEL;
+            P_MATERIALES_REC.iva_exento := 'S';
+            P_MATERIALES_REC.activo := 'S';
+          --  P_MATERIALES_REC.id := 
+            P_MATERIALES_REC.seccion_id := null;
+            P_MATERIALES_REC.creado_por := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'), '^[^:]*'), sys_context('userenv', 'session_user'));
+            P_MATERIALES_REC.creado_el := SYSDATE;
+            P_MATERIALES_REC.modificado_por := null;
+            P_MATERIALES_REC.modificado_el := null;
+            P_MATERIALES_REC.cohorte_id := :NEW.ID;
+
+      TAPI_MATERIALES.INS(P_MATERIALES_REC);
+
+            P_PRECIOS_REC.id := P_MATERIALES_REC.id;
+            P_PRECIOS_REC.tipo_item := P_MATERIALES_REC.tipo;
+            P_PRECIOS_REC.fecha := SYSDATE;
+            P_PRECIOS_REC.precio1 := l_precio;
+            P_PRECIOS_REC.precio2 := 0;
+            P_PRECIOS_REC.precio3 := 0;
+            P_PRECIOS_REC.status := 'V';
+            P_PRECIOS_REC.precio4 := 0;
+            P_PRECIOS_REC.precio5 := 0;
+
+
+        TAPI_PRECIOS.INS(P_PRECIOS_REC);
+
+
+    ELSIF UPDATING THEN
+
+        if :OLD.TIPO_DIPLO in ('DP','PC') then
+          update materiales set descripcion = l_des_curso||' - '||l_ciudad
+          where tipo=:OLD.TIPO_DIPLO and cohorte_id = :OLD.ID;
+        elsif :OLD.TIPO_DIPLO = 'IC' then
+          update materiales set descripcion = :NEW.ID_METODO||'|NIVEL '||lpad(:OLD.nivel,2,'0')||'|'||UTL_HORARIOS.GETHORARIO(:NEW.ID_HORARIO)||'|'||to_char(l_fecha,'DD/MM/YYYY')||'|'||utl_modalidades.getModalidad(:NEW.id_modalidad)
+          where tipo=:OLD.TIPO_DIPLO and cohorte_id = :OLD.ID;
+        end if;
+
+    END IF;
+  END;
+  exception
+    when no_data_found then null;
+end;
+
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>BC240BCF-97ED-A1B6-0826-6DD1035F6C6D</table>
+</TriggerOraclev10g>

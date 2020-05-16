@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PROYECTO" directorySegmentName="seg_0" id="EACDBBE8-8287-63DE-2D8D-F768909F7B79">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjName>PROYECTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</UserOraclev10g>

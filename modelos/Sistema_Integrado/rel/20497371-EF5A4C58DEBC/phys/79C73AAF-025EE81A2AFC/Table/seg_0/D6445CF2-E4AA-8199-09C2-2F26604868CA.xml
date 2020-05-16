@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SG_MENSAJES" directorySegmentName="seg_0" id="D6445CF2-E4AA-8199-09C2-2F26604868CA">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>39F0858C-3334-A924-DF32-339898F64E93</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="09B6F383-48DD-57E2-64C7-C7D9820C5E8A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="USU_ID_DE" id="30ED3D70-3372-0F28-D7AE-5E84724902C8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="FEC_RECEPCION" id="46DF8766-6C52-2F8B-20EB-D414BAD717F8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NRO_ENVIO" id="58FEC551-AAF2-169F-EB4B-03F4EAC14F7E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ASUNTO_MSG" id="617E1105-E7EC-E44D-ECD9-A43A7A3AB09F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="USU_ID_PARA" id="C4D575C3-CA27-ACC6-395A-1FC6102D61B8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="CONTENIDO_MSG" id="D9A295BA-BB23-FA0D-FF81-428FA17A584D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="TP_MEN_ID" id="FC6E2020-D896-7664-340F-2656BBE48309">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SG_MENSAJES_PK" id="29F573DA-7A0D-B747-9309-B71FDC565FF1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<segment>8D30959A-8F8E-DE29-D15B-E3AC02534C64</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MEN_USU_PARA_FK" id="720E8340-FEE6-B2CE-F2A7-DE04A778F955">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:26:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MEN_TP_MEN_FK" id="DFB51150-5A90-604F-603D-52682CFD0396">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MEN_USU_DE_FK" id="E3ADFFE8-1E50-8825-98E0-00EF289EC3A8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SG_MENSAJES_PK" id="06CD3330-86EF-8F22-2E7B-418B6C9B413C">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<enable>NO</enable>
+<indexSort>SORTED</indexSort>
+<validate>NO</validate>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

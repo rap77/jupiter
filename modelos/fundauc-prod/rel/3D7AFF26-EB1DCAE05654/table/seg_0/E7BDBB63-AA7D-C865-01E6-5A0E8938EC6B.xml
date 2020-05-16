@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7BDBB63-AA7D-C865-01E6-5A0E8938EC6B" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CONDICIONES_ESPECIALES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CONDICIONES_ESPECIALES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CONDICIONES_ESPECIALES]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONDICION" id="DBF27F71-5036-DAC8-A64C-D5E2976063A0">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>ID_CONDICION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_CONDICION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CONDICIONES_ESPECIALES_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>CONDICIONES_ESPECIALES_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="DESCRIPCION" id="A09C0D85-A125-BE32-6ACF-209702EDF1E4">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCUENTO" id="354716E7-B6BF-031F-A996-BB2406795052">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>DESCUENTO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCUENTO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORCENTAJE" id="C724F261-0EDE-0EB5-8937-3FDA76777F17">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>PORCENTAJE</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[PORCENTAJE DE DESCUENTO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A57CAF4A-BCFF-C90D-59E3-05C89908FFB7" name="CONDICIONES_ESPECIALES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CONDICIONES_ESPECIALES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBF27F71-5036-DAC8-A64C-D5E2976063A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC4BEE68-A011-629B-05CC-AFA332FB9239" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CONDICIONES_ESPECIALES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CONDICIONES_ESPECIALES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBF27F71-5036-DAC8-A64C-D5E2976063A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

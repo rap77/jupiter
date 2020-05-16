@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="861B6809-E1BC-B18A-CB59-C2257D3B030F" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="TIPO_ESTUDIANTE">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>TIPO_ESTUDIANTE</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO_ESTUDIANTE]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_EST" id="AA4504BA-65D9-A5F5-FE0A-E7FB562AF914">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>TIPO_ESTUDIANTE</sourceObjSchema>
+<sourceObjName>ID_TIPO_EST</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_TIPO_EST]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="5BF01FFA-24D1-FD2D-5A9B-83645181212A">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>TIPO_ESTUDIANTE</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F52E7D4-C793-583E-82F8-C869881A760D" name="TIPO_ESTUDIANTE_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>TIPO_ESTUDIANTE_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4504BA-65D9-A5F5-FE0A-E7FB562AF914"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A56662BD-57D8-B042-5E1D-04B309CA70A6" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="SYS_C0018611">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SYS_C0018611</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AA4504BA-65D9-A5F5-FE0A-E7FB562AF914"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

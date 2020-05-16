@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="6BC48102-6284-95A7-386D-6B2F715162FD" containerWithKeyObject="0C5423A8-50C5-DD45-ED48-1BE83A22112C" localFKIndex="0DD383AA-3CD7-0BDE-50A0-C5B31EC56752" name="PER_NAT_GRA_ACA_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BAFE132C-7785-74BC-2EB9-5E70CEE4FB52</importedID>
+<referredTableLongName>GL_GRADOS_ACADEMICOS</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>82C3293E-F9FA-679A-CA03-FAA1FC061208</referredTableID>
+<keyObject>D3DD5816-ADD2-02A5-5BF5-0618A16BC4C6</keyObject>
+<referredKeyID>D3DD5816-ADD2-02A5-5BF5-0618A16BC4C6</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

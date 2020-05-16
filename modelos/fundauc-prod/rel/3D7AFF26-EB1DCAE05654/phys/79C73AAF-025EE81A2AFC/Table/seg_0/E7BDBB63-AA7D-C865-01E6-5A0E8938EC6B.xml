@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CONDICIONES_ESPECIALES" directorySegmentName="seg_0" id="E7BDBB63-AA7D-C865-01E6-5A0E8938EC6B">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCUENTO" id="354716E7-B6BF-031F-A996-BB2406795052">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="A09C0D85-A125-BE32-6ACF-209702EDF1E4">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PORCENTAJE" id="C724F261-0EDE-0EB5-8937-3FDA76777F17">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CONDICION" id="DBF27F71-5036-DAC8-A64C-D5E2976063A0">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CONDICIONES_ESPECIALES_PK" id="AC4BEE68-A011-629B-05CC-AFA332FB9239">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CONDICIONES_ESPECIALES_PK" id="A57CAF4A-BCFF-C90D-59E3-05C89908FFB7">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>AC4BEE68-A011-629B-05CC-AFA332FB9239</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3F138ED0-F688-FA12-1266-707E0E373AFD" containerWithKeyObject="2B5E8ABF-19C3-A881-D5D9-87A35FB97156" localFKIndex="38A2D23A-AA87-E9AB-8A00-57659255219D" name="SECCIONES_MODALIDADES_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SECCIONES_MODALIDADES_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.MODALIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C3FED5DE-47D0-EFD6-7DCA-B99672D3165E</referredTableID>
+<keyObject>F0BDCB92-4C77-7B18-F6D0-5D7E40FA9615</keyObject>
+<referredKeyID>F0BDCB92-4C77-7B18-F6D0-5D7E40FA9615</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MODALIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

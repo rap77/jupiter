@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_PERSONAS_CUENTASBAN_TS_CUENTAS_BANCARIAS_FK" directorySegmentName="seg_2" id="230601C6-9C9F-A8C2-D310-277886CF6215">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 20:53:29 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>8B216F8D-C5E2-F157-49AE-4A5106AC391C</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>27893872-F751-17F9-AA64-3B58753CC2C3</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>E41EB4C4-EA29-0385-BC5D-98D6F0B00207</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

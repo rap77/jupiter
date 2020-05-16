@@ -1,0 +1,244 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CE7644D3-438F-6881-67A2-46AFFF4A0C90" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="DETALLE_FACTURA">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>DETALLE_FACTURA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[DETALLE_FACTURA]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RENGLON" id="29944B4A-8DF6-125E-9641-75BF2AD09CF4">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>RENGLON</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[RENGLON]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,12,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>DETALLE_FACTURA_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>DETALLE_FACTURA_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="TIPO_ITEM" id="672F1EA9-1A6D-E889-8DFD-103D11FACE6F">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>TIPO_ITEM</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[TIPO_ITEM]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AB536315-F7E3-DEC4-038D-4C919902FDC7" referredColumn="94482FD4-E4A8-BB46-4386-63619D6E7828"/>
+</associations>
+</Column>
+<Column name="ITEM" id="E977A3A3-7013-4097-C3B7-B8BA7465DEF9">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>ITEM</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="9FF0C688-48AA-56AB-A716-527696934929">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="36CEAE17-37B8-E1A1-7A91-70922403337C">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[CANTIDAD]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="P_UNIDAD" id="6E0BFB15-4575-78A5-DC46-C740B213D0DC">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>P_UNIDAD</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[P_UNIDAD]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BS_DESCUENTO" id="1060C8DD-2E9F-F44E-EF39-A98535D59266">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>BS_DESCUENTO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[BS_DESCUENTO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBTOTAL" id="25CBBD1C-7E22-0D02-5B8D-39DCB0C7C373">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>SUBTOTAL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[SUBTOTAL]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIALES_ID" id="9FE527A0-0E44-54C0-CC98-D55633C8A4D0">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>MATERIALES_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="61170C08-5763-97B2-7EED-5CD524F9CCF7" referredColumn="AD62AD43-1232-68E6-4CF3-A2E8DA91EF25"/>
+</associations>
+</Column>
+<Column name="FACTURA_ID" id="F3236A56-6918-2EC0-1DDC-984DF4B2071A">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>FACTURA_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[id de la factura]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="206D058A-F7B7-F824-CE0B-6FB92628CDDA" referredColumn="977DFF97-3CA9-0869-E684-19B1D5080E0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B73B857-A675-0AF0-F5AA-30A7E5DA87BB" name="DETALLE_FACTURA_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>DETALLE_FACTURA_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29944B4A-8DF6-125E-9641-75BF2AD09CF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2C4D62F-3506-8E61-E61E-1AD1B815ED81" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="SYS_C0018532">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SYS_C0018532</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29944B4A-8DF6-125E-9641-75BF2AD09CF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70896F37-F0EE-5D5A-8FB0-4DCD4B34BCFF" name="DET_FAC_MATERIALES_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FE527A0-0E44-54C0-CC98-D55633C8A4D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3ECCA1C5-CFD0-3168-CA94-4B549B2A07A4" name="DET_FAC_TIPO_MAT_FK1">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="672F1EA9-1A6D-E889-8DFD-103D11FACE6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDB82E40-C01C-3E1C-1C0B-ED6AA14D4978" name="FK_FACT">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F3236A56-6918-2EC0-1DDC-984DF4B2071A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

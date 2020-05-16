@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="9A54E251-9166-EB33-D637-03F1FCB6C845" name="IN_CATEG_TIPO_UNID_ORG">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>55C91C1B-50DA-8C71-B926-9E4FD344735C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_TIPO_UNIDAD_ORG" id="4135DA18-996D-F7BD-1CF9-E96A415B77C4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>4CE1635F-25ED-0787-75A2-C59E90C9CE87</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_2018144773</constraintName>
+<referedAttribute>7D5F0B8D-A585-A164-265F-BD6B1E181507</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_CATEG_ADM_SUGEBIP" id="11A863D6-42F1-6BCF-6ACA-DCBF662AA5A1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Identificador Unico Categoria SUGEBIP</commentInRDBMS>
+<generatorID>1A6E04C3-A84B-6FF4-63A1-457D5FCA50EE</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>62762CC5-990E-BB40-203E-694D6A7ADC6C</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="01C4364E-5D9E-AD80-435A-D731F0627B41" name="IN_CATEG_TIPO_UNID_ORG_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>8071198F-026E-21FB-8E14-B6935CD3B0D5</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4135DA18-996D-F7BD-1CF9-E96A415B77C4</attributeRef>
+<attributeRef>11A863D6-42F1-6BCF-6ACA-DCBF662AA5A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

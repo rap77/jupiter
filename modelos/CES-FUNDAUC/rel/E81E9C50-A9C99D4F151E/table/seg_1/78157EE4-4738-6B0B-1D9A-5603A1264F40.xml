@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="78157EE4-4738-6B0B-1D9A-5603A1264F40" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="MATERIAL_DIGITAL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>MATERIAL_DIGITAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<comment>Tabla de Material Digital</comment>
+<commentInRDBMS>Tabla de Material Digital</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>12AD05ED-ECE8-8F07-B2A9-49904D7018AE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PDF_ID" id="CCDEBE4A-FF66-58FE-3ADD-A1777690E00B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MATERIAL_DIGITAL</sourceObjSchema>
+<sourceObjName>PDF_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>17EAF66F-10C9-B671-21D1-85B7031B1E69</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PDF_NOMBRE" id="5BC97716-45B8-D2D3-15EA-A1DA829DE901">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MATERIAL_DIGITAL</sourceObjSchema>
+<sourceObjName>PDF_NOMBRE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>BE66FBAE-FFE9-C196-8D11-15FD2494ABF4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PDF_DESCRIPCION" id="8E135B6D-F6A4-FE94-C2B8-339C6497B518">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MATERIAL_DIGITAL</sourceObjSchema>
+<sourceObjName>PDF_DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>93255785-5FB7-4F69-5079-97EC3B4A26C2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PDF_BLOB" id="EFA71415-CDD1-9833-3C05-5BE21BE63E95">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MATERIAL_DIGITAL</sourceObjSchema>
+<sourceObjName>PDF_BLOB</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>C3792BA9-C7B1-D4ED-9C22-7BE97259596F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7627CE85-BD16-51B4-8580-1649B230562C" name="MATERIAL_DIGITAL_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>MATERIAL_DIGITAL_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>8DD541EF-4DBF-C645-14F7-B1DEF65192C6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCDEBE4A-FF66-58FE-3ADD-A1777690E00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08AF90CF-4D47-AEA1-8C53-196478AD35D2" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="MATERIAL_DIGITAL_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>MATERIAL_DIGITAL_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>5BC91752-932B-E54C-36F6-B15DCAB1162B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCDEBE4A-FF66-58FE-3ADD-A1777690E00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

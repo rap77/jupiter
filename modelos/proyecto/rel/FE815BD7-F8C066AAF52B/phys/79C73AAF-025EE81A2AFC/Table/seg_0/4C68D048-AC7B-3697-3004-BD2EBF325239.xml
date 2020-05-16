@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SG_USUARIOS_ROLES" directorySegmentName="seg_0" id="4C68D048-AC7B-3697-3004-BD2EBF325239">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:49 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ROL_ID" id="AC310E30-C88A-F344-E77F-A9B194A8DC31">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USU_PER_ID" id="D4345F24-C8CB-5ACA-B196-8BE4B02CF418">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SG_USUARIO_ROL_PK" id="11E691FD-6C0A-1829-6212-7FD2BEA44157">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USU_ROL_ROL_FK" id="4043D410-8CCF-89B6-8522-BB124D6FA1DD">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="USU_ROL_USU_FK" id="5D9501E9-BE19-8DF8-150A-706C64B44C7B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SG_USUARIOS_ROLES_PK" id="4CFEF90E-137C-572F-3D07-26D1EC79E154">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:58:48 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

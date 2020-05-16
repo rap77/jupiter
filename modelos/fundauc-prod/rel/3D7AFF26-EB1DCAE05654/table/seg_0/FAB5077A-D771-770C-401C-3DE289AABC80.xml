@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAB5077A-D771-770C-401C-3DE289AABC80" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CALENDARIOS">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CALENDARIOS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[CALENDARIOS]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CALENDARIO" id="8FD162AA-96A3-075E-3EB7-6EB1C0CFAC47">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CALENDARIOS</sourceObjSchema>
+<sourceObjName>ID_CALENDARIO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_CALENDARIO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CALENDARIOS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>CALENDARIOS_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="DESCRIPCION" id="32D41C97-10A8-2755-8513-8568F95BD47D">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CALENDARIOS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="3C6FD836-927C-771E-3553-304D8A7126AD">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CALENDARIOS</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ACTIVO SI O NO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_CAL" id="9B2B96DC-6AA8-E45D-2ADC-14605E3D4241">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CALENDARIOS</sourceObjSchema>
+<sourceObjName>TIPO_CAL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;I&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16AC9704-0D43-C877-8928-DAFEEE42736D" name="CALENDARIOS_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CALENDARIOS_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FD162AA-96A3-075E-3EB7-6EB1C0CFAC47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD5F50CF-5286-B0F8-2387-1BD94330EFBA" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="SYS_C0018513">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SYS_C0018513</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8FD162AA-96A3-075E-3EB7-6EB1C0CFAC47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

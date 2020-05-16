@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ESTADOS" directorySegmentName="seg_0" id="13AE7B54-B802-C29A-BFCC-7BAB14BD7002">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ESTADO" id="063E307F-601B-AFB1-0D74-68B0BA4EFFE3">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="E18098FA-DB05-8811-1075-31AF06C8F69B">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SYS_C0018552" id="2F54B04C-2F74-3F69-01FE-47EFB4EEB584">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ESTADOS_PK" id="E894D217-2BDA-D735-29AB-E377839DD091">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>2F54B04C-2F74-3F69-01FE-47EFB4EEB584</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

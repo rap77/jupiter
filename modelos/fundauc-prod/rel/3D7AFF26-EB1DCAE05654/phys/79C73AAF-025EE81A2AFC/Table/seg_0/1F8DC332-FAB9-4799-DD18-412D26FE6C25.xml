@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CTAXCOB" directorySegmentName="seg_0" id="1F8DC332-FAB9-4799-DD18-412D26FE6C25">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="3DDE594C-E6DF-2FD2-A5A4-8264A2370803">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="MONTO" id="7003E6FD-152C-54AE-A0ED-BF64CE131BC4">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA" id="96E4B333-08E6-179A-63F1-F986F9F93488">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CLIENTE_ID" id="BFA954E5-8713-C8BE-193B-F27AFE0CB7F2">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CREDITO" id="E4789E37-D0D0-BC3E-1915-A82200AA8E44">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FACTURA_ID" id="EDDECA8E-2053-3885-B0BF-74B1557110A2">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPOSITO_ID" id="FD88B833-552D-1068-1FFD-FBE9FA9137C9">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CTAXCOB_PK" id="ED58BDA9-68FF-ACEE-79F8-03CAB03F6206">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CTAXCOB_PK" id="B88E43F1-78B8-33D0-E0B3-6C55876A1646">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>ED58BDA9-68FF-ACEE-79F8-03CAB03F6206</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

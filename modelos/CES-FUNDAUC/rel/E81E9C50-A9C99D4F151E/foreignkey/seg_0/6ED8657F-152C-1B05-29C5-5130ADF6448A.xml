@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6ED8657F-152C-1B05-29C5-5130ADF6448A" containerWithKeyObject="1C48BDBD-7B21-A8B6-53B0-559179BE2211" localFKIndex="A0583667-BC5C-CCD1-F7AA-DDEE34722F50" name="SECCIONES_METODOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:11:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.METODOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4BF0E7F6-DA35-84DB-837A-1450BFBB8814</referredTableID>
+<keyObject>86E9CE1E-AFE3-3C26-86D8-F88853C4CC70</keyObject>
+<referredKeyID>86E9CE1E-AFE3-3C26-86D8-F88853C4CC70</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_METODO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>CEC23256-843A-4D04-86A2-4C096921063F</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

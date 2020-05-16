@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RH_PROFESION" directorySegmentName="seg_0" id="D584CB77-75E2-44D7-F7B7-99FECBDB91F7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="65B29985-5C95-4999-63B2-B62DAF4CCCD1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_NIVEL_ESTUDIO" id="AD7C0BA8-43B7-98E6-DA25-3AB3CFBE94AC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D4E193E8-0F25-E09F-CB61-8F859463C8FB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="RH_PROFESION_PK" id="F716BB9A-0603-6145-1AA2-0B5CEDA3F724">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="RH_PROFESION_RH_NIVEL_ESTUDIO_FK" id="F7D91670-2B99-795B-ACFD-CD02B1A43AC7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:26:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RH_PROFESION_PK" id="C34E2E28-D114-4298-DA3E-1641671EAD26">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

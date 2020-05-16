@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="136587A4-D66C-BBAA-1950-78B5F19C39EB" name="GL TIPOS DIRECCIONES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></commentInRDBMS>
+<generatorID>D389BAE9-B530-8881-2433-E26E1D9C5E5F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_DIR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="69763D3F-2DD8-924B-4B82-C50A49DE1770">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></commentInRDBMS>
+<generatorID>B0D1C07E-C4FC-612F-DA4B-B75596A7F694</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1366185233</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="56E1405F-8CB6-CA4D-CBB6-315B9FBDF2B2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></commentInRDBMS>
+<generatorID>C23B1382-97D9-03E3-E35C-D1B4ECE3D537</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1A545859-2F67-3FAB-B74A-3345A7EF42D4" name="GL_TIPOS_DIRECCIONES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>E9E401B1-CD05-C2C8-4952-37E1731BD296</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>69763D3F-2DD8-924B-4B82-C50A49DE1770</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

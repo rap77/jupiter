@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E00D59AF-3DF6-8A7D-B151-E7FE9894DFE5" containerWithKeyObject="FD1A0374-5AAA-ABD6-3E38-88484B87A0CD" localFKIndex="F562C1C7-F33E-8FB8-6A5B-BB96A6C112BB" name="PER_NAT_GRP_SANG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:44:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_GRUPOS_SANGUINEOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>9351AAB0-49D5-887F-9707-5EA59A831D2B</referredTableID>
+<keyObject>23885350-558C-4F8B-6F6B-6F487A10D91E</keyObject>
+<referredKeyID>23885350-558C-4F8B-6F6B-6F487A10D91E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

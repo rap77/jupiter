@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E625EEA5-6D6A-A91D-C19D-44119FA89981" name="GL_TIPOS_PROVEEDORES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Proveedor: si es de bien o de servicio o ambos</comment>
+<commentInRDBMS>Tipo de Proveedor: si es de bien o de servicio o ambos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B47D013B-0C7E-51C6-055F-4BC4433E2A1A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C27F0B9A-4670-E9C6-95C3-A7285472CC2F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>identificador unico de tipo de proveedor</comment>
+<commentInRDBMS>identificador unico de tipo de proveedor</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BB2EFE8D-A51F-F2B2-F789-883F73282C48</importedID>
+<constraintName>ID}_1499284230</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="06C0C114-A778-73BF-8665-F4E1D4CBC082">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del tipo de proveedor ej. Bienes, Servicios,</comment>
+<commentInRDBMS>Descripcion del tipo de proveedor ej. Bienes, Servicios,</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8DD2AB50-DE64-ED3A-3F05-1983AC627E6D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C63ECCE0-A185-BF85-C660-D5F3357503EA" name="GL_TIPOS_PROVEEDORES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1FFEAB54-88D8-8262-FC52-B80EED36B9AE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C27F0B9A-4670-E9C6-95C3-A7285472CC2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE15891D-9978-77D2-C22A-D391FC124DB9" name="GL_TIPO_PROVEEDOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FA0ECFC5-7B73-48C2-0D6F-401C732C0E94</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C27F0B9A-4670-E9C6-95C3-A7285472CC2F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

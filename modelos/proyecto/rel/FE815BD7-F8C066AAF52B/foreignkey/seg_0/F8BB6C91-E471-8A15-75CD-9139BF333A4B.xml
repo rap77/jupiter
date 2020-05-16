@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F8BB6C91-E471-8A15-75CD-9139BF333A4B" containerWithKeyObject="AE8819DD-BD67-611E-BBED-FDD853CF992B" localFKIndex="9D0CD1C6-60A1-3F31-B53C-D8886F155552" name="GL_GACETA_FK0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>07EF5FA6-D3C0-A404-1ABF-FE782A850052</importedID>
+<referredTableLongName>GL_TIPO_GACETA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>AC8928CB-B7A7-9A94-4026-482E77CF75FE</referredTableID>
+<keyObject>B356544C-EACA-211A-593F-815EEA222276</keyObject>
+<referredKeyID>B356544C-EACA-211A-593F-815EEA222276</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

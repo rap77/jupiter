@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B700E651-A24D-C210-2D06-790E3DDFC688" name="GL_MEDICO_ESPECIALIDAD">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacion entre medico y especialidades si este es especialista]]></commentInRDBMS>
+<generatorID>D9DCCB36-514F-ECA9-EB1E-C54144111476</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ESPECIALIDAD_MEDICO" id="195B23C2-B0C6-7BC0-C264-CCC4748B53C9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de la Especialidad]]></commentInRDBMS>
+<generatorID>81F5430D-ED03-7EE2-30A7-56C7F4B6B1EA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1230399008</constraintName>
+<referedAttribute>8210D07B-9123-B177-508F-FA669274173C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID" id="67F3ABBD-575E-769A-328D-E29CD377E5E6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-14 17:03:01 UTC</createdTime>
+<generatorID>F837A622-8E24-C6F6-3416-4B8A42EC5C01</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>ED2A7F8D-2B51-DCA0-7566-9A7BC0CEEE33</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C456A33-A19A-DEDE-2AEC-3416DE428B38" name="GL_MEDICO_ESPECIALIDAD_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>2174E1E1-56B4-DC17-5EE9-D1713F1A5A5B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>195B23C2-B0C6-7BC0-C264-CCC4748B53C9</attributeRef>
+<attributeRef>67F3ABBD-575E-769A-328D-E29CD377E5E6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

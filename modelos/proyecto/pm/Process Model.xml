@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="D6ACD994-ED03-000E-F426-3E7BD36270EA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:27:55 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="EC706B88-6105-8ABB-9EBD-4640D5D3BF49" name="IN_TIPO_POLIZA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Tipos de Poliza de Seguros]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Tipos de Poliza de Seguros]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>852F0787-0460-A85D-2D41-1A41B9658252</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4BA5BB66-79FF-9862-8405-D7DE336DF023">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de Poliza]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de Poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EC7544DF-F135-86E1-B11F-9BF2284DBD14</importedID>
+<constraintName>ID}_1636201409</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="1AB99E67-A3D0-7811-B112-DFBB9D36EC5A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Poliza]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F62CFDAF-F098-99B6-8059-E07EF5B09B03</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="10A997CE-9E9A-433A-2344-79E02BD2668A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Codigo Sugerido por SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo Sugerido por SUDEBIP]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8BF9F40F-9B54-C551-20B6-736DAFC2CDA7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="475D4520-8311-7DED-4352-54E739C90754" name="IN_TIPO_POLIZA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AB9E444A-8400-4CE2-7EC1-8F84D3A3C16E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BA5BB66-79FF-9862-8405-D7DE336DF023"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C924FE4D-681F-0D67-6FC9-DDB173A39ACD" name="IN_TIPO_POLIZA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7EAAA3C9-F4CD-79EE-152D-9459CA7EBA82</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4BA5BB66-79FF-9862-8405-D7DE336DF023"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

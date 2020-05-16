@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DETALLE_FACTURA" directorySegmentName="seg_0" id="0ECEDA07-1D70-850C-BB4A-98099A9DFB6E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>BE105850-868F-6A0A-51C2-EDCF15777420</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="165BF125-C0FF-7BFF-18DA-70410D422C7A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUBTOTAL" id="3E6F68D6-EEE6-86B1-6CBD-AD804307A2AB">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FACTURA_ID" id="49C5EA3C-D567-67A3-FE1F-98734C3F30E9">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:39:10 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="RENGLON" id="4DF6F242-D2B2-2F8A-5315-BBE5BD645F52">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXTENSION" id="727F075A-C1ED-9CE1-D7CD-C38D8D606B8E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CANTIDAD" id="7A9AADBE-8A30-4741-4A78-46DF394151AB">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MATERIALES_ID" id="7D57F791-1514-5109-6641-3DCAE3F731B1">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:17:02 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="P_UNIDAD" id="86C00D4C-00C1-313B-94C1-5AB58A463863">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_ITEM" id="AC1C46AE-9B80-AC56-12A3-2A74B056E7C5">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="BS_DESCUENTO" id="BE3BE58C-DDBA-567E-CD1C-6AE680147FE2">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_FACT" id="C1DF80D7-81B9-D5C4-0392-1145BD7C668B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SYS_C0018532" id="99CE2366-60AE-227C-7A2A-D9018EBF4C79">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>1A567F74-2DE3-3B4B-B68B-3335FEEAF7E1</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_FACT" id="3ED5058E-A731-82AF-D7CA-34C04D706376">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DETALLE_FACTURA_TIPO_MATERIAL_FK" id="A6929144-0F1D-5858-9018-C0804BB42D64">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:51:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DETALLE_FACTURA_MATERIALES_FK" id="FECBA26B-7C2D-00C7-FB91-E1BE6CAC0ED1">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:59:23 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<enable>NO</enable>
+<validate>NO</validate>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DETALLE_FACTURA_PK" id="E51F62B4-ED30-9DC7-A4F3-B4880C85C1A4">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<enable>NO</enable>
+<existingIndex>99CE2366-60AE-227C-7A2A-D9018EBF4C79</existingIndex>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+<validate>NO</validate>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

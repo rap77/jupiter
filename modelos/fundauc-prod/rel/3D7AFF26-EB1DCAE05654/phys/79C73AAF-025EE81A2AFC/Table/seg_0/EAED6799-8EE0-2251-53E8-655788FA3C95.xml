@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CIUDADES" directorySegmentName="seg_0" id="EAED6799-8EE0-2251-53E8-655788FA3C95">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_ESTADO" id="9948DBEE-40A4-5BD9-DB0C-487907421505">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_CAPITAL" id="C48EF740-B44D-28EE-C3E6-7021277AB333">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="C6E81C31-3747-D1C1-6319-C752185EEDF0">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CIUDAD" id="EAE94772-AA83-BECA-05D1-7E927943B0A4">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<autoIncrementDDL>TRIGGER</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SYS_C0018514" id="60B96E0B-FA77-3E68-B46D-F366FB92B15A">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CIUD_EST_FK" id="A3D092C3-7EBF-02F4-6BE8-B05A47818959">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CIUDADES_PK" id="78E5AD07-4432-4603-7B5D-ED0D00EC6932">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>60B96E0B-FA77-3E68-B46D-F366FB92B15A</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

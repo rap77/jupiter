@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BC433E46-5B3F-7210-B94B-03FD6697B8FB" name="GL ESTADOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.</comment>
+<commentInRDBMS>Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.</commentInRDBMS>
+<generatorID>5740AF36-A19A-081E-70C9-FD92B1BEB4D9</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>EST</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="31710E58-88E8-FE74-BF5A-30B89D52F7CB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno del Estado, Departamento o Provincia.</comment>
+<commentInRDBMS>Número de Identificación Interno del Estado, Departamento o Provincia.</commentInRDBMS>
+<generatorID>B5D97FA9-81F7-B278-B3F6-BC81C2EED107</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_80948839</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NOMBRE" id="547B144F-4D80-0D71-82D5-3DF64D4CCCFA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Nombre del Estado, Departamento o Provincia. Ej: Carabobo.</comment>
+<commentInRDBMS>Nombre del Estado, Departamento o Provincia. Ej: Carabobo.</commentInRDBMS>
+<generatorID>DB8F3282-8606-5F11-32C7-C77218DF4EB1</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GL_PAISES_ID" id="186BB25F-7C44-5FC9-B979-A093E81C4F80">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Código del País. Ej: VE, US.</comment>
+<commentInRDBMS>Código del País. Ej: VE, US.</commentInRDBMS>
+<generatorID>A50522ED-9367-1CCD-4796-B9BBB3217C67</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9FD2E400-2DC0-5E55-C2F5-EA305F7083EF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DDB21446-10BC-80D8-968D-A258B1A446F6" name="GL_ESTADOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6C33CF66-530B-015A-5779-F91BFCB1BC39</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>31710E58-88E8-FE74-BF5A-30B89D52F7CB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

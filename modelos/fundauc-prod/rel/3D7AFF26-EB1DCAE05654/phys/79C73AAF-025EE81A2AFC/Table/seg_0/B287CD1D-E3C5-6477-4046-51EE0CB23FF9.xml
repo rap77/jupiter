@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PROGRAMA_ACADEMICO" directorySegmentName="seg_0" id="B287CD1D-E3C5-6477-4046-51EE0CB23FF9">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ACTIVO" id="263E8CE9-60B5-98CB-8F1D-AB1138EACF82">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+<enable>NO</enable>
+<validate>NO</validate>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="91B60093-8D4B-D173-06B1-62202BA03C72">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D87B5413-53AE-F71B-07AC-F0CE6E53029F">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SYS_C0018602" id="123672E8-BEDA-3C02-BEF6-DDA50045672D">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PROGRAMA_ACADEMICO_PK" id="066A4D4E-4E85-F7DC-7F3C-BEEB39CEB37E">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>123672E8-BEDA-3C02-BEF6-DDA50045672D</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

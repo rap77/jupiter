@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C7F85CEC-F471-A905-CA86-EA8E4B92B66C" name="IM_TIPO_IMPUESTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Impuesto. 1 IVA Normal. 2 IVA Margarita. 3 IVA Excento. 4 ISLR Personas Naturales.</comment>
+<commentInRDBMS>Tipo de Impuesto. 1 IVA Normal. 2 IVA Margarita. 3 IVA Excento. 4 ISLR Personas Naturales.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DAA92A86-AEE3-5364-08D9-EA4C78D00593</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="506490DC-3345-CDB0-FC18-3BF84FB2323F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Tipo de Impuesto.</comment>
+<commentInRDBMS>Número de Identificación Interno del Tipo de Impuesto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>54E15543-EC8D-A02B-1186-69E3BACDE4B5</importedID>
+<constraintName>ID}_1566794521</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_GRUPO_IMPUESTO" id="F5044DA1-6596-7697-875E-025005D4EFCC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Grupo de Impuesto.</comment>
+<commentInRDBMS>Número de Identificación Interno del Grupo de Impuesto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9D5724CF-2383-8C79-09DB-B1C85186FF3D</importedID>
+<constraintName>ID}_554715249</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="FD2A41DA-C13C-852D-F921-DF239CB0B33F" referredColumn="2929985F-0060-7457-60A2-F05F7146CB51"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION_TIPO_IMPUESTO" id="8F2EB143-8F35-1442-5668-C63A6BA9E756">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Tipo de Impuesto. Ej: IVA Exento.</comment>
+<commentInRDBMS>Descripción del Tipo de Impuesto. Ej: IVA Exento.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6B14BBA3-46E5-C760-500A-E6A2E5B92AE1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1AA1BB7F-B9C2-08F1-7DE7-852EFFF04BB9" name="IM_TIPO_IMPUESTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E4150804-1556-C09C-A4D9-254FB827C879</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="506490DC-3345-CDB0-FC18-3BF84FB2323F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34DB78ED-61A1-E484-186A-7702EA69202C" name="IM_TIPO_IMPUESTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8177220F-6004-9B97-D570-6A52635C7A91</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="506490DC-3345-CDB0-FC18-3BF84FB2323F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ED508EB-786D-1F3F-145F-EDE1A16A39D7" name="IM_TIPO_IMPUESTO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5044DA1-6596-7697-875E-025005D4EFCC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

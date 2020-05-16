@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB04909E-4112-7956-FA73-378664C57B03" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PARROQUIAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PARROQUIAS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<comment><![CDATA[Parroquia. Ej: 1 San José.]]></comment>
+<commentInRDBMS><![CDATA[Parroquia. Ej: 1 San José.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>PARR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="95854F39-A1B5-547A-FAA9-49FBE8576DDF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PARROQUIAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Parroquia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MUNICIPIO_ID" id="1F6792CC-1C16-0023-C070-0A13C0AA5EC3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PARROQUIAS</sourceObjSchema>
+<sourceObjName>MUNICIPIO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<comment><![CDATA[Municipio de la Parroquia. Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Municipio de la Parroquia. Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARR_MUN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_MUN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="44E1B6B6-1696-986B-5141-1C0A792DD502" referredColumn="3070D1E0-47B8-AB72-2A08-DBF7DE36A467"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="7CB5D23D-F24E-2E7D-F21D-DB387B8A86F0">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PARROQUIAS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<comment><![CDATA[Nombre de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de la Parroquia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_NOMBRE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5EF4F11-CFE7-688F-5469-1C29DDE9708C" name="GL_PARROQUIAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PARROQUIAS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95854F39-A1B5-547A-FAA9-49FBE8576DDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB64DC1C-3439-AB77-86F0-ABF4D0AB6E60" name="PARROQUIAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PARROQUIAS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:55:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95854F39-A1B5-547A-FAA9-49FBE8576DDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BF61FEE-2499-AA81-DF40-25CD87B6B224" name="PARR_MUNICIPIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:26:13 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F6792CC-1C16-0023-C070-0A13C0AA5EC3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

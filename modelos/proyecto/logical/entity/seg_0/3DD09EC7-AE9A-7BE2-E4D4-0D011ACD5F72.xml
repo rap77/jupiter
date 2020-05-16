@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3DD09EC7-AE9A-7BE2-E4D4-0D011ACD5F72" name="GL_TIPO_ASEGURADORA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla de Tipos de Aseguradora Ej. Empresa de Seguros, de Reaseguros, Sociedad de Corretaje de Seguros, de Reaseguros, Auxiliares, Medicina Prepagada]]></commentInRDBMS>
+<generatorID>6BA5257E-D9E5-AEAE-E454-B78E5C6E7F8A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="8FA974DF-86A2-2FD6-3EA5-599BF1936108">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de Tipos de Aseguradora]]></commentInRDBMS>
+<generatorID>6C6809E4-676E-DE1A-3534-6DBB5DB08209</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="2D61C8DE-D886-C23C-8A9A-338692DC7AC7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion el Tipo de Aseguradora]]></commentInRDBMS>
+<generatorID>2EB8F881-2377-4C9E-2FE3-AF6F9BE0ACCA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="47FB1ABB-C4DB-098E-1543-E5573EE84DC4" name="HC_TIPO_ASEGURADORA_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>F254B6BC-5FEA-9121-B3C6-B9E0F7EF0032</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8FA974DF-86A2-2FD6-3EA5-599BF1936108</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

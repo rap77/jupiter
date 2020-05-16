@@ -1,0 +1,185 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FEBEBEDD-0B8F-F228-E8A5-2AF5614C7E94" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_CIUDADES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_CIUDADES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Ciudad, Población, Caserio, etc. Ej: 1 Valencia, Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Ciudad, Población, Caserio, etc. Ej: 1 Valencia, Carabobo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>CIU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7F4B53BB-CFCD-4D65-50E9-7B1F41EC46B1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CIUDADES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Ciudad Población o Caserio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Ciudad Población o Caserio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CIU_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CIU_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ESTADO_ID" id="4E17C184-0338-F6F4-A6B8-592647FCD1CB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CIUDADES</sourceObjSchema>
+<sourceObjName>ESTADO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Estado de la Ciudad. Número de Identificación Interno del Estado, Departamento o Provincia.]]></comment>
+<commentInRDBMS><![CDATA[Estado de la Ciudad. Número de Identificación Interno del Estado, Departamento o Provincia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_EST_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_EST_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="4B174072-551F-D645-83DE-03196D493772" referredColumn="99813B72-EB0D-FF0A-E79D-B0BA3587FA76"/>
+</associations>
+</Column>
+<Column name="AREA_TELEF_ID" id="8FADEF15-FE2C-EE96-F756-FA2D7C19B898">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CIUDADES</sourceObjSchema>
+<sourceObjName>AREA_TELEFONICA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Principal Código de Area Teléfonica de la Ciudad. Número de Identificación Interno del Código de Area Teléfonica.]]></comment>
+<commentInRDBMS><![CDATA[Principal Código de Area Teléfonica de la Ciudad. Número de Identificación Interno del Código de Area Teléfonica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ARE_TEL_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ARE_TEL_ID</notNullConstraintName>
+</Column>
+<Column name="MUNICIPIO_ID" id="8C302874-40D7-3047-21FB-4E956DBB1927">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CIUDADES</sourceObjSchema>
+<sourceObjName>MUNICIPIO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_MUN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MUN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="666F981C-CBBF-4037-9724-209B5AB6EC34" referredColumn="3070D1E0-47B8-AB72-2A08-DBF7DE36A467"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="6339CC19-92C3-3804-8B41-4FF5B3631E04">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CIUDADES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<comment><![CDATA[Nombre de la Ciudad, Población o Caserio. Ej: Valencia.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de la Ciudad, Población o Caserio. Ej: Valencia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A48263F-EB31-0739-071E-1919601F3EFC" name="CIUDADES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CIUDADES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F4B53BB-CFCD-4D65-50E9-7B1F41EC46B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C233CCC-FFF0-BF71-2552-0975CFE97495" name="CIUDAD_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CIUDAD_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:07 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F4B53BB-CFCD-4D65-50E9-7B1F41EC46B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0069A661-3E04-8691-509D-01C4C30A124B" name="CIU_ESTADO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:18:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E17C184-0338-F6F4-A6B8-592647FCD1CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F2907F9-074E-E1ED-6F5D-82C2BD4ADB56" name="CIU MUNICIPIO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:18:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8C302874-40D7-3047-21FB-4E956DBB1927"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

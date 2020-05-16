@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6DB37E62-8637-84AA-4F76-2A7B52F940D5" containerWithKeyObject="1C48BDBD-7B21-A8B6-53B0-559179BE2211" localFKIndex="193948A3-B40C-7511-8BB9-690E3E6D9E80" name="SECCIONES_MODALIDADES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:24:43 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.MODALIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A20F4C61-90CD-6E92-D763-B9562F6A7A72</referredTableID>
+<keyObject>D721035C-D2B9-FBF1-8F79-1C9D6B36F48A</keyObject>
+<referredKeyID>D721035C-D2B9-FBF1-8F79-1C9D6B36F48A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MODALIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

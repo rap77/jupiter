@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="3DB46A37-1762-1E60-4DD0-CA8A205460CE" name="SG_ROLES_OPCIONES_MENU">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Guarda el acceso que tienen los roles en las opciones del menu</comment>
+<commentInRDBMS>Guarda el acceso que tienen los roles en las opciones del menu</commentInRDBMS>
+<generatorID>86F91643-22D7-86DF-E3F6-949693821A13</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ROL_OP_MEN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="OP_MEN_ID" id="FD9653D4-88DD-BF2F-4329-7C81700FA70F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>identificador unico de opcion de menu</comment>
+<commentInRDBMS>identificador unico de opcion de menu</commentInRDBMS>
+<generatorID>6487B64C-EAA0-A8B2-5A64-A432046F6B37</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>D9C90008-1A1F-3585-257E-2EE7506AA050</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ROL_ID" id="75E9F2D0-2C33-FEE0-C1ED-34C031689113">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Código del Perfil.</comment>
+<commentInRDBMS>Código del Perfil.</commentInRDBMS>
+<generatorID>230157D6-E70C-457B-7868-C587FF7BA3F4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>0FE80F9B-0A59-E53C-CBD1-9CA559B289DB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AE9261D0-58F0-5EC5-2B3D-D95A90B59E6E" name="SG_ROLES_OPCIONES_MENU_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>0D9468EF-36A4-CCF3-084D-1627BE666625</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FD9653D4-88DD-BF2F-4329-7C81700FA70F</attributeRef>
+<attributeRef>75E9F2D0-2C33-FEE0-C1ED-34C031689113</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

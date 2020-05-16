@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2F83612D-425E-70E3-C433-687170DDE69E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_VIAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_VIAS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:43:12 UTC</createdTime>
+<comment><![CDATA[Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_VIA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A6905FAA-90A1-9CEC-B9D0-9364F4C964F8">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_VIAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:43:12 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Via.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Via.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_VIA_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_VIA_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="11DA5A66-D9B7-1561-1A27-8B47215CD3A9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_VIAS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:43:12 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DES_TP_VIA</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="057FA245-8E86-D791-D7CF-EE9522EC0C09" name="TIPOS_VIAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPOS_VIAS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:43:12 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6905FAA-90A1-9CEC-B9D0-9364F4C964F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45944AA3-BA70-2041-EB8E-056B6235D2FF" name="TIPO_VIA_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPO_VIA_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:43:12 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A6905FAA-90A1-9CEC-B9D0-9364F4C964F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

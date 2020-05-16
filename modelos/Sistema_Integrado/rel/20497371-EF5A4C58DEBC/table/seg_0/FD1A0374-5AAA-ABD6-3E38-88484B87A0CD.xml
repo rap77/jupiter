@@ -1,0 +1,730 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD1A0374-5AAA-ABD6-3E38-88484B87A0CD" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PERSONAS_NATURALES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PERSONAS_NATURALES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Persona Natural. 3 José Angel Ferreira Garcia ...]]></comment>
+<commentInRDBMS><![CDATA[Persona Natural. 3 José Angel Ferreira Garcia ...]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>PER_NAT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C9140060-C5A2-06C7-D98D-181CC7EC7769">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2BDF4B15-31E8-F539-6CA4-66EDB2FF76B2" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="GENERO_ID" id="5C822C73-8378-67B3-CA78-0ED3B88C5E3E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>GENERO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_GEN_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_GEN_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="895A8477-6CB3-8D62-4947-D6D01D007A10" referredColumn="7FC06D50-13D3-24AB-6852-7E79C7991603"/>
+</associations>
+</Column>
+<Column name="TRATAMIENTO_ID" id="2CAB297C-6B75-8D04-B8BE-A9393DC726DB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>TRATAMIENTO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.]]></comment>
+<commentInRDBMS><![CDATA[Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_TRAT_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_TRAT_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="E4EBFC33-04CB-9879-16DD-58BAF982DAB7" referredColumn="532526C4-41C8-A2BA-9535-E570A2AD1FF8"/>
+</associations>
+</Column>
+<Column name="PRIMER_NOMBRE" id="432F35F6-A06E-A039-24A2-34ABE47651F2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>PRIMER_NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Primer Nombre de la Persona Natural. Ej: José.]]></comment>
+<commentInRDBMS><![CDATA[Primer Nombre de la Persona Natural. Ej: José.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_NOM1</notNullConstraintName>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="59D6E2E3-F4E5-8085-3356-F7A010F1530A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>SEGUNDO_NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Segundo Nombre de la Persona Natural. Ej: Angel.]]></comment>
+<commentInRDBMS><![CDATA[Segundo Nombre de la Persona Natural. Ej: Angel.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="EBA1CDAF-65A8-E55E-517E-D10A867D1416">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>PRIMER_APELLIDO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Primer Apelllido de la Persona Natural. Ej: Ferreira.]]></comment>
+<commentInRDBMS><![CDATA[Primer Apelllido de la Persona Natural. Ej: Ferreira.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_APE1</notNullConstraintName>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="E35B47BA-DC25-E1B8-7FE1-55CD5126F88F">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>SEGUNDO_APELLIDO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Segundo Apellido de la Persona Natural. Ej: García.]]></comment>
+<commentInRDBMS><![CDATA[Segundo Apellido de la Persona Natural. Ej: García.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NACIMIENTO" id="052EAED5-FE22-427C-767F-C3FA0291B786">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>FECHA_NACIMIENTO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[fecha de nacimiento de la persona natural.]]></comment>
+<commentInRDBMS><![CDATA[fecha de nacimiento de la persona natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CHECK_CONSTRAINT_USAGE_11331</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ESTADO_CIVIL_ID" id="F24E46A8-E7A6-5D30-23FC-6C9DF671D475">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ESTADO_CIVIL_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O]]></comment>
+<commentInRDBMS><![CDATA[Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="021AB8B4-C2DF-B8B6-091E-4DEA126B7253" referredColumn="2F5BC215-7372-D909-FAFF-32AAB6B90BB8"/>
+</associations>
+</Column>
+<Column name="APELLIDO_CASADA" id="17538F81-AB4F-FFDD-E48F-0294557C6B84">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>APELLIDO_CASADA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Apellido de Casada de la Persona]]></comment>
+<commentInRDBMS><![CDATA[Apellido de Casada de la Persona]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETNIA_ID" id="E46F6342-FD0D-A306-BC84-B5AD9AC0C70B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ETNIA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.]]></comment>
+<commentInRDBMS><![CDATA[Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_ETN_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_ETN_ID</notNullConstraintName>
+</Column>
+<Column name="GRADO_ACADEMICO_ID" id="A5612EA0-669E-4AAE-D9EA-DCEF111F68AD">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>GRADO_ACADEMICO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.]]></comment>
+<commentInRDBMS><![CDATA[Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_GRAD_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_GRAD_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="9B2BFA94-1A15-E9A2-DBB4-BBE10300FBC7" referredColumn="7727E7B6-C836-74EF-E6E0-CD3936816D40"/>
+</associations>
+</Column>
+<Column name="NIVEL_ESTUDIO_ID" id="37D926FA-6C01-3691-C2E8-5BD299D88D54">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>NIVEL_ESTUDIO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_NEST_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_NEST_ID</notNullConstraintName>
+</Column>
+<Column name="GRUPO_SANGUINEO_ID" id="39F88A11-C6E9-4FB9-33D0-C8B7A83D516B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>GRUPO_SANGUINEO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.]]></comment>
+<commentInRDBMS><![CDATA[Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_GPSAN_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_GPSAN_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="E00D59AF-3DF6-8A7D-B151-E7FE9894DFE5" referredColumn="C2F458C5-034D-65C9-0EEC-C065FE117494"/>
+</associations>
+</Column>
+<Column name="PROFESION_ID" id="CC5F93EA-AD1F-97F7-2265-1215844A9894">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>PROFESION_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Profesión u Ocupación de la Persona Natural. Número de Identificación Interno de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Profesión de la Persona Natural. Número de Identificación Interno de la Profesión.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D94A09B0-1F1D-40D6-C361-7E54054AA112" referredColumn="D4E193E8-0F25-E09F-CB61-8F859463C8FB"/>
+</associations>
+</Column>
+<Column name="FECHA_DECESO" id="0162CE55-807E-788B-0ABC-AB1506CC5031">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>FECHA_DECESO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Fecha de Deceso de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Deceso de la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CHECK_CONSTRAINT_USAGE_10455</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ES_DISCAPACITADA" id="561A0568-D746-CC3E-D830-6069495B5BFB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ES_DISCAPACITADA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Es Discapacitada la Persona Natural?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Es Discapacitada la Persona Natural?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_DISC</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_DISC</notNullConstraintName>
+</Column>
+<Column name="ESTATURA" id="6818B0F6-1C98-C3E6-D399-14F96DA6E8F2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ESTATURA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Estatura de la Persona.Natural en Metros.]]></comment>
+<commentInRDBMS><![CDATA[Estatura de la Persona.Natural en Metros.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TALLA" id="8A73A88C-5EC7-9B07-E2AB-2A8F76ECF96D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>TALLA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Talla de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Talla de la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO" id="D12F7618-8F75-B0B6-6C70-9EDF488F14FF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>PESO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Peso de la Persona Natural en Kilos.]]></comment>
+<commentInRDBMS><![CDATA[Peso de la Persona Natural en Kilos.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USA_LENTES" id="E7E6AE8F-0C73-7FF3-879D-A136D20400E5">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>USA_LENTES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_USALEN</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_USALEN</notNullConstraintName>
+</Column>
+<Column name="ES_DIESTRO" id="E3EBB3F4-41D6-536F-0E30-19E08C3319BE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ES_DIESTRO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Es Diestra la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Es Diestra la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_DIEST</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>S</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_DIEST</notNullConstraintName>
+</Column>
+<Column name="DEFECTOS_FISICOS" id="1F877F67-510B-61BB-6B02-372172282D4D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>DEFECTOS_FISICOS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Defectos Físicos de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Defectos Físicos de la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_ID" id="C94BFAB9-28E1-2ECB-00B8-BCF17E1825AB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>PAISES_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_PAIS</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_PAIS</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="4ED4338C-7D73-24E3-84F4-A4ACA010EE02" referredColumn="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6"/>
+</associations>
+</Column>
+<Column name="GRADO_LICENCIA" id="52902356-292D-2ABD-9DD3-32824F6B8F05">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>GRADO_LICENCIA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Grado de la Licencia de Copnducir de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Grado de la Licencia de Copnducir de la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_EXCEPCIONAL" id="2BA60B9C-6CC5-7B4A-5913-8A401699D911">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PERSONAS_NATURALES</sourceObjSchema>
+<sourceObjName>ES_EXCEPCIONAL</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<comment><![CDATA[Es excepcional la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Es excepcional la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_EXCEP</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>N</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_EXCEP</notNullConstraintName>
+</Column>
+<Column name="ACTA_PART_NCTO" id="481167AC-E1DB-F9ED-6FCE-5A2B4EF9C3A5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<comment><![CDATA[Numero de Acta de Partida de  Nacimiento ]]></comment>
+<commentInRDBMS><![CDATA[Numero de Acta de Partida de  Nacimiento ]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOMO_PART_NCTO" id="29F2497B-DE64-2685-9028-342DC94B433A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<comment><![CDATA[Tomo de Partida de Nacimiento: Ej. IX]]></comment>
+<commentInRDBMS><![CDATA[Tomo de Partida de Nacimiento: Ej. IX]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANO_PART_NCTO" id="CC240C66-498D-F408-4639-93F3D5150ECC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<comment><![CDATA[Año de la Partida de Nacimiento: Ej. 1970]]></comment>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REGISTRO_CIVIL_ID" id="5C23145A-51F5-521B-E591-E1FDE7436B36">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<comment><![CDATA[Identificador unico del Registro Civil o Prefectura]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de la direccinó de la prefectura]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PNAT_RGCIV_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PNAT_RGCIV_ID</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2713BF2F-7D9D-8DFC-D755-42EB1D81DD20" name="PERSONAS_NATURALES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PERSONAS_NATURALES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8DF13F48-B1CA-0A24-792B-917E10BA2F4B" name="PERSONA_NATURAL_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PERSONA_NATURAL_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="568C3D92-BE5A-4A72-0203-56606488BF39" name="PER_NAT_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:29:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A02EA794-CCA1-F682-6FF6-63A46E43B388" name="PER_NAT_PAIS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:16:49 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C94BFAB9-28E1-2ECB-00B8-BCF17E1825AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46BF0C25-2977-D041-5A5F-002F1E58E8C7" name="PER_NAT_GENERO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:08 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C822C73-8378-67B3-CA78-0ED3B88C5E3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E05A5A19-31D7-CE92-0D84-6566D82B8D93" name="PER_NAT_TRATAMIENTO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:39:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CAB297C-6B75-8D04-B8BE-A9393DC726DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F562C1C7-F33E-8FB8-6A5B-BB96A6C112BB" name="PER_NAT_GRP_SANG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:44:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39F88A11-C6E9-4FB9-33D0-C8B7A83D516B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54457A92-5945-F6E0-7D86-CE08D2BF628C" name="PER_NAT_GRAD_ACAD_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:10:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A5612EA0-669E-4AAE-D9EA-DCEF111F68AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FA8E80FE-B448-7164-60CA-F29017288DF1" name="PER_NAT_PROFESION_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:25:17 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC5F93EA-AD1F-97F7-2265-1215844A9894"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF88F726-E60C-8D73-F8B5-0C1D06DE5D6D" name="GL_PERSONAS_NATURALES_GL_ESTADOS_CIVILES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:30:23 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F24E46A8-E7A6-5D30-23FC-6C9DF671D475"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_PNAT_FNAC" directorySegmentName="seg_2" id="C3469457-8B41-DA6D-EBFA-00AEC86EEC3E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CHECK_CONSTRAINT_USAGE_11333</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<rule><![CDATA[Fecha_Nacimiento BETWEEN TO_DATE('01/01/1800','DD/MM/YYYY') AND TO_DATE('31/12/2100','DD/MM/YYYY')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

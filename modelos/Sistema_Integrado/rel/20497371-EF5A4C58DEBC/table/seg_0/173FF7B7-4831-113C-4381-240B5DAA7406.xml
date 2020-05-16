@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="173FF7B7-4831-113C-4381-240B5DAA7406" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_PERSONAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_PERSONAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C3B7F110-304D-1B06-1C8F-6E0950A5220A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_PERSONAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Código del Tipo de Persona, Ej: PN. PJ. UO.]]></comment>
+<commentInRDBMS><![CDATA[Código del Tipo de Persona, Ej: PN. PJ. UO.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_Tp_PER_ID</notNullConstraintName>
+</Column>
+<Column name="DESCRIPCION" id="A0E4C60B-00D9-BB48-5522-F42998C393E5">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_PERSONAS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_PER_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6E1415B9-10A8-5A0D-8B97-251B1650B03C" name="TIPOS_PERSONAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_PERSONAS_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3B7F110-304D-1B06-1C8F-6E0950A5220A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84B0E3C0-9A99-AC35-4B01-12F7D1E5F87F" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="TIPO_PERSONA_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPO_PERSONA_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3B7F110-304D-1B06-1C8F-6E0950A5220A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

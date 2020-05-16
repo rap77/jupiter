@@ -1,0 +1,14 @@
+--------------------------------------------------------
+-- Archivo creado  - jueves-abril-11-2019   
+--------------------------------------------------------
+REM INSERTING into SIGAUC.GL_IMPUESTO
+SET DEFINE OFF;
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('3','3','2',to_date('30/08/02','DD/MM/RR'),null,'0');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('1','2','3',to_date('26/03/09','DD/MM/RR'),to_date('31/08/18','DD/MM/RR'),'12');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('2','1','2',to_date('30/08/02','DD/MM/RR'),null,'0');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('4','5','3',to_date('26/03/09','DD/MM/RR'),null,'8');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('6','6','2',to_date('01/01/12','DD/MM/RR'),null,'0');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('5','4','3',to_date('23/03/09','DD/MM/RR'),null,'22');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('7','7','4',to_date('26/09/17','DD/MM/RR'),to_date('31/12/17','DD/MM/RR'),'9');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('8','8','4',to_date('26/09/17','DD/MM/RR'),to_date('31/12/17','DD/MM/RR'),'7');
+Insert into SIGAUC.GL_IMPUESTO (ID,ID_TIPO_IMPUESTO,ID_GACETA,FECHA_INICIO,FECHA_FIN,MONTO_IMPUESTO) values ('9','2','5',to_date('01/09/18','DD/MM/RR'),null,'16');

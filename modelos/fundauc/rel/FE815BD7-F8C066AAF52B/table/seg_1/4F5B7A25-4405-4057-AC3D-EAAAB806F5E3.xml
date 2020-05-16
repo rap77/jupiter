@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4F5B7A25-4405-4057-AC3D-EAAAB806F5E3" name="CE SALON">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Salones de la Unidad Organizacional</comment>
+<commentInRDBMS>Salones de la Unidad Organizacional</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CD6B2B3C-3138-26BF-8830-45173E446CC8</importedID>
+<ordsAlias>ce_salon</ordsAlias>
+<abbreviation>SAL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="750AF8E2-3853-6A85-1D31-FB635A617B98">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico del Salon</comment>
+<commentInRDBMS>Identificador Unico del Salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D2A95F3F-FC7F-5D62-FB7F-37B12741D19E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CE_TIPO_SALON_ID" id="F7A8CE53-D358-0C43-C1E6-7C97520E9D4E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tipo de Salon</comment>
+<commentInRDBMS>Tipo de Salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B8BC353B-A56A-A88C-A09F-D0B44FDEF097</importedID>
+<constraintName>ID}_1244934335</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C3E37221-1E4F-0B80-9B22-BA34245C5059" referredColumn="E306942A-35A2-9697-C5FF-2F284ACBD60A"/>
+</associations>
+</Column>
+<Column name="UNI_ORG_PER_ID" id="2235BB12-88F1-4891-FDCF-E39BD96611B9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Unidad Organizacional a la que pertenece el Salon</comment>
+<commentInRDBMS>Unidad Organizacional a la que pertenece el Salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F72895FC-E9AE-96EE-FA76-A6080B8A5B94</importedID>
+<constraintName>ID}_993876153</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="8BF50556-CD03-7BB2-0164-C7D479DDB1CB" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="75225939-228B-956E-CD32-CDCFB36153EB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre del Salon</comment>
+<commentInRDBMS>Nombre del Salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>59A17383-B152-0226-73E5-E1D7973682FF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UBICACION" id="483CE2A6-051E-4CEE-AB28-21CD8C121C77">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Ubi</comment>
+<commentInRDBMS>Ubicacion del Salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3C2BE626-595D-95E7-2357-855154607C47</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPACIDAD" id="5F63A6BE-C0AD-C7C3-162C-E24CEC14F98E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Capacidad de personas del salon</comment>
+<commentInRDBMS>Capacidad de personas del salon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5A1CC3A8-FB4A-D2E0-FFBC-498BDD8066A2</importedID>
+<constraintName>ENTERO_10}_398647103</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CBB5C65-0091-2C25-D7DC-41B78B233611" name="CE_SALON_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>43FAAB25-E9A1-2EFA-58B3-808F14733CF6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750AF8E2-3853-6A85-1D31-FB635A617B98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73F38C61-208E-FF5B-795E-410FA7534807" name="SALON_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D2757973-7A18-FA89-EF19-E80275B53306</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="750AF8E2-3853-6A85-1D31-FB635A617B98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C76E3059-E563-3EF1-D814-1AE146B008C3" name="CE_SALON_CE_TIPO_SALON_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7A8CE53-D358-0C43-C1E6-7C97520E9D4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EA2CCB4-A064-EF38-3744-857DE327FFA6" name="CE_SALON_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2235BB12-88F1-4891-FDCF-E39BD96611B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

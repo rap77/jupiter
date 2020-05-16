@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5285101-49EF-47CD-D509-8ED83DFEFBFC" name="GL_TIPOS_DOCIDENTI">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipo de Número o Código de Identificación. Ej: 1 Colegio de Contadores, 2 IMPRE.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Número o Código de Identificación. Ej: 1 Colegio de Contadores, 2 IMPRE.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AC126EA7-11BB-E910-D392-BC03AD2272D6</importedID>
+<abbreviation>TP_DOCID</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="35AB4889-06DA-9C1B-948C-F2713DE64F85">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3748EA2C-ED0F-668B-36D9-5763F3F2BA12</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="71194C6D-AA37-6A7D-5EA4-84E333ED6EFC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Número o Codigo de Identificación. Ej: Número del Colegio de Contadores. Número de Pasaporte, Cedula de Identidad]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Número o Codigo de Identificación. Ej: Número del Colegio de Contadores. Número de Pasaporte.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C43F84C4-14F9-B9DC-DC14-B58B55733519</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIGLAS" directorySegmentName="seg_2" id="29B9D790-575C-12B6-CD87-F3E06337A2AF">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 16:39:42 UTC</createdTime>
+<comment><![CDATA[Abreviación del la descripción del tipo de Documentación Ej. C.I.]]></comment>
+<commentInRDBMS><![CDATA[Abreviación del la descripción del tipo de Documentación Ej. C.I.]]></commentInRDBMS>
+<generatorID>514BD5A1-C979-2D07-58CD-CE535D0A15A3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="935CC7D4-7A9A-2273-E2F8-C2CE4D910A3A" name="GL_TIPOS_DOCIDENTI_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>583FB88F-F1ED-7EF5-6737-00A967E7841D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35AB4889-06DA-9C1B-948C-F2713DE64F85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FEF7405-E349-C727-07D7-E40B31085CC4" name="GL_TIPO_ID_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B45FF995-E0D9-5C3A-4DC2-C34F7C52C45B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35AB4889-06DA-9C1B-948C-F2713DE64F85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

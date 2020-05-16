@@ -1,0 +1,199 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="137723F5-1558-FA4A-1B42-22D450757292" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="USUARIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>USUARIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>USUARIOS</comment>
+<commentInRDBMS>USUARIOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CEDULA" id="BEBB26F9-8B37-6E57-B4E9-437DF257D28B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>CEDULA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CEDULA</comment>
+<commentInRDBMS>CEDULA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_USUARIO" id="E5F6493D-1246-6096-4460-3314E037F5A4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>NOMBRE_USUARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>NOMBRE_USUARIO</comment>
+<commentInRDBMS>NOMBRE_USUARIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CONTRASENA" id="B1250BC4-5C2C-76BD-6320-0958057777CA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>CONTRASENA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CONTRASENA</comment>
+<commentInRDBMS>CONTRASENA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ROL" id="56D4B31D-CB0B-FA13-F748-9A199FCD32F6">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>ID_ROL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_ROL</comment>
+<commentInRDBMS>ID_ROL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B422D48F-541E-5DAC-D22C-50C77EFC924A" referredColumn="4CA46E97-61CB-DC57-DA4B-17FC7A60F321"/>
+</associations>
+</Column>
+<Column name="EMAIL" id="A18C7B4F-A364-5217-64A2-5AE1A0DAAB0D">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>EMAIL</comment>
+<commentInRDBMS>EMAIL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="C6938ACB-9531-3D4D-2525-E86E3AD8B938">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>NOMBRE</comment>
+<commentInRDBMS>NOMBRE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIA" id="DDC16196-AECC-69AB-641D-01E6A49F9A97">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>CIA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CIA</comment>
+<commentInRDBMS>CIA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_ACADEMICO" id="DE8FA486-07C6-EB3D-56C8-8DAC8B4FD6A6">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>USUARIOS</sourceObjSchema>
+<sourceObjName>PROG_ACADEMICO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>PROG_ACADEMICO</comment>
+<commentInRDBMS>PROG_ACADEMICO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE489C7D-5A86-79B0-2B94-F5198E2A6D86" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="USUARIOS_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018616</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>USUARIOS_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEBB26F9-8B37-6E57-B4E9-437DF257D28B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DACDAF92-807D-030C-90BA-9A4CCEB92B00" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018616">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018616</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>7978D0FD-6B50-68C1-D013-2D82B323B3BD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BEBB26F9-8B37-6E57-B4E9-437DF257D28B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD18AEDB-B28E-8112-80C9-64B6B78D5D3F" name="USR_ROL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56D4B31D-CB0B-FA13-F748-9A199FCD32F6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

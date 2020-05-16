@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_MEDICO_FK1" directorySegmentName="seg_0" id="B9CCEA96-858B-C10B-B456-0EF78B703C9B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>C9CE6CD9-D6F2-D5F4-07B4-176681387062</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>0CA1BFF2-526F-A45C-00E0-F239CB7EB0C2</sourcePk>
+<dominantRole>2A28EDC4-C212-4B72-011D-9E896F305E7A</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>98600DA1-C33A-FCB8-D46C-381B13163367</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="MOVIMIENTO_CAJA" directorySegmentName="seg_0" id="CEB64686-FF82-1229-7995-3371ED36FF90">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:49 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+</TableViewProxyOraclev10g>

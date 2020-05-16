@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="72B6CA3C-785D-EF55-AB71-8234009BA560" containerWithKeyObject="2C8DE9EA-A405-A5FE-6834-907E918FD74C" localFKIndex="F3DA35CE-1DBC-0DB1-E121-596AA8ACF186" name="MEN_TP_MEN_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6DCC0F36-0D22-9722-EE04-BB5AD7B5329A</importedID>
+<referredTableLongName>SG TIPOS MENSAJES</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>16CC5682-83A1-61F3-2283-B02FA20B901C</referredTableID>
+<keyObject>52E805B8-C458-526E-DDC9-4897D412C527</keyObject>
+<referredKeyID>52E805B8-C458-526E-DDC9-4897D412C527</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

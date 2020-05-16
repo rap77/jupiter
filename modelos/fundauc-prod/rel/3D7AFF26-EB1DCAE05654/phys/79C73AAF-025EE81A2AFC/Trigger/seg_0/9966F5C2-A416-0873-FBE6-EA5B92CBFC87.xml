@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_DETALLE_FACTURA_AIUD" directorySegmentName="seg_0" id="9966F5C2-A416-0873-FBE6-EA5B92CBFC87">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>T_DETALLE_FACTURA_AIUD</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+    p_factura_rec fundauc.tapi_factura.factura_rt;
+    mon_exento number;
+    o_mon_exento number;
+    base_imp number;
+    o_base_imp number;
+    mon_iva number;
+    o_mon_iva number;
+    v_iva number;
+    o_subtotal number;
+BEGIN
+    IF inserting THEN
+
+        v_iva := UTL_CONFIGURACION.GETCONFIVA();
+
+        if UTL_MATERIALES.GETEXENTOIVA(:NEW.MATERIALES_ID) = 'S' THEN 
+            mon_exento := :new.subtotal;
+        else
+            base_imp := :new.subtotal;
+            mon_iva := (base_imp*v_iva)/100;
+        end if;
+
+        update factura set monto = (nvl(monto,0) + nvl(:new.subtotal,0) + nvl(mon_iva,0)), 
+            p_iva = nvl(v_iva,0), 
+            monto_exento = (nvl(monto_exento,0) + nvl(mon_exento,0)), 
+            base_imponible = (nvl(base_imponible,0) + nvl(base_imp,0)),
+            monto_iva = (nvl(monto_iva,0) + nvl(mon_iva,0))
+        where id = :new.factura_id;
+    ELSIF updating THEN
+
+        o_subtotal := nvl(:old.cantidad,0) * nvl(:old.p_unidad,0);
+
+
+        v_iva := UTL_CONFIGURACION.GETCONFIVA();
+
+        if UTL_MATERIALES.GETEXENTOIVA(:OLD.MATERIALES_ID) = 'S' THEN 
+            o_mon_exento := :old.subtotal;
+            mon_exento := :new.subtotal;
+        else
+
+            base_imp := :new.subtotal;
+            o_base_imp := :old.subtotal;
+            mon_iva := (base_imp*v_iva)/100;
+            o_mon_iva := (o_base_imp*v_iva)/100;
+        end if;
+
+        update factura 
+          set monto = (nvl(monto,0) - nvl(:old.subtotal,0) - nvl(o_mon_iva,0)) + nvl(:new.subtotal,0) + nvl(mon_iva,0), 
+            p_iva = nvl(v_iva,0), 
+            monto_exento = (nvl(monto_exento,0) - nvl(o_mon_exento,0)) + nvl(mon_exento,0), 
+            base_imponible = (nvl(base_imponible,0) - nvl(o_base_imp,0)) + nvl(base_imp,0),
+            monto_iva = (nvl(monto_iva,0) - nvl(o_mon_iva,0)) + nvl(mon_iva,0)
+        where id = :new.factura_id;
+    ELSIF deleting THEN
+
+        o_subtotal := nvl(:old.cantidad,0) * nvl(:old.p_unidad,0);
+        v_iva := UTL_CONFIGURACION.GETCONFIVA();
+
+        if UTL_MATERIALES.GETEXENTOIVA(:OLD.MATERIALES_ID) = 'S' THEN 
+            o_mon_exento := o_subtotal;
+        else
+            o_base_imp := o_subtotal;
+            o_mon_iva := (o_base_imp*v_iva)/100;
+        end if;
+        update factura set monto = (nvl(monto,0) - nvl(:old.subtotal,0) ),
+            monto_exento = (nvl(monto_exento,0) - nvl(o_mon_exento,0)),
+            base_imponible = (nvl(base_imponible,0) - nvl(o_base_imp,0))
+        where id = :old.factura_id;
+    END IF;
+
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>CE7644D3-438F-6881-67A2-46AFFF4A0C90</table>
+</TriggerOraclev10g>

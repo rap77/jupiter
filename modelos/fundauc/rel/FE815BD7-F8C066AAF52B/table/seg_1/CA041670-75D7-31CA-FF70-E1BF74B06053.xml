@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CA041670-75D7-31CA-FF70-E1BF74B06053" name="CE_PROFESOR">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Contiene Informacion acerca de Profesores</comment>
+<commentInRDBMS>Contiene Informacion acerca de Profesores</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>72319F4E-9A9D-BF90-020E-D40B78722EB4</importedID>
+<ordsAlias>profesor</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0B91CF84-DEC0-21F3-33E0-249259381AEA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2C9D78AA-6A24-A561-1FC7-B484E3E54F11</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="1E7967B4-5CD1-6838-6FBA-CA186997839F" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00EB557E-68F8-2C08-06A9-8809EC28F62A" name="CE_PROFESOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BC779120-FF3C-3D05-D586-8D69C06F35D0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B91CF84-DEC0-21F3-33E0-249259381AEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A35A57BD-97A3-338B-7F4C-FA9E5D792526" name="PROFESOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A95C77DC-45DD-64F7-0A80-0222421E7CE4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B91CF84-DEC0-21F3-33E0-249259381AEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89B88760-A753-F3AC-645F-E65E0E154445" name="PROFESOR_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0B91CF84-DEC0-21F3-33E0-249259381AEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

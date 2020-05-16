@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_CIUDADES_GL_ESTADOS_FK" directorySegmentName="seg_0" id="4EF3FE99-C2CF-57A2-C44E-F0481DAC4CE4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>CCB288B5-3A2E-DD3B-1C57-0C93696DD020</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>DDB21446-10BC-80D8-968D-A258B1A446F6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BC433E46-5B3F-7210-B94B-03FD6697B8FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA581BA0-238B-D968-82EF-ABAB70D8FD6D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

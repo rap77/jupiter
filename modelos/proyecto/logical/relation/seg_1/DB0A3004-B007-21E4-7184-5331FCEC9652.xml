@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_POLIZA_SEG_FK1" directorySegmentName="seg_1" id="DB0A3004-B007-21E4-7184-5331FCEC9652">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>3C597E9D-BA67-447A-4B03-5D70D34D5080</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>BE3D6350-3586-7CF0-98B0-9481F8E7F6BF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6FA8D7BA-64E8-977A-C1E5-F659BE70AEA5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>AA2607D3-9953-CC25-34EA-A209EE5C794B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

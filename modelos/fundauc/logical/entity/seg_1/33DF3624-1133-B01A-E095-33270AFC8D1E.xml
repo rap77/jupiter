@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="33DF3624-1133-B01A-E095-33270AFC8D1E" name="SG_MENSAJES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>repositorio de Alertas y mensajes de lo que ocurre en el sistema</comment>
+<commentInRDBMS>repositorio de Alertas y mensajes de lo que ocurre en el sistema</commentInRDBMS>
+<generatorID>2C8DE9EA-A405-A5FE-6834-907E918FD74C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>MEN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1E199A1E-C048-8197-C95F-71A7C16FAA13">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 18:33:52 UTC</createdTime>
+<comment>Identificador Unico del Mensaje</comment>
+<commentInRDBMS>Identificador Unico del Mensaje</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_MEN_ID" id="99E4D959-0795-B8EB-05ED-4BD244B2DF8A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Tipo de Buzon</comment>
+<commentInRDBMS>identificador unico del tipo de buzon</commentInRDBMS>
+<generatorID>74F8D711-EBBD-7955-B5CE-C373211D04D8</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>71673B8C-9A49-BAB6-6BD8-37CE3FD587A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FEC_RECEPCION" id="8CEB8204-F52A-55AF-9A48-93645C9CFC44">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Fecha Recepcion</comment>
+<commentInRDBMS>fecha de recepcion del mensaje</commentInRDBMS>
+<generatorID>D78F5945-F1A4-4DAC-B3F6-133DF1E4F761</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ASUNTO_MSG" id="6F4BFCF8-2EC7-AE07-95AD-20E454E0B442">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Asunto del Mensaje</comment>
+<commentInRDBMS>asunto del envio</commentInRDBMS>
+<generatorID>0523E5C5-7FE1-3632-858B-BA717DCCB454</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CONTENIDO_MSG" id="B4A35A76-0CA6-5BAC-E8DD-5EE9DED2D003">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Contenido del Mensaje</comment>
+<commentInRDBMS>Contenido del Envio</commentInRDBMS>
+<generatorID>FA0C5CA0-1342-D378-DA92-7C6EE9E129A9</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B28195DB-8FD8-B6A6-8B85-E8788F650D16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USU_ID_PARA" id="261D98EF-4733-2984-4577-033AE68A5213">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 19:05:27 UTC</createdTime>
+<comment>is del usuario que recibe</comment>
+<commentInRDBMS>is del usuario que recibe</commentInRDBMS>
+<generatorID>13A45F3A-38A2-D5FB-7A32-10A240F5537A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>BAFE9786-67CD-2EA5-5597-3514211F8C3F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USU_ID_DE" id="7E203B1B-3586-6F4B-FB28-D344E8725C97">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 19:08:48 UTC</createdTime>
+<comment>id del usuario que envia</comment>
+<commentInRDBMS>id del usuario que envia</commentInRDBMS>
+<generatorID>7476278D-C612-DED1-31EA-0A8339D7537E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>BAFE9786-67CD-2EA5-5597-3514211F8C3F</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NRO_ENVIO" id="DB8DD00E-79C1-3A48-3DDD-1E27930AED88">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<comment>numero del envio</comment>
+<commentInRDBMS>numero del envio</commentInRDBMS>
+<generatorID>2CD3BE07-918B-DE37-DAE6-74AFF5E1F8D5</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>F065971F-5F2D-4203-2C9D-4B1A6EE62D18</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="96D56576-61CB-D0B0-34E8-E8D2729CB67D" name="SG_MENSAJES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>3B62DA8B-9762-DB6C-DB1B-1D5D7E8B9A8C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1E199A1E-C048-8197-C95F-71A7C16FAA13</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

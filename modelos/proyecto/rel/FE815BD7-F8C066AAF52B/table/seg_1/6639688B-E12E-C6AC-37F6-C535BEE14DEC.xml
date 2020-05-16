@@ -1,0 +1,144 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="6639688B-E12E-C6AC-37F6-C535BEE14DEC" name="GL_UNIDADES_ORG">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Unidades Organizacionales]]></comment>
+<commentInRDBMS><![CDATA[Unidades Organizacionales]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F514A347-FB15-C501-17AA-F9E742A3D893</importedID>
+<abbreviation>UNI_ORG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GL_PERSONAS_ID" id="021E9792-A8DF-1F94-982E-3CE0B87F2283">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F097DA2A-C19B-72AE-A5A7-2A3D5B1C5DA5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="C61C0654-461A-3B01-DF01-87EB533BD63E" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="GL_UNIDADES_ORG_ID" id="AE8AF802-BF4F-D70A-AF6F-5833CD9857F3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A53FDE8F-B794-410B-1E00-0BD15439E374</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="569C7F50-FD83-ED36-A8F9-AA55F91B8BA5" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+<Column name="TIPOS_UNIDADES_ORG_ID" id="00840C3A-5A54-5839-2B8E-0E4C6EEF7E2C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Tipo de Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Tipo de Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AD435AF8-FCEF-2ECF-3515-4217610BC098</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1ECD243A-BFAD-3AA6-54AA-384389911AC7" referredColumn="79FABB47-BF5E-D781-F6C0-F4425957DEF0"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="668BD1A8-6611-D43C-54D2-5315284DA79F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8D6E5F54-CD7A-DF86-C01F-3D5D40C1D087</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D9165238-3CB0-22BE-5E76-69E4109E007A" name="GL_UNIDADES_ORG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3C526958-50E5-78D9-9089-D8D3C54D1948</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="503DFD28-707A-8D8C-9305-46126F3E2EF2" name="GL_UNIDAD_ORG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EED92F7C-890E-BAB0-EB26-AF3353F07B40</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2D5FEDC-696C-7C23-2C88-2277A5CBA981" name="GL_UNIDADES_ORG_GL_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AC09810-B03E-2ED2-8380-909865EF3B9C" name="GL_UNIDADES_ORG_GL_UNIDADES_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE8AF802-BF4F-D70A-AF6F-5833CD9857F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E104CAC3-DED6-2F6D-ADC3-8E083E694255" name="GL_UNIDADES_ORG_TIPOS_UNIDADES_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="00840C3A-5A54-5839-2B8E-0E4C6EEF7E2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

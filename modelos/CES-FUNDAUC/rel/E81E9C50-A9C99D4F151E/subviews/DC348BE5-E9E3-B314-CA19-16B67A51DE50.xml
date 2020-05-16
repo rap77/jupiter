@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Diagram class="oracle.dbtools.crest.swingui.relational.DPVRelationalSubView" name="Diplomados/certificaciones" id="DC348BE5-E9E3-B314-CA19-16B67A51DE50">
+<createdBy>padron</createdBy>
+<modifiedBy>padron</modifiedBy>
+<createdTime>2019-07-17 18:56:00 UTC</createdTime>
+<autoRoute>false</autoRoute>
+<boxInbox>true</boxInbox>
+<showLegend>false</showLegend>
+<showLabels>false</showLabels>
+<showRelAttributes>false</showRelAttributes>
+<gridEnabled>false</gridEnabled>
+<showGrid>false</showGrid>
+<diagramColor>-1</diagramColor>
+<display>false</display>
+<notation>1</notation>
+<objectViews>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="07F19799-EC32-84FC-5854-A69B82A0F8FA" otype="Table" vid="97887019-EA29-D24C-65D1-2C8CCE60C12C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="100" y="299" width="249" height="226"/>
+</OView>
+<OView class="oracle.dbtools.crest.swingui.relational.TVTable" oid="978679D0-3671-C663-B404-930C49F22590" otype="Table" vid="74C92CD1-1547-8758-7488-0A2C84FCF20A">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<bounds x="91" y="13" width="270" height="206"/>
+</OView>
+</objectViews>
+<connectors>
+<Connector class="oracle.dbtools.crest.swingui.relational.TVFKRelation" oid="18D9A448-A57F-39B3-B5A8-8390A8458491" otype="FKIndexAssociation" vid_source="74C92CD1-1547-8758-7488-0A2C84FCF20A" vid_target="97887019-EA29-D24C-65D1-2C8CCE60C12C">
+<hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
+<backgroundColor>-16777216</backgroundColor>
+<lineWidth>1</lineWidth>
+<points>
+<point x="224" y="219"/>
+<point x="224" y="299"/>
+</points>
+</Connector>
+</connectors>
+</Diagram>

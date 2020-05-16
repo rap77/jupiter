@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TLF_PER_FK" directorySegmentName="seg_1" id="A3CFED1C-BC9A-E6D4-8EF9-A54782831981">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>DBF75462-569D-98AF-D4B5-82E676C9C025</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>DB1DA341-8233-ACF4-5009-D366E6E15EE9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>366D2432-5711-29A0-A0CE-3B757313B65B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D9538A8B-C09C-D6BE-73A5-351C2DC8BE95</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

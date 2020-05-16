@@ -1,0 +1,161 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AE8819DD-BD67-611E-BBED-FDD853CF992B" name="GL_GACETA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Gaceta Oficial.</comment>
+<commentInRDBMS>Gaceta Oficial.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>05EDE727-6BA8-28FD-9C92-AAFB363563CE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D8C2CED1-C315-AACF-CE4A-29639E4AECF7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Gaceta.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0EE1EF74-493D-1C4B-A123-25217AA16BDF</importedID>
+<constraintName>ID}_149229142</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_TIPO_GACETA" id="2BB6425A-1F80-B19C-94B9-2DC435D0F26D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tipo de la Gaceta. Número de Identificación Interna de la Gaceta.</comment>
+<commentInRDBMS>Tipo de la Gaceta. Número de Identificación Interna de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DAD88CA8-312D-A96A-64C0-FF19164419B6</importedID>
+<constraintName>ID}_1008150395</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="F8BB6C91-E471-8A15-75CD-9139BF333A4B" referredColumn="C110EA0A-4560-5EA4-F177-CE6170C67E2B"/>
+</associations>
+</Column>
+<Column name="NUMERO" id="DF9810FB-1E86-7E71-CCC4-EC5D0C73C89A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de la Gaceta.</comment>
+<commentInRDBMS>Número de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AAE77930-2067-F76E-13E8-7A99877343D2</importedID>
+<constraintName>ENTERO_06}_67032906</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA" id="0BF86604-8DFD-BDB3-7D67-4C7CD566CEA1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de la Gaceta.</comment>
+<commentInRDBMS>Fecha de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>86574849-9AEE-557A-B519-DD4DE26A4B99</importedID>
+<constraintName>FECHA}_1971294657</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="AFD84EF8-9FD5-C76E-67E1-2C57DED54D8A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción de la Gaceta.</comment>
+<commentInRDBMS>Descripción de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1179609D-AE6C-B1AF-84A3-B4DE2B5FA786</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5A22697A-18A3-7112-ED03-1C4B70F277C2" name="GL_GACETA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4B8B48EB-DE3B-54CB-D4C2-A3E8F0D38467</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C2CED1-C315-AACF-CE4A-29639E4AECF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D91A47B4-FB89-B997-6015-481F9156B870" name="GL_GACETA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>55E6F3C1-1745-4BC8-99E2-74155D6E2E61</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C2CED1-C315-AACF-CE4A-29639E4AECF7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D0CD1C6-60A1-3F31-B53C-D8886F155552" name="GL_GACETA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BB6425A-1F80-B19C-94B9-2DC435D0F26D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

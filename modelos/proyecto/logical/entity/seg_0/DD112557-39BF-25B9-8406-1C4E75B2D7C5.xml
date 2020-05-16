@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD112557-39BF-25B9-8406-1C4E75B2D7C5" name="GL_IMG_PERSONAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Imagen. Foto o Logo de las Personas.]]></comment>
+<commentInRDBMS><![CDATA[Imagen. Foto o Logo de las Personas.]]></commentInRDBMS>
+<generatorID>41B7C39B-A27D-CC30-D513-F30144F67031</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>IMG_PER</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="E8E7FF1E-1B89-812F-6E60-DFE4E39A6DCC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Foto o Logo.]]></commentInRDBMS>
+<generatorID>F9595749-440D-10C5-D293-E8CD032949E2</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IMAGEN" id="214B9BE1-75B4-F899-9A8C-8A753A1F7540">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Foto o Logo.]]></commentInRDBMS>
+<generatorID>D5A6B73D-3F77-0AF7-8F75-068692B204CD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>529DC9E7-D30F-D2C1-FBA1-2552569B11C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTIVA IMAGEN" id="56347AFB-1502-9197-623A-FA89C00F5AD7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Está Activa la Foto o Logo?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activa la Foto o Logo?. Ej: S, N.]]></commentInRDBMS>
+<generatorID>FD21F821-E3BB-D2F9-422B-E35D17C9B896</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_299757789</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PER_ID" id="69C05282-BD6C-13F9-8F96-061C587FCF4C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<generatorID>398F819D-30C1-E4ED-7E60-61CACD04D240</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO IMAGEN" id="7A629912-68FC-30FA-D9BC-A31E196D5F28">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Formato de la Foto o Logo segun el estandard MIME.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Formato de la Foto o Logo segun el estandard MIME.]]></commentInRDBMS>
+<generatorID>4C2F8DF4-5FC0-798D-DEAB-FBC22F2F16D3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ARCHIVO" id="5DB7DCA8-E5BB-3A79-5DEE-184D54BD74A9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Nombre del Archivo donde está guardada la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Archivo donde está guardada la Foto o Logo.]]></commentInRDBMS>
+<generatorID>B58FA912-C52C-BA17-DED9-810B5DB10720</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MODIFICADO EL" id="924E211B-326C-B7B2-83D5-1C685D910901">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Fecha de Actualización de la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Actualización de la Foto o Logo.]]></commentInRDBMS>
+<generatorID>3247A406-30F2-F7F3-1A7D-26B67FA4AC4B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="93C3A227-52FF-280E-5261-5E67B9C320AE" name="GL_IMG_PERSONAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>B11FC841-5CD6-24CE-7A90-07770957004E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E8E7FF1E-1B89-812F-6E60-DFE4E39A6DCC</newElementsIDs>
+<usedAttributes>
+<attributeRef>E8E7FF1E-1B89-812F-6E60-DFE4E39A6DCC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

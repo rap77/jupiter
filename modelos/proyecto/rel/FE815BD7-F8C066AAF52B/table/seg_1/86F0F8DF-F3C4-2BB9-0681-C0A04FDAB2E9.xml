@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="86F0F8DF-F3C4-2BB9-0681-C0A04FDAB2E9" name="GL_UNIDAD_TRIBUTARIA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Unidad Tributaria. Valor de la Unidad Tributaria según el SENIAT.]]></comment>
+<commentInRDBMS><![CDATA[Unidad Tributaria. Valor de la Unidad Tributaria según el SENIAT.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B4B8D13E-2083-8F6F-5236-FFD92A9E7131</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F339F2F1-C4CB-FE0E-A055-D09E0BA0810D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Unidad Tributaria.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Unidad Tributaria.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0224CA92-68BA-F439-3652-8CD3CAA66507</importedID>
+<constraintName>ID}_304102614</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_MONEDA" id="3DB713E3-E663-F846-94E9-AD2772C954EA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Moneda de la Unidad Tributaria. Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Moneda de la Unidad Tributaria. Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E969BF20-6F75-9905-15F5-388AEC738199</importedID>
+<constraintName>ID}_2124783533</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="E055F55F-2350-4B3B-AA7B-F7ED7EE7764B" referredColumn="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</associations>
+</Column>
+<Column name="PERIODO" id="5FE7C8B1-F390-58AA-8CF7-EE08BB84CEE3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Año al que corresponde la Unidad Tributaria paea fines del ISLR.]]></comment>
+<commentInRDBMS><![CDATA[Año al que corresponde la Unidad Tributaria paea fines del ISLR.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>64E3F797-C057-08E1-3A26-94E59AB452A8</importedID>
+<constraintName>ANHO}_1922811814</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1950</beginValue>
+<endValue>2100</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MONTO" id="2785A26B-D7CF-7496-9274-7CED352D21D5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Monto de las Unidad Tributaria.]]></comment>
+<commentInRDBMS><![CDATA[Monto de las Unidad Tributaria.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7FE63DE5-25C7-BA58-A8E4-7162B24B7C98</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>3677928C-FE6D-5982-85F8-566D0DFD9C6E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="45CB7D7E-0894-22B7-9583-453EAA38C385" name="GL_UNIDAD_TRIBUTARIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A5D2953A-191E-1CC5-8549-250C9CEF479E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F339F2F1-C4CB-FE0E-A055-D09E0BA0810D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6399561F-097E-50BA-C526-2D2FD5EEA7CF" name="GL_UNIDAD_TRIBUTARIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>185C1328-BEC6-7A36-A121-9456C97C8BB5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F339F2F1-C4CB-FE0E-A055-D09E0BA0810D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="35527601-1DF7-2007-B0A4-65CC92C22F05" name="GL_UNIDAD_TRIBUTARIA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DB713E3-E663-F846-94E9-AD2772C954EA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

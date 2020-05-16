@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F5A983C5-EFAF-849E-9974-1ED0020AB5B6" name="SG_USUARIOS_UNID_ORG">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Dependencias con la que puede trabajar el usuario en el sistema. Ej: HVILLAQU Rectorado.</comment>
+<commentInRDBMS>Dependencias con la que puede trabajar el usuario en el sistema. Ej: HVILLAQU Rectorado.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>827013A5-3F5F-A9F1-8DD8-6FDBC70A3301</importedID>
+<abbreviation>USU_UNI_ORG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="USU_PER_ID" id="1DA0EF49-A41A-BF15-7F85-B219E9D9F19B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1968D1DE-49EB-E51D-FE8B-13ABFBE997A9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="1FC69D0B-FD1A-9D9F-E90E-E7D22E90D2C7" referredColumn="D588A765-506A-97A7-52DF-631E477C936B"/>
+</associations>
+</Column>
+<Column name="UNI_ORG_PER_ID" id="F84AC9F8-7FD8-3C5C-CE64-35B060F2E044">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>082A0B3D-6A5C-7E2C-FD11-A78DD991295A</importedID>
+<constraintName>ID}_1349203210</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="5E8812A2-E1BD-1123-BD01-07B6AF995855" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F51CC1E1-8E0D-BC45-4B06-61DF8BA6E9A9" name="SG_USUARIOS_UNID_ORG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F33F0FE2-FFA3-96A2-3D99-24BC70DD09E5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA0EF49-A41A-BF15-7F85-B219E9D9F19B"/>
+<colUsage columnID="F84AC9F8-7FD8-3C5C-CE64-35B060F2E044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8BFDE943-93A9-36FD-03F5-CFCE71200427" name="SG_USUARIO_DEPENDENCIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DD16463E-37C9-B5F1-949F-80020E58F055</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA0EF49-A41A-BF15-7F85-B219E9D9F19B"/>
+<colUsage columnID="F84AC9F8-7FD8-3C5C-CE64-35B060F2E044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8EE3FBD-5759-AFAC-AD39-3AB387CCE5CC" name="USU_UNI_ORG_USU_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DA0EF49-A41A-BF15-7F85-B219E9D9F19B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57156365-9812-498C-8248-894807009C9A" name="USU_UNI_ORG_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F84AC9F8-7FD8-3C5C-CE64-35B060F2E044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

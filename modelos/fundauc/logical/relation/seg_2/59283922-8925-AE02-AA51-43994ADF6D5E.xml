@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UNIDAD_ORG_CURSOS_FK1" directorySegmentName="seg_2" id="59283922-8925-AE02-AA51-43994ADF6D5E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>AFCA4503-C24E-4104-27A0-6F0DC4CD536C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A63518C-3229-2F16-AC9E-89E47B5C4E57</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>17D40B11-C2ED-47C7-B320-87FC757D6CC3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4A89FB3-ACB3-576C-B791-A694F506C56F" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_EDIFICACIONES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_EDIFICACIONES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<comment><![CDATA[Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_EDIF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_EDIFICACIONES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Tipo de Edificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Tipo de Edificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_EDIF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="92E35821-DBAE-49F6-1C5C-094BCD8AF8DB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_EDIFICACIONES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_DESCRIPCION</notNullConstraintName>
+</Column>
+<Column name="VARIOS_PISOS" id="1F1D8611-0401-BED1-273F-88FD22A82B74">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_EDIFICACIONES</sourceObjSchema>
+<sourceObjName>VARIOS_PISOS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<comment><![CDATA[Si el Tipo de Edificacion tiene Varios Pisos]]></comment>
+<commentInRDBMS><![CDATA[Si el Tipo de Edificacion tiene Varios Pisos]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_EDIF_VARIOS PISOS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_VARIOS PISOS</notNullConstraintName>
+</Column>
+<Column name="ABREVIATURA" id="CCC57220-EC4C-B0EA-7A26-31CE5F106A5B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_EDIFICACIONES</sourceObjSchema>
+<sourceObjName>ABREVIATURA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<comment><![CDATA[Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.]]></comment>
+<commentInRDBMS><![CDATA[Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.]]></commentInRDBMS>
+<generatorID>E610444F-C32E-B916-6468-AE56CF0933B6</generatorID>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDIFICACION_ID" id="DB195C5F-B179-A5F9-16D0-779EC9F52C8D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_EDIFICACIONES</sourceObjSchema>
+<sourceObjName>EDIFICACION_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:39:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id de la edificacion superior Ej. Si es Edificio -> Apartamento, Si es Centro Comercial -> Local ]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6D6A6CCC-121D-CC2E-2EA4-A291138F0BAC" referredColumn="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5EBCFA46-CFBA-D303-6CD1-1D60B398DBF7" name="TIPOS EDIFICACIONES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPOS EDIFICACIONES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F469211D-24CE-6EDF-6432-62D178708D65" name="TIPO_EDIFICACION_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPO_EDIFICACION_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA2E88F2-64E0-F585-859B-83DC4827AED7" name="TP_EDIF_TP_EDIF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:39:30 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB195C5F-B179-A5F9-16D0-779EC9F52C8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

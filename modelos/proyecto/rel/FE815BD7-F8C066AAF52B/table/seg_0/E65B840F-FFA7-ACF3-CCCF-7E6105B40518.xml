@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E65B840F-FFA7-ACF3-CCCF-7E6105B40518" name="GL_ESPECIALIDAD_MEDICA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Especialidades Medicas]]></comment>
+<commentInRDBMS><![CDATA[Especialidades Medicas]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F0333C7A-C296-21D5-37E9-7A2577C1219E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="26B70D09-6134-AE92-EA0B-D57A6C1326D7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Especialidad]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Especialidad]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>04FA920A-0F11-0550-B709-9E0CAF7DAA80</importedID>
+<constraintName>ID}_553522625</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GRUPO_ESPECIALIDAD" id="ABD65BB7-7984-49D0-6EF4-C7DD7FAF3F53">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Grupo de la Especialidad]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Grupo de la Especialidad]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>01216781-3410-B77D-9350-69EE3D64D1B6</importedID>
+<constraintName>ID}_2104910880</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="FA470EB5-185B-BDD7-87F1-459E602006EE" referredColumn="952475EE-1A16-A695-F5DD-40161491710E"/>
+</associations>
+</Column>
+<Column name="ESPECIALIDAD_PRINCIPAL" id="21925F1A-86BA-B85F-2167-C3DBC12EB1D2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Especialidad]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Especialidad]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>11F8E60C-9155-9122-0319-15794A42FFD4</importedID>
+<constraintName>ID}_602867145</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="7F54A390-9516-305C-A5EA-355806680D56" referredColumn="26B70D09-6134-AE92-EA0B-D57A6C1326D7"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="12BDBA45-DE7B-5FDA-FD84-CFAF837C7012">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Especialidad Medica]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Especialidad Medica]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F959D43E-7ABA-06BE-5D5C-3D1F90059581</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION_ESPECIALISTA" id="95938A37-16A1-5B24-D785-E456E720E484">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Especialista]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Especialista]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FC788B74-1D3A-5517-2B32-BD3CF277C66E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8C626F59-D03B-E5C1-3A04-C2676A5C4B17" name="GL_ESPECIALIDAD_MEDICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9794CF43-D4FD-9115-F60B-AB23545B4D58</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26B70D09-6134-AE92-EA0B-D57A6C1326D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9496D5E-9087-0FF8-883D-4A37005195AF" name="GL_ESPECIALIDAD_MEDICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A65939E1-5F4A-3A37-FE7E-BA715CC6EBA7</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26B70D09-6134-AE92-EA0B-D57A6C1326D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CEE8C67-4F8C-1337-03E6-45C0A909EF82" name="ESPEC_MEDICA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABD65BB7-7984-49D0-6EF4-C7DD7FAF3F53"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E27C39A-1F21-81E0-7451-C2BD47E667DD" name="GL_ESPECIALIDAD_MEDICA_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="21925F1A-86BA-B85F-2167-C3DBC12EB1D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

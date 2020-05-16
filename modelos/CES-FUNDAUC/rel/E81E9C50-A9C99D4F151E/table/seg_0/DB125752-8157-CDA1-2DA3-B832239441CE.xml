@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB125752-8157-CDA1-2DA3-B832239441CE" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="BANCOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>BANCOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>Bancos</comment>
+<commentInRDBMS>BANCOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BANCO" id="C7921308-CE7F-114B-5EEB-EF09AB3CAD9C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>ID_BANCO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_BANCO</comment>
+<commentInRDBMS>ID_BANCO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="C5CC23DF-D542-15BF-AA2B-CDEEEA03B506">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NOMBRE</comment>
+<commentInRDBMS>NOMBRE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="CE264C75-A2F3-27DE-15BE-E3D992052C84">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CIUDAD</comment>
+<commentInRDBMS>CIUDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEBITO" id="051624AB-D21D-4DEA-CFE0-3B75BA80DD47">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>DEBITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DEBITO</comment>
+<commentInRDBMS>DEBITO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPOSITO" id="A8BF7DCD-0901-6BF8-EE8F-CCDDA483DD28">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>DEPOSITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DEPOSITO</comment>
+<commentInRDBMS>DEPOSITO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDITO" id="EAAD8F50-EAE1-4876-4649-42391DDFF38A">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>CREDITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CREDITO</comment>
+<commentInRDBMS>CREDITO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTA" id="8CB1728E-26F0-67CE-F3B5-C7FD7E159802">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>BANCOS</sourceObjSchema>
+<sourceObjName>CTA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CTA</comment>
+<commentInRDBMS>CTA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F57FD9B-7E3F-FFCE-E46C-375B78544B5C" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="BANCOS_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018511</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>BANCOS_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7921308-CE7F-114B-5EEB-EF09AB3CAD9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B19D66D3-A634-4EAE-EE91-9937B0D7D4BC" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018511">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018511</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>702FD5C0-F6E7-0E9E-FAC1-E382ABA971A8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C7921308-CE7F-114B-5EEB-EF09AB3CAD9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

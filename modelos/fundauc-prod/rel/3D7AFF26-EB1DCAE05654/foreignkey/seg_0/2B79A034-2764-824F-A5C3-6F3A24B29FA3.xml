@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2B79A034-2764-824F-A5C3-6F3A24B29FA3" containerWithKeyObject="CD2DA640-412C-084F-2B1A-E9CC6203693F" localFKIndex="AE2CB2AD-EA64-06D7-29B8-A8BF328642C1" name="CALENDARIOS_DET_CAL_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CALENDARIOS_DET_CAL_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.CALENDARIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FAB5077A-D771-770C-401C-3DE289AABC80</referredTableID>
+<keyObject>16AC9704-0D43-C877-8928-DAFEEE42736D</keyObject>
+<referredKeyID>16AC9704-0D43-C877-8928-DAFEEE42736D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CALENDARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

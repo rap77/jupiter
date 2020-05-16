@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D9D4B02E-D5C6-9E7B-0931-B727D8835211" containerWithKeyObject="EAE5D0BF-E029-2E80-7F3C-DA8FA0F52EEB" localFKIndex="49FA6C0F-4E75-38CE-76EF-4A84A7320F41" name="GL_ASEGURADORA_FK2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E23A5712-3417-CD49-46F3-EDF828DB7E6C</importedID>
+<referredTableLongName>GL_TIPO_ASEGURADORA</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>6BA5257E-D9E5-AEAE-E454-B78E5C6E7F8A</referredTableID>
+<keyObject>F254B6BC-5FEA-9121-B3C6-B9E0F7EF0032</keyObject>
+<referredKeyID>F254B6BC-5FEA-9121-B3C6-B9E0F7EF0032</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

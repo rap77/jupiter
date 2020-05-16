@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IMG_PER_PER_FK" directorySegmentName="seg_0" id="398F819D-30C1-E4ED-7E60-61CACD04D240">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>07A47778-FB00-8BBC-1F35-4AC5C21D8A5C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>DB1DA341-8233-ACF4-5009-D366E6E15EE9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>366D2432-5711-29A0-A0CE-3B757313B65B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DD112557-39BF-25B9-8406-1C4E75B2D7C5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

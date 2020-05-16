@@ -1,0 +1,208 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="02E0029F-3CB3-EEE9-2DA0-E9F867FA862A" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_IMG_PERSONAS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_IMG_PERSONAS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Imagen. Foto o Logo de las Personas.]]></comment>
+<commentInRDBMS><![CDATA[Imagen. Foto o Logo de las Personas.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>IMG_PER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7BE50089-1802-BC6C-5314-52213D8A92C5">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Foto o Logo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_ID</notNullConstraintName>
+</Column>
+<Column name="PERSONA_ID" id="A37C8E52-AA78-317E-999E-3501D3C84AB9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>PERSONA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_PER_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_IPER_PER_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="54068649-9F77-04B5-EBBE-D2DCC625E3B6" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="IMAGEN" id="E59FA7F0-6BFC-6CB1-DC0A-924A05BAB77B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>IMAGEN</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Foto o Logo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_IMG</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>529DC9E7-D30F-D2C1-FBA1-2552569B11C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_IMG</notNullConstraintName>
+</Column>
+<Column name="ACTIVA" id="2FEF2160-5C8A-5FB1-5C69-8153FD661266">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>ACTIVA_IMAGEN</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Está Activa la Foto o Logo?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activa la Foto o Logo?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_ACTI</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_ACTI</notNullConstraintName>
+</Column>
+<Column name="TIPO_IMAGEN" id="84864A30-58F9-4F34-CEB0-D0E441E94B79">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>TIPO_IMAGEN</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Tipo de Formato de la Foto o Logo segun el estandard MIME.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Formato de la Foto o Logo segun el estandard MIME.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_TIMG</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_TIMG</notNullConstraintName>
+</Column>
+<Column name="ARCHIVO" id="247EB0F0-7521-218F-8AEA-6F5ADB5BA4AF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>ARCHIVO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Nombre del Archivo donde está guardada la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Archivo donde está guardada la Foto o Logo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_ARCH</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_ARCH</notNullConstraintName>
+</Column>
+<Column name="MODIFICADO_EL" id="2FFAD588-17B1-2D68-AE0A-57D399F34C80">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_IMG_PERSONAS</sourceObjSchema>
+<sourceObjName>MODIFICADO_EL</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<comment><![CDATA[Fecha de Actualización de la Foto o Logo.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Actualización de la Foto o Logo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_IPER_MODEL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_IPER_MODEL</notNullConstraintName>
+</Column>
+<Column name="MODIFICADO_POR" id="67C0253B-42CE-16E5-1D75-BA0AA6831B20">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:44:17 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF2AA2A4-F376-7F94-4594-A790DEF762AB" name="IMG_PERSONAS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>IMG_PERSONAS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BE50089-1802-BC6C-5314-52213D8A92C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47E54452-66EB-012F-AC19-C810FA5074D3" name="IMAGEN_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>IMAGEN_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BE50089-1802-BC6C-5314-52213D8A92C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D79ECB8-C034-93D4-E561-DF4B10E86208" name="IMG_PER_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:11:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A37C8E52-AA78-317E-999E-3501D3C84AB9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

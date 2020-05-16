@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_PERSONAS_CUENTASBAN_PER_JUR_FK" directorySegmentName="seg_2" id="1C4B16B7-00D0-E951-24BF-A7B6B368CAD5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 20:53:58 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>6811AD05-BBBF-578F-6148-93961FD2CF92</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A8EF0492-599F-2252-E8A4-13C4A3A4A4B6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E41EB4C4-EA29-0385-BC5D-98D6F0B00207</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

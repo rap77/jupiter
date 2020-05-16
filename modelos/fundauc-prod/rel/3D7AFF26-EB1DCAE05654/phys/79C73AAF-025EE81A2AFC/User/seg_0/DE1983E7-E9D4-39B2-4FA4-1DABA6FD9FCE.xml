@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="FUNDAUC" directorySegmentName="seg_0" id="DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjName>FUNDAUC</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:47 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+</UserOraclev10g>

@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B78F8D0D-3A42-B8C6-08B9-E881E33B71FA" name="TS_USOS_CUENTAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.</comment>
+<commentInRDBMS>Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D1D9ABA9-85E1-CAE8-5E4B-5D4490708B2B</importedID>
+<abbreviation>USO_CTA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C87661D6-7052-C037-4777-BDE1331DAE88">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Uso de la Cuenta.</comment>
+<commentInRDBMS>Número de Identificación Interno del Uso de la Cuenta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>47A1A8F8-5BED-7064-A561-471C6ED58350</importedID>
+<constraintName>ID}_1899397806</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="3A5AC00B-FD15-B782-3503-E484CAFB8475">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.</comment>
+<commentInRDBMS>Descripción del Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0E50B122-AC99-C46A-1504-3B1EBA28D152</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="228A008A-8A56-5593-4798-6A78FF44D2A4" name="TS_USOS_CUENTAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A4CC2804-DF64-CAAC-02B1-3CE0211D8BF9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C87661D6-7052-C037-4777-BDE1331DAE88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="071F878D-7577-64CD-3386-470ABF6D3824" name="TS_USO_CUENTA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>08FEDC6C-73C6-6F10-FAE4-3767AD8B741C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C87661D6-7052-C037-4777-BDE1331DAE88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B296BE23-8ABC-4DE9-2700-D7E48395130D" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="TS_TIPOS_CUENTAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:56:48 UTC</createdTime>
+<comment><![CDATA[Tipo de Cuenta Bancaria. Ej: 1 Cuenta Corriente, 2 Cuenta de Ahorros.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Cuenta Bancaria. Ej: 1 Cuenta Corriente, 2 Cuenta de Ahorros.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_CTA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3D0C510E-20F9-F983-724D-08D8A6293823">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:56:48 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Tipo de Cuenta Bancaria.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Tipo de Cuenta Bancaria.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TCTA_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TCTA_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="341995C6-CB14-C86E-6152-04738E24CEF5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:56:48 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Cuenta Bancaria. Ej: Cuenta Corriente, Cuenta de Ahorros.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Cuenta Bancaria. Ej: Cuenta Corriente, Cuenta de Ahorros.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TCTA_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="51785A9F-548A-C135-1D78-0B7C8D5083F8" name="TIPOS_CUENTAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:56:48 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D0C510E-20F9-F983-724D-08D8A6293823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85525C52-F359-C436-F142-5E02D3755028" name="TIPO_CUENTA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:56:48 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D0C510E-20F9-F983-724D-08D8A6293823"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

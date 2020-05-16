@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="366D2432-5711-29A0-A0CE-3B757313B65B" name="GL_PERSONAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.</comment>
+<commentInRDBMS>Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.</commentInRDBMS>
+<generatorID>6B5FBE5C-A868-20F9-E145-85D8753915FE</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PER</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="79C76D50-D300-A9B6-E685-012BB8889F79">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<generatorID>2AEDC292-441B-4730-EE53-2B8D0059CAEA</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_PER_ID" id="4B016D70-CDCF-82FF-595D-102BB3B75B3C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 10:29:45 UTC</createdTime>
+<generatorID>228CF62F-B290-FB6E-C062-2E3A8E12C75A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>9A13EA35-C641-779D-E492-9725465710AB</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="AD7D4A07-5233-AED7-A0A6-D6DDDCEE16F9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Nombre Completo o Razón Social de la Persona.</comment>
+<commentInRDBMS>Nombre Completo o Razón Social de la Persona.</commentInRDBMS>
+<generatorID>6C2FBA93-B97C-C8B4-FC4E-5C41BAAD1155</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INSTANCIAS" id="3861F70F-343D-8368-F0E1-F5EDD09E5892">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 13:40:05 UTC</createdTime>
+<comment>Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC</comment>
+<commentInRDBMS>Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DB1DA341-8233-ACF4-5009-D366E6E15EE9" name="GL_PERSONAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>B58511BB-C3B9-95DF-EEE3-31EDF2DE289F</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>79C76D50-D300-A9B6-E685-012BB8889F79</newElementsIDs>
+<usedAttributes>
+<attributeRef>79C76D50-D300-A9B6-E685-012BB8889F79</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

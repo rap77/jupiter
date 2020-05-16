@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="8E61F44F-4F27-E935-DE9E-908BF9735A7D" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="EVENTOS_CALENDARIO">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EVENTOS_CALENDARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 13:23:06 UTC</createdTime>
+<comment>Vista Informacion de Eventos de Calendario</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<ordsAlias>view_2</ordsAlias>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW EVENTOS_CALENDARIO&lt;br/&gt;AS &lt;br/&gt;SELECT&lt;br/&gt;        c.id_calendario,&lt;br/&gt;        c.descripcion&lt;br/&gt;        || &apos; (&apos;&lt;br/&gt;        || m.descripcion&lt;br/&gt;        || &apos;)&apos; AS descripcion,&lt;br/&gt;        cd.fecha_ini,&lt;br/&gt;        cd.fecha_fin,&lt;br/&gt;        s.id_seccion,&lt;br/&gt;        s.periodo,&lt;br/&gt;        s.id_metodo,&lt;br/&gt;        s.nivel,&lt;br/&gt;        s.horario,&lt;br/&gt;        m.dias&lt;br/&gt;    FROM&lt;br/&gt;        ces.calendarios           c,&lt;br/&gt;        ces.calendarios_detalle   cd,&lt;br/&gt;        ces.modalidades           m,&lt;br/&gt;        ces.secciones             s&lt;br/&gt;    WHERE&lt;br/&gt;        c.id_calendario = cd.id_calendario&lt;br/&gt;        AND m.id_modalidad = cd.modalidad&lt;br/&gt;        AND s.periodo = cd.periodo&lt;br/&gt;        AND s.fec_inicio = cd.fecha_ini</userDefinedSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_CALENDARIO" id="57C52EA6-8EA0-37D7-4720-5D5EEFBDF550">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ID_CALENDARIO</alias>
+<dataType>VARCHAR2 (200 BYTE)</dataType>
+<headerAlias>ID_CALENDARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>2F9249B9-C50A-8672-D35F-154BB2A47647</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DESCRIPCION" id="A1DC896E-EA45-C128-B8B0-FD6C82C1DF85">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DESCRIPCION</alias>
+<dataType>VARCHAR2 (25 BYTE)</dataType>
+<headerAlias>DESCRIPCION</headerAlias>
+<reference>false</reference>
+<referencedColumn>D941F845-F0A9-D1C1-EE7C-89B4C66A4BC4</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FECHA_INI" id="DEE16282-438A-DFD6-6381-AA5D6552087E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FECHA_INI</alias>
+<dataType>DATE</dataType>
+<headerAlias>FECHA_INI</headerAlias>
+<reference>false</reference>
+<referencedColumn>185AA607-3588-DD83-5AFA-549E81806891</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FECHA_FIN" id="CC41B782-C120-C359-9AD1-080FCD2A8B7A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FECHA_FIN</alias>
+<dataType>VARCHAR2 (8 BYTE)</dataType>
+<headerAlias>FECHA_FIN</headerAlias>
+<reference>false</reference>
+<referencedColumn>872016B5-49DC-D94D-734C-F07872B2BE66</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_SECCION" id="3827807B-ED01-59B8-40D0-2818D0A60CCE">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ID_SECCION</alias>
+<dataType>VARCHAR2 (10 BYTE)</dataType>
+<headerAlias>ID_SECCION</headerAlias>
+<reference>false</reference>
+<referencedColumn>62869972-6268-3C76-D8AC-2D74BBDBC776</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PERIODO" id="1F293459-04B3-253C-39C5-0C39B7A9FB9D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PERIODO</alias>
+<dataType>NUMBER (2)</dataType>
+<headerAlias>PERIODO</headerAlias>
+<reference>false</reference>
+<referencedColumn>4617C9FB-61D7-CB6D-3C6E-518AF25794A1</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ID_METODO" id="E5B930F2-5CB3-C17E-8266-0027EC075701">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ID_METODO</alias>
+<dataType>VARCHAR2 (17 BYTE)</dataType>
+<headerAlias>ID_METODO</headerAlias>
+<reference>false</reference>
+<referencedColumn>00D79D58-EED8-B512-1402-A356956B3E97</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="NIVEL" id="00DD4275-C0FF-6E3B-6E58-D5E0EABBE600">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>NIVEL</alias>
+<dataType>VARCHAR2 (50 BYTE)</dataType>
+<headerAlias>NIVEL</headerAlias>
+<reference>false</reference>
+<referencedColumn>89A54F9A-2A95-9A41-E0B5-41969000AC15</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="HORARIO" id="4F9A8E92-C198-99A4-C536-4492C5AE1038">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>HORARIO</alias>
+<dataType>NUMBER (3)</dataType>
+<headerAlias>HORARIO</headerAlias>
+<reference>false</reference>
+<referencedColumn>29A1250A-C47A-4E0F-9C41-0AB699F03937</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="DIAS" id="94D4531D-FA5A-2449-0B64-94042A1FD67D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:03:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>DIAS</alias>
+<dataType>NUMBER (3)</dataType>
+<headerAlias>DIAS</headerAlias>
+<reference>false</reference>
+<referencedColumn>B76D243F-5B37-3AFB-26D6-B1C4A06BAC8D</referencedColumn>
+<viewID>8E61F44F-4F27-E935-DE9E-908BF9735A7D</viewID>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DA8A01CD-1FE7-1168-CDFD-D6BE9E660A42">
+<container>true</container>
+<schema>CES</schema>
+<tableName>CALENDARIOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A20F4C61-90CD-6E92-D763-B9562F6A7A72">
+<container>true</container>
+<schema>CES</schema>
+<tableName>MODALIDADES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3C7B9C24-C9C3-B774-4C50-0B7EC4B8087A">
+<container>true</container>
+<schema>CES</schema>
+<tableName>CALENDARIOS_DETALLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="29A1250A-C47A-4E0F-9C41-0AB699F03937">
+<columnName>ID_CALENDARIO</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2F9249B9-C50A-8672-D35F-154BB2A47647">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D941F845-F0A9-D1C1-EE7C-89B4C66A4BC4">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>MODALIDADES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="26F5CDBE-298C-59C1-451E-A9051E0504F9">
+<columnName>FECHA_INI</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS_DETALLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="185AA607-3588-DD83-5AFA-549E81806891">
+<columnName>FECHA_FIN</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS_DETALLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="B76D243F-5B37-3AFB-26D6-B1C4A06BAC8D">
+<columnName>ID_CALENDARIO</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS_DETALLE</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="55AB52FA-A158-EC16-54B5-D7B4B4DD7089">
+<columnName>ID_MODALIDAD</columnName>
+<schema>CES</schema>
+<tableName>MODALIDADES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AD71FF6B-2780-709B-49AC-CFE7B50DC670">
+<columnName>MODALIDAD</columnName>
+<schema>CES</schema>
+<tableName>CALENDARIOS_DETALLE</tableName>
+</UsedObject>
+</usedObjects>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.ViewIndex">
+<ind_PK_UK id="838D75BC-5341-76A6-6B73-7764A07D600D" name="EVENTOS_CALENDARIO_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>ces</sourceObjSchema>
+<sourceObjName>EVENTOS_CALENDARIO_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 13:28:03 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+</ind_PK_UK>
+</indexes>
+</TableView>

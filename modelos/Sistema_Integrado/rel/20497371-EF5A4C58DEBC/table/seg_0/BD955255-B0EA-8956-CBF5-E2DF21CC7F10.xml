@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD955255-B0EA-8956-CBF5-E2DF21CC7F10" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_AREA_TELEFONICA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[Código de Area Teléfonica. Ej: 1 VE 241 Valencia]]></comment>
+<commentInRDBMS><![CDATA[Código de Area Teléfonica. Ej: 1 VE 241 Valencia]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="03A71F86-879B-1A4B-1D9D-10F1EE6D1615">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Código de Area Teléfonica.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Código de Area Teléfonica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ATLF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ATLF_ID</notNullConstraintName>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="PAIS_ID" id="B2CF28B6-6E74-6643-36FC-98619A94B9C0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ATLF_PAIS</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ATLF_PAIS</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="F41508CA-8D06-C08E-A2B7-12BD689A8962" referredColumn="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6"/>
+</associations>
+</Column>
+<Column name="CODIGO" id="F88145F9-A977-91AA-6223-F580D6D51101">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[Código de Area Teléfonica. Ej: 241, 416]]></comment>
+<commentInRDBMS><![CDATA[Código de Area Teléfonica. Ej: 241, 416]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ATLF_NUM</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ATLF_NUM</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="FA9779B3-8DB3-ADA0-8F6E-6A13B8A9DA09">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[Descripción de Código de Area Teléfonica. Ej: Valencia, Movilnet.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Código de Area Teléfonica. Ej: Valencia, Movilnet.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ATEL_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ATEL_DES</notNullConstraintName>
+</Column>
+<Column name="AREA_MOVIL" id="F289464A-FEC7-A280-83B5-176C26A413BE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<comment><![CDATA[El Area telefonica es Movil?]]></comment>
+<commentInRDBMS><![CDATA[El Area telefonica es Movil?]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>SI_NO}_1532367099</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6464E870-9ACC-2820-12A3-A151866B3479" name="AREA_TELEFONICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03A71F86-879B-1A4B-1D9D-10F1EE6D1615"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9A5C398-5BCA-C5C5-2A57-373DE74574C8" name="AREA_TELEFONICA_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F88145F9-A977-91AA-6223-F580D6D51101"/>
+<colUsage columnID="B2CF28B6-6E74-6643-36FC-98619A94B9C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44EDFA71-F17F-D145-DDD1-D9F9F8A9744F" name="AREA_TELEFONICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03A71F86-879B-1A4B-1D9D-10F1EE6D1615"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EF427185-9AAD-F8DC-EF16-3272B5DD5D9E" name="AREA_TELEFONICA_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F88145F9-A977-91AA-6223-F580D6D51101"/>
+<colUsage columnID="B2CF28B6-6E74-6643-36FC-98619A94B9C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2F0C4A3-B7A3-B941-568A-0D66412F5B28" name="ATEL_PAIS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:58:02 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B2CF28B6-6E74-6643-36FC-98619A94B9C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

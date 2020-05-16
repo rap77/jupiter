@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E50F1B2-632B-47EB-EDEB-C34900D2FCBE" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PRECIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PRECIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>PRECIOS</comment>
+<commentInRDBMS>PRECIOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ITEM" id="4A5206BA-FC04-7A04-0CE2-FFF87DA057F1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>ITEM</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ITEM</comment>
+<commentInRDBMS>ITEM</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_ITEM" id="7BAF911C-CB9F-86AA-46AF-44447901CB62">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>TIPO_ITEM</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>TIPO_ITEM</comment>
+<commentInRDBMS>TIPO_ITEM</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="32F48C8A-2CB8-7A24-D2A4-D1005B669E34">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>FECHA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA</comment>
+<commentInRDBMS>FECHA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO1" id="4B5C1AA9-37AB-E065-A41E-BA22948934CD">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>PRECIO1</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PRECIO1</comment>
+<commentInRDBMS>PRECIO1</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO2" id="B24D6317-1DEA-A4B6-4C73-443F1BEBCC91">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>PRECIO2</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PRECIO2</comment>
+<commentInRDBMS>PRECIO2</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO3" id="685D3EB5-5A9F-9AD2-E2EE-F7D8CA04D2AE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>PRECIO3</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PRECIO3</comment>
+<commentInRDBMS>PRECIO3</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="F062355C-D4B4-86F4-431F-11C4F0218DDF">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>STATUS</comment>
+<commentInRDBMS>STATUS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO4" id="94BB20FD-3CA4-22A8-8727-8EE9E058C14E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>PRECIO4</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PRECIO4</comment>
+<commentInRDBMS>PRECIO4</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRECIO5" id="AC28E4F8-7CD9-CE56-30FD-6FCDCDBE011E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>PRECIOS</sourceObjSchema>
+<sourceObjName>PRECIO5</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PRECIO5</comment>
+<commentInRDBMS>PRECIO5</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EDA1AEB-07AC-925B-AD5B-260D98D00F84" name="PK_PRECIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_PRECIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>PK_PRECIOS</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5206BA-FC04-7A04-0CE2-FFF87DA057F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7ABA2EF-699A-5C80-06FA-48DC2EDEEBCE" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PK_PRECIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_PRECIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>PK_PRECIOS</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A5206BA-FC04-7A04-0CE2-FFF87DA057F1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

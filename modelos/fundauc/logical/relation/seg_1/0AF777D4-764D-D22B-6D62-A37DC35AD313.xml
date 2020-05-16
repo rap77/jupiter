@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IN_POLIZA_BIENE_FK0" directorySegmentName="seg_1" id="0AF777D4-764D-D22B-6D62-A37DC35AD313">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>88AFDC15-D3A9-B34F-38F0-0BA87D566058</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>A2EDF12A-4AB4-CF96-6795-3B5671A0F510</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>AA2607D3-9953-CC25-34EA-A209EE5C794B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DE5CC6EE-9DE9-CC3F-A114-50910A27E884</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

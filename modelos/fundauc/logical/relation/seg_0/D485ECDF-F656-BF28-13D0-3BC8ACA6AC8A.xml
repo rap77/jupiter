@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_CIUDADES_GL_MUNICIPIOS_FK" directorySegmentName="seg_0" id="D485ECDF-F656-BF28-13D0-3BC8ACA6AC8A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>A15603FC-6C58-E7A8-9B39-376708226926</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>214C564F-55C0-5E82-CE8B-7868E6B24B27</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>60AA848E-5E8B-7A33-47C4-2797E799725D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FA581BA0-238B-D968-82EF-ABAB70D8FD6D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

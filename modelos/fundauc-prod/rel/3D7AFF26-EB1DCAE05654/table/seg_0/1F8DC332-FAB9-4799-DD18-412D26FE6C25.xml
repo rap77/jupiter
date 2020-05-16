@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1F8DC332-FAB9-4799-DD18-412D26FE6C25" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CTAXCOB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CTAXCOB</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3DDE594C-E6DF-2FD2-A5A4-8264A2370803">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>CTAXCOB_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>CTAXCOB_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="CLIENTE_ID" id="BFA954E5-8713-C8BE-193B-F27AFE0CB7F2">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>CLIENTE_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="96E4B333-08E6-179A-63F1-F986F9F93488">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>FECHA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACTURA_ID" id="EDDECA8E-2053-3885-B0BF-74B1557110A2">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>FACTURA_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPOSITO_ID" id="FD88B833-552D-1068-1FFD-FBE9FA9137C9">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>DEPOSITO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREDITO" id="E4789E37-D0D0-BC3E-1915-A82200AA8E44">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>CREDITO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO" id="7003E6FD-152C-54AE-A0ED-BF64CE131BC4">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CTAXCOB</sourceObjSchema>
+<sourceObjName>MONTO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,12,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B88E43F1-78B8-33D0-E0B3-6C55876A1646" name="CTAXCOB_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CTAXCOB_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:03 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DDE594C-E6DF-2FD2-A5A4-8264A2370803"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED58BDA9-68FF-ACEE-79F8-03CAB03F6206" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CTAXCOB_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CTAXCOB_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3DDE594C-E6DF-2FD2-A5A4-8264A2370803"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

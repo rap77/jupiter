@@ -1,0 +1,166 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC254C15-D4AD-D9B2-D9AA-8F01044F8294" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SALONES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SALONES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>SALONES</comment>
+<commentInRDBMS>SALONES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_SALON" id="2799FB9F-5CE1-4C85-B59B-45699DE1ADAA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>ID_SALON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_SALON</comment>
+<commentInRDBMS>ID_SALON</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EDIFICIO" id="2AB58880-9F37-5E89-BE32-9DE22FAC6643">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>EDIFICIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>EDIFICIO</comment>
+<commentInRDBMS>EDIFICIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35B9F41B-BD6C-5028-4D57-255497366BC3" referredColumn="AE77E7A7-39C1-336A-95BF-B46E0310E72D"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="C8159E1D-D243-F349-C3E6-1A30FE58CB82">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAPACIDAD" id="81C4031C-D581-A46E-6E97-B83A137CACF2">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>CAPACIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CAPACIDAD</comment>
+<commentInRDBMS>CAPACIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ANCHO" id="37C434A4-D821-8F4F-0A72-F4B3EA914D9F">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>ANCHO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ANCHO</comment>
+<commentInRDBMS>ANCHO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LARGO" id="E4B09FC8-793E-09BF-798B-2D3D0A9AE69F">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALONES</sourceObjSchema>
+<sourceObjName>LARGO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>LARGO</comment>
+<commentInRDBMS>LARGO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="558A032B-290B-A92B-8A80-D1EEC0A48062" name="PK_SALON">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_SALON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>PK_SALON</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2799FB9F-5CE1-4C85-B59B-45699DE1ADAA"/>
+<colUsage columnID="2AB58880-9F37-5E89-BE32-9DE22FAC6643"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2CFBDE1F-A68D-3AFF-60B4-EDFEBD6C81F6" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PK_SALON">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_SALON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>PK_SALON</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2799FB9F-5CE1-4C85-B59B-45699DE1ADAA"/>
+<colUsage columnID="2AB58880-9F37-5E89-BE32-9DE22FAC6643"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D86C5943-FF1C-0F9C-0FBF-09B9DAD6AE58" name="SALONES_EDIFICIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:18:18 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AB58880-9F37-5E89-BE32-9DE22FAC6643"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

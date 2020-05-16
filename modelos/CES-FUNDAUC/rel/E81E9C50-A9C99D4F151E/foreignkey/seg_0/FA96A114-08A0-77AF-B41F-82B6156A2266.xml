@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FA96A114-08A0-77AF-B41F-82B6156A2266" containerWithKeyObject="1C48BDBD-7B21-A8B6-53B0-559179BE2211" localFKIndex="0AA2B524-8AC9-BF6E-926A-19C47615B119" name="SECCIONES_PROFESOR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:30:18 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.PROFESOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>92C9500D-835D-F376-2A31-C837F490EDE6</referredTableID>
+<keyObject>4B2BD270-5EF6-E488-BE8F-6556CB740995</keyObject>
+<referredKeyID>4B2BD270-5EF6-E488-BE8F-6556CB740995</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>CEDULA_PROF</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

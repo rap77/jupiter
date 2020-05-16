@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="9EA72D37-5B98-52A0-0558-FBD6AEFFF460" containerWithKeyObject="2E148E2A-7F4D-698B-DE6B-FC7B77EC3FCA" localFKIndex="2E66FE6E-2856-2B72-6A7F-0EF0B64CECE7" name="GL_TASA_CAMBIO_FK0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>21747DFA-33E1-713F-E521-6BDAE6C74459</importedID>
+<referredTableLongName>GL_MONEDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2B16D0FF-C037-66F7-33D2-08B42946D373</referredTableID>
+<keyObject>EF39AB08-4DEC-0BC9-4178-BEEC958B9C76</keyObject>
+<referredKeyID>EF39AB08-4DEC-0BC9-4178-BEEC958B9C76</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

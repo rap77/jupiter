@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_GACETA_FK0" directorySegmentName="seg_0" id="C8693369-DC7F-9C3B-0A78-E98A934E1A76">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>F8BB6C91-E471-8A15-75CD-9139BF333A4B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>C3C18092-1DDF-ABBE-FE01-976C57B766A4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E60E246F-A6DC-B86A-2894-58BDBBA7AF4A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E47CA5C1-A9CE-18A1-A237-9EC38BD84ED7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

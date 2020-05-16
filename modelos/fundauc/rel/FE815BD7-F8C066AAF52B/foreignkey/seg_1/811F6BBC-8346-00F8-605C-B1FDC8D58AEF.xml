@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="811F6BBC-8346-00F8-605C-B1FDC8D58AEF" containerWithKeyObject="0C5423A8-50C5-DD45-ED48-1BE83A22112C" localFKIndex="4779551F-E92A-85C7-4FF3-E416CE745EC9" name="PER_NAT_GL_ESTADOS_CIVILES_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1AFDED75-861C-3777-D7B0-556958E4178C</importedID>
+<referredTableLongName>GL ESTADOS CIVILES</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>30279D6F-3308-5EDE-3218-9D398B03BFB4</referredTableID>
+<keyObject>CDF83D58-38DC-33A4-22D7-70DA7102E57B</keyObject>
+<referredKeyID>CDF83D58-38DC-33A4-22D7-70DA7102E57B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

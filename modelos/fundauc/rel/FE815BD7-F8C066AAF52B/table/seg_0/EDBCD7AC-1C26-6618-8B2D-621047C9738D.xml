@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDBCD7AC-1C26-6618-8B2D-621047C9738D" name="GL TIPOS EDIFICACIONES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.</comment>
+<commentInRDBMS>Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>43C2DCBA-AC39-C48D-B95D-500FB08DDE9B</importedID>
+<ordsAlias>gl_tipos_edificaciones</ordsAlias>
+<abbreviation>TP_EDIF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1747E912-E307-A7B0-5408-6A5563AED908">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna del Tipo de Edificación.</comment>
+<commentInRDBMS>Número de Identificación Interna del Tipo de Edificación.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>29E88A83-BCD0-BB2D-CA54-FD8A1B0583D7</importedID>
+<constraintName>CK_TP_EDIF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="BA95EF4D-C8EA-F089-97F3-3C6789B1474A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial</comment>
+<commentInRDBMS>Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0E822DC5-8259-A4D4-5059-CAE58C173534</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_DESCRIPCION</notNullConstraintName>
+</Column>
+<Column name="VARIOS PISOS" id="4C28BDAE-5A0B-373E-CD78-9281B5EEC0A8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Si el Tipo de Edificacion tiene Varios Pisos</comment>
+<commentInRDBMS>Si el Tipo de Edificacion tiene Varios Pisos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A3E6C293-DCDA-527B-9ED0-20FA747FDC77</importedID>
+<constraintName>CK_TP_EDIF_VARIOS PISOS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_TP_EDIF_VARIOS PISOS</notNullConstraintName>
+</Column>
+<Column name="ABREVIATURA" id="9C5C36F2-C658-5A08-29CD-52C622FDA799">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:57:30 UTC</createdTime>
+<comment>Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.</comment>
+<commentInRDBMS>Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.</commentInRDBMS>
+<generatorID>E610444F-C32E-B916-6468-AE56CF0933B6</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E6096B0-D756-F460-B9C5-18345582C13D" name="GL TIPOS EDIFICACIONES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>61803DE0-2D10-DD89-3A40-DE72D8C65B5B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1747E912-E307-A7B0-5408-6A5563AED908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00996465-E0ED-676F-9321-3903E8195BC4" name="TP_EDIF_ID_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9975FD4B-C18A-AE73-2020-DC3D1E64DACB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1747E912-E307-A7B0-5408-6A5563AED908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

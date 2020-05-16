@@ -1,0 +1,132 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C3FED5DE-47D0-EFD6-7DCA-B99672D3165E" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MODALIDADES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MODALIDADES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[MODALIDADES]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MODALIDAD" id="0437D41D-F4BE-D6B0-41B4-5C6E788C8B96">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MODALIDADES</sourceObjSchema>
+<sourceObjName>ID_MODALIDAD</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_MODALIDAD]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="EA52D67F-6C96-0E04-0D16-E37931E760FF">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MODALIDADES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[DESCRIPCION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIAS" id="A0928531-AFE9-B539-5C0E-98AD5C808E75">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MODALIDADES</sourceObjSchema>
+<sourceObjName>DIAS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIGLAS" id="EA9126D1-FAB4-CC0A-1193-D4CC60CCB938">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>MODALIDADES</sourceObjSchema>
+<sourceObjName>SIGLAS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[SIGLAS DE DIAS EN LETRAS]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F0BDCB92-4C77-7B18-F6D0-5D7E40FA9615" name="MODALIDADES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MODALIDADES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0437D41D-F4BE-D6B0-41B4-5C6E788C8B96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F88DF35-84B5-71EF-B4E8-79B4945C0EE8" name="MODALIDAD_UK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MODALIDAD_UK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA52D67F-6C96-0E04-0D16-E37931E760FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="653D9B4B-2A12-7175-62BA-28A2E6AD4D81" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MODALIDADES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MODALIDADES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0437D41D-F4BE-D6B0-41B4-5C6E788C8B96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54846A82-1D56-D389-2463-B36149CA64A7" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="MODALIDAD_UK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MODALIDAD_UK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA52D67F-6C96-0E04-0D16-E37931E760FF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SALONES" directorySegmentName="seg_0" id="F031B2D0-D91F-B257-56ED-C1AD54C7F393">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>7D3E360F-D6BC-A999-6E53-8BE252D2159C</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OBSERVACION" id="05CAC33E-3CBF-717A-A933-3686C36FC2DC">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANCHO" id="0D31D770-2014-8ACA-1867-275535D99EE7">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PISO" id="33B5C287-22C3-6EBC-4C15-9B5AF997F6E2">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIGLAS" id="5086C287-F710-FE66-9F09-4F2BECE0988C">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_SALON" id="50DC39BB-A992-C43A-B025-6B7560E7CBE5">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LARGO" id="7BAB67A7-8FC5-0FDC-D181-025F2EAE590E">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAPACIDAD" id="C2712FB7-C4C8-FEBF-EC4F-F9EA1F18B9FD">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="E7CF77BA-3EC1-2F9D-3083-EB79F6673014">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="F1FE7F78-D5D4-AE3D-29A3-737D37E31F28">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EDIFICIO" id="FD2A73CB-C21B-5D09-A7A5-9B0F2FEA406E">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_SALON" id="E0DCFA5A-8880-BF25-5D8C-9D5F3FFC74BB">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<schemaObject>E79B8DC2-2292-A202-640F-D21DD6B2A19B</schemaObject>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SALONES_EDIFICIOS_FK" id="06BA4746-1D73-85D6-2029-B8FA96C0365C">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SALON" id="AB890824-794D-E3A6-98F7-53B93487727F">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<segment>FC88B50F-E750-53C1-AB19-6A3E4046585D</segment>
+<tableSpace>FF2D8F0B-D353-A194-C6D7-D43A9B1C2FBF</tableSpace>
+<existingIndex>E0DCFA5A-8880-BF25-5D8C-9D5F3FFC74BB</existingIndex>
+<indexSegment>FC88B50F-E750-53C1-AB19-6A3E4046585D</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

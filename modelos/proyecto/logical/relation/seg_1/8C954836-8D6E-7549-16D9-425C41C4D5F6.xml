@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PER_NAT_GL_GRADOS_ACADEMICOS_FK" directorySegmentName="seg_1" id="8C954836-8D6E-7549-16D9-425C41C4D5F6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6BC48102-6284-95A7-386D-6B2F715162FD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>27DB338D-DE1A-7EA2-E09F-E9012F3DB130</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>8E630F40-48B8-0767-8FCC-7C963C431AE9</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

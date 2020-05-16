@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B5549F14-6551-FEC6-3F76-4D6C091640F0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_TIPOS_MENSAJES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_TIPOS_MENSAJES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="99C9D6F5-C445-18BA-C8DA-A2ADB6AC13BF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_TIPOS_MENSAJES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de buzon]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de buzon]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_MSJ_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_MSJ_ID</notNullConstraintName>
+</Column>
+<Column name="DESCRIPCION" id="23C135D0-CBB2-F56C-631C-D2D0DDB7507D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_TIPOS_MENSAJES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[descripcion del tipo de buzon]]></comment>
+<commentInRDBMS><![CDATA[descripcion del tipo de buzon]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_MSJ_DES</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_MSJ_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="16ACA0B0-3B06-8C0E-9AF0-FBD125E5A0BC" name="SG_TIPOS_MENSAJES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_TIPOS_MENSAJES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C9D6F5-C445-18BA-C8DA-A2ADB6AC13BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C78593EF-36BD-C893-12A1-5A620658E2F0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_TIPO_BUZON_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_TIPO_BUZON_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99C9D6F5-C445-18BA-C8DA-A2ADB6AC13BF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

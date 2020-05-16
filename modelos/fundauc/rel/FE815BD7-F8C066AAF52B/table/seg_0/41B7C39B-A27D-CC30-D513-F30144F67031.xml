@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="41B7C39B-A27D-CC30-D513-F30144F67031" name="GL_IMG_PERSONAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Imagen. Foto o Logo de las Personas.</comment>
+<commentInRDBMS>Imagen. Foto o Logo de las Personas.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C3D7809B-3B51-2B43-BBFA-5746E84CF502</importedID>
+<abbreviation>IMG_PER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F9595749-440D-10C5-D293-E8CD032949E2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Foto o Logo.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Foto o Logo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>59F39504-3508-FD31-1522-7A5E8E255B52</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_ID" id="5A41567C-4EDC-0E94-506A-11C711A3FF97">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Persona a la que pertenece la Foto o Logo. Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0B25D4D8-EAE5-1C35-4510-D5F2897A1D88</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07A47778-FB00-8BBC-1F35-4AC5C21D8A5C" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="IMAGEN" id="D5A6B73D-3F77-0AF7-8F75-068692B204CD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Foto o Logo.</comment>
+<commentInRDBMS>Foto o Logo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CAB520D5-2498-FBC6-2BAC-FEA9FF71022B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>529DC9E7-D30F-D2C1-FBA1-2552569B11C5</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVA IMAGEN" id="FD21F821-E3BB-D2F9-422B-E35D17C9B896">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Está Activa la Foto o Logo?. Ej: S, N.</comment>
+<commentInRDBMS>Está Activa la Foto o Logo?. Ej: S, N.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>79338B21-7DD5-070A-A9DB-BF0F49739423</importedID>
+<constraintName>SI_NO_299757789</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO IMAGEN" id="4C2F8DF4-5FC0-798D-DEAB-FBC22F2F16D3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tipo de Formato de la Foto o Logo segun el estandard MIME.</comment>
+<commentInRDBMS>Tipo de Formato de la Foto o Logo segun el estandard MIME.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DF9C5724-2089-ABBF-9136-7755AE98F933</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ARCHIVO" id="B58FA912-C52C-BA17-DED9-810B5DB10720">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre del Archivo donde está guardada la Foto o Logo.</comment>
+<commentInRDBMS>Nombre del Archivo donde está guardada la Foto o Logo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>03DF73B5-90E5-5661-8E28-F5A3433FA2E9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO EL" id="3247A406-30F2-F7F3-1A7D-26B67FA4AC4B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de Actualización de la Foto o Logo.</comment>
+<commentInRDBMS>Fecha de Actualización de la Foto o Logo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>67171B83-D319-CE15-ECF3-D7A5CBA149A3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B11FC841-5CD6-24CE-7A90-07770957004E" name="GL_IMG_PERSONAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7F4B7766-2710-D741-C93B-1FA7624EB4C9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9595749-440D-10C5-D293-E8CD032949E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2237F99A-6DB9-575D-D1CA-D84E1FD031E8" name="GL_IMAGEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>60FC74D2-3586-CD2B-62DF-22A1D3292032</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9595749-440D-10C5-D293-E8CD032949E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89621851-24D0-84D5-9E62-02E83ACBDC44" name="IMG_PER_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A41567C-4EDC-0E94-506A-11C711A3FF97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

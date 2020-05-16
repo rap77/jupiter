@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev12cR2 class="oracle.dbtools.crest.model.design.storage.oracle.v12cr2.StorageDesignOraclev12cR2" name="Oracle Database 12cR2" id="B90C8B47-3FA7-1E3C-AC11-95184C639EDA" siteID="79C73AAF-E1A7-E669-7DF0-025EE81A2AFC" siteName="Oracle Database 12cR2" siteType="14">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:13:58 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</StorageDesignOraclev12cR2>

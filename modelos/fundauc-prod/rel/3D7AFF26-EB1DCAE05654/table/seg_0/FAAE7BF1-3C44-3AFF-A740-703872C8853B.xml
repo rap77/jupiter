@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FAAE7BF1-3C44-3AFF-A740-703872C8853B" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="FACTURA_DEPOSITO">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>FACTURA_DEPOSITO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DEPOSITO_ID" id="8193C419-C288-D35C-4D1C-8A882D3BBD83">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FACTURA_DEPOSITO</sourceObjSchema>
+<sourceObjName>DEPOSITO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB36F299-2CB6-6CB2-05C8-4B7AC2519818" referredColumn="77774F89-F690-6EEB-FD8D-CE8A8EAED4EB"/>
+</associations>
+</Column>
+<Column name="FACTURA_ID" id="27E36B38-A4C9-A303-B573-6BDF39FBD2C5">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FACTURA_DEPOSITO</sourceObjSchema>
+<sourceObjName>FACTURA_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5AFC43E1-281E-C8EC-A78D-7E6702DD1148" referredColumn="977DFF97-3CA9-0869-E684-19B1D5080E0D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A0AC7FC5-D8EA-044C-E2EB-19A352A3DB8A" name="FACTURA_DEPOSITO_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>FACTURA_DEPOSITO_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27E36B38-A4C9-A303-B573-6BDF39FBD2C5"/>
+<colUsage columnID="8193C419-C288-D35C-4D1C-8A882D3BBD83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C9CFD2C4-0237-90C6-39FA-F2135D662999" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="FACTURA_DEPOSITO_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>FACTURA_DEPOSITO_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27E36B38-A4C9-A303-B573-6BDF39FBD2C5"/>
+<colUsage columnID="8193C419-C288-D35C-4D1C-8A882D3BBD83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9115D93-B3C6-AC7A-56CD-869879E90702" name="FACTURA_DEPOSITO_DEPOSITO_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8193C419-C288-D35C-4D1C-8A882D3BBD83"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F935883E-ECB5-A830-E992-00096F55BDB7" name="FACTURA_DEPOSITO_FACTURA_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27E36B38-A4C9-A303-B573-6BDF39FBD2C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

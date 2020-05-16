@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IM_TIPO_IMPUESTO_FK0" directorySegmentName="seg_1" id="C22F75C6-E597-39C1-292F-5F16E8A17ABE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>FD2A41DA-C13C-852D-F921-DF239CB0B33F</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>120F67FF-A28D-1040-E7EF-AED0D47A032D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>ABC54DDD-4BE7-BF1E-EB7D-3D8910632FB1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>577319AA-4028-9071-5DD5-7E2DB5D25317</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

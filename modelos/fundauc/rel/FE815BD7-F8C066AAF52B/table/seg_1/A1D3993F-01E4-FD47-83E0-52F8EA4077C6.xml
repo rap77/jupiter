@@ -1,0 +1,172 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A1D3993F-01E4-FD47-83E0-52F8EA4077C6" name="IN_ESTADO_USO_BIEN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tabla que describe el Uso en el que esta en bien, Ej: En Uso, En Reparacion, En Mantenimiento, en almacen para asignar su uso, Etc.</comment>
+<commentInRDBMS>Tabla que describe el Uso en el que esta en bien, Ej: En Uso, En Reparacion, En Mantenimiento, en almacen para asignar su uso, Etc.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2F79CA88-4215-2525-FBDC-774EDE1DC569</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BIEN" id="A2192C3F-0AF6-B87F-B815-FA2806CFC544">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del bien</comment>
+<commentInRDBMS>Identificador único del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8CBEBECC-AF15-16ED-FDAC-8E5CDF583572</importedID>
+<constraintName>ID}_1312501613</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="1831EB77-9940-46A4-FA38-A7BE6A41AB8E" referredColumn="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</associations>
+</Column>
+<Column name="ID_ESTADO_USO" id="1255D11A-8522-BD7B-88BE-F57FA6FC0289">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del uso de los bienes</comment>
+<commentInRDBMS>Identificador único del uso de los bienes</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C39A6CD2-CD84-C6F0-4B74-BC1531BEA713</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48740368-4A70-A371-FF64-0F8C6A5BF826" referredColumn="18E97E3C-560C-D3E9-F6FC-FAA2D589E5A3"/>
+</associations>
+</Column>
+<Column name="FECHA_DESDE" id="4071E78A-A668-2058-467F-C098542617B2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha desde que se activa el uso del bien</comment>
+<commentInRDBMS>Fecha desde que se activa el uso del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>182DB1CE-C315-7CA1-586F-4870F085694B</importedID>
+<constraintName>FECHA}_1831467755</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DETALLE_USO" id="65077C3D-0656-0C0F-1714-1655A93DE933">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Describe información Adicional del Uso del Bien</comment>
+<commentInRDBMS>Describe información Adicional del Uso del Bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>609B2234-3DEC-C94F-813C-84B1F103E6E3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_HASTA" id="8B21B62F-084D-1117-16A8-007E64E91E8E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha hasta que se aplico el uso de el bien</comment>
+<commentInRDBMS>Fecha hasta que se aplico el uso de el bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5EDCC1C6-9814-4FF0-52A4-9F06D56BC8AD</importedID>
+<constraintName>FECHA}_1563033323</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B4F5A99-B92B-7625-2CD5-A7A1DD4F889D" name="IN_ESTADO_USO_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8D9EB728-B618-7A6D-5BFD-637DB45112E2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2192C3F-0AF6-B87F-B815-FA2806CFC544"/>
+<colUsage columnID="1255D11A-8522-BD7B-88BE-F57FA6FC0289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA0AB686-88F6-7ABF-579E-83CD67B6CED9" name="IN_ESTADO_USO_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CCAA4DB4-AA3F-7E60-6F8B-B21FBB5EF0C0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2192C3F-0AF6-B87F-B815-FA2806CFC544"/>
+<colUsage columnID="1255D11A-8522-BD7B-88BE-F57FA6FC0289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="19A6D1A4-14BA-670A-3C49-5D7EC2DDA69F" name="IN_ESTADO_USO_BIEN_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2192C3F-0AF6-B87F-B815-FA2806CFC544"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AA5563B-C227-C753-A6F2-61C84D9AB5F2" name="IN_ESTADO_USO_BIEN_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1255D11A-8522-BD7B-88BE-F57FA6FC0289"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

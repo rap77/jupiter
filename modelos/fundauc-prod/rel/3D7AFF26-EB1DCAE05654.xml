@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="3D7AFF26-1E39-8D9B-EEE0-EB1DCAE05654" mainViewID="2325751B-4E68-E7F5-8DF1-26B038476C75">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:06:37 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>fundauc</connName>
+<connUser>fundauc</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

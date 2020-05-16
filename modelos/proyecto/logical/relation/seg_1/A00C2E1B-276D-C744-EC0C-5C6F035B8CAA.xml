@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IN_GARANTIA_BIEN_FK1" directorySegmentName="seg_1" id="A00C2E1B-276D-C744-EC0C-5C6F035B8CAA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>6B26B53E-41C7-CB21-549E-F640E4473D28</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2D8C11AF-A9DA-3F71-AEC7-F6C98E19BDE8</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC0D9F09-B566-5851-73A0-BBB3962F41B2</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E2695698-51AD-3B8E-4D27-DB45BC44EEAC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

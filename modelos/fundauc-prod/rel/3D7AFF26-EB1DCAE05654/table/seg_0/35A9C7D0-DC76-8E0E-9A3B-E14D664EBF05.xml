@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="35A9C7D0-DC76-8E0E-9A3B-E14D664EBF05" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="CONFIGURACION">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CONFIGURACION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ULT_FACTURA" id="306D2E38-1FA6-3D33-AC09-4EA35A147E4D">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONFIGURACION</sourceObjSchema>
+<sourceObjName>ULT_FACTURA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Ultimo Correlativo de Factura automatica]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORC_TARJ_DEB" id="EB50F46A-A711-B182-E09F-BA22C7C2CEA0">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONFIGURACION</sourceObjSchema>
+<sourceObjName>PORC_TARJ_DEB</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Porcentaje Comision tarjeta de Debito]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,10,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PORC_TARJ_CRE" id="7042F2D7-81ED-042E-8703-B3A7DDD60F3B">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONFIGURACION</sourceObjSchema>
+<sourceObjName>PORC_TARJ_CRE</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Porcentaje comision Tarjeta de Credito]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>5</dataTypeScale>
+<ownDataTypeParameters>,10,5</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TASA_IVA" id="0039B1C3-E487-C57F-8F44-35A04EE9AB59">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>CONFIGURACION</sourceObjSchema>
+<sourceObjName>TASA_IVA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

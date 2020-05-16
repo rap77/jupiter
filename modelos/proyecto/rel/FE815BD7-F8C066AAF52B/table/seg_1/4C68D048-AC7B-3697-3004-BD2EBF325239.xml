@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4C68D048-AC7B-3697-3004-BD2EBF325239" name="SG_USUARIOS_ROLES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Perfiles del Usuario. Ej: HVILLAQU TRAPLA]]></comment>
+<commentInRDBMS><![CDATA[Perfiles del Usuario. Ej: HVILLAQU TRAPLA]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>08C9B677-86F8-2BE1-EF1D-EA2957CE294F</importedID>
+<abbreviation>USU_ROL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SG_ROLES_ID" id="AC310E30-C88A-F344-E77F-A9B194A8DC31">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del Perfil.]]></comment>
+<commentInRDBMS><![CDATA[Código del Perfil.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A417FC2C-546B-6CAC-3105-DA546C278673</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35BB8D97-5D7C-46A7-9C66-9EDFF7DEF283" referredColumn="0E8A6D66-D98B-1C8D-28BF-73385B11A857"/>
+</associations>
+</Column>
+<Column name="SG_USUARIOS_ID" id="D4345F24-C8CB-5ACA-B196-8BE4B02CF418">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1A641DA8-4F7C-35B2-333B-ED815B6231E8</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1186470E-28F6-32CB-653C-CFE54A4057FF" referredColumn="D588A765-506A-97A7-52DF-631E477C936B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4CFEF90E-137C-572F-3D07-26D1EC79E154" name="SG_USUARIOS_ROLES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>08D001A2-7152-A2EF-DCF7-34CBC164B764</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC310E30-C88A-F344-E77F-A9B194A8DC31"/>
+<colUsage columnID="D4345F24-C8CB-5ACA-B196-8BE4B02CF418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11E691FD-6C0A-1829-6212-7FD2BEA44157" name="SG_USUARIO_ROL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E7B55BC9-9E91-EA9D-D8FF-102C8E90C2B1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC310E30-C88A-F344-E77F-A9B194A8DC31"/>
+<colUsage columnID="D4345F24-C8CB-5ACA-B196-8BE4B02CF418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4043D410-8CCF-89B6-8522-BB124D6FA1DD" name="SG_USUARIOS_ROLES_SG_ROLES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC310E30-C88A-F344-E77F-A9B194A8DC31"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D9501E9-BE19-8DF8-150A-706C64B44C7B" name="SG_USUARIOS_ROLES_SG_USUARIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4345F24-C8CB-5ACA-B196-8BE4B02CF418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

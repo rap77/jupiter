@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0EE873E9-7C41-0D7B-7139-71074D177FA2" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="OCUPACIONES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>OCUPACIONES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[OCUPACIONES]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_OCUPACION" id="0F8C4846-AFED-8181-2FBF-B3AF4E1A4A27">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>OCUPACIONES</sourceObjSchema>
+<sourceObjName>ID_OCUPACION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_OCUPACION]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE" id="6848A8DD-83A7-3231-47C4-4AE93B31C72B">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>OCUPACIONES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[NOMBRE]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6B036E7F-11EB-0A55-B188-EB5EF832ADD9" name="OCUPACIONES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>OCUPACIONES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F8C4846-AFED-8181-2FBF-B3AF4E1A4A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C17D6ED-59F4-0761-F003-38A3ACF25548" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="SYS_C0018591">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>SYS_C0018591</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F8C4846-AFED-8181-2FBF-B3AF4E1A4A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

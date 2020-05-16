@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_INF_NACIMIENTOS_PER_NAT_FK" directorySegmentName="seg_2" id="7F3809A7-DC9D-F58D-9F99-35343FA68953">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 13:18:22 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>0CA1BFF2-526F-A45C-00E0-F239CB7EB0C2</sourcePk>
+<dominantRole>2A28EDC4-C212-4B72-011D-9E896F305E7A</dominantRole>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>5127F9F6-DF07-6CDA-1F71-CE87C8CA36A7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

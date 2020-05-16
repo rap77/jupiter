@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="B6FAA747-C935-DD0D-763A-EA2B16E5508E" name="SG_TIPOS_MENSAJES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc</comment>
+<commentInRDBMS>Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc</commentInRDBMS>
+<generatorID>16CC5682-83A1-61F3-2283-B02FA20B901C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_MEN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="71673B8C-9A49-BAB6-6BD8-37CE3FD587A1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Identificador unico del tipo de Mensaje</comment>
+<commentInRDBMS>identificador unico del tipo de buzon</commentInRDBMS>
+<generatorID>96EB4D3D-F115-9173-73C4-76EC87360F0C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="061D5722-8E0F-8F37-9D42-6E39A719C031">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripcion del tipo de mensaje</comment>
+<commentInRDBMS>descripcion del tipo de buzon</commentInRDBMS>
+<generatorID>07B2FE68-6398-BC66-79FB-7E889E8A14A6</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77BD4AEA-0DC6-F298-8C6C-54372C42F853" name="SG_TIPOS_MENSAJES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>52E805B8-C458-526E-DDC9-4897D412C527</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71673B8C-9A49-BAB6-6BD8-37CE3FD587A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

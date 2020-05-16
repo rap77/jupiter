@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E3569D90-19C4-BC74-91FC-0FDE31F73B08" name="GL_LETRAS_RIF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J Juridica, G Gobierno, V Venezolano, E Extranjero, P Pasaporte.]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J Juridica, G Gobierno, V Venezolano, E Extranjero, P Pasaporte.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8EA8A897-0A02-376C-7C46-B27A69798DCA</importedID>
+<abbreviation>LET_RIF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6B0F7925-330C-04E9-6198-E88A90B38970">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>77D8EEB5-F336-644F-8464-DFD8FEB932BD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GL_TIPOS_PERSONAS_ID" id="1C213761-0008-3F67-0B68-6C2AAE7F1D08">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tipo de Persona de la Letra del Registro de Información Fiscal. Código del Tipo de Persona, Ej: N. J.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Persona de la Letra del Registro de Información Fiscal. Código del Tipo de Persona, Ej: N. J.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A7220ACB-1AE7-F6EA-950D-3684596ED0DE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="72C2783C-521E-70D9-D8F1-D8E2B11B372A" referredColumn="6CFBB88F-421F-9080-DB86-DB3E80F62E08"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="AFDFDB8B-B073-530E-DE34-C1CD1E50957C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de la Letra del Registro de Información Fiscal. Ej: Juridico, Gobierno, Venezolano, Extranjero, Pasaporte.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Letra del Registro de Información Fiscal. Ej: Juridico, Gobierno, Venezolano, Extranjero, Pasaporte.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FC1ED4BA-2AB6-1981-2EBF-61E8F3443448</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F7657A1-0721-4481-874D-4F1D26A33B41" name="GL_LETRAS_RIF_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>65130BE8-7901-CDD3-80EB-9C7DA2F98BDA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B0F7925-330C-04E9-6198-E88A90B38970"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70A0685C-111A-E6EA-577D-87F64AD52F92" name="LETRA_RIF_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8DD59FD8-272A-820B-4852-BA154FB335D3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6B0F7925-330C-04E9-6198-E88A90B38970"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="447E496E-EF79-E188-27D2-F7EEC40398C1" name="LET_RIF_TP_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C213761-0008-3F67-0B68-6C2AAE7F1D08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

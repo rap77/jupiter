@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="674818CE-EFA1-E834-D3C0-FE4BA1A11121" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="RH_GRADO_ESTUDIO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<comment><![CDATA[Grado de Estudio. 1 Primaria, 2 Secundaria, 3 Tecnico, 4 Universitario]]></comment>
+<commentInRDBMS><![CDATA[Grado de Estudio. 1 Primaria, 2 Secundaria, 3 Tecnico, 4 Universitario]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A4F83C6F-2885-4E50-C2CF-FE777AAD37FB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GEST_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GEST_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="3AC2CA4C-6BCF-CAC6-379C-434A530031B9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<comment><![CDATA[Descripción de Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GEST_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GEST_DES</notNullConstraintName>
+</Column>
+<Column name="TIPO_GRADO" id="A0285967-BFEC-E5AD-9BD0-1B5327CDD098">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BDE683C6-939C-C00D-49D1-15DF37A9B282" name="RH_GRADO_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4F83C6F-2885-4E50-C2CF-FE777AAD37FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D745BCD8-3E87-70C4-A578-A3B078050E46" name="RH_GRADO_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4F83C6F-2885-4E50-C2CF-FE777AAD37FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

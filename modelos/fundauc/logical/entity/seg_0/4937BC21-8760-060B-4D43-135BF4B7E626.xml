@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4937BC21-8760-060B-4D43-135BF4B7E626" name="GL_TASA_CAMBIO">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Tasa de Cambio. Ej: BSF, BS, 1000.00000000</commentInRDBMS>
+<generatorID>2E148E2A-7F4D-698B-DE6B-FC7B77EC3FCA</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9CF5A24B-C09D-5790-A145-3FCB7A9DD9A6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Número interno de Identificación de la Tasa de Cambio.</commentInRDBMS>
+<generatorID>521C089A-71DD-307A-0D39-4CF53425CF28</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1516139700</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="TASA_CAMBIO" id="A091ED67-E02A-87F1-CA1A-2B8BD11D82FE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Tasa de cambio. Valor por el que se debe Multiplicar la Moneda Base para obtener la Monde de Cambio.</commentInRDBMS>
+<generatorID>28B6A861-CF34-1472-E8A0-A8DD93F15636</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>TASA_CAMBIO}_187570076</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7B3BC9A1-D588-7F86-4A30-F0721D4BAADB</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999.99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_INICIO" id="DF351F9F-C54B-B482-A88B-F8F600D0A78A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha de Inicio de Vigencia de la Tasa de Cambio.</commentInRDBMS>
+<generatorID>5282BB75-874D-8C50-7C34-596E735D6197</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA}_1857980128</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="FECHA_FIN" id="777A9539-7350-9DB4-6435-CF590FFFD74F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Fecha de Fin de la Vigencia de laTasa de Cambio.</commentInRDBMS>
+<generatorID>9A514B49-F1A7-A6D1-B7D0-3041CB5B669B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_10674</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_MONEDA_BASE" id="F58415B0-6858-9460-1DAE-82ED4B027D8F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Moneda Base de la Tasa de Cambio. Número de Identificación Interna de la Moneda.</commentInRDBMS>
+<generatorID>77555577-BF30-B9F5-B22F-A1689948FC9D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1922725896</constraintName>
+<referedAttribute>FD36734E-849F-C764-A5C8-87BC5A84D008</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_MONEDA_CAMBIO" id="12019747-06F5-45E6-8A3D-80C7CBDFDE13">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Moneda de Cambio de la Tasa de Cambio. Número de Identificación Interna de la Moneda.</commentInRDBMS>
+<generatorID>B7E5A41A-4D0D-A3FF-63CC-A915DC04E91E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_10852</constraintName>
+<referedAttribute>FD36734E-849F-C764-A5C8-87BC5A84D008</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="25F2A499-4C15-0326-CE0B-594CD362F3F7" name="GL_TASA_CAMBIO_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>C3A3ACBE-F307-703B-DF58-49CA8EFD4936</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CF5A24B-C09D-5790-A145-3FCB7A9DD9A6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="1C227993-4270-39E2-CC54-C852E03F90FA" name="GL_TASA_CAMBIO_AK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>8911E32A-152A-F247-CC24-5AB3460E948E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>DF351F9F-C54B-B482-A88B-F8F600D0A78A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

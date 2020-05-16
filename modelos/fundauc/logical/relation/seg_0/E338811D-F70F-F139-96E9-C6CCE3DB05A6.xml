@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_FAMILIAR_FK0" directorySegmentName="seg_0" id="E338811D-F70F-F139-96E9-C6CCE3DB05A6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>ACF71F4A-1C28-684C-3084-05084313FE7D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2512B270-F35F-559F-E9ED-32D5ED601E54</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A49C1C5E-3296-6006-24F1-B0FDBA8E81EB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6C7896DF-B740-D9CD-2591-AE433AD98C6C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C706B590-C029-53E8-D3C7-347CCC165412" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="HORARIOS">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HORARIOS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[HORARIOS]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HORARIO" id="7438AD41-DF7B-0685-CF96-FFAB2362E185">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>ID_HORARIO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[ID_HORARIO]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>HORARIOS_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>HORARIOS_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="HORA" id="621B5C1C-1100-8B6E-5455-015ACEFBF94F">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>HORA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[HORA]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODALIDAD" id="57F094B1-FC08-0C2A-D27C-223D305072D3">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>MODALIDAD</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[MODALIDAD]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA_FIN" id="2EED0D06-F6EB-B06D-2CC9-918FFA090016">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>HORA_FIN</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[HORA_FIN]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="00F97960-6092-6D02-7C4B-711858AFBB01" name="HORARIOS_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HORARIOS_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7438AD41-DF7B-0685-CF96-FFAB2362E185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B069A9EC-9F6F-6064-9446-3B2A7EB38E05" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="HORARIOS_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HORARIOS_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7438AD41-DF7B-0685-CF96-FFAB2362E185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D1C1360-C1A6-93CD-C5CF-E323F70948F1" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="I_HORARIO_H">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>I_HORARIO_H</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexExpression>MODALIDAD, TO_CHAR(&quot;HORA&quot;,&apos;HH:MI AM&apos;), TO_CHAR(&quot;HORA_FIN&quot;,&apos;HH:MI AM&apos;)</indexExpression>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+</indexes>
+</Table>

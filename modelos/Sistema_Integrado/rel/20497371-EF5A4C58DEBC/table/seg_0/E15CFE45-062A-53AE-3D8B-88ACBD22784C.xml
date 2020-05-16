@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E15CFE45-062A-53AE-3D8B-88ACBD22784C" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PARENTESCO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Parentesco. 1 Padre. 2 Madre. 3 Hijo. 4 Hija.]]></comment>
+<commentInRDBMS><![CDATA[Parentesco. 1 Padre. 2 Madre. 3 Hijo. 4 Hija.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C3EE1994-E5A5-9354-6105-D680B9F5A009">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Parentesco.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Parentesco.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARENT_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PARENT_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="PARENTESCO_PADRE" id="8B3B1C4E-DD40-623F-C60A-9DEE102CF433">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Parentesco  Masculino que hace pareja con un  Parentesco Femenino.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Parentesco  Masculino que hace pareja con un  Parentesco Femenino.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARENT_PADRE</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PARENT_PADRE</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="38772646-4715-2CAE-4590-0A51466AC670" referredColumn="C3EE1994-E5A5-9354-6105-D680B9F5A009"/>
+</associations>
+</Column>
+<Column name="GENERO_ID" id="C3C89D02-0665-5720-23D8-6F1063885C63">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARENT_GEN</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PARENT_GEN</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="0266D547-5CD8-F002-97E5-A85C872A8458" referredColumn="7FC06D50-13D3-24AB-6852-7E79C7991603"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="408F73AA-9CE6-7685-FF5F-197497A3011D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Descripción del Parentesco. Ej: Padre, Madre, Hijo, Hija.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Parentesco. Ej: Padre, Madre, Hijo, Hija.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PARENT_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PARENT_DES</notNullConstraintName>
+</Column>
+<Column name="ES_HIJO_PARENTESCO" id="0A383C99-C455-24E1-F9CA-3769671CE94A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<comment><![CDATA[Es Hijo el Parentesco?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Es Hijo el Parentesco?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>SI_NO}_342436723</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18060556-DB5D-3DAB-D98E-06C468A9D23C" name="PARENTESCO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3EE1994-E5A5-9354-6105-D680B9F5A009"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45F86151-E9D9-FD8C-8E4F-8E8772B7A093" name="PARENTESCO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3EE1994-E5A5-9354-6105-D680B9F5A009"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23BA22E7-3BF0-5C8D-1575-73F590A4A5A7" name="PARENTESCO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B3B1C4E-DD40-623F-C60A-9DEE102CF433"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F60372A0-174C-4EFB-6F97-B43D78AFB04D" name="GL_PARENTESCO_GL_GENEROS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:28:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C3C89D02-0665-5720-23D8-6F1063885C63"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

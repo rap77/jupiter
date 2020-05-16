@@ -1,0 +1,280 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E2A0415F-2B90-50CD-EFC2-A665BC9F5175" name="GL_INF_NACIMIENTOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Informacion del Nacimiento de la Persona, datos exactos de la partida de nacimiento</comment>
+<commentInRDBMS>Informacion del Nacimiento de la Persona, datos exactos de la partida de nacimiento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F9A17DDB-1F72-16BA-10AE-530E22AD28A7</importedID>
+<abbreviation>INF_NAC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="444855CB-CE03-164F-994C-9AE614D7771B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0E51ED62-4BF5-EE66-3BC3-1FF3EBA29A95</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_NAT_PER_ID" id="F31D05E0-603F-C33E-77B2-C675D36B3292">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:55:51 UTC</createdTime>
+<generatorID>0F9D3A1D-0C93-8B1E-D1B7-72E98B5CB696</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<sourceType>Derived</sourceType>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="762297AA-F330-2E95-9B8E-635E95862082" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="NRO ACTA NCTO" id="21D99230-C8A7-70F1-3305-4C3AF61C5FE9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Numero del Acta de Nacimiento</comment>
+<commentInRDBMS>Numero del Acta de Nacimiento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BD8A297C-EE99-ECB3-9EFA-0AFAA48BCCB0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TOMO REGISTRO" id="DBD2A644-E334-74D5-E6D1-628645D4FD21">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tomo del Registro de Nacimiento</comment>
+<commentInRDBMS>Tomo del Registro de Nacimiento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>589CE77A-B25C-D212-DB57-811078837EA5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FOLIO REGISTRO" id="CF45A8A3-E2D0-7389-75F3-65285BAA5F36">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>53190676-C0EB-F6D0-E38E-EC06ED3EDD13</importedID>
+<constraintName>ENTERO_10}_1584673741</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="CEDULA MADRE" id="85EA6E7B-F647-9C03-9DD9-9287ACBB727C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5138AE4D-2CAE-92A6-91AB-7A7EF8194330</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEDULA PADRE" id="343CF974-248E-1136-C97C-5A9A4C9C11EC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3033B6AA-83C8-9523-A6B6-FFDC1AA5EFC1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIU_ID" id="0BE2C303-4B75-BE50-33D6-437CD629EF3D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Ciudad Población o Caserio.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Ciudad Población o Caserio.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>15FE54C4-F69F-931E-369B-E6D6B96FDB7B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B2337648-08A5-61A9-7CB7-047E0E11FA4A" referredColumn="C23330E4-CA8C-DB3D-8A01-FE82FC05A358"/>
+</associations>
+</Column>
+<Column name="MUN_ID" id="CAF77915-3256-050C-AE77-CFF259352C3F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna del Municipio.</comment>
+<commentInRDBMS>Número de Identificación Interna del Municipio.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>04666562-B05F-A283-CDE7-94605D21A18C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F4860702-8952-EF6B-64F5-C57E725926E1" referredColumn="8A8EE52F-5FDF-2C3E-AB50-671708BC24B3"/>
+</associations>
+</Column>
+<Column name="EST_ID" id="DE125450-2DFF-1287-FF84-969B500C41DF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Estado, Departamento o Provincia.</comment>
+<commentInRDBMS>Número de Identificación Interno del Estado, Departamento o Provincia.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7A3EE5DE-A187-4683-85C1-B32A2F004FD9</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CE04DAD6-27EA-3751-3638-FE1C8AC261D2" referredColumn="B5D97FA9-81F7-B278-B3F6-BC81C2EED107"/>
+</associations>
+</Column>
+<Column name="PAIS_ID" id="49B23368-2743-EE25-7756-EEAEAFE57893">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código del País. Ej: VE, US.</comment>
+<commentInRDBMS>Código del País. Ej: VE, US.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>625A0297-2C9E-528C-628D-80DA9CFBF770</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2075F9F1-5B3B-0F2C-DD64-8BEDDA315511" referredColumn="CFBEBCB8-2F7F-DF59-3905-F8F6D29AB21B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="232E1DE1-4522-44DB-7F2B-1341CE21A7FF" name="GL_INF_NACIMIENTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>15923587-66C1-9A9E-40AA-09244904443F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444855CB-CE03-164F-994C-9AE614D7771B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5881BD75-0FD5-015F-30CD-53DF511086BD" name="GL_INF_NACIMIENTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F3C59309-8A74-E7D0-890F-B4D1FD91A22B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="444855CB-CE03-164F-994C-9AE614D7771B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27B6F33D-3113-1B92-F194-23CACED91635" name="GL_INF_NACIMIENTOS__IDX">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:55:51 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>7F3809A7-DC9D-F58D-9F99-35343FA68953</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F31D05E0-603F-C33E-77B2-C675D36B3292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC0B0015-2EBD-D895-03FA-90796932477D" name="INF_NAC_PAI_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B23368-2743-EE25-7756-EEAEAFE57893"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DAF8116-90E8-6962-3296-6FCF2E5E1125" name="GL_INF_NACIMIENTO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0BE2C303-4B75-BE50-33D6-437CD629EF3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A89BBCF-C1ED-3A21-F6C4-9FE10A514472" name="GL_INF_NACIMIENTO_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE125450-2DFF-1287-FF84-969B500C41DF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2B13E46-5595-9449-4450-0C2A2041F01F" name="GL_INF_NACIMIENTO_FK3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CAF77915-3256-050C-AE77-CFF259352C3F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3840E5F5-DB6F-C75C-2B6F-87AFC6C40270" name="GL_INF_NACIMIENTOS_PER_NAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:55:51 UTC</createdTime>
+<generatorID>7F3809A7-DC9D-F58D-9F99-35343FA68953</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F31D05E0-603F-C33E-77B2-C675D36B3292"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

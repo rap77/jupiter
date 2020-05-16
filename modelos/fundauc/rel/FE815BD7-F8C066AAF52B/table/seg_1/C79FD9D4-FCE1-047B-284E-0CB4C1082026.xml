@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C79FD9D4-FCE1-047B-284E-0CB4C1082026" name="PC_UNIDAD_MEDIDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Unidad de Medida. 1 Unidad. 2 Pieza. 3 Kilo. 4 Metro. 5 Bolivar. 6 Hora</comment>
+<commentInRDBMS>Unidad de Medida. 1 Unidad. 2 Pieza. 3 Kilo. 4 Metro. 5 Bolivar. 6 Hora</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>02153D6D-F760-DDD0-E03C-FCA321E6F52F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="91E99938-6661-F1DA-6CFC-B3D83801BAB4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Unidad de Medida.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Unidad de Medida.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>168166A8-5D45-2569-14DE-1F52DAC65CA1</importedID>
+<constraintName>ID}_1719770643</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_TIPO_UNIDAD_MEDIDA" id="B514A792-BC09-DB89-C35F-A3AEF6083470">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Numero de Identificacion Interno de la Unidad de Medida.</comment>
+<commentInRDBMS>Numero de Identificacion Interno de la Unidad de Medida.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CCADB46B-755C-FF78-D2CE-E056962EA27C</importedID>
+<constraintName>ID}_1468693092</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="78DE55B0-937C-9723-C7EF-7CCC89390A6E" referredColumn="77960E7F-8BFF-877B-7622-DA7F9190D447"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="8B76A9EE-65F9-A87D-BB42-F467E2B44302">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción de la Unidad de Medida. Ej: Kilogramo.</comment>
+<commentInRDBMS>Descripción de la Unidad de Medida. Ej: Kilogramo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D2B4B285-E6D1-DE4C-5378-7C07E3284B46</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREVIATURA" id="CD04B45B-A9BD-224D-4078-74379D4933D6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Abreviatura de la Unidad de Medida. Ej: KG.</comment>
+<commentInRDBMS>Abreviatura de la Unidad de Medida. Ej: KG.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>98034873-6467-17CF-AC75-83C1AF2132CC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVA" id="EBD2EB29-C40B-B244-8853-82CE2BD226B9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D93B4CA6-9AD4-FE86-DA25-9B797EB5D0A3</importedID>
+<constraintName>SI_NO}_1044925517</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="03832947-4260-60AC-6268-361F17E45E9D" name="CP_UNIDAD_MEDIDA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A6771475-EDE5-BD49-746A-3A50546807F4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91E99938-6661-F1DA-6CFC-B3D83801BAB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F25FBA6-D0FE-5E0B-0A47-BDF7BF026E52" name="CP_UNIDAD_MEDIDA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AFCD4C2E-591D-2E5A-2B17-B4EB8182ACBA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91E99938-6661-F1DA-6CFC-B3D83801BAB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D81AF81-FFA2-BB98-C642-3A5A43DCAD5C" name="PC_UNIDAD_MEDIDA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B514A792-BC09-DB89-C35F-A3AEF6083470"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

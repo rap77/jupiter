@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C9F47C93-E144-5335-DE74-E9C955EF1869" containerWithKeyObject="835A1A86-118B-3F88-C283-E7DD8B0F50F5" localFKIndex="4E2ACC1D-D054-00DE-ADA2-73638D6B20A0" name="DIR_TP_EDIF_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6052B16B-8085-3841-57D4-D1F147ED4A82</importedID>
+<referredTableLongName>GL TIPOS EDIFICACIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>EDBCD7AC-1C26-6618-8B2D-621047C9738D</referredTableID>
+<keyObject>3E6096B0-D756-F460-B9C5-18345582C13D</keyObject>
+<referredKeyID>3E6096B0-D756-F460-B9C5-18345582C13D</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

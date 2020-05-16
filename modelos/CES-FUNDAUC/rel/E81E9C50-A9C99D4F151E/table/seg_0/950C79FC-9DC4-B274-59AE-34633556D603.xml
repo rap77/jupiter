@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="950C79FC-9DC4-B274-59AE-34633556D603" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="CALENDARIO_CFP">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CALENDARIO_CFP</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>Calendario CFP</comment>
+<commentInRDBMS>CALENDARIO_CFP</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DIPLOMADO" id="4A8A8457-0116-24F1-C423-CC6DD46B124B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIO_CFP</sourceObjSchema>
+<sourceObjName>DIPLOMADO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DIPLOMADO</comment>
+<commentInRDBMS>DIPLOMADO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_CORTE" id="C9DFFD05-F929-D1DA-2C7C-088916382014">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIO_CFP</sourceObjSchema>
+<sourceObjName>FECHA_CORTE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_CORTE</comment>
+<commentInRDBMS>FECHA_CORTE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUOTA" id="3A5216FA-8512-8E32-1EAC-D63A3100AACD">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIO_CFP</sourceObjSchema>
+<sourceObjName>CUOTA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CUOTA</comment>
+<commentInRDBMS>CUOTA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COHORTE" id="828B66E3-5C73-33E1-2120-3F9AFAB7BF02">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIO_CFP</sourceObjSchema>
+<sourceObjName>COHORTE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>COHORTE</comment>
+<commentInRDBMS>COHORTE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

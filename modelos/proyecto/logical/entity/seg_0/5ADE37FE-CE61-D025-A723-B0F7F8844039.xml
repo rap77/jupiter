@@ -1,0 +1,302 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5ADE37FE-CE61-D025-A723-B0F7F8844039" name="GL_ATRIBUTOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Atributos adicionales de Productos y Otras definiciones donde se necesite ampliar campos adicionales]]></comment>
+<commentInRDBMS><![CDATA[Atributos adicionales de Productos y Otras definiciones donde se necesite ampliar campos adicionales]]></commentInRDBMS>
+<generatorID>03046701-9D69-8E1D-E7FE-B74DC03EC0FF</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ATTR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="6FA7D3F4-7FBC-5556-4E41-120BA7CC1E45">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del atributo]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del atributo]]></commentInRDBMS>
+<generatorID>D73C3F6C-34EA-9770-84DD-7E961A91EE1C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1463884727</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ATRIBUTO_ID_SUP" id="A06DDC7F-CD7A-C4CC-DD9C-D86564DE16E8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del atributo que contiene un atributo en general]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del atributo que contiene un atributo en general]]></commentInRDBMS>
+<generatorID>2BF2109A-79A3-3592-E7B7-7EE824DE8F5C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1013271600</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6FA7D3F4-7FBC-5556-4E41-120BA7CC1E45</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="4156000C-E6C5-6874-8DAA-E3782EF19535">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripcion del atributo]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del atributo]]></commentInRDBMS>
+<generatorID>5A35B96B-9E0C-E98C-AE2E-9EF9E4758908</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LONGITUD_DATO" id="BCDE9DC6-1B87-1142-095A-EA69AF93AF59">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Longitud de datos del atributo]]></comment>
+<commentInRDBMS><![CDATA[Longitud de datos del atributo]]></commentInRDBMS>
+<generatorID>7361C5F5-8579-CA10-CD4F-CD59B15D55A0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_03}_890575273</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="USA_LISTA" id="B2E40F3B-B603-FE46-E368-A4289320FDAC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Si el campo utiliza una lista dependiente de otra tabla]]></comment>
+<commentInRDBMS><![CDATA[Si el campo utiliza una lista dependiente de otra tabla]]></commentInRDBMS>
+<generatorID>77B88E23-6BE1-5C1C-B54A-48AE92915D8A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_172126867</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TIPO_DATO_ID" id="A0FBDB80-9DA2-3FEB-2591-F02AD254B7CC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de dato]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de dato]]></commentInRDBMS>
+<generatorID>D4973AA9-F5B1-A5CE-2FBD-89BA69A52D25</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_97423945</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>0C78D2F1-1118-A9CF-34BA-A4B541CBE3B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="TIPO_ATRIBUTO_ID" id="B5C34497-5B20-D0CF-D66E-05E194CADDF1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de atributo]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de atributo]]></commentInRDBMS>
+<generatorID>BAC61325-7C45-5A65-D65B-6C3BF8BBD7DA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1670444586</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C0985046-42F8-499C-40A4-5ADD3F303B2D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="TABLA_MAESTRO_ID" id="62F51923-84E7-207B-75C6-B2B65182AB2A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Tabla Maestro]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Tabla Maestro]]></commentInRDBMS>
+<generatorID>83BCFFB8-CB82-95A2-9261-1A5B7158FF1A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1639432212</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>967796BB-402D-E150-F191-1A064952C3CD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ALIAS_ATRIBUTO" id="4FC45D47-D812-22DF-466A-EB24B80A0F47">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Alias de un Atributo si Aplica]]></comment>
+<commentInRDBMS><![CDATA[Alias de un Atributo si Aplica]]></commentInRDBMS>
+<generatorID>940ED080-FAB5-56BE-8EE6-6BBBEC9378DA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LONGITUD" id="F5BC8788-157B-76FA-477A-947586F405A4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Longitud del Atributo]]></comment>
+<commentInRDBMS><![CDATA[Longitud del Atributo]]></commentInRDBMS>
+<generatorID>0D1BD20A-37AA-A082-51E7-A2EAE5461615</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_10}_1894158607</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F04E385-223F-135A-1290-107667D2E6A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="PRECISION" id="37A7680E-B941-3B9B-2324-0F27DD17F217">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Presicion del Atributo en el Caso de los montos la cantidad de Decimales]]></comment>
+<commentInRDBMS><![CDATA[Presicion del Atributo en el Caso de los montos la cantidad de Decimales]]></commentInRDBMS>
+<generatorID>0CBF23DA-3E0D-3E9C-FA91-D9B11B2E415A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_10}_1569693921</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F04E385-223F-135A-1290-107667D2E6A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="CATEGORIA_DATO_ID" id="202D346F-C738-D902-2BE0-11C922473B94">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[identificador unico del tipo de dato]]></commentInRDBMS>
+<generatorID>D4973AA9-F5B1-A5CE-2FBD-89BA69A52D25</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8B31956B-045E-392B-284B-9B6983DE0B8E</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DF6CD029-F1A7-DA6C-94D2-E5B7A71AA0F0" name="GL_ATRIBUTOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>BE3D173E-02C4-AD89-08D5-764882662B9D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6FA7D3F4-7FBC-5556-4E41-120BA7CC1E45</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

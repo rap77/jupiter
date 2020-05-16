@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PER_NAT_GL_OCUPACIONES_FK" directorySegmentName="seg_1" id="75152B15-EB1C-0DD6-34A0-3A801723264C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6A5A9505-5C49-88BC-7273-CD39AB5BD74B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>8D4E69B0-F3D0-B85B-6884-0C0C9E35E0B8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1719B27A-CBD4-7BF2-C9A0-45CC1FF673DB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

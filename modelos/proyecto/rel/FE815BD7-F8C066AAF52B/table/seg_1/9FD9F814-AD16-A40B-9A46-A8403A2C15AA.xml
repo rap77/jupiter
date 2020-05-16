@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9FD9F814-AD16-A40B-9A46-A8403A2C15AA" name="SG_OPCIONES_MENU">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Opciones del Menu de Cada Sistema]]></comment>
+<commentInRDBMS><![CDATA[Opciones del Menu de Cada Sistema]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5595853D-0409-5FD5-DD3E-C79F90C90F7D</importedID>
+<abbreviation>OP_MEN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="AE5FADB9-B0DD-CD87-2B0F-7A4019DBD095">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DFDFFE26-896D-2EC7-092A-7A2D4243EC00</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SG_OPCIONES_MENU_ID" id="1DF73806-62CA-E854-19D1-230DED58C110">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5DAE3BE7-7D6F-3B2A-0D22-555AB5E7895C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26C61DE0-D367-B467-2DA5-5C8AB3314EF6" referredColumn="AE5FADB9-B0DD-CD87-2B0F-7A4019DBD095"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="9BAA2CBA-A667-0277-4319-AE58CAB881C0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la opcion del menu]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la opcion del menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>86755D41-C28A-7EB3-4F4D-9DBF141A8BF3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6CCF49CE-73D5-827C-59F9-66A029D86BB7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="URL" id="ECB18240-23FD-EFF8-C4C5-86004BA60ED7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[direccion url de la opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[direccion url de la opcion de menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1297082B-5838-618B-4CF1-BEB71A01D76A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ORDEN_DISPLAY" id="1EAEF92F-81C6-C58D-F5B8-F96385F1ECD0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[orden en que se desplegan las opciones del menu]]></comment>
+<commentInRDBMS><![CDATA[orden en que se desplegan las opciones del menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3C9066C2-E7DB-42D0-969A-36D54067DC98</importedID>
+<constraintName>ENTERO_06_588641392</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="PAGINA_ID" id="25738471-5F11-5E72-9344-2F778D6FD19C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[numero de pagina asociada a la opcion de menu en caso de APEX]]></comment>
+<commentInRDBMS><![CDATA[numero de pagina asociada a la opcion de menu en caso de APEX]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C9D8A3CD-B07E-014C-361C-77101C18E820</importedID>
+<constraintName>ENTERO_10_1317504989</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESPLEGAR_EN_MENU" id="C94A000F-2C3A-042A-E8BB-C5BDA077FC24">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[esta opcion va a ser desplegada en el menu?]]></comment>
+<commentInRDBMS><![CDATA[esta opcion va a ser desplegada en el menu?]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AB255A70-0EC8-9E59-577F-4A2526B0EC53</importedID>
+<constraintName>SI_NO_1295777420</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="94FE10EB-062F-4414-2501-D6DB65356784" name="SG_OPCIONES_MENU_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1525A3E0-E65A-D673-35CA-F2A8FE6EF525</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE5FADB9-B0DD-CD87-2B0F-7A4019DBD095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B741F40-CE97-228B-F0A9-8B73369AF246" name="SG_OPCION_MENU_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F050ED6A-CA3B-158A-78C2-250EFFF868CD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE5FADB9-B0DD-CD87-2B0F-7A4019DBD095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E471690-DF80-6CC0-F5FE-C9162BF9A87B" name="SG_OPCIONES_MENU_SG_OPCIONES_MENU_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DF73806-62CA-E854-19D1-230DED58C110"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

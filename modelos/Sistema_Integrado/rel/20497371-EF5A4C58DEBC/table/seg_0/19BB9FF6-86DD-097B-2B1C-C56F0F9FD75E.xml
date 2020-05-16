@@ -1,0 +1,200 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19BB9FF6-86DD-097B-2B1C-C56F0F9FD75E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="TS_CUENTAS_BANCARIAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:17 UTC</createdTime>
+<comment><![CDATA[Cuenta Bancaria. Ej: 1 Provincial, 12345678901234567890.]]></comment>
+<commentInRDBMS><![CDATA[Cuenta Bancaria. Ej: 1 Provincial, 12345678901234567890.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>CTA_BAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C2DAA65D-9398-0B81-9042-88F0D3D1C6F5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Cuenta Bancaria.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Cuenta Bancaria.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CTABAN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CTABAN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TIP_CTA_ID" id="97C2F3E3-B13A-DB0E-9654-977A0BCCF1A0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Tipo de Cuenta Bancaria. Número de Identificación Interna del Tipo de Cuenta Bancaria.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Cuenta Bancaria. Número de Identificación Interna del Tipo de Cuenta Bancaria.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CTABAN_TCTA_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CTABAN_TCTA_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="FDB411DE-856A-B6C5-8A87-03D8508CFED5" referredColumn="3D0C510E-20F9-F983-724D-08D8A6293823"/>
+</associations>
+</Column>
+<Column name="USO_CTA_ID" id="A13E8E95-9A4C-DE97-6370-60311D9E2C58">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Uso de la Cuenta.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Uso de la Cuenta.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CTABAN_USO</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CTABAB_USO</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="26B0CDD0-1C33-2C84-1131-334E89C46D61" referredColumn="0CFFD27C-DDFF-48FE-39E1-08DF5D9FD4F7"/>
+</associations>
+</Column>
+<Column name="BANCO_ID" id="BAC6BAEE-BB54-7482-65C1-4CB20CFE1133">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CTABAN_BAN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CTABAN_BAN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="0A9C2B42-7F5C-BDE5-C40E-549E741E2E24" referredColumn="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C"/>
+</associations>
+</Column>
+<Column name="NUM_CTA_BANCARIA" id="6349ACC5-D984-AC81-DABD-12AE8308F3C7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Número de Cuenta Bancaria, Ej:12345678900987654321]]></comment>
+<commentInRDBMS><![CDATA[Número de Cuenta Bancaria, Ej:12345678900987654321]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CTABAN_NUM</notNullConstraintName>
+</Column>
+<Column name="ACTIVA" id="209807A1-BAFD-EADF-9D4A-4BEA9BBC4B1A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<comment><![CDATA[Está Activa la Cuenta Bancaria?. Ej: S,N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activa la Cuenta Bancaria?. Ej: S,N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>SI_NO}_154662089</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C64C204-9855-FD58-1E37-5511304FE03B" name="CUENTAS_BANCARIAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2DAA65D-9398-0B81-9042-88F0D3D1C6F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A40939A-2482-9FA8-92B1-5647ADAC979D" name="CUENTA_BANCARIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:28:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2DAA65D-9398-0B81-9042-88F0D3D1C6F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4D0F58F-490B-E024-5870-7088A49B42B5" name="CTA_BAN_BANCOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:12:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BAC6BAEE-BB54-7482-65C1-4CB20CFE1133"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F087F126-5128-5690-AC9C-925A2D8C3120" name="CTA_BAN_TP_CUENTAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:13:38 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="97C2F3E3-B13A-DB0E-9654-977A0BCCF1A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47F357C8-5404-B1DD-CB53-9F04E27E426A" name="CTA_BAN_USOS_CUENTAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:17:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A13E8E95-9A4C-DE97-6370-60311D9E2C58"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

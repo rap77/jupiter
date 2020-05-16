@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="16C65979-7517-72A1-D17C-EFEB95CE2C80" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TELEFONOS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TELEFONOS</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Número Teléfonico. Ej:1 0234567 2012 Directo]]></comment>
+<commentInRDBMS><![CDATA[Número Teléfonico. Ej:1 0234567 2012 Directo]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TLF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BB4C75E0-143F-9DE9-A071-DE9720977060">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Teléfono.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TIPO_TELEFONO_ID" id="87C1C4DC-7E4A-FE15-854D-EB202E6597F8">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>TIPO_TELEFONO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Tipo de Teléfono. Número de Identificación del Tipo de Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Teléfono. Número de Identificación del Tipo de Teléfono.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_TTLF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_TTLF_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="63EF1CD5-8D47-927F-FF94-0FF97E85F4B3" referredColumn="BA4F16E4-AB0E-405A-A233-178B861C73B6"/>
+</associations>
+</Column>
+<Column name="AREA_TELEFONICA_ID" id="8E2870A6-35C2-5C83-2530-4264A431888E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>AREA_TELEFONICA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Código de Area del Teléfono. Número de Identificación Interno del Código de Area Teléfonica.]]></comment>
+<commentInRDBMS><![CDATA[Código de Area del Teléfono. Número de Identificación Interno del Código de Area Teléfonica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_ATEL_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_ATEL_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="33452C9E-DBC7-81E8-F050-702718F8540A" referredColumn="03A71F86-879B-1A4B-1D9D-10F1EE6D1615"/>
+</associations>
+</Column>
+<Column name="PERSONA_ID" id="018ACC89-5A4F-1E65-65B7-3383F95A5007">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>PERSONA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_PER_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6F9D3B01-77E6-3701-986D-ECAF8A6EBEC9" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="NUM_TELEF" id="52F4378B-F347-7FCC-7CA9-99B8723937C0">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>NUM_TELEF</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Número de Teléfono. Ej: 7654321]]></comment>
+<commentInRDBMS><![CDATA[Número de Teléfono. Ej: 7654321]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_NUM</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_NUM</notNullConstraintName>
+</Column>
+<Column name="ACTIVO" id="566495E2-F9E0-6759-0352-6CE3DF8EC8FC">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>ACTIVO_TELEFONO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Está Activo el Teléfono. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Teléfono. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TLF_ACTI</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TLF_ACTI</notNullConstraintName>
+</Column>
+<Column name="EXTENSION_TLF" id="27CE1E32-01ED-EE20-0F6C-826AFEF0CC9E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>EXTENSION_TELEFONO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Extensión del Telefono. Ej: Ext. 123.]]></comment>
+<commentInRDBMS><![CDATA[Extensión del Telefono. Ej: Ext. 123.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTA_TELEFONO" id="7F76D49B-E061-908C-A70E-2419729D8ED3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TELEFONOS</sourceObjSchema>
+<sourceObjName>NOTA_TELEFONO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<comment><![CDATA[Nota del Teléfono. Ej: Llamar solo en horas laborales.]]></comment>
+<commentInRDBMS><![CDATA[Nota del Teléfono. Ej: Llamar solo en horas laborales.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3041E5A7-FB9B-1421-590E-B8DA78DA79F7" name="TELEFONOS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TELEFONOS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB4C75E0-143F-9DE9-A071-DE9720977060"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9967B909-5E49-F1C7-DD9B-F17C4C13C030" name="TELEFONO_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TELEFONO_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:17:21 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BB4C75E0-143F-9DE9-A071-DE9720977060"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B8EF30D-113B-0FFB-9E8C-6FE52F013069" name="TEL_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:19:01 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="018ACC89-5A4F-1E65-65B7-3383F95A5007"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="582419D4-FEC7-3D2E-4F36-05A535413AF5" name="TEL_TP_TEL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:51:39 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87C1C4DC-7E4A-FE15-854D-EB202E6597F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FA4FE35-7C17-D619-7820-19C22CAEFD55" name="TEL_AREA_TEL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:59:17 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E2870A6-35C2-5C83-2530-4264A431888E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B422D48F-541E-5DAC-D22C-50C77EFC924A" containerWithKeyObject="137723F5-1558-FA4A-1B42-22D450757292" localFKIndex="AD18AEDB-B28E-8112-80C9-64B6B78D5D3F" name="USR_ROL_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018631</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>SYS_C0018631</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.ROLES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>742041CB-A1D0-96A6-0D71-024113D54F9D</referredTableID>
+<keyObject>A0B11B3F-798B-D3A8-465D-8EE23027AA59</keyObject>
+<referredKeyID>A0B11B3F-798B-D3A8-465D-8EE23027AA59</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_ROL</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FunctionOracle class="oracle.dbtools.crest.model.design.storage.oracle.FunctionOracle" name="TOKENCOUNT" directorySegmentName="seg_0" id="C3FCEE75-7281-6347-9ACD-77DBCBF4A773">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TOKENCOUNT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:29:03 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<owner>97FD16BA-5F38-1D61-ED7A-CBFAE1D2218C</owner>
+<source>CREATE OR REPLACE FUNCTION     CES.TOKENCOUNT (LINEBUF   IN VARCHAR2,&lt;br/&gt;                                                separa    IN VARCHAR2)&lt;br/&gt;   RETURN VARCHAR2&lt;br/&gt;IS&lt;br/&gt;   FIRST_TOKEN   VARCHAR2 (2000);&lt;br/&gt;   COMA_POS      NUMBER;&lt;br/&gt;   CONTENIDO     VARCHAR2 (2000) := LINEBUF;&lt;br/&gt;   i             NUMBER := 0;&lt;br/&gt;BEGIN&lt;br/&gt;   IF CONTENIDO IS NULL&lt;br/&gt;   THEN&lt;br/&gt;      i := 0;&lt;br/&gt;   ELSE&lt;br/&gt;      LOOP&lt;br/&gt;         EXIT WHEN COMA_POS = 0;&lt;br/&gt;         COMA_POS := INSTR (CONTENIDO, separa);&lt;br/&gt;         DBMS_OUTPUT.PUT_LINE (COMA_POS);&lt;br/&gt;&lt;br/&gt;         IF COMA_POS = 0&lt;br/&gt;         THEN&lt;br/&gt;            FIRST_TOKEN := CONTENIDO;&lt;br/&gt;            CONTENIDO := NULL;&lt;br/&gt;         ELSE&lt;br/&gt;            IF COMA_POS = 1&lt;br/&gt;            THEN&lt;br/&gt;               CONTENIDO := SUBSTR (CONTENIDO, COMA_POS + LENGTH (separa));&lt;br/&gt;               COMA_POS := INSTR (CONTENIDO, separa);&lt;br/&gt;               --DBMS_OUTPUT.PUT_LINE(i||&apos;-&apos;||CONTENIDO||&apos;-&apos;||COMA_POS);&lt;br/&gt;               FIRST_TOKEN := SUBSTR (CONTENIDO, 1, COMA_POS - 1);&lt;br/&gt;               CONTENIDO := SUBSTR (CONTENIDO, COMA_POS + LENGTH (separa));&lt;br/&gt;            ELSE&lt;br/&gt;               FIRST_TOKEN := SUBSTR (CONTENIDO, 1, COMA_POS - 1);&lt;br/&gt;               CONTENIDO := SUBSTR (CONTENIDO, COMA_POS + LENGTH (separa));&lt;br/&gt;            END IF;&lt;br/&gt;         END IF;&lt;br/&gt;&lt;br/&gt;         i := i + 1;&lt;br/&gt;      -- DBMS_OUTPUT.PUT_LINE(i||&apos;-&apos;||FIRST_TOKEN);&lt;br/&gt;      END LOOP;&lt;br/&gt;   END IF;&lt;br/&gt;&lt;br/&gt;   RETURN i;&lt;br/&gt;END;</source>
+</FunctionOracle>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="89635D46-3E04-BC6A-29C3-68348838E4E4" containerWithKeyObject="3A2CBE07-39BB-771B-22B6-55DCD560FDFD" localFKIndex="EA943B52-46D2-D574-A81F-8AF7CA1907C5" name="EST_TP_EST_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018633</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>SYS_C0018633</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.TIPO_ESTUDIANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>110AB452-2771-9415-EBF6-2BA61A9F0805</referredTableID>
+<keyObject>E8C80AF9-0C5F-B756-100F-AD0F9D8B93A9</keyObject>
+<referredKeyID>E8C80AF9-0C5F-B756-100F-AD0F9D8B93A9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO_EST</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

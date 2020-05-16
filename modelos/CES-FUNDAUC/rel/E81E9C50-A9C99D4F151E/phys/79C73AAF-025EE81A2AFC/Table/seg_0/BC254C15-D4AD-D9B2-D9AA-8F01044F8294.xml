@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SALONES" directorySegmentName="seg_0" id="BC254C15-D4AD-D9B2-D9AA-8F01044F8294">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>10401428-D454-BA1D-9354-9CED063AB4CD</segment>
+<tableSpace>E9A2F537-E7FE-EBC6-E765-57311399BA77</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID_SALON" id="2799FB9F-5CE1-4C85-B59B-45699DE1ADAA">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EDIFICIO" id="2AB58880-9F37-5E89-BE32-9DE22FAC6643">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANCHO" id="37C434A4-D821-8F4F-0A72-F4B3EA914D9F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAPACIDAD" id="81C4031C-D581-A46E-6E97-B83A137CACF2">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="C8159E1D-D243-F349-C3E6-1A30FE58CB82">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LARGO" id="E4B09FC8-793E-09BF-798B-2D3D0A9AE69F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_SALON" id="2CFBDE1F-A68D-3AFF-60B4-EDFEBD6C81F6">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>A55AB7C9-E9D8-B030-A453-882A58461253</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SALONES_EDIFICIOS_FK" id="D86C5943-FF1C-0F9C-0FBF-09B9DAD6AE58">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:18:18 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SALON" id="558A032B-290B-A92B-8A80-D1EEC0A48062">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<segment>A55AB7C9-E9D8-B030-A453-882A58461253</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<existingIndex>2CFBDE1F-A68D-3AFF-60B4-EDFEBD6C81F6</existingIndex>
+<indexSegment>A55AB7C9-E9D8-B030-A453-882A58461253</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

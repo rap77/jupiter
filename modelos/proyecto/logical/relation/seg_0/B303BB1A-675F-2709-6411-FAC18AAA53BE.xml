@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_ASEGURADORA_FK2" directorySegmentName="seg_0" id="B303BB1A-675F-2709-6411-FAC18AAA53BE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>D9D4B02E-D5C6-9E7B-0931-B727D8835211</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>47FB1ABB-C4DB-098E-1543-E5573EE84DC4</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3DD09EC7-AE9A-7BE2-E4D4-0D011ACD5F72</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3B3FC6C5-EFBE-5EEC-3620-114E581BFDF5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E34861C3-1A76-C93D-510D-E9AFD07E15A3" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_DIRECCIONES_ELEC">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DIRECCIONES_ELEC</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Dirección Electronica. Ej: 1 luis2010@hotmail.com.]]></comment>
+<commentInRDBMS><![CDATA[Dirección Electronica. Ej: 1 luis2010@hotmail.com.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>DIR_ELE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="900CB331-DDE7-BED2-135D-0571B920640C">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES_ELEC</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Dirección Electrónica.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Dirección Electrónica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DIR_ELE_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DIR_ELE_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TIPO_DIREC_ELEC_ID" id="9D0730E5-AAA6-DE83-4B2E-0AB118E68FDA">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES_ELEC</sourceObjSchema>
+<sourceObjName>TIPO_DIRECCION_ELEC_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección Electronica. Número de Identificación Interno del Tipo de Dirección Electrónica.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección Electronica. Número de Identificación Interno del Tipo de Dirección Electrónica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_DIR_ELE_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_DIR_ELE_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C7C4E277-AA6E-BDB7-BEA6-BA47D05B9734" referredColumn="65D2B232-40DF-5998-DC29-76C10A7FE5A2"/>
+</associations>
+</Column>
+<Column name="PERSONA_ID" id="DE3A7926-F34F-A13E-6BC0-62260356700A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES_ELEC</sourceObjSchema>
+<sourceObjName>PERSONA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DE_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DE_PER_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="8CE2D83C-55A6-951C-A345-2F7AE9DFC2E0" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="DIRECCION_ELE" id="26D83207-1640-82C3-1BE8-92D338D4F152">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES_ELEC</sourceObjSchema>
+<sourceObjName>DIRECCION_ELE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Dirección Electrónica. Ej: haroldvm@hotmail.com., @padron]]></comment>
+<commentInRDBMS><![CDATA[Dirección Electrónica. Ej: haroldvm@hotmail.com., @padron]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DE_DIR_ELE</notNullConstraintName>
+</Column>
+<Column name="ACTIVA" id="6130CA2D-0C06-6AA7-6FB5-1DAFB8387DBF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES_ELEC</sourceObjSchema>
+<sourceObjName>ACTIVA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<comment><![CDATA[Está Activa la Dirección Electronica?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activa la Dirección Electronica?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DE_ACTIVA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DE_ACTIVA</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D33FD39D-8EAD-C342-A2B3-8F48B25FE5EF" name="DIRECCIONES_ELEC_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DIRECCIONES_ELEC_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="900CB331-DDE7-BED2-135D-0571B920640C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C14E68C-1BC4-C62B-B93B-BCAD273D40B8" name="DIRECCION_ELEC_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DIRECCION_ELEC_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:32:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="900CB331-DDE7-BED2-135D-0571B920640C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE62E4BB-B3F0-FD96-4CA0-346F3B724E3D" name="DIR_ELE_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:35:20 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DE3A7926-F34F-A13E-6BC0-62260356700A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49425884-3976-2837-9D9E-EB01A018F54C" name="DIR_ELE_TP_DIR_ELE_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:56:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D0730E5-AAA6-DE83-4B2E-0AB118E68FDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

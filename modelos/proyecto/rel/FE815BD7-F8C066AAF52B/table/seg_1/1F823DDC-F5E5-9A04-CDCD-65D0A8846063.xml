@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1F823DDC-F5E5-9A04-CDCD-65D0A8846063" name="PC_DETALLE_PRODUCTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene detalle del producto]]></comment>
+<commentInRDBMS><![CDATA[Contiene detalle del producto]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F6177F5E-3328-4480-B739-C2446BFA2A29</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="669F63D6-487A-5707-EAC5-7B866A16545E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EB5212CF-2D5F-7338-3591-F627DE4EF241</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PRODUCTO" id="42801207-A263-E515-709C-C32F5AABABA9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0BB05879-CB74-F3A7-668E-084DD504778D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59EF414F-6E58-206D-E1F8-48E25FE011A7" referredColumn="CF9BAF4F-28C7-4618-CAEC-991D798E1894"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="E5747B2F-11E3-8A33-A2F0-4A6519E6C9E4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F113E47F-3D41-AB03-9F90-738D4DC6FA9F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96B5BB16-0957-14BD-2E83-8EC84535AA8F" name="PC_DETALLE_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4973B2FA-3E1E-3647-EAB2-F7C234CD9D27</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="669F63D6-487A-5707-EAC5-7B866A16545E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACFCEFFF-C745-CC12-4676-45FCB524C246" name="PC_DETALLE_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>584D9E25-485B-3761-8321-1BF3BF3C0566</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="669F63D6-487A-5707-EAC5-7B866A16545E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D3EC1EC-402F-3B3D-DFC9-19A70A3D708C" name="PC_DETALLE_PRODUCTO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42801207-A263-E515-709C-C32F5AABABA9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1B7FAF28-5650-DE79-8D08-6F5E14B30B2E" name="GL_TIPOS_DOCUMENTOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla utilizada para registrar los tipos de documentos existentes dentro del SIGAUC. Los estatus que pueden tener estos documentos son manejados a través de las tablas GL_ESTATUS y GL_ESTATUS_SECUENCIA]]></comment>
+<commentInRDBMS><![CDATA[Tabla utilizada para registrar los tipos de documentos existentes dentro del SIGAUC. Los estatus que pueden tener estos documentos son manejados a través de las tablas GL_ESTATUS y GL_ESTATUS_SECUENCIA]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C3BF7B62-327F-A20E-BA7D-3776C0DE26F2</importedID>
+<ordsAlias>gl_tipo_documento</ordsAlias>
+<abbreviation>TIP_DOC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9FDCA940-985F-1CC5-83F3-81E23E7ACB88">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></comment>
+<commentInRDBMS><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>187CAC1C-33A4-1567-0341-E27323F138C7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="E90D7BF2-BBCD-1A53-3AE1-2FA8BBE9A8CE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Documento]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Documento]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A1492205-6497-4001-B8CF-A3C595C3FDB0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AFECTA_INVENTARIO_E_S" id="BC38D824-4FEB-252A-8979-87992420EEFB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Este Documento Afecta Inventario Entrada (E) o Salida (S)]]></comment>
+<commentInRDBMS><![CDATA[Este Documento Afecta Inventario Entrada (E) o Salida (S)]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B14EBB44-D65D-8D6F-1AC8-FB41ADFB2218</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D4E2E4B-2BAC-80FC-5592-3C01B37AEC51" name="GL_TIPOS_DOCUMENTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BEF7AFF0-3205-0742-CDF6-23B6B4DF0C12</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FDCA940-985F-1CC5-83F3-81E23E7ACB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AAEA21D-FC74-EC1A-50CB-F3A31E864FDB" name="GL_TIPOS_DOCUMENTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C474A6DE-F4F9-C3E1-5182-E75C13A23746</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FDCA940-985F-1CC5-83F3-81E23E7ACB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

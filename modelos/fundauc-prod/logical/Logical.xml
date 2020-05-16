@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="822CFB1F-6164-9C98-10D3-E69F52E09D24" mainViewID="45550DA5-3709-22BD-C726-833A1FA7AD6F">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:06:25 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

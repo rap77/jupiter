@@ -1,0 +1,216 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3C7B9C24-C9C3-B774-4C50-0B7EC4B8087A" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="CALENDARIOS_DETALLE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CALENDARIOS_DETALLE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>Calendario Detale</comment>
+<commentInRDBMS>CALENDARIOS_DETALLE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CALENDARIO" id="B76D243F-5B37-3AFB-26D6-B1C4A06BAC8D">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>ID_CALENDARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_CALENDARIO</comment>
+<commentInRDBMS>ID_CALENDARIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9D306D27-4A73-2F28-6F13-E9CC3A1C4107" referredColumn="29A1250A-C47A-4E0F-9C41-0AB699F03937"/>
+</associations>
+</Column>
+<Column name="PERIODO" id="9E40E092-E9BD-61D0-0126-DDE98B80B7C8">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>PERIODO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PERIODO</comment>
+<commentInRDBMS>PERIODO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INI" id="26F5CDBE-298C-59C1-451E-A9051E0504F9">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>FECHA_INI</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_INI</comment>
+<commentInRDBMS>FECHA_INI</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="185AA607-3588-DD83-5AFA-549E81806891">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>FECHA_FIN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_FIN</comment>
+<commentInRDBMS>FECHA_FIN</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIGENCIA" id="688066B6-B4C8-46F9-008C-9B4364F16FFE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>VIGENCIA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>VIGENCIA</comment>
+<commentInRDBMS>VIGENCIA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODALIDAD" id="AD71FF6B-2780-709B-49AC-CFE7B50DC670">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>MODALIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>MODALIDAD</comment>
+<commentInRDBMS>MODALIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E819565C-9B44-30F3-E84E-B2D1EA7ED650" referredColumn="55AB52FA-A158-EC16-54B5-D7B4B4DD7089"/>
+</associations>
+</Column>
+<Column name="PERIODO_ACTIVO" id="B9038AE4-C353-611F-E66C-A73718B71C98">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CALENDARIOS_DETALLE</sourceObjSchema>
+<sourceObjName>PERIODO_ACTIVO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:51:04 UTC</createdTime>
+<comment>Si el Periodo esta Activo o no</comment>
+<commentInRDBMS>Si el Periodo esta Activo o no</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<constraintName>CK_PER_ACTIVO</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="S" description="Si"/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="6A65EF56-47CB-ADBB-14C6-B149672C2CC2">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 16:14:29 UTC</createdTime>
+<comment>Identificador Unico de Calendario</comment>
+<commentInRDBMS>Identificador Unico de Calendario</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3A05A4C1-04F0-BA4F-B80E-26A5FE6C6921" name="CALENDARIOS_DETALLE_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:33:57 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A65EF56-47CB-ADBB-14C6-B149672C2CC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F589A7E9-7E33-7DE2-E841-0FFA53F0EF35" name="CALENDARIOS_DETALLE_IDX">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 16:15:55 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B76D243F-5B37-3AFB-26D6-B1C4A06BAC8D"/>
+<colUsage columnID="9E40E092-E9BD-61D0-0126-DDE98B80B7C8"/>
+<colUsage columnID="AD71FF6B-2780-709B-49AC-CFE7B50DC670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FB3E9F74-D511-85A1-83C4-F38079041E1B" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="CALENDARIOS_DETALLE_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CALENDARIOS_DETALLE_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>D11AFFB1-43CC-8296-4F3C-B368E87C459B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A65EF56-47CB-ADBB-14C6-B149672C2CC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06832084-66DF-DB19-A1A7-1F7CCD151640" name="CALENDARIOS_DETALLE_CALENDARIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:46:10 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B76D243F-5B37-3AFB-26D6-B1C4A06BAC8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC84092D-03AF-FC02-90C3-6C371EAE9FDE" name="CALENDARIOS_DETALLE_MODALIDADES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:47:26 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD71FF6B-2780-709B-49AC-CFE7B50DC670"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

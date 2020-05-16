@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="FA81E2AC-B91B-0953-2246-711AED1DCA01" name="IN_CATEG_ADM_SUGEBIP">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Categrias Administrativas que exige la SUGEBIP</comment>
+<commentInRDBMS>Categrias Administrativas que exige la SUGEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4C9CDFA7-CD82-1A66-C0D0-4A6635E56E73</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7BAC0925-EEDA-5CA7-E58C-8033B02B89D7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador Unico Categoria SUGEBIP</comment>
+<commentInRDBMS>Identificador Unico Categoria SUGEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C6575187-2B7C-91D9-2742-6E750BEE6A35</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="2AE440AB-18EC-6B90-82C5-D7C46548232A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion de la Categoria SUGEBIP</comment>
+<commentInRDBMS>Descripcion de la Categoria SUGEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8D883EE9-CE81-BF4D-5711-2A5E2EFBDD72</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C50A1A69-C3C9-0702-0B45-F0DB73F04272" name="IN_CATEG_ADM_SUGEBIP_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>54C1CBEA-D59D-4723-6137-51DFF6411A51</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BAC0925-EEDA-5CA7-E58C-8033B02B89D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A22E0B7-0F68-CC74-7C56-6D74AFBA3795" name="IN_CATEG_ADM_SUGEBIP_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>46ED310F-85A4-235F-A9F6-35421C00B9F8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BAC0925-EEDA-5CA7-E58C-8033B02B89D7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

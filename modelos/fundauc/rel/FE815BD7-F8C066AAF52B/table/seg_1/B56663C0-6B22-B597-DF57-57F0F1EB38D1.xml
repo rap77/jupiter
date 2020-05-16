@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="B56663C0-6B22-B597-DF57-57F0F1EB38D1" name="IN_POLIZA_BIENE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tabla relacion entre polizas y bienes</comment>
+<commentInRDBMS>Tabla relacion entre polizas y bienes</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EC166DFE-1678-F4E7-A6DA-ACE744D0F804</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_POLIZA_SEG" id="966ECFDD-B287-28FC-E0D0-8B4B9FF2EABD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único de la poliza</comment>
+<commentInRDBMS>Identificador único de la poliza</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2318850A-78BF-4B37-6983-7894FE3E056D</importedID>
+<constraintName>ID}_1972938973</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="88AFDC15-D3A9-B34F-38F0-0BA87D566058" referredColumn="B9DF4797-A1F4-122F-2E40-083F88B55B51"/>
+</associations>
+</Column>
+<Column name="ID_BIEN" id="3176C48F-2AF6-A1D7-36E8-342639EDAFBD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del bien</comment>
+<commentInRDBMS>Identificador único del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0141BC55-F529-2872-2AB8-C79CED0C67C6</importedID>
+<constraintName>ID}_364637030</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="6EB6AB10-3DE7-1232-F772-5453E6CE3DF5" referredColumn="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A5F1C8D3-D0F1-965F-27E4-D7F4BDC61276" name="IN_POLIZA_BIENE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B18BBD27-B531-BB36-6F23-1D3F1A011919</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966ECFDD-B287-28FC-E0D0-8B4B9FF2EABD"/>
+<colUsage columnID="3176C48F-2AF6-A1D7-36E8-342639EDAFBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A1D7373-19F8-E26A-5048-27497FF30990" name="IN_POLIZA_BIENE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>71F0667E-E541-0175-53A4-90749D91BDF6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966ECFDD-B287-28FC-E0D0-8B4B9FF2EABD"/>
+<colUsage columnID="3176C48F-2AF6-A1D7-36E8-342639EDAFBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB97D73A-3961-796D-89B7-6A825097A80D" name="IN_POLIZA_BIENE_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966ECFDD-B287-28FC-E0D0-8B4B9FF2EABD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5431D0D5-F5A3-E9BF-1686-1293E6407EEA" name="IN_POLIZA_BIENE_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3176C48F-2AF6-A1D7-36E8-342639EDAFBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0CBA5EA6-26ED-C589-ED48-CC5001A1DAEF" containerWithKeyObject="AD291253-0627-9CCC-DA72-CAE57424567F" localFKIndex="48D91E29-6923-1DB0-C2D0-0E0C400CC3A6" name="FACTURA_DEPOSITO_DEPOSITO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 17:12:41 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.DEPOSITO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0B7F514E-7365-5829-2877-AB9D8323DF70</referredTableID>
+<keyObject>C8D6A1D0-CBDF-674B-CA22-98A634B15573</keyObject>
+<referredKeyID>C8D6A1D0-CBDF-674B-CA22-98A634B15573</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

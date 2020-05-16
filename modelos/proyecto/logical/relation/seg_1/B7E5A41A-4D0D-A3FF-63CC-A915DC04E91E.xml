@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_TASA_CAMBIO_FK1" directorySegmentName="seg_1" id="B7E5A41A-4D0D-A3FF-63CC-A915DC04E91E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>6272CBF5-8DE5-C5A4-232C-4D2E249931A9</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>99A8F5A4-DF30-FA33-3A09-250897AF01B0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>941BF037-965C-7A06-2512-ACCCC4EEE107</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4937BC21-8760-060B-4D43-135BF4B7E626</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

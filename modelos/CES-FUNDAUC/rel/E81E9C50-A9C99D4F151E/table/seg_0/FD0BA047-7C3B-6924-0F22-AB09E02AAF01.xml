@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD0BA047-7C3B-6924-0F22-AB09E02AAF01" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="ERRORES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>ERRORES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>ERRORES</comment>
+<commentInRDBMS>ERRORES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NRO_MSG" id="D1F4464B-C495-6E7D-6ACB-3E3CC9B3ABDA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>ERRORES</sourceObjSchema>
+<sourceObjName>NRO_MSG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NRO_MSG</comment>
+<commentInRDBMS>NRO_MSG</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="A2260273-1CFA-A482-3445-521A2A6A1940">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>ERRORES</sourceObjSchema>
+<sourceObjName>CODIGO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CODIGO</comment>
+<commentInRDBMS>CODIGO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MSGTXT" id="0B120204-0AA4-1E5D-AC9C-616BB288EE6B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>ERRORES</sourceObjSchema>
+<sourceObjName>MSGTXT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>MSGTXT</comment>
+<commentInRDBMS>MSGTXT</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CC0A6B1-9EF4-EBCF-E3D2-F40FAEF5C922" name="ERRORES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018551</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>ERRORES_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2260273-1CFA-A482-3445-521A2A6A1940"/>
+<colUsage columnID="D1F4464B-C495-6E7D-6ACB-3E3CC9B3ABDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC71422F-BAFC-3BD1-0131-7834F0E0FD97" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="UN_ERR">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>UN_ERR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>UN_ERR</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2260273-1CFA-A482-3445-521A2A6A1940"/>
+<colUsage columnID="D1F4464B-C495-6E7D-6ACB-3E3CC9B3ABDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

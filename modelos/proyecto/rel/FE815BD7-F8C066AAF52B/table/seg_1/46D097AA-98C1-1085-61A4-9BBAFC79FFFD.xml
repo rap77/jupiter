@@ -1,0 +1,188 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="46D097AA-98C1-1085-61A4-9BBAFC79FFFD" name="IN_INSTITUCION">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Institucion Propietaria de los Bienes Muebles e Inmuebles]]></comment>
+<commentInRDBMS><![CDATA[Institucion Propietaria de los Bienes Muebles e Inmuebles]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BBFFE174-EA1E-6773-7A17-44BDE0C4FB31</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C33C5ED2-51E3-B5CA-CB3A-4CFE008FE915">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CB8475A2-3554-676D-4962-B9D5E22130EA</importedID>
+<constraintName>ID}_1082427837</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="50298B34-5509-1B71-5781-D99D834F3759" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+<Column name="ID_PUESTO_MAX_AUT" id="525F105F-4A18-1966-77A2-5FCA56D4A5DD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Puesto de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Puesto de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9DF5FBB8-3552-18B6-D6A4-D18FF0B93C65</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85EAF4DE-F9B0-6501-8D6C-0E3AF676038F" referredColumn="7CED5151-2193-E569-C90E-31D4705D55DC"/>
+</associations>
+</Column>
+<Column name="ID_PUESTO_RESP_PAT" id="F4D98A4B-2555-51DF-FAFD-F0C61FC6D00B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Puesto de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Puesto de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3D64A1B5-23A2-CD96-1876-FD8AC2B0A5B6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="641D2FC0-7A75-7AE1-8D30-93FA38EEED6F" referredColumn="7CED5151-2193-E569-C90E-31D4705D55DC"/>
+</associations>
+</Column>
+<Column name="SIGLAS" id="F8F0451F-D028-2FD2-0864-8612D9F09F6A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D1471384-7C7A-EC6B-328E-B2E53D9F2CE2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EA7F7EA8-AE87-9443-D1B2-C51545277DE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_GACETA" id="95C9A92B-8F4A-4ACA-074B-B80C2AD4FA8F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D234670A-D43A-0C92-3AE6-AC97DEA76C12</importedID>
+<constraintName>FECHA}_1648850488</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="NRO_GACETA" id="32C20C35-B98A-97C3-E021-8E1214DC9629">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6E8A339C-CAED-296D-1F16-A18D12C9A062</importedID>
+<constraintName>ENTERO_10}_1266166236</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D1EAC83D-7228-6736-69F4-C86F9B13F4B9" name="IN_INSTITUCION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>43D91EA2-761C-2547-AE06-5E50BED061A1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C33C5ED2-51E3-B5CA-CB3A-4CFE008FE915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0640C47-E42D-2BD5-CD9A-C997B472469E" name="IN_INSTITUCION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EEF89955-40EC-8866-31A2-AFC57EA62034</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C33C5ED2-51E3-B5CA-CB3A-4CFE008FE915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B81EF66-5EE2-EAC7-8086-9C396C7B1933" name="IN_INSTITUCION_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C33C5ED2-51E3-B5CA-CB3A-4CFE008FE915"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEE4F398-85A3-F15A-8772-D5D2BB25B727" name="IN_INSTITUCION_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="525F105F-4A18-1966-77A2-5FCA56D4A5DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6AE48D74-8EC9-EAD4-C1A2-55B2E70932E2" name="IN_INSTITUCION_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F4D98A4B-2555-51DF-FAFD-F0C61FC6D00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

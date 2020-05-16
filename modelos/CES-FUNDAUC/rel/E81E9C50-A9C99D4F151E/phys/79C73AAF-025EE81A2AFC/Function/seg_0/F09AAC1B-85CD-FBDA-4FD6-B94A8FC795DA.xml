@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FunctionOracle class="oracle.dbtools.crest.model.design.storage.oracle.FunctionOracle" name="GET_EXENTO" directorySegmentName="seg_0" id="F09AAC1B-85CD-FBDA-4FD6-B94A8FC795DA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>GET_EXENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:29:03 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<owner>97FD16BA-5F38-1D61-ED7A-CBFAE1D2218C</owner>
+<source>CREATE OR REPLACE FUNCTION  CES.GET_EXENTO (valor    VARCHAR2,&lt;br/&gt;                                            monto    NUMBER)&lt;br/&gt;   RETURN NUMBER AUTHID CURRENT_USER&lt;br/&gt;IS&lt;br/&gt;   rmonto     NUMBER;&lt;br/&gt;&lt;br/&gt;BEGIN&lt;br/&gt;&lt;br/&gt; CASE (VALOR)  &lt;br/&gt;    WHEN &apos;S&apos; THEN&lt;br/&gt;        rmonto :=  monto;&lt;br/&gt;    ELSE&lt;br/&gt;        rmonto := 0;&lt;br/&gt; END CASE;&lt;br/&gt;&lt;br/&gt;     RETURN rmonto;&lt;br/&gt;END GET_EXENTO;</source>
+</FunctionOracle>

@@ -1,0 +1,167 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="308B20B9-4233-58A9-9293-074D0B9DEE5A" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_FAMILIARES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Familiares de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Familiares de la Persona Natural.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>FAM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FAMILIAR_ID" id="F6D7EBAA-52D3-CB4E-5911-0F1624D40A27">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_FAM_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_FAM_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="746ED1FC-33C6-0A68-4A63-77EDB569F3E9" referredColumn="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</associations>
+</Column>
+<Column name="PERSONA_ID" id="53BF2CBC-E26D-1E37-DF16-0F76E1C21D1E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_FAM_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_FAM_ID_PER</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="4195AFAB-0972-EAE0-AB39-7D4B388B9E1C" referredColumn="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</associations>
+</Column>
+<Column name="PARENTESCO_ID" id="C67900E1-D641-C089-1BBC-572251B89769">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Parentesco del Familiar. Número de Identificación Interno del Parentesco.]]></comment>
+<commentInRDBMS><![CDATA[Parentesco del Familiar. Número de Identificación Interno del Parentesco.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_FAM_PAR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_FAM_PAR_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="D2B6F466-1797-B3F0-54F1-F8B6D82703F1" referredColumn="C3EE1994-E5A5-9354-6105-D680B9F5A009"/>
+</associations>
+</Column>
+<Column name="FEC_INI_FAMILIAR" id="E4CB57D0-5160-7E1B-C39A-2D4D7E515D5B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Fecha de Inicio de Vigencia de la Incorporación del Familiar.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Inicio de Vigencia de la Incorporación del Familiar.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>FECHA_1395078270</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FEC_FIN_FAMILIAR" id="953ADDA2-3D84-8327-80F4-8E7FFDB0AF08">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<comment><![CDATA[Fecha de Fin  de Vigencia de la Incorporación del Familiar.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Fin  de Vigencia de la Incorporación del Familiar.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>FECHA_1155940519</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98AF3DF0-1B42-4543-38A1-C57F8C8E5BCB" name="FAMILIARES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53BF2CBC-E26D-1E37-DF16-0F76E1C21D1E"/>
+<colUsage columnID="F6D7EBAA-52D3-CB4E-5911-0F1624D40A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="39F54DA9-150B-53E9-A3D9-93B3650E3A92" name="FAMILIAR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:57:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53BF2CBC-E26D-1E37-DF16-0F76E1C21D1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30B75067-4B95-92DE-5973-253D161E0DF9" name="FAM_PER_NAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:15:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53BF2CBC-E26D-1E37-DF16-0F76E1C21D1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F123E67C-9F4F-FEE9-8678-6CCE49D5D237" name="FAM_PER_NAT_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:15:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6D7EBAA-52D3-CB4E-5911-0F1624D40A27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6BAC9EB8-6FC1-1F0C-F705-E572D9BE6C36" name="FAM_PARENTESCO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:29:55 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C67900E1-D641-C089-1BBC-572251B89769"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

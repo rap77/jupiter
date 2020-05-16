@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B16D0FF-C037-66F7-33D2-08B42946D373" name="GL_MONEDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Moneda. Ej: USD Dolar Americano.</comment>
+<commentInRDBMS>Moneda. Ej: USD Dolar Americano.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D6785233-20CE-C0E6-5E04-07129C80C934</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3D7244EE-B758-4708-8B23-9D67F31A5040">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Moneda.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Moneda.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>34F44EBD-7D30-D848-D55A-ED908B55E30B</importedID>
+<constraintName>ID}_148577377</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DENOMINACION" id="8CE684C2-5881-9436-CF87-FA6AB653D2A0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Denominación de la Moneda. Ej: Bolivares Fuertes Dolar Americano.</comment>
+<commentInRDBMS>Denominación de la Moneda. Ej: Bolivares Fuertes Dolar Americano.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0F350922-E5C4-80F8-6902-A7BC1338665D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="A782519A-7B55-C0A8-CB3F-90CA0F33603D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código de la Moneda. Ej: VEF</comment>
+<commentInRDBMS>Código de la Moneda. Ej: VEF</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3ED40983-639D-CE69-A5C7-104AD2DBD095</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SIMBOLO" id="34310BC3-C2D6-5227-FD79-47DA537CB738">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Simbolo de la Moneda. Ej: Bs.F</comment>
+<commentInRDBMS>Simbolo de la Moneda. Ej: Bs.F</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AD594002-90B3-EAC7-22B7-8E19017DC147</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF39AB08-4DEC-0BC9-4178-BEEC958B9C76" name="GL_MONEDA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B35EF89A-FE72-3801-28B5-68919605AE7E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D6E337-6F36-C0EA-11FF-95A07BFC76FC" name="GL_MONEDA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F7FC9F0A-F22D-72F4-F40F-5284FFC0E421</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

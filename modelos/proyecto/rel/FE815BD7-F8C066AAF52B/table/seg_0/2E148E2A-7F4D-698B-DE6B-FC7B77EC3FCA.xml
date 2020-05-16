@@ -1,0 +1,232 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2E148E2A-7F4D-698B-DE6B-FC7B77EC3FCA" name="GL_TASA_CAMBIO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tasa de Cambio. Ej: BSF, BS, 1000.00000000]]></comment>
+<commentInRDBMS><![CDATA[Tasa de Cambio. Ej: BSF, BS, 1000.00000000]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FF102619-255C-5357-BC15-EDFD80BE090E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="521C089A-71DD-307A-0D39-4CF53425CF28">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número interno de Identificación de la Tasa de Cambio.]]></comment>
+<commentInRDBMS><![CDATA[Número interno de Identificación de la Tasa de Cambio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6766E1CD-C18F-1D57-1DBA-C779F74F2CB1</importedID>
+<constraintName>ID}_1516139700</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_MONEDA_BASE" id="B8B9619F-E6EC-C494-D3DE-DA1C5DE889BB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Moneda Base de la Tasa de Cambio. Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Moneda Base de la Tasa de Cambio. Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0F026164-DA7C-46C4-6525-450F3850E952</importedID>
+<constraintName>ID}_1922725896</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="9EA72D37-5B98-52A0-0558-FBD6AEFFF460" referredColumn="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</associations>
+</Column>
+<Column name="ID_MONEDA_CAMBIO" id="77141272-50D6-D507-9C69-D0B55E7C419F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Moneda de Cambio de la Tasa de Cambio. Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Moneda de Cambio de la Tasa de Cambio. Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D6A67B92-8E05-C2E7-2005-DB6BC8D90CE3</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_10852</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="6272CBF5-8DE5-C5A4-232C-4D2E249931A9" referredColumn="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</associations>
+</Column>
+<Column name="TASA_CAMBIO" id="28B6A861-CF34-1472-E8A0-A8DD93F15636">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tasa de cambio. Valor por el que se debe Multiplicar la Moneda Base para obtener la Monde de Cambio.]]></comment>
+<commentInRDBMS><![CDATA[Tasa de cambio. Valor por el que se debe Multiplicar la Moneda Base para obtener la Monde de Cambio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>94622B1A-8CBF-3CB2-1BBE-C033F6315F55</importedID>
+<constraintName>TASA_CAMBIO}_187570076</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>7B3BC9A1-D588-7F86-4A30-F0721D4BAADB</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999.99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_INICIO" id="5282BB75-874D-8C50-7C34-596E735D6197">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Inicio de Vigencia de la Tasa de Cambio.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Inicio de Vigencia de la Tasa de Cambio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>058250D2-95C7-8FD4-50BC-26DC96BFC448</importedID>
+<constraintName>FECHA}_1857980128</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_FIN" id="9A514B49-F1A7-A6D1-B7D0-3041CB5B669B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Fin de la Vigencia de laTasa de Cambio.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Fin de la Vigencia de laTasa de Cambio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E9EBC6B3-67EF-DAAF-D73E-441DC12D61CB</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_10674</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3A3ACBE-F307-703B-DF58-49CA8EFD4936" name="GL_TASA_CAMBIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D49BA698-B0B1-1040-E0C4-A1B3DBFB5255</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="521C089A-71DD-307A-0D39-4CF53425CF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8911E32A-152A-F247-CC24-5AB3460E948E" name="GL_TASA_CAMBIO_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AEE2CA35-6DB4-7FAA-9028-B12841C13379</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5282BB75-874D-8C50-7C34-596E735D6197"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D5FFDA6-B3BB-AF1E-732C-424D087D7B6E" name="GL_TASA_CAMBIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7CA7CBF8-E2D9-23DB-31A9-EC05029B525F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="521C089A-71DD-307A-0D39-4CF53425CF28"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B7EB7AA6-065D-4DC9-2B00-499844CDC0C2" name="GL_TASA_CAMBIO_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BE9202F3-6ED5-9CC7-B51A-C163EDE84D45</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5282BB75-874D-8C50-7C34-596E735D6197"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E66FE6E-2856-2B72-6A7F-0EF0B64CECE7" name="GL_TASA_CAMBIO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8B9619F-E6EC-C494-D3DE-DA1C5DE889BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7760DA0-524E-BF98-182E-E005B5C6955E" name="GL_TASA_CAMBIO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77141272-50D6-D507-9C69-D0B55E7C419F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

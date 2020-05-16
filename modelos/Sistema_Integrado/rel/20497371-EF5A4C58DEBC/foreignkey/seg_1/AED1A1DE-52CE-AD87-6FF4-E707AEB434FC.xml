@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="AED1A1DE-52CE-AD87-6FF4-E707AEB434FC" containerWithKeyObject="D584CB77-75E2-44D7-F7B7-99FECBDB91F7" localFKIndex="F7D91670-2B99-795B-ACFD-CD02B1A43AC7" name="RH_PROFESION_RH_NIVEL_ESTUDIO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:26:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.RH_NIVEL_ESTUDIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D9EBA993-FDB9-C0AF-FC3F-98725C423271</referredTableID>
+<keyObject>05C82B5B-3829-9D9C-015B-B43810F855F1</keyObject>
+<referredKeyID>05C82B5B-3829-9D9C-015B-B43810F855F1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

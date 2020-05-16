@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B804D1B-D120-965F-5C9B-FE8E91997113" name="GL_OCUPACIONES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Ocupaciones de la Persona: Ej. Albañil, Mesonero, Cocinero, Ama de Casa, etc]]></comment>
+<commentInRDBMS><![CDATA[Ocupaciones de la Persona: Ej. Albañil, Mesonero, Cocinero, Ama de Casa, etc]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FA6D1F79-B28B-53FF-425F-285ADCFE1589</importedID>
+<abbreviation>OCU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D22D9091-90CB-6165-0185-E3738A3A09E7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de Ocupación]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de Ocupación]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>045E5658-5F6F-6E27-21FA-2EBDFAF44A60</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="08A7B4F8-6B90-7D2B-D7BC-178EA9785E5C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de la Ocupación]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Ocupación]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AF30FD7A-4E60-D723-5CC2-AF5103293AAD</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ED52D46E-0763-9589-AC34-117B3F0D5476" name="GL_OCUPACIONES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>89E297D3-BA0C-CCB2-7B1D-A2CA22219B9D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D22D9091-90CB-6165-0185-E3738A3A09E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="13D5A723-9122-4636-A751-4C1F4B12E38B" name="GL_OCUPACION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F1149298-716C-B94D-4626-2013E4673B3E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D22D9091-90CB-6165-0185-E3738A3A09E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

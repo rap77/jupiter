@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3BAC01EE-6CC3-0844-8247-4E112C9AE468" name="GL_CATEGORIAS_DATOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Categoria de los Datos&lt;br&gt;Ej. Estandar, Personalizados, Extendidos</comment>
+<commentInRDBMS>Categoria de los Datos&lt;br&gt;Ej. Estandar, Personalizados, Extendidos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>81C2F1EE-DDC1-AE0B-2D3F-9D7EF12520A5</importedID>
+<ordsAlias>gl_categoria_dato</ordsAlias>
+<abbreviation>CAT_DAT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C8F4B4BF-3E41-C4B0-C5EB-127DC2E5D87C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Identificador Unico de la Categoria del Dato</comment>
+<commentInRDBMS>Identificador Unico de la Categoria del Dato</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>31E1F309-C339-7E9A-81B7-EC5EF16EF565</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="CDCFC5A1-A26D-3261-8BD3-0A2106D09C56">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Descripcion de la Categoria del Dato</comment>
+<commentInRDBMS>Descripcion de la Categoria del Dato</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4FD34567-DDB8-183A-6F6B-8990D6CDAD3B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE6CF053-D200-F973-D433-6ED1283202AF" name="GL_CATEGORIAS_DATOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FADC950D-9A5C-6F9E-ACB3-C78AF9A267B2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8F4B4BF-3E41-C4B0-C5EB-127DC2E5D87C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C457AFB8-A1E0-EEE1-9B2B-F3E8EA8021F9" name="GL_CATEGORIAS_DATOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0408FAAC-B6DC-4499-DC62-CC7378164295</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8F4B4BF-3E41-C4B0-C5EB-127DC2E5D87C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

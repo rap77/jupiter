@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E4BC3201-2ADD-3195-DEAC-901D88935526" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_CONTINENTE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_CONTINENTE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:05:35 UTC</createdTime>
+<comment><![CDATA[Continente. Ej 1 America.]]></comment>
+<commentInRDBMS><![CDATA[Continente. Ej 1 America.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="396F740F-73EE-1030-C7F0-B6F4111DEB88">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CONTINENTE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:05:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación interna del Continente.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación interna del Continente.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_CONT_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_CONT_ID</notNullConstraintName>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="NOMBRE" id="189E7718-5396-895E-0027-8D45C825F928">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_CONTINENTE</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:05:35 UTC</createdTime>
+<comment><![CDATA[Nombre del Continente. Ej: America, Europa.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Continente. Ej: America, Europa.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DES_CONT</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4303C011-39CD-63CD-3753-225E981857D4" name="CONTINENTE_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CONTINENTE_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:05:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396F740F-73EE-1030-C7F0-B6F4111DEB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3E42E99F-BA02-57A8-51C1-992E643DBB2F" name="CONTINENTE_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CONTINENTE_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:05:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="396F740F-73EE-1030-C7F0-B6F4111DEB88"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

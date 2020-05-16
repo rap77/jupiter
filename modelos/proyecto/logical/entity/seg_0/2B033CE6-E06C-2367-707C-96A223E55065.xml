@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2B033CE6-E06C-2367-707C-96A223E55065" name="GL_TIPOS_DATOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipos de Dato
+Ej. entero, monto, texto, email, fecha, area_texto, url, etc.]]></comment>
+<commentInRDBMS><![CDATA[Tipos de Dato
+Ej. entero, monto, texto, email, fecha, area_texto, url, etc.]]></commentInRDBMS>
+<generatorID>999658F3-71E5-F469-11B8-95F5137AC9A8</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_DAT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="0C78D2F1-1118-A9CF-34BA-A4B541CBE3B8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de dato]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de dato]]></commentInRDBMS>
+<generatorID>6772073D-7C83-AC95-D879-D040BF378144</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1112295323</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DES_TIPO_DATO" id="B67B7E9F-B829-00A0-58B1-D6EB1B349249">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripcion del tipo de dato Ej. int, float,string,date]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del tipo de dato Ej. int, float,string,date]]></commentInRDBMS>
+<generatorID>638C4F68-3356-9A9D-9419-2E38C48F9D19</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID CATEGORIA" id="9C798E58-D781-36F6-D1D6-C964B44CF207">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Categoria del Dato]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Categoria del Dato]]></commentInRDBMS>
+<generatorID>B3EBFBD1-8C43-E70B-A656-8D32B2F2230D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_2125911808</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Oracle Database 11g" definition="&quot;Id_Categoria Dato&quot; BETWEEN 1 AND 99999999"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CATEGORIA_DATO_ID" id="8B31956B-045E-392B-284B-9B6983DE0B8E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>E2F401DB-1255-98A5-BFD2-1D55791D7383</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>99463C6C-FA36-0E0D-9A12-08FC8F829EA4</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BDC4A681-784C-877F-125E-0517FC3748FC" name="GL_TIPOS_DATOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>26606941-C6DD-7B34-0F6F-43A4938E4D6F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C78D2F1-1118-A9CF-34BA-A4B541CBE3B8</attributeRef>
+<attributeRef>8B31956B-045E-392B-284B-9B6983DE0B8E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

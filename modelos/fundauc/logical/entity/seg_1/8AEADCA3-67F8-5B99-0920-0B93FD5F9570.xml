@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="8AEADCA3-67F8-5B99-0920-0B93FD5F9570" name="GL ZONAS POSTALES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Zona de Identificación Postal. Ej: 1240, Carabobo.</comment>
+<commentInRDBMS>Número de Zona de Identificación Postal. Ej: 1240, Carabobo.</commentInRDBMS>
+<generatorID>20D60404-6712-8BC5-3277-EF96C97737CA</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>ZON_POS</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9C640855-4E6D-DA1F-AA9E-98E78783BE7B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno de la Zona Postal</comment>
+<commentInRDBMS>Número de Identificación Interno de la Zona Postal</commentInRDBMS>
+<generatorID>8C191B92-F633-DF7E-0EB2-1A2F3F1E5D62</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1920039610</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="EST_ID" id="8EDE495F-20CE-7466-F016-31EF3D4F8AD7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno del Estado, Departamento o Provincia.</comment>
+<commentInRDBMS>Número de Identificación Interno del Estado, Departamento o Provincia.</commentInRDBMS>
+<generatorID>08E8812C-3DE9-E770-3430-4D4C7A99BDF3</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_540028253</constraintName>
+<referedAttribute>31710E58-88E8-FE74-BF5A-30B89D52F7CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="CODIGO" id="2B2D4B54-3290-49D0-2DDB-F3DBB8BF55AF">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Codigo de la Zona Postal. Ej: 1060.</comment>
+<commentInRDBMS>Codigo de la Zona Postal. Ej: 1060.</commentInRDBMS>
+<generatorID>F420E49B-D6F5-0273-E3B5-1955534727B3</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="8F14C4AF-188D-5936-0A70-99F966B4412B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripción de la Zona Postal. Ej: Chacao.</comment>
+<commentInRDBMS>Descripción de la Zona Postal. Ej: Chacao.</commentInRDBMS>
+<generatorID>1820F29A-C3DF-DFF0-6B77-EC92BC3E9339</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="92ACCD17-96F5-92EB-3D9C-21CCB58217F6" name="GL_ZONAS_POSTALES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>48EA5535-F8E6-01CF-B329-B302EB37287C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C640855-4E6D-DA1F-AA9E-98E78783BE7B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

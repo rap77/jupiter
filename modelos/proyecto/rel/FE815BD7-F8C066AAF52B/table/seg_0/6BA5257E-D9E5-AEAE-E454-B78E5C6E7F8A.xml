@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6BA5257E-D9E5-AEAE-E454-B78E5C6E7F8A" name="GL_TIPO_ASEGURADORA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Tipos de Aseguradora Ej. Empresa de Seguros, de Reaseguros, Sociedad de Corretaje de Seguros, de Reaseguros, Auxiliares, Medicina Prepagada]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Tipos de Aseguradora Ej. Empresa de Seguros, de Reaseguros, Sociedad de Corretaje de Seguros, de Reaseguros, Auxiliares, Medicina Prepagada]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>56E86D17-B792-EC50-F403-BB8B88F3A8B3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6C6809E4-676E-DE1A-3534-6DBB5DB08209">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de Tipos de Aseguradora]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de Tipos de Aseguradora]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>014B33BC-F42A-6DA6-17B2-E6459CA68BF7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="2EB8F881-2377-4C9E-2FE3-AF6F9BE0ACCA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion el Tipo de Aseguradora]]></comment>
+<commentInRDBMS><![CDATA[Descripcion el Tipo de Aseguradora]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>31E3E658-41D2-1038-23BF-49C693BA3FC6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F254B6BC-5FEA-9121-B3C6-B9E0F7EF0032" name="HC_TIPO_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>03AF055D-9B0F-B368-E106-435CBD689BE5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C6809E4-676E-DE1A-3534-6DBB5DB08209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA200AB3-20C8-5D1E-F8B5-36B59F1EF708" name="HC_TIPO_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9651DB66-1504-ABCC-C9E6-83C5EDEA3D61</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C6809E4-676E-DE1A-3534-6DBB5DB08209"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

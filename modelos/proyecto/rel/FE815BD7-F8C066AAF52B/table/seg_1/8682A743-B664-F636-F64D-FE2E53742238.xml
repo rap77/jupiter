@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="8682A743-B664-F636-F64D-FE2E53742238" name="RH_PROFESION">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Profesión. Ej: Ingeniero Industrial.]]></comment>
+<commentInRDBMS><![CDATA[Profesión. Ej: Ingeniero Industrial.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F1F4F98E-7691-68A2-CC55-F2DAF1B4A71C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1A6B9238-6ECD-4490-B2D1-3B0E65B96989">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Profesión.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>036A6AF8-BAC1-0ACF-9082-E249B15E2594</importedID>
+<constraintName>ID}_1161701566</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_NIVEL_ESTUDIO" id="DA040043-1983-6D3C-9FF7-347C1E24214B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>560C0B0C-B701-7DF4-CF74-6FC12FC43E88</importedID>
+<constraintName>ID}_2100778477</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="2570DFC6-057A-9AAC-A017-CC7C39D41B75" referredColumn="66441C3C-0F94-2968-8853-154544637FE4"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="87D5FF73-644A-6762-099B-4C6B3532F309">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Profesión.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>828C80A0-48A5-050F-BC01-E5E2B3814CA7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_OPSU" id="67A83A7D-81F9-01B3-EB4B-92C993DF9F06">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código OPSU para la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Código OPSU para la Profesión.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>51BC175D-BA68-FBC7-BEB3-8ED0929ED964</importedID>
+<constraintName>ENTERO_06}_425497811</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05AA917F-DA1B-F7F4-22BE-CA2FBA96B363" name="RH_PROFESION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FE3745AF-CFE2-9696-19B8-B0BE1655AA67</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6B9238-6ECD-4490-B2D1-3B0E65B96989"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EA87C04-0A74-9EE5-D24A-9588E9D39F25" name="RH_PROFESION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>810E2EEE-3CC9-0898-FD34-A077EBCEF0A1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A6B9238-6ECD-4490-B2D1-3B0E65B96989"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="34ED5B49-BA38-B3FC-E339-0DFC8C1A8EA4" name="RH_PROFESION_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DA040043-1983-6D3C-9FF7-347C1E24214B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CE_SALON" directorySegmentName="seg_0" id="990F84F4-C3CA-56E5-3838-09215164998F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="13E1C69B-48C3-BE95-4D5C-5B72CE3AD900">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UBICACION" id="4CD26041-A558-EFE2-F918-9E31C9935F29">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CAPACIDAD" id="55B676D8-5372-ED53-CD4F-054672910595">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="7A22414D-0D56-0F88-5407-48D5C5A072C7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_SALON_ID" id="CB00F69D-D195-19D6-2DF3-F48B49E8B784">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="UNI_ORG_ID" id="CB874A78-D0F9-6F5F-C947-BAD3CEC03D4C">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SALON_PK" id="D96799A0-F0B6-2920-8708-41CB8EE3C8EC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SAL_UNI_ORG_FK" id="0A3D1B79-0787-B256-630C-C731E87466CB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:52:18 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SAL_TIP_SALON_FK" id="183C874E-819F-218F-A0B0-95A5F3EC2DC1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:53:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CE_SALON_PK" id="1A138CF7-4C45-2DBA-20C4-0D25ED769BE9">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:48:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

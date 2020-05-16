@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_FAMILIARES_PER_NAT_FKv1" directorySegmentName="seg_0" id="F57D5C5C-B463-6AA7-99BA-EEB8E242F4B8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>161CBD3C-7BDB-455F-ADAF-83DC5B8C8BE6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>0CA1BFF2-526F-A45C-00E0-F239CB7EB0C2</sourcePk>
+<dominantRole>2A28EDC4-C212-4B72-011D-9E896F305E7A</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>6C7896DF-B740-D9CD-2591-AE433AD98C6C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBF31606-4478-AC6E-97DD-44808DD9F4F2" name="GL MUNICIPIOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Municipio, Canton, Condado, etc. Ej: Naguanagua.</comment>
+<commentInRDBMS>Municipio, Canton, Condado, etc. Ej: Naguanagua.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F96D2784-8D81-FFAA-82B4-B2CB71656EF2</importedID>
+<ordsAlias>gl_municipios</ordsAlias>
+<abbreviation>MUN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8A8EE52F-5FDF-2C3E-AB50-671708BC24B3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna del Municipio.</comment>
+<commentInRDBMS>Número de Identificación Interna del Municipio.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>67FFE9C5-2DFB-B818-D97A-2C3A290D0BD2</importedID>
+<constraintName>CK_MUN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MUN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="EST_ID" id="63DF9606-F5F2-6F33-39F0-0B48276EB605">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Estado del Municipio. Número de Identificación Interno del Estado, Departamento o Provincia.</comment>
+<commentInRDBMS>Estado del Municipio. Número de Identificación Interno del Estado, Departamento o Provincia.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7B081536-DD28-826B-2BE5-67A3C4421A87</importedID>
+<constraintName>CK_MUN_GL_ESTADOS_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MUN_GL_ESTADOS_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="55CFBF56-80C6-17CD-E815-68A336B5E9D7" referredColumn="B5D97FA9-81F7-B278-B3F6-BC81C2EED107"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="49E152CA-30A4-A65D-8187-F8771B6BC9D6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre del Municipio. Ej: San José</comment>
+<commentInRDBMS>Nombre del Municipio. Ej: San José</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>177C2EB6-9948-F12E-609A-A3071C30373F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_MUN_NOMBRE</notNullConstraintName>
+</Column>
+<Column name="COD SUDEBIP" id="A9BFF83A-2BF5-7391-E20B-DFFE4D394439">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo de Municipio Sugerido por la SUDEBIP</comment>
+<commentInRDBMS>Codigo de Municipio Sugerido por la SUDEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>09CB9B18-329E-6CAC-5F5D-D25EC23AF35F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8872622-5347-6F48-90A5-8B2402AFF4AF" name="GL MUNICIPIOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4BACBEDA-5BF2-D23E-2193-CFB30AE6FE0D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A8EE52F-5FDF-2C3E-AB50-671708BC24B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3DAFF576-C13B-C98E-BE05-2C6F30BC00BF" name="MUN_ID_IDX">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FA40A910-96E4-099B-E210-9A9F5D3F3642</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A8EE52F-5FDF-2C3E-AB50-671708BC24B3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="58EAC01C-99CB-5F36-B2CC-7F5DFA427247" name="MUN_EST_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63DF9606-F5F2-6F33-39F0-0B48276EB605"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,206 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ESTUDIANTE" directorySegmentName="seg_0" id="3A2CBE07-39BB-771B-22B6-55DCD560FDFD">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>C54928B5-F9CF-DDF1-C7DA-3E8FDE41A91F</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EDO_CIVIL" id="0133EA19-A663-787E-D1AD-04016C414532">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APELLIDO" id="057FF143-8547-A008-5624-3085643C01A7">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="RIF" id="1657099C-0B72-E399-0554-F99FDFE10FDD">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="246AC07E-41AC-C344-0416-62B73BF03F92">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="ZONA" id="482C3CC0-B1E8-FB00-CDC5-7C8A11A0D790">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEXO" id="4D2E6BE6-2AFE-A6C3-AAE5-219245650B0A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CONDICION_ESPECIAL" id="5594CEA7-9631-1A80-389A-A366DC36E0BB">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_NAC" id="5EC0AA5A-7EAB-D160-654D-4072DC158116">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELF_CEL" id="68D60C16-E096-4A57-BDA3-2DA710B7962C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO" id="7086A41D-C020-C9DA-1E58-F120BFB1A29D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEDULA_EST" id="78117D2F-BE42-4A04-841B-6E86B420B35A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIUDAD" id="8088F6B7-3A26-F497-488E-B4467AD5FA6B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NACIONALIDAD" id="80FCF04A-2EFE-EC34-391E-E2F5236BB93C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="ID_TIPO_EST" id="8836F8EF-7B73-640C-E815-D0209B1E315C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nncEnable>NO</nncEnable>
+<nncValidate>NO</nncValidate>
+</ColumnProxy>
+<ColumnProxy name="STATUS" id="8974DECB-16A2-ED13-2E77-74D7A3453FED">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TELF_HAB" id="9E0D5B31-8DEB-62B1-3B3A-0D4BD5A8FD9A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CEDULA_REP" id="C03B6240-DD02-5C82-D6AF-8259DE81654D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEDE" id="C08AA7BA-9D87-55E1-E9F4-53DABB033C1E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MATRICULA" id="CD0C8DE2-7766-5C58-560C-FEDD1E00832A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROFESION" id="E8596159-CA90-6B04-1DD0-A4519EFDF26B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADO_INS" id="F0003229-F069-DB7F-0885-CBC21E1C6A78">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="F366D254-2809-1D85-CB89-81349F8F8BAF">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DIRECCION" id="F776253A-2699-1414-1089-AD90B0084953">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_ESTUDIANTE" id="502336D2-DC13-41DF-E5AF-D9C606BC6B3C">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>CC467CB2-5041-E2EF-82B4-CA6FE7F24802</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IDX_CEDULA_EST_UN" id="68C362E3-014A-F6BB-98C8-035273FD119F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>1081F14F-C5F1-B7C3-A768-3FD78A1B216B</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_COMPANIAS_FK" id="1546401A-9242-5502-2926-8CB2550CF88E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:53:33 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_CIUDADES_FK" id="539CFC1F-07F6-F93D-7F7E-122748230C5F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:56:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_OCUPACIONES_FK" id="7678B28A-5642-8926-C7EC-96A4F6806494">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:08:49 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_ZONAS_FK" id="78319A57-C7D1-DAF9-8CDA-57BA363EA29F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:58:36 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_ESTADOS_FK" id="B830FCF1-54B6-8900-7614-C3F44CDFFF65">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:56:43 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ESTUDIANTE_CONDICIONES_ESPECIALES_FK" id="D4C4A22C-102C-6D65-07D8-D539EFD5F498">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 15:00:04 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EST_TP_EST_FK" id="EA943B52-46D2-D574-A81F-8AF7CA1907C5">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_ESTUDIANTE" id="BF0CE5FF-C93C-74EE-D227-9689A047D00A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<segment>CC467CB2-5041-E2EF-82B4-CA6FE7F24802</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<existingIndex>502336D2-DC13-41DF-E5AF-D9C606BC6B3C</existingIndex>
+<indexSegment>CC467CB2-5041-E2EF-82B4-CA6FE7F24802</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="5D35BB38-7525-5B4A-7EA4-A830C5D8B74F" containerWithKeyObject="48A3701A-2258-BA0C-3FA7-8635E77D303E" localFKIndex="F0E252C2-B865-A761-97F6-F03C02C774BC" name="TS_CUENTAS_BANCARIAS_TS_TIPOS_CUENTAS_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D4C9DB15-2D25-AF70-E6E1-0ABEF2E33399</importedID>
+<referredTableLongName>TS_TIPOS_CUENTAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B1E65369-A05A-4979-FC29-0CDD206ED786</referredTableID>
+<keyObject>0CF030A5-028D-C9F3-1A32-FDF1745EDC00</keyObject>
+<referredKeyID>0CF030A5-028D-C9F3-1A32-FDF1745EDC00</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

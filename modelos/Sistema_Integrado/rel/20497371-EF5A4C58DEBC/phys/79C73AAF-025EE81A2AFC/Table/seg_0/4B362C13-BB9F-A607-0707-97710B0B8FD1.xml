@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_TIPOS_SECTORES" directorySegmentName="seg_0" id="4B362C13-BB9F-A607-0707-97710B0B8FD1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SIGLAS" id="042B1F65-A9C2-C73E-0334-C55744F0D342">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="9BD8FFE1-1F5B-F655-B5F6-3575B9FFC234">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="D66D2703-03FA-3E1B-B52E-1B77F8BB1DAC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TIPOS_SECTORES_PK" id="83707D95-7E61-0586-3B75-167E25D465FC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPOS_SECTORES_PK" id="273F9E02-38D0-2021-50E7-07D85C2B629E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

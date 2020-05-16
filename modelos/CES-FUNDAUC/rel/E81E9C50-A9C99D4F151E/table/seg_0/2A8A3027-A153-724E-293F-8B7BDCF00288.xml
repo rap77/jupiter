@@ -1,0 +1,117 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A8A3027-A153-724E-293F-8B7BDCF00288" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="HORARIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>HORARIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>HORARIOS</comment>
+<commentInRDBMS>HORARIOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_HORARIO" id="88525277-66D7-B768-748A-581C45068448">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>ID_HORARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_HORARIO</comment>
+<commentInRDBMS>ID_HORARIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA" id="24DAEA8C-9B0A-0D51-5509-DA6B2B92D6E0">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>HORA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>HORA</comment>
+<commentInRDBMS>HORA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODALIDAD" id="5B193EB1-3DBC-7229-F105-F8BA8B89ECE4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>MODALIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>MODALIDAD</comment>
+<commentInRDBMS>MODALIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA_FIN" id="5E874D36-D5B1-2C9C-FA2C-D43490FB4E84">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>HORARIOS</sourceObjSchema>
+<sourceObjName>HORA_FIN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>HORA_FIN</comment>
+<commentInRDBMS>HORA_FIN</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="44582A3D-CD42-CBE8-E376-192B066599AC" name="PK_HORARIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_HORARIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>PK_HORARIOS</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88525277-66D7-B768-748A-581C45068448"/>
+<colUsage columnID="5B193EB1-3DBC-7229-F105-F8BA8B89ECE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE7EAE92-8D79-3A72-673F-FD8BABD18BBA" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PK_HORARIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_HORARIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>PK_HORARIOS</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="88525277-66D7-B768-748A-581C45068448"/>
+<colUsage columnID="5B193EB1-3DBC-7229-F105-F8BA8B89ECE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,186 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F5E12950-6852-4EED-EE63-D8A6DF9CC416" name="GL_RIF">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></comment>
+<commentInRDBMS><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></commentInRDBMS>
+<generatorID>CFAAD818-C6A8-FA51-42EF-A3E54B51AF19</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>RIF</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="1A8A1A58-9925-A9E0-B980-0D70ABE84095">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></commentInRDBMS>
+<generatorID>346258E4-CCFC-0E81-B140-B30A4E985C3B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LET_RIF_ID" id="137E78AF-EA04-2FEC-3A78-FBF3A641A498">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></commentInRDBMS>
+<generatorID>D4D3437F-A0F5-C5A3-0E91-1EFA4CD4A383</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>41F21E10-0D26-5843-7564-B3E6D84B70E5</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMERO" id="9FA4BF31-15B3-E856-026D-3C32101B0614">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número del Registro de Información Fiscal.]]></commentInRDBMS>
+<generatorID>06E99ECD-D6A5-5734-1664-76B0201FDF85</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_09}_743649518</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F04E385-223F-135A-1290-107667D2E6A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DIGITO" id="60B5574A-0788-0DCD-CAD7-6894101D216F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></commentInRDBMS>
+<generatorID>7DC087F4-E9CC-E522-B84F-8644A14499B5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_01}_878657258</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>91C1C193-2C8D-8AED-FC5B-5FB2AB4C4D6C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ACTIVO" id="CC624892-AAD6-74BE-0CD3-631460E056E5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></commentInRDBMS>
+<generatorID>0854832D-F904-A68E-E722-BFD9CCB5821D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_1987291074</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PER_ID" id="EE7189BF-FC88-07FE-65B0-EBEC4233D6C2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<generatorID>1298580F-6EB5-EEA3-B3C8-9D2D8D104054</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_DOCID_ID" id="CB12C362-6C1E-96E7-356F-03FE29B43458">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<generatorID>9C006618-FAE2-5EFE-AD30-CA290817CD95</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>25F396EF-E252-ECDE-866D-A5B27343CAD0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D2845A2F-9D49-F812-34CA-78238FCECF47" name="GL_RIF_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>573694DA-82B2-4CDF-0B26-BC236CE9EB5B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1A8A1A58-9925-A9E0-B980-0D70ABE84095</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7B476472-00BD-FE38-B383-9F8F39136074" name="RIF_LET_RIF_ID_NUMERO_UN">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>E44CFF3F-B492-0834-084A-0B42FE5B508B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>137E78AF-EA04-2FEC-3A78-FBF3A641A498</attributeRef>
+<attributeRef>9FA4BF31-15B3-E856-026D-3C32101B0614</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

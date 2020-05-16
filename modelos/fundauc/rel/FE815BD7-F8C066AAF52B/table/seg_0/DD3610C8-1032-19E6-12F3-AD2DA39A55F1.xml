@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD3610C8-1032-19E6-12F3-AD2DA39A55F1" name="GL FABRICANTES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Fabricante del Producto o Software</comment>
+<commentInRDBMS>Fabricante del Producto o Software</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7588B2C3-BEC7-F3E2-2B18-7697D92620DB</importedID>
+<abbreviation>FAB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PER_JUR_PER_ID" id="B46F0EDA-292D-4A8F-63C7-F266F81CB2C8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F51D5007-7D53-70CF-457A-CEB2E43FD443</importedID>
+<constraintName>ID}_1680692630</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="2F0E0CE3-084F-031C-E5BD-8C8718153CDC" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="5E3331D8-C1E0-86E7-4877-D7E3E8DFF7E8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del Faricante</comment>
+<commentInRDBMS>Descripcion del Faricante</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1CB0C6E7-8EE6-1490-4213-37B01F6F947F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E664FDE0-F438-FA73-6C47-5AC91C59114B" name="GL_FABRICANTES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F811AC64-A08B-8383-B890-8E7F1A1DAEA4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B46F0EDA-292D-4A8F-63C7-F266F81CB2C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A161D2BC-AFC1-A7CE-5C4B-2A51DFE8B1C0" name="GL_FABRICANTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>838163DE-1F78-D353-53B0-41930FFB2C5A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B46F0EDA-292D-4A8F-63C7-F266F81CB2C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2D7D8AC7-3919-E114-FA7C-2845F0B448EF" name="GL_FABRICANTES_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B46F0EDA-292D-4A8F-63C7-F266F81CB2C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

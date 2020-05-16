@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1DB0696E-7538-61D3-6773-DF1DE341D332" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="TIPO_PROFESOR">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TIPO_PROFESOR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>TIPO_PROFESOR</comment>
+<commentInRDBMS>TIPO_PROFESOR</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_PROF" id="ABA45600-B4B3-EAA5-6DB0-5B43E6FA5B59">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_PROFESOR</sourceObjSchema>
+<sourceObjName>ID_TIPO_PROF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_TIPO_PROF</comment>
+<commentInRDBMS>ID_TIPO_PROF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="08AEA801-89C0-0A37-F00A-87BFF16FEF49">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_PROFESOR</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18EFF0B8-C373-9350-E5CC-7A91D6CFD631" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="TIPO_PROFESOR_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018615</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>TIPO_PROFESOR_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABA45600-B4B3-EAA5-6DB0-5B43E6FA5B59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F701914E-C29B-A019-36BA-73FAB2340A81" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018615">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018615</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>E554EB16-119A-8195-47DC-2AA83E91243A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ABA45600-B4B3-EAA5-6DB0-5B43E6FA5B59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

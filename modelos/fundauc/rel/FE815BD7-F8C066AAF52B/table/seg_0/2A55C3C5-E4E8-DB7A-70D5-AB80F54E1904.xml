@@ -1,0 +1,252 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A55C3C5-E4E8-DB7A-70D5-AB80F54E1904" name="GL_DOCIDENTI">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8B8D438D-E3EF-C1C0-C222-4ACCC3C44715</importedID>
+<abbreviation>DOCID</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D6BFC9CD-DCA5-ECF4-EAFB-9EB0AC672B36">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D40E5885-63FA-8551-4AE1-8ED802591BBF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="TP_DOCID_ID" id="BD2515F0-2539-1540-308A-CA81D3768665">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tipo de Número o Código de Identificación. Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[ Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FBB11FC5-D9FE-28DF-96E9-D787035E3474</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6CEF2A9-BBF5-9BBB-15EA-D35AB2405158" referredColumn="35AB4889-06DA-9C1B-948C-F2713DE64F85"/>
+</associations>
+</Column>
+<Column name="PER_ID" id="7317B57C-C433-CD51-E1AA-84617A5648C9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3D2B4E8B-FA05-E0C8-D291-010283B9BD61</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4E2ED41B-BCC2-EE36-37D9-6F74ED1E7431" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="IDENTIFICACION" id="764A95E7-06B9-D483-1021-2FF072DD9E64">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7F38926D-3DF7-D00C-0B90-9456D0949140</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="60510C5F-2B34-72DB-CDEC-BDAD3975318E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>04968283-F995-B376-5880-C9DBDDF6A214</importedID>
+<constraintName>SI_NO_218164223</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F VENCIMIENTO" id="40C74BDF-015C-B592-0EE1-4609D82F0896">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Vencimiento de la Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Vencimiento de la Identificación.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>898B7791-613A-EE64-21CE-D51955D0F92C</importedID>
+<constraintName>FECHA_988613808</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="VERIFICADO EL" id="0437B8DD-4F4C-40D3-B007-EA3C774CB10C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:46 UTC</createdTime>
+<comment><![CDATA[Fecha cuando se verifico el documento]]></comment>
+<commentInRDBMS><![CDATA[Fecha cuando se verifico el documento]]></commentInRDBMS>
+<generatorID>9128AEEA-F4B3-AF51-DAD6-90380E61EE83</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VERIFICADO POR" id="FA77BD95-541F-CED8-E970-DB862A64A320">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:46 UTC</createdTime>
+<comment><![CDATA[Usuario quien verifico el documento de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Usuario quien verifico el documento de identificacion]]></commentInRDBMS>
+<generatorID>C889BDAC-DDCE-5880-9022-71F14BADAB0D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4192959E-5B64-D801-8954-33C62F12B443" name="GL_DOCIDENTI_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9C156876-994F-B264-B911-EF398D542D19</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6BFC9CD-DCA5-ECF4-EAFB-9EB0AC672B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78917AC7-7242-D6E9-B4A5-715BCB5AC270" name="TP_DOCID_ID_PER_UN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E1C69A3F-041D-DD8E-522B-354AAE1F68A2</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD2515F0-2539-1540-308A-CA81D3768665"/>
+<colUsage columnID="7317B57C-C433-CD51-E1AA-84617A5648C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="983089A0-6342-4B57-D0F3-FAA5895B98BB" name="TP_DOCID_ID_IDE_UN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7672922E-7C1D-AA79-326C-FC2571D8CCE4</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD2515F0-2539-1540-308A-CA81D3768665"/>
+<colUsage columnID="764A95E7-06B9-D483-1021-2FF072DD9E64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="415E5BD5-6604-237C-D696-188165A4462A" name="DOCIENTI_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3DBB52DF-8030-1ECF-0059-346452770E34</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D6BFC9CD-DCA5-ECF4-EAFB-9EB0AC672B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D28425C7-3C46-C957-2A2C-4BDFF769333C" name="DOCIDENTI_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>69392B71-BCF1-D433-04C7-5ACDA7591787</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD2515F0-2539-1540-308A-CA81D3768665"/>
+<colUsage columnID="7317B57C-C433-CD51-E1AA-84617A5648C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA61252C-A52A-C3C4-345B-9066BCBA8C19" name="DOCIDENTI_AK2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2AACFAEC-C52B-C1A2-78C6-0F0532DD19D9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD2515F0-2539-1540-308A-CA81D3768665"/>
+<colUsage columnID="764A95E7-06B9-D483-1021-2FF072DD9E64"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45B461C6-CDC0-BCFE-FA21-F5773E4262CA" name="DOCID_TP_DOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD2515F0-2539-1540-308A-CA81D3768665"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="61826E3C-91BF-D928-F4F5-2DE8C8B0F352" name="DOCID_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7317B57C-C433-CD51-E1AA-84617A5648C9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

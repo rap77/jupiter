@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="16CC5682-83A1-61F3-2283-B02FA20B901C" name="SG_TIPOS_MENSAJES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc</comment>
+<commentInRDBMS>Tipo de Mensaje del usuario de sistema, Ej. Documentos, Alertas, etc</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C566A4D0-B188-11D4-120E-3AA8DF416025</importedID>
+<abbreviation>TP_MEN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="96EB4D3D-F115-9173-73C4-76EC87360F0C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico del tipo de Mensaje</comment>
+<commentInRDBMS>identificador unico del tipo de buzon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C0FB7917-BE75-51B5-796D-1A1E1717E69C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="DESCRIPCION" id="07B2FE68-6398-BC66-79FB-7E889E8A14A6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del tipo de mensaje</comment>
+<commentInRDBMS>descripcion del tipo de buzon</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E734A124-B37D-EFD3-E025-20F18152B870</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="52E805B8-C458-526E-DDC9-4897D412C527" name="SG_TIPOS_MENSAJES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1FAADBE5-EE6A-EAEB-46E4-8894292AB5A7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96EB4D3D-F115-9173-73C4-76EC87360F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDBF29A6-D0FC-4F9D-78E5-CE8BBD787B4F" name="SG_TIPO_BUZON_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5D5E94E7-7B66-888A-5AC5-5BBFE237AC87</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96EB4D3D-F115-9173-73C4-76EC87360F0C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

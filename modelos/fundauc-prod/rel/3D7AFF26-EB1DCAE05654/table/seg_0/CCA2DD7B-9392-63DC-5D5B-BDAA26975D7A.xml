@@ -1,0 +1,341 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CCA2DD7B-9392-63DC-5D5B-BDAA26975D7A" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSCRIPCIONES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tabla de Inscripciones]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B57EC28A-EC21-2995-9C12-E3FD8AEF3BB4">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador unico de la iscripcion del estudiante en el curso]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INS" id="51A30A38-857A-60C3-73D0-55DE63D01A83">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>FECHA_INS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de la Inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EST_MATRICULA" id="3025369B-D95C-A9C8-DD75-0516B78FFA18">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>EST_MATRICULA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[MAtricula Estudiante]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C9398B8-38D4-A601-2F4C-59A8E755F697" referredColumn="6192FAD5-B295-6370-4E71-561F1B684FFF"/>
+</associations>
+</Column>
+<Column name="FECHA_PAGO" id="0E3EF90D-7B8E-541E-D07C-D30FB9163A68">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>FECHA_PAGO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Fecha de Pago de la Inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTATUS" id="EF81CB5F-6805-5FEF-4480-E34971A591E1">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>ESTATUS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Estado de laInscripcion Ej, Pre-Inscripcion, Inscripcion Efectiva, Inscripcion Anulada, Inscripcion Exonerada, Inactiva]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECCION_ID" id="24021B76-D1D4-E0CE-DF40-F4BC15FC34EF">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>SECCION_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de la Seccion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIODO_ID" id="5D7D07B8-6967-BCCE-33EB-D91477DE14FB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>PERIODO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Pediodo de Inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_POR" id="AFD85C71-6E1D-1CB8-1935-E8AE5C72F199">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>CREADO_POR</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Usuario quien creo la Inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<defaultValue>coalesce(sys_context(&apos;APEX$SESSION&apos;, &apos;app_user&apos;), regexp_substr(sys_context(&apos;userenv&apos;, &apos;client_identifier&apos;
+    ), &apos;^[^:]*&apos;), sys_context(&apos;userenv&apos;, &apos;session_user&apos;))</defaultValue>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_EXONERADO" id="D551212C-F7D9-9563-2BE4-3CE9374ECCAB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>ES_EXONERADO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Si esestudiante es exonerado o no]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_ACADEMICO" id="5FC2D3C1-7B45-9696-041F-2582338E8AEF">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>PROG_ACADEMICO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Programa Academico]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_SUSPENDIDO" id="C00A9F31-AD9C-E9FB-A269-749FFBCCE8F4">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>ES_SUSPENDIDO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Si el Estudiante Suspendio un curso o no]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COHORTE_ID" id="48FC0977-EA81-8C35-17D4-7BE007B50903">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>COHORTE_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cohorte id]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95476334-402C-2A66-4272-361CDC9E800C" referredColumn="C56515A2-4A0F-F812-DCF8-B97FD0C548DC"/>
+</associations>
+</Column>
+<Column name="HORARIO_ID" id="00CF28FB-6AD0-EA16-5865-01E28BA9C3DC">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>HORARIO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id del horario de Inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_POR" id="70944960-E311-CE84-BD68-7AC713072921">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>MODIFICADO_POR</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quien modifico el registro]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_EL" id="364D41D6-9736-CFCE-D5C5-07297A05B883">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>MODIFICADO_EL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cuando se Modifico el Registro]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INSTANCIA_ID" id="3EFA1060-3C87-F4DF-6387-8942360CE43E">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCIONES</sourceObjSchema>
+<sourceObjName>INSTANCIA_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id de la Instancia de Seccion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="62493557-B24D-8B13-D2E0-6A4110D0079D" referredColumn="8D5D9927-6762-2AF9-D7E3-F8BD7E58E014"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1B6C6E17-22FA-25B2-AB8B-507C674B0E9C" name="INSCRIPCIONES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B57EC28A-EC21-2995-9C12-E3FD8AEF3BB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C2C968D7-8073-CD1A-865B-30D946BABAED" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSCRIPCIONES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B57EC28A-EC21-2995-9C12-E3FD8AEF3BB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="950345FC-8A3D-F688-E7DA-296BCC26D368" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSCRIPCIONES_UK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES_UK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexExpression>TRUNC(&quot;FECHA_INS&quot;), EST_MATRICULA, SECCION_ID</indexExpression>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="C75E8DB6-1D22-D968-58EB-E69DAC4E2F3F" name="INSCRIPCIONES_ESTUDIANTE_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3025369B-D95C-A9C8-DD75-0516B78FFA18"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CF9D52F9-2F65-78FA-D51D-D8F2490A6EB2" name="INSCRIPCIONES_FK1">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48FC0977-EA81-8C35-17D4-7BE007B50903"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB6B93EB-CEAB-A4F3-76A1-3235E8C82551" name="INSCRIPCIONES_SECCIONES_FKv1">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:27:28 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EFA1060-3C87-F4DF-6387-8942360CE43E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

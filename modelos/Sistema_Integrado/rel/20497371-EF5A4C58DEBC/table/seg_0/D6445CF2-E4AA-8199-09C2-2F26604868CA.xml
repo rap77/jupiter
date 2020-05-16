@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6445CF2-E4AA-8199-09C2-2F26604868CA" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_MENSAJES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_MENSAJES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[repositorio de Alertas y mensajes de lo que ocurre en el sistema]]></comment>
+<commentInRDBMS><![CDATA[repositorio de Alertas y mensajes de lo que ocurre en el sistema]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="09B6F383-48DD-57E2-64C7-C7D9820C5E8A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Mensaje]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Mensaje]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_MSJ_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_ID</notNullConstraintName>
+</Column>
+<Column name="TP_MEN_ID" id="FC6E2020-D896-7664-340F-2656BBE48309">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>TP_MEN_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de buzon]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de buzon]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_MSJ_TMSJ_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_TMSJ_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2DB4EA3F-2313-13DB-658A-21C02EAECBAD" referredColumn="99C9D6F5-C445-18BA-C8DA-A2ADB6AC13BF"/>
+</associations>
+</Column>
+<Column name="USU_ID_PARA" id="C4D575C3-CA27-ACC6-395A-1FC6102D61B8">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>USU_ID_PARA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[is del usuario que recibe]]></comment>
+<commentInRDBMS><![CDATA[is del usuario que recibe]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_USR_PARA</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="308C5145-6C2B-0884-5AF7-CD1BEA712E0C" referredColumn="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</associations>
+</Column>
+<Column name="USU_ID_DE" id="30ED3D70-3372-0F28-D7AE-5E84724902C8">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>USU_ID_DE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[id del usuario que envia]]></comment>
+<commentInRDBMS><![CDATA[id del usuario que envia]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_USR_DE</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="DDA93A7A-9BF4-4876-77CC-D575BB711B3A" referredColumn="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</associations>
+</Column>
+<Column name="CONTENIDO_MSG" id="D9A295BA-BB23-FA0D-FF81-428FA17A584D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>CONTENIDO_MSG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Contenido del Envio]]></comment>
+<commentInRDBMS><![CDATA[Contenido del Envio]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_CONTE</notNullConstraintName>
+</Column>
+<Column name="ASUNTO_MSG" id="617E1105-E7EC-E44D-ECD9-A43A7A3AB09F">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>ASUNTO_MSG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[asunto del envio]]></comment>
+<commentInRDBMS><![CDATA[asunto del envio]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MSJ_ASUN</notNullConstraintName>
+</Column>
+<Column name="FEC_RECEPCION" id="46DF8766-6C52-2F8B-20EB-D414BAD717F8">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>FEC_RECEPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[fecha de recepcion del mensaje]]></comment>
+<commentInRDBMS><![CDATA[fecha de recepcion del mensaje]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NRO_ENVIO" id="58FEC551-AAF2-169F-EB4B-03F4EAC14F7E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_MENSAJES</sourceObjSchema>
+<sourceObjName>NRO_ENVIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[numero del envio]]></comment>
+<commentInRDBMS><![CDATA[numero del envio]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="06CD3330-86EF-8F22-2E7B-418B6C9B413C" name="SG_MENSAJES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_MENSAJES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09B6F383-48DD-57E2-64C7-C7D9820C5E8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29F573DA-7A0D-B747-9309-B71FDC565FF1" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_MENSAJES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_MENSAJES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09B6F383-48DD-57E2-64C7-C7D9820C5E8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFB51150-5A90-604F-603D-52682CFD0396" name="MEN_TP_MEN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC6E2020-D896-7664-340F-2656BBE48309"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3ADFFE8-1E50-8825-98E0-00EF289EC3A8" name="MEN_USU_DE_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30ED3D70-3372-0F28-D7AE-5E84724902C8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="720E8340-FEE6-B2CE-F2A7-DE04A778F955" name="MEN_USU_PARA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:26:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4D575C3-CA27-ACC6-395A-1FC6102D61B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

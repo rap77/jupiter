@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RH_DEPENDENCIA_JEFE_FK1" directorySegmentName="seg_2" id="C8DFDED4-EF39-8843-3CE0-B24C9E5AC6C1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>411BC566-43C6-8163-42C9-71B832BC9D85</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>0CA1BFF2-526F-A45C-00E0-F239CB7EB0C2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>3E64E462-DE71-8E40-E9A7-14ABE879C448</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

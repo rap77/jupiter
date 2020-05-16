@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_2" id="E41EB4C4-EA29-0385-BC5D-98D6F0B00207" name="GL PERSONAS CUENTASBAN">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 20:52:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[Relacion entre Personas y Cuentas Bancarias]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PER_CTA_BAN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="TS_CUENTAS_BANCARIAS_ID_CUENTA_BANCARIA" id="83059CF0-7F5E-8FEB-5EE9-9688C62BA727">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 20:53:29 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de la Cuenta Bancaria]]></commentInRDBMS>
+<generatorID>230601C6-9C9F-A8C2-D310-277886CF6215</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>9BB5EA6F-9013-BC7A-7302-410AABD01923</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PER_JUR_PER_ID" id="8846FB9E-194F-5FBF-34EA-7734994FAB61">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-30 20:53:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico de Persona]]></commentInRDBMS>
+<generatorID>1C4B16B7-00D0-E951-24BF-A7B6B368CAD5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>A5CD5FBB-D081-7E9C-6B08-064BF2EFBBBD</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6B13AECA-C8BC-E65F-46CB-40B04B653054" name="GL_PERSONAS_CUENTASBAN_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 15:08:38 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>83059CF0-7F5E-8FEB-5EE9-9688C62BA727</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

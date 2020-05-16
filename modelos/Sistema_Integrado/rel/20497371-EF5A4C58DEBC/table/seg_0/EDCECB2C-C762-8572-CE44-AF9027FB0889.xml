@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDCECB2C-C762-8572-CE44-AF9027FB0889" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_GENEROS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:25:00 UTC</createdTime>
+<comment><![CDATA[Genero, Sexo. Ej: F Femenino, M Masculino.]]></comment>
+<commentInRDBMS><![CDATA[Genero, Sexo. Ej: F Femenino, M Masculino.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>GEN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7FC06D50-13D3-24AB-6852-7E79C7991603">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:25:00 UTC</createdTime>
+<comment><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GEN_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GEN_ID</notNullConstraintName>
+</Column>
+<Column name="DESCRIPCION" id="449954E9-15C7-B70C-6D64-CFC07D03D651">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:25:00 UTC</createdTime>
+<comment><![CDATA[Descripción del Genero o Sexo. Ej: Femenino, Masculino.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Genero o Sexo. Ej: Femenino, Masculino.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GEN_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GEN_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A97D078E-3D49-5A5E-3089-E98FA53CC52A" name="GENEROS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:25:00 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FC06D50-13D3-24AB-6852-7E79C7991603"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E37F0B41-A1AF-5187-DC99-7AD73209BA78" name="GENERO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:25:00 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FC06D50-13D3-24AB-6852-7E79C7991603"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,29 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="SG_USUARIOS_TRG" directorySegmentName="seg_0" id="710AD4C9-CD74-1239-B614-6F3294FA15A2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIOS_TRG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:39 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body><![CDATA[BEGIN
+    << column_sequences >> BEGIN
+        IF inserting THEN
+            :new.creado_el := sysdate;
+            :new.creado_por := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'),
+            '^[^:]*'), sys_context('userenv', 'session_user'));
+
+        ELSIF updating THEN
+            :new.modificado_el := sysdate;
+            :new.modificado_por := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'),
+            '^[^:]*'), sys_context('userenv', 'session_user'));
+
+        END IF;
+    END column_sequences;
+END;
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>D6CEFF5F-722B-AD19-143B-1DB4A5350929</owner>
+<table>5CAA5B11-89BE-65E5-0EAC-B56F71EBA6B0</table>
+</TriggerOraclev10g>

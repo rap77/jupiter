@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61EF53A1-4C04-2A9A-B7B1-31E84D27BE16" name="GL_DOCUMENTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tabla que guarda todos los documentos</comment>
+<commentInRDBMS>Tabla que guarda todos los documentos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>52405EC4-65D6-C256-74F6-F7BCFEBB56DE</importedID>
+<abbreviation>DOC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C64353F2-E036-D3D4-D2A8-F8E0FBC7B908">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>identificador unico de documento</comment>
+<commentInRDBMS>identificador unico de documento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EA53F862-593C-1C10-25D2-6E3EDAFD75AB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DOC_ID" id="3BC8F933-D417-AA4D-C9F5-FB3D226B54B2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia</comment>
+<commentInRDBMS>ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DA4C4BEA-29CE-3B62-6543-F195E58828EB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="717FB976-2B07-6D87-23CD-B9C2B2383D6E" referredColumn="9FDCA940-985F-1CC5-83F3-81E23E7ACB88"/>
+</associations>
+</Column>
+<Column name="ESTATUS_ID" id="6C2AE959-7831-AEE0-6670-01B48E9C411F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6045A3AD-E5BA-3D05-FE05-3BE944A817EA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="76E6EE62-01E2-610C-D41E-CE657A496AC0" referredColumn="E557EE60-49AA-6BF6-5DF1-A535861EC0B8"/>
+</associations>
+</Column>
+<Column name="FECHA_CREACION" id="659DC495-C48E-0246-7D83-D529C3B948D2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de Creacion de Documento</comment>
+<commentInRDBMS>Fecha de Creacion de Documento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CA54A948-C5C3-7719-E0FC-0BC441FE81A2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="META_DATA" id="412AE7F7-39B8-3FD1-D01D-EC202FFC8CF0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Meta data de un documento en formato JSON</comment>
+<commentInRDBMS>Meta data de un documento en formato JSON</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>33E4D16E-C172-FBBA-EBC5-76020D75F2BB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B28195DB-8FD8-B6A6-8B85-E8788F650D16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FE2FFA2-2B7D-F432-64B2-35E721854256" name="GL_DOCUMENTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AF6A2BBD-D683-3090-B863-261CB53E60F6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C64353F2-E036-D3D4-D2A8-F8E0FBC7B908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D71E018C-9CC0-E82A-6120-A769F43A13BA" name="GL_DOCUMENTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A0CCC207-0995-6F2A-9769-732D7B6E53E4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C64353F2-E036-D3D4-D2A8-F8E0FBC7B908"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3FD6AB9-8ECB-9031-EC8F-2A582533881B" name="DOC_TIP_DOC_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3BC8F933-D417-AA4D-C9F5-FB3D226B54B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E9C0A3A-58F6-4C5D-2212-FA4AD9B58D12" name="GL_DOCUMENTO_GL_ESTATUS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6C2AE959-7831-AEE0-6670-01B48E9C411F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

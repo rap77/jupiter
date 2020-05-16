@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FFCBA8A8-B17B-F694-EE60-DB3668C5DB12" containerWithKeyObject="835A1A86-118B-3F88-C283-E7DD8B0F50F5" localFKIndex="3D62CC01-07AD-B830-AAD2-471B3175420B" name="DIR_PARR_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>416BA93A-8937-47EB-8EDF-D1568277D28A</importedID>
+<referredTableLongName>GL PARROQUIAS</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>BD0F9F16-6FAE-A5C2-7779-04F906EB62B8</referredTableID>
+<keyObject>0C015832-7E1E-9F8B-A04F-AE51B75C7565</keyObject>
+<referredKeyID>0C015832-7E1E-9F8B-A04F-AE51B75C7565</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>GL PARROQUIAS_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

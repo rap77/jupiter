@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="proyecto" id="9482C864-AC97-DE99-2973-20F8FC85C65B" version="3.5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:27:55 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9482C864-AC97-DE99-2973-20F8FC85C65B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="18FD8AD7-F1A9-11B5-40AD-7523E175D0C7">
+<designStoragePath>C:\fundauc</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

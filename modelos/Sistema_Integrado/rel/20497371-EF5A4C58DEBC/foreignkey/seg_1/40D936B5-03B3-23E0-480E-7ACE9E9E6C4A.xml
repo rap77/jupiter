@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="40D936B5-03B3-23E0-480E-7ACE9E9E6C4A" containerWithKeyObject="0D530796-DDA2-B6E6-4708-C3B2643EE4F4" localFKIndex="1AD146B8-1EBA-23EA-B737-A3A7F825DE73" name="PERCTABAN_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:11:32 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_PERSONAS_JURIDICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3973EF76-D2F6-A95B-EEA0-722CC02C9EAD</referredTableID>
+<keyObject>0556298D-92A8-AFC8-826B-6F13849D5095</keyObject>
+<referredKeyID>0556298D-92A8-AFC8-826B-6F13849D5095</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

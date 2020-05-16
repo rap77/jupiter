@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CP_EXISTENCIA_FK0" directorySegmentName="seg_0" id="96152ADF-B496-7386-E11F-970A8B8C5CD9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>65F8C3F7-B6D8-0D94-6287-F02154A477A5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>D023C6C7-025D-8172-0178-2F8C91C20FE7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C4D9737C-30CD-6787-B2A0-A1EA8D091DB3</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7D4FAE46-EAC0-C527-3350-3E8DB2115A49</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

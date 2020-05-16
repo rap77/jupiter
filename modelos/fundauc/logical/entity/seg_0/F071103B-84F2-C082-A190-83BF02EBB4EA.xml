@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F071103B-84F2-C082-A190-83BF02EBB4EA" name="GL_TABLAS_MAESTRO">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Guarda las tablas maestro para los campos lista</comment>
+<commentInRDBMS>Guarda las tablas maestro para los campos lista</commentInRDBMS>
+<generatorID>1878DD46-D86C-C983-0234-AB9015225BEB</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="967796BB-402D-E150-F191-1A064952C3CD">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Identificador Unico de la Tabla Maestro</comment>
+<commentInRDBMS>Identificador Unico de la Tabla Maestro</commentInRDBMS>
+<generatorID>42043FA2-20D6-5223-4C1A-A6F2416D179F</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1317882617</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NOMBRE_TABLA" id="6D6D895D-8273-38E9-45B6-0D2CDDBE67BB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Nombre de la Tabla Maestro</comment>
+<commentInRDBMS>Nombre de la Tabla Maestro</commentInRDBMS>
+<generatorID>EA6754A0-069C-3376-7FB4-B09B532CCC3A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPO_MUESTRA" id="52519D15-FE12-A03A-184F-C96742B10308">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Campo que debe mostrar la Lista de Valores</comment>
+<commentInRDBMS>Campo que debe mostrar la Lista de Valores</commentInRDBMS>
+<generatorID>F523DED4-76FC-5619-21B7-D0D86559F490</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CAMPO_RETORNO" id="15BA4D47-0EA6-CD34-E347-191A9BD83D25">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Campo que contiene el Valor de Retorno de la Lista de Valores</comment>
+<commentInRDBMS>Campo que contiene el Valor de Retorno de la Lista de Valores</commentInRDBMS>
+<generatorID>45E58A34-D868-D6E6-5936-E9DACB008EF0</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F4C2D095-D963-29E0-8B50-78C8CD71348E" name="GL_TABLAS_MAESTRO_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>9CC481D0-E8F4-B1F1-943C-C62464950D2B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>967796BB-402D-E150-F191-1A064952C3CD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

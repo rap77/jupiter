@@ -1,0 +1,265 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0ECEDA07-1D70-850C-BB4A-98099A9DFB6E" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="DETALLE_FACTURA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>DETALLE_FACTURA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>DETALLE_FACTURA</comment>
+<commentInRDBMS>DETALLE_FACTURA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RENGLON" id="4DF6F242-D2B2-2F8A-5315-BBE5BD645F52">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>RENGLON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>RENGLON</comment>
+<commentInRDBMS>RENGLON</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>12</dataTypePrecision>
+<ownDataTypeParameters>,12,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_FACT" id="C1DF80D7-81B9-D5C4-0392-1145BD7C668B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>ID_FACT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_FACT</comment>
+<commentInRDBMS>ID_FACT</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_ITEM" id="AC1C46AE-9B80-AC56-12A3-2A74B056E7C5">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>TIPO_ITEM</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>TIPO_ITEM</comment>
+<commentInRDBMS>TIPO_ITEM</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19A715D8-36FF-05DD-3345-2DFD4433D314" referredColumn="87410C03-22A1-8BAC-5B55-9BD2C9188053"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="165BF125-C0FF-7BFF-18DA-70410D422C7A">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANTIDAD" id="7A9AADBE-8A30-4741-4A78-46DF394151AB">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>CANTIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CANTIDAD</comment>
+<commentInRDBMS>CANTIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="P_UNIDAD" id="86C00D4C-00C1-313B-94C1-5AB58A463863">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>P_UNIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>P_UNIDAD</comment>
+<commentInRDBMS>P_UNIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BS_DESCUENTO" id="BE3BE58C-DDBA-567E-CD1C-6AE680147FE2">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>BS_DESCUENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>BS_DESCUENTO</comment>
+<commentInRDBMS>BS_DESCUENTO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUBTOTAL" id="3E6F68D6-EEE6-86B1-6CBD-AD804307A2AB">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>SUBTOTAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>SUBTOTAL</comment>
+<commentInRDBMS>SUBTOTAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTENSION" id="727F075A-C1ED-9CE1-D7CD-C38D8D606B8E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_FACTURA</sourceObjSchema>
+<sourceObjName>EXTENSION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>EXTENSION</comment>
+<commentInRDBMS>EXTENSION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATERIALES_ID" id="7D57F791-1514-5109-6641-3DCAE3F731B1">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:17:02 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2198D4BD-3A74-F843-EDC5-69AF0F50E79C" referredColumn="50D5FF69-3AD2-A20E-8FF7-37FDDDE3C22C"/>
+</associations>
+</Column>
+<Column name="FACTURA_ID" id="49C5EA3C-D567-67A3-FE1F-98734C3F30E9">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:39:10 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="01CD8DDB-F6EE-26BA-1CAB-A3671A7F22FC" referredColumn="8DDC5525-02F5-C981-CF92-AF7595BC1D4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E51F62B4-ED30-9DC7-A4F3-B4880C85C1A4" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="DETALLE_FACTURA_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018532</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>DETALLE_FACTURA_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DF6F242-D2B2-2F8A-5315-BBE5BD645F52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99CE2366-60AE-227C-7A2A-D9018EBF4C79" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018532">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018532</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>AF3985A5-3766-E863-29A7-A2A729BBD2E9</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DF6F242-D2B2-2F8A-5315-BBE5BD645F52"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3ED5058E-A731-82AF-D7CA-34C04D706376" name="FK_FACT">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49C5EA3C-D567-67A3-FE1F-98734C3F30E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A6929144-0F1D-5858-9018-C0804BB42D64" name="DETALLE_FACTURA_TIPO_MATERIAL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:51:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC1C46AE-9B80-AC56-12A3-2A74B056E7C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FECBA26B-7C2D-00C7-FB91-E1BE6CAC0ED1" name="DETALLE_FACTURA_MATERIALES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:59:23 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D57F791-1514-5109-6641-3DCAE3F731B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

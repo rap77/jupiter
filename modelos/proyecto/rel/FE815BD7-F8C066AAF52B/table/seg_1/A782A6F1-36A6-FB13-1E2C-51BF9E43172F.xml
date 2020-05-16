@@ -1,0 +1,152 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A782A6F1-36A6-FB13-1E2C-51BF9E43172F" name="PC_PRODUCTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene Informacion del Producto]]></comment>
+<commentInRDBMS><![CDATA[Contiene Informacion del Producto]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F197F88F-427B-1E36-2DBC-A4C63908F5AA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="CF9BAF4F-28C7-4618-CAEC-991D798E1894">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9AE34C67-FF23-5F61-037D-0FA09FFE71A2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_ESTRUCTURA_PRODUCTO" id="44384DE6-C604-A89A-0E85-47BFF84B6E60">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Clase de Producto.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Clase de Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B9DDCB79-51AC-F0FC-2B3C-C450844C8413</importedID>
+<constraintName>ID}_1715288712</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="333C8BA9-DD11-144C-7B05-73D07ADFEE34" referredColumn="0DB8DD42-B754-A849-E51F-CC5B69565B02"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="40043DFA-592C-F928-B46A-B251B17B8A6F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C9930DFA-0209-05AA-1DF1-FFA2FD6F724D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_PORCENTAJE" id="9C1B5329-D6C6-3BB1-4632-E53F99BA67D0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>23BA5BB9-F226-29DB-283B-0E5799CCBCFA</importedID>
+<constraintName>SI_NO}_1920787153</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="79AE7A41-CC7E-194A-B00B-8A9E6E157EF1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0A0BCEDE-772A-6265-9C3E-9FFEAEDD7742</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="411AA6D2-0DE3-C670-AAB1-692A60B62F81">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6A099922-59CE-4A4E-51F4-3BC00915E80C</importedID>
+<constraintName>SI_NO}_1123615198</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="464B9B7C-3104-70B5-80D2-3C789C67B38F" name="PC_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D780E819-9BA8-208A-2BC6-1EE7005A070C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF9BAF4F-28C7-4618-CAEC-991D798E1894"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43C74B6C-7FB0-7B59-1B00-02C3C3147136" name="PC_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>113EA66A-14C5-2469-C1BB-16C5D0D6B88D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF9BAF4F-28C7-4618-CAEC-991D798E1894"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E381A37D-B452-E414-9162-E9C08406C470" name="PC_PRODUCTO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="44384DE6-C604-A89A-0E85-47BFF84B6E60"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

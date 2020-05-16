@@ -1,0 +1,235 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D884DC89-39E8-C6CF-BE6F-95D2F1640A8D" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSTANCIAS_SECCIONES">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSTANCIAS_SECCIONES</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8D5D9927-6762-2AF9-D7E3-F8BD7E58E014">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>INSTANCIAS_SECCIONES_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>INSTANCIAS_SECCIONES_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="SECCION_ID" id="5E428013-74FD-8D4C-D4CD-00C280FDBCBC">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>SECCION_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO_SEC" id="1C818048-7874-AF07-F316-F38D7CAC55CE">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>CODIGO_SEC</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="METODO_ID" id="1F11A62D-923D-F9F0-8C80-041BCF257AD8">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>METODO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL" id="21867DAA-41B8-B3AE-29C3-ABE75503E53A">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>NIVEL</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERIODO_ID" id="CE2FB0F4-1129-2FB2-1C31-597ACEA0158E">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>PERIODO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORARIO_ID" id="8FCFC74F-3CD5-4132-7310-F52BDE1AC8E8">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>HORARIO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODALIDAD_ID" id="07CBF2B6-4709-9089-1987-2189E8B7671F">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>MODALIDAD_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALON_ID" id="D0AD6235-0B6D-2C4A-3C03-5F2E17D108EB">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>SALON_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CEDULA_PROF" id="0A147AF4-B1E2-B3D5-5A8E-39CB6C6E12EF">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>CEDULA_PROF</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F_INICIO" id="9EA629BF-1A96-6B7D-4AFF-4F593DAF8D77">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>F_INICIO</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="F_FIN" id="A7F43CD0-3F42-D278-7407-C74C7D5915E8">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>F_FIN</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTATUS" id="16C4457D-CADE-5D5D-8E5C-2B5FD5280F4A">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSTANCIAS_SECCIONES</sourceObjSchema>
+<sourceObjName>ESTATUS</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="481EF455-AF35-BC6B-4F68-68DBB62C00BF" name="INSTANCIAS_SECCIONES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSTANCIAS_SECCIONES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D5D9927-6762-2AF9-D7E3-F8BD7E58E014"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9769B883-1C3A-2B8B-DFDD-FD2CE3628BB2" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSTANCIAS_SECCIONES_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSTANCIAS_SECCIONES_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D5D9927-6762-2AF9-D7E3-F8BD7E58E014"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

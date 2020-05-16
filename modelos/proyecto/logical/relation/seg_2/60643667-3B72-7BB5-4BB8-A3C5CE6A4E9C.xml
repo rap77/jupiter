@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="TS_BANCOS_PER_JUR_FK" directorySegmentName="seg_2" id="60643667-3B72-7BB5-4BB8-A3C5CE6A4E9C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>7B2CC7A7-6768-33AA-EB46-FAB3C1905555</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>6811AD05-BBBF-578F-6148-93961FD2CF92</sourcePk>
+<dominantRole>A8EF0492-599F-2252-E8A4-13C4A3A4A4B6</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A8EF0492-599F-2252-E8A4-13C4A3A4A4B6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D0CB36E3-9BF7-281A-D49C-83C59423AF5E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

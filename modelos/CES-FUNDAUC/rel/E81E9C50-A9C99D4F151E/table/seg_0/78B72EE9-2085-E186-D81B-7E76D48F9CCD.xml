@@ -1,0 +1,268 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="78B72EE9-2085-E186-D81B-7E76D48F9CCD" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SALDO_MENSUAL_BANCOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SALDO_MENSUAL_BANCOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>SALDO_MENSUAL_BANCOS</comment>
+<commentInRDBMS>SALDO_MENSUAL_BANCOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BANCO" id="0B8DE113-C23D-15E7-431A-E27178E4B39D">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>ID_BANCO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_BANCO</comment>
+<commentInRDBMS>ID_BANCO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_1" id="527A63C2-83A1-4BB2-1126-3277646CEDE5">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_1</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_1</comment>
+<commentInRDBMS>MES_1</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_2" id="B0461A37-489C-3C2D-7722-53F3CAC3F636">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_2</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_2</comment>
+<commentInRDBMS>MES_2</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_3" id="BBBACADF-E20B-EA45-E82E-5D6278DB9761">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_3</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_3</comment>
+<commentInRDBMS>MES_3</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_4" id="DEE3DC02-3510-60E4-CF20-54376CDAECEE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_4</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_4</comment>
+<commentInRDBMS>MES_4</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_5" id="335C8F68-8BC3-CD7B-CC22-234AD6128809">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_5</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_5</comment>
+<commentInRDBMS>MES_5</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_6" id="FA9814F5-AAC8-23B5-8407-8014C9631FD8">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_6</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_6</comment>
+<commentInRDBMS>MES_6</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_7" id="6739E589-AE28-F0C2-0029-82A966A36D8C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_7</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_7</comment>
+<commentInRDBMS>MES_7</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_8" id="6F7A121C-738A-4999-3371-D186C66A812B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_8</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_8</comment>
+<commentInRDBMS>MES_8</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_9" id="1F5FDFD0-7F7B-FE20-B8F6-5815C79DCD00">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_9</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_9</comment>
+<commentInRDBMS>MES_9</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_10" id="C8238770-AC89-28C2-97EF-8C7A8E741145">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_10</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_10</comment>
+<commentInRDBMS>MES_10</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_11" id="94AA6B22-3688-AB2C-4691-20318B0CA027">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_11</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_11</comment>
+<commentInRDBMS>MES_11</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MES_12" id="EA6AE00E-30C4-8B89-ED37-C0B922A79681">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>MES_12</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>MES_12</comment>
+<commentInRDBMS>MES_12</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROG_ACADEMICO" id="5F4CACDF-C7AB-FAA4-2D39-6052769A1413">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>SALDO_MENSUAL_BANCOS</sourceObjSchema>
+<sourceObjName>PROG_ACADEMICO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>PROG_ACADEMICO</comment>
+<commentInRDBMS>PROG_ACADEMICO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

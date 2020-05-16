@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="E8EECEA5-C59F-B86E-AADC-E84434E6C387" name="RH_GRADO_ESTUDIO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Grado de Estudio. 1 Primaria, 2 Secundaria, 3 Tecnico, 4 Universitario]]></comment>
+<commentInRDBMS><![CDATA[Grado de Estudio. 1 Primaria, 2 Secundaria, 3 Tecnico, 4 Universitario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AC34B397-2A0B-664E-F8A3-741986B82E88</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B69E347E-FE94-FDC2-FB60-F887B481DF1E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E312960B-614B-1676-1A3F-5BDDD7762B2E</importedID>
+<constraintName>ID}_2005499679</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="C5941DB4-7166-3121-8A8A-D877E1042CB2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AA0001FA-E674-288E-D0BA-D8CE8A878BF0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_GRADO" id="27BFBF47-BD2C-938C-5C08-6BEE0B27419B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>307ACBCD-8976-EB3B-6AFA-5AE9B2A5B032</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D0086D0B-316C-ED9C-393A-385489BBE637" name="RH_GRADO_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C221A56D-BCE4-2E2D-81A1-F6DBA1F9D1D8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B69E347E-FE94-FDC2-FB60-F887B481DF1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E66D0863-DD84-29EC-3C7C-4351E1FCADAA" name="RH_GRADO_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A5618105-6065-6958-972C-D222AD3AB923</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B69E347E-FE94-FDC2-FB60-F887B481DF1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

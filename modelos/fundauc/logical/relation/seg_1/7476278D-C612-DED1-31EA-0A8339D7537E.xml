@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="MEN_USU_FKv1" directorySegmentName="seg_1" id="7476278D-C612-DED1-31EA-0A8339D7537E">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 19:08:48 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2855C723-FC80-1015-83DE-61E4CD0B930B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9883838B-6623-2BAF-788A-1255CD45E849</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>33DF3624-1133-B01A-E095-33270AFC8D1E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

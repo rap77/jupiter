@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="999658F3-71E5-F469-11B8-95F5137AC9A8" name="GL_TIPOS_DATOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipos de Dato&lt;br&gt;Ej. entero, monto, texto, email, fecha, area_texto, url, etc.</comment>
+<commentInRDBMS>Tipos de Dato&lt;br&gt;Ej. entero, monto, texto, email, fecha, area_texto, url, etc.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>54E662CC-71F1-BA2E-013F-06D6BBB831A3</importedID>
+<ordsAlias>gl_tipo_dato</ordsAlias>
+<abbreviation>TP_DAT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6772073D-7C83-AC95-D879-D040BF378144">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>identificador unico del tipo de dato</comment>
+<commentInRDBMS>identificador unico del tipo de dato</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>659D81CE-A50B-A3E1-AB07-42F51BA76883</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAT_DATO_ID" id="2CC994AD-F640-82DB-2F9C-A187E4764071">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:57:21 UTC</createdTime>
+<comment>Identificador unico de la categoria del dato</comment>
+<generatorID>8B31956B-045E-392B-284B-9B6983DE0B8E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="95E9FAEA-3731-43E2-A950-7E763392F6F4" referredColumn="C8F4B4BF-3E41-C4B0-C5EB-127DC2E5D87C"/>
+</associations>
+</Column>
+<Column name="DES_TIPO_DATO" id="638C4F68-3356-9A9D-9419-2E38C48F9D19">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del tipo de dato Ej. int, float,string,date</comment>
+<commentInRDBMS>Descripcion del tipo de dato Ej. int, float,string,date</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>99B2ADE3-287C-7457-4CE4-6E1D9C2F4BBC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="26606941-C6DD-7B34-0F6F-43A4938E4D6F" name="GL_TIPOS_DATOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>78C2C929-B955-2D17-7B46-768001EA4187</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6772073D-7C83-AC95-D879-D040BF378144"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8ADE085E-58A9-E9AB-CBED-20047952413D" name="CP_TIPOS_DATOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4FF6B6D7-0863-E7A9-A06E-9AEDBA3621AA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6772073D-7C83-AC95-D879-D040BF378144"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EDF28EC0-9F1C-BBED-4658-0FFE1ED72F99" name="TIP_DAT_CAT_DAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CC994AD-F640-82DB-2F9C-A187E4764071"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

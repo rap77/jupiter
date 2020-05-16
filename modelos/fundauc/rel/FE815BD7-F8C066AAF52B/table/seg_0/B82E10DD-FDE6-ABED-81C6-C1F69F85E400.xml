@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B82E10DD-FDE6-ABED-81C6-C1F69F85E400" name="GL_TIPO_MEDICO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipos de Medico; Ej. Especialista, Residente,</comment>
+<commentInRDBMS>Tipos de Medico; Ej. Especialista, Residente,</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>80409EAC-F59A-8355-565B-4B8C65DAAADE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2802F1B6-D2CE-BCDF-5CD8-753B93AA22C3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico del tipo de medico</comment>
+<commentInRDBMS>Identificador unico del tipo de medico</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4B0E2D9A-80E1-7394-3A47-A4E58ABB155E</importedID>
+<constraintName>ID}_1634366905</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="F457C596-C83B-7221-B5E6-C05B4304B448">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del Tipo de Medico</comment>
+<commentInRDBMS>Descripcion del Tipo de Medico</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>829047CA-FBCE-BF7D-B712-F997AB812961</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5142B3FE-D096-8190-75FE-7DD3E5089AFB" name="GL_TIPO_MEDICO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>51CE886B-B133-1B87-D480-6DC63BB1B98A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2802F1B6-D2CE-BCDF-5CD8-753B93AA22C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4D61621-8D01-520E-1544-579BABE743F1" name="GL_TIPO_MEDICO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1459C6DC-2D82-406C-861C-402309EFCA9B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2802F1B6-D2CE-BCDF-5CD8-753B93AA22C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

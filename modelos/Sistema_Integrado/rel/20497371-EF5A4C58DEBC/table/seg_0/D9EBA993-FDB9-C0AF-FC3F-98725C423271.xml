@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9EBA993-FDB9-C0AF-FC3F-98725C423271" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="RH_NIVEL_ESTUDIO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<comment><![CDATA[Nivel de Estudio. Ej: 1 Ninguno. 2 Educación Básica Incompleta. 3 Educación Básica Completa. 4 Educacion Diversificada Incompleta. 5 Educación Diversificada Completa.]]></comment>
+<commentInRDBMS><![CDATA[Nivel de Estudio. Ej: 1 Ninguno. 2 Educación Básica Incompleta. 3 Educación Básica Completa. 4 Educacion Diversificada Incompleta. 5 Educación Diversificada Completa.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="FD0C3ADB-5D22-E139-EE84-A026AEF08BBA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_NEST_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NEST_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GRADO_ESTUDIO_ID" id="7564AE47-A87F-4246-3285-7881620A79D3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID}_651568034</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="AA39F80E-15BE-005C-2FD7-C87366D0A80D" referredColumn="A4F83C6F-2885-4E50-C2CF-FE777AAD37FB"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="AEC1B0E4-A201-4F82-821B-9260D3EF0EB1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<comment><![CDATA[Descripción del Nivel de Estudio. Ej:Ninguno. Educación Básica Incompleta. Educación Básica Completa. Educacion Diversificada Incompleta. Educación Diversificada Completa.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Nivel de Estudio. Ej:Ninguno. Educación Básica Incompleta. Educación Básica Completa. Educacion Diversificada Incompleta. Educación Diversificada Completa.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_NEST_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_NEST_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05C82B5B-3829-9D9C-015B-B43810F855F1" name="RH_NIVEL_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0C3ADB-5D22-E139-EE84-A026AEF08BBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0ADE2871-1B1F-461B-940B-386E3455BB65" name="RH_NIVEL_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:11:19 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD0C3ADB-5D22-E139-EE84-A026AEF08BBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BD8D06A6-2B66-B34D-0308-EBA5FD94786B" name="NEST_GRAD_EST_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:19:28 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7564AE47-A87F-4246-3285-7881620A79D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

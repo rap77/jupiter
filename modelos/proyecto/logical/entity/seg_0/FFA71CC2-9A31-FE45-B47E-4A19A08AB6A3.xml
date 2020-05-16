@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FFA71CC2-9A31-FE45-B47E-4A19A08AB6A3" name="GL PARROQUIAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Parroquia. Ej: 1 San José.]]></comment>
+<commentInRDBMS><![CDATA[Parroquia. Ej: 1 San José.]]></commentInRDBMS>
+<generatorID>BD0F9F16-6FAE-A5C2-7779-04F906EB62B8</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PARR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MUN_GL MUNICIPIOS_ID" id="8D791562-C1A2-41F2-E4E8-A456FE86987D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Municipio de la Parroquia. Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Municipio de la Parroquia. Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<generatorID>ED553653-36CC-1B0A-8FBC-836E3584E73C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CK_PARR_GL_MUNICIPIOS_ID</constraintName>
+<referedAttribute>C1B2E7DD-0945-1BA3-2C3B-CF0172F1FD29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NOMBRE" id="7B3DCC32-9B6F-0C9D-0C30-6DE50E323D05">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Nombre de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Nombre de la Parroquia.]]></commentInRDBMS>
+<generatorID>E577BB8D-B5F3-B639-F986-60C36E42139C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="COD SUDEBIP" id="65243AEF-5306-DB1B-5D49-B0558DE58EC9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Codigo de Parroquia Sugerido por la SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo de Parroquia Sugerido por la SUDEBIP]]></commentInRDBMS>
+<generatorID>5EB908DF-5951-31CA-5B79-50788E9BE551</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="FAF398CF-6BC1-E0CD-E105-2D7DB97FA983">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-10 15:39:18 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Parroquia.]]></commentInRDBMS>
+<generatorID>D783C2D7-B8C7-6938-8BF3-4FAB4C71AA40</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CK_PARR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83B49A74-B5B4-C1EC-EC51-CFAC9EE473CB" name="GL PARROQUIAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>0C015832-7E1E-9F8B-A04F-AE51B75C7565</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FAF398CF-6BC1-E0CD-E105-2D7DB97FA983</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

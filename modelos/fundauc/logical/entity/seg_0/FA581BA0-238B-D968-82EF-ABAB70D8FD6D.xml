@@ -1,0 +1,163 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FA581BA0-238B-D968-82EF-ABAB70D8FD6D" name="GL CIUDADES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Ciudad, Población, Caserio, etc. Ej: 1 Valencia, Carabobo.</comment>
+<commentInRDBMS>Ciudad, Población, Caserio, etc. Ej: 1 Valencia, Carabobo.</commentInRDBMS>
+<generatorID>E762DCA5-A627-532D-722A-935513119C86</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>CIU</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="E58C7063-DA2B-017F-27DF-C5E1B1610C2A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno de la Ciudad Población o Caserio.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Ciudad Población o Caserio.</commentInRDBMS>
+<generatorID>C23330E4-CA8C-DB3D-8A01-FE82FC05A358</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_130947432</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NOMBRE" id="8FAF52E3-138F-67EA-A614-8E67117C89DD">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Nombre de la Ciudad, Población o Caserio. Ej: Valencia.</comment>
+<commentInRDBMS>Nombre de la Ciudad, Población o Caserio. Ej: Valencia.</commentInRDBMS>
+<generatorID>41C917AE-F1AF-A13F-A727-E62D5F9E914E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GL_ESTADOS_ID" id="067A1DBF-794C-75D0-6DC5-5DD972CC0782">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Estado de la Ciudad. Número de Identificación Interno del Estado, Departamento o Provincia.</comment>
+<commentInRDBMS>Estado de la Ciudad. Número de Identificación Interno del Estado, Departamento o Provincia.</commentInRDBMS>
+<generatorID>4EF3FE99-C2CF-57A2-C44E-F0481DAC4CE4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_842692101</constraintName>
+<referedAttribute>31710E58-88E8-FE74-BF5A-30B89D52F7CB</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="GL_AREA_TELEFONICA_ID" id="0A07207A-760C-1B57-D411-53E0B8230361">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Principal Código de Area Teléfonica de la Ciudad. Número de Identificación Interno del Código de Area Teléfonica.</comment>
+<commentInRDBMS>Principal Código de Area Teléfonica de la Ciudad. Número de Identificación Interno del Código de Area Teléfonica.</commentInRDBMS>
+<generatorID>614698C9-A5B7-2297-FC0F-4E3BC90A8128</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1553364744</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>638F8F21-375B-1F2F-7E15-8CEA17871B16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="COD SUDEBIP" id="F38210E6-C3F4-48AE-132E-82B23C7CA860">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Codigo de Ciudad Sugerido por la SUDEBIP</comment>
+<commentInRDBMS>Codigo de Ciudad Sugerido por la SUDEBIP</commentInRDBMS>
+<generatorID>7BAE6FBE-D3D7-EFF1-123E-D8F30A1D5897</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GL_MUNICIPIOS_ID" id="7F2B838A-28C4-7887-6F8B-E9586681CF45">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interna del Municipio.</comment>
+<commentInRDBMS>Número de Identificación Interna del Municipio.</commentInRDBMS>
+<generatorID>D485ECDF-F656-BF28-13D0-3BC8ACA6AC8A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_183293133</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C1B2E7DD-0945-1BA3-2C3B-CF0172F1FD29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A831DDEB-6F95-C0E6-7810-5E42C5B6EC0D" name="GL_CIUDADES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>16C48150-9796-D4DA-A3AD-F990D635E902</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E58C7063-DA2B-017F-27DF-C5E1B1610C2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_LETRAS_RIF_TIPOS_ID_LET_RIF_FK" directorySegmentName="seg_2" id="2A0A16CD-9F4A-7CA3-D320-AACB39D5C06D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>649B3501-EF53-9A35-9728-E4D65E63A413</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2638F68B-8601-2CCB-787C-6879D2AB83B9</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1B249F1E-E4BC-B9E8-D3A3-04B1BAF9BAB1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>CF5F6383-39E6-C407-C292-9D9EFE57AB83</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

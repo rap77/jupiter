@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="13B43C72-FACE-4212-A628-830107DA35C3" containerWithKeyObject="03941457-E00B-7C31-83C2-E96914FFB9BA" localFKIndex="2E09A1BD-AB8C-2B5F-D556-A2C7B6D41184" name="MATERIALES_TIPO_MATERIAL_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>MATERIALES_TIPO_MATERIAL_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.TIPO_MATERIAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7DBEF8E5-DAC0-4E42-32E1-4281D0133517</referredTableID>
+<keyObject>65259E90-324D-58BF-E8F3-A3BB41B825ED</keyObject>
+<referredKeyID>65259E90-324D-58BF-E8F3-A3BB41B825ED</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ABREV</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

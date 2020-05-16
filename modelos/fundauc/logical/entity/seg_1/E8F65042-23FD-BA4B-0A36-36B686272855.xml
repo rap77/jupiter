@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="E8F65042-23FD-BA4B-0A36-36B686272855" name="GL_TIPOS_UNIDADES_ORG">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Tipos de Unidad Organizacional Ej: Direccion, Departamento,Seccion, Fundacion,</comment>
+<commentInRDBMS>Tipos de Unidad Organizacional Ej: Direccion, Departamento,Seccion, Fundacion,</commentInRDBMS>
+<generatorID>6B541AE0-8857-D9E1-00DE-CA7F2024B931</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_UNI_ORG</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="7D5F0B8D-A585-A164-265F-BD6B1E181507">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Identificador Unico del Tipo de Unidad Organizacional</comment>
+<commentInRDBMS>Identificador Unico del Tipo de Unidad Organizacional</commentInRDBMS>
+<generatorID>79FABB47-BF5E-D781-F6C0-F4425957DEF0</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="E7AC961D-5A32-964C-02BF-5DC73A4C792E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripción del TIpo de Unidad Organizacional</comment>
+<commentInRDBMS>Descripción del TIpo de Unidad Organizacional</commentInRDBMS>
+<generatorID>ED321A9B-998A-33B0-6EB2-EFA9EF9522B4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="60D5A8AC-B0F1-236C-4389-F360D787EC05" name="GL_TIPOS_UNIDADES_ORG_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>4C3CEA27-3876-DA68-41FF-ACF6203D04E9</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7D5F0B8D-A585-A164-265F-BD6B1E181507</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D677C058-9408-C92B-1CF9-DFC5D342249A" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_MONEDA">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_MONEDA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<comment><![CDATA[Moneda. Ej: USD Dolar Americano.]]></comment>
+<commentInRDBMS><![CDATA[Moneda. Ej: USD Dolar Americano.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="49B23D7F-9DE3-5DB5-34AE-061AFB6AFB36">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_MONEDA</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_MONE_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MONE_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DENOMINACION" id="7AA62684-8596-279A-7F28-3437B21B96D3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_MONEDA</sourceObjSchema>
+<sourceObjName>DENOMINACION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<comment><![CDATA[Denominación de la Moneda. Ej: Bolivares Fuertes Dolar Americano.]]></comment>
+<commentInRDBMS><![CDATA[Denominación de la Moneda. Ej: Bolivares Fuertes Dolar Americano.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MON_DENO</notNullConstraintName>
+</Column>
+<Column name="CODIGO" id="D8502256-1410-2E39-E735-5367334BBAEF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_MONEDA</sourceObjSchema>
+<sourceObjName>CODIGO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<comment><![CDATA[Código de la Moneda. Ej: VEF]]></comment>
+<commentInRDBMS><![CDATA[Código de la Moneda. Ej: VEF]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_MON_COD</notNullConstraintName>
+</Column>
+<Column name="SIMBOLO" id="9D870315-3D41-1FEB-071B-53F2C329BE74">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_MONEDA</sourceObjSchema>
+<sourceObjName>SIMBOLO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<comment><![CDATA[Simbolo de la Moneda. Ej: Bs.F]]></comment>
+<commentInRDBMS><![CDATA[Simbolo de la Moneda. Ej: Bs.F]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C0B5B91-5C3A-9EDD-5039-083419B50BBB" name="MONEDA_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>MONEDA_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B23D7F-9DE3-5DB5-34AE-061AFB6AFB36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AEA5A42E-0BB3-3606-83F4-DD2F964FD8AD" name="MONEDA_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>MONEDA_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49B23D7F-9DE3-5DB5-34AE-061AFB6AFB36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

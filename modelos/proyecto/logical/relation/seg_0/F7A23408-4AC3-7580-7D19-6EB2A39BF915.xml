@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_PARENTESCO_FK0" directorySegmentName="seg_0" id="F7A23408-4AC3-7580-7D19-6EB2A39BF915">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>4B609C5E-DFCF-0A43-639E-624CE7544A85</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<targetPk>2512B270-F35F-559F-E9ED-32D5ED601E54</targetPk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>A49C1C5E-3296-6006-24F1-B0FDBA8E81EB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A49C1C5E-3296-6006-24F1-B0FDBA8E81EB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

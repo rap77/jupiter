@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="6C0B6E97-57D2-1FAF-B953-DD3F9997BE8B" containerWithKeyObject="5BC64DAE-23C6-BD78-6481-526C44E7768D" localFKIndex="A066CB0C-3E9B-6B42-61EE-91AEA9DF57ED" name="LRIF_TID_TP_DOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:53:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_TIPOS_DOCIDENTI</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>84D81210-2403-6A81-B115-B70E00928C3D</referredTableID>
+<keyObject>879947DA-789C-6340-B49D-89D54B422796</keyObject>
+<referredKeyID>879947DA-789C-6340-B49D-89D54B422796</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

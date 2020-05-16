@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="D94A09B0-1F1D-40D6-C361-7E54054AA112" containerWithKeyObject="FD1A0374-5AAA-ABD6-3E38-88484B87A0CD" localFKIndex="FA8E80FE-B448-7164-60CA-F29017288DF1" name="PER_NAT_PROFESION_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:25:17 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.RH_PROFESION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D584CB77-75E2-44D7-F7B7-99FECBDB91F7</referredTableID>
+<keyObject>C34E2E28-D114-4298-DA3E-1641671EAD26</keyObject>
+<referredKeyID>C34E2E28-D114-4298-DA3E-1641671EAD26</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PER_NAT_GL_GENEROS_FK" directorySegmentName="seg_1" id="D37DF4B9-ECF8-3B14-E83E-94A6ECDF5AC5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>DF6A8DDB-EEC9-DE67-9E87-D1C29754EF35</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>84962451-4510-1794-31B0-92412D285945</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A736D02-8AB2-B251-03B1-67E38455EC46</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

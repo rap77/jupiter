@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="02A59C00-53A4-874D-7274-0ECD8D8B9BB6" name="GL_PAISES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Pais. Ej: VE Venezuela]]></comment>
+<commentInRDBMS><![CDATA[Pais. Ej: VE Venezuela]]></commentInRDBMS>
+<generatorID>8FA65C07-B3CC-1104-765A-00EF269B84AF</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PAI</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9FD2E400-2DC0-5E55-C2F5-EA305F7083EF">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<generatorID>CFBEBCB8-2F7F-DF59-3905-F8F6D29AB21B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NOMBRE" id="D9F8C8F0-F813-DFB0-CCDB-E3FA828B47A2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Nombre del País. Venezuela. Estados Unidos.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del País. Venezuela. Estados Unidos.]]></commentInRDBMS>
+<generatorID>6998314B-C7A8-9F83-5733-B97DEF4B327C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NACIONALIDAD" id="685CE4E2-6DFB-07C3-6C58-98A31DD68D65">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>1F7777C1-D613-57A2-C1ED-A129C29C752B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6CCF49CE-73D5-827C-59F9-66A029D86BB7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DISCADO INTERNACIONAL" id="59055972-6CBC-D31C-F8D2-3FFC06E14B71">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Discado Internacional del País. Ej: 58, 1]]></comment>
+<commentInRDBMS><![CDATA[Número de Discado Internacional del País. Ej: 58, 1]]></commentInRDBMS>
+<generatorID>E0669464-D150-71C9-DC7C-1B88938E2092</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ENTERO_03}_1392340439</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="GL_MONEDA_ID" id="9D65A9C9-968F-3BEC-17F8-7397297F1E62">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Moneda del País. Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Moneda del País. Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<generatorID>20880E9E-AA3D-515B-ED06-5F66D603E6BA</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1789173473</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FD36734E-849F-C764-A5C8-87BC5A84D008</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="GL_CONTINENTE_ID" id="95A63764-D684-7A55-B116-543CFD9D34D1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación interna del Continente.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación interna del Continente.]]></commentInRDBMS>
+<generatorID>F1111DCC-6A53-96FF-CE63-BE8B4ECC5672</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_586539952</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9D0FEC0E-E83E-9121-CABD-602D61DE6DAF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="COD SUDEBIP" id="5A1A3217-D9C4-87EA-C9AA-25BAF1B85F04">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Codigo del Sistema de Inventario SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo del Sistema de Inventario SUDEBIP]]></commentInRDBMS>
+<generatorID>D05CD1E8-EE26-1FAC-83C0-1411527EE032</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="66044A40-7D22-21F1-7DCD-46D60F5259C0" name="GL_PAISES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>92CD914C-0359-0B29-34BD-39354CF726B2</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9FD2E400-2DC0-5E55-C2F5-EA305F7083EF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

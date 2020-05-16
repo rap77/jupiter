@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIR_CIU_FK" directorySegmentName="seg_0" id="0EC9204B-2F9F-4659-EC5A-14016275ED3E">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>F508DA88-AE6F-696D-52E7-778545AD225B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>A831DDEB-6F95-C0E6-7810-5E42C5B6EC0D</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>FA581BA0-238B-D968-82EF-ABAB70D8FD6D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B07B2770-8939-35EF-1033-1BA58E764EE5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

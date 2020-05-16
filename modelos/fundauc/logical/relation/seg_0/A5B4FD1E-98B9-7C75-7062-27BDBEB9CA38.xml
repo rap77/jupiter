@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LET_RIF_TP_PER_FK" directorySegmentName="seg_0" id="A5B4FD1E-98B9-7C75-7062-27BDBEB9CA38">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>72C2783C-521E-70D9-D8F1-D8E2B11B372A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>91D9A467-0C6C-2C17-65EA-C235F71DDB8F</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>7D9E2F84-E712-F8AC-C2BB-4FE209466305</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>1B249F1E-E4BC-B9E8-D3A3-04B1BAF9BAB1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

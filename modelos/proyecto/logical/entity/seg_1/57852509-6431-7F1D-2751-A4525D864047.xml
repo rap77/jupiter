@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="57852509-6431-7F1D-2751-A4525D864047" name="GL_TIPOS_TELEFONOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.]]></commentInRDBMS>
+<generatorID>7C2F0C4C-5211-51E7-BAE4-8A89728BA9BD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B4DF5EEE-E3BC-7AF7-C86C-F5E256380CD9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Tipo de Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Tipo de Teléfono.]]></commentInRDBMS>
+<generatorID>F7042281-8A83-B86C-4CB4-56B42B7D4F86</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="F532DF83-84ED-3DCB-1E46-849A8CA54C1C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.]]></commentInRDBMS>
+<generatorID>DF07595D-8CC4-7B99-7F83-192C48CED070</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46092563-882F-B5AD-0E81-B818E672B08A" name="GL_TIPOS_TELEFONOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>87FC065F-FFC9-28B5-D003-E5F168D7E0C6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B4DF5EEE-E3BC-7AF7-C86C-F5E256380CD9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

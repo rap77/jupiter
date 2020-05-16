@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="47C1486E-AAA8-053B-7233-AC3352AA3B0A" name="GL_DOC_ATRIBUTOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Contiene los campos que contiene un documento personalizado</comment>
+<commentInRDBMS>Contiene los campos que contiene un documento personalizado</commentInRDBMS>
+<generatorID>822AFB6A-D58E-DE40-3281-084DFDE35826</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOC_ATTR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="VALOR" id="11F36A2D-312C-F836-1BFD-3D74B75121C0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Valor del Atributo del Documento</comment>
+<commentInRDBMS>Valor del Atributo del Documento</commentInRDBMS>
+<generatorID>D22E06C2-289C-B1C0-C3FC-8F62B68547B3</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ES_REQUERIDO" id="E56D590B-13F2-C927-D89A-2671738ABD5D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Si el Atributo es Requerido o No</comment>
+<commentInRDBMS>Si el Atributo es Requerido o No</commentInRDBMS>
+<generatorID>0B320E13-EF78-B1C0-E2A1-FD748A3753ED</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_1814721180</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NO_DUPLICADOS" id="5C0C479F-FDE8-476F-316A-71E3B1C16C58">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Si el Atributo debe o no Aceptar Valores Duplicados</comment>
+<commentInRDBMS>Si el Atributo debe o no Aceptar Valores Duplicados</commentInRDBMS>
+<generatorID>8BF0AFE6-E9E6-04E0-99A0-09B2079F70D3</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_832269258</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DOC_ID" id="826FFAF0-1549-13FE-A9F5-0D8DDC38FDB0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>identificador unico de documento</comment>
+<commentInRDBMS>identificador unico de documento</commentInRDBMS>
+<generatorID>DE7E07C5-4568-F4EB-C6B6-CECE0FEA00AA</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_702938471</constraintName>
+<referedAttribute>3E1EB958-7F81-5BA9-E278-83E242A2E193</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DOC_ATR_ID_SUP" id="437F8A7A-0FD4-6CAD-DD23-371BE26D9436">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>identificador unico de documento</comment>
+<commentInRDBMS>identificador unico de documento</commentInRDBMS>
+<generatorID>26636E5F-3F15-7C5A-441E-F15953E2EC86</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1427323795</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>826FFAF0-1549-13FE-A9F5-0D8DDC38FDB0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ATR_ID" id="30E8806B-576A-21E0-2D40-3A364019707A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>identificador unico del atributo</comment>
+<commentInRDBMS>identificador unico del atributo</commentInRDBMS>
+<generatorID>649FA875-6233-B946-9CDC-92A9DC8FDC69</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_195177040</constraintName>
+<referedAttribute>6FA7D3F4-7FBC-5556-4E41-120BA7CC1E45</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AF65A849-DB18-0C9C-2F68-30273627B619" name="GL_DOCUMENTO_ATRIBUTOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>B454DDBB-F0DE-A5B5-EB1B-207ED7B9CF13</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>826FFAF0-1549-13FE-A9F5-0D8DDC38FDB0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

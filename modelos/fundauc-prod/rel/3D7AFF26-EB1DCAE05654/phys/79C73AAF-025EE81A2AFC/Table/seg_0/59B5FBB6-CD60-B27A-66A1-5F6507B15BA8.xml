@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CONTROL_EVALUACION" directorySegmentName="seg_0" id="59B5FBB6-CD60-B27A-66A1-5F6507B15BA8">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:40:50 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EVALUACION4" id="032EB221-5430-74AF-1A02-11B0A81C5935">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SECCION_ID" id="18DE5D88-3478-D084-EE8F-439713C2B8EC">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:48:22 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVALUACION2" id="41512187-A927-222F-EFF6-D20689D7F0E1">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVALUACION3" id="97CEA5C9-27E0-B80E-11B2-6C80A2F59BA3">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EVALUACION1" id="9B7BA08B-1D71-1DF6-4869-4235E2B2E536">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTUDIANTE_ID" id="B5E890DA-2DF2-F785-1185-D5F2C586C66B">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="E310C4A4-2B98-ECEC-DF93-7D6D37CE7147">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:45:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="INSCRIPCION_ID" id="F750F6B8-0FD5-6000-168C-2D06A776FCAA">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CTR_EVA_INST_SEC_FK" id="2C09D6AA-BE36-10EC-DDD8-BC156E62C717">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:48:22 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CTR_EVA_ESTUD_FK" id="3D61306F-2AA3-F176-F636-6EA4F417C67D">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 17:00:57 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CTR_EVA_INSC_FK" id="B4041F22-4630-47F0-8ECF-C2C78A184105">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 17:00:57 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CONTROL_EVALUACION_PK" id="935435A7-311E-4EB3-2E02-EA9F982058DD">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:45:53 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

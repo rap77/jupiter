@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9351AAB0-49D5-887F-9707-5EA59A831D2B" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_GRUPOS_SANGUINEOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<comment><![CDATA[Grupo Sanguineo. Ej: A+ B- O+.]]></comment>
+<commentInRDBMS><![CDATA[Grupo Sanguineo. Ej: A+ B- O+.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>GRP_SAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C2F458C5-034D-65C9-0EEC-C065FE117494">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado Sanguineo.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado Sanguineo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GRP_SAN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GRP_SAN_ID</notNullConstraintName>
+</Column>
+<Column name="DESCRIPCION" id="3D7D6701-37F3-D3DC-6498-3D9EDDCC76C8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<comment><![CDATA[Grupo Sanguineo.]]></comment>
+<commentInRDBMS><![CDATA[Grupo Sanguineo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GRP_SAN_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GRP_SAN_DES</notNullConstraintName>
+</Column>
+<Column name="FACTOR RH" id="15B8BDBE-37D2-84B8-2681-3F3E381A15B9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<comment><![CDATA[Factor Rh del Grupo Sanguineo.]]></comment>
+<commentInRDBMS><![CDATA[Factor Rh del Grupo Sanguineo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_GRP_SAN_FAC</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_GRP_SAN_FAC</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23885350-558C-4F8B-6F6B-6F487A10D91E" name="GL_GRUPOS_SANGUINEOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2F458C5-034D-65C9-0EEC-C065FE117494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="79D04F73-4DBC-B6BA-8547-255712BCBA7B" name="GL_GRUPO_SANGUINEO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:40:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2F458C5-034D-65C9-0EEC-C065FE117494"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

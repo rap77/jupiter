@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E074C130-BFEA-8A31-A4C1-517A6DF5BE45" name="GL_RAMO_ASEGURADORA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tabla de Ramos de Aseguradora, Ej; Generales, Vida, Generales y Vida</comment>
+<commentInRDBMS>Tabla de Ramos de Aseguradora, Ej; Generales, Vida, Generales y Vida</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B021E486-2E77-55EE-C9AE-5D1C1C793E40</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8EC60B7D-199C-CB2D-430D-6AE416682003">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador Unico del Ramos de la Aseguradora</comment>
+<commentInRDBMS>Identificador Unico del Ramos de la Aseguradora</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5BA51284-EDC7-783B-9EB4-13B2A2EB2729</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="DC793DF1-3EB8-B957-0C0B-1AA517E22376">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del Ramos de la Aseguradora</comment>
+<commentInRDBMS>Descripcion del Ramos de la Aseguradora</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9229021C-60A5-D8EC-59D8-1F7B0753F07E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3E27AE42-161D-F4FE-B863-8B1AAADB0A95" name="HC_RAMO_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3142BDB1-414E-F059-EF92-69D6CB7A2C0A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EC60B7D-199C-CB2D-430D-6AE416682003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="109B6517-184B-16C3-D5D3-CCB65F31A144" name="HC_RAMO_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2747C8AC-F162-63B3-A38F-3811A53A6D9F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EC60B7D-199C-CB2D-430D-6AE416682003"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

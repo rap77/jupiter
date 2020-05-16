@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F4F7F203-D6D5-7B43-3CE5-8C51401C46F0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_ROLES_OPCIONES_MENU">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_ROLES_OPCIONES_MENU</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Guarda el acceso que tienen los roles en las opciones del menu]]></comment>
+<commentInRDBMS><![CDATA[Guarda el acceso que tienen los roles en las opciones del menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OP_MEN_ID" id="CE8061D2-732F-9020-54AE-5E237DC9C190">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_ROLES_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>OP_MEN_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ROM_OPM_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_ROM_OPM_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="FAA8449C-99BF-E7EF-19D5-CA5E3152451E" referredColumn="EE869E62-754F-A68A-A9C5-A3E0A605F936"/>
+</associations>
+</Column>
+<Column name="ROL_ID" id="24476ED3-5F77-C7D8-58E0-A2EBEA71C310">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_ROLES_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>ROL_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Código del Perfil.]]></comment>
+<commentInRDBMS><![CDATA[Código del Perfil.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_ROM_ROL_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_ROM_ROL_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="9CCE5DD4-A2B0-FE24-0A4E-F3BC870471D1" referredColumn="2FD65436-B82D-2998-FC28-67E89A650A42"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EF203DE7-50CA-B783-BFFE-4A22F94E3808" name="SG_ROLES_OPCIONES_MENU_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_ROLES_OPCIONES_MENU_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8061D2-732F-9020-54AE-5E237DC9C190"/>
+<colUsage columnID="24476ED3-5F77-C7D8-58E0-A2EBEA71C310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CBE394D-79C9-EDBF-F40E-2566BF8CF51E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_ROL_OPCION_MENU_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_ROL_OPCION_MENU_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8061D2-732F-9020-54AE-5E237DC9C190"/>
+<colUsage columnID="24476ED3-5F77-C7D8-58E0-A2EBEA71C310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="215B8327-D1FE-A9E1-F1D0-2840692FA070" name="ROL_OP_MEN_OP_MEN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE8061D2-732F-9020-54AE-5E237DC9C190"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="153B1622-5AE3-D0D7-71B1-0304335C510A" name="ROL_OP_MEN_ROL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="24476ED3-5F77-C7D8-58E0-A2EBEA71C310"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

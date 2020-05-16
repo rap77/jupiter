@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="1FE5AB52-7F71-AAAA-4083-3FB1AC9B6107" name="RH_TITULO_JEFE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Guarda los nombres de Cargos de Jefe y sus generos</comment>
+<commentInRDBMS>Guarda los nombres de Cargos de Jefe y sus generos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1674CC7B-BA9F-8DAF-0FE1-960FCD78DE1F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="788E671B-DBB4-671B-E63D-AE1D0A01782D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico de titulo jefe</comment>
+<commentInRDBMS>Identificador unico de titulo jefe</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>848A5436-3F1A-79F9-9D90-9AF731997E3E</importedID>
+<constraintName>ID}_1249543621</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_GENERO" id="DB6C60E0-B6FF-4B42-FBAD-F77541A63127">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código del Genero o Sexo. Ej: F, M.</comment>
+<commentInRDBMS>Código del Genero o Sexo. Ej: F, M.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>01C92477-DF07-C112-5EF0-4D40C14F4506</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3E5E9B42-5172-B38B-D1C5-EAB782A84435" referredColumn="3137822B-0B8E-2D09-ED3E-CC28A60B71E3"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="2AA0C8A5-7ACA-39B1-EF50-67B2A6828D23">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del titulo de jefe</comment>
+<commentInRDBMS>Descripcion del titulo de jefe</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>171DE1B5-C62E-302A-9649-2E0C42E7F187</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MASCULINO" id="B057C2F6-3C66-F719-630F-82AD3C3A76BD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>id de la Descripcion en masculino del titulo del jefe</comment>
+<commentInRDBMS>id de la Descripcion en masculino del titulo del jefe</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0204318B-0258-41E4-665F-1A4EA887E5E6</importedID>
+<constraintName>ID}_821908112</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="969384D9-1F09-92CA-6270-F9B138A78F57" name="RH_TITULO_JEFE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A6789A7B-C5DD-7B57-5FEF-695137AD60F8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="788E671B-DBB4-671B-E63D-AE1D0A01782D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB4FB64D-CD67-44AE-6AAE-AF5DDAC558C1" name="RH_TITULO_JEFE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4C68C8E5-454F-6DBB-D76D-F3BE4074A919</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="788E671B-DBB4-671B-E63D-AE1D0A01782D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="540B81A7-CB8C-91D2-DE98-711410E03651" name="RH_TITULO_JEFE_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB6C60E0-B6FF-4B42-FBAD-F77541A63127"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,209 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="297DE289-F298-4895-7D3C-1705587719B6" name="GL_DOCIDENTI">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></commentInRDBMS>
+<generatorID>2A55C3C5-E4E8-DB7A-70D5-AB80F54E1904</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DOCID</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="7F08F5CF-8227-3D21-7EFD-D126E114EFD4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></commentInRDBMS>
+<generatorID>D6BFC9CD-DCA5-ECF4-EAFB-9EB0AC672B36</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_2070896744</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_DOCID_ID" id="59360CA7-EE29-E4FA-43EB-064B504DE93C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Número o Código de Identificación. Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[ Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<generatorID>BBBCB41E-1CCB-981F-1A30-7E06E46672BE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>25F396EF-E252-ECDE-866D-A5B27343CAD0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="IDENTIFICACION" id="EE4BDAFF-1892-3687-D812-9362E500CEA7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></commentInRDBMS>
+<generatorID>764A95E7-06B9-D483-1021-2FF072DD9E64</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTIVO" id="D13AA2C5-D55F-4A3F-3523-27673B942872">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></commentInRDBMS>
+<generatorID>60510C5F-2B34-72DB-CDEC-BDAD3975318E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO_218164223</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PER_ID" id="08AD0BA0-A458-97E2-AE4B-5F94652308A1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<generatorID>380686D4-D582-E99C-2F1F-2F689ACC3E2F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA VENCIMIENTO" id="F0DAC544-C1FB-BD0F-994E-F9994F3A6783">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Fecha de Vencimiento de la Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Vencimiento de la Identificación.]]></commentInRDBMS>
+<generatorID>40C74BDF-015C-B592-0EE1-4609D82F0896</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>FECHA_988613808</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="VERIFICADO POR" id="C889BDAC-DDCE-5880-9022-71F14BADAB0D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 16:20:33 UTC</createdTime>
+<comment><![CDATA[Usuario quien verifico el documento de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Usuario quien verifico el documento de identificacion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VERIFICADO EL" id="9128AEEA-F4B3-AF51-DAD6-90380E61EE83">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 16:21:55 UTC</createdTime>
+<comment><![CDATA[Fecha cuando se verifico el documento]]></comment>
+<commentInRDBMS><![CDATA[Fecha cuando se verifico el documento]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C889C511-D3CD-B49A-AFF4-6ABBBC5BBDAF" name="GL_DOCIDENTI_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>4192959E-5B64-D801-8954-33C62F12B443</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7F08F5CF-8227-3D21-7EFD-D126E114EFD4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="83365450-3C8C-A68D-EC28-4066638BE09D" name="DOCID_TP_DOCID_ID_PER_UN">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>78917AC7-7242-D6E9-B4A5-715BCB5AC270</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>59360CA7-EE29-E4FA-43EB-064B504DE93C</attributeRef>
+<attributeRef>08AD0BA0-A458-97E2-AE4B-5F94652308A1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="7C94A62A-A497-BE27-6105-FB2A78BFE88C" name="DOCID_TP_DOCID_ID_IDENT_UN">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>983089A0-6342-4B57-D0F3-FAA5895B98BB</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>59360CA7-EE29-E4FA-43EB-064B504DE93C</attributeRef>
+<attributeRef>EE4BDAFF-1892-3687-D812-9362E500CEA7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

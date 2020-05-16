@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="962AE875-E715-F77D-DD48-E1A25779A909" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_DIRECCIONES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_DIRECCIONES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:39:56 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_DIR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="8E7A9107-FB0D-D161-D999-9AF765D5F242">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_DIRECCIONES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:39:56 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID}_1366185233</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="1477CEA7-B4B9-44A9-76B6-C0A90F0174FA">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_DIRECCIONES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:39:56 UTC</createdTime>
+<comment><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7774BF70-44EE-7672-0A7A-EEA0A0513EC8" name="TIPOS_DIRECCIONES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPOS_DIRECCIONES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:39:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E7A9107-FB0D-D161-D999-9AF765D5F242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="47947674-BE6F-FE3C-3B91-0D988ED6D09C" name="TIPO_DIRECCION_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPO_DIRECCION_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:39:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E7A9107-FB0D-D161-D999-9AF765D5F242"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D9DCCB36-514F-ECA9-EB1E-C54144111476" name="GL_MEDICO_ESPECIALIDAD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Relacion entre medico y especialidades si este es especialista</comment>
+<commentInRDBMS>Relacion entre medico y especialidades si este es especialista</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0F8BA7B0-6671-B375-E6F9-CBA0CC42ADD1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ESPECIALIDAD_MEDICO" id="79126FF3-ACDC-2B2B-B594-84A2B8E12E10">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador Unico de la Especialidad</comment>
+<commentInRDBMS>Identificador Unico de la Especialidad</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>599E9080-5A27-58F8-281F-886150BB4FF7</importedID>
+<constraintName>ID}_1230399008</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="B5222402-CE37-0448-D169-95E0F548B1F8" referredColumn="26B70D09-6134-AE92-EA0B-D57A6C1326D7"/>
+</associations>
+</Column>
+<Column name="ID" id="55EA313F-0E4B-4397-5237-8448374036FA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>20ECDE58-3778-6DC8-5589-182174AE41DA</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_13113</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="1DF318E7-B879-69E0-AE4C-8F155E47AA80" referredColumn="B4A207F6-3A62-478A-3AD8-A61E2643B8D0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2174E1E1-56B4-DC17-5EE9-D1713F1A5A5B" name="GL_MEDICO_ESPECIALIDAD_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A8B5DDD8-B5F5-116C-2271-F05511D7537F</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79126FF3-ACDC-2B2B-B594-84A2B8E12E10"/>
+<colUsage columnID="55EA313F-0E4B-4397-5237-8448374036FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27EF83AE-5FF3-2852-428E-05077EBB5D72" name="GL_MEDICO_ESPECIALIDAD_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FF3E5443-B50B-F19F-7F29-E190E93FF427</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79126FF3-ACDC-2B2B-B594-84A2B8E12E10"/>
+<colUsage columnID="55EA313F-0E4B-4397-5237-8448374036FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BA989948-0200-FF25-9037-AAAD2907149E" name="GL_MEDICO_ESPECIALIDAD_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79126FF3-ACDC-2B2B-B594-84A2B8E12E10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFF8157A-70D8-22A3-9C86-D9328A17FB7C" name="GL_MEDICO_ESPECIALIDAD_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55EA313F-0E4B-4397-5237-8448374036FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="67FA41FC-6E0F-DE9C-F150-7F8A525B2534" containerWithKeyObject="9CB6666D-5BEF-F76A-AD43-37AA1B7D41DA" localFKIndex="75E6AE4A-73A4-7FA7-CFB1-BA728289C41E" name="IN_GARANTIA_FK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>36BB83FA-5317-65BD-5CCA-3918781F2BCB</importedID>
+<referredTableLongName>GL_DOCUMENTO</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>61EF53A1-4C04-2A9A-B7B1-31E84D27BE16</referredTableID>
+<keyObject>8FE2FFA2-2B7D-F432-64B2-35E721854256</keyObject>
+<referredKeyID>8FE2FFA2-2B7D-F432-64B2-35E721854256</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

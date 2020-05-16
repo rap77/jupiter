@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B5FBE5C-A868-20F9-E145-85D8753915FE" name="GL_PERSONAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.</comment>
+<commentInRDBMS>Persona. Ej: 1 Esculapio C.A., J, 2 Jessy Divo N.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>995CCE40-5FEF-9142-F9D1-3C51D27C32C1</importedID>
+<abbreviation>PER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2AEDC292-441B-4730-EE53-2B8D0059CAEA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>893D3D44-C721-97A1-2003-DC559D8D236D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="TP_PER_ID" id="0385A2E0-5216-DCD8-F651-7032FF11F56E">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:49:35 UTC</createdTime>
+<generatorID>4B016D70-CDCF-82FF-595D-102BB3B75B3C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PER_GL_TIPOS_PERSONAS_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="7CEA2DAC-3FC5-C0DD-EDA2-54AF92056D4F" referredColumn="6CFBB88F-421F-9080-DB86-DB3E80F62E08"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="6C2FBA93-B97C-C8B4-FC4E-5C41BAAD1155">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre Completo o Razón Social de la Persona.</comment>
+<commentInRDBMS>Nombre Completo o Razón Social de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5B62DEB4-8635-5696-690E-CFC4FB7B25D9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PER_NOMBRE</notNullConstraintName>
+</Column>
+<Column name="INSTANCIAS" id="AFC7D3E3-88B8-1925-032C-3DFAB9821E92">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 14:12:09 UTC</createdTime>
+<comment>Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC</comment>
+<commentInRDBMS>Nombres a que pertenece la Persona Ej. FAMILIAR, ESTUDIANTE, PROVEEDOR, ETC</commentInRDBMS>
+<generatorID>3861F70F-343D-8368-F0E1-F5EDD09E5892</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B58511BB-C3B9-95DF-EEE3-31EDF2DE289F" name="GL_PERSONAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F5D6B731-81BE-129D-F5E4-AF2353BDCCFD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="77F5CC5E-B936-2625-D340-71E04CD04C31" name="PER_ID_IDX">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F335F123-923B-E94F-0694-B576A80B4B11</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C32A3693-9DF0-4E34-3EDD-F4FD496563D4" name="PER_TP_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0385A2E0-5216-DCD8-F651-7032FF11F56E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

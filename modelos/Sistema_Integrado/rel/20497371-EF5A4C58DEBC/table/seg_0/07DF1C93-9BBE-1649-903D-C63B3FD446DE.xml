@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07DF1C93-9BBE-1649-903D-C63B3FD446DE" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="TS_BANCOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<comment><![CDATA[Entidad Bancaria. 4 Banco Provincial.]]></comment>
+<commentInRDBMS><![CDATA[Entidad Bancaria. 4 Banco Provincial.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>BAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_BAN_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_BAN_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="269BAC89-A1E7-E2D0-E7D4-4FDB10D1EE45" referredColumn="BA01FED1-FEBC-6191-7EBF-1CA5113D3EB3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D14F8590-7C37-CF08-A684-9335C75141A8" name="TS_BANCOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6299A6B-37DD-E828-79E7-58D77BACEC83" name="TS_BANCO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 00:33:33 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C13D5B4-FFB1-91AF-FA7C-9DFE1E8E0FBB" name="BAN_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:30:18 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DD8F238-F5C4-F728-5FB3-A21AED8DA37C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_PERSONA_NATURAL_FK9" directorySegmentName="seg_2" id="172753FE-7897-D8CB-191E-D136ACD4CE2C">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<generatorID>3D54F0B0-AA3F-0B8F-A589-0738B5E3830C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>B9ADC8A2-0EA3-B2BC-A71D-8C59C84CF947</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D385C217-B37B-7162-0FA5-9DF79D71E653</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2A28EDC4-C212-4B72-011D-9E896F305E7A</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

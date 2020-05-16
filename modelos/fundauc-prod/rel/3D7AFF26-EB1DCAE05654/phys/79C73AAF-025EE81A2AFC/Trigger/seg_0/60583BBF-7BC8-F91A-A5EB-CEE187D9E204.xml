@@ -1,0 +1,270 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_SECCIONES_AUID" directorySegmentName="seg_0" id="60583BBF-7BC8-F91A-A5EB-CEE187D9E204">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>T_SECCIONES_AUID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT, UPDATE, DELETE</actions>
+<body><![CDATA[DECLARE
+    l_precio                     NUMBER;
+    p_materiales_rec             fundauc.tapi_materiales.materiales_rt;
+    p_precios_rec                fundauc.tapi_precios.precios_rt;
+    p_instancias_secciones_rec   fundauc.tapi_instancias_secciones.instancias_secciones_rt;
+    l_id                         NUMBER;
+    p_ignore_nulls               BOOLEAN;
+BEGIN
+    BEGIN
+        IF
+            inserting
+        THEN -- inserta
+      --Inserta Secciones nuevas
+          -- selecciona el maximo precio entre todos los cursos
+            SELECT
+                MAX(precio1)
+            INTO
+                l_precio
+            FROM
+                precios
+            WHERE
+                tipo_item = 'C';
+            --llena el registro de materiales con la SECCION
+
+            p_materiales_rec.id_mat :=:new.id_seccion;
+            p_materiales_rec.tipo := 'C';
+            p_materiales_rec.descripcion :=:new.id_metodo
+            || '|NIVEL '
+            || lpad(:new.nivel,2,'0')
+            || '|'
+            || utl_horarios.gethorario(:new.id_horario)
+            || '|'
+            || TO_CHAR(utl_periodos.getperiodofinicio(:new.periodo),'DD/MM/YYYY')
+            || '|'
+            || utl_modalidades.getmodalidad(:new.modalidad)
+            || '|'
+            || utl_inscripciones.getsalonsiglas(:new.id_salon);
+
+            p_materiales_rec.id_curso :=:new.id_metodo;
+            p_materiales_rec.evento := 2;
+            p_materiales_rec.nivel :=:new.nivel;
+            p_materiales_rec.iva_exento := 'S';
+            p_materiales_rec.activo := 'S';
+          --  P_MATERIALES_REC.id := 
+            p_materiales_rec.seccion_id :=:new.id;
+            p_materiales_rec.creado_por := coalesce(sys_context('APEX$SESSION','app_user'),regexp_substr(sys_context('userenv','client_identifier'
+),'^[^:]*'),sys_context('userenv','session_user') );
+
+            p_materiales_rec.creado_el := SYSDATE;
+            p_materiales_rec.modificado_por := NULL;
+            p_materiales_rec.modificado_el := NULL;
+            p_materiales_rec.cohorte_id := NULL;
+      --inserta registro de materiales
+            tapi_materiales.ins(p_materiales_rec);
+            --llena registro de precios
+            p_precios_rec.id := p_materiales_rec.id;
+            p_precios_rec.tipo_item := p_materiales_rec.tipo;
+            p_precios_rec.fecha := SYSDATE;
+            p_precios_rec.precio1 := l_precio;
+            p_precios_rec.precio2 := 0;
+            p_precios_rec.precio3 := 0;
+            p_precios_rec.status := 'V';
+            p_precios_rec.precio4 := 0;
+            p_precios_rec.precio5 := 0;
+
+        --Inserta registro de precios
+            tapi_precios.ins(p_precios_rec);
+
+        -- llena registro de instancias secciones
+            p_instancias_secciones_rec.seccion_id :=:new.id;
+            p_instancias_secciones_rec.codigo_sec :=:new.id_seccion;
+            p_instancias_secciones_rec.metodo_id :=:new.id_metodo;
+            p_instancias_secciones_rec.nivel :=:new.nivel;
+            p_instancias_secciones_rec.periodo_id :=:new.periodo;
+            p_instancias_secciones_rec.horario_id :=:new.id_horario;
+            p_instancias_secciones_rec.modalidad_id :=:new.modalidad;
+            p_instancias_secciones_rec.cedula_prof :=:new.cedula_prof;
+            p_instancias_secciones_rec.salon_id :=:new.id_salon;
+            p_instancias_secciones_rec.f_inicio := utl_periodos.getperiodofinicio(:new.periodo);
+            p_instancias_secciones_rec.f_fin := utl_periodos.getperiodoffin(:new.periodo);
+            p_instancias_secciones_rec.estatus := 'ABIERTA';
+
+        --Inserta registro de instancias secciones
+            tapi_instancias_secciones.ins(p_instancias_secciones_rec);
+        ELSIF updating THEN -- si se esta modificando
+        -- actualiza tabla de materiales con la descripcion modificada
+
+   --     update materiales set descripcion = :NEW.ID_METODO||'|NIVEL '||lpad(:NEW.nivel,2,'0')||'|'||UTL_HORARIOS.GETHORARIO(:NEW.ID_HORARIO)||'|'||to_char(nvl(utl_periodos.getPeriodoFecIniSec(:NEW.ID),utl_periodos.getPeriodoFecIniSec(:OLD.ID)),'DD/MM/YYYY')||'|'||utl_modalidades.getModalidad(:NEW.modalidad)||'|'||:NEW.id_salon
+     --          where tipo='C' and seccion_id = :OLD.ID;
+            p_ignore_nulls := true;
+            BEGIN
+        --busca el id del material para actualizarlo       
+                SELECT
+                    id
+                INTO
+                    p_materiales_rec.id
+                FROM
+                    materiales
+                WHERE
+                    tipo = 'C'
+                    AND   seccion_id =:old.id;
+
+                p_materiales_rec.id_mat :=:new.id_seccion;
+                p_materiales_rec.id_curso :=:new.id_metodo;
+                p_materiales_rec.nivel :=:new.nivel;
+                p_materiales_rec.descripcion :=:new.id_metodo
+                || '|NIVEL '
+                || lpad(:new.nivel,2,'0')
+                || '|'
+                || utl_horarios.gethorario(:new.id_horario)
+                || '|'
+                || TO_CHAR(utl_periodos.getperiodofinicio(:new.periodo),'DD/MM/YYYY')
+                || '|'
+                || utl_modalidades.getmodalidad(:new.modalidad)
+                || '|'
+                || utl_inscripciones.getsalonsiglas(:new.id_salon);
+
+                tapi_materiales.upd(p_materiales_rec => p_materiales_rec,p_ignore_nulls => p_ignore_nulls);
+            EXCEPTION
+                WHEN no_data_found THEN
+                    SELECT
+                        MAX(precio1)
+                    INTO
+                        l_precio
+                    FROM
+                        precios
+                    WHERE
+                        tipo_item = 'C';
+            --llena el registro de materiales con la SECCION
+
+                    p_materiales_rec.id_mat :=:new.id_seccion;
+                    p_materiales_rec.tipo := 'C';
+                    p_materiales_rec.descripcion :=:new.id_metodo
+                    || '|NIVEL '
+                    || lpad(:new.nivel,2,'0')
+                    || '|'
+                    || utl_horarios.gethorario(:new.id_horario)
+                    || '|'
+                    || TO_CHAR(utl_periodos.getperiodofinicio(:new.periodo),'DD/MM/YYYY')
+                    || '|'
+                    || utl_modalidades.getmodalidad(:new.modalidad)
+                    || '|'
+                    || utl_inscripciones.getsalonsiglas(:new.id_salon);
+
+                    p_materiales_rec.id_curso :=:new.id_metodo;
+                    p_materiales_rec.evento := 2;
+                    p_materiales_rec.nivel :=:new.nivel;
+                    p_materiales_rec.iva_exento := 'S';
+                    p_materiales_rec.activo := 'S';
+          --  P_MATERIALES_REC.id := 
+                    p_materiales_rec.seccion_id :=:new.id;
+                    p_materiales_rec.creado_por := coalesce(sys_context('APEX$SESSION','app_user'),regexp_substr(sys_context('userenv','client_identifier'
+),'^[^:]*'),sys_context('userenv','session_user') );
+
+                    p_materiales_rec.creado_el := SYSDATE;
+                    p_materiales_rec.modificado_por := NULL;
+                    p_materiales_rec.modificado_el := NULL;
+                    p_materiales_rec.cohorte_id := NULL;
+      --inserta registro de materiales
+                    tapi_materiales.ins(p_materiales_rec);
+            --llena registro de precios
+                    p_precios_rec.id := p_materiales_rec.id;
+                    p_precios_rec.tipo_item := p_materiales_rec.tipo;
+                    p_precios_rec.fecha := SYSDATE;
+                    p_precios_rec.precio1 := l_precio;
+                    p_precios_rec.precio2 := 0;
+                    p_precios_rec.precio3 := 0;
+                    p_precios_rec.status := 'V';
+                    p_precios_rec.precio4 := 0;
+                    p_precios_rec.precio5 := 0;
+
+        --Inserta registro de precios
+                    tapi_precios.ins(p_precios_rec);
+            END;
+
+            BEGIN
+        -- busca el id de la instancia para actualizarla        
+                SELECT
+                    id
+                INTO
+                    p_instancias_secciones_rec.id
+                FROM
+                    instancias_secciones
+                WHERE
+                    seccion_id =:old.id
+                    AND   periodo_id =:old.periodo;
+
+                p_instancias_secciones_rec.codigo_sec :=:new.id_seccion;
+                p_instancias_secciones_rec.metodo_id :=:new.id_metodo;
+                p_instancias_secciones_rec.nivel :=:new.nivel;
+                p_instancias_secciones_rec.periodo_id :=:new.periodo;
+                p_instancias_secciones_rec.horario_id :=:new.id_horario;
+                p_instancias_secciones_rec.modalidad_id :=:new.modalidad;
+                p_instancias_secciones_rec.cedula_prof :=:new.cedula_prof;
+                tapi_instancias_secciones.upd(p_instancias_secciones_rec => p_instancias_secciones_rec,p_ignore_nulls => p_ignore_nulls);
+            EXCEPTION
+                WHEN no_data_found THEN
+        -- llena registro de instancias secciones
+                    p_instancias_secciones_rec.seccion_id :=:new.id;
+                    p_instancias_secciones_rec.codigo_sec :=:new.id_seccion;
+                    p_instancias_secciones_rec.metodo_id :=:new.id_metodo;
+                    p_instancias_secciones_rec.nivel :=:new.nivel;
+                    p_instancias_secciones_rec.periodo_id :=:new.periodo;
+                    p_instancias_secciones_rec.horario_id :=:new.id_horario;
+                    p_instancias_secciones_rec.modalidad_id :=:new.modalidad;
+                    p_instancias_secciones_rec.cedula_prof :=:new.cedula_prof;
+                    p_instancias_secciones_rec.salon_id :=:new.id_salon;
+                    p_instancias_secciones_rec.f_inicio := utl_periodos.getperiodofinicio(:new.periodo);
+                    p_instancias_secciones_rec.f_fin := utl_periodos.getperiodoffin(:new.periodo);
+                    p_instancias_secciones_rec.estatus := 'ABIERTA';
+
+        --Inserta registro de instancias secciones
+                    tapi_instancias_secciones.ins(p_instancias_secciones_rec);
+            END;
+      --si cambio el periodo o la modalidad o el horario
+/*      if :NEW.PERIODO<>:OLD.PERIODO or :NEW.MODALIDAD<>:OLD.MODALIDAD or :NEW.ID_HORARIO<>:OLD.ID_HORARIO then
+
+            update inscripciones set estatus = 'IF'
+            where estatus not in ('ACXC','AEXC') and seccion_id = :OLD.ID;
+
+            update inscripciones set estatus = 'IFXC'
+            where estatus in ('ACXC','AEXC') and seccion_id = :OLD.ID;
+       end if;*/
+
+        ELSIF deleting THEN --si esta borrando
+            BEGIN
+       --trae el id del material
+                SELECT
+                    id
+                INTO
+                    l_id
+                FROM
+                    materiales
+                WHERE
+                    seccion_id =:old.id
+                    AND   tipo = 'C';
+       --elimina el precio
+
+                DELETE FROM precios WHERE
+                    id = l_id;
+       --elimina el material
+
+                DELETE FROM materiales WHERE
+                    id = l_id;
+       --elimina de instancias_secciones
+      -- delete from instancias_secciones where seccion_id=:OLD.ID;
+
+            EXCEPTION
+                WHEN no_data_found THEN
+                    NULL;
+            END;
+        END IF;
+
+    END;
+END;
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<columns>D3E7E4FF-980C-3CAE-A75E-85C8852C87FB, 4B4B889A-98F6-0364-A732-624CAA103F66, FF2945B7-F23A-9E97-7FF6-05AEBAF78757, 4736346E-9DF8-6E57-5EED-B6BCAE766487, D3E80858-2ACA-BDDC-9032-1E7AC225F258, 81EEAFA4-0977-5E01-E12B-B8EA08D46A23, 4428D124-0B69-A622-E855-C92EC6DC8914</columns>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>2B5E8ABF-19C3-A881-D5D9-87A35FB97156</table>
+</TriggerOraclev10g>

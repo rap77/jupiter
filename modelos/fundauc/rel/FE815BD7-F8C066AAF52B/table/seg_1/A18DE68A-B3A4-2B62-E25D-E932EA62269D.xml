@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A18DE68A-B3A4-2B62-E25D-E932EA62269D" name="IN_FORMA_ADQUISICION">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Informacion sobre la Forma en que se Adquirió el Bien</comment>
+<commentInRDBMS>Informacion sobre la Forma en que se Adquirió el Bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EB80F17A-6CDB-2A3F-342C-B7B6821E4E26</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="32EA0F03-0BFE-69F8-B2DF-8D02A6C7C124">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único de la forma de Adquisición</comment>
+<commentInRDBMS>Identificador único de la forma de Adquisición</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EDD3BCA5-1970-EC87-EE13-D8D02F738107</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_TIPO_FORMA_ADQ" id="F8914A1A-24D8-278D-5FCB-1C3DB387279C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del tipo de forma de adquisición</comment>
+<commentInRDBMS>Identificador único del tipo de forma de adquisición</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F537238B-D898-7850-FD64-F35453B78678</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="70B4B33E-8140-E812-1452-4C7A32DCFC91" referredColumn="04CDA74E-327D-1AF4-413E-66360AE98166"/>
+</associations>
+</Column>
+<Column name="ID_BIEN" id="8294A105-BFBD-60FB-F9E0-A10C43216427">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del bien</comment>
+<commentInRDBMS>Identificador único del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0D3A3392-6779-1B22-E952-E5488E624347</importedID>
+<constraintName>ID}_1627162555</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="148C46DB-8A5A-E6A7-D3A7-37B8846E84B3" referredColumn="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</associations>
+</Column>
+<Column name="FECHA_FORMA_ADQ" id="F55B071A-5D3A-CB13-96F4-BDA13390772B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FB9463CA-2A6F-76EC-500F-C70B7886C3DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_ORIGEN" id="6AD2C0D7-3DF9-DDB4-6B95-EA8C7B7D1A8B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo del Origen de la Adquisicion</comment>
+<commentInRDBMS>Codigo del Origen de la Adquisicion</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>658A6FAB-A942-0245-EA86-FCF3724B14C3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B8EBC3B-63A1-C371-93E7-8AEA435D3A85" name="IN_FORMA_ADQUISICION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7D4141DA-BE25-1EE9-DA52-1E2825B52558</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32EA0F03-0BFE-69F8-B2DF-8D02A6C7C124"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="607EAF67-1AEA-E479-DDDA-B3AF59D770B1" name="IN_FORMA_ADQUISICION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0693EB46-1189-4213-BF02-20418D052F29</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32EA0F03-0BFE-69F8-B2DF-8D02A6C7C124"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9D82AE4E-0AE1-5E5F-1525-0B528BD94349" name="IN_FORMA_ADQUISICION_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F8914A1A-24D8-278D-5FCB-1C3DB387279C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="11A2FF47-A7B4-9183-019E-5069FBE0888C" name="IN_FORMA_ADQUISICION_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8294A105-BFBD-60FB-F9E0-A10C43216427"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

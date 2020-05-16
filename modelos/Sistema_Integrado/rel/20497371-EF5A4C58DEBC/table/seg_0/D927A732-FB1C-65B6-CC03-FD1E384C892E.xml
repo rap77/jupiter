@@ -1,0 +1,218 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D927A732-FB1C-65B6-CC03-FD1E384C892E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PAISES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PAISES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Pais. Ej: VE Venezuela]]></comment>
+<commentInRDBMS><![CDATA[Pais. Ej: VE Venezuela]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>PAI</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PA_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PA_ID</notNullConstraintName>
+</Column>
+<Column name="MONEDA_ID" id="59CA72AA-15C0-31BA-CBA2-BE7FBDEDD78B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>MONEDA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Moneda del País. Número de Identificación Interna de la Moneda.]]></comment>
+<commentInRDBMS><![CDATA[Moneda del País. Número de Identificación Interna de la Moneda.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PA_MON_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PA_MON_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="9710CF48-B7AE-4873-BC47-133647AD2ACA" referredColumn="49B23D7F-9DE3-5DB5-34AE-061AFB6AFB36"/>
+</associations>
+</Column>
+<Column name="CONTINENTE_ID" id="BD0FC064-8CA9-F6B3-264F-489DEAF7C3BD">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>CONTINENTE_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Número de Identificación interna del Continente.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación interna del Continente.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PA_CONT_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PA_CONT_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="D6154CDD-97A7-5372-9393-9DCC1781C266" referredColumn="396F740F-73EE-1030-C7F0-B6F4111DEB88"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="1A0335D5-F681-41EB-3655-B61C3DC69194">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Nombre del País. Venezuela. Estados Unidos.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del País. Venezuela. Estados Unidos.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PA_NOM</notNullConstraintName>
+</Column>
+<Column name="COD_ISO" id="4B133056-B7EA-E6E0-F3AD-DA233335BF40">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>COD_ISO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Codigo del Sistema de Inventario SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo ISO del pais Ej; VEN, USA, BR]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PA_COD_ISO</notNullConstraintName>
+</Column>
+<Column name="DISCADO_INTERNACIONAL" id="66F7886B-66F9-6A50-FEA1-FE51AD676F60">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>DISCADO_INTERNACIONAL</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<comment><![CDATA[Número de Discado Internacional del País. Ej: 58, 1]]></comment>
+<commentInRDBMS><![CDATA[Número de Discado Internacional del País. Ej: 58, 1]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ENTERO_03}_1392340439</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>11CF59F6-D58B-1924-4B1D-690A0623B20C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="NACIONALIDAD" id="4607E73E-4829-AF20-47C5-78DA3C81D52F">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PAISES</sourceObjSchema>
+<sourceObjName>NACIONALIDAD</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<commentInRDBMS><![CDATA[NAcionalidad o Gentilicio Venezolana,Estado Unidense, Colombiana]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>6CCF49CE-73D5-827C-59F9-66A029D86BB7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E1C49D6-9475-55BF-E142-F3E8BDD19E0F" name="PAISES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PAISES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A7ACAE6F-98ED-6867-2352-5ECF26934114" name="PAIS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PAIS_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:03:37 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="80590A4F-8F0D-9AF3-1D59-DE18369A4DB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E637B8B-6D05-0F01-5E5A-AA3E6FB84C82" name="PAIS_CONTINENTE_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:12:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BD0FC064-8CA9-F6B3-264F-489DEAF7C3BD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5B0E055C-B7BD-A141-E389-F5F9372DF003" name="PAIS_MONEDA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:12:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="59CA72AA-15C0-31BA-CBA2-BE7FBDEDD78B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

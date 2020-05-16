@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="4D592300-BA9E-D97D-E02D-CC0E92F41581" name="GL_TIPOS_DOCUMENTOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tabla utilizada para registrar los tipos de documentos existentes dentro del SIGAUC. Los estatus que pueden tener estos documentos son manejados a través de las tablas GL_ESTATUS y GL_ESTATUS_SECUENCIA]]></comment>
+<commentInRDBMS><![CDATA[Tabla utilizada para registrar los tipos de documentos existentes dentro del SIGAUC. Los estatus que pueden tener estos documentos son manejados a través de las tablas GL_ESTATUS y GL_ESTATUS_SECUENCIA]]></commentInRDBMS>
+<generatorID>1B7FAF28-5650-DE79-8D08-6F5E14B30B2E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TIP_DOC</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="B33F1894-BAA2-2C83-8289-6A2E994ED867">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></comment>
+<commentInRDBMS><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></commentInRDBMS>
+<generatorID>9FDCA940-985F-1CC5-83F3-81E23E7ACB88</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1532578313</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="A0B85E7C-810F-FA9B-AE54-ED8B904B2A92">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Documento]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Documento]]></commentInRDBMS>
+<generatorID>E90D7BF2-BBCD-1A53-3AE1-2FA8BBE9A8CE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="AFECTA_INVENTARIO_E_S" id="4828A2FB-E310-B5F3-74A3-692BBB2892F7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Este Documento Afecta Inventario Entrada (E) o Salida (S)]]></comment>
+<commentInRDBMS><![CDATA[Este Documento Afecta Inventario Entrada (E) o Salida (S)]]></commentInRDBMS>
+<generatorID>BC38D824-4FEB-252A-8979-87992420EEFB</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FA9D61F1-5FCB-67B2-3B31-081B06258CC1" name="GL_TIPOS_DOCUMENTOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>8D4E2E4B-2BAC-80FC-5592-3C01B37AEC51</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B33F1894-BAA2-2C83-8289-6A2E994ED867</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

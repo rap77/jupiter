@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="2776B516-B927-E44B-77EB-EDAABE80C15B" name="CE_UNIDAD_ORG_CURSOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<generatorID>F0D696F9-4B74-EEE5-EE83-668120515E72</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="5CD7276E-015B-5FFE-A94D-696580EF0191">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<generatorID>6DA7E8AD-C412-CBEC-3078-88B3EB62988A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1345225161</constraintName>
+<referedAttribute>2B8AB6EC-3144-B18C-3902-83F026CD41AF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_CURSO" id="6606C3A4-E78A-24A7-91AF-CA07137D5014">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<generatorID>76570154-BA3E-907C-2C47-733F333633E4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_16641</constraintName>
+<referedAttribute>2DC10A20-78E6-3EE4-3032-2ABE600925A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14CCE12D-E693-BAB5-0619-2A700519515F" name="CE_UNIDAD_ORG_CURSOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<generatorID>E5C88B5E-3557-3A9B-5BDC-0BF3CFA911BD</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5CD7276E-015B-5FFE-A94D-696580EF0191</attributeRef>
+<attributeRef>6606C3A4-E78A-24A7-91AF-CA07137D5014</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

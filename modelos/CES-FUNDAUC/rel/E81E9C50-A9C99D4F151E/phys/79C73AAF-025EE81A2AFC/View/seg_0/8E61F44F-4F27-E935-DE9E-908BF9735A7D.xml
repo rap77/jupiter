@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableViewProxyOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TableViewProxyOraclev10g" name="EVENTOS_CALENDARIO" directorySegmentName="seg_0" id="8E61F44F-4F27-E935-DE9E-908BF9735A7D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 13:23:06 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+</TableViewProxyOraclev10g>

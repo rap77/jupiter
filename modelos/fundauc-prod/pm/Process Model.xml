@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<ProcessModel class="oracle.dbtools.crest.model.design.process.ProcessModel" name="Process Model" id="A325E4BC-02B5-4CDD-393A-DCC5E9DA7C3C">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:06:26 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</ProcessModel>

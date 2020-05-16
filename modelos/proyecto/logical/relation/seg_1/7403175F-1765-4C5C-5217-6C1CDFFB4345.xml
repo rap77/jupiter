@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="SEDE UNI ORG FK" directorySegmentName="seg_1" id="7403175F-1765-4C5C-5217-6C1CDFFB4345">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>0EB67295-7702-C254-FB85-0F5AFF7840B5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2A39D73F-AABD-5F3B-3622-4C465BF7FC8F</sourcePk>
+<dominantRole>D05C36C9-766C-0876-9E5A-EC4861C075E0</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D05C36C9-766C-0876-9E5A-EC4861C075E0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>24285AB0-4716-8B36-B866-DAFD017755E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

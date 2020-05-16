@@ -1,0 +1,228 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="96EC983D-5DEB-B9A0-B590-D66ABEEFB504" name="SG_USUARIOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Usuarios de los sistemas]]></comment>
+<commentInRDBMS><![CDATA[Usuarios de los sistemas]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>800653D0-2572-BE12-FC4F-E9CEB2453E13</importedID>
+<abbreviation>USU</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GL_PERSONAS_ID" id="D588A765-506A-97A7-52DF-631E477C936B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>17926F9D-0041-DB29-DD13-81A8A934B8C0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="D7556F40-400A-97E4-EC6E-9F0FF2DA513D" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="LOGIN" id="88F518BB-63B6-AB82-5292-72FF2A0E0189">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Cuenta de Conexíon del Usuario.]]></comment>
+<commentInRDBMS><![CDATA[Cuenta de Conexíon del Usuario.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>317BCFC4-3ADD-2647-D60D-633EB4D226A8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CLAVE" id="4BA58B4F-C7D6-3F08-A10F-A2570CE7A91B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Contraseña del Usuario]]></comment>
+<commentInRDBMS><![CDATA[Contraseña del Usuario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EC85A4B2-65D5-BAEF-DBFA-EB31E35DBC73</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_EL" id="E327FB7E-9C59-C20D-0B13-715E8D8C6323">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de la Contraseña]]></comment>
+<commentInRDBMS><![CDATA[Fecha de la Contraseña]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>ADD144F1-D91B-7510-84D1-6880C5784CC1</importedID>
+<constraintName>FECHA_1619296754</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="EXPIRADO" id="566D1EAA-DAF5-8E97-1440-7F06F675CF3E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[El usuario esta expirado?]]></comment>
+<commentInRDBMS><![CDATA[El usuario esta expirado?]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CD1F7326-ACE2-3862-ABAD-1C0B2DF00EF8</importedID>
+<constraintName>SI_NO_605223752</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BLOQUEADO" id="8CDE5F95-A533-D3D2-9BFF-D94ADDF512B1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[El usuario esta bloqueado?]]></comment>
+<commentInRDBMS><![CDATA[El usuario esta bloqueado?]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BACF041B-18AE-62D2-E733-BD0977E15D2A</importedID>
+<constraintName>SI_NO_555097223</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FEC_CAMBIO_CLAVE" id="855E66E7-2FF5-D017-9DA5-8A23CFE2394D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[fecha cuando cambio la contraseña]]></comment>
+<commentInRDBMS><![CDATA[fecha cuando cambio la contraseña]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>83C143D4-22F1-B6A4-AD58-14B54FCBA88E</importedID>
+<constraintName>FECHA_791425479</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FEC_ULT_ENTRADA" id="D35FE202-1E8A-701B-4DA1-BB2424B54B33">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de la ultima vez que entro al sistema]]></comment>
+<commentInRDBMS><![CDATA[Fecha de la ultima vez que entro al sistema]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0A293C2B-B659-6A2C-99BB-F6CE5F07A810</importedID>
+<constraintName>FECHA_742397503</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ACTIVO" id="EA8C6831-95F9-5823-67A4-BBDDF4D87F0E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Está Activo el Usuario?]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Usuario?]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C0036A2F-2DA7-8E6E-A4BC-DF83DF8B3728</importedID>
+<constraintName>SI_NO_1211562213</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91E7BDF1-3D3C-84C1-3FB6-4C7AFB2E4BCB" name="SG_USUARIOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FF4C6045-3BBB-DEBB-8127-DBCCA2051BF8</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D588A765-506A-97A7-52DF-631E477C936B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BFAAF462-4809-6998-8F3B-58516F290E9F" name="SG_USUARIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>124BCC68-B38E-9D29-8A55-306C70959143</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D588A765-506A-97A7-52DF-631E477C936B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3BA60CC-6621-3F1D-607E-1C25668F22B2" name="SG_USUARIOS_GL_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D588A765-506A-97A7-52DF-631E477C936B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

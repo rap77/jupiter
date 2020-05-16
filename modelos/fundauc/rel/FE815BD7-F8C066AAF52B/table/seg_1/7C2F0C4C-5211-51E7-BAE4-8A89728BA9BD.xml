@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="7C2F0C4C-5211-51E7-BAE4-8A89728BA9BD" name="GL_TIPOS_TELEFONOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.</comment>
+<commentInRDBMS>Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C9EA32E5-A078-619D-44CD-67A3FE60F7A5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F7042281-8A83-B86C-4CB4-56B42B7D4F86">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación del Tipo de Teléfono.</comment>
+<commentInRDBMS>Número de Identificación del Tipo de Teléfono.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>5CA93916-8DCE-4762-AC92-7447404BD918</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="DF07595D-8CC4-7B99-7F83-192C48CED070">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.</comment>
+<commentInRDBMS>Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>378A897A-4C7C-90DC-9B92-6C8FB1890E38</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="87FC065F-FFC9-28B5-D003-E5F168D7E0C6" name="GL_TIPOS_TELEFONOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6347730D-9235-4380-267F-10C49393CCF5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7042281-8A83-B86C-4CB4-56B42B7D4F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="311893E0-86E5-964E-72E6-55200E472A82" name="GL_TIPO_TELEFONO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A07E5420-7633-2EAC-9BC2-4048A83658A4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7042281-8A83-B86C-4CB4-56B42B7D4F86"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="AFC26712-9226-7DB8-91B1-4FA688B1C9BE" name="IN_ESTADO_USO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Estado de Uso de los bienes muebles e inmuebles</comment>
+<commentInRDBMS>Estado de Uso de los bienes muebles e inmuebles</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DEFE4E4B-4380-1830-05FB-BBB77D4459DB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="18E97E3C-560C-D3E9-F6FC-FAA2D589E5A3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del uso de los bienes</comment>
+<commentInRDBMS>Identificador único del uso de los bienes</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BE097381-4BFF-1E0B-12D8-8714C26288FF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="CD0A416F-25A2-5102-1193-4A240F8E9E1D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del uso de los bienes</comment>
+<commentInRDBMS>Descripcion del uso de los bienes</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6945690E-5C12-AABB-C15F-BB3AC974A707</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="ACAA457F-25D1-7420-1020-DD51E788A931">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo Sugerido por la SUDEBIP</comment>
+<commentInRDBMS>Codigo Sugerido por la SUDEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E2AEEA98-83E2-94D9-38C2-8B5D72A246F9</importedID>
+<constraintName>ENTERO_10}_141768683</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="404400BD-5F70-EB8E-7E14-ED8B22D8E4B2" name="IN_ESTADO_USO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E24F9A26-7930-8DD6-5864-4F28D968F31E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18E97E3C-560C-D3E9-F6FC-FAA2D589E5A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4F3DC18D-C721-3F89-26F0-A8147839F9C7" name="IN_ESTADO_USO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A3CC40AD-0913-2792-D62B-D10B01C4F4A2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18E97E3C-560C-D3E9-F6FC-FAA2D589E5A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

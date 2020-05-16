@@ -1,0 +1,1 @@
+update instancias_secciones i set salon_id = (select id_salon from secciones where id=i.seccion_id and periodo=i.periodo_id and modalidad=i.modalidad_id and id_horario=i.horario_id)

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BD22213E-515B-B7CD-88BB-40151225F383" containerWithKeyObject="5BC64DAE-23C6-BD78-6481-526C44E7768D" localFKIndex="086B6BC7-1A8E-0D21-588D-CE156B25EB48" name="LRIF_TID_LRIF_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>LRIF_TID_LRIF_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_LETRAS_RIF</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1AC2B42B-764A-15B1-1BC8-93453BF7F0B2</referredTableID>
+<keyObject>FF947F86-3820-1EBE-3725-ECA6C29C930B</keyObject>
+<referredKeyID>FF947F86-3820-1EBE-3725-ECA6C29C930B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

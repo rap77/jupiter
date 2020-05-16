@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F4901051-1AC6-3715-4FA4-08E3DEEA4360" name="IN_CONDICION_FISICA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla que describe las condiciones físicas del bien Ej: Optimo, Regular, Dañado, Inservible, Etc]]></comment>
+<commentInRDBMS><![CDATA[Tabla que describe las condiciones físicas del bien Ej: Optimo, Regular, Dañado, Inservible, Etc]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>21897636-D022-C528-E062-B5629482EAE1</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A3656D74-6BCB-E7E3-6C71-A2DFB57066C3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Condicion Fisica]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Condicion Fisica]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E1C7BF18-4096-0412-CD0F-69E07BCD5129</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="87A2BB24-DD79-C760-B7FC-822FD68B8C5E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Condicion Física]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Condicion Física]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E10DCC02-3A15-4451-8DF5-D282B0B79A44</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="778DEB80-9F00-30FA-48A3-1553DFF9692B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Codigo Sugerido por la SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo Sugerido por la SUDEBIP]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5D1EC218-202F-9286-72C0-A9AFC8BD4F6D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F19F0454-3A00-9270-6152-EECF2A8F10FA" name="CONDICION_FISICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>26851C54-E6E2-B256-0FCB-6BE2D0FF98F3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3656D74-6BCB-E7E3-6C71-A2DFB57066C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9A83369-297C-A126-6682-D84EF33EC6D5" name="CONDICION_FISICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1393A665-43C8-E763-85AA-8DB292F0EE44</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A3656D74-6BCB-E7E3-6C71-A2DFB57066C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

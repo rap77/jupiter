@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="ST_TIP_DOC_FK" directorySegmentName="seg_0" id="D0E39AAE-F94E-B8A0-DF7B-40492D899120">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6AEBB41B-6308-B520-EDE3-E15E5BF3BC6B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>FA9D61F1-5FCB-67B2-3B31-081B06258CC1</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4D592300-BA9E-D97D-E02D-CC0E92F41581</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FEE46C26-092F-5E72-CF8B-05736EDDC163</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FFC06829-73CD-B6BA-B11B-54E212E682C6" containerWithKeyObject="59B5FBB6-CD60-B27A-66A1-5F6507B15BA8" localFKIndex="B4041F22-4630-47F0-8ECF-C2C78A184105" name="CTR_EVA_INSC_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 17:00:57 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.INSCRIPCIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>CCA2DD7B-9392-63DC-5D5B-BDAA26975D7A</referredTableID>
+<keyObject>1B6C6E17-22FA-25B2-AB8B-507C674B0E9C</keyObject>
+<referredKeyID>1B6C6E17-22FA-25B2-AB8B-507C674B0E9C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

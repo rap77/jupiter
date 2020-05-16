@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="740FFFD3-F1D8-B526-41AF-E3D94B433F06" name="GL TIPOS EDIFICACIONES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Edificación. Ej: 1 Casa, 2 Quinta, 3 Edificio, 4 Centro Comercial.]]></commentInRDBMS>
+<generatorID>EDBCD7AC-1C26-6618-8B2D-621047C9738D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_EDIF</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="EEE7E24A-B80C-E33C-57D3-2B9EC4EAA4E1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Tipo de Edificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Tipo de Edificación.]]></commentInRDBMS>
+<generatorID>1747E912-E307-A7B0-5408-6A5563AED908</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CK_TP_EDIF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="A3EFCB30-1B13-F683-7355-7D1C59234F88">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Edificación. Ej: Casa, Quinta, Edificio, Centro Comercial]]></commentInRDBMS>
+<generatorID>BA95EF4D-C8EA-F089-97F3-3C6789B1474A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VARIOS PISOS" id="9C35B51D-71C8-0A45-E11D-74EC917A6DC2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Si el Tipo de Edificacion tiene Varios Pisos]]></comment>
+<commentInRDBMS><![CDATA[Si el Tipo de Edificacion tiene Varios Pisos]]></commentInRDBMS>
+<generatorID>4C28BDAE-5A0B-373E-CD78-9281B5EEC0A8</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CK_TP_EDIF_VARIOS PISOS</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ABREVIATURA" id="E610444F-C32E-B916-6468-AE56CF0933B6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 17:30:31 UTC</createdTime>
+<comment><![CDATA[Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.]]></comment>
+<commentInRDBMS><![CDATA[Abreviatura del Tipo de Edificacion: Ej. Edif, CC. Loc.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F108B199-536B-5E97-4184-0D96A23A1D65" name="GL TIPOS EDIFICACIONES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>3E6096B0-D756-F460-B9C5-18345582C13D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EEE7E24A-B80C-E33C-57D3-2B9EC4EAA4E1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E630F40-48B8-0767-8FCC-7C963C431AE9" name="GL_GRADOS_ACADEMICOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Grado Acádemico Recibido. Ej: Philosophus Scientiarum.]]></comment>
+<commentInRDBMS><![CDATA[Grado Acádemico Recibido. Ej: Philosophus Scientiarum.]]></commentInRDBMS>
+<generatorID>82C3293E-F9FA-679A-CA03-FAA1FC061208</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>GRD_ACAD</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="C6B7BFE8-58A0-D134-F038-DE58E4BF7D78">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado Acádemico Recibido.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado Acádemico Recibido.]]></commentInRDBMS>
+<generatorID>70C68A27-45F8-DADB-7E74-7BEF5980BB94</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_187038348</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="51092376-4F7A-7404-DC8C-241312AB40F8">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripción del Grado Acádemico Rrecibido.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Grado Acádemico Rrecibido.]]></commentInRDBMS>
+<generatorID>903C924A-A551-EC90-E55D-7E8E5FC2AA87</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="27DB338D-DE1A-7EA2-E09F-E9012F3DB130" name="GL_GRADOS_ACADEMICOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>D3DD5816-ADD2-02A5-5BF5-0618A16BC4C6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C6B7BFE8-58A0-D134-F038-DE58E4BF7D78</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0528B728-F86A-E2D2-F262-7232B6923CE2" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="DETALLE_PAQUETE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>DETALLE_PAQUETE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>DETALLE_PAQUETE</comment>
+<commentInRDBMS>DETALLE_PAQUETE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_MAT" id="61D886A2-73E0-B4B4-B3E9-7D72CB0B830A">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_PAQUETE</sourceObjSchema>
+<sourceObjName>ID_MAT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_MAT</comment>
+<commentInRDBMS>ID_MAT</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PAQUETE" id="2BCDA4E4-9149-4C0C-4046-B998139B279A">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>DETALLE_PAQUETE</sourceObjSchema>
+<sourceObjName>ID_PAQUETE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_PAQUETE</comment>
+<commentInRDBMS>ID_PAQUETE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>5 BYTE</dataTypeSize>
+<ownDataTypeParameters>5 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B3AEBA6C-29C2-D1CA-6104-E55750658049" referredColumn="0C4BE710-268C-4C5D-726F-610EB7A41D56"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12FAE43E-8890-BA70-8269-36A3FE582776" name="DET_PAQ_PAQ_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2BCDA4E4-9149-4C0C-4046-B998139B279A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

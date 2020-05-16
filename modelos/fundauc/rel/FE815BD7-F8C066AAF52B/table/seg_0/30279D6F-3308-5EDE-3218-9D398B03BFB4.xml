@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="30279D6F-3308-5EDE-3218-9D398B03BFB4" name="GL ESTADOS CIVILES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Estado Civil. S Soltero(a), C Casado(a), D Divorciado(a), V Viudo(a), O Concubino(a).</comment>
+<commentInRDBMS>Estado Civil. S Soltero(a), C Casado(a), D Divorciado(a), V Viudo(a), O Concubino(a).</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>36CF532D-8630-4B04-C1D2-65EF503DA300</importedID>
+<abbreviation>EST_CIV</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="CEBDF984-8B11-E002-B9B9-9522EF2CA9AC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código del Estado Civil. Ej: S, C, D, V, O</comment>
+<commentInRDBMS>Código del Estado Civil. Ej: S, C, D, V, O</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D29939E4-BE2F-2937-9086-B156570E7A82</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="C65533E5-D16A-D67F-0EFC-D88B30E902A4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Estado Civil. Ej: Soltero, Casado, Viudo, Divorciado, Concubino.</comment>
+<commentInRDBMS>Descripción del Estado Civil. Ej: Soltero, Casado, Viudo, Divorciado, Concubino.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>16F2F494-AE8B-0D12-0EC7-524B3CEA299F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CDF83D58-38DC-33A4-22D7-70DA7102E57B" name="GL_ESTADOS_CIVILES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>679A8870-FEED-3267-A6CE-913DA59F170C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEBDF984-8B11-E002-B9B9-9522EF2CA9AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27ED7C55-16E0-EEA5-4737-DF0E9B027816" name="GL_ESTADO_CIVIL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>574D20A2-4BC9-5205-D1EC-EC3135C57421</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEBDF984-8B11-E002-B9B9-9522EF2CA9AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

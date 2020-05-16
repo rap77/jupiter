@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="269BAC89-A1E7-E2D0-E7D4-4FDB10D1EE45" containerWithKeyObject="07DF1C93-9BBE-1649-903D-C63B3FD446DE" localFKIndex="2C13D5B4-FFB1-91AF-FA7C-9DFE1E8E0FBB" name="BAN_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 14:30:18 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_PERSONAS_JURIDICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3973EF76-D2F6-A95B-EEA0-722CC02C9EAD</referredTableID>
+<keyObject>0556298D-92A8-AFC8-826B-6F13849D5095</keyObject>
+<referredKeyID>0556298D-92A8-AFC8-826B-6F13849D5095</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

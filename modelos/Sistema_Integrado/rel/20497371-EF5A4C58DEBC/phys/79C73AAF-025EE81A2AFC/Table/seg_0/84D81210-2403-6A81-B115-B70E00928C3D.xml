@@ -1,0 +1,56 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_TIPOS_DOCIDENTI" directorySegmentName="seg_0" id="84D81210-2403-6A81-B115-B70E00928C3D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>427C5FC2-0446-AE99-45B4-1B46317A0BFC</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SIGLAS" id="396993ED-E6F8-75E2-FC8F-D2EBD29251D8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="5645E46B-E511-A7D9-2B97-01D47B91E5E5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="7F1DF9DD-375A-4389-893B-2D41CCF390D7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GL_TIPO_ID_PK" id="019F2E2E-E4F4-56F4-FB45-D598D468E92B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<segment>8CC825A3-8CB4-EA13-30FC-32B6A5827589</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GL_TIPOS_DOCIDENTI_PK" id="879947DA-789C-6340-B49D-89D54B422796">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:43:05 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<segment>8CC825A3-8CB4-EA13-30FC-32B6A5827589</segment>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+<existingIndex>019F2E2E-E4F4-56F4-FB45-D598D468E92B</existingIndex>
+<indexSegment>8CC825A3-8CB4-EA13-30FC-32B6A5827589</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

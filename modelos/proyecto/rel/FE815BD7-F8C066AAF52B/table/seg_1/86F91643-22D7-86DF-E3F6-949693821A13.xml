@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="86F91643-22D7-86DF-E3F6-949693821A13" name="SG_ROLES_OPCIONES_MENU">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Guarda el acceso que tienen los roles en las opciones del menu]]></comment>
+<commentInRDBMS><![CDATA[Guarda el acceso que tienen los roles en las opciones del menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>11D0553A-A07C-9E9E-9D18-9FC892705AA8</importedID>
+<abbreviation>ROL_OP_MEN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SG_OPCIONES_MENU_ID" id="F850A23D-F850-B251-FA32-081D401E8A01">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A78AFB6B-D83C-AA43-1466-A8E8DF68D41E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4C619A60-73F1-C08F-3DE3-8250616E5C0F" referredColumn="AE5FADB9-B0DD-CD87-2B0F-7A4019DBD095"/>
+</associations>
+</Column>
+<Column name="SG_ROLES_ID" id="B0387706-7F3D-30A7-C6A1-965941F65B12">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del Perfil.]]></comment>
+<commentInRDBMS><![CDATA[Código del Perfil.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>53530225-288A-9358-91E3-3D8F229AEBBE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6F43F10D-43D3-1E92-AED3-B96EB6FC60CC" referredColumn="0E8A6D66-D98B-1C8D-28BF-73385B11A857"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D9468EF-36A4-CCF3-084D-1627BE666625" name="SG_ROLES_OPCIONES_MENU_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2CF53C82-B250-2D23-5564-3B0C973D1202</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F850A23D-F850-B251-FA32-081D401E8A01"/>
+<colUsage columnID="B0387706-7F3D-30A7-C6A1-965941F65B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46E76618-7D8C-B6B5-0BA1-E759A906C9D6" name="SG_ROL_OPCION_MENU_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>499D56FA-7697-920C-3438-344F4547AA1A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F850A23D-F850-B251-FA32-081D401E8A01"/>
+<colUsage columnID="B0387706-7F3D-30A7-C6A1-965941F65B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9ADDB27D-06B5-6DFD-C93D-3F76EDA30087" name="SG_ROLES_OPCIONES_MENU_SG_OPCIONES_MENU_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F850A23D-F850-B251-FA32-081D401E8A01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1DBE3DA-6BA9-4723-0115-C05BFF1AB45C" name="SG_ROLES_OPCIONES_MENU_SG_ROLES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0387706-7F3D-30A7-C6A1-965941F65B12"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

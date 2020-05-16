@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="D2FCFBF5-68B9-26B6-7E2C-946C9D6FFDF1" name="RH_NIVEL_ESTUDIO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Nivel de Estudio. Ej: 1 Ninguno. 2 Educación Básica Incompleta. 3 Educación Básica Completa. 4 Educacion Diversificada Incompleta. 5 Educación Diversificada Completa.]]></comment>
+<commentInRDBMS><![CDATA[Nivel de Estudio. Ej: 1 Ninguno. 2 Educación Básica Incompleta. 3 Educación Básica Completa. 4 Educacion Diversificada Incompleta. 5 Educación Diversificada Completa.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EB13A5B4-2C6F-D452-FF5F-9F61C0894AEF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="66441C3C-0F94-2968-8853-154544637FE4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7DE8C30E-F7F4-C943-A59D-5F2458D8F702</importedID>
+<constraintName>ID}_1937079530</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_GRADO_ESTUDIO" id="9D942416-1BD7-605E-A20E-16C26F0AE1BA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado de Estudio.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D34A483D-D78B-690E-EF8D-177979E9AAAE</importedID>
+<constraintName>ID}_651568034</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="DCFA9473-F580-EC63-889A-B58074C0A8D4" referredColumn="B69E347E-FE94-FDC2-FB60-F887B481DF1E"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="84276761-AE3D-3124-7F13-7309E2C61712">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Nivel de Estudio. Ej:Ninguno. Educación Básica Incompleta. Educación Básica Completa. Educacion Diversificada Incompleta. Educación Diversificada Completa.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Nivel de Estudio. Ej:Ninguno. Educación Básica Incompleta. Educación Básica Completa. Educacion Diversificada Incompleta. Educación Diversificada Completa.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C1A9FF01-B13B-76F3-4AAD-1222096B7594</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL_OPSU" id="50CD2726-B3C6-E1EA-28C9-75BFC184CAA6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Nivel según la OPSU.]]></comment>
+<commentInRDBMS><![CDATA[Número de Nivel según la OPSU.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D2AC3463-79A7-D7D1-1F11-22234B601D31</importedID>
+<constraintName>ENTERO_09}_836491311</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F04E385-223F-135A-1290-107667D2E6A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="334EA3D2-7D29-A0AC-4FD7-94AA560906F8" name="RH_NIVEL_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>ACF09B5E-6D93-F103-97E9-75F4AF2A53BD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66441C3C-0F94-2968-8853-154544637FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9FDBF45-7032-3C97-CC8D-2E6645A70D86" name="RH_NIVEL_ESTUDIO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9F736615-5295-2194-DC47-7A6F0A941DED</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66441C3C-0F94-2968-8853-154544637FE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0B3B2DD6-C6FE-A377-FD24-2946DAEBD087" name="RH_NIVEL_ESTUDIO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D942416-1BD7-605E-A20E-16C26F0AE1BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

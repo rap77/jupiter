@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_AREA_TELEFONICA" directorySegmentName="seg_0" id="BD955255-B0EA-8956-CBF5-E2DF21CC7F10">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="03A71F86-879B-1A4B-1D9D-10F1EE6D1615">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAIS_ID" id="B2CF28B6-6E74-6643-36FC-98619A94B9C0">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA_MOVIL" id="F289464A-FEC7-A280-83B5-176C26A413BE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="CODIGO" id="F88145F9-A977-91AA-6223-F580D6D51101">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="FA9779B3-8DB3-ADA0-8F6E-6A13B8A9DA09">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="AREA_TELEFONICA_PK" id="44EDFA71-F17F-D145-DDD1-D9F9F8A9744F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="AREA_TELEFONICA_AK1" id="EF427185-9AAD-F8DC-EF16-3272B5DD5D9E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="ATEL_PAIS_FK" id="D2F0C4A3-B7A3-B941-568A-0D66412F5B28">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:58:02 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="AREA_TELEFONICA_PK" id="6464E870-9ACC-2820-12A3-A151866B3479">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="AREA_TELEFONICA_AK1" id="F9A5C398-5BCA-C5C5-2A57-373DE74574C8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:52:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

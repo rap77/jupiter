@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_SEDES" directorySegmentName="seg_0" id="399E3590-E10C-73FA-B989-90506FD4782F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="47DB4255-C310-5E25-A4EA-1D3C9C0E58FA">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_NACIONAL" id="93277759-8A57-F265-7EDC-7983D588886D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>&apos;S&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="A66163F1-3C35-B0EC-B20D-22CFA23ABE0B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="GL_TIPO_UBICACION_PK" id="BDD1FFD7-0DFC-DE8D-BEB9-DAD250AA8CE7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SEDE_UNI_ORG_FK" id="757D921B-3CFE-CF72-84EF-7076A2DC50CE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:47:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="GL_SEDES_PK" id="85B9239A-FA06-B2E9-65C2-5B953B5CE5D7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EDIFICIOS" directorySegmentName="seg_1" id="FF57BBD2-FB37-8738-3A55-FAEF18085738">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>10401428-D454-BA1D-9354-9CED063AB4CD</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="49F9D026-9C5D-B26E-F4C9-25D3F31B713B">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EDIF" id="AE77E7A7-39C1-336A-95BF-B46E0310E72D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EDIFICIOS_PK" id="E85FFE47-AB2A-6DDA-9C39-D44A3DFD4FD8">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>A55AB7C9-E9D8-B030-A453-882A58461253</segment>
+<tableSpace>E9A2F537-E7FE-EBC6-E765-57311399BA77</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EDIFICIOS_PK" id="4B3C2EFD-5198-E934-856A-68A2D7D445C8">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:18:12 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<segment>A93D1FD9-4851-30E3-B14A-0F61129CD7AA</segment>
+<tableSpace>E9A2F537-E7FE-EBC6-E765-57311399BA77</tableSpace>
+<existingIndex>E85FFE47-AB2A-6DDA-9C39-D44A3DFD4FD8</existingIndex>
+<indexSegment>A93D1FD9-4851-30E3-B14A-0F61129CD7AA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

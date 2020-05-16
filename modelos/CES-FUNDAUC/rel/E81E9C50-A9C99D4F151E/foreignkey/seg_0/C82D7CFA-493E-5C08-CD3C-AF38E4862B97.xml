@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C82D7CFA-493E-5C08-CD3C-AF38E4862B97" containerWithKeyObject="798CE529-B0A9-A89E-0684-6363E9C39041" localFKIndex="1C7B2C1C-D475-38C0-7EEB-7A667AFDCE58" name="FK_ZONAS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FK_ZONAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>FK_ZONAS</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.CIUDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>31403E78-8658-56AD-5682-2BD41D12FAC1</referredTableID>
+<keyObject>D1AB7AC3-E1D4-CDC6-5DA3-9395EA6B73E0</keyObject>
+<referredKeyID>D1AB7AC3-E1D4-CDC6-5DA3-9395EA6B73E0</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CIUDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

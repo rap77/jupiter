@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_ESTADO_FK0" directorySegmentName="seg_0" id="A50522ED-9367-1CCD-4796-B9BBB3217C67">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>ED40DAED-E783-B0A4-7476-A13C476A89DF</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>66044A40-7D22-21F1-7DCD-46D60F5259C0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>02A59C00-53A4-874D-7274-0ECD8D8B9BB6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BC433E46-5B3F-7210-B94B-03FD6697B8FB</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D0F352E6-C163-EFFA-A5B0-36BA1EC963D6" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="HOJA_VIDA_EST">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HOJA_VIDA_EST</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:51 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5A22B533-29C3-4F86-9554-8589A25917BA">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>HOJA_VIDA_EST_SEQ</autoIncrementSequenceName>
+<autoIncrementTriggerName>HOJA_VIDA_EST_TRG</autoIncrementTriggerName>
+</Column>
+<Column name="MATRICULA" id="2D25AC54-2F79-4DF2-12CD-366EEE13CE4E">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>MATRICULA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVENTO_ID" id="6145B32C-3F7F-DFD6-4AAF-8218C82A1321">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>EVENTO_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA" id="140D887B-A4FD-4258-C3D4-5A01B94FB0DD">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>FECHA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<defaultValue>systimestamp</defaultValue>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="METADATA" id="06FA11BC-E81F-95E5-BE48-7C6C409AEF17">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>METADATA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<constraintName>CC_JSON_METADATA</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="METADATA is JSON"/>
+<implementationDef dbType="Oracle Database 12cR2" definition="METADATA is JSON"/>
+</checkConstraint>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="11BD7DDB-F0D0-CC89-A95E-6BFC2E36C6F3">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>HOJA_VIDA_EST</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000 BYTE</dataTypeSize>
+<ownDataTypeParameters>4000 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="199C2751-E7A2-070D-29E6-35AA811AA306" name="HOJA_VIDA_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HOJA_VIDA_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A22B533-29C3-4F86-9554-8589A25917BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B3FFAF4-7A82-F259-462E-9D4DA4E32B9C" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="HOJA_VIDA_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>HOJA_VIDA_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5A22B533-29C3-4F86-9554-8589A25917BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

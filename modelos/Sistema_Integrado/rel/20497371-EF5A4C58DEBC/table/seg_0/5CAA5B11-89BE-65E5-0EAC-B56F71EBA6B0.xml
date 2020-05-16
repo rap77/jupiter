@@ -1,0 +1,339 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5CAA5B11-89BE-65E5-0EAC-B56F71EBA6B0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_USUARIOS">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Usuarios de los sistemas]]></comment>
+<commentInRDBMS><![CDATA[Usuarios de los sistemas]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D61BCAA7-9573-3925-1E1B-45BC2770AD13">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="C64B6DAC-1F35-9376-7944-27EBF316BB23" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="LOGIN" id="FDD71453-20D7-4976-FF56-4F49E95D02A6">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>LOGIN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Cuenta de Conexíon del Usuario.]]></comment>
+<commentInRDBMS><![CDATA[Cuenta de Conexíon del Usuario.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_LOG</notNullConstraintName>
+</Column>
+<Column name="CLAVE" id="C5658C33-7F34-1731-14CE-D48B961DF2E1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>CLAVE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Contraseña del Usuario]]></comment>
+<commentInRDBMS><![CDATA[Contraseña del Usuario]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_CLA</notNullConstraintName>
+</Column>
+<Column name="CREADO_EL" id="2A857F60-8D58-CA72-4198-9852882C8F2F">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>CREADO_EL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Fecha de la Contraseña]]></comment>
+<commentInRDBMS><![CDATA[Fecha de la Contraseña]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_CREA_EL</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_CREA_EL</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="EXPIRADO" id="AAB3D40B-8A04-510B-D030-A17573E0576E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>EXPIRADO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[El usuario esta expirado?]]></comment>
+<commentInRDBMS><![CDATA[El usuario esta expirado?]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_EXPI</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_EXPI</notNullConstraintName>
+</Column>
+<Column name="BLOQUEADO" id="0C9C80EE-AC29-0261-EA2A-BC9D80F6EDBF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>BLOQUEADO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[El usuario esta bloqueado?]]></comment>
+<commentInRDBMS><![CDATA[El usuario esta bloqueado?]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_BLOQ</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_USR_BLOQ</notNullConstraintName>
+</Column>
+<Column name="FEC_CAMBIO_CLAVE" id="B033DF0E-5DDA-784C-4996-E70CD2A628F1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>FEC_CAMBIO_CLAVE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[fecha cuando cambio la contraseña]]></comment>
+<commentInRDBMS><![CDATA[fecha cuando cambio la contraseña]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>FECHA_791425479</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FEC_ULT_ENTRADA" id="C7F68A3C-65E5-A7BC-CF2D-79ADD078C1EA">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>FEC_ULT_ENTRADA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Fecha de la ultima vez que entro al sistema]]></comment>
+<commentInRDBMS><![CDATA[Fecha de la ultima vez que entro al sistema]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>FECHA_742397503</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ACTIVO" id="CB53BFCB-C34C-547A-C161-D26689791A79">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Está Activo el Usuario?]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Usuario?]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_ACTI</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_ACTI</notNullConstraintName>
+</Column>
+<Column name="CREADO_POR" id="5A549615-EBC9-B760-A79B-46880C01B8F4">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>CREADO_POR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Usuario quien creo el usuario]]></comment>
+<commentInRDBMS><![CDATA[Usuario quien creo el usuario]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>coalesce(sys_context(&apos;APEX$SESSION&apos;, &apos;app_user&apos;), regexp_substr(sys_context(&apos;userenv&apos;, &apos;client_identifier&apos;),     &apos;^[^:]*&apos;), sys_context(&apos;userenv&apos;, &apos;session_user&apos;))</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_CREA_POR</notNullConstraintName>
+</Column>
+<Column name="MODIFICADO_EL" id="B85640C5-2217-2660-3D12-B5151AEE798D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>MODIFICADO_EL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Fecha cuando fue modificado el regidtro]]></comment>
+<commentInRDBMS><![CDATA[Fecha cuando fue modificado el regidtro]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MODIFICADO_POR" id="D10C96AF-8F9A-1CD9-2829-D33052DFAEF9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>MODIFICADO_POR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Usuario quien modifico el registro]]></comment>
+<commentInRDBMS><![CDATA[Usuario quien modifico el registro]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<defaultValue>coalesce(sys_context(&apos;APEX$SESSION&apos;, &apos;app_user&apos;), regexp_substr(sys_context(&apos;userenv&apos;, &apos;client_identifier&apos;),     &apos;^[^:]*&apos;), sys_context(&apos;userenv&apos;, &apos;session_user&apos;))</defaultValue>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INTENTOS" id="4E9EE24B-049B-8C2A-6F2F-412D310FCFC0">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS</sourceObjSchema>
+<sourceObjName>INTENTOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Contador de Intentos Fallidos de Login]]></comment>
+<commentInRDBMS><![CDATA[Contador de Intentos Fallidos de Login]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_USR_INTE</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_USR_INTE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F069F25-58C8-32D4-3E2C-AEF5DE31FE40" name="SG_USUARIOS_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIOS_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8A02DF60-526C-CFC0-3FA9-47634838D410" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_USUARIO_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIO_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62717F81-02A4-C116-3410-89B920A7B569" name="USU_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

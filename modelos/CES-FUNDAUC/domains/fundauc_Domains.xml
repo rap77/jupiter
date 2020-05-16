@@ -1,0 +1,429 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<DomainFile class="oracle.dbtools.crest.model.design.DomainFileWrapper" fileName="fundauc_Domains">
+   <domains>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_10 BYTE" id="0387EC2C-BACD-D4A5-CFA8-4C146958289B">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>0387EC2C-BACD-D4A5-CFA8-4C146958289B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>10 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ID" id="05B35573-8C9F-1F34-7252-3B2FF719CA6A">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>05B35573-8C9F-1F34-7252-3B2FF719CA6A</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_6_0" id="11CF59F6-D58B-1924-4B1D-690A0623B20C">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>11CF59F6-D58B-1924-4B1D-690A0623B20C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_CHAR_1" id="17DCAFE7-53F8-530D-2A94-501D304A5376">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>17DCAFE7-53F8-530D-2A94-501D304A5376</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1 CHAR</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_240_BYTE" id="1848C593-7964-79CC-A365-8317A300C17D">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>1848C593-7964-79CC-A365-8317A300C17D</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>240 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_VCHAR_3" id="195CA247-2CF8-FA74-7602-B85CB6FE606B">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>195CA247-2CF8-FA74-7602-B85CB6FE606B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_0" id="21767143-8DAE-0DE3-AF65-DFEF15927D9B">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>21767143-8DAE-0DE3-AF65-DFEF15927D9B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_3 BYTE" id="238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>3 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_9_2" id="3677928C-FE6D-5982-85F8-566D0DFD9C6E">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>3677928C-FE6D-5982-85F8-566D0DFD9C6E</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>9</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_12 BYTE" id="49A6DEA7-158D-9A91-AA16-187D286817C2">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>49A6DEA7-158D-9A91-AA16-187D286817C2</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>12 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Imagen" id="529DC9E7-D30F-D2C1-FBA1-2552569B11C5">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>529DC9E7-D30F-D2C1-FBA1-2552569B11C5</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT029</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_80 BYTE" id="5F6B42F8-2A8D-0AD7-BCFA-803628850554">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>5F6B42F8-2A8D-0AD7-BCFA-803628850554</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>80 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="nombre_persona" id="6ABA5B58-8876-C0A1-B0A7-E54D6FBEF386">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>6ABA5B58-8876-C0A1-B0A7-E54D6FBEF386</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>25</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_50 BYTE" id="6CCF49CE-73D5-827C-59F9-66A029D86BB7">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>6CCF49CE-73D5-827C-59F9-66A029D86BB7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_255_BYTE" id="78673E82-63FD-97EE-9A07-1F070746CB19">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>78673E82-63FD-97EE-9A07-1F070746CB19</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>255 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_14_8_0" id="7B3BC9A1-D588-7F86-4A30-F0721D4BAADB">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>7B3BC9A1-D588-7F86-4A30-F0721D4BAADB</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>14</dataTypePrecision>
+         <dataTypeScale>8</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_10_0" id="8F04E385-223F-135A-1290-107667D2E6A7">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>8F04E385-223F-135A-1290-107667D2E6A7</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>10</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_1_0" id="91C1C193-2C8D-8AED-FC5B-5FB2AB4C4D6C">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>91C1C193-2C8D-8AED-FC5B-5FB2AB4C4D6C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>1</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_Numero_10_0" id="9510A7FE-8694-2BF7-FD06-EF68165C8F3B">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>10</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_4_0" id="A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>4</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_4 BYTE" id="A1E6019C-56D2-7E53-66C2-3E5DC485D18D">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>4 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="ID_CHAR_2" id="A2BF0B42-8EBC-7034-A877-9691AA0C1C53">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>2</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Integer_0_0_0" id="AB0A0267-61E6-17DE-8ABE-C485F8C67C43">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT011</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_5 BYTE" id="B138FE81-C5BA-4FED-688D-584C67E491CD">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>B138FE81-C5BA-4FED-688D-584C67E491CD</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>5 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_4000 BYTE" id="B28195DB-8FD8-B6A6-8B85-E8788F650D16">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>B28195DB-8FD8-B6A6-8B85-E8788F650D16</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>4000 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_20_obligatorio" id="BDE73B0E-53CD-AC87-E8FB-D79679172F97">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>BDE73B0E-53CD-AC87-E8FB-D79679172F97</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>20 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_30_BYTE" id="C069EB3F-7F90-46BD-FF34-49A9F6E6E877">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>30 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Fecha" id="C21F317A-9B57-7B9C-0294-7E819C7C026F">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>C21F317A-9B57-7B9C-0294-7E819C7C026F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT007</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_6_2" id="C9C5A213-BFD6-8075-FC06-68D6D66F3808">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>C9C5A213-BFD6-8075-FC06-68D6D66F3808</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>6</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Monto" id="D7C297F8-0C08-6663-E04A-4C607CAAD892">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>D7C297F8-0C08-6663-E04A-4C607CAAD892</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>12</dataTypePrecision>
+         <dataTypeScale>2</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Numero_3_0" id="DE260B81-9939-841F-C400-6B0C308EBF64">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>DE260B81-9939-841F-C400-6B0C308EBF64</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>3</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>0</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="VARCHAR_0_0_1 CHAR" id="DFD01063-052C-BD22-8952-DFEE11325A3D">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>DFD01063-052C-BD22-8952-DFEE11325A3D</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>1 CHAR</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_50_BYTE" id="E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>50 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Texto_15 BYTE" id="EA7F7EA8-AE87-9443-D1B2-C51545277DE6">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>EA7F7EA8-AE87-9443-D1B2-C51545277DE6</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>15 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="NUMERIC_0_0_0" id="F065971F-5F2D-4203-2C9D-4B1A6EE62D18">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>F065971F-5F2D-4203-2C9D-4B1A6EE62D18</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT019</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="Si_No_CHAR_1" id="F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypeSize>1</dataTypeSize>
+         <defaultValue>&apos;S&apos;</defaultValue>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT025</logicalDatatype>
+      </Domain>
+      <Domain class="oracle.dbtools.crest.model.design.Domain" name="nombre_persona_full" id="FFC84B08-7711-C2AC-4E37-4EAE4ADF760F">
+         <createdBy>padron</createdBy>
+         <createdTime>2019-07-09 15:51:33 UTC</createdTime>
+         <ownerDesignName>CES-FUNDAUC</ownerDesignName>
+         <importedID>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</importedID>
+         <avTSortOrder>0</avTSortOrder>
+         <dataTypePrecision>0</dataTypePrecision>
+         <dataTypeScale>0</dataTypeScale>
+         <dataTypeSize>100 BYTE</dataTypeSize>
+         <fileName>fundauc_Domains</fileName>
+         <logicalDatatype>LOGDT024</logicalDatatype>
+      </Domain>
+   </domains>
+</DomainFile>

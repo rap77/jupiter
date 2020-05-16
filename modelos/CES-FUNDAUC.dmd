@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="CES-FUNDAUC" id="9783104F-AFBA-812E-0C49-F976C8F25226" version="3.5">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:20:52 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9783104F-AFBA-812E-0C49-F976C8F25226</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="833AB239-DBC6-D3DE-0826-21965FBAD43D">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E8EC34AD-09DC-0218-2C03-4B175856F9C3">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="017EB95C-8C78-EDC9-C7F6-001D10856B60">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="D370C7FD-49A8-30B7-0193-9D2F675052AE">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="2FA4D513-E53A-97F5-0287-D23794AE4EE2">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

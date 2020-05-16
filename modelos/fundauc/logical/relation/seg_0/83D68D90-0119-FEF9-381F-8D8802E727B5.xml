@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIR_TP_EDIF_FK" directorySegmentName="seg_0" id="83D68D90-0119-FEF9-381F-8D8802E727B5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>C9F47C93-E144-5335-DE74-E9C955EF1869</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>F108B199-536B-5E97-4184-0D96A23A1D65</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>740FFFD3-F1D8-B526-41AF-E3D94B433F06</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B07B2770-8939-35EF-1033-1BA58E764EE5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C2BC0DCB-B086-7B69-D77C-0CF2DA13AEB7" name="SG_ROLES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Rolesl de Usuarios del Sistema. Ej: SUPERUSUARIO Super Usuario del sistema</comment>
+<commentInRDBMS>Rolesl de Usuarios del Sistema. Ej: SUPERUSUARIO Super Usuario del sistema</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6EE6056C-E531-EACD-FF7A-2E3E1F072E4F</importedID>
+<abbreviation>ROL</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0E8A6D66-D98B-1C8D-28BF-73385B11A857">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código del Perfil.</comment>
+<commentInRDBMS>Código del Perfil.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0061C96F-D7D1-8F0F-D1E6-9B63A863A1A4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="51039F00-7B81-DA14-B8C8-EC73EA3BC6DA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Perfil.</comment>
+<commentInRDBMS>Descripción del Perfil.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1C7FAEE8-E3B6-5F95-3500-4AE325850C7D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D4EAAFF0-590E-1282-2ACA-548F814B990B" name="SG_ROLES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>030321B4-5C3B-E64F-C81B-386F6CE44A13</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8A6D66-D98B-1C8D-28BF-73385B11A857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D460D792-CF4D-4F5A-AAA6-9DD59A2BCFD0" name="SG_ROL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E580D8C6-B3D6-2CD2-3E0A-8FD2092187BB</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8A6D66-D98B-1C8D-28BF-73385B11A857"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

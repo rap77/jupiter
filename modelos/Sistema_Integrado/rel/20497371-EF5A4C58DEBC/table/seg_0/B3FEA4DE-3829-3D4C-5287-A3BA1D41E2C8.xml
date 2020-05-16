@@ -1,0 +1,247 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3FEA4DE-3829-3D4C-5287-A3BA1D41E2C8" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_DOC_IDENT">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DOC_IDENT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></comment>
+<commentInRDBMS><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="725335AE-EA6D-F834-6E1F-4759B9572D39">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_ID" id="2B3DF2C9-0EA5-F920-BF3F-CA04AEF71AE7">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B11B52D6-C857-11B3-5D5C-6856146508AA" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="TP_DOCID_ID" id="967E3564-C15E-91D6-F3EA-169C616A3D8A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREF_DOC_ID" id="518AAB45-6218-9946-9376-5BD6055B47A2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>PREF_DOC_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO" id="53DF7A83-F53A-7EDB-AC0D-8784A655FA20">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>NUMERO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ENTERO_743649518</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>&apos;1&apos;</beginValue>
+<endValue>&apos;999999999&apos;</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DIGITO" id="EBCF2BFB-1619-A192-2E55-D7AA6EA40E80">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>DIGITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ENTERO_878657258</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ACTIVO" id="4D0D1A75-6903-59FE-601C-5FF4B0669B3B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>SI_NO_1987291074</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PREF_DOCID_ID" id="E2902AF1-966A-3A90-0F94-A4C85920EB86">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>PREF_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Prefijo de Documento]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Prefijo de Documento]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_VENCMIENTO" id="6880615C-5B2C-FCDC-F36A-F6BEE07BA044">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOC_IDENT</sourceObjSchema>
+<sourceObjName>FECHA_VENCMIENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Fecha de Vencimiento o Validez del Documento de Identificacion]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Vencimiento o Validez del Documento de Identificacion]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D76F6BDB-13B5-68F6-4C08-F362E4188B13" name="GL_DOC_IDENT_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DOC_IDENT_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="725335AE-EA6D-F834-6E1F-4759B9572D39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="84543DD7-F1E1-28C6-BF4F-D9EAC02C236F" name="DI_PREF_DOC_ID_UN">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOC_ID_PREF_DOC_ID_NUM_UN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E2902AF1-966A-3A90-0F94-A4C85920EB86"/>
+<colUsage columnID="53DF7A83-F53A-7EDB-AC0D-8784A655FA20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E38196F6-9D4A-4491-537C-3BAE44B99197" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="DOC_IDENT_AK1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOC_IDENT_AK1</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="518AAB45-6218-9946-9376-5BD6055B47A2"/>
+<colUsage columnID="53DF7A83-F53A-7EDB-AC0D-8784A655FA20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2558F512-06AB-C846-1BC8-18911FC87547" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="DOC_IDENT_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOC_IDENT_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="725335AE-EA6D-F834-6E1F-4759B9572D39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75C10B41-C1B1-42F1-C46C-259123B82842" name="DOCID_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B3DF2C9-0EA5-F920-BF3F-CA04AEF71AE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

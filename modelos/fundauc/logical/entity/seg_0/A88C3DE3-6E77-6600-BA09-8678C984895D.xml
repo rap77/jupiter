@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A88C3DE3-6E77-6600-BA09-8678C984895D" name="CP_CLASE_ATRIBUTO">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Relacion entre Clases de Productos y Atributos adicionales de los productos</comment>
+<commentInRDBMS>Relacion entre Clases de Productos y Atributos adicionales de los productos</commentInRDBMS>
+<generatorID>A7300DB0-814B-B1F3-9BDF-759FFBDC9C0E</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID_ATRIBUTO" id="FFD9E054-65A2-ED7C-BB9B-1BCAD147A448">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>identificador unico del atributo</comment>
+<commentInRDBMS>identificador unico del atributo</commentInRDBMS>
+<generatorID>336E83F8-BE8C-5C5D-8353-2EFC713F1963</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1735691556</constraintName>
+<referedAttribute>6FA7D3F4-7FBC-5556-4E41-120BA7CC1E45</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ID_CLASE_PRODUCTO" id="3909CFE5-C2AA-DFC5-5A63-2D2896691927">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<commentInRDBMS>Número de Identificación Interna de la Clase de Producto.</commentInRDBMS>
+<generatorID>F64EB2DE-7FE6-17D1-468F-1AEDCBB6037B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_30335856</constraintName>
+<referedAttribute>AE7FD15A-20A5-961D-94CF-DB6259CF68BD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="237B20E9-0D9E-167D-1CD0-A44D6C232A24" name="XPKCP_CLASE_ATRIBUTO">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>6428CEE5-6D96-4945-0CB9-99709BDC114C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FFD9E054-65A2-ED7C-BB9B-1BCAD147A448</attributeRef>
+<attributeRef>3909CFE5-C2AA-DFC5-5A63-2D2896691927</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

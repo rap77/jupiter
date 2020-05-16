@@ -1,0 +1,142 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6A873D6-2A9A-8A48-024E-AFD3E6D3C38E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_ZONAS_POSTALES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_ZONAS_POSTALES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<comment><![CDATA[Número de Zona de Identificación Postal. Ej: 1240, Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Número de Zona de Identificación Postal. Ej: 1240, Carabobo.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>ZON_POS</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="27399DB4-E3DD-5F5E-AAB9-60FF52B84238">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ZONAS_POSTALES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Zona Postal]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Zona Postal]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID}_1920039610</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ESTADO_ID" id="45480215-0FE3-7691-2FCF-EF3F36F0F63B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ZONAS_POSTALES</sourceObjSchema>
+<sourceObjName>ESTADO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID}_540028253</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="B31751C3-8E59-88F6-ECF5-CEEF6E1FDCBC" referredColumn="99813B72-EB0D-FF0A-E79D-B0BA3587FA76"/>
+</associations>
+</Column>
+<Column name="CODIGO" id="B8B949E7-D594-C16A-EBA4-FA4A1F05FBCC">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ZONAS_POSTALES</sourceObjSchema>
+<sourceObjName>CODIGO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<comment><![CDATA[Codigo de la Zona Postal. Ej: 1060.]]></comment>
+<commentInRDBMS><![CDATA[Codigo de la Zona Postal. Ej: 1060.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="60CA63A7-A772-D66D-A79B-A7E59AE23275">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_ZONAS_POSTALES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<comment><![CDATA[Descripción de la Zona Postal. Ej: Chacao.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Zona Postal. Ej: Chacao.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CD7AEFFA-229C-080B-5472-A9E19199CC56" name="ZONAS_POSTALES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>ZONAS_POSTALES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27399DB4-E3DD-5F5E-AAB9-60FF52B84238"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1013A0D-AD84-558D-CB85-D9FEED42C73E" name="ZONA_POSTAL_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>ZONA_POSTAL_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="27399DB4-E3DD-5F5E-AAB9-60FF52B84238"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="909DF092-D46E-D1FB-B6F5-4339E695459D" name="ZON_POS_ESTADOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:22:01 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="45480215-0FE3-7691-2FCF-EF3F36F0F63B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

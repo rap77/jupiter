@@ -1,0 +1,27 @@
+REM INSERTING into FUNDAUC.ESTADOS
+SET DEFINE OFF;
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('1','Amazonas');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('2','Anzoátegui');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('3','Apure');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('4','Aragua');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('5','Barinas');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('6','Bolívar');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('7','Carabobo');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('8','Cojedes');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('9','Delta Amacuro');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('10','Falcón');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('11','Guárico');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('12','Lara');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('13','Mérida');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('14','Miranda');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('15','Monagas');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('16','Nueva Esparta');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('17','Portuguesa');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('18','Sucre');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('19','Táchira');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('20','Trujillo');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('21','Vargas');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('22','Yaracuy');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('23','Zulia');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('24','Distrito Capital');
+Insert into FUNDAUC.ESTADOS (ID_ESTADO,NOMBRE) values ('25','Dependencias Federales');

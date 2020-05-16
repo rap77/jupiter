@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="207E2803-887B-518A-F7F7-3BF3051ED196" containerWithKeyObject="CD2DA640-412C-084F-2B1A-E9CC6203693F" localFKIndex="04963E6E-54E4-3F3E-2DD6-49383F511654" name="CALENDARIOS_DET_MOD_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>CALENDARIOS_DET_MOD_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.MODALIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C3FED5DE-47D0-EFD6-7DCA-B99672D3165E</referredTableID>
+<keyObject>F0BDCB92-4C77-7B18-F6D0-5D7E40FA9615</keyObject>
+<referredKeyID>F0BDCB92-4C77-7B18-F6D0-5D7E40FA9615</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MODALIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

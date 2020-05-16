@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DB8541D8-F3FB-9F72-1D4E-857448FFBAE0" name="GL GRUPOS SANGUINEOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Grupo Sanguineo. Ej: A+ B- O+.</comment>
+<commentInRDBMS>Grupo Sanguineo. Ej: A+ B- O+.</commentInRDBMS>
+<generatorID>5F8AA717-EB0D-9560-90B9-1C27F5EC98B7</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>GRP_SAN</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="85E98471-F670-530B-0EDC-083AB356B5B5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno del Grado Sanguineo.</comment>
+<commentInRDBMS>Número de Identificación Interno del Grado Sanguineo.</commentInRDBMS>
+<generatorID>34F0068C-B2E4-592F-EB34-00F9E9A107F6</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1748050432</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="3CC19A86-45A8-DCA0-35D8-BF50BBCC7A75">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Grupo Sanguineo.</comment>
+<commentInRDBMS>Grupo Sanguineo.</commentInRDBMS>
+<generatorID>EC9CFBB1-7D55-7784-ECC5-62DF14CA4AEB</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FACTOR RH" id="D664EE2E-50CA-3E0C-B086-841D0C9C42A4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Factor Rh del Grupo Sanguineo.</comment>
+<commentInRDBMS>Factor Rh del Grupo Sanguineo.</commentInRDBMS>
+<generatorID>48878A9E-9BB2-6139-21E2-94E0D3363AC7</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>A1E6019C-56D2-7E53-66C2-3E5DC485D18D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F7DAAE9F-6A60-C9B5-09BC-0C289C4DBE27" name="GL_GRUPOS_SANGUINEOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>1A90BC22-50F2-8461-4ABA-1F54AB9C6CDC</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>85E98471-F670-530B-0EDC-083AB356B5B5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

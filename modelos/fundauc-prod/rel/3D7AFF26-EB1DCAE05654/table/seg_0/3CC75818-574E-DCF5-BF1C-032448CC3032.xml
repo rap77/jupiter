@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3CC75818-574E-DCF5-BF1C-032448CC3032" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSCRIPCION_FACTURA">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCION_FACTURA</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:52 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="INSCRIPCION_ID" id="86075578-2F00-022A-B6FC-6A0460407794">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCION_FACTURA</sourceObjSchema>
+<sourceObjName>INSCRIPCION_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id de la inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACTURA_ID" id="AD18AD40-25AA-26A4-FF9F-6FB4A891494D">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>INSCRIPCION_FACTURA</sourceObjSchema>
+<sourceObjName>FACTURA_ID</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:54 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F6BE0FB-0074-D5F3-2D27-CAFFD3EE59A3" name="INSCRIP_FAC_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIP_FAC_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:04 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86075578-2F00-022A-B6FC-6A0460407794"/>
+<colUsage columnID="AD18AD40-25AA-26A4-FF9F-6FB4A891494D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B645454-081B-0630-FF5E-3AB83230472D" schemaObject="E79B8DC2-2292-A202-640F-D21DD6B2A19B" name="INSCRIPCION_FACTURA_PK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCION_FACTURA_PK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:16:59 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86075578-2F00-022A-B6FC-6A0460407794"/>
+<colUsage columnID="AD18AD40-25AA-26A4-FF9F-6FB4A891494D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

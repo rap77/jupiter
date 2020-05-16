@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CP_CLASE_ATRIBUTO_FK1" directorySegmentName="seg_0" id="F64EB2DE-7FE6-17D1-468F-1AEDCBB6037B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>9DB0E68D-B96F-FEBB-D2D6-5F58F148E40D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>01D82929-E1D0-DE97-8F6B-7790A4477B05</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>68E5729B-59D1-B68D-3BD0-570DA476773D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A88C3DE3-6E77-6600-BA09-8678C984895D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

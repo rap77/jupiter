@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C48F87F4-3B6B-23CE-C44F-75AD57B8F754" name="CP_RC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Requisiciones de Compra</comment>
+<commentInRDBMS>Requisiciones de Compra</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>299BFCB4-25F3-DD31-1BC4-35BC6B30CE66</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A0BDB2C1-C0F4-3CDD-5EEC-82F1531909AD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>identificador unico de documento</comment>
+<commentInRDBMS>identificador unico de documento</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2D3B6E7C-C2DE-55DB-6F0C-2DD8718F500A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="93AAD1DD-5086-925A-A5AA-ACAFA8BA56CB" referredColumn="C64353F2-E036-D3D4-D2A8-F8E0FBC7B908"/>
+</associations>
+</Column>
+<Column name="NUMERO_RC" id="0724CA6A-25E9-D6CA-1AFF-2309803B5FA2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Numero de Requisicion de Compras</comment>
+<commentInRDBMS>Numero de Requisicion de Compras</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C9425CBC-330B-FFF1-E8AE-91D408F2E66F</importedID>
+<constraintName>ENTERO_10}_236254151</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_RC" id="1682E2A0-4429-E3ED-84EE-49084547EB40">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Fecha de Requisicion de Compras</comment>
+<commentInRDBMS>Fecha de Requisicion de Compras</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D3D91A99-E840-79A3-01C8-1333B39F47FE</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9576B195-9354-272F-32C3-E306D2EF0C58" name="CP_RC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CC8905EE-CDE7-243B-D78D-4D054EDC5053</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0BDB2C1-C0F4-3CDD-5EEC-82F1531909AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A11873A7-53CE-7A37-117D-4AF495AFFE33" name="CP_RC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>79608C2A-EAFA-592B-B378-A568260E16DC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0BDB2C1-C0F4-3CDD-5EEC-82F1531909AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EB927781-27BF-F0FA-C38B-A12DC9969A08" name="CP_RC_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0BDB2C1-C0F4-3CDD-5EEC-82F1531909AD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IN_CONDICION_FISICA_BIEN_FK0" directorySegmentName="seg_1" id="295FA1D3-1F7F-AF19-E2E3-2A90D0C5F7C7">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>A475C582-C3E0-C3FE-AC93-2BFC13D0756D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>D0353D77-3A46-F968-BFEC-1AF907F14499</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E7FA18C4-4217-7264-05E2-867C3D3D06AD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C32082AC-FB11-B4C0-616C-AA9527A1EF90</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

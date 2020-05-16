@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E74F056-8F36-A6AE-2F59-0DD51FB27ADF" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="EMPRESA_TIPO">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EMPRESA_TIPO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>EMPRESA_TIPO</comment>
+<commentInRDBMS>EMPRESA_TIPO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RIF" id="FC3A336C-E346-C344-E7E6-BF54287F3663">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>EMPRESA_TIPO</sourceObjSchema>
+<sourceObjName>RIF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>RIF</comment>
+<commentInRDBMS>RIF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 BYTE</dataTypeSize>
+<ownDataTypeParameters>16 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E6D1BFCC-0038-4025-452E-CFE50E9A2F00" referredColumn="E152E985-0A25-1C4C-C395-7F59473AF5D2"/>
+</associations>
+</Column>
+<Column name="TIPO" id="BBB16672-FF1E-159A-8170-EEBD2145BE20">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>EMPRESA_TIPO</sourceObjSchema>
+<sourceObjName>TIPO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>TIPO</comment>
+<commentInRDBMS>TIPO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E1696048-79A3-1F77-3111-49765F8C08F0" referredColumn="E181E32D-F4DF-0180-A4BE-63CE978188F2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B1284F12-9786-8105-6C4C-3EA291208825" name="EMPRESA_TIPO_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EMPRESA_TIPO_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>EMPRESA_TIPO_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC3A336C-E346-C344-E7E6-BF54287F3663"/>
+<colUsage columnID="BBB16672-FF1E-159A-8170-EEBD2145BE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75E00F82-ECAD-A1D1-BFE7-770FB860D527" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="EMPRESA_TIPO_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EMPRESA_TIPO_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>EMPRESA_TIPO_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC3A336C-E346-C344-E7E6-BF54287F3663"/>
+<colUsage columnID="BBB16672-FF1E-159A-8170-EEBD2145BE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A866C248-160F-716B-A0B3-BC282F35C7B3" name="FK_EMPRESA">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC3A336C-E346-C344-E7E6-BF54287F3663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDFEE419-716C-3324-8171-56B8148066BF" name="FK_TIPO_EMPRESA">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BBB16672-FF1E-159A-8170-EEBD2145BE20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B42BBC66-0E4C-A3C6-53EA-5EDEA4EE1CD4" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="CONDICIONES_ESPECIALES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CONDICIONES_ESPECIALES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>CONDICIONES_ESPECIALES</comment>
+<commentInRDBMS>CONDICIONES_ESPECIALES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_CONDICION" id="802582DB-065B-D60E-F30B-DC4CE3DC0AA8">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>ID_CONDICION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_CONDICION</comment>
+<commentInRDBMS>ID_CONDICION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="1F94D271-BC32-C40E-3622-4D68C166314F">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCUENTO" id="F7F8A59B-6C79-3AC2-0D61-D5E31BE4E220">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CONDICIONES_ESPECIALES</sourceObjSchema>
+<sourceObjName>DESCUENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DESCUENTO</comment>
+<commentInRDBMS>DESCUENTO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="432A33D9-DFAC-064D-2837-4B7FFB0D4267" name="CONDICIONES_ESPECIALES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:59:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802582DB-065B-D60E-F30B-DC4CE3DC0AA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3EBE491-EFC5-FB55-BA98-BC659719F57B" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="CONDICIONES_ESPECIALES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CONDICIONES_ESPECIALES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>B903EC94-BA45-AB59-5EDF-F46CE83D11AD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="802582DB-065B-D60E-F30B-DC4CE3DC0AA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

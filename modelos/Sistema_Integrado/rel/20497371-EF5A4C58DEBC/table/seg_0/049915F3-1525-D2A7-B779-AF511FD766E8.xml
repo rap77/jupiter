@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="049915F3-1525-D2A7-B779-AF511FD766E8" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PREGUNTAS">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 21:29:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[Base de Preguntas Generales, se puede usar como estadisticos ]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<ordsAlias>table_68</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="23952D15-8DD3-84EC-3215-A3B956530672">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 21:32:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Id de la pregunta]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

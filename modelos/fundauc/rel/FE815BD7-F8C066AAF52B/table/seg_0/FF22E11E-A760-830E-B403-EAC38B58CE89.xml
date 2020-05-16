@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF22E11E-A760-830E-B403-EAC38B58CE89" name="GL_ETNIA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Etnia, Tribu, Raza Indigena. Ej: 1 Yanomami.</comment>
+<commentInRDBMS>Etnia, Tribu, Raza Indigena. Ej: 1 Yanomami.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F923BD15-67B3-2308-1DC4-3D4192C369D9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DAB8E4A2-8830-A705-526F-90FED293556F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Etnia o Raza Indigena.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Etnia o Raza Indigena.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B92FDF14-DBFF-C5C3-7845-7097DC257429</importedID>
+<constraintName>ID}_17708191</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="NOMBRE" id="A94584BF-BEC4-69F4-EA1F-93991A25D974">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre de la Etnia o Raza Indigena. Ej: Yanomami.</comment>
+<commentInRDBMS>Nombre de la Etnia o Raza Indigena. Ej: Yanomami.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9BA6C3B3-0FC3-D866-C1B0-71F52D7E9D55</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E21DAB98-6D39-0125-F1F9-07EA8CA8F881" name="GL_ETNIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DBB60C7C-6C38-25A3-9288-F81C3937C952</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAB8E4A2-8830-A705-526F-90FED293556F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C6562E80-61DD-BE68-65E9-F8BC0582FCCB" name="GL_ETNIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C2BBCD0A-20B4-08A6-511D-4BA7BB96D663</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAB8E4A2-8830-A705-526F-90FED293556F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

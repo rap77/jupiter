@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_ESTADOS" directorySegmentName="seg_0" id="92E03193-4D28-21AC-73BC-8E36F1B60BC8">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NOMBRE" id="507D7860-12E1-D472-F131-16FF361CB976">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="99813B72-EB0D-FF0A-E79D-B0BA3587FA76">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAIS_ID" id="DD0AD61F-5BD6-07BA-4607-5B6D363A5BA6">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="ESTADO_PK" id="1B3315B4-3582-2732-F210-7B4564F291D4">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EST_PAISES_FK" id="631B7FD8-A668-769C-4AAE-D128A751BE46">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:15:08 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ESTADOS_PK" id="AA8F4A81-4284-E611-0A96-E73203151D24">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:02:46 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

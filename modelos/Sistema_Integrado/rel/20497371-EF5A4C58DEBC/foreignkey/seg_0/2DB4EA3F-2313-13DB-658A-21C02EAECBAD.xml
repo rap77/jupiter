@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2DB4EA3F-2313-13DB-658A-21C02EAECBAD" containerWithKeyObject="D6445CF2-E4AA-8199-09C2-2F26604868CA" localFKIndex="DFB51150-5A90-604F-603D-52682CFD0396" name="MEN_TP_MEN_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>MEN_TP_MEN_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.SG_TIPOS_MENSAJES</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>B5549F14-6551-FEC6-3F76-4D6C091640F0</referredTableID>
+<keyObject>16ACA0B0-3B06-8C0E-9AF0-FBD125E5A0BC</keyObject>
+<referredKeyID>16ACA0B0-3B06-8C0E-9AF0-FBD125E5A0BC</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

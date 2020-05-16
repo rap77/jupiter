@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FE18B9C4-209D-445A-62C7-AE713EFF33EB" name="GL_GRUPO_ESPECIALIDAD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Grupo de Especialidades Medicas]]></comment>
+<commentInRDBMS><![CDATA[Grupo de Especialidades Medicas]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4B231C18-90BF-ACB3-EE28-2A18F23AF22F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="952475EE-1A16-A695-F5DD-40161491710E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Grupo de la Especialidad]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Grupo de la Especialidad]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CFF3A681-1537-B1D0-F308-DD3E2CA18177</importedID>
+<constraintName>ID}_189590727</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="DA044006-75BA-7F70-ADE8-C4C59C2337C4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Grupo de la Especialidad]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Grupo de la Especialidad]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DBC68B62-63BC-99BE-F50B-BBA695F9DCAD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6A03A5C6-EC22-D363-BD23-83B0E6E78FFF" name="GL_GRUPO_ESPECIALIDAD_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>656BE99D-D52C-BE70-0AF7-C12A15BFB9EB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="952475EE-1A16-A695-F5DD-40161491710E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8584160-9C52-D83B-C4E5-32C5F3C510BC" name="GL_GRUPO_ESPEC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E2DFC404-2D4A-B378-16AA-653FC9F09454</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="952475EE-1A16-A695-F5DD-40161491710E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

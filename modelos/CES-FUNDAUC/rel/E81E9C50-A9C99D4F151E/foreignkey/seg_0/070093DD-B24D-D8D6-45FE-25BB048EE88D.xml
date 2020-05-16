@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="070093DD-B24D-D8D6-45FE-25BB048EE88D" containerWithKeyObject="31403E78-8658-56AD-5682-2BD41D12FAC1" localFKIndex="931FA520-2522-A1C4-93E2-A71AC3EB2124" name="CIUD_EST_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018628</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>SYS_C0018628</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.ESTADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0EE02A99-74C9-FAAE-A270-1F52E91CCDB6</referredTableID>
+<keyObject>A995DEE0-0B6A-2D53-5BCB-A5792CDB08BE</keyObject>
+<referredKeyID>A995DEE0-0B6A-2D53-5BCB-A5792CDB08BE</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_ESTADO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

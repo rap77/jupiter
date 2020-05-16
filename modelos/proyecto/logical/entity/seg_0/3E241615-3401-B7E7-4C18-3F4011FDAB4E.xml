@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3E241615-3401-B7E7-4C18-3F4011FDAB4E" name="GL_TIPOS_DOCIDENTI">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Número o Código de Identificación. Ej: 1 Colegio de Contadores, 2 IMPRE.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Número o Código de Identificación. Ej: 1 Colegio de Contadores, 2 IMPRE.]]></commentInRDBMS>
+<generatorID>A5285101-49EF-47CD-D509-8ED83DFEFBFC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_DOCID</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="25F396EF-E252-ECDE-866D-A5B27343CAD0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<generatorID>35AB4889-06DA-9C1B-948C-F2713DE64F85</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="E79829DD-DDA0-2C73-6C32-0F5E55B72065">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Número o Codigo de Identificación. Ej: Número del Colegio de Contadores. Número de Pasaporte, Cedula de Identidad]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Número o Codigo de Identificación. Ej: Número del Colegio de Contadores. Número de Pasaporte.]]></commentInRDBMS>
+<generatorID>71194C6D-AA37-6A7D-5EA4-84E333ED6EFC</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SIGLAS" id="514BD5A1-C979-2D07-58CD-CE535D0A15A3">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 16:31:17 UTC</createdTime>
+<comment><![CDATA[Abreviación del la descripción del tipo de Documentación Ej. C.I.]]></comment>
+<commentInRDBMS><![CDATA[Abreviación del la descripción del tipo de Documentación Ej. C.I.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BA0BB4EC-00BF-3997-5894-BD2343309A5A" name="GL_TIPOS_DOCIDENTI_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>935CC7D4-7A9A-2273-E2F8-C2CE4D910A3A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>25F396EF-E252-ECDE-866D-A5B27343CAD0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

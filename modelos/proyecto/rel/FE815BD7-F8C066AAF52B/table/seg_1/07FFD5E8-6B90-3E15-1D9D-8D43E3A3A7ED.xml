@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="07FFD5E8-6B90-3E15-1D9D-8D43E3A3A7ED" name="IN_GARANTIA_BIEN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene Garantia del Bien]]></comment>
+<commentInRDBMS><![CDATA[Contiene Garantia del Bien]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0C8E3A96-E236-1012-5C16-27E4D9836068</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_BIEN" id="11C5C768-4B66-8348-3B06-7AB81D5CFAC4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del bien]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del bien]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F4EF5F0D-78B3-DAA1-48F1-F88BF1B37A4D</importedID>
+<constraintName>ID}_187754375</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="8869D83A-821C-E64B-61D6-02316AD6B51E" referredColumn="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</associations>
+</Column>
+<Column name="ID_GARANTIA" id="A8A086EB-D00F-BC12-F173-45ABB2C8EDE4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Garantia]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Garantia]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3E9F6F08-597E-85E6-5B86-6B05C93A5A1D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6B26B53E-41C7-CB21-549E-F640E4473D28" referredColumn="85155697-5751-4F74-0A36-50FF354C1037"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A579F89-641F-01C4-8651-0624E526A30D" name="IN_GARANTIA_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9DE3F278-1CC7-65FA-4465-D75C2303FD74</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11C5C768-4B66-8348-3B06-7AB81D5CFAC4"/>
+<colUsage columnID="A8A086EB-D00F-BC12-F173-45ABB2C8EDE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF5CE025-607C-5526-C322-535FBF1078A9" name="IN_GARANTIA_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8952024E-15AC-47FC-029C-E6FB8E1B58E6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11C5C768-4B66-8348-3B06-7AB81D5CFAC4"/>
+<colUsage columnID="A8A086EB-D00F-BC12-F173-45ABB2C8EDE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="103303F9-D22B-DED8-A7A7-EFEB6894C1EE" name="IN_GARANTIA_BIEN_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11C5C768-4B66-8348-3B06-7AB81D5CFAC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C01F2A6-B4EF-75B8-0946-5B3EC508CE2C" name="IN_GARANTIA_BIEN_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8A086EB-D00F-BC12-F173-45ABB2C8EDE4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PER_JUR_PER_FK" directorySegmentName="seg_1" id="08247EFA-08E5-60FB-D48D-36E7958042FD">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>58478C24-0FE0-A815-2CA4-18948F860E80</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>DB1DA341-8233-ACF4-5009-D366E6E15EE9</sourcePk>
+<dominantRole>366D2432-5711-29A0-A0CE-3B757313B65B</dominantRole>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>366D2432-5711-29A0-A0CE-3B757313B65B</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>A8EF0492-599F-2252-E8A4-13C4A3A4A4B6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

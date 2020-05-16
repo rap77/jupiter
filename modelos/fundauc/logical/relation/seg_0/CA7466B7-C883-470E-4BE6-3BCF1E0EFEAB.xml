@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CP_PRECIO_FK0" directorySegmentName="seg_0" id="CA7466B7-C883-470E-4BE6-3BCF1E0EFEAB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>A53B9870-56DE-A849-1E9E-2BB6742FCF7B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>9EBCFE7E-176C-B25B-F327-145917E3D125</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B26FE217-B902-3E50-7B78-CA66FD038F0B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>F1CBFCBA-58BC-66F3-18BE-C5CA6C727FC1</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

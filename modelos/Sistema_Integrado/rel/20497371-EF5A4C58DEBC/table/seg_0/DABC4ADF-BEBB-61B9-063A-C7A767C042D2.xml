@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DABC4ADF-BEBB-61B9-063A-C7A767C042D2" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_UNIDADES_ORG">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_UNIDADES_ORG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Unidades Organizacionales]]></comment>
+<commentInRDBMS><![CDATA[Unidades Organizacionales]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="F6559AF5-70E4-8233-57C0-41BAED3849BB">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_UNIDADES_ORG</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UO_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UO_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="22021C67-3682-2399-DFCA-99291E364453" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="UNI_ORG_ID" id="94C677DC-6277-728C-5ABF-A8D33C9B9FEE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_UNIDADES_ORG</sourceObjSchema>
+<sourceObjName>UNI_ORG_PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UO_UO_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D3AC7EF3-4AD7-A085-2458-F0B17876D8DB" referredColumn="F6559AF5-70E4-8233-57C0-41BAED3849BB"/>
+</associations>
+</Column>
+<Column name="TP_UNI_ORG_ID" id="944A9911-7C23-2158-E613-D83AE916C561">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_UNIDADES_ORG</sourceObjSchema>
+<sourceObjName>TP_UNI_ORG_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Tipo de Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Tipo de Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UO_TUO_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UO_TUO_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="31E4EA88-4F42-D03C-22D3-6B9AA40EC4B8" referredColumn="50AB7DCB-CC02-7A79-4BBB-BB55DCC2E22D"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="25ACDC6D-2014-5129-2A38-047C2B574FA9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_UNIDADES_ORG</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 BYTE</dataTypeSize>
+<ownDataTypeParameters>255 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UO_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D0BF8DB-C14E-B781-F567-8C7D8D4ED9FC" name="GL_UNIDADES_ORG_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_UNIDADES_ORG_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6559AF5-70E4-8233-57C0-41BAED3849BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="23ADF2AC-542A-5DCB-38CD-F53B9D4B0F91" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="UNIDAD_ORG_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PL_UNIDAD_ORG_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6559AF5-70E4-8233-57C0-41BAED3849BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="284C66FE-4FCD-3714-4E4B-4E973521003F" name="UO_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F6559AF5-70E4-8233-57C0-41BAED3849BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9EBDE634-1A92-EB9C-3838-8E71A1E232E5" name="UO_TP_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="944A9911-7C23-2158-E613-D83AE916C561"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7734A6E-8A13-C7B5-C302-BA43B50343A2" name="UO_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94C677DC-6277-728C-5ABF-A8D33C9B9FEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

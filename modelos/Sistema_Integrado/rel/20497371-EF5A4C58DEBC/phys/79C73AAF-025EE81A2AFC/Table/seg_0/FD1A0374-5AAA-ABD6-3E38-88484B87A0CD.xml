@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_PERSONAS_NATURALES" directorySegmentName="seg_0" id="FD1A0374-5AAA-ABD6-3E38-88484B87A0CD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="FECHA_DECESO" id="0162CE55-807E-788B-0ABC-AB1506CC5031">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FECHA_NACIMIENTO" id="052EAED5-FE22-427C-767F-C3FA0291B786">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="APELLIDO_CASADA" id="17538F81-AB4F-FFDD-E48F-0294557C6B84">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEFECTOS_FISICOS" id="1F877F67-510B-61BB-6B02-372172282D4D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOMO_PART_NCTO" id="29F2497B-DE64-2685-9028-342DC94B433A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_EXCEPCIONAL" id="2BA60B9C-6CC5-7B4A-5913-8A401699D911">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="TRATAMIENTO_ID" id="2CAB297C-6B75-8D04-B8BE-A9393DC726DB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NIVEL_ESTUDIO_ID" id="37D926FA-6C01-3691-C2E8-5BD299D88D54">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRUPO_SANGUINEO_ID" id="39F88A11-C6E9-4FB9-33D0-C8B7A83D516B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIMER_NOMBRE" id="432F35F6-A06E-A039-24A2-34ABE47651F2">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTA_PART_NCTO" id="481167AC-E1DB-F9ED-6FCE-5A2B4EF9C3A5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADO_LICENCIA" id="52902356-292D-2ABD-9DD3-32824F6B8F05">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_DISCAPACITADA" id="561A0568-D746-CC3E-D830-6069495B5BFB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDO_NOMBRE" id="59D6E2E3-F4E5-8085-3356-F7A010F1530A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGISTRO_CIVIL_ID" id="5C23145A-51F5-521B-E591-E1FDE7436B36">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GENERO_ID" id="5C822C73-8378-67B3-CA78-0ED3B88C5E3E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTATURA" id="6818B0F6-1C98-C3E6-D399-14F96DA6E8F2">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TALLA" id="8A73A88C-5EC7-9B07-E2AB-2A8F76ECF96D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="GRADO_ACADEMICO_ID" id="A5612EA0-669E-4AAE-D9EA-DCEF111F68AD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="C9140060-C5A2-06C7-D98D-181CC7EC7769">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PAIS_ID" id="C94BFAB9-28E1-2ECB-00B8-BCF17E1825AB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ANO_PART_NCTO" id="CC240C66-498D-F408-4639-93F3D5150ECC">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:56:20 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PROFESION_ID" id="CC5F93EA-AD1F-97F7-2265-1215844A9894">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PESO" id="D12F7618-8F75-B0B6-6C70-9EDF488F14FF">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SEGUNDO_APELLIDO" id="E35B47BA-DC25-E1B8-7FE1-55CD5126F88F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ES_DIESTRO" id="E3EBB3F4-41D6-536F-0E30-19E08C3319BE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>S</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="ETNIA_ID" id="E46F6342-FD0D-A306-BC84-B5AD9AC0C70B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="USA_LENTES" id="E7E6AE8F-0C73-7FF3-879D-A136D20400E5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>N</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="PRIMER_APELLIDO" id="EBA1CDAF-65A8-E55E-517E-D10A867D1416">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ESTADO_CIVIL_ID" id="F24E46A8-E7A6-5D30-23FC-6C9DF671D475">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PERSONA_NATURAL_PK" id="8DF13F48-B1CA-0A24-792B-917E10BA2F4B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GENERO_FK" id="46BF0C25-2977-D041-5A5F-002F1E58E8C7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:08 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GRAD_ACAD_FK" id="54457A92-5945-F6E0-7D86-CE08D2BF628C">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:10:44 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_PER_FK" id="568C3D92-BE5A-4A72-0203-56606488BF39">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:29:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_PAIS_FK" id="A02EA794-CCA1-F682-6FF6-63A46E43B388">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 21:16:49 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="GL_PERSONAS_NATURALES_GL_ESTADOS_CIVILES_FK" id="BF88F726-E60C-8D73-F8B5-0C1D06DE5D6D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:30:23 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_TRATAMIENTO_FK" id="E05A5A19-31D7-CE92-0D84-6566D82B8D93">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:39:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_GRP_SANG_FK" id="F562C1C7-F33E-8FB8-6A5B-BB96A6C112BB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:44:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="PER_NAT_PROFESION_FK" id="FA8E80FE-B448-7164-60CA-F29017288DF1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:25:17 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PERSONAS_NATURALES_PK" id="2713BF2F-7D9D-8DFC-D755-42EB1D81DD20">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.storage.oracle.TableCheckConstraintOracle">
+<TableCheckConstraint name="CK_PNAT_FNAC" id="C3469457-8B41-DA6D-EBFA-00AEC86EEC3E">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:20:24 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</TableCheckConstraint>
+</tableCheckConstraints>
+</TableProxyOraclev12c>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DIR_GL_TIPO_LOCAL_FK" directorySegmentName="seg_1" id="E6F3CC2A-DC45-ABC0-D27B-F04001AD6FE8">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:26 UTC</createdTime>
+<generatorID>545E8EA8-9D2D-CB3E-5EEC-49CA5013608C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>8FA351D2-E505-3335-84AD-A058D8F91AEF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C46866A1-450B-17BC-27E2-067486B7459C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B07B2770-8939-35EF-1033-1BA58E764EE5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

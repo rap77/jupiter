@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_IMG_PERSONAS" directorySegmentName="seg_0" id="02E0029F-3CB3-EEE9-2DA0-E9F867FA862A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ARCHIVO" id="247EB0F0-7521-218F-8AEA-6F5ADB5BA4AF">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ACTIVA_IMAGEN" id="2FEF2160-5C8A-5FB1-5C69-8153FD661266">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MODIFICADO_EL" id="2FFAD588-17B1-2D68-AE0A-57D399F34C80">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="7BE50089-1802-BC6C-5314-52213D8A92C5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_IMAGEN" id="84864A30-58F9-4F34-CEB0-D0E441E94B79">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PERSONA_ID" id="A37C8E52-AA78-317E-999E-3501D3C84AB9">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IMAGEN" id="E59FA7F0-6BFC-6CB1-DC0A-924A05BAB77B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="IMAGEN_PK" id="47E54452-66EB-012F-AC19-C810FA5074D3">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="IMG_PER_PER_FK" id="9D79ECB8-C034-93D4-E561-DF4B10E86208">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:11:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="IMG_PERSONAS_PK" id="FF2AA2A4-F376-7F94-4594-A790DEF762AB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:09:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,64 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_TIPOS_EDIFICACIONES" directorySegmentName="seg_0" id="E4A89FB3-ACB3-576C-B791-A694F506C56F">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VARIOS PISOS" id="1F1D8611-0401-BED1-273F-88FD22A82B74">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<defaultValue>&apos;N&apos;</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="92E35821-DBAE-49F6-1C5C-094BCD8AF8DB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ABREVIATURA" id="CCC57220-EC4C-B0EA-7A26-31CE5F106A5B">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EDIFICACION_ID" id="DB195C5F-B179-A5F9-16D0-779EC9F52C8D">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:39:30 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TIPO_EDIFICACION_PK" id="F469211D-24CE-6EDF-6432-62D178708D65">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="TP_EDIF_TP_EDIF_FK" id="CA2E88F2-64E0-F585-859B-83DC4827AED7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:39:30 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPOS EDIFICACIONES_PK" id="5EBCFA46-CFBA-D303-6CD1-1D60B398DBF7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:33:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

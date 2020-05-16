@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC8928CB-B7A7-9A94-4026-482E77CF75FE" name="GL_TIPO_GACETA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Gaceta Oficial. Ej:1 Gaceta de Nacionalización. 2 Gaceta de Concejo Universitario.</comment>
+<commentInRDBMS>Tipo de Gaceta Oficial. Ej:1 Gaceta de Nacionalización. 2 Gaceta de Concejo Universitario.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>46E075CD-777E-AC28-D575-5877B72BDA82</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C110EA0A-4560-5EA4-F177-CE6170C67E2B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Gaceta.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E3F14803-45FD-FC4D-B7A8-BC71D90D0F02</importedID>
+<constraintName>ID}_1567974328</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="D02B2ABE-5C14-E755-67F5-6581A006F7AF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del Tipo de Gaceta. Ej: Gaceta Oficial de la República, Gaceta del Rectorado de la Universidad.</comment>
+<commentInRDBMS>Descripción del Tipo de Gaceta. Ej: Gaceta Oficial de la República, Gaceta del Rectorado de la Universidad.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FE7138EE-3923-FD0C-3537-02DAE74FB3BA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B356544C-EACA-211A-593F-815EEA222276" name="GL_TIPO_GACETA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>00C2EF53-C6EE-FE52-578F-48D66DE3365B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C110EA0A-4560-5EA4-F177-CE6170C67E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="33A8E07E-28A6-0FFE-5026-8BD978EFB215" name="GL_TIPO_GACETA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3B072F52-574B-BADB-7CCF-FC1F10F58AF5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C110EA0A-4560-5EA4-F177-CE6170C67E2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="399E3590-E10C-73FA-B989-90506FD4782F" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_SEDES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<comment><![CDATA[especifica las ubicaciones de las sedes de la Emplesa o Institución
+ej. sede rectorado, la morita maracay, campus barbula, etc]]></comment>
+<commentInRDBMS><![CDATA[especifica las ubicaciones de las sedes de la Emplesa o Institución
+ej. sede rectorado, la morita maracay, campus barbula, etc]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>SDE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="47DB4255-C310-5E25-A4EA-1D3C9C0E58FA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_SEDE_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_SEDE_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="4566286E-39AD-D576-CCEF-D17BA26EF252" referredColumn="F6559AF5-70E4-8233-57C0-41BAED3849BB"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="A66163F1-3C35-B0EC-B20D-22CFA23ABE0B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Sede]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Sede]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_SEDE_DES</notNullConstraintName>
+</Column>
+<Column name="ES_NACIONAL" id="93277759-8A57-F265-7EDC-7983D588886D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<comment><![CDATA[Si la Sede es Nacional]]></comment>
+<commentInRDBMS><![CDATA[Si la Sede es Nacional]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_SEDE_ESNAC</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_SEDE_ESNAC</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85B9239A-FA06-B2E9-65C2-5B953B5CE5D7" name="GL_SEDES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DB4255-C310-5E25-A4EA-1D3C9C0E58FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDD1FFD7-0DFC-DE8D-BEB9-DAD250AA8CE7" name="GL_TIPO_UBICACION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:44:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DB4255-C310-5E25-A4EA-1D3C9C0E58FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="757D921B-3CFE-CF72-84EF-7076A2DC50CE" name="SEDE_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:47:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47DB4255-C310-5E25-A4EA-1D3C9C0E58FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

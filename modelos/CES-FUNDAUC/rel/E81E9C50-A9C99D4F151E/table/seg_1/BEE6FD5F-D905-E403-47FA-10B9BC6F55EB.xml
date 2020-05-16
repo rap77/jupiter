@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="BEE6FD5F-D905-E403-47FA-10B9BC6F55EB" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="TIPO_MATERIAL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TIPO_MATERIAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>TIPO_MATERIAL</comment>
+<commentInRDBMS>TIPO_MATERIAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ABREV" id="87410C03-22A1-8BAC-5B55-9BD2C9188053">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>ABREV</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ABREV</comment>
+<commentInRDBMS>ABREV</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="92C15E0D-0AA7-6FB7-A6C6-D350787F1D78">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IDIOMAS" id="61856A70-0744-42B5-55F0-9457B3A97112">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>IDIOMAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>IDIOMAS</comment>
+<commentInRDBMS>IDIOMAS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CTC" id="1E549782-DD85-A28B-2EB1-FA53376BC3D4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>CTC</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CTC</comment>
+<commentInRDBMS>CTC</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CFP" id="18B03EE7-1CFC-BF1F-66E7-1A25541582C2">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>CFP</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>CFP</comment>
+<commentInRDBMS>CFP</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FVTC" id="D45D33DC-CFC9-8572-630F-0B7ACA029561">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MATERIAL</sourceObjSchema>
+<sourceObjName>FVTC</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>FVTC</comment>
+<commentInRDBMS>FVTC</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E00475C9-3AA1-B727-E159-6A879208810A" name="PK_TIPO_MATERIAL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_TIPO_MATERIAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>PK_TIPO_MATERIAL</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87410C03-22A1-8BAC-5B55-9BD2C9188053"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4BE0E1AA-ACBB-171E-1993-7FC639BFAF7C" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="PK_TIPO_MATERIAL">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>PK_TIPO_MATERIAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>PK_TIPO_MATERIAL</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="87410C03-22A1-8BAC-5B55-9BD2C9188053"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

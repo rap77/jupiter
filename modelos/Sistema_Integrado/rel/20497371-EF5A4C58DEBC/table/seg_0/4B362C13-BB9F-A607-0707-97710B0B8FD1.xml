@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B362C13-BB9F-A607-0707-97710B0B8FD1" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_SECTORES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_TIPOS_SECTORES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<comment><![CDATA[Tipo de Zona: EJ. Urbanizacion, sector, barrio, conjunto residencial]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Zona: EJ. Urbanizacion, sector, barrio, conjunto residencial]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_SEC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D66D2703-03FA-3E1B-B52E-1B77F8BB1DAC">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_SECTORES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<comment><![CDATA[id del tipo de la zona]]></comment>
+<commentInRDBMS><![CDATA[id del tipo de la zona]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_SEC_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_SEC_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="9BD8FFE1-1F5B-F655-B5F6-3575B9FFC234">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_SECTORES</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Zona]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Zona]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DES_TP_SEC</notNullConstraintName>
+</Column>
+<Column name="SIGLAS" id="042B1F65-A9C2-C73E-0334-C55744F0D342">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_TIPOS_SECTORES</sourceObjSchema>
+<sourceObjName>SIGLAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<comment><![CDATA[Siglas de la Zona Ej. Urb. C. Res. Cll. Av.]]></comment>
+<commentInRDBMS><![CDATA[Siglas de la Zona Ej. Urb. C. Res. Cll. Av.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="273F9E02-38D0-2021-50E7-07D85C2B629E" name="TIPOS_SECTORES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPOS_SECTORES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66D2703-03FA-3E1B-B52E-1B77F8BB1DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83707D95-7E61-0586-3B75-167E25D465FC" name="TIPOS_SECTORES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TIPOS_SECTORES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:49:06 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D66D2703-03FA-3E1B-B52E-1B77F8BB1DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

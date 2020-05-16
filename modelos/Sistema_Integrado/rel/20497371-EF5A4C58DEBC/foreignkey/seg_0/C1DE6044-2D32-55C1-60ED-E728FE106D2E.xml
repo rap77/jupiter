@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C1DE6044-2D32-55C1-60ED-E728FE106D2E" containerWithKeyObject="990F84F4-C3CA-56E5-3838-09215164998F" localFKIndex="183C874E-819F-218F-A0B0-95A5F3EC2DC1" name="CE_SALON_CE_TIPO_SALON_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>CE_SALON_CE_TIPO_SALON_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 12:53:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.CE_TIPO_SALON</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F2B503E7-89D7-175C-A61B-A103D0B4C531</referredTableID>
+<keyObject>8DC30EC8-EDB6-FDED-0754-91C4EDAB3736</keyObject>
+<referredKeyID>8DC30EC8-EDB6-FDED-0754-91C4EDAB3736</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

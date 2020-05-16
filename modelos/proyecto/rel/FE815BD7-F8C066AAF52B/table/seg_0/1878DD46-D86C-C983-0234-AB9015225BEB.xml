@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1878DD46-D86C-C983-0234-AB9015225BEB" name="GL_TABLAS_MAESTRO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Guarda las tablas maestro para los campos lista]]></comment>
+<commentInRDBMS><![CDATA[Guarda las tablas maestro para los campos lista]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CAA2C1FD-D5C5-94FB-0F9D-393A61F1C3C3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="42043FA2-20D6-5223-4C1A-A6F2416D179F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Tabla Maestro]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Tabla Maestro]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1C3D3036-81F2-5252-7636-51F64BD2CC9B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOMBRE_TABLA" id="EA6754A0-069C-3376-7FB4-B09B532CCC3A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Nombre de la Tabla Maestro]]></comment>
+<commentInRDBMS><![CDATA[Nombre de la Tabla Maestro]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>26D1FAF4-72B1-BFC5-3FFB-86A7EC02F383</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAMPO_MUESTRA" id="F523DED4-76FC-5619-21B7-D0D86559F490">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Campo que debe mostrar la Lista de Valores]]></comment>
+<commentInRDBMS><![CDATA[Campo que debe mostrar la Lista de Valores]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6470CA19-AFC1-61E7-224B-2439B78667C4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CAMPO_RETORNO" id="45E58A34-D868-D6E6-5936-E9DACB008EF0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Campo que contiene el Valor de Retorno de la Lista de Valores]]></comment>
+<commentInRDBMS><![CDATA[Campo que contiene el Valor de Retorno de la Lista de Valores]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0F6591D4-05A0-B47C-01FD-10891F15A269</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C069EB3F-7F90-46BD-FF34-49A9F6E6E877</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9CC481D0-E8F4-B1F1-943C-C62464950D2B" name="GL_TABLAS_MAESTRO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C5CD2BE2-F356-AB45-FB56-41003857D288</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42043FA2-20D6-5223-4C1A-A6F2416D179F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="99A5A395-F896-CA01-044F-862A861791BC" name="GL_TABLAS_MAESTRO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C974BF00-2606-6959-170C-1CC47C4E3014</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42043FA2-20D6-5223-4C1A-A6F2416D179F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

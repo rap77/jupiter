@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="PARR_MUN_FK" directorySegmentName="seg_0" id="ED553653-36CC-1B0A-8FBC-836E3584E73C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>61D21CB1-491B-DB89-725F-3AE6EFD6D196</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>214C564F-55C0-5E82-CE8B-7868E6B24B27</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>60AA848E-5E8B-7A33-47C4-2797E799725D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FFA71CC2-9A31-FE45-B47E-4A19A08AB6A3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

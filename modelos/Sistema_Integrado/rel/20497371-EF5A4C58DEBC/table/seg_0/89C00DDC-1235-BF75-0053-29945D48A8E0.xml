@@ -1,0 +1,266 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="89C00DDC-1235-BF75-0053-29945D48A8E0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_DOCIDENTI">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DOCIDENTI</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej:1 CP 1234.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="26357827-B42F-9946-E791-CF6A055C9AE9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_ID</notNullConstraintName>
+</Column>
+<Column name="TP_DOCID_ID" id="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[ Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[ Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_TDID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_TDID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="2F55C716-1748-4F09-5F1E-67B47B4A02E3" referredColumn="5645E46B-E511-A7D9-2B97-01D47B91E5E5"/>
+</associations>
+</Column>
+<Column name="PERSONA_ID" id="5C64C104-C45F-4E0B-E15F-DCA0667E0C97">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a la que pertenece el Número o Código de Identificación. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_PER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_PER_ID</notNullConstraintName>
+</Column>
+<Column name="IDENTIFICACION" id="43A64BE9-E40F-6200-2EF6-99EE772D38EE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>IDENTIFICACION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></comment>
+<commentInRDBMS><![CDATA[Número o Código de Identificación. Ej: CP 1234.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_IDENTI</notNullConstraintName>
+</Column>
+<Column name="ACTIVO" id="767FD8A2-4A94-06D5-E8E0-E486538C8ECA">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>ACTIVO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Número o Código de Identificación?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_ACTI</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;S&apos;" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_ACTI</notNullConstraintName>
+</Column>
+<Column name="FVENCIMIENTO" id="A0A41E6B-A8D1-6971-BDA2-8C0D5ECB6A74">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>F VENCIMIENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Fecha de Vencimiento de la Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Vencimiento de la Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_FVEN</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_FVEN</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="VERIFICADO_EL" id="5D551350-AA9A-2637-05C5-6D620FC3939C">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>VERIFICADO EL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Fecha cuando se verifico el documento]]></comment>
+<commentInRDBMS><![CDATA[Fecha cuando se verifico el documento]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DCID_VFEL</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DCID_VFEL</notNullConstraintName>
+</Column>
+<Column name="VERIFICADO_POR" id="4BDC265D-E33C-58FE-5D3D-A478D30FDDAF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DOCIDENTI</sourceObjSchema>
+<sourceObjName>VERIFICADO POR</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Usuario quien verifico el documento de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Usuario quien verifico el documento de identificacion]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7417924C-D3A9-1E7B-5934-24DE51E7DD9A" name="GL_DOCIDENTI_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DOCIDENTI_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26357827-B42F-9946-E791-CF6A055C9AE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="026A8E18-A734-6C24-95FC-6E003E4DDAB4" name="TP_DOCID_ID_IDE_UN">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID_IDE_UN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4"/>
+<colUsage columnID="43A64BE9-E40F-6200-2EF6-99EE772D38EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B59FD7C-D066-E0D1-3FFE-BF4A6E27DF4D" name="TP_DOCID_ID_PER_UN">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID_PER_UN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4"/>
+<colUsage columnID="5C64C104-C45F-4E0B-E15F-DCA0667E0C97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="885E5272-E49B-EE10-D865-2EB89E1B5B19" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="DOCIDENTI_AK1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOCIDENTI_AK1</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4"/>
+<colUsage columnID="5C64C104-C45F-4E0B-E15F-DCA0667E0C97"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5DCA0218-C81D-3D16-97B3-845ADE25AEA1" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="DOCIDENTI_AK2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOCIDENTI_AK2</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4"/>
+<colUsage columnID="43A64BE9-E40F-6200-2EF6-99EE772D38EE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BEC6D0C9-A905-D38F-F887-E5F82FFDE5E2" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="DOCIENTI_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DOCIENTI_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="26357827-B42F-9946-E791-CF6A055C9AE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B535F483-8127-8C17-9A14-D8ACE6BC4B30" name="DOCID_TP_DOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:58:01 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FED46CE8-98CB-3CF6-C2A3-92159EDE88C4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

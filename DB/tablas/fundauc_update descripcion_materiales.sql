@@ -1,0 +1,2 @@
+select ID,ID_METODO||'|NIVEL '||lpad(nivel,2,'0')||'|'||UTL_HORARIOS.GETHORARIO(ID_HORARIO)||'|'||to_char(utl_periodos.getPeriodoFecIniSec(ID),'DD/MM/YYYY')||'|'||utl_modalidades.getModalidad(modalidad)||'|'||id_salon 
+from secciones

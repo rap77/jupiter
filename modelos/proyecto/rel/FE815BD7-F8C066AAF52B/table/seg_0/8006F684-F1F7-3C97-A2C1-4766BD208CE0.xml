@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8006F684-F1F7-3C97-A2C1-4766BD208CE0" name="GL_MEDICO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Medicos que laboran en la institucion]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Medicos que laboran en la institucion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A16D9F8F-1A46-F354-0216-4E85B5CC873F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B4A207F6-3A62-478A-3AD8-A61E2643B8D0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B1CD2AA6-0725-3E62-A008-38CB484F867F</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_13114</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C9CE6CD9-D6F2-D5F4-07B4-176681387062" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="TIPO_MEDICO" id="483B581F-CE63-E6BF-EAC1-1CD2A45C0964">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador unico del tipo de medico]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico del tipo de medico]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>753E1123-8977-9649-C2D6-A268E7F6C943</importedID>
+<constraintName>ID}_705105345</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="EEF2DD8C-63A1-FFC8-27CD-328AB242A362" referredColumn="2802F1B6-D2CE-BCDF-5CD8-753B93AA22C3"/>
+</associations>
+</Column>
+<Column name="MATRICULA_MS" id="49D31149-1E03-5157-BC86-7779983CEC21">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D9990BDB-4F7A-4279-B439-5853D9656863</importedID>
+<constraintName>ENTERO_10}_2074374375</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6037841C-0C94-561C-AE8D-3063A04B3F81" name="GL_MEDICO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>30548CB7-DA87-946A-0965-0F0E6841BEC6</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4A207F6-3A62-478A-3AD8-A61E2643B8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C068C9E7-A380-FBB3-272F-80822D86F2EF" name="GL_MEDICO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>322614A2-DA5E-54F6-5730-38EE3FD4FD2C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4A207F6-3A62-478A-3AD8-A61E2643B8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="43FDF940-64A4-2284-3587-549528D1D443" name="GL_MEDICO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="483B581F-CE63-E6BF-EAC1-1CD2A45C0964"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="536D4FEB-DA58-FB8E-1522-51CF02A47149" name="GL_MEDICO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4A207F6-3A62-478A-3AD8-A61E2643B8D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

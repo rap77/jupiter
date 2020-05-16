@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_MEDICO_FK0" directorySegmentName="seg_0" id="15F95EB7-17CD-5C04-5391-001F8EC5F19B">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>EEF2DD8C-63A1-FFC8-27CD-328AB242A362</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>9AAE4D9C-619E-F3AE-78F0-25CAE2DE7AC2</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9524F8A9-F283-765C-BE1B-023F171F8A31</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>98600DA1-C33A-FCB8-D46C-381B13163367</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

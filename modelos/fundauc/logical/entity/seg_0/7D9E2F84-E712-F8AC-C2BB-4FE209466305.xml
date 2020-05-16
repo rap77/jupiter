@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7D9E2F84-E712-F8AC-C2BB-4FE209466305" name="GL_TIPOS_PERSONAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional</comment>
+<commentInRDBMS>Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional</commentInRDBMS>
+<generatorID>553C2CD6-2511-5DB4-BC21-B811FB615C8C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_PER</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="9A13EA35-C641-779D-E492-9725465710AB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Código del Tipo de Persona, Ej: PN. PJ. UO.</comment>
+<commentInRDBMS>Código del Tipo de Persona, Ej: PN. PJ. UO.</commentInRDBMS>
+<generatorID>6CFBB88F-421F-9080-DB86-DB3E80F62E08</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="1FCB2130-BCB3-E4D5-0551-AA70BB8F7C7D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional</comment>
+<commentInRDBMS>Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional</commentInRDBMS>
+<generatorID>06646BF7-3CC3-F0AD-06B2-050AFA9F897A</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91D9A467-0C6C-2C17-65EA-C235F71DDB8F" name="GL_TIPOS_PERSONAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>8538D78D-F64E-5C8D-B2E9-F866D1AC06EA</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>9A13EA35-C641-779D-E492-9725465710AB</newElementsIDs>
+<usedAttributes>
+<attributeRef>9A13EA35-C641-779D-E492-9725465710AB</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

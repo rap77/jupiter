@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E1696048-79A3-1F77-3111-49765F8C08F0" containerWithKeyObject="3E74F056-8F36-A6AE-2F59-0DD51FB27ADF" localFKIndex="DDFEE419-716C-3324-8171-56B8148066BF" name="FK_TIPO_EMPRESA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FK_TIPO_EMPRESA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>FK_TIPO_EMPRESA</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.TIPO_EMPRESA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A296ADB-23A0-D4CA-E28F-40BC657D9DF3</referredTableID>
+<keyObject>D19AFFAF-7F11-186F-EC87-D31A833ED02D</keyObject>
+<referredKeyID>D19AFFAF-7F11-186F-EC87-D31A833ED02D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_TIPO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

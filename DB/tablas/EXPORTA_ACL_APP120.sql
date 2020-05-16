@@ -1,0 +1,23 @@
+BEGIN
+   APEX_UTIL.set_workspace('FUNDAUC');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'DPACHECO',p_role_static_id=>'CAJERO');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'DPACHECO',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'WARTEAGA',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'EMADRIZ',p_role_static_id=>'CAJERO');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'FTORRES',p_role_static_id=>'ADMINISTRATOR');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'GRIVAS',p_role_static_id=>'SUPCONTROLEST');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'HCHAVEZ',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'HCHAVEZ',p_role_static_id=>'CAJERO');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'JPEREZ',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'LTIRADO',p_role_static_id=>'DIPLOMADOS');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'NSALINAS',p_role_static_id=>'CONTROLEST');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'PADRON',p_role_static_id=>'ADMINISTRATOR');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'PADRON',p_role_static_id=>'CAJERO');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'RLOAIZA',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'RLOAIZA',p_role_static_id=>'CAJERO');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'SLIZARDO',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'TBRICENO',p_role_static_id=>'ADMINISTRACION');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'VMENDEZ',p_role_static_id=>'CONTROLEST');
+   APEX_ACL.ADD_USER_ROLE(p_application_id=>120,p_user_name=>'VMENDEZ',p_role_static_id=>'SUPCONTROLEST');
+   COMMIT;
+END;

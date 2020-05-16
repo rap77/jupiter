@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<settings version="1.1">
+	<def_proj_path value="" />
+	<def_import_path value="" />
+	<def_save_path value="" />
+	<company_name value="" />
+	<use_page_breaks value="true" />
+	<embed_diagrams_in_reports value="true" />
+	<embed_main_diagram_in_reports value="false" />
+	<group_by_schema_name_in_report value="true" />
+	<generate_html_report_toc_in_separate_file value="true" />
+	<include_select_statement_in_view_report value="true" />
+	<def_reports_path value="" />
+	<def_saxon_path value="" />
+	<def_search_profiles_path value="" />
+	<def_sys_types_path value="/media/padron/CANON/jupiter/modelos" />
+	<last_export_folder value="" />
+	<def_ddl_files_path value="" />
+	<incl_des_name_in_ddl_files_path value="true" />
+	<printer_name value="" />
+	<paper_media_name value="iso-a4" />
+	<page_orientation value="1" />
+	<page_width value="595.0" />
+	<page_height value="842.0" />
+	<page_margin_x value="0.0" />
+	<page_margin_y value="0.0" />
+	<page_margin_width value="595.0" />
+	<page_margin_height value="842.0" />
+	<third_party_jdbc_drivers>
+	</third_party_jdbc_drivers>
+<recent_files>
+</recent_files>
+	<default_rdbms_site value="79C73AAF-E1A7-E669-7DF0-025EE81A2AFC" />
+	<default_rdbms_type value="14" />
+	<nulls_allowed value="true" />
+	<allow_similar_types_fk value="true" />
+	<fk_column_on_new_fk_option value="0" />
+	<column_default_datatype value="Dominio" />
+	<show_import_log value="true" />
+	<synchronize_tree value="false" />
+	<grid_size value="10" />
+	<new_db2_tablespace_per_table value="false" />
+	<new_db2_storagetemplate_per_tablesapce value="false" />
+	<new_db2_storagetemplate_per_index value="false" />
+	<one_db2_storagetemplate_per_ts value="false" />
+	<one_db2_storagetemplate_per_index value="false" />
+	<default_ts_storagetemplate_name value="" />
+	<default_index_storagetemplate_name value="" />
+	<db2_owner value="[Implicit]" />
+	<db2_database value="DSNDB04" />
+	<db2_trigger_name value="" />
+	<db2_sequence_name value="" />
+	<db2_auto_inc_ddl value="NONE" />
+	<db2_identity_ddl value="IDENTITY_CLAUSE" />
+	<naming_rule_tablespace_db2 value="" />
+	<naming_rule_st_tablespace_db2 value="" />
+	<naming_rule_st_index_db2 value="" />
+	<oracle_user value="PROYECTO" />
+	<oracle_tablespace value="" />
+	<oracle_trigger_name value="" />
+	<oracle_sequence_name value="" />
+	<oracle_auto_inc_ddl value="DEFAULT_CLAUSE" />
+	<oracle_identity_ddl value="IDENTITY_CLAUSE" />
+	<use_oracle_table_template value="false" />
+	<use_oracle_index_template value="false" />
+	<sql_server_database value="[None]" />
+	<sql_server_trigger_name value="" />
+	<sql_server_sequence_name value="" />
+	<sql_server_auto_inc_ddl value="NONE" />
+	<sql_server_identity_ddl value="IDENTITY_CLAUSE" />
+	<udb_owner value="[Implicit]" />
+	<udb_trigger_name value="" />
+	<udb_sequence_name value="" />
+	<udb_auto_inc_ddl value="NONE" />
+	<udb_identity_ddl value="IDENTITY_CLAUSE" />
+	<show_select_rel_model_dialog value="true" />
+	<show_confirmation_on_script_end value="true" />
+	<pk_identifying_relation value="true" />
+	<keep_fk_names_syncronized value="true" />
+	<propagate_pk_attr_notes value="false" />
+	<source_optional value="true" />
+	<target_optional value="false" />
+	<delete_fk_columns_strategy value="2" />
+	<notation value="1" />
+	<fk2pkArrow value="true" />
+	<box_in_box value="true" />
+	<autoJoinOnFK value="true" />
+	<type_subst_triggers value="true" />
+	<db2_term_char value=" " />
+	<fkarct_triggers value="true" />
+	<fk_none_transferable_triggers value="true" />
+	<use_data_type_kind_in_compare value="false" />
+	<use_schema_property_in_compare value="false" />
+	<use_columns_order_property_in_compare value="false" />
+	<include_physical_properties_in_compare value="true" />
+	<include_storage_properties_in_compare value="true" />
+	<use_case_sensitive_names_in_compare value="false" />
+	<include_system_names_in_compare value="true" />
+	<use_gen_in_ddl_in_compare value="false" />
+	<show_char_byte_in_ddl value="true" />
+	<extended_size_for_chars value="false" />
+	<show_properties_dialog_on_new value="true" />
+	<not_null_short_form_generation value="false" />
+	<use_quoted_identifiers value="false" />
+	<create_domains_during_import value="true" />
+	<replace_system_names_during_import value="true" />
+	<generate_comments_in_rdbms value="true" />
+	<generate_inline_column_cc value="false" />
+	<generate_valid_value_cc value="true" />
+	<include_default_settings_in_ddl value="false" />
+	<include_logging_in_ddl value="true" />
+	<include_schema_in_ddl value="true" />
+	<include_storage_in_ddl value="true" />
+	<include_tablespace_in_ddl value="true" />
+	<include_redaction_in_ddl value="true" />
+	<include_tsdp_in_ddl value="true" />
+	<include_prompt value="false" />
+	<include_pctfree_in_ddl value="true" />
+	<include_pctused_in_ddl value="true" />
+	<include_initrans_in_ddl value="true" />
+	<include_initialextent_in_ddl value="true" />
+	<include_nextextent_in_ddl value="true" />
+	<include_minextents_in_ddl value="true" />
+	<include_maxextents_in_ddl value="true" />
+	<include_pctincrease_in_ddl value="true" />
+	<include_bufferpool_in_ddl value="true" />
+	<include_freelists_in_ddl value="true" />
+	<include_freelistgroups_in_ddl value="true" />
+	<include_optimal_in_ddl value="true" />
+	<include_encryption_in_ddl value="true" />
+	<use_sql_dev_formatting value="true" />
+	<dialogs_settings>
+		<oracle.dbtools.crest.swingui.compare.CompareModelsDialog x="298.0" y="147.0" w="840.0" h="600.0" treepath="" />
+		<oracle.dbtools.crest.swingui.designrules.DesignRuleView x="70.0" y="27.0" w="1183.0" h="741.0" treepath="" />
+		<oracle.dbtools.crest.swingui.editor.DomainPropertiesDialogEx x="393.0" y="87.0" w="650.0" h="620.0" treepath="/Resumen" />
+		<oracle.dbtools.crest.swingui.editor.ModelPropertiesDialogEx x="418.0" y="200.0" w="650.0" h="421.0" treepath="/General" />
+		<oracle.dbtools.crest.swingui.editor.logical.AttributePropertiesDialogEx x="328.0" y="97.0" w="780.0" h="607.0" treepath="/General" />
+		<oracle.dbtools.crest.swingui.editor.logical.EntityPropertiesDialogEx x="278.0" y="117.0" w="880.0" h="602.0" treepath="/Atributos" />
+		<oracle.dbtools.crest.swingui.editor.logical.KeyPropertiesDialogEx x="337.0" y="126.0" w="734.0" h="460.0" treepath="/Atributos y Relaciones" />
+		<oracle.dbtools.crest.swingui.editor.relational.ColumnPropertiesDialogEx x="328.0" y="64.0" w="780.0" h="674.0" treepath="/Por Defecto y Restricción" />
+		<oracle.dbtools.crest.swingui.editor.relational.ForeignKeyPropertiesDialogEx x="288.0" y="115.0" w="860.0" h="571.0" treepath="/General" />
+		<oracle.dbtools.crest.swingui.editor.relational.RelationalModelDialogEx x="263.0" y="200.0" w="960.0" h="407.0" treepath="/General" />
+		<oracle.dbtools.crest.swingui.editor.relational.TablePropertiesDialogEx x="258.0" y="92.0" w="920.0" h="617.0" treepath="/Columnas" />
+		<oracle.dbtools.crest.util.gui.swing.DataTypeCellEditor x="625.0" y="225.0" w="350.0" h="170.0" treepath="" />
+	</dialogs_settings>
+	<oracle_templates>
+	</oracle_templates>
+	<default_fk_rule value="NO ACTION" />
+	<allow_columns_reorder value="false" />
+	<sync_remote_objects_on_load value="false" />
+	<surrogate_key_ldt_precision value="" />
+	<surrogate_key_domain value="null" />
+	<def_create_surrogate_key value="false" />
+	<def_use_surrogate_key value="false" />
+	<ddlexceptions>
+	</ddlexceptions>
+	<use_preferred_logical_types value="false" />
+	<preferred_logical_types>
+	</preferred_logical_types>
+	<preferred_domains>
+			<domain name="Fecha" id="C21F317A-9B57-7B9C-0294-7E819C7C026F" filename="fundauc_Domains"/>
+			<domain name="ID" id="05B35573-8C9F-1F34-7252-3B2FF719CA6A" filename="fundauc_Domains"/>
+			<domain name="ID_CHAR_1" id="17DCAFE7-53F8-530D-2A94-501D304A5376" filename="fundauc_Domains"/>
+			<domain name="ID_CHAR_2" id="A2BF0B42-8EBC-7034-A877-9691AA0C1C53" filename="fundauc_Domains"/>
+			<domain name="ID_Numero_10_0" id="9510A7FE-8694-2BF7-FD06-EF68165C8F3B" filename="fundauc_Domains"/>
+			<domain name="ID_VCHAR_3" id="195CA247-2CF8-FA74-7602-B85CB6FE606B" filename="fundauc_Domains"/>
+			<domain name="Imagen" id="529DC9E7-D30F-D2C1-FBA1-2552569B11C5" filename="fundauc_Domains"/>
+			<domain name="Integer_0_0_0" id="AB0A0267-61E6-17DE-8ABE-C485F8C67C43" filename="fundauc_Domains"/>
+			<domain name="Monto" id="D7C297F8-0C08-6663-E04A-4C607CAAD892" filename="fundauc_Domains"/>
+			<domain name="nombre_persona" id="6ABA5B58-8876-C0A1-B0A7-E54D6FBEF386" filename="fundauc_Domains"/>
+			<domain name="nombre_persona_full" id="FFC84B08-7711-C2AC-4E37-4EAE4ADF760F" filename="fundauc_Domains"/>
+			<domain name="NUMERIC_0_0_0" id="F065971F-5F2D-4203-2C9D-4B1A6EE62D18" filename="fundauc_Domains"/>
+			<domain name="NUMERIC_14_8_0" id="7B3BC9A1-D588-7F86-4A30-F0721D4BAADB" filename="fundauc_Domains"/>
+			<domain name="Numero_1_0" id="91C1C193-2C8D-8AED-FC5B-5FB2AB4C4D6C" filename="fundauc_Domains"/>
+			<domain name="Numero_10_0" id="8F04E385-223F-135A-1290-107667D2E6A7" filename="fundauc_Domains"/>
+			<domain name="Numero_3_0" id="DE260B81-9939-841F-C400-6B0C308EBF64" filename="fundauc_Domains"/>
+			<domain name="Numero_4_0" id="A1069503-EB66-FFC2-4DC5-3FF5D7DA6BF5" filename="fundauc_Domains"/>
+			<domain name="Numero_6_0" id="11CF59F6-D58B-1924-4B1D-690A0623B20C" filename="fundauc_Domains"/>
+			<domain name="Numero_6_2" id="C9C5A213-BFD6-8075-FC06-68D6D66F3808" filename="fundauc_Domains"/>
+			<domain name="Numero_9_2" id="3677928C-FE6D-5982-85F8-566D0DFD9C6E" filename="fundauc_Domains"/>
+			<domain name="Si_No_CHAR_1" id="F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2" filename="fundauc_Domains"/>
+			<domain name="Texto_10 BYTE" id="0387EC2C-BACD-D4A5-CFA8-4C146958289B" filename="fundauc_Domains"/>
+			<domain name="Texto_12 BYTE" id="49A6DEA7-158D-9A91-AA16-187D286817C2" filename="fundauc_Domains"/>
+			<domain name="Texto_15 BYTE" id="EA7F7EA8-AE87-9443-D1B2-C51545277DE6" filename="fundauc_Domains"/>
+			<domain name="Texto_20_obligatorio" id="BDE73B0E-53CD-AC87-E8FB-D79679172F97" filename="fundauc_Domains"/>
+			<domain name="Texto_240_BYTE" id="1848C593-7964-79CC-A365-8317A300C17D" filename="fundauc_Domains"/>
+			<domain name="Texto_255_BYTE" id="78673E82-63FD-97EE-9A07-1F070746CB19" filename="fundauc_Domains"/>
+			<domain name="Texto_30_BYTE" id="C069EB3F-7F90-46BD-FF34-49A9F6E6E877" filename="fundauc_Domains"/>
+			<domain name="Texto_3 BYTE" id="238A61F0-3ACD-3FF4-CEC4-8BBD2F62FAFD" filename="fundauc_Domains"/>
+			<domain name="Texto_4000 BYTE" id="B28195DB-8FD8-B6A6-8B85-E8788F650D16" filename="fundauc_Domains"/>
+			<domain name="Texto_4 BYTE" id="A1E6019C-56D2-7E53-66C2-3E5DC485D18D" filename="fundauc_Domains"/>
+			<domain name="Texto_50_BYTE" id="E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C" filename="fundauc_Domains"/>
+			<domain name="Texto_50 BYTE" id="6CCF49CE-73D5-827C-59F9-66A029D86BB7" filename="fundauc_Domains"/>
+			<domain name="Texto_5 BYTE" id="B138FE81-C5BA-4FED-688D-584C67E491CD" filename="fundauc_Domains"/>
+			<domain name="Texto_80 BYTE" id="5F6B42F8-2A8D-0AD7-BCFA-803628850554" filename="fundauc_Domains"/>
+			<domain name="Unknown" id="DOM3000004" filename="defaultdomains"/>
+			<domain name="VARCHAR_0_0_0" id="21767143-8DAE-0DE3-AF65-DFEF15927D9B" filename="fundauc_Domains"/>
+			<domain name="VARCHAR_0_0_1 CHAR" id="DFD01063-052C-BD22-8952-DFEE11325A3D" filename="fundauc_Domains"/>
+	</preferred_domains>
+	<view_naming_rule value="" />
+	<table_naming_rule value="" />
+	<reload_last_state value="false" />
+	<use_versioning_functionality value="true" />
+	<last_open_design value="/media/padron/CANON/jupiter/modelos/proyecto.dmd" />
+	<last_open_dpv value="CE54217E-47A3-4563-2C60-B3D9355A9E5C" />
+	<custom_settings>
+	</custom_settings>
+	<synchronization_types>
+		<type db="Oracle" name="CLUSTER" used="false" />
+		<type db="Oracle" name="CONTEXT" used="false" />
+		<type db="Oracle" name="DIMENSION" used="false" />
+		<type db="Oracle" name="DIRECTORY" used="false" />
+		<type db="Oracle" name="FUNCTION" used="false" />
+		<type db="Oracle" name="PACKAGE" used="false" />
+		<type db="Oracle" name="PROCEDURE" used="false" />
+		<type db="Oracle" name="ROLE" used="false" />
+		<type db="Oracle" name="SEQUENCE" used="true" />
+		<type db="Oracle" name="SYNONYM" used="false" />
+		<type db="Oracle" name="TABLESPACE" used="true" />
+		<type db="Oracle" name="TEMP TABLESPACE" used="false" />
+		<type db="Oracle" name="UNDO TABLESPACE" used="false" />
+		<type db="Oracle" name="USER" used="true" />
+		<type db="Oracle" name="MATERIALIZED VIEW LOG" used="false" />
+	</synchronization_types>
+	<search_as_u_type value="false" />
+	<search_as_u_type_start value="3" />
+	<use_db_sync_src_connection value="true" />
+	<use_db_sync_src_schema value="true" />
+	<use_db_sync_src_object value="true" />
+	<db_sync_whole_schema value="true" />
+	<db_sync_exclude_remote_objects value="true" />
+	<import_partitions value="true" />
+	<import_triggers value="true" />
+	<scan_for_used_structured_types value="false" />
+	<import_secondary_tables value="false" />
+	<import_spatial_properties value="false" />
+	<user_defined_preferences>
+	</user_defined_preferences>
+</settings>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9EA0CDDB-303E-FA08-705B-5BF95325419E" name="GL_TRATAMIENTOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tratamiento que se le da a una persona en una comunicación. Ej: Lic. Ing. Sr. Sra. Dr.</comment>
+<commentInRDBMS>Tratamiento que se le da a una persona en una comunicación. Ej: Lic. Ing. Sr. Sra. Dr.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1B7B4839-9AA5-142D-00B3-D113CEE069F1</importedID>
+<abbreviation>TTO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="C37BACF9-7DB9-52BA-A303-F62534460571">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Idetificación Interno del Tratamiento.</comment>
+<commentInRDBMS>Número de Idetificación Interno del Tratamiento.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>52E206E8-2F9B-8CE6-E05D-6BE7CE753872</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GENERO_ID" id="36576842-C604-6BC9-A9CF-DA60A5848BD0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Código del Genero o Sexo. Ej: F, M.</comment>
+<commentInRDBMS>Código del Genero o Sexo. Ej: F, M.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F6295647-5CFD-741E-D919-0847D83A6D2A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D8E875F4-7E91-F43F-EF2A-6B06A6C837E0" referredColumn="3137822B-0B8E-2D09-ED3E-CC28A60B71E3"/>
+</associations>
+</Column>
+<Column name="TRATAMIENTO_ID" id="DF2DB75A-53C0-BD8E-8446-717528BEFDFE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Tratamiento Masculino que hace pareja con Tratamiento Femenino.</comment>
+<commentInRDBMS>Número de Identificación Interno del Tratamiento Masculino que hace pareja con Tratamiento Femenino.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DC808F3B-1D92-C968-7DEF-AE88275AE191</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="77F0E8F1-C3AA-7DC0-15EA-FAA1EA85D58F" referredColumn="C37BACF9-7DB9-52BA-A303-F62534460571"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="D516F719-1C1F-91D7-ED5B-195744E448A3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Desripcion del Tratamiento. Ej. Señor, Señora</comment>
+<commentInRDBMS>Desripcion del Tratamiento. Ej. Señor, Señora</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D01AF7CB-BA70-6FC3-65DB-73DACD4AD1BE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREVIATURA" id="8AE4B9AE-F379-9028-8C56-32E22155592F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Abreviatura del Trataiento. Ej.  Sr. Sra. Ing. Ingra</comment>
+<commentInRDBMS>Abreviatura del Trataiento. Ej.  Sr. Sra. Ing. Ingra</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CFE03D73-8576-AE4B-EB2E-50360283590C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2F86644A-AC2F-6320-EF86-D027B5F40763" name="GL_TRATAMIENTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>82D7E4A8-BD5F-4EA4-C090-775CE9F3C318</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C37BACF9-7DB9-52BA-A303-F62534460571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E77DE49D-16FC-5C49-AE8E-9F2824A054FE" name="GL_TRATAMIENTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F90AC634-B07E-4EED-F359-7E7DA44580B3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C37BACF9-7DB9-52BA-A303-F62534460571"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAF38077-3A90-FCB1-C2B5-1352BEBE5A7F" name="GL_TRATAMIENTOS_GL_GENEROS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36576842-C604-6BC9-A9CF-DA60A5848BD0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1810F327-9A11-7BDA-E833-4E6C30066A16" name="TRA_TRA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DF2DB75A-53C0-BD8E-8446-717528BEFDFE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

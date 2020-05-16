@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="PROYECTO" directorySegmentName="seg_0" id="D6CEFF5F-722B-AD19-143B-1DB4A5350929">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjName>PROYECTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:04:39 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<defTableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</defTableSpace>
+<privileges>CREATE JOB, CREATE INDEXTYPE, CREATE DIMENSION, CREATE PROCEDURE, CREATE SYNONYM, CREATE SESSION, CREATE SEQUENCE, CREATE VIEW, CREATE TYPE, CREATE MATERIALIZED VIEW, CREATE TRIGGER, CREATE OPERATOR, CREATE TABLE, CREATE CLUSTER</privileges>
+<quotaItems>
+<QuotaItem class="oracle.dbtools.crest.model.design.storage.oracle.v10g.QuotaItemOraclev10g" name="QuotaItem1" id="1079C888-7787-BBC4-8A84-5BBB3667EE54">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:26:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<tableSpace>E1547FDE-9BC0-D00D-74C3-508A8840FA64</tableSpace>
+</QuotaItem>
+</quotaItems>
+</UserOraclev10g>

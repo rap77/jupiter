@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="43A65CDC-291C-CA8E-7E4A-FC864900260F" name="GL_TIPO_LOCAL">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipo de Local o Sitio: Ej. Apartamento, local]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Local o Sitio: Ej. Apartamento, local]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1123C969-9441-F084-DF4D-5A4CC42D986E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A699E8B9-EF92-686A-343B-B71B6E8DAEEB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Tipo de Local]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Tipo de Local]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F2E2E1CA-723F-322D-239A-9E4D97F416A8</importedID>
+<constraintName>ID}_1446931890</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="66FD6745-5A26-1443-63AA-35533DD7F8AE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Tipo de Local]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Local]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>54010932-BEEA-3CB8-4650-6E928478990C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ABREVIATURA" id="72CA7A6A-FB7C-F31A-E788-E1099D5B0358">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Abreviatura del Tipo de local]]></comment>
+<commentInRDBMS><![CDATA[Abreviatura del Tipo de local]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FB84EA92-1050-944E-D07C-34514FADF882</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6D5B5885-965D-2F31-DD33-0C7D420BDB5D" name="TIPO_LOCAL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8F5468C1-8764-7AB7-5C27-F1B6D92FA98E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A699E8B9-EF92-686A-343B-B71B6E8DAEEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57AF8D20-F029-0464-41B3-F55F5D368E05" name="TIPO_LOCAL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>19D8B1DF-13BF-F91E-0F40-85AAD0149DA0</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A699E8B9-EF92-686A-343B-B71B6E8DAEEB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

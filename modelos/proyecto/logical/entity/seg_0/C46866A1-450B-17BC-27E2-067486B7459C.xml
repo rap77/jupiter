@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C46866A1-450B-17BC-27E2-067486B7459C" name="GL_TIPO_LOCAL">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Tipo de Local o Sitio: Ej. Apartamento, local]]></commentInRDBMS>
+<generatorID>43A65CDC-291C-CA8E-7E4A-FC864900260F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="FAD0FE02-6E88-E2DF-2B97-41FB1A31EBB7">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Identificador Unico del Tipo de Local]]></commentInRDBMS>
+<generatorID>A699E8B9-EF92-686A-343B-B71B6E8DAEEB</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1446931890</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="084676AD-23AA-91E7-7943-6FD8145D3231">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion del Tipo de Local]]></commentInRDBMS>
+<generatorID>66FD6745-5A26-1443-63AA-35533DD7F8AE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ABREVIATURA" id="2A0267E8-08CB-399F-A495-44AB7D6003D6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Abreviatura del Tipo de local]]></commentInRDBMS>
+<generatorID>72CA7A6A-FB7C-F31A-E788-E1099D5B0358</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8FA351D2-E505-3335-84AD-A058D8F91AEF" name="TIPO_LOCAL_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>6D5B5885-965D-2F31-DD33-0C7D420BDB5D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FAD0FE02-6E88-E2DF-2B97-41FB1A31EBB7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

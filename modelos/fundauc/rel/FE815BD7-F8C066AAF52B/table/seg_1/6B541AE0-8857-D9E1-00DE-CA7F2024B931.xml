@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="6B541AE0-8857-D9E1-00DE-CA7F2024B931" name="GL_TIPOS_UNIDADES_ORG">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipos de Unidad Organizacional Ej: Direccion, Departamento,Seccion, Fundacion,</comment>
+<commentInRDBMS>Tipos de Unidad Organizacional Ej: Direccion, Departamento,Seccion, Fundacion,</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A7611C48-560B-DDEF-8793-30AAD051176D</importedID>
+<abbreviation>TP_UNI_ORG</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="79FABB47-BF5E-D781-F6C0-F4425957DEF0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador Unico del Tipo de Unidad Organizacional</comment>
+<commentInRDBMS>Identificador Unico del Tipo de Unidad Organizacional</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>298FF00E-F5B5-8E0D-B45F-737E921F4725</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="DESCRIPCION" id="ED321A9B-998A-33B0-6EB2-EFA9EF9522B4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción del TIpo de Unidad Organizacional</comment>
+<commentInRDBMS>Descripción del TIpo de Unidad Organizacional</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>041AB9EB-9B0C-AD2B-02D4-B0D9E67437AD</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4C3CEA27-3876-DA68-41FF-ACF6203D04E9" name="GL_TIPOS_UNIDADES_ORG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F0391B3E-78FE-9548-1859-428BE0C2E173</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79FABB47-BF5E-D781-F6C0-F4425957DEF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="521147DB-321B-AA60-BFAA-5258419FE750" name="PL_TIPO_UNIDAD_ORG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>70D795D7-1706-C164-FB4E-F54DA67307D1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79FABB47-BF5E-D781-F6C0-F4425957DEF0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

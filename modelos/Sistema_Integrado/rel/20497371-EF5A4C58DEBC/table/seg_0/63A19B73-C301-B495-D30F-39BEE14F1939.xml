@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="63A19B73-C301-B495-D30F-39BEE14F1939" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_OPCIONES_MENU">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_OPCIONES_MENU</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Opciones del Menu de Cada Sistema]]></comment>
+<commentInRDBMS><![CDATA[Opciones del Menu de Cada Sistema]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="EE869E62-754F-A68A-A9C5-A3E0A605F936">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_OM_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_OM_ID</notNullConstraintName>
+</Column>
+<Column name="OP_MEN_ID" id="B765BC70-B788-7228-6455-02D66D517F8D">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>OP_MEN_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[identificador unico de opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de opcion de menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_OM_OM_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_OM_OM_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="6D158DD6-26B4-EFCA-228F-89ABB9489366" referredColumn="EE869E62-754F-A68A-A9C5-A3E0A605F936"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="010834CB-6B68-4336-C758-1CF831ABD8B3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Descripcion de la opcion del menu]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la opcion del menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_OM_DES</notNullConstraintName>
+</Column>
+<Column name="URL" id="72744CF9-B38B-970C-92A4-1F9611A586C1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>URL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[direccion url de la opcion de menu]]></comment>
+<commentInRDBMS><![CDATA[direccion url de la opcion de menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>240 BYTE</dataTypeSize>
+<ownDataTypeParameters>240 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_OM_URL</notNullConstraintName>
+</Column>
+<Column name="ORDEN_DISPLAY" id="AD567655-0DE1-939E-8D74-2262A545FFB9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>ORDEN DISPLAY</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[orden en que se desplegan las opciones del menu]]></comment>
+<commentInRDBMS><![CDATA[orden en que se desplegan las opciones del menu]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_OM_OD</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition=" &quot;ORDEN_DISPLAY&quot; &gt;= 0
+                                               AND &quot;ORDEN_DISPLAY&quot; &lt;= 999999 "/>
+<implementationDef dbType="Oracle Database 12cR2" definition=" &quot;ORDEN_DISPLAY&quot; &gt;= 0
+                                               AND &quot;ORDEN_DISPLAY&quot; &lt;= 999999 "/>
+</checkConstraint>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>CK_OM_OD</notNullConstraintName>
+</Column>
+<Column name="PAGINA_ID" id="33A09E90-580C-87B4-2AEB-C25D1339EBF3">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>PAGINA_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[numero de pagina asociada a la opcion de menu en caso de APEX]]></comment>
+<commentInRDBMS><![CDATA[numero de pagina asociada a la opcion de menu en caso de APEX]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_OM_PAG</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_OM_PAG</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESPLEGAR" id="B3A3F2F9-E805-A3F5-8745-26AD4B8553ED">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_OPCIONES_MENU</sourceObjSchema>
+<sourceObjName>DESPLEGAR EN MENU</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[esta opcion va a ser desplegada en el menu?]]></comment>
+<commentInRDBMS><![CDATA[esta opcion va a ser desplegada en el menu?]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_OM_DESP</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition=" &quot;DESPLEGAR&quot; = &apos;N&apos;
+                                            OR &quot;DESPLEGAR&quot; = &apos;S&apos; "/>
+<implementationDef dbType="Oracle Database 12cR2" definition=" &quot;DESPLEGAR&quot; = &apos;N&apos;
+                                            OR &quot;DESPLEGAR&quot; = &apos;S&apos; "/>
+</checkConstraint>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_OM_DESP</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9FB551DF-1C6A-CCE6-BF43-A399D566EDCF" name="SG_OPCIONES_MENU_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_OPCIONES_MENU_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE869E62-754F-A68A-A9C5-A3E0A605F936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1B3C62C-251C-40EE-124D-6E878BEB2EB5" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_OPCION_MENU_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_OPCION_MENU_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE869E62-754F-A68A-A9C5-A3E0A605F936"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F976A0E-3634-2583-6F72-FD18620796CC" name="OP_MEN_OP_MEN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B765BC70-B788-7228-6455-02D66D517F8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,361 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B07B2770-8939-35EF-1033-1BA58E764EE5" name="GL_DIRECCIONES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Dirección. Ej: 1 Avenidad Bolivar, Edficio Poliven, Piso 8, Oficina 4, Camoruco, San José, Valencia. Edo Carabobo]]></comment>
+<commentInRDBMS><![CDATA[Dirección. Ej: 1 Avenidad Bolivar, Edficio Poliven, Piso 8, Oficina 4, Camoruco, San José, Valencia. Edo Carabobo]]></commentInRDBMS>
+<generatorID>835A1A86-118B-3F88-C283-E7DD8B0F50F5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>DIR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="E3A8AF2A-B805-0657-5089-C8FB66EDAE69">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Dirección.]]></commentInRDBMS>
+<generatorID>79DCAFF5-84C9-1154-BC9B-5E07EC8F5D3A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_DIR_ID" id="03FBFFFF-3F48-6B55-656A-FDE6424CC0E0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección. Número de Identificación Interno del Tipo de Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección. Número de Identificación Interno del Tipo de Dirección.]]></commentInRDBMS>
+<generatorID>457F6D09-8980-77D3-6725-1B72AE0418CE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>69763D3F-2DD8-924B-4B82-C50A49DE1770</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_VIA_ID" id="D3CFE221-A719-2519-A6EB-4D3B78124FFC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Via de la Dirección. Número de Identificación Interno del Tipo de Via.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Via de la Dirección. Número de Identificación Interno del Tipo de Via. eJ Avenida, Calle]]></commentInRDBMS>
+<generatorID>3593F719-8C12-06EF-EEEF-E25401AB9118</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>075CCEE5-0C9D-8565-1409-EEF84AF918E5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VIA" id="B08AAE38-2240-6CC2-14EC-0207C404F1A5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Via de la Dirección: Ej: Avenida Bolivar.]]></comment>
+<commentInRDBMS><![CDATA[Via de la Dirección: Ej: Avenida Bolivar. Calle 197]]></commentInRDBMS>
+<generatorID>5CCDF923-295F-06AF-AEF5-CB078D4619ED</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_EDIF_ID" id="C56C6108-9217-BE77-90B5-64D73E43474F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipo de Edificación de la Dirección. Número de Identificación Interna del Tipo de Edificación.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Edificación de la Dirección. Número de Identificación Interna del Tipo de Edificación.Ej Edificio, Casa]]></commentInRDBMS>
+<generatorID>83D68D90-0119-FEF9-381F-8D8802E727B5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>EEE7E24A-B80C-E33C-57D3-2B9EC4EAA4E1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="EDIFICACION" id="AA140CCE-30D6-6477-AC9C-0DD6D1EE3C72">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Edficación de la Dirección. Ej: Edificio La Estrella]]></comment>
+<commentInRDBMS><![CDATA[Edficación de la Dirección. Ej: Edificio La Estrella]]></commentInRDBMS>
+<generatorID>CFB64100-6A46-19D5-4E16-5DB93AD73FD7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NUMERO EDIFICACION" id="C67B8485-7ADD-EDF6-DABC-197A146F1255">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de la Edificación de la Dirección. Ej: 120-34]]></comment>
+<commentInRDBMS><![CDATA[Número de la Edificación de la Dirección. Ej: 120-34]]></commentInRDBMS>
+<generatorID>6F505F52-1967-1D59-31C1-3E5E91819530</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PISO EDIFICACION" id="18BEC670-8A45-8240-73D8-33C0191C2D0F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Piso de la Edificación. Ej: Piso 8.]]></comment>
+<commentInRDBMS><![CDATA[Número de Piso de la Edificación. Ej: Piso 8.]]></commentInRDBMS>
+<generatorID>7E787AFD-B38A-F2BA-519A-8AEF1C8141B3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APARTAMENTO" id="26041DD1-CD8F-06F3-A6CF-1AE0636F3AE4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Numero de Apartamento de la Dirección. Ej: Apertamento 8H.]]></comment>
+<commentInRDBMS><![CDATA[Numero de Apartamento de la Dirección. Ej: Apertamento 8H.]]></commentInRDBMS>
+<generatorID>E3BD25A4-353C-D603-8BDF-5EF781CF267D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="URB_ID" id="F52FCFD4-4B1E-B2DC-CFD3-603159393B89">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Urbanización o Barrio de la Dirección. Número de Identificación Interna de la Urbanización o Barrio.]]></comment>
+<commentInRDBMS><![CDATA[Urbanización o Barrio de la Dirección. Número de Identificación Interna de la Urbanización o Barrio.]]></commentInRDBMS>
+<generatorID>5B113AAC-EDAB-D86B-5DC5-8EEBE5219E56</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>73D11F3D-90E3-447F-748C-8C281FA529C2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CIU_ID" id="B1999C80-8B0A-BA2C-5006-CAF00ABC7F97">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Ciudad, Población o Caserio de la Dirección. Número de Identificación Interno de la Ciudad Población o Caserio.]]></comment>
+<commentInRDBMS><![CDATA[Ciudad, Población o Caserio de la Dirección. Número de Identificación Interno de la Ciudad Población o Caserio.]]></commentInRDBMS>
+<generatorID>0EC9204B-2F9F-4659-EC5A-14016275ED3E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E58C7063-DA2B-017F-27DF-C5E1B1610C2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MUN_ID" id="71A9493F-5DA2-D9EB-F824-3F40166635FE">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<generatorID>53D5A7D1-F705-C449-1AD8-4888739B28B0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C1B2E7DD-0945-1BA3-2C3B-CF0172F1FD29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="REFERENCIA" id="B95F728E-EF06-6E38-B870-9D92A0C61162">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Referencias de la Dirección. Ej: Al lado de Supermercado XYZ.]]></comment>
+<commentInRDBMS><![CDATA[Referencias de la Dirección. Ej: Al lado de Supermercado XYZ.]]></commentInRDBMS>
+<generatorID>A8283575-09C6-5280-7807-16CA2D9DC9F8</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ACTIVA" id="21827320-B519-5F66-FFBA-0474D68613EB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Está activa la Dirección?. Ej: S,N.]]></comment>
+<commentInRDBMS><![CDATA[Está activa la Dirección?. Ej: S,N.]]></commentInRDBMS>
+<generatorID>60E653A4-66A9-A744-6135-8C8CE74940F3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CK_DIR_ACTIVA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ZON_POS_ID" id="71AEDC85-7400-FDD2-000B-7620B57DCF3F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Zona Postal]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Zona Postal]]></commentInRDBMS>
+<generatorID>3DFD10EF-41E2-73C9-13EF-FC614B9BC336</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9C640855-4E6D-DA1F-AA9E-98E78783BE7B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_ZON_ID" id="D23D5CE1-D403-89D9-691B-BA9B03D725B1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[id del tipo de la zona]]></comment>
+<commentInRDBMS><![CDATA[id del tipo de la zona]]></commentInRDBMS>
+<generatorID>D9FB52EE-88B3-9AB6-373B-06125B03CAE0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>108D8BBE-91C6-32A1-005A-B7F4A8F2743D</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PER_ID" id="C72DC0D6-81CD-74BF-170C-E8D1F34ADD80">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<generatorID>72CB5D86-BE5D-4933-0D42-9D96227738DD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_LOC_ID" id="032BE993-88E0-E89D-AD6C-4E703459EBA6">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Tipo de Local]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Tipo de Local]]></commentInRDBMS>
+<generatorID>E6F3CC2A-DC45-ABC0-D27B-F04001AD6FE8</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FAD0FE02-6E88-E2DF-2B97-41FB1A31EBB7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PARR_ID" id="277F0505-56A9-C38E-0395-77D05CE331AD">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-10 15:39:18 UTC</createdTime>
+<comment><![CDATA[Parroquia de la Dirección. Número de Identificación Interna de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Parroquia de la Dirección. Número de Identificación Interna de la Parroquia.]]></commentInRDBMS>
+<generatorID>7FA688EA-98F0-5341-12AC-1F0B33FC903C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FAF398CF-6BC1-E0CD-E105-2D7DB97FA983</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE078EAC-2683-E8CC-C551-D7A4703F703F" name="GL_DIRECCIONES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>64D663AD-25E3-EA50-235B-B307D1AC7CD7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>E3A8AF2A-B805-0657-5089-C8FB66EDAE69</newElementsIDs>
+<usedAttributes>
+<attributeRef>E3A8AF2A-B805-0657-5089-C8FB66EDAE69</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

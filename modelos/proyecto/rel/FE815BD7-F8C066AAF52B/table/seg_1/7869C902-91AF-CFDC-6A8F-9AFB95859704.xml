@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="7869C902-91AF-CFDC-6A8F-9AFB95859704" name="RH_TRABAJADOR">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Trabajadores de la Institucion]]></comment>
+<commentInRDBMS><![CDATA[Trabajadores de la Institucion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C2322503-5C77-DFC6-1897-36B9D9B4772C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A9B1D90B-AD63-FE7E-DE80-2261176C75EF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>47C98CC8-3757-C448-8927-E2EFC31A6668</importedID>
+<constraintName>ID}_1244562833</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="A3E49D22-E8A4-B672-7BE9-C0310B308531" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="FECHA_INGRESO" id="2F59F713-7429-7B2D-6BF4-94885A71E6BC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Ingreso del Trabajador en la Institucion]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Ingreso del Trabajador en la Institucion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CA97E32B-B2AD-C7F0-9A2D-A4BA25B29259</importedID>
+<constraintName>FECHA}_829315911</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_EGRESO" id="B561168A-CD48-E8AA-37A0-BB8C72E516AE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Egreso del Trabajador en la Institucion]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Egreso del Trabajador en la Institucion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>561545BD-794C-9D11-A90E-14ADB5E5CF7D</importedID>
+<constraintName>FECHA}_1153985746</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_EFECTIVA_NOMINA" id="5A2BBBA9-E694-F363-E6F7-8A5CA7ED68EB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha en que fue efectiva la entrada del trabajador en nomina]]></comment>
+<commentInRDBMS><![CDATA[Fecha en que fue efectiva la entrada del trabajador en nomina]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4F7490EB-8470-B594-6F98-20C0451C4E67</importedID>
+<constraintName>FECHA}_2036819085</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_VENC_CONTRATO" id="74C8A041-E999-B04D-4520-F9C58D90D7C2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de Vencimiento de Contrato]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Vencimiento de Contrato]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>531977C4-BADA-CF26-BA42-C72CE3368F78</importedID>
+<constraintName>FECHA}_875187316</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9244CDFF-F1B8-DB1D-6ECD-18CEE4802EB0" name="RH_TRABAJADOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EE78C301-B133-5092-6756-D0E512FC9116</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9B1D90B-AD63-FE7E-DE80-2261176C75EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D167E07D-D88D-9609-8C97-EF975674EB40" name="RH_TRABAJADOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3081F0F8-470C-6FD5-1A04-84FF28782040</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9B1D90B-AD63-FE7E-DE80-2261176C75EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="87C8990A-B917-2403-6742-83E340FAE1A4" name="RH_TRABAJADOR_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9B1D90B-AD63-FE7E-DE80-2261176C75EF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="861099AC-2013-F158-FAE4-AB716CB0A844" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="TS_USOS_CUENTAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:15:16 UTC</createdTime>
+<comment><![CDATA[Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.]]></comment>
+<commentInRDBMS><![CDATA[Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>USO_CTA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0CFFD27C-DDFF-48FE-39E1-08DF5D9FD4F7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:15:16 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Uso de la Cuenta.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Uso de la Cuenta.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UCTA_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UCTA_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="63970D72-5F29-B9D8-EE5E-EE49D96D74E1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:15:16 UTC</createdTime>
+<comment><![CDATA[Descripción del Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Uso de la Cuenta Bancaria. Pago de Nómina. Pago de Proveedores.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UCTA_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0FCBBC01-1F2E-5FBE-EEA3-85DF5908E4A7" name="TS_USOS_CUENTAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:15:16 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CFFD27C-DDFF-48FE-39E1-08DF5D9FD4F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9637F7F-0F71-1416-0D3C-BC029D1E1EF9" name="TS_USO_CUENTA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:15:16 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0CFFD27C-DDFF-48FE-39E1-08DF5D9FD4F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

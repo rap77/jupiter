@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BA193C7F-F550-522C-4264-6CF1C92E38B7" containerWithKeyObject="3A2CBE07-39BB-771B-22B6-55DCD560FDFD" localFKIndex="539CFC1F-07F6-F93D-7F7E-122748230C5F" name="ESTUDIANTE_CIUDADES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:56:56 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.CIUDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>31403E78-8658-56AD-5682-2BD41D12FAC1</referredTableID>
+<keyObject>D1AB7AC3-E1D4-CDC6-5DA3-9395EA6B73E0</keyObject>
+<referredKeyID>D1AB7AC3-E1D4-CDC6-5DA3-9395EA6B73E0</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CIUDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

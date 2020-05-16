@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_AI_FACTURA_DEPOSITO" directorySegmentName="seg_0" id="544B6E31-7C4D-8A32-18B0-E1CDCC9B7313">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>T_AI_FACTURA_DEPOSITO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>DECLARE&lt;br/&gt;tmpVar NUMBER;&lt;br/&gt;/******************************************************************************&lt;br/&gt;   NAME:       T_AI_FACTURA&lt;br/&gt;   PURPOSE:    &lt;br/&gt;&lt;br/&gt;   REVISIONS:&lt;br/&gt;   Ver        Date        Author           Description&lt;br/&gt;   ---------  ----------  ---------------  ------------------------------------&lt;br/&gt;   1.0        07/10/2015      Rafael Padron       1. Created this trigger.&lt;br/&gt;&lt;br/&gt;   NOTES:&lt;br/&gt;&lt;br/&gt;   Automatically available Auto Replace Keywords:&lt;br/&gt;      Object Name:     T_AI_FACTURA&lt;br/&gt;      Sysdate:         07/10/2015&lt;br/&gt;      Date and Time:   07/10/2015, 8:52:06, and 07/10/2015 8:52:06&lt;br/&gt;      Username:        Rafael Padron (set in TOAD Options, Proc Templates)&lt;br/&gt;      Table Name:      FACTURA (set in the &quot;New PL/SQL Object&quot; dialog)&lt;br/&gt;      Trigger Options:  (set in the &quot;New PL/SQL Object&quot; dialog)&lt;br/&gt;******************************************************************************/&lt;br/&gt;BEGIN&lt;br/&gt;&lt;br/&gt;   select programa into :NEW.PROGRAMA from factura where id_fact=:NEW.id_fact;&lt;br/&gt;&lt;br/&gt;   EXCEPTION&lt;br/&gt;     WHEN OTHERS THEN&lt;br/&gt;       -- Consider logging the error and then re-raise&lt;br/&gt;       RAISE;&lt;br/&gt;END T_AI_FACTURA;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>97FD16BA-5F38-1D61-ED7A-CBFAE1D2218C</owner>
+<table>AD291253-0627-9CCC-DA72-CAE57424567F</table>
+</TriggerOraclev10g>

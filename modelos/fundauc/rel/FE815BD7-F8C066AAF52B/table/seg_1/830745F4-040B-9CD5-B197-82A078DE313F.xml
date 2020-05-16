@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="830745F4-040B-9CD5-B197-82A078DE313F" name="PC_TIPO_UNIDAD_MEDIDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipos de unidades de medida&lt;br&gt;Ej. de tiempo, de masa, de volumen, longitud</comment>
+<commentInRDBMS>Tipos de unidades de medida&lt;br&gt;Ej. de tiempo, de masa, de volumen, longitud</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3EA0D872-28BA-81AF-6708-2C1F25E9A765</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="77960E7F-8BFF-877B-7622-DA7F9190D447">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Numero de Identificacion Interno de la Unidad de Medida.</comment>
+<commentInRDBMS>Numero de Identificacion Interno de la Unidad de Medida.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>644A7F12-46DD-1C2F-5AB5-1C0D6E410394</importedID>
+<constraintName>ID}_80935729</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="6B33185A-9D7A-FBD9-97D8-85EAB0585DA7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del tipo de unidad de medida,&lt;br&gt;Longitud, tiempo, masa</comment>
+<commentInRDBMS>Descripcion del tipo de unidad de medida,&lt;br&gt;Longitud, tiempo, masa</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6CA895D4-7735-5710-0E2C-09B364AE9D75</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BCC842EC-FBBC-AAA2-A9FF-FC0562E71C6A" name="CP_TIPO_UNIDAD_MEDIDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>00FB9CDC-AD37-5546-BC81-087AF2E5186E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77960E7F-8BFF-877B-7622-DA7F9190D447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9A89E107-E14B-8427-550A-3D77B2D539D6" name="CP_TIPO_UNIDAD_MEDIDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>85AB9218-0605-450E-E7C6-E6CDBBF5A0DF</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77960E7F-8BFF-877B-7622-DA7F9190D447"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

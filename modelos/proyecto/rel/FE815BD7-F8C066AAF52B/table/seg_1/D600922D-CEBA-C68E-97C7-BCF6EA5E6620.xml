@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="D600922D-CEBA-C68E-97C7-BCF6EA5E6620" name="IN_CATALOGO_BIENES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene el Cataogo de Bienes]]></comment>
+<commentInRDBMS><![CDATA[Contiene el Cataogo de Bienes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E0F4EDBA-015D-ED58-8040-5466842E14F3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5ABEBB51-EF34-07EE-6FD2-090AB475CAD4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D6BAF85D-5E67-77E2-53D1-374DCDA00A40</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_PADRE" id="86A66424-6A67-0187-49AC-86FC61E2AC98">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>78F6EC39-0E55-0691-B025-2EF74E2A440F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EE89DFD4-64D2-9139-860D-C9BEA8395EE4" referredColumn="5ABEBB51-EF34-07EE-6FD2-090AB475CAD4"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_ACTIVO" id="D1FA85D2-45D7-195E-BFD8-B4D5771FC4A2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de activo]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de activo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DC3599FC-44FA-1464-D087-8BF6CCA746FC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85A40197-3207-81BD-AF5A-69178D770615" referredColumn="2E716F09-9ADA-E8E1-BC53-69B4D22B0E9A"/>
+</associations>
+</Column>
+<Column name="ID_CATEGORIA_BIEN" id="7288446B-617C-8304-EC89-028B46F2A65B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único de la Categoria del bien]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de la Categoria del bien]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D5D4845B-013E-C4AC-5978-14C9533A66A8</importedID>
+<constraintName>ID}_487865717</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="4DD9C893-B0B9-9BF9-DD6D-5D17941FEF2C" referredColumn="C13BB9EC-51CA-21A9-C0C3-23C36E689BEC"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="DCD57782-6AD4-2457-7EE3-363D7040216E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A0FC07A3-F933-A620-28E8-0B3EC980ACBE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DDB87AC8-DB63-D6C5-2306-BFED08D2B384" name="IN_CATALOGO_BIENES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8C0336EA-ADA3-AC3B-3253-3506E4A24472</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ABEBB51-EF34-07EE-6FD2-090AB475CAD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B28FADA9-903A-2293-1CBE-5144D3E1C8ED" name="IN_CATALOGO_BIENES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0366DB52-6842-2ED5-E8E7-D60F0E8C938E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5ABEBB51-EF34-07EE-6FD2-090AB475CAD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DF988FFF-88B5-64C7-1391-EC1B8A9C4850" name="IN_CATALOGO_BIENES_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86A66424-6A67-0187-49AC-86FC61E2AC98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0030251A-F4F0-2D72-4C9A-0DAE901BA7DB" name="IN_CATALOGO_BIENES_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1FA85D2-45D7-195E-BFD8-B4D5771FC4A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62B35C7D-02BB-93BD-0F8E-C04B9C52C0F3" name="IN_CATALOGO_BIENES_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7288446B-617C-8304-EC89-028B46F2A65B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FECF581-8954-30BE-0122-111C94A39A91" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_USUARIOS_ROLES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIOS_ROLES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Perfiles del Usuario. Ej: HVILLAQU TRAPLA]]></comment>
+<commentInRDBMS><![CDATA[Perfiles del Usuario. Ej: HVILLAQU TRAPLA]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ROL_ID" id="4A858654-5D0D-A61D-43F6-FC39D31B27E5">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS_ROLES</sourceObjSchema>
+<sourceObjName>ROL_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Código del Perfil.]]></comment>
+<commentInRDBMS><![CDATA[Código del Perfil.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UROL_ROL_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_URON_ROL_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="105DA8F7-0DFC-27A3-D054-8E933C7525A5" referredColumn="2FD65436-B82D-2998-FC28-67E89A650A42"/>
+</associations>
+</Column>
+<Column name="USUARIO_ID" id="49FD13A3-C92B-3B71-4BF7-6CAD58301AE2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>SG_USUARIOS_ROLES</sourceObjSchema>
+<sourceObjName>USU_PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_UROL_USR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_UROL_USR_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="786C3394-94E9-430A-F92A-9AE2B529F0A7" referredColumn="D61BCAA7-9573-3925-1E1B-45BC2770AD13"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9315C1FD-17EA-4433-5DF3-4C1D97709481" name="SG_USUARIOS_ROLES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIOS_ROLES_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A858654-5D0D-A61D-43F6-FC39D31B27E5"/>
+<colUsage columnID="49FD13A3-C92B-3B71-4BF7-6CAD58301AE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3778ECFE-97C1-80FA-1541-2E58E7694A2E" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="SG_USUARIO_ROL_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SG_USUARIO_ROL_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A858654-5D0D-A61D-43F6-FC39D31B27E5"/>
+<colUsage columnID="49FD13A3-C92B-3B71-4BF7-6CAD58301AE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C9FE640-ADAC-34E4-D1A3-9F85F3434165" name="USU_ROL_ROL_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A858654-5D0D-A61D-43F6-FC39D31B27E5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BDC2078C-3C90-010E-C778-D8FC2FD6E182" name="USU_ROL_USU_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49FD13A3-C92B-3B71-4BF7-6CAD58301AE2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

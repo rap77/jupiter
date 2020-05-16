@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IN_PRODUCTO_ADQUIRIDO_FK1" directorySegmentName="seg_1" id="5ADC7A4C-4D91-4C1A-4A90-FFDE1B82CCD3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>3FD7F9B1-5387-C01C-B229-99256371F985</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>0521B2DA-68DB-B138-47BA-4C7C1A451281</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>24548CA0-2BDA-34EF-EEB8-13E86FED5E52</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B26FE217-B902-3E50-7B78-CA66FD038F0B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E68B8CB4-D350-B223-A1C0-AABF891B03D1" name="CP_ALMACENES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Almacenes o depositos que llevan un inventario]]></comment>
+<commentInRDBMS><![CDATA[Almacenes o depositos que llevan un inventario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5D2BD485-F8CC-43CC-515E-2032CCEE0F8A</importedID>
+<ordsAlias>cp_almacen</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3F69E09B-97FA-BF48-DB25-15B49A72AD10">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[identificador unico de almacen]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de almacen]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4D4D63AA-2351-5A1D-1F19-336DCA14EE63</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="DESCRIPCION" id="5974C5D3-C11E-3264-BB13-1143BC2BCD62">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Descripcion del almacen]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del almacen]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>03DCA9ED-16A2-6B88-77A7-1987906F7F14</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CA2CB9C-4117-C469-AF19-9D437333DE73" name="CP_ALMACENES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BBA864AF-7233-D12E-25B3-941A197F2E74</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F69E09B-97FA-BF48-DB25-15B49A72AD10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C531FB7A-3787-F1A1-A9C7-552CB30E7895" name="CP_ALMACENES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4FEEEF30-3A7D-D968-14F7-773974C9A447</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3F69E09B-97FA-BF48-DB25-15B49A72AD10"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

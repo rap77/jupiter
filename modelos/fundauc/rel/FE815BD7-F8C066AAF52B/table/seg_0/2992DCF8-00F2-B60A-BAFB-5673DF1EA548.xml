@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2992DCF8-00F2-B60A-BAFB-5673DF1EA548" name="CP_TIPO_EMPAQUE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipo de Empaque: Caja, Blister, Paquete</comment>
+<commentInRDBMS>Tipo de Empaque: Caja, Blister, Paquete</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DE72396C-E531-E974-20DC-C7DE4854A6FA</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D5922219-26FB-8E74-78FB-6A46083349DB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>identificador unico del tipo de empaque</comment>
+<commentInRDBMS>identificador unico del tipo de empaque</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D608C987-6936-4E07-AC3E-B2CB0F795E32</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="DESCRIPCION" id="5A5D663F-840C-B5E4-A848-73630E076D80">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>descripcion del tipo de empaque,&lt;br&gt;ej. caja, paquete, bolsa, frasco</comment>
+<commentInRDBMS>descripcion del tipo de empaque,&lt;br&gt;ej. caja, paquete, bolsa, frasco</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>14099CEF-466B-5A26-42B8-0D82034776A9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C7A95A4-0D01-2149-E4C9-2093765C4CED" name="CP_TIPO_EMPAQUE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>37FF2484-CD64-7541-4A46-36F7A5C23C0E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5922219-26FB-8E74-78FB-6A46083349DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="768F0E24-C531-33AB-A599-510FDD185AC5" name="CP_TIPO_EMPAQUE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>544013F6-0557-629D-923E-01428B8BFE6C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5922219-26FB-8E74-78FB-6A46083349DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

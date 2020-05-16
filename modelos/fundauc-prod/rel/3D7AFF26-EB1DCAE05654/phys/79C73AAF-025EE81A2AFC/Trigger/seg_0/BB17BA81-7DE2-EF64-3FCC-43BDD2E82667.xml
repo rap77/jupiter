@@ -1,0 +1,25 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="INSCRIPCIONES_TRG" directorySegmentName="seg_0" id="BB17BA81-7DE2-EF64-3FCC-43BDD2E82667">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>INSCRIPCIONES_TRG</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[DECLARE
+    p_estudiante_rec fundauc.tapi_estudiante.estudiante_rt;
+BEGIN
+  <<COLUMN_SEQUENCES>>
+    BEGIN
+    IF INSERTING AND :NEW.ID IS NULL THEN
+      SELECT INSCRIPCIONES_SEQ.NEXTVAL INTO :NEW.ID FROM SYS.DUAL;
+    END IF;
+  END COLUMN_SEQUENCES;
+END;
+
+]]></body>
+<triggerTime>BEFORE</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>CCA2DD7B-9392-63DC-5D5B-BDAA26975D7A</table>
+</TriggerOraclev10g>

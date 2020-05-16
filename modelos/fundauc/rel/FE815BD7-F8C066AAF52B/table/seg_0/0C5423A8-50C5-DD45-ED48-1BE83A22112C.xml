@@ -1,0 +1,697 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0C5423A8-50C5-DD45-ED48-1BE83A22112C" name="GL_PERSONAS_NATURALES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Persona Natural. 3 José Angel Ferreira Garcia ...</comment>
+<commentInRDBMS>Persona Natural. 3 José Angel Ferreira Garcia ...</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>08F44C0B-77D3-72D4-6815-428BFE65DA39</importedID>
+<abbreviation>PER_NAT</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3EB169CB-398D-1DCA-9211-21E89BA06B36">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F9A78187-37F7-1F88-DDB5-5CA436601C70</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ABCA3F3C-D338-A837-DF46-47206786FFFC" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="GENERO_ID" id="2A72A893-112F-7036-48F8-20EE3F19EC9E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.</comment>
+<commentInRDBMS>Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1D324A47-5AC2-7E4A-0C87-78474261A061</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DF6A8DDB-EEC9-DE67-9E87-D1C29754EF35" referredColumn="3137822B-0B8E-2D09-ED3E-CC28A60B71E3"/>
+</associations>
+</Column>
+<Column name="TRATAMIENTO_ID" id="292BE433-C172-16C6-53EF-F9068B105A22">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.</comment>
+<commentInRDBMS>Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>21F9FAAE-D1C1-2744-B292-375F92B09B86</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6EB877E3-D90C-CF82-9CBD-D2421F7F7ADD" referredColumn="C37BACF9-7DB9-52BA-A303-F62534460571"/>
+</associations>
+</Column>
+<Column name="PRIMER_NOMBRE" id="C715A3B2-3E65-DFD9-3F4A-F0AEC776494F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Primer Nombre de la Persona Natural. Ej: José.</comment>
+<commentInRDBMS>Primer Nombre de la Persona Natural. Ej: José.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7F75288E-1AC4-4F8D-1B10-D91620DA5583</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_NOMBRE" id="2F2D5336-2056-5CCC-B067-7AA40647C2D9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Segundo Nombre de la Persona Natural. Ej: Angel.</comment>
+<commentInRDBMS>Segundo Nombre de la Persona Natural. Ej: Angel.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8C6048F7-09DD-C38D-98E2-40A9721F4A42</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIMER_APELLIDO" id="260D2204-08E0-15ED-5222-DE829D0D90DD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Primer Apelllido de la Persona Natural. Ej: Ferreira.</comment>
+<commentInRDBMS>Primer Apelllido de la Persona Natural. Ej: Ferreira.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BBCF3A18-BF73-602D-0292-0A3A1C3339D2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SEGUNDO_APELLIDO" id="3571F6FE-EBAB-02D9-5B8A-EEEE610522FF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Segundo Apellido de la Persona Natural. Ej: García.</comment>
+<commentInRDBMS>Segundo Apellido de la Persona Natural. Ej: García.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0DE48DB1-E6FE-3F28-FC6F-649CF0BC5F01</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_NACIMIENTO" id="10087C08-98C3-75E7-48FA-85F3E158F8F0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>fecha de nacimiento de la persona natural.</comment>
+<commentInRDBMS>fecha de nacimiento de la persona natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C5D8F593-3AD1-9AF2-EF68-ECBE15E4B20F</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_11331</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ESTADO_CIVIL_ID" id="CA66FB69-A622-FAC1-FC2C-905288B8A912">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O</comment>
+<commentInRDBMS>Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AD3A93D0-5255-A47C-3653-439B78C226FF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="811F6BBC-8346-00F8-605C-B1FDC8D58AEF" referredColumn="CEBDF984-8B11-E002-B9B9-9522EF2CA9AC"/>
+</associations>
+</Column>
+<Column name="APELLIDO_CASADA" id="95C645E3-A0C9-1BCC-4FC8-C51A82B3465B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E936ECEF-92D1-BAB2-7E5C-08EE54A57D2C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OCUPACION_ID" id="7456B467-53D7-C771-7D80-251F8126DCBD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>643C0146-E6CE-728A-8768-18F305E983CB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6A5A9505-5C49-88BC-7273-CD39AB5BD74B" referredColumn="D22D9091-90CB-6165-0185-E3738A3A09E7"/>
+</associations>
+</Column>
+<Column name="INF_NACIMIENTO_ID" id="2D27AC0C-1B9E-4586-FB6E-35B6A520F076">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>38942CB1-71E0-6A5F-1A4A-AEB0EB872C12</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D39DAB77-513D-8736-6FB4-A962AFECEFDA" referredColumn="444855CB-CE03-164F-994C-9AE614D7771B"/>
+</associations>
+</Column>
+<Column name="ETNIA_ID" id="C8CA4E07-B906-73DD-FE5A-1CE8D415E6FB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.</comment>
+<commentInRDBMS>Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>99A4DE6D-F386-D9DA-E8AA-D675D07E870A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="447FB45F-094B-4A24-D5ED-8085D460539C" referredColumn="DAB8E4A2-8830-A705-526F-90FED293556F"/>
+</associations>
+</Column>
+<Column name="GRADO_ACADEMICO_ID" id="1AA7FE77-7D6F-F009-01AB-5201DD4B96FA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.</comment>
+<commentInRDBMS>Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9A4EBBA5-05E6-B1F3-B174-7ACCFF95F6CE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6BC48102-6284-95A7-386D-6B2F715162FD" referredColumn="70C68A27-45F8-DADB-7E74-7BEF5980BB94"/>
+</associations>
+</Column>
+<Column name="GACETA_ID" id="0121F805-6E1A-42BE-7051-4E9AF6DC203A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de la Gaceta de Nacionalización de la Persona Natural. Número de Identificación Interna de la Gaceta.</comment>
+<commentInRDBMS>Número de la Gaceta de Nacionalización de la Persona Natural. Número de Identificación Interna de la Gaceta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>577597A5-5E4E-3A98-0C32-37B9A7AA3C83</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96D226BE-DDFE-0A8F-575C-7CC232A57224" referredColumn="D8C2CED1-C315-AACF-CE4A-29639E4AECF7"/>
+</associations>
+</Column>
+<Column name="NIVEL_ESTUDIO_ID" id="7BEC930C-9853-3D2D-7116-CAC047E30DBA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.</comment>
+<commentInRDBMS>Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7B9F6D7F-5E17-2BF3-A06B-24137291050A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F3B59CBB-BAD7-7784-BC89-598D2B5D4009" referredColumn="66441C3C-0F94-2968-8853-154544637FE4"/>
+</associations>
+</Column>
+<Column name="GRUPO_SANGUINEO_ID" id="B12BE56E-797C-7A44-52AF-9F7243F8E35E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.</comment>
+<commentInRDBMS>Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>650DDD5E-63EF-C90E-8D28-E72A5830D31E</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="864AC572-D15E-3DD9-4342-9DC60ABAC50B" referredColumn="34F0068C-B2E4-592F-EB34-00F9E9A107F6"/>
+</associations>
+</Column>
+<Column name="PROFESION_ID" id="B8031BAB-3E2E-5078-A6D3-0497B6227EDA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Profesión de la Persona Natural. Número de Identificación Interno de la Profesión.</comment>
+<commentInRDBMS>Profesión de la Persona Natural. Número de Identificación Interno de la Profesión.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8519332F-88D8-88A9-0AB4-5796CDBD3F90</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3D54F0B0-AA3F-0B8F-A589-0738B5E3830C" referredColumn="1A6B9238-6ECD-4490-B2D1-3B0E65B96989"/>
+</associations>
+</Column>
+<Column name="FECHA_DECESO" id="232ADF2F-4D9C-0BAB-C611-3862A034F650">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de Deceso de la Persona Natural.</comment>
+<commentInRDBMS>Fecha de Deceso de la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8A1D8841-B705-9158-ECDE-0B9B23279B43</importedID>
+<constraintName>CHECK_CONSTRAINT_USAGE_10455</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ES_DISCAPACITADA" id="9C09753E-ED40-BE76-F11C-8169B0ACCE56">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Es Discapacitada la Persona Natural?. Ej: S, N.</comment>
+<commentInRDBMS>Es Discapacitada la Persona Natural?. Ej: S, N.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>71D6FA74-14B9-4666-137D-5025B3466CDC</importedID>
+<constraintName>SI_NO}_1195351472</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESTATURA" id="EE8FF69D-B390-8165-6ABA-3D8D23865A04">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Estatura de la Persona.Natural en Metros.</comment>
+<commentInRDBMS>Estatura de la Persona.Natural en Metros.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AFE540B4-6C5D-20AA-1D1A-977359E40CD6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TALLA" id="1548033D-9627-63CE-222A-BC96BEAEDE84">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Talla de la Persona Natural.</comment>
+<commentInRDBMS>Talla de la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A4419819-93DD-C424-2458-7D633351EC19</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PESO" id="CCE17737-BA88-A96C-F7E0-E40887A59D0D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Peso de la Persona Natural en Kilos.</comment>
+<commentInRDBMS>Peso de la Persona Natural en Kilos.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E109CBFC-86C0-84D6-A0A9-D85B5AE822E6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USA_LENTES" id="06E2E0BD-E45B-B671-7ADA-BD9CC087F424">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C635473F-175F-9A24-05B2-011E789F82B6</importedID>
+<constraintName>SI_NO}_841297894</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_DIESTRO" id="7BD76970-FC62-CAA3-5744-2A8081DE174E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Es Diestra la Persona Natural.</comment>
+<commentInRDBMS>Es Diestra la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C3E4A990-379F-EEFE-6C59-2C491C644D58</importedID>
+<constraintName>SI_NO}_405351681</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEFECTOS_FISICOS" id="5CB9BB60-BD93-6A33-A997-FE1CEA79C43B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Defectos Físicos de la Persona Natural.</comment>
+<commentInRDBMS>Defectos Físicos de la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EFEC79E6-5404-AF75-1541-4B4A173631CA</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAIS_ID" id="A01761A8-9D7B-15AF-AF81-EA73BE851BD6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.</comment>
+<commentInRDBMS>Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>42F80D63-3828-8EC8-B666-B1ED0E30A232</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E464DA3F-36C8-FCAC-BD88-C64338BBF81A" referredColumn="CFBEBCB8-2F7F-DF59-3905-F8F6D29AB21B"/>
+</associations>
+</Column>
+<Column name="GRADO_LICENCIA" id="062F81FE-0656-B4A0-E4E1-2DB914149AC7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Grado de la Licencia de Copnducir de la Persona Natural.</comment>
+<commentInRDBMS>Grado de la Licencia de Copnducir de la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>34010495-7D99-E69E-3426-D7924A881703</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_EXCEPCIONAL" id="21CFB184-FE2D-7A1B-996A-5668D3A2B43B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Es excepcional la Persona Natural.</comment>
+<commentInRDBMS>Es excepcional la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A7D154A8-F29E-8A2B-9B04-CB3E502193E3</importedID>
+<constraintName>SI_NO}_1228616811</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F211FDE7-F29B-5C59-3968-A29508CAA073" name="GL_PERSONAS_NATURALES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0A1D4EDA-D473-F742-7B35-E533A035B2B5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C48DC810-8143-3F7B-5C5A-F14111DAC272" name="GL_PERSONA_NATURAL_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6AB028BC-5C44-AC6D-ADF6-8EE7C5959776</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="748BCE97-631F-F231-E566-5B2E2885E904" name="PER_NAT_GL_PAISES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A01761A8-9D7B-15AF-AF81-EA73BE851BD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="611FBA62-71B0-0C05-8D1E-A22B3C9533A9" name="PER_NAT_GL_GENEROS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A72A893-112F-7036-48F8-20EE3F19EC9E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0DD383AA-3CD7-0BDE-50A0-C5B31EC56752" name="PER_NAT_GRA_ACA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1AA7FE77-7D6F-F009-01AB-5201DD4B96FA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A517024-B127-5C98-D639-B39F2D60CDD4" name="PER_NAT_GL_OCUPACIONES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7456B467-53D7-C771-7D80-251F8126DCBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F033FD5-BF2B-D2FF-F701-B96783A35936" name="PER_NAT_GL_INF_NACIMIENTOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D27AC0C-1B9E-4586-FB6E-35B6A520F076"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37D7E1A8-2BE0-0072-1B5D-F0E77A64CB03" name="GL_PERSONA_NATURAL_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C8CA4E07-B906-73DD-FE5A-1CE8D415E6FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B0096548-1E20-5E0B-67EE-0738FCE1BDF6" name="GL_PERSONA_NATURAL_FK3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0121F805-6E1A-42BE-7051-4E9AF6DC203A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4779551F-E92A-85C7-4FF3-E416CE745EC9" name="PER_NAT_GL_ESTADOS_CIVILES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA66FB69-A622-FAC1-FC2C-905288B8A912"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F82328F-A0A7-F79A-E934-CE8F8B766CEE" name="PER_NAT_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94774749-B575-157F-2DF0-7A733C02C694" name="GL_PERSONA_NATURAL_FK6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7BEC930C-9853-3D2D-7116-CAC047E30DBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1DD40E93-87C6-A31D-F3CB-AB5EAE4FD094" name="PER_NAT_GL_TRATAMIENTOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="292BE433-C172-16C6-53EF-F9068B105A22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2E1CE0DA-1A67-F122-8C66-B6BDD0ABEB3D" name="PER_NAT_GRP_SAN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B12BE56E-797C-7A44-52AF-9F7243F8E35E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="672098E1-6503-385B-D87F-3A2B50195842" name="GL_PERSONA_NATURAL_FK9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8031BAB-3E2E-5078-A6D3-0497B6227EDA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CHECK_CONSTRAINT_USAGE_11333" directorySegmentName="seg_0" id="7B0F2FAC-A7E2-7E4E-0C51-7664955D77C4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0EC780B8-A586-9DC2-C1D4-BB655C3406D0</importedID>
+<rule>Fecha_Nacimiento BETWEEN TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;) AND TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

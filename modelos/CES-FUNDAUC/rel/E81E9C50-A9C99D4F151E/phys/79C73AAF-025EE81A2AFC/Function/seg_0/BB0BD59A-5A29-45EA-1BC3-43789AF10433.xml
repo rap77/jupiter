@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FunctionOracle class="oracle.dbtools.crest.model.design.storage.oracle.FunctionOracle" name="ESNUMERO" directorySegmentName="seg_0" id="BB0BD59A-5A29-45EA-1BC3-43789AF10433">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>ESNUMERO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:29:03 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<owner>97FD16BA-5F38-1D61-ED7A-CBFAE1D2218C</owner>
+<source>CREATE OR REPLACE FUNCTION         CES.ESNUMERO (v_num IN VARCHAR2)&lt;br/&gt;   RETURN NUMBER&lt;br/&gt;AS&lt;br/&gt;   s_num    NUMBER := 1;&lt;br/&gt;   v_prov   NUMBER;&lt;br/&gt;BEGIN&lt;br/&gt;   v_prov := TO_NUMBER (v_num);&lt;br/&gt;   RETURN s_num;&lt;br/&gt;EXCEPTION&lt;br/&gt;   WHEN OTHERS&lt;br/&gt;   THEN&lt;br/&gt;      s_num := 0;&lt;br/&gt;      RETURN s_num;&lt;br/&gt;END;</source>
+</FunctionOracle>

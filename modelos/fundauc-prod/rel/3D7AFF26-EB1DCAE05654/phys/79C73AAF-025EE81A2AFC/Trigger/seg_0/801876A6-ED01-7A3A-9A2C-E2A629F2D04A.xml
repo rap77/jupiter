@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="T_FACTURA_DEPOSITO_SEQ" directorySegmentName="seg_0" id="801876A6-ED01-7A3A-9A2C-E2A629F2D04A">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>T_FACTURA_DEPOSITO_SEQ</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:05 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<actions>INSERT</actions>
+<body><![CDATA[declare   
+   P_FACTURA_REC FUNDAUC.TAPI_FACTURA.FACTURA_RT;
+   P_CTAXCOB_REC FUNDAUC.TAPI_CTAXCOB.CTAXCOB_RT;
+   P_IGNORE_NULLS BOOLEAN;
+   P_ULT_FAC NUMBER := UTL_CONFIGURACION.getConfUltFactura();
+   l_es_credito varchar2(1);
+   l_rif  varchar2(16);
+   l_ctaxcob number := 0;
+   l_monto_fac number := 0;
+begin  
+   if inserting then 
+      if :NEW."FACTURA_ID" is not null then 
+        select escredito into l_es_credito from table(tapi_factura.tt(:NEW.FACTURA_ID));
+
+
+        P_IGNORE_NULLS := TRUE;
+
+          P_FACTURA_REC.ID := :NEW.FACTURA_ID;
+          P_FACTURA_REC.ID_FACT := P_ULT_FAC;
+          if l_es_credito = 'S' then
+            P_FACTURA_REC.STATUS := 'PP';
+          else
+            P_FACTURA_REC.STATUS := 'V';
+          end if;
+          P_FACTURA_REC.FECHA_EMI := SYSDATE;
+          P_FACTURA_REC.FACTURADO_POR := coalesce(sys_context('APEX$SESSION', 'app_user'), regexp_substr(sys_context('userenv', 'client_identifier'), '^[^:]*'), sys_context('userenv', 'session_user'));
+
+          TAPI_FACTURA.UPD(
+            P_FACTURA_REC => P_FACTURA_REC,
+            P_IGNORE_NULLS => P_IGNORE_NULLS
+          );
+
+          UTL_CONFIGURACION.actConfUltFactura(P_ULT_FAC);
+
+          if l_es_credito = 'S' then
+            select rif, fecha_emi, id, monto 
+              into l_rif,P_CTAXCOB_REC.FECHA,P_CTAXCOB_REC.FACTURA_ID, l_monto_fac  
+              from table(tapi_factura.tt(:NEW.FACTURA_ID));
+
+            select id into P_CTAXCOB_REC.CLIENTE_ID from clientes where rif = l_rif;
+
+            select count(*) into l_ctaxcob from ctaxcob where factura_id = :NEW.FACTURA_ID;
+
+            if l_ctaxcob = 0 then
+              P_CTAXCOB_REC.DEPOSITO_ID := :NEW.DEPOSITO_ID;
+              P_CTAXCOB_REC.CREDITO := 'DB';
+              P_CTAXCOB_REC.MONTO := l_monto_fac;
+            else
+              P_CTAXCOB_REC.DEPOSITO_ID := :NEW.DEPOSITO_ID;
+              P_CTAXCOB_REC.CREDITO := 'CR';
+              select monto into P_CTAXCOB_REC.MONTO from table(tapi_deposito.tt(:NEW.DEPOSITO_ID));
+            end if;
+
+            tapi_ctaxcob.ins(p_ctaxcob_rec => p_ctaxcob_rec);
+
+          end if;
+
+
+      end if; 
+   end if; 
+end;
+
+
+]]></body>
+<triggerTime>AFTER</triggerTime>
+<owner>DE1983E7-E9D4-39B2-4FA4-1DABA6FD9FCE</owner>
+<table>FAAE7BF1-3C44-3AFF-A740-703872C8853B</table>
+</TriggerOraclev10g>

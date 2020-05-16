@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E819565C-9B44-30F3-E84E-B2D1EA7ED650" containerWithKeyObject="3C7B9C24-C9C3-B774-4C50-0B7EC4B8087A" localFKIndex="EC84092D-03AF-FC02-90C3-6C371EAE9FDE" name="CALENDARIOS_DETALLE_MODALIDADES_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>CALENDARIOS_DETALLE_MODALIDADES_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:47:26 UTC</createdTime>
+<comment>CALENDARIOS_DETALLE_MODALIDADES_FK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.MODALIDADES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A20F4C61-90CD-6E92-D763-B9562F6A7A72</referredTableID>
+<keyObject>D721035C-D2B9-FBF1-8F79-1C9D6B36F48A</keyObject>
+<referredKeyID>D721035C-D2B9-FBF1-8F79-1C9D6B36F48A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_MODALIDAD</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

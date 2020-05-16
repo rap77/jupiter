@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="553C2CD6-2511-5DB4-BC21-B811FB615C8C" name="GL_TIPOS_PERSONAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Persona. Ej: N Natural, J Juridica. Unidad Organiacional]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>11455397-22A3-A6D4-44D8-A287AB7E4A23</importedID>
+<abbreviation>TP_PER</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="6CFBB88F-421F-9080-DB86-DB3E80F62E08">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del Tipo de Persona, Ej: PN. PJ. UO.]]></comment>
+<commentInRDBMS><![CDATA[Código del Tipo de Persona, Ej: PN. PJ. UO.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2FED2490-1426-264B-6C96-7E6DB193D4A2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="06646BF7-3CC3-F0AD-06B2-050AFA9F897A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Persona. Ej: Natural, Juridica. Unidad Organizacional]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CC9EBB7F-2A54-00E7-72EA-53A3FA2DAD0E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8538D78D-F64E-5C8D-B2E9-F866D1AC06EA" name="GL_TIPOS_PERSONAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>282FF698-02E9-27CC-3E3C-F8839307ADD9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CFBB88F-421F-9080-DB86-DB3E80F62E08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="330E15A5-BB9C-4A01-8A05-BE5E37178951" name="GL_TIPO_PERSONA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4CC20B0D-9659-2E2A-38AE-E7358E689961</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6CFBB88F-421F-9080-DB86-DB3E80F62E08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

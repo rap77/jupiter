@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A7F9CAEC-7D85-0C23-B715-75032AE37FD1" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="CE_ESCALAS_ACADEMICAS">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 18:53:36 UTC</createdTime>
+<comment><![CDATA[Escala academica gerarquica Ej: 
+Educación Inicial -> Maternal, Primer Nivel (Prekinder), Segundo Nivel (Kinder), Tercer Nivel (Preparatorio)
+Educación Basica -> Primer a Sexto Grado
+Educación Media General -> Primer a Tercer Año
+Educación Media Diversificada -> Cuarto y Quinto Año
+Educación Superior -> 
+	Formacion Profesional -> Tecnico Superior Universitario -> Diplomados
+	Pregrado Universitario -> Grado de Licenciado
+			          Grado Profesional
+             Postgrado Universitario -> Especializacion
+             			          Maestria,
+             			          Doctorado,
+             			          PostDoctorado
+]]></comment>
+<commentInRDBMS><![CDATA[Escala academica gerarquica Ej: 
+Educación Inicial -> Maternal, Primer Nivel (Prekinder), Segundo Nivel (Kinder), Tercer Nivel (Preparatorio)
+Educación Basica -> Primer a Sexto Grado
+Educación Media General -> Primer a Tercer Año
+Educación Media Diversificada -> Cuarto y Quinto Año
+Educación Superior -> 
+	Formacion Profesional -> Tecnico Superior Universitario -> Diplomados
+	Pregrado Universitario -> Grado de Licenciado
+			          Grado Profesional
+             Postgrado Universitario -> Especializacion
+             			          Maestria,
+             			          Doctorado,
+             			          PostDoctorado
+]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<ordsAlias>table_62</ordsAlias>
+<abbreviation>ESC_ACAD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="65189357-5A3D-95C5-EA37-724538C35059">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<comment><![CDATA[Identificador unico de la escala academica]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de la escala academica]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DES_ESCALA" id="4377BEA3-BA9A-FA6F-3C5C-C071B2F0A7D7">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<comment><![CDATA[Descripcion de la escalaacademica]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la escalaacademica]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ESCALA_SUP" id="B5C14494-DA02-9E50-E164-9212B222B962">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<comment><![CDATA[Id de la escala Superior]]></comment>
+<commentInRDBMS><![CDATA[Id de la escala Superior]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="84FA6059-79D2-6E31-A24B-CDB0979A390F" referredColumn="65189357-5A3D-95C5-EA37-724538C35059"/>
+</associations>
+</Column>
+<Column name="RANGO_EDAD" id="4875D000-95B8-5E65-A42D-68981F300BAA">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<comment><![CDATA[Rango de Edades para cursar la escala Academica]]></comment>
+<commentInRDBMS><![CDATA[Rango de Edades para cursar la escala Academica]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURACION" id="B9FFB7F9-CBBD-93D3-72BF-8B90B65713CD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[Duracion en años de la escala]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="833A5308-E73C-2764-E0AD-ABC494B1A517" name="ESCALA_ACADEMICA_PK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65189357-5A3D-95C5-EA37-724538C35059"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45EE3214-0A34-B50E-F15D-841ECD354730" name="ESCALA_ACADEMICA_PK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:14 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65189357-5A3D-95C5-EA37-724538C35059"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="62104764-E4D2-1AB1-E350-FF71293656DD" name="ESC_ACAD_ESC_ACAD_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5C14494-DA02-9E50-E164-9212B222B962"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

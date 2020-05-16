@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="799F06D3-404B-7179-E646-918FCD32AA05" name="GL_ESTATUS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Guarda los estatus del sistema]]></comment>
+<commentInRDBMS><![CDATA[Guarda los estatus del sistema]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E480D955-2AB6-F190-0A2C-52B827F3F81C</importedID>
+<abbreviation>ST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E557EE60-49AA-6BF6-5DF1-A535861EC0B8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BB213DDE-095A-21B1-D1CF-EE4449F4C6DF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DOC_ID" id="6DA410B1-691A-6275-F168-5EBF10C104A6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></comment>
+<commentInRDBMS><![CDATA[ID  que identifica un registro dentro de la tabla. Es autogenerado por una secuencia]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7BA50FA9-1E22-3C5F-82BB-ED996FBAA6CB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AEBB41B-6308-B520-EDE3-E15E5BF3BC6B" referredColumn="9FDCA940-985F-1CC5-83F3-81E23E7ACB88"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="9F46FF96-9612-88D1-092F-E928E59CA864">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>737CB63B-F4C1-0376-A723-39CBCE37DCA9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="682D49FA-B138-C376-F30D-921BC95D30F9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0D24F777-AB54-99C0-B4A6-5A878EFB286A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B28195DB-8FD8-B6A6-8B85-E8788F650D16</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="74DF8555-6479-F81F-88E8-167F1B3B293B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F7D31B28-D353-06CD-F89A-37F733541C74</importedID>
+<constraintName>SI_NO_1212479709</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>F1FEB62F-21A5-5AB0-E636-9FA57ECCE3C2</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7C25DFE0-CC36-76BA-E8AE-E2FD0CDB2267" name="GL_ESTATUS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2EB6201F-88E1-4F36-2929-35252937C3EA</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E557EE60-49AA-6BF6-5DF1-A535861EC0B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="924B511D-710D-9C4E-B8F5-B19ADFBB5144" name="GL_ESTATUS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B033ADD5-E975-556E-544C-9C3496115267</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E557EE60-49AA-6BF6-5DF1-A535861EC0B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1157B74E-4466-A240-F317-DB134489ED45" name="ST_TIP_DOC_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DA410B1-691A-6275-F168-5EBF10C104A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

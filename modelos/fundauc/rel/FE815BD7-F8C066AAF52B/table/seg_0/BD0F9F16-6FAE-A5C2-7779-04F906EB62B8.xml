@@ -1,0 +1,133 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD0F9F16-6FAE-A5C2-7779-04F906EB62B8" name="GL PARROQUIAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Parroquia. Ej: 1 San José.</comment>
+<commentInRDBMS>Parroquia. Ej: 1 San José.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>92F3B375-C5D3-0A15-B361-7FF4C8FB0209</importedID>
+<ordsAlias>gl_parroquias</ordsAlias>
+<abbreviation>PARR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D783C2D7-B8C7-6938-8BF3-4FAB4C71AA40">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Parroquia.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Parroquia.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2285D4E4-33D4-1616-A97F-C066B929863F</importedID>
+<constraintName>CK_PARR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MUN_GL MUNICIPIOS_ID" id="64C76DB0-C39C-5E49-C4D0-1D9759A4E3D2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Municipio de la Parroquia. Número de Identificación Interna del Municipio.</comment>
+<commentInRDBMS>Municipio de la Parroquia. Número de Identificación Interna del Municipio.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FC0103B9-4E9D-EF65-B542-CFC833010E11</importedID>
+<constraintName>CK_PARR_GL_MUNICIPIOS_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_GL_MUNICIPIOS_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="61D21CB1-491B-DB89-725F-3AE6EFD6D196" referredColumn="8A8EE52F-5FDF-2C3E-AB50-671708BC24B3"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="E577BB8D-B5F3-B639-F986-60C36E42139C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Nombre de la Parroquia.</comment>
+<commentInRDBMS>Nombre de la Parroquia.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D0881148-B1D3-D81B-A6A6-3F30BD07AB9E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_PARR_NOMBRE</notNullConstraintName>
+</Column>
+<Column name="COD SUDEBIP" id="5EB908DF-5951-31CA-5B79-50788E9BE551">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo de Parroquia Sugerido por la SUDEBIP</comment>
+<commentInRDBMS>Codigo de Parroquia Sugerido por la SUDEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>85A90FD1-E2C3-CE88-D6AB-9DFE70C5606B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>49A6DEA7-158D-9A91-AA16-187D286817C2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0C015832-7E1E-9F8B-A04F-AE51B75C7565" name="GL PARROQUIAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C2B1C5A9-FFC5-FE76-797E-F6ECEE49C2AF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D783C2D7-B8C7-6938-8BF3-4FAB4C71AA40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FAB1CD0D-A44C-E58B-688F-6E156EC913D0" name="PARR_ID_IDX">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FA0473AD-5C82-D38A-30DF-1B3BA9112026</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D783C2D7-B8C7-6938-8BF3-4FAB4C71AA40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C48B5EB-3F19-D7AA-1A53-E00CC589254A" name="PARR_MUN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64C76DB0-C39C-5E49-C4D0-1D9759A4E3D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

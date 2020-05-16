@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="34483004-0886-E440-E370-947A36BCACFD" name="GL_GENEROS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Genero, Sexo. Ej: F Femenino, M Masculino.]]></comment>
+<commentInRDBMS><![CDATA[Genero, Sexo. Ej: F Femenino, M Masculino.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>766F8FC3-84E6-1F13-7416-D4F5AFE14885</importedID>
+<abbreviation>GEN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="3137822B-0B8E-2D09-ED3E-CC28A60B71E3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3FE1FF63-33CD-2AE1-9AEB-6472D555CE7E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="8EF240DB-6B18-6A15-A45E-107873652EB6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Genero o Sexo. Ej: Femenino, Masculino.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Genero o Sexo. Ej: Femenino, Masculino.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EA27B9F6-E993-4D25-F460-E7CC201E5EA0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6CEA9967-6516-83AD-0573-C5ED337EA8C6" name="GL_GENEROS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9525B294-294E-B2CA-021B-01B08B8508AE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3137822B-0B8E-2D09-ED3E-CC28A60B71E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDF018E5-46A4-35AB-E034-79E2382F8488" name="GL_GENERO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1DB0A5AB-7C0F-AC91-B352-4EB1257D26A5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3137822B-0B8E-2D09-ED3E-CC28A60B71E3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

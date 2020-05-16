@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RH_TRABAJADOR_PUESTO_FK1" directorySegmentName="seg_2" id="B403001B-605E-0462-0896-18605E67E777">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>69E33BD0-EEC8-EFFB-08DB-231DCFBA81FB</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>8438DB8B-BDF3-3573-ABB6-8AB2CB3D8524</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>652EAF45-523F-DC11-BD51-C16B750C21E1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9C27112F-C9CA-939A-5E93-328EAEE2E4E3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

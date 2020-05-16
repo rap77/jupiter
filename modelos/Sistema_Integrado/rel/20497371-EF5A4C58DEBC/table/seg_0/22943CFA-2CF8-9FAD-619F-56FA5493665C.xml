@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22943CFA-2CF8-9FAD-619F-56FA5493665C" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="CE_ESTUDIANTES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:08:02 UTC</createdTime>
+<comment><![CDATA[Contiene informacion de Estudiantes]]></comment>
+<commentInRDBMS><![CDATA[Contiene informacion de Estudiantes]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<ordsAlias>estudiante</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="32A7AA8E-AAF0-5D08-81AF-B89B12DAB026">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:08:02 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="802F9067-A6E8-17F2-6153-25CA32D9EA53" referredColumn="C9140060-C5A2-06C7-D98D-181CC7EC7769"/>
+</associations>
+</Column>
+<Column name="f_INGRESO" id="1757DE59-02A4-88A5-C520-D32899F3B442">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-01 00:54:56 UTC</createdTime>
+<comment><![CDATA[Fecha de Ingreso a la Institución]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Ingreso a la Institución]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FAFD4BA-8901-C179-B598-8BFBCF927A04" name="CE_ESTUDIANTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:08:02 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32A7AA8E-AAF0-5D08-81AF-B89B12DAB026"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C2CDADC-6B2E-018C-47F2-F8D22A590A9B" name="ESTUDIANTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:08:02 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32A7AA8E-AAF0-5D08-81AF-B89B12DAB026"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54CC3F36-F784-86FE-935E-05F30D0D6186" name="EST_PER_NAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:09:13 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32A7AA8E-AAF0-5D08-81AF-B89B12DAB026"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

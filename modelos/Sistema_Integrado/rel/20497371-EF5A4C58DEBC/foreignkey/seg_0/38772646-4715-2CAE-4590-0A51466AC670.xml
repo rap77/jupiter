@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="38772646-4715-2CAE-4590-0A51466AC670" containerWithKeyObject="E15CFE45-062A-53AE-3D8B-88ACBD22784C" localFKIndex="23BA22E7-3BF0-5C8D-1575-73F590A4A5A7" name="PARENTESCO_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:16:35 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_PARENTESCO</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>E15CFE45-062A-53AE-3D8B-88ACBD22784C</referredTableID>
+<keyObject>18060556-DB5D-3DAB-D98E-06C468A9D23C</keyObject>
+<referredKeyID>18060556-DB5D-3DAB-D98E-06C468A9D23C</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

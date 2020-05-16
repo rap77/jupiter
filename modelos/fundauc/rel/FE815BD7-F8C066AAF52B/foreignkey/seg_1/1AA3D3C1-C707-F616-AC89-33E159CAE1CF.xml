@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="1AA3D3C1-C707-F616-AC89-33E159CAE1CF" containerWithKeyObject="BF2599E2-629A-9D28-944A-225321EA5694" localFKIndex="A1C5D546-C22C-36FA-CF98-D6143E8781B5" name="PRO_TIP_PRO_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C25256A4-A1C7-7025-4D4D-F70D16EF2319</importedID>
+<referredTableLongName>GL TIPOS PROVEEDORES</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>E625EEA5-6D6A-A91D-C19D-44119FA89981</referredTableID>
+<keyObject>C63ECCE0-A185-BF85-C660-D5F3357503EA</keyObject>
+<referredKeyID>C63ECCE0-A185-BF85-C660-D5F3357503EA</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

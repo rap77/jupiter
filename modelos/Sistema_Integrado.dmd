@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Sistema_Integrado" id="8492F9FC-1C78-0EF2-5EF0-8EF9A8C2923B" version="3.5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:04:49 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>8492F9FC-1C78-0EF2-5EF0-8EF9A8C2923B</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="42937012-3C2B-45E6-3410-75106ABC1FFB">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="514763A9-0CF5-80BD-E8F0-F82F07421595">
+<designStoragePath>/media/padron/CANON/jupiter/modelos</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="9482C864-AC97-DE99-2973-20F8FC85C65B">
+<designStoragePath>/media/padron/CANON/jupiter/modelos/proyecto</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

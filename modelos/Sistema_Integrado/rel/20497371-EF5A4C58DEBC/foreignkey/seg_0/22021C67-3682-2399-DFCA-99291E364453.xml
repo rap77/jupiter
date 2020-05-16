@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="22021C67-3682-2399-DFCA-99291E364453" containerWithKeyObject="DABC4ADF-BEBB-61B9-063A-C7A767C042D2" localFKIndex="284C66FE-4FCD-3714-4E4B-4E973521003F" name="UO_PER_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>UNI_ORG_PER_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_PERSONAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>62F97DE0-A34E-C930-3126-D4DBD5145329</referredTableID>
+<keyObject>240618E9-BDA3-B7AD-CD6A-E53772E56524</keyObject>
+<referredKeyID>240618E9-BDA3-B7AD-CD6A-E53772E56524</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

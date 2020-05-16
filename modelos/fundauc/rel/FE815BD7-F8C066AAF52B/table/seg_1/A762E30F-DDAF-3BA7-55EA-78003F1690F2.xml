@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="A762E30F-DDAF-3BA7-55EA-78003F1690F2" name="PC_ESTRUCTURA_PRODUCTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Estructura del Producto. Ej: 10 MATERIAL, ACCESORIOS Y SUMINISTROS DE PLANTAS Y ANIMALES VIVOS, 1010 ANIMALES VIVOS, 101015 ANIMALES DOMESTICOSANIMALES DOMESTICOS.</comment>
+<commentInRDBMS>Estructura del Producto. Ej: 10 MATERIAL, ACCESORIOS Y SUMINISTROS DE PLANTAS Y ANIMALES VIVOS, 1010 ANIMALES VIVOS, 101015 ANIMALES DOMESTICOSANIMALES DOMESTICOS.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F52396C9-49A5-432C-558F-C67B135F686E</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0DB8DD42-B754-A849-E51F-CC5B69565B02">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Clase de Producto.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Clase de Producto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>77407A50-9195-1F59-4F55-458F3030E508</importedID>
+<constraintName>ID}_418045070</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_ESTRUCTURA_PRODUCTO" id="A832F720-F92F-1D45-5B08-DC460959FA36">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Clase de Producto.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Clase de Producto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>23CCA4D4-1E2D-AE9D-246C-78DAD5BE3561</importedID>
+<constraintName>ID}_52569743</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="AF51BE93-C179-0481-62CB-11FF1986FDBF" referredColumn="0DB8DD42-B754-A849-E51F-CC5B69565B02"/>
+</associations>
+</Column>
+<Column name="ID_GRUPO_PRODUCTO" id="4F8583D2-469B-B284-6242-3E373ED3BF9A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación de la Clase de Producto.</comment>
+<commentInRDBMS>Número de Identificación de la Clase de Producto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BAEA0022-F352-9E4F-B647-584FD9E56F58</importedID>
+<constraintName>ID}_1687439882</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="0B5198C1-D5A6-62AB-F481-F885DC64047D" referredColumn="5B2892B0-4DEC-917A-984C-3406295A7840"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="870503D5-1727-84EC-51E5-D33E9D7F3DC3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripción de la Clase de Producto. Ej Bienes. Servicios. Obras.</comment>
+<commentInRDBMS>Descripción de la Clase de Producto. Ej Bienes. Servicios. Obras.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>67B2F122-992D-7DD6-099A-A370420ABDCF</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="C0F81DBE-8605-5CFD-2867-CEA0882E2BC6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo de la Clase de Producto.</comment>
+<commentInRDBMS>Codigo de la Clase de Producto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>DBC0A94F-6342-FA14-D2E6-36FAE3E8F385</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ETIQUETAS" id="D12CFF9B-1D1A-7193-A37A-E4F8ED201034">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0AD458EA-6338-5FA9-7AF4-2A91AB98A1EC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFF7287A-2041-F80B-6D78-B1ACDC9610A8" name="INF_ESTRUCTURA_PROD_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E0E29A57-2524-A9F0-E3C8-D12118ED46AE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DB8DD42-B754-A849-E51F-CC5B69565B02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C197130B-A29C-121D-F73E-3EB172AF3FFA" name="INF_ESTRUCTURA_PROD_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A8AC82F5-0BCC-A781-23A5-545C1333EA68</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DB8DD42-B754-A849-E51F-CC5B69565B02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="389A3BC0-1B8B-FDC3-0960-24DB516439D6" name="PC_ESTRUCTURA_PRODUCTO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A832F720-F92F-1D45-5B08-DC460959FA36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC6E2A85-00BD-0F5B-33C4-6BA0ECBC1AE6" name="PC_ESTRUCTURA_PRODUCTO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F8583D2-469B-B284-6242-3E373ED3BF9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

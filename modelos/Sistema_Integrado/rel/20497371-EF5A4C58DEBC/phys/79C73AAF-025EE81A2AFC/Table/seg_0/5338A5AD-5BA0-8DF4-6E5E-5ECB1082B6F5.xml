@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_TIPOS_TELEFONOS" directorySegmentName="seg_0" id="5338A5AD-5BA0-8DF4-6E5E-5ECB1082B6F5">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="BA4F16E4-AB0E-405A-A233-178B861C73B6">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESCRIPCION" id="DABF7410-999A-A616-02D5-99061E84A4E4">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="TIPO_TELEFONO_PK" id="C154AE6E-9949-E6B2-964E-C430F89BA839">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPOS_TELEFONOS_PK" id="24FB7D2E-BA52-A4EC-7DC5-B8137AAAF7BE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

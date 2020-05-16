@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="FACTURA_DEPOSITO" directorySegmentName="seg_0" id="AD291253-0627-9CCC-DA72-CAE57424567F">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>9AC22C31-7691-5AD2-801B-1F2BC99A5C7D</segment>
+<tableSpace>C6CAF53F-0023-9370-2192-887C9EC71552</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPOSITO_ID" id="4443C451-4CD5-47BF-9C40-B16761ADF029">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:03:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FACTURA_ID" id="6236D9EA-D814-8DE2-7038-D063A9B1B69A">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:03:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="FACTURA_DEPOSITO_PK" id="96BAE2A0-39CA-81D5-5E10-6C5924A3326E">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:07:41 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<schemaObject>FCF41941-BA25-8770-CD3F-F4AB582A1881</schemaObject>
+<segment>A55AB7C9-E9D8-B030-A453-882A58461253</segment>
+<tableSpace>E9A2F537-E7FE-EBC6-E765-57311399BA77</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACTURA_DEPOSITO_FACTURA_FK" id="42AF5E57-DD03-F1CD-DD7D-71B0A0950348">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:03:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FACTURA_DEPOSITO_DEPOSITO_FK" id="48D91E29-6923-1DB0-C2D0-0E0C400CC3A6">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:03:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="FACTURA_DEPOSITO_PK" id="F3509AE2-C01D-1D8F-C007-9C505AA8B39D">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:03:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<segment>A93D1FD9-4851-30E3-B14A-0F61129CD7AA</segment>
+<tableSpace>E9A2F537-E7FE-EBC6-E765-57311399BA77</tableSpace>
+<existingIndex>96BAE2A0-39CA-81D5-5E10-6C5924A3326E</existingIndex>
+<indexSegment>A93D1FD9-4851-30E3-B14A-0F61129CD7AA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

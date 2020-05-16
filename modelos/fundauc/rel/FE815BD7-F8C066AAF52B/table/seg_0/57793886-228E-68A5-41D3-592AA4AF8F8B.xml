@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="57793886-228E-68A5-41D3-592AA4AF8F8B" name="CE_CURSOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>CURSOS Academicos</comment>
+<commentInRDBMS>CURSOS Academicos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6C65B92C-ED15-19B1-6C15-6FD02E46D9D5</importedID>
+<ordsAlias>cursos</ordsAlias>
+<abbreviation>CUR</abbreviation>
+<maxVolumes></maxVolumes>
+<allowColumnReorder>false</allowColumnReorder>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0DFF38B8-34AA-F6DA-AE4E-0B6B0C69BCE3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Identificador Unico de Curso</comment>
+<commentInRDBMS>Identificador Unico de Curso</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9D10AE73-103A-40CA-02DA-5C7A5E2FBDB5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<containsPII>false</containsPII>
+<containsSensitiveInformation>false</containsSensitiveInformation>
+<maskingType>NO</maskingType>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="F295E529-F028-7B65-603A-EE001D3BA89E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Descripcion del Curso</comment>
+<commentInRDBMS>Descripcion del Curso</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4BB811BB-5864-D444-E4B8-13B485BC15C3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<containsPII>false</containsPII>
+<containsSensitiveInformation>false</containsSensitiveInformation>
+<maskingType>NO</maskingType>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="194F1F2E-4F89-E1E4-DC12-DCE0CEE6D36C" name="CE_CURSOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>887BE4AB-B12B-A3F1-5C85-0DE1018B6294</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DFF38B8-34AA-F6DA-AE4E-0B6B0C69BCE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DABBAAEF-5E85-D7A0-FEC1-D731AFA4EA67" name="CURSOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>611CA81A-5D3E-3673-5037-63A30C42A236</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DFF38B8-34AA-F6DA-AE4E-0B6B0C69BCE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

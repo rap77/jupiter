@@ -1,0 +1,198 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="67799F69-C2BF-6369-D89F-F700CD74F6FB" name="RH_DEPENDENCIAS_JEFES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Guarda los jefes de cada dependencia y sus cargos</comment>
+<commentInRDBMS>Guarda los jefes de cada dependencia y sus cargos</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B219C21E-3A11-7AD9-6AE1-B6358D3E49AA</importedID>
+<abbreviation>DEP_JEF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="0ECE3C57-2AAD-8C1F-95E9-D2D9AB71EFC2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>identificador unico del jefe de dependencia</comment>
+<commentInRDBMS>identificador unico del jefe de dependencia</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D7C38FD1-8CAE-4544-0199-661AEE601623</importedID>
+<constraintName>ID}_827401242</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="RH_TITULO_JEFE_ID" id="DFCD40E5-0736-6219-070F-5B9D0BA682E7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico de titulo jefe</comment>
+<commentInRDBMS>Identificador unico de titulo jefe</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7866E314-6DA9-CAD9-C3E8-B6488ABEBDFE</importedID>
+<constraintName>ID}_130941478</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="B8D31DFD-0D61-0BA7-34C2-C10FD13D179A" referredColumn="788E671B-DBB4-671B-E63D-AE1D0A01782D"/>
+</associations>
+</Column>
+<Column name="PER_NAT_PER_ID" id="7F843642-01CE-8736-AFF3-A3429A99EB32">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F3F99C1A-77C3-572F-A9C0-C3E1A08000F3</importedID>
+<constraintName>ID}_1568564294</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="411BC566-43C6-8163-42C9-71B832BC9D85" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="UNI_ORG_PER_ID" id="265B950E-B905-FD05-E1BB-24CD6A354BEE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>406BC9F6-F872-AB54-C1AD-A88819670915</importedID>
+<constraintName>ID}_1015115211</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="2B2C5F24-BDD3-B447-F8B5-C3CC8FC6B02C" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="02C7C6D4-43B7-3B04-A6DF-E27FE06E25EC" name="RH_DEPENDENCIA_JEFE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C8111638-D28B-7B79-5FF1-8BDBBC5F907C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0ECE3C57-2AAD-8C1F-95E9-D2D9AB71EFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4436458F-6F89-9C92-F30E-6370B90ACD50" name="DEP_JEF_TIT_JEF_ID_UNI_ORG_PER_ID_UN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E1B7D7B5-B3BE-8A0A-A96A-9055C2F57071</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFCD40E5-0736-6219-070F-5B9D0BA682E7"/>
+<colUsage columnID="265B950E-B905-FD05-E1BB-24CD6A354BEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E4207DE-2893-1545-20DF-766B9CF177D3" name="RH_DEPENDENCIA_JEFE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4206A2D2-157C-D2E0-4A38-C99510D9AE14</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0ECE3C57-2AAD-8C1F-95E9-D2D9AB71EFC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD416149-D8C2-9707-7CA8-A197DC93AF9D" name="RH_DEPENDENCIA_JEFE_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F9769BF8-C18A-0453-0DFB-CE3772DB66DD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFCD40E5-0736-6219-070F-5B9D0BA682E7"/>
+<colUsage columnID="265B950E-B905-FD05-E1BB-24CD6A354BEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C6B8824-3E67-BB65-DD3D-FE2AC0680DE1" name="RH_DEPENDENCIA_JEFE_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DFCD40E5-0736-6219-070F-5B9D0BA682E7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A601AD08-506C-5E8F-090B-41622973496B" name="RH_DEPENDENCIA_JEFE_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7F843642-01CE-8736-AFF3-A3429A99EB32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4156E570-E67A-2B21-37B4-4EBE032E9110" name="RH_DEPENDENCIA_JEFE_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="265B950E-B905-FD05-E1BB-24CD6A354BEE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

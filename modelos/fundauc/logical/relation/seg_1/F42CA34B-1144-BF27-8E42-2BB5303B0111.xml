@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_PROVEEDORES_GL_TIPOS_PROVEEDORES_FK" directorySegmentName="seg_1" id="F42CA34B-1144-BF27-8E42-2BB5303B0111">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>1AA3D3C1-C707-F616-AC89-33E159CAE1CF</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>4C38E1A4-1BA2-B7EB-34F9-F45435A4321E</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>918FD6B3-430F-F209-30BF-3353563BB26C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2B56CD60-7479-A394-4A88-EDCCE3E9338B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

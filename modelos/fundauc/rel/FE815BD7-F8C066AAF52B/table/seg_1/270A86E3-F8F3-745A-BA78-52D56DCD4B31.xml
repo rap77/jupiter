@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="270A86E3-F8F3-745A-BA78-52D56DCD4B31" name="IN_TIPO_BIEN_ATRIBUTOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Contiene Atributos del Tipo de Bien</comment>
+<commentInRDBMS>Contiene Atributos del Tipo de Bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>54D0F388-5DE6-1941-8CB9-9D7BF114FEB5</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_ATRIBUTO" id="AC20CA63-F0A8-0733-51BA-377F2A997938">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>identificador unico del atributo</comment>
+<commentInRDBMS>identificador unico del atributo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4052348A-939A-D6AD-31ED-674508C60AEB</importedID>
+<constraintName>ID}_78386545</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="8B744ABB-C8EF-B257-07A4-4F3B8420C1EB" referredColumn="D73C3F6C-34EA-9770-84DD-7E961A91EE1C"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_BIEN" id="FAB5CBD9-2C1A-259E-54FD-EC671DBF8C20">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único de la Categoria del bien</comment>
+<commentInRDBMS>Identificador único de la Categoria del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>57006FAE-DD80-D45A-DE1E-014182EFDFA4</importedID>
+<constraintName>ID}_522441859</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="00E637F2-BD26-9A73-AD80-4E73354D23B1" referredColumn="C13BB9EC-51CA-21A9-C0C3-23C36E689BEC"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC4819F7-19CF-836A-8C90-7BE95D211545" name="IN_TIPO_BIEN_ATRIBUTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6BE54489-E705-28A2-B776-A16A88AC8DC7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC20CA63-F0A8-0733-51BA-377F2A997938"/>
+<colUsage columnID="FAB5CBD9-2C1A-259E-54FD-EC671DBF8C20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9411AF67-6587-5B00-3DAB-801EB316BBF8" name="IN_TIPO_BIEN_ATRIBUTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AE5F497E-3B0B-2FFF-62B9-E1D67D95357C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC20CA63-F0A8-0733-51BA-377F2A997938"/>
+<colUsage columnID="FAB5CBD9-2C1A-259E-54FD-EC671DBF8C20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="448881C3-60B8-5721-2E0D-FCD8892389F4" name="IN_TIPO_BIEN_ATRIBUTOS_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AC20CA63-F0A8-0733-51BA-377F2A997938"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F3275F54-EA90-323D-CC7E-57653C5D26B1" name="IN_TIPO_BIEN_ATRIBUTOS_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FAB5CBD9-2C1A-259E-54FD-EC671DBF8C20"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

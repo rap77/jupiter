@@ -1,0 +1,571 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2A28EDC4-C212-4B72-011D-9E896F305E7A" name="GL_PERSONAS_NATURALES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Persona Natural. 3 José Angel Ferreira Garcia ...]]></comment>
+<commentInRDBMS><![CDATA[Persona Natural. 3 José Angel Ferreira Garcia ...]]></commentInRDBMS>
+<generatorID>0C5423A8-50C5-DD45-ED48-1BE83A22112C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>PER_NAT</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID2" id="713C5A01-473B-6945-4C34-6380274ACE65">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<generatorID>B9524D85-0812-ECE1-166A-555D91B801F0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>79C76D50-D300-A9B6-E685-012BB8889F79</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRIMER_NOMBRE" id="6AD89277-4D3E-D66E-73E4-F3E85ADD495A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Primer Nombre de la Persona Natural. Ej: José.]]></comment>
+<commentInRDBMS><![CDATA[Primer Nombre de la Persona Natural. Ej: José.]]></commentInRDBMS>
+<generatorID>C715A3B2-3E65-DFD9-3F4A-F0AEC776494F</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEGUNDO_NOMBRE" id="8453435D-CAE2-4CBC-5626-5D2BB6F696E4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Segundo Nombre de la Persona Natural. Ej: Angel.]]></comment>
+<commentInRDBMS><![CDATA[Segundo Nombre de la Persona Natural. Ej: Angel.]]></commentInRDBMS>
+<generatorID>2F2D5336-2056-5CCC-B067-7AA40647C2D9</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PRIMER_APELLIDO" id="C59356BD-6617-77F7-7A92-5B6AC083E61F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Primer Apelllido de la Persona Natural. Ej: Ferreira.]]></comment>
+<commentInRDBMS><![CDATA[Primer Apelllido de la Persona Natural. Ej: Ferreira.]]></commentInRDBMS>
+<generatorID>260D2204-08E0-15ED-5222-DE829D0D90DD</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SEGUNDO_APELLIDO" id="8C203E97-DB93-FDE4-C57B-B4208E7C1D98">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Segundo Apellido de la Persona Natural. Ej: García.]]></comment>
+<commentInRDBMS><![CDATA[Segundo Apellido de la Persona Natural. Ej: García.]]></commentInRDBMS>
+<generatorID>3571F6FE-EBAB-02D9-5B8A-EEEE610522FF</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PAIS_ID" id="A94C2491-F3B5-3CB2-AFEC-B5862F3C3BC6">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Nacionalidad de la Persona Natural. Código del País. Ej: VE, US.]]></commentInRDBMS>
+<generatorID>052DBBDE-5B49-BC50-2F66-B4777580F9E7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>9FD2E400-2DC0-5E55-C2F5-EA305F7083EF</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GENERO_ID" id="8639A32C-8C2C-70BE-7505-2FDD1BFB5E6F">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Genero o Sexo de la Persona Natural. Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<generatorID>D37DF4B9-ECF8-3B14-E83E-94A6ECDF5AC5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<referedAttribute>FD1D0664-9ABF-F800-0BF8-80524CE5A8B7</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_DECESO" id="4FAD48E5-0F96-10A3-1C8D-2486D96CD94C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Fecha de Deceso de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Fecha de Deceso de la Persona Natural.]]></commentInRDBMS>
+<generatorID>232ADF2F-4D9C-0BAB-C611-3862A034F650</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_10455</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="ETNIA_ID" id="EB6E9B93-6565-3D0A-1FCA-E791E7154B72">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.]]></comment>
+<commentInRDBMS><![CDATA[Etnia o Raza Indigena de la Persona Natural. Número de Identificación Interna de la Etnia o Raza Indigena.]]></commentInRDBMS>
+<generatorID>CA6FF104-BC3F-24C0-9BD2-335C46A82D0D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>310E84AB-D7D0-DCA8-36EF-FA5696F2EE8E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GACETA_ID" id="683E58A0-7AF5-F33D-470E-0C6BEA5F3724">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Número de la Gaceta de Nacionalización de la Persona Natural. Número de Identificación Interna de la Gaceta.]]></comment>
+<commentInRDBMS><![CDATA[Número de la Gaceta de Nacionalización de la Persona Natural. Número de Identificación Interna de la Gaceta.]]></commentInRDBMS>
+<generatorID>08899AD0-CF5B-0A73-BBCD-05A6C2271941</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>591EAF1A-6CDC-1A6E-1B87-900E23E84A29</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTADO_CIVIL_ID" id="7C9889CA-6340-7E05-128E-8AECC8DC25C1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O]]></comment>
+<commentInRDBMS><![CDATA[Estado Civil de la Persona Natural. Código del Estado Civil. Ej: S, C, D, V, O]]></commentInRDBMS>
+<generatorID>4617C827-59E4-7E1A-DFBC-62E13321BEB7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3FC4A290-AA4E-9811-2B19-1FC426B0D857</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ES_DISCAPACITADA" id="CE0C316F-DC6E-F9FA-531F-1909F0BEDA8D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Es Discapacitada la Persona Natural?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Es Discapacitada la Persona Natural?. Ej: S, N.]]></commentInRDBMS>
+<generatorID>9C09753E-ED40-BE76-F11C-8169B0ACCE56</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_1195351472</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="OCUPACION_ID" id="E3A3B046-8BD1-68AC-608A-D8ACF290C950">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>75152B15-EB1C-0DD6-34A0-3A801723264C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5B608C57-7ACA-9608-600E-F6A1C4FEB0C9</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TRATAMIENTO_ID" id="2F2A1E9B-DCD5-92D6-3199-9C751AD80089">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.]]></comment>
+<commentInRDBMS><![CDATA[Tratamiento de la Persona. Natural. Número de Idetificación Interno del Tratamiento.]]></commentInRDBMS>
+<generatorID>895F1092-7FDE-60A2-609B-C896A279870A</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>8C01F564-4F94-7295-2F8C-54604C3EA34F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ESTATURA" id="0DF1AA0F-E68F-D972-A606-38022B6BD806">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Estatura de la Persona.Natural en Metros.]]></comment>
+<commentInRDBMS><![CDATA[Estatura de la Persona.Natural en Metros.]]></commentInRDBMS>
+<generatorID>EE8FF69D-B390-8165-6ABA-3D8D23865A04</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TALLA" id="D9DEDA69-5D83-DE34-244E-967C220925DB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Talla de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Talla de la Persona Natural.]]></commentInRDBMS>
+<generatorID>1548033D-9627-63CE-222A-BC96BEAEDE84</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PESO" id="BC487503-F90E-03D3-57D1-41BFE6066FC4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Peso de la Persona Natural en Kilos.]]></comment>
+<commentInRDBMS><![CDATA[Peso de la Persona Natural en Kilos.]]></commentInRDBMS>
+<generatorID>CCE17737-BA88-A96C-F7E0-E40887A59D0D</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C9C5A213-BFD6-8075-FC06-68D6D66F3808</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ES_DIESTRO" id="9043F219-F519-A6BD-152E-8E3A50EBBB93">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Es Diestra la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Es Diestra la Persona Natural.]]></commentInRDBMS>
+<generatorID>7BD76970-FC62-CAA3-5744-2A8081DE174E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_405351681</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DEFECTOS_FISICOS" id="A012FDFA-738A-00D9-BECD-250C8C253F75">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Defectos Físicos de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Defectos Físicos de la Persona Natural.]]></commentInRDBMS>
+<generatorID>5CB9BB60-BD93-6A33-A997-FE1CEA79C43B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GRUPO_SANGUINEO_ID" id="709D50A2-DA5E-CE5B-3BF6-FC257709AA0A">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.]]></comment>
+<commentInRDBMS><![CDATA[Grupo Sanguineo de la Persona Natural. Número de Identificación Interno del Grado Sanguineo.]]></commentInRDBMS>
+<generatorID>1EBA0B69-B046-180F-A48C-5DD45C653A82</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>85E98471-F670-530B-0EDC-083AB356B5B5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GRADO_LICENCIA" id="0DE6152F-C7BF-908D-58BC-10C0AC297870">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Grado de la Licencia de Copnducir de la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Grado de la Licencia de Copnducir de la Persona Natural.]]></commentInRDBMS>
+<generatorID>062F81FE-0656-B4A0-E4E1-2DB914149AC7</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ES_EXCEPCIONAL" id="3D8354AA-4B3A-AE48-9155-F7CC21FE61B5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Es excepcional la Persona Natural.]]></comment>
+<commentInRDBMS><![CDATA[Es excepcional la Persona Natural.]]></commentInRDBMS>
+<generatorID>21CFB184-FE2D-7A1B-996A-5668D3A2B43B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_1228616811</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GRADO_ACADEMICO_ID" id="42053507-A6AC-D791-799F-B188E38677AD">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.]]></comment>
+<commentInRDBMS><![CDATA[Grado Acádemico Recibido por la Persona Natural. Número de Identificación Interno del Grado Acádemico Recibido.]]></commentInRDBMS>
+<generatorID>8C954836-8D6E-7549-16D9-425C41C4D5F6</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C6B7BFE8-58A0-D134-F038-DE58E4BF7D78</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="APELLIDO_CASADA" id="DBA68240-0F9B-F133-84EE-23C4696567AA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>95C645E3-A0C9-1BCC-4FC8-C51A82B3465B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="USA_LENTES" id="F900308F-F9FA-574D-CC45-07088BF48FED">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>06E2E0BD-E45B-B671-7ADA-BD9CC087F424</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>SI_NO}_841297894</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FECHA_NACIMIENTO" id="3BD30160-1523-2DD9-08E5-19AB477FDA90">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[fecha de nacimiento de la persona natural.]]></comment>
+<commentInRDBMS><![CDATA[fecha de nacimiento de la persona natural.]]></commentInRDBMS>
+<generatorID>10087C08-98C3-75E7-48FA-85F3E158F8F0</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>CHECK_CONSTRAINT_USAGE_11331</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NIVEL_ESTUDIO_ID" id="F9CCE854-876B-B95F-3728-00168DDB4DC0">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<comment><![CDATA[Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Nivel de Estudio de la Persona Natural. Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<generatorID>24AAFF81-959F-E009-2E31-86FB8B0A941C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>847775CA-A830-8BD6-E2F7-6632030AC778</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PROFESION_ID" id="D3C18B5E-4719-84EA-1AC3-1F9947AC2A25">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<comment><![CDATA[Profesión de la Persona Natural. Número de Identificación Interno de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Profesión de la Persona Natural. Número de Identificación Interno de la Profesión.]]></commentInRDBMS>
+<generatorID>172753FE-7897-D8CB-191E-D136ACD4CE2C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>DA4E4E1D-FF28-623A-8657-3D4D8420BECC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="INF_NACIMIENTO_ID" id="CF964C10-B6DF-51A1-EB2A-899561621C1B">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-10 13:43:53 UTC</createdTime>
+<generatorID>88DB1470-6346-8EA1-E08F-8BA3E4CEB568</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1C38F228-4356-DDA9-CF1D-978C935C5EEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID" id="E189F20A-BD8A-847A-23BC-D12BF7AAF699">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-10 14:46:35 UTC</createdTime>
+<generatorID>88DB1470-6346-8EA1-E08F-8BA3E4CEB568</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1C38F228-4356-DDA9-CF1D-978C935C5EEF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0CA1BFF2-526F-A45C-00E0-F239CB7EB0C2" name="GL_PERSONAS_NATURALES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>F211FDE7-F29B-5C59-3968-A29508CAA073</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>B9524D85-0812-ECE1-166A-555D91B801F0</newElementsIDs>
+<usedAttributes>
+<attributeRef>713C5A01-473B-6945-4C34-6380274ACE65</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

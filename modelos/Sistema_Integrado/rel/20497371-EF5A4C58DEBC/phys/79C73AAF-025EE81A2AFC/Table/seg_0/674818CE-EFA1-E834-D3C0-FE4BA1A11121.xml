@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="RH_GRADO_ESTUDIO" directorySegmentName="seg_0" id="674818CE-EFA1-E834-D3C0-FE4BA1A11121">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DESCRIPCION" id="3AC2CA4C-6BCF-CAC6-379C-434A530031B9">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TIPO_GRADO" id="A0285967-BFEC-E5AD-9BD0-1B5327CDD098">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="A4F83C6F-2885-4E50-C2CF-FE777AAD37FB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="RH_GRADO_ESTUDIO_PK" id="D745BCD8-3E87-70C4-A578-A3B078050E46">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="RH_GRADO_ESTUDIO_PK" id="BDE683C6-939C-C00D-49D1-15DF37A9B282">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:15:09 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

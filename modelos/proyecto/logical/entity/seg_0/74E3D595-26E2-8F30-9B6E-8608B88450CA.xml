@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="74E3D595-26E2-8F30-9B6E-8608B88450CA" name="CE_CURSOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>57793886-228E-68A5-41D3-592AA4AF8F8B</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="2DC10A20-78E6-3EE4-3032-2ABE600925A1">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>0DFF38B8-34AA-F6DA-AE4E-0B6B0C69BCE3</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1210323688</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="9431D7DB-3E0F-E7A1-B911-A80AEAD574C9">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>F295E529-F028-7B65-603A-EE001D3BA89E</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9A66B133-FE10-C735-D7CA-A0BFD8254C28" name="CURSOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 18:40:25 UTC</createdTime>
+<generatorID>194F1F2E-4F89-E1E4-DC12-DCE0CEE6D36C</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2DC10A20-78E6-3EE4-3032-2ABE600925A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

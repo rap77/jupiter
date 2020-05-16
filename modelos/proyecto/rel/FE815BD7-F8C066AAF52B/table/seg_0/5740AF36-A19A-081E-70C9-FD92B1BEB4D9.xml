@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5740AF36-A19A-081E-70C9-FD92B1BEB4D9" name="GL ESTADOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Estado, Departamento, Provincial, etc. Ej: 1 Carabobo.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FFA42D03-03FC-691C-F271-DAA5B3C77C68</importedID>
+<abbreviation>EST</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B5D97FA9-81F7-B278-B3F6-BC81C2EED107">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Estado, Departamento o Provincia.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>448F7705-4BB5-8F62-2709-ADA77E3125C1</importedID>
+<constraintName>ID}_80948839</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GL_PAISES_ID" id="0E1F490C-AFE3-B5C8-64C6-6C73CD314C01">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4E92F15C-AC7A-C432-D158-21DA93A2AD62</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ED40DAED-E783-B0A4-7476-A13C476A89DF" referredColumn="CFBEBCB8-2F7F-DF59-3905-F8F6D29AB21B"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="DB8F3282-8606-5F11-32C7-C77218DF4EB1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Nombre del Estado, Departamento o Provincia. Ej: Carabobo.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Estado, Departamento o Provincia. Ej: Carabobo.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AF566595-82FF-1841-BA70-D4191C7F4D77</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C33CF66-530B-015A-5779-F91BFCB1BC39" name="GL_ESTADOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E86C30ED-7DA7-DDFE-9EF2-59C882758DCB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D97FA9-81F7-B278-B3F6-BC81C2EED107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E366A5D0-B3CB-BFDD-B166-9C0F1C882DC2" name="GL_ESTADO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A9D655A3-0D9B-6D8C-1F40-A9113367FD1F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5D97FA9-81F7-B278-B3F6-BC81C2EED107"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D2793E56-9211-914C-A107-9AB6E35928AB" name="GL_ESTADO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E1F490C-AFE3-B5C8-64C6-6C73CD314C01"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

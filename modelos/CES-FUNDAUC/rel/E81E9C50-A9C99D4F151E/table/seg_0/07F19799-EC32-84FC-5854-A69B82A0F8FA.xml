@@ -1,0 +1,401 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07F19799-EC32-84FC-5854-A69B82A0F8FA" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="COHORTES">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>COHORTES</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>COHORTES</comment>
+<commentInRDBMS>COHORTES</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_DIPLOMADO" id="2F8B7E90-74CA-6DBB-E432-61E70174F1C8">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>ID_DIPLOMADO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_DIPLOMADO</comment>
+<commentInRDBMS>ID_DIPLOMADO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_HORARIO" id="51897BD5-A2DE-7FDE-D183-DAE85838DF45">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>ID_HORARIO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_HORARIO</comment>
+<commentInRDBMS>ID_HORARIO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_MODALIDAD" id="C8D3885A-7D24-FCE2-6BAA-7C2390BEEC5B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>ID_MODALIDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_MODALIDAD</comment>
+<commentInRDBMS>ID_MODALIDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COHORTE" id="78BD65EC-2874-1B4D-C837-0C1D439D8176">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>COHORTE</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>COHORTE</comment>
+<commentInRDBMS>COHORTE</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CANT_ACTUAL" id="C908ABA0-0C72-B95B-8EF5-6710A4A398A2">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>CANT_ACTUAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CANT_ACTUAL</comment>
+<commentInRDBMS>CANT_ACTUAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INI" id="EC700254-60B0-1C65-3127-441C35BDC0A7">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>FECHA_INI</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_INI</comment>
+<commentInRDBMS>FECHA_INI</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_FIN" id="21F35912-90B7-A73C-A79D-2711C53D0914">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>FECHA_FIN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA_FIN</comment>
+<commentInRDBMS>FECHA_FIN</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COSTO" id="9F8A121A-EF62-0C39-E78D-984C3A564C4C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>COSTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>COSTO</comment>
+<commentInRDBMS>COSTO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="INICIAL" id="4B4B291C-5CC9-12F3-57F2-D4E156AA0561">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>INICIAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>INICIAL</comment>
+<commentInRDBMS>INICIAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COSTO_CUOTA" id="D15CC2AA-0996-233D-4B3E-1305D2F21214">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>COSTO_CUOTA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>COSTO_CUOTA</comment>
+<commentInRDBMS>COSTO_CUOTA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUOTAS" id="6A9597DF-3FFB-F90A-7F94-85FB57CB3DD9">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>CUOTAS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CUOTAS</comment>
+<commentInRDBMS>CUOTAS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STATUS" id="DB84E867-D79D-0982-2756-3859400D6068">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>STATUS</comment>
+<commentInRDBMS>STATUS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD" id="D0856ED9-68BB-F79E-848D-77D05927E73C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>CIUDAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CIUDAD</comment>
+<commentInRDBMS>CIUDAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="49791E7B-4FC3-95A6-B683-3DE7EF8753DE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>COHORTES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CODIGO</comment>
+<commentInRDBMS>Identificador unico de Cohorte</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_DIPLO" id="C2D13DC8-4BF9-D644-71E3-85BC1E7FF413">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:06:53 UTC</createdTime>
+<commentInRDBMS>Tipo de diplomado: Ej ADMINISTRADO, CERTIFICACION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EA7F7EA8-AE87-9443-D1B2-C51545277DE6</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_POR" id="05D798F4-311B-956F-7409-7E32214D36D7">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:13:10 UTC</createdTime>
+<comment>usuario quien crea la seccion</comment>
+<commentInRDBMS>usuario quien crea la seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CREADO_EL" id="563E2B54-5AE6-47DA-8C08-966D012A3397">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:13:10 UTC</createdTime>
+<comment>Fecha de Creacion</comment>
+<commentInRDBMS>Fecha de Creacion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_POR" id="C7E49A20-47FF-F457-4A36-2A33B252E1BB">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:13:10 UTC</createdTime>
+<comment>usuario quien modifica la seccion</comment>
+<commentInRDBMS>usuario quien modifica la seccion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODIFICADO_EL" id="EF900088-E6A8-6AF7-41F1-831DEB1393B5">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:13:10 UTC</createdTime>
+<comment>Fecha de Modificacion</comment>
+<commentInRDBMS>Fecha de Modificacion</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>C21F317A-9B57-7B9C-0294-7E819C7C026F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DIPLOMADOS_ID" id="12418643-2DAD-6F5C-5DB4-6DB8316F9EF9">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:24:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="18D9A448-A57F-39B3-B5A8-8390A8458491" referredColumn="5EFA1CD6-FDBF-83D2-6AB4-46564FF7695A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7A7937AD-D622-675E-3CB1-35221C47EE61" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="COHORTES_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018518</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>COHORTES_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49791E7B-4FC3-95A6-B683-3DE7EF8753DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2E02A19-D017-0A4A-4F93-CDD96AEAB649" name="COHORTES_UK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>COHORTES_UK1</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-22 19:07:41 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>8D75CD6E-6BDB-4CC5-1C60-348644EE9EF5</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49791E7B-4FC3-95A6-B683-3DE7EF8753DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DF30FAD-09C3-2FEC-1165-A730241612B1" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="COHORTES_UK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018518</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>003A0536-331F-CD23-2FBB-F62490CAD8FE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49791E7B-4FC3-95A6-B683-3DE7EF8753DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0D54944F-1BDC-6325-F553-D47D34249A86" name="COHORTES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:26:36 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="49791E7B-4FC3-95A6-B683-3DE7EF8753DE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F61BCB8C-7811-1B88-B567-B75A3D2F5232" name="COHORTES_DIPLOMADOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-21 20:22:40 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12418643-2DAD-6F5C-5DB4-6DB8316F9EF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

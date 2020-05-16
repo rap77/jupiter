@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99C694D5-54A7-6E52-D2EE-307D49C52588" name="CE_ESTUDIANTE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene informacion de Estudiantes]]></comment>
+<commentInRDBMS><![CDATA[Contiene informacion de Estudiantes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CC0EB685-7087-BBEC-BDA5-4554151A812D</importedID>
+<ordsAlias>estudiante</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="A13AC7D5-A7CF-B568-CB26-BF950436C5B7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>77F51111-2E2A-E0C3-3543-C08FDED37260</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="49E3A0DA-C074-872A-9A40-3D567C1BD476" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3C4B3381-49DF-CE3A-D004-2C0BD9DB4949" name="CE_ESTUDIANTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AF151A69-3E06-C3B3-EB85-834464F78697</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A13AC7D5-A7CF-B568-CB26-BF950436C5B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED8C1AF9-97B1-EE96-12DD-564451ECCB04" name="ESTUDIANTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4156EA5F-6634-5507-A5DE-6A1672A7BA4F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A13AC7D5-A7CF-B568-CB26-BF950436C5B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9E44AD9E-2BF0-7309-D999-72345530004F" name="ESTUDIANTE_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A13AC7D5-A7CF-B568-CB26-BF950436C5B7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

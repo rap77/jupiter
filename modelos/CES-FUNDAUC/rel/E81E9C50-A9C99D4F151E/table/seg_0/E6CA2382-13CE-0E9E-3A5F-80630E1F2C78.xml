@@ -1,0 +1,290 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E6CA2382-13CE-0E9E-3A5F-80630E1F2C78" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="FICHA_PAGO">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FICHA_PAGO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>FICHA_PAGO</comment>
+<commentInRDBMS>FICHA_PAGO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RENGLON" id="4A8A262A-B4DA-2ACF-16B2-374CC8B06A08">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>RENGLON</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>RENGLON</comment>
+<commentInRDBMS>RENGLON</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>20</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,20,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EVENTO" id="3AB2D14C-FE51-9F09-4DD0-7045D3450D45">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>ID_EVENTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_EVENTO</comment>
+<commentInRDBMS>ID_EVENTO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8B080CD-F65B-C127-AE82-EE7797CB3C96" referredColumn="099B1E6D-FDF1-8429-4CD4-DC3C6B82570A"/>
+</associations>
+</Column>
+<Column name="FECHA" id="3101A2D5-9D1D-F3B6-91B1-4EC25D590AB1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>FECHA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>FECHA</comment>
+<commentInRDBMS>FECHA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MONTO" id="DCF7A0BB-E95B-7AED-9DC5-6AA219206CD9">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>MONTO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>MONTO</comment>
+<commentInRDBMS>MONTO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,14,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PROGRAMA" id="FE695981-3791-B773-7E6F-0C03C224F577">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>PROGRAMA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>PROGRAMA</comment>
+<commentInRDBMS>PROGRAMA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_FACT" id="75EA935C-7677-C67D-8279-36D6243F00AC">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>ID_FACT</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_FACT</comment>
+<commentInRDBMS>ID_FACT</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,8,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OBSERVACION" id="DAF47439-0470-D011-C7EF-E02A4DA81A30">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>OBSERVACION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>OBSERVACION</comment>
+<commentInRDBMS>OBSERVACION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CUOTA_O_LIBRO" id="59CD67E3-76A0-4A65-1839-1BE286698C86">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>CUOTA_O_LIBRO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>CUOTA_O_LIBRO</comment>
+<commentInRDBMS>CUOTA_O_LIBRO</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MATRICULA" id="2CEF683B-8D21-B748-7917-D19A863AC55B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>MATRICULA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>MATRICULA</comment>
+<commentInRDBMS>MATRICULA</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F571D0F8-88FE-CBA4-33CF-8F5475DDFC25" referredColumn="CD0C8DE2-7766-5C58-560C-FEDD1E00832A"/>
+</associations>
+</Column>
+<Column name="STATUS" id="76AF9166-3623-6598-4879-D1B177A0AD8C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>STATUS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>STATUS</comment>
+<commentInRDBMS>STATUS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 BYTE</dataTypeSize>
+<ownDataTypeParameters>1 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NIVEL" id="F7E6BBB3-B8D0-6FD6-459C-19E56E9609C1">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>FICHA_PAGO</sourceObjSchema>
+<sourceObjName>NIVEL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>NIVEL</comment>
+<commentInRDBMS>NIVEL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FACTURA_ID" id="D5774C82-A249-4A7A-70C6-C151AE642C22">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:50:45 UTC</createdTime>
+<comment>Identificador Unico de Factura</comment>
+<commentInRDBMS>Identificador Unico de Factura</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7CA28ADF-0136-FEF7-0E4F-AA12B3170D37" referredColumn="8DDC5525-02F5-C981-CF92-AF7595BC1D4D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="939EBEF3-C840-5796-DEDF-DC04B7170FAF" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="FICHA_PAGO_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018569</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:56 UTC</createdTime>
+<comment>FICHA_PAGO_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A8A262A-B4DA-2ACF-16B2-374CC8B06A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15842EA3-D5C5-4558-B46B-79C38F0623AE" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="SYS_C0018569">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018569</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 14:36:20 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>F271FFC3-02BF-456A-6A4E-237644ADE2BE</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A8A262A-B4DA-2ACF-16B2-374CC8B06A08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B11269B5-FBB4-D046-B6F3-E96902FF63D2" name="FK_FICHA_PAGO">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2CEF683B-8D21-B748-7917-D19A863AC55B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA7BEBD0-AE3A-3DF3-5794-38AD2EE643C8" name="FIC_PAG_EVEN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AB2D14C-FE51-9F09-4DD0-7045D3450D45"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3C862C03-277A-0577-825B-BC608D40B292" name="FICHA_PAGO_FACTURA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 23:50:45 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5774C82-A249-4A7A-70C6-C151AE642C22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

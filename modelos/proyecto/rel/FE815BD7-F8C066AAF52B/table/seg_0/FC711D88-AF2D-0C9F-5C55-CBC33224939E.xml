@@ -1,0 +1,259 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC711D88-AF2D-0C9F-5C55-CBC33224939E" name="GL_POLIZA_SEG">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Polizas de Seguro]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Polizas de Seguro]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>60668B64-36C8-063C-9E61-F162B8E074FE</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B9DF4797-A1F4-122F-2E40-083F88B55B51">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único de la poliza]]></comment>
+<commentInRDBMS><![CDATA[Identificador único de la poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FE6CF7F8-76FE-1FDA-8398-BF0A415B4155</importedID>
+<constraintName>ID}_1614373822</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_ASEGURADORA" id="334C3D18-7B48-85CC-DA5F-A542278EFAD3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D9125C7A-EFA2-A2FE-D9DA-96D0E094E783</importedID>
+<constraintName>ID}_2006676970</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C5140D54-AA7D-9923-0134-420EAAC5D52B" referredColumn="5EFEA3FE-1377-536E-EA35-175DEE23F044"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_POLIZA" id="1C97716C-A65A-9B86-29A0-99DE1ED0E8BE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de Poliza]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de Poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7620BBFD-476E-6B3E-19EA-C687C8E9B17C</importedID>
+<constraintName>ID}_1586200334</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="3C597E9D-BA67-447A-4B03-5D70D34D5080" referredColumn="4BA5BB66-79FF-9862-8405-D7DE336DF023"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_COBERTURA" id="DB0E8C16-90A7-D4BE-40AF-F8E148C9CC1C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de Cobertura]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de Cobertura]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>37732471-93F0-39CC-5FFD-3B9F9F230020</importedID>
+<constraintName>ID}_1040327897</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="692ED35F-F582-5DF4-7555-D087FF9A206F" referredColumn="2D48AB00-4E3D-4671-910E-C441F327B767"/>
+</associations>
+</Column>
+<Column name="NRO_POLIZA" id="11E4AA7E-FDE3-B07C-4BC3-249B5AC3BA90">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Numero de la Poliza de Seguro]]></comment>
+<commentInRDBMS><![CDATA[Numero de la Poliza de Seguro]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5DF45EEA-4776-8328-9C86-95C2659583ED</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FECHA_INICIO" id="1819AB57-9CB4-10ED-CF3E-B82CF921DF0A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha de la Poliza de Seguros]]></comment>
+<commentInRDBMS><![CDATA[Fecha de la Poliza de Seguros]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>451476E9-A04F-4EBB-2655-156B0CC7292C</importedID>
+<constraintName>FECHA}_1236111590</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MONTO_POLIZA" id="4617E703-E0D4-D655-3836-65C2C4E92776">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Monto de la Cobertura de la Poliza]]></comment>
+<commentInRDBMS><![CDATA[Monto de la Cobertura de la Poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>04E42A76-E570-3631-BEFD-BC2E026B1D3C</importedID>
+<constraintName>MONTO_MONETARIO}_1584490694</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7C297F8-0C08-6663-E04A-4C607CAAD892</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>&apos;0&apos;</beginValue>
+<endValue>&apos;9999999999.99&apos;</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_FIN" id="85B586D3-7397-D8D6-9BC8-70034BDB4DEA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha en que finaliza la Poliza]]></comment>
+<commentInRDBMS><![CDATA[Fecha en que finaliza la Poliza]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6603143A-F89E-722E-9C14-83205F1D5971</importedID>
+<constraintName>FECHA}_878069852</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96B1E290-3174-4CE1-AC26-8E632E9979D9" name="GL_POLIZA_SEG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>45D9A3D1-A2E1-63BF-6F9E-ADDF1B4D264C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9DF4797-A1F4-122F-2E40-083F88B55B51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0B0F0B9-5B8D-5526-6CA7-0869CC9C675E" name="GL_POLIZA_SEG_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A8D8443A-5E7D-153E-E53C-19DB8B2E48DD</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B9DF4797-A1F4-122F-2E40-083F88B55B51"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59293A7E-D469-FC27-EEFC-8AC82A327049" name="GL_POLIZA_SEG_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="334C3D18-7B48-85CC-DA5F-A542278EFAD3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="000DD724-E682-3CF8-56F9-81916223A756" name="GL_POLIZA_SEG_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C97716C-A65A-9B86-29A0-99DE1ED0E8BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE7DE7FC-894E-6BAD-8195-34250E35F0DB" name="GL_POLIZA_SEG_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB0E8C16-90A7-D4BE-40AF-F8E148C9CC1C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

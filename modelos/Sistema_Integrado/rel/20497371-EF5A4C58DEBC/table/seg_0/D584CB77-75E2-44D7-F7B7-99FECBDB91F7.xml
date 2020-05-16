@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D584CB77-75E2-44D7-F7B7-99FECBDB91F7" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="RH_PROFESION">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<comment><![CDATA[Profesión. Ej: Ingeniero Industrial.]]></comment>
+<commentInRDBMS><![CDATA[Profesión. Ej: Ingeniero Industrial.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="D4E193E8-0F25-E09F-CB61-8F859463C8FB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Profesión.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PRFON_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PRFON_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_NIVEL_ESTUDIO" id="AD7C0BA8-43B7-98E6-DA25-3AB3CFBE94AC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Nivel de Estudio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Nivel de Estudio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PRFON_NEST</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PRFON_NEST</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="AED1A1DE-52CE-AD87-6FF4-E707AEB434FC" referredColumn="FD0C3ADB-5D22-E139-EE84-A026AEF08BBA"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="65B29985-5C95-4999-63B2-B62DAF4CCCD1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<comment><![CDATA[Descripción de la Profesión.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Profesión.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_PRFON_DES</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_PRFON_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C34E2E28-D114-4298-DA3E-1641671EAD26" name="RH_PROFESION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4E193E8-0F25-E09F-CB61-8F859463C8FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F716BB9A-0603-6145-1AA2-0B5CEDA3F724" name="RH_PROFESION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:21:03 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4E193E8-0F25-E09F-CB61-8F859463C8FB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7D91670-2B99-795B-ACFD-CD02B1A43AC7" name="RH_PROFESION_RH_NIVEL_ESTUDIO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 23:26:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD7C0BA8-43B7-98E6-DA25-3AB3CFBE94AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

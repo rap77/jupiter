@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2078FB7-554B-9C5D-FA44-44740C624F74" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPO_DIRECCION_ELEC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:52:23 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección Electrónica. Ej: 1 Correo Electrónico, 2 Página WEB, 3 PIN Blackberry.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección Electrónica. Ej: 1 Correo Electrónico, 2 Página WEB, 3 PIN Blackberry.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TP_DIR_ELE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="65D2B232-40DF-5998-DC29-76C10A7FE5A2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:52:23 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Dirección Electrónica.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Dirección Electrónica.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TP_DIR_ELE_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TP_DIR_ELE_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="67252D38-A31A-504C-D6C2-ED02F4EE32B6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:52:23 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Dirección Electrónica. Ej. Correo, Twiter, Instagram, FaceBook]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Dirección Electrónica. Ej. Correo, Twiter, Instagram, FaceBook]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DES_TP_DIR_ELE</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="835406D2-68CD-1A37-120F-46999635F171" name="TIPO_DIR_ELEC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:52:23 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65D2B232-40DF-5998-DC29-76C10A7FE5A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7C3335F-51DC-7BD7-63DA-BD963EEA6F6D" name="TIPO_DIR_ELEC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 17:52:23 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="65D2B232-40DF-5998-DC29-76C10A7FE5A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="9D8E0B5A-42C2-1074-AC7F-96EEC131DA04" name="GL_URBANIZACIONES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Urbanización, Barrio, Sector, Parcelamiento. Ej: 1 El Trigal, 2 El Combate.</comment>
+<commentInRDBMS>Urbanización, Barrio, Sector, Parcelamiento. Ej: 1 El Trigal, 2 El Combate.</commentInRDBMS>
+<generatorID>A2541403-78E8-4923-E1FC-DE3A783A417D</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>URB</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="73D11F3D-90E3-447F-748C-8C281FA529C2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interna de la Urbanización o Barrio.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Urbanización o Barrio.</commentInRDBMS>
+<generatorID>AD645697-97BC-A371-05B7-C8B5C59B451C</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1870564179</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="NOMBRE" id="AF26337C-181C-4747-7169-0D5966E2A6DB">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Nombre de la Urbanización o Barrio. Ej: El Trigal.</comment>
+<commentInRDBMS>Nombre de la Urbanización o Barrio. Ej: El Trigal.</commentInRDBMS>
+<generatorID>8EC5D69F-D918-CC03-3A09-28A22E4E4473</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GL_CIUDADES_ID" id="B92D5884-461F-C342-C44B-580F334E0FBC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Ciudad, Población o Caserio de la Urbanización o Barrio. Número de Identificación Interno de la Ciudad banización. Población o Caserio.</comment>
+<commentInRDBMS>Ciudad, Población o Caserio de la Urbanización o Barrio. Número de Identificación Interno de la Ciudad banización. Población o Caserio.</commentInRDBMS>
+<generatorID>24E5807A-ADBD-2637-A376-3FFF62A07ED6</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_28360623</constraintName>
+<referedAttribute>E58C7063-DA2B-017F-27DF-C5E1B1610C2A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AEC98821-53EF-B103-3C64-B360814BDCE2" name="GL_URBANIZACIONES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>5246CD7E-C7C4-2973-77D6-A995DAAAB055</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>73D11F3D-90E3-447F-748C-8C281FA529C2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="75DD5C7E-43DA-DA14-08F5-F8465A1CADB7" containerWithKeyObject="835A1A86-118B-3F88-C283-E7DD8B0F50F5" localFKIndex="7C2C3C73-9A0A-4CB8-7CF5-989310CFB0BB" name="DIR_TP_ZON_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>744F5F46-4171-D427-BA5D-75164BDDD700</importedID>
+<referredTableLongName>GL TIPOS ZONAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>45458A5D-BD5F-6914-3D33-E667520C1BA3</referredTableID>
+<keyObject>8DC41E98-732E-6B76-EA01-CA21A47F55A5</keyObject>
+<referredKeyID>8DC41E98-732E-6B76-EA01-CA21A47F55A5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

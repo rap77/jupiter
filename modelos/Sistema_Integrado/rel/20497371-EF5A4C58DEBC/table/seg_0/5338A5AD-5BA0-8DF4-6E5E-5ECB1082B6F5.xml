@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5338A5AD-5BA0-8DF4-6E5E-5ECB1082B6F5" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TIPOS_TELEFONOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<comment><![CDATA[Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Teléfono. Ej:1 Celular, 2 Habitación, 3 Oficina, 4 Fax. 5 Busca Personas.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="BA4F16E4-AB0E-405A-A233-178B861C73B6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<comment><![CDATA[Número de Identificación del Tipo de Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación del Tipo de Teléfono.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TTLF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TTLF_ID</notNullConstraintName>
+</Column>
+<Column name="DESCRIPCION" id="DABF7410-999A-A616-02D5-99061E84A4E4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<comment><![CDATA[Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Tipo de Teléfono. Ej: Teléfono de Habtiración, Teléfono Celular. Teléfono del Domicilio Fiscal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="24FB7D2E-BA52-A4EC-7DC5-B8137AAAF7BE" name="TIPOS_TELEFONOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA4F16E4-AB0E-405A-A233-178B861C73B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C154AE6E-9949-E6B2-964E-C430F89BA839" name="TIPO_TELEFONO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 20:49:27 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BA4F16E4-AB0E-405A-A233-178B861C73B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

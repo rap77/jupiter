@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="925182E5-6AED-B7EE-C723-CA514BB50DA2" name="PC_GRUPO_PRODUCTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Grupo de Productos. 1. Material Vivo Animal y Vegetal. 2 Materias Primas. 3. Maquinarias Herramientas Equipo Industrial y Vehiculos, 4. Componentes y Suministros 5. Productos de Uso Final. 6. Servicios, 7. Terrenos Edificios Estructuras y Vias]]></comment>
+<commentInRDBMS><![CDATA[Grupo de Productos. 1. Material Vivo Animal y Vegetal. 2 Materias Primas. 3. Maquinarias Herramientas Equipo Industrial y Vehiculos, 4. Componentes y Suministros 5. Productos de Uso Final. 6. Servicios, 7. Terrenos Edificios Estructuras y Vias]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>950B617A-9927-80D8-08B0-F095626CEAEF</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5B2892B0-4DEC-917A-984C-3406295A7840">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación de la Clase de Producto.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación de la Clase de Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AB7D6D5F-E02F-5DF8-5EDD-E99F2B5E2E2C</importedID>
+<constraintName>ID}_1450976764</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="B41A59FF-BE59-60CC-A257-8730374E4115">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de la Clase de Producto.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Clase de Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F1DC1164-05E8-5582-C6AB-AFCCD67A3ACC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86EC4471-2AB5-C632-D636-2F0E7DEB7AD6" name="GL_GRUPO_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8663AC28-FCCD-9A34-DB51-46FB74C7394B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B2892B0-4DEC-917A-984C-3406295A7840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCA682C4-0BA4-C5E9-93DC-488627CD7D98" name="GL_GRUPO_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AABF38DE-CDDB-277A-B594-626ED5B18059</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B2892B0-4DEC-917A-984C-3406295A7840"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

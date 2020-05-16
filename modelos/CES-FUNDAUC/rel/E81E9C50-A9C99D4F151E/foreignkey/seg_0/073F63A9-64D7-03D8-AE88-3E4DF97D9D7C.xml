@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="073F63A9-64D7-03D8-AE88-3E4DF97D9D7C" containerWithKeyObject="4A938A47-1C93-37A9-9754-3452D5F14FD0" localFKIndex="83206F8E-5793-500D-2438-D5A3DC585C80" name="FIC_PCFP_EVEN_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018629</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>SYS_C0018629</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.EVENTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A782AA83-759D-DF87-9E21-0795D68F8218</referredTableID>
+<keyObject>98F5AA43-B9E4-1D20-EC1A-D73B8E08CA64</keyObject>
+<referredKeyID>98F5AA43-B9E4-1D20-EC1A-D73B8E08CA64</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EVENTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

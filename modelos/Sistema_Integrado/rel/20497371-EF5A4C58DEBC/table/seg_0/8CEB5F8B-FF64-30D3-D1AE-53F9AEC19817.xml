@@ -1,0 +1,126 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CEB5F8B-FF64-30D3-D1AE-53F9AEC19817" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_SECTORES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_SECTORES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<comment><![CDATA[Urbanización, Barrio, Sector, Parcelamiento. Ej: 1 El Trigal, 2 El Combate.]]></comment>
+<commentInRDBMS><![CDATA[Urbanización, Barrio, Sector, Parcelamiento. Ej: 1 El Trigal, 2 El Combate.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>SEC</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="004DD498-53E8-FE6A-C3E6-0F85389A8A91">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_SECTORES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna de la Urbanización o Barrio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna de la Urbanización o Barrio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID_1870564179</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="CIUDAD_ID" id="9D058CEF-41E8-C083-4043-C1F9004B6E47">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_SECTORES</sourceObjSchema>
+<sourceObjName>CIUDAD_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<comment><![CDATA[Ciudad, Población o Caserio de la Urbanización o Barrio. Número de Identificación Interno de la Ciudad banización. Población o Caserio.]]></comment>
+<commentInRDBMS><![CDATA[Ciudad, Población o Caserio de la Urbanización o Barrio. Número de Identificación Interno de la Ciudad banización. Población o Caserio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>ID_28360623</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="9BE5A11E-77E4-3C8B-18DC-8AD65E77483D" referredColumn="7F4B53BB-CFCD-4D65-50E9-7B1F41EC46B1"/>
+</associations>
+</Column>
+<Column name="NOMBRE" id="1970FC86-869D-60A1-FBEF-EC3142DE1BBE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_SECTORES</sourceObjSchema>
+<sourceObjName>NOMBRE</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<comment><![CDATA[Nombre de la Urbanización o Barrio. Ej: El Trigal.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Sector, Urbanización o Barrio. Ej: El Trigal.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80D23A2E-653E-71FB-FB01-0FFE64E1E5FD" name="SECTORES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SECTORES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004DD498-53E8-FE6A-C3E6-0F85389A8A91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EC8A651B-158B-CBD0-C78A-64C57D177461" name="SECTORES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>SECTORES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="004DD498-53E8-FE6A-C3E6-0F85389A8A91"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E2D550AF-30DA-8B02-6BEF-22453F0167C1" name="SEC_CIUDADES_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:19:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D058CEF-41E8-C083-4043-C1F9004B6E47"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

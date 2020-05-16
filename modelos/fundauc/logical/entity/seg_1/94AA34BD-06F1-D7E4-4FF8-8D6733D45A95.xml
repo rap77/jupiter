@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_1" id="94AA34BD-06F1-D7E4-4FF8-8D6733D45A95" name="GL TIPOS VIAS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.</comment>
+<commentInRDBMS>Tipo de Vía de Acceso. Ej: 1 Calle, 2 Avenida, 3 Vereda, 4 Carretera, 5 Carrera.</commentInRDBMS>
+<generatorID>29880A57-EC0F-A740-A04D-C2DABC651DC8</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_VIA</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="075CCEE5-0C9D-8565-1409-EEF84AF918E5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Número de Identificación Interno del Tipo de Via.</comment>
+<commentInRDBMS>Número de Identificación Interno del Tipo de Via.</commentInRDBMS>
+<generatorID>E87890D1-B591-4044-D930-BB655CE59FC4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1261384826</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DESCRIPCION" id="10144EFE-9496-E2D4-B7CA-E1F6B45AB366">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.</comment>
+<commentInRDBMS>Descripción del Tipo de Via. Ej: Calle, Carrera, Avenida.</commentInRDBMS>
+<generatorID>C9D9D5D8-AB9D-D899-D5D2-3934AE657FFC</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="83B4ADCC-40C5-90BE-C973-8EBA389B2F4B" name="GL_TIPOS_VIAS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>2A531769-0B20-D842-D2AB-E7ADDB494663</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>075CCEE5-0C9D-8565-1409-EEF84AF918E5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,231 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CFAAD818-C6A8-FA51-42EF-A3E54B51AF19" name="GL_RIF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></comment>
+<commentInRDBMS><![CDATA[Número de Registro de Información Fiscal o Cédula de Identidad. Ej: G 20000025041 4, V 15165102 6.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1C43ECB4-9BB5-AADB-6C42-F5514D4D93CA</importedID>
+<abbreviation>RIF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="346258E4-CCFC-0E81-B140-B30A4E985C3B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4A954A59-3D0E-069D-598D-34C69A121D95</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PER_ID" id="DB5F2EDF-B000-3B0E-A47D-A3D8D99DF418">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Persona a quien pertenece el Número del Registro de Información Fiscal. Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>15DA347D-3F5A-A5DE-010A-40C8FC7FB0EA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D94E08C9-A335-6A06-65E9-2B72C0F74636" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="TP_DOCID_ID" id="56748B3B-2ADB-8FD2-927A-79046E0A5258">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C9552C8B-868C-5D67-CA93-432669C1A02B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08661E9B-BD8D-CECC-E513-252731C3A5BF" referredColumn="35AB4889-06DA-9C1B-948C-F2713DE64F85"/>
+</associations>
+</Column>
+<Column name="LET_RIF_ID" id="D3150593-7E55-A692-79A8-EEA13890D267">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>40C9522E-4382-DC3D-B362-1A30678466BA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B58F4FB-EB46-3F8D-2649-0D0B601F5703" referredColumn="6B0F7925-330C-04E9-6198-E88A90B38970"/>
+</associations>
+</Column>
+<Column name="NUMERO" id="06E99ECD-D6A5-5734-1664-76B0201FDF85">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Número del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B16B85B7-F27D-5307-3D41-7A19A8CBA55C</importedID>
+<constraintName>numero_ck</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8F04E385-223F-135A-1290-107667D2E6A7</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DIGITO" id="7DC087F4-E9CC-E522-B84F-8644A14499B5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Dígito de Verficación del Registro de Información Fiscal.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E0B63C1C-B671-46D8-82F8-C4A7D531896C</importedID>
+<constraintName>digito_ck</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>91C1C193-2C8D-8AED-FC5B-5FB2AB4C4D6C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ACTIVO" id="0854832D-F904-A68E-E722-BFD9CCB5821D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Registro de Informaión Fiscal Activo?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>437CCA25-EF3A-59EA-63E3-7B68EB1A5A8D</importedID>
+<constraintName>SI_NO_1987291074</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="573694DA-82B2-4CDF-0B26-BC236CE9EB5B" name="GL_RIF_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9BCD6FC9-3D64-5042-1C19-BA627E72CB09</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346258E4-CCFC-0E81-B140-B30A4E985C3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E44CFF3F-B492-0834-084A-0B42FE5B508B" name="LET_RIF_ID_NUM_UN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>28C3A887-E424-9B1D-3323-7B7B9ED02B50</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3150593-7E55-A692-79A8-EEA13890D267"/>
+<colUsage columnID="06E99ECD-D6A5-5734-1664-76B0201FDF85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3BE623CC-DB5B-DE19-269D-C6A7F3A6D95C" name="GL_RIF_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1CF5F50D-3E72-CFA9-3C36-D302B392212B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="346258E4-CCFC-0E81-B140-B30A4E985C3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9A9BA12-597B-F0AA-A13B-8E9D66E049FD" name="GL_RIF_AK1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4042D274-E222-EFFF-1B5B-ABF812C5C283</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3150593-7E55-A692-79A8-EEA13890D267"/>
+<colUsage columnID="06E99ECD-D6A5-5734-1664-76B0201FDF85"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AAC250F0-3C2F-1BAF-DAE3-9A282447E20F" name="RIF_LET_RIF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3150593-7E55-A692-79A8-EEA13890D267"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="20750F87-DA75-853F-E2A1-B700289FFE22" name="RIF_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB5F2EDF-B000-3B0E-A47D-A3D8D99DF418"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6F425B18-EEB8-1E6D-672F-01FD0A435FBB" name="RIF_TP_DOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56748B3B-2ADB-8FD2-927A-79046E0A5258"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

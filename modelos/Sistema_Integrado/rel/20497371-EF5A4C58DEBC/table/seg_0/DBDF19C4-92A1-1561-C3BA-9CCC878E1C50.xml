@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DBDF19C4-92A1-1561-C3BA-9CCC878E1C50" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_PREFIJOS_TIPO_DOCID">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PREFIJOS_TIPO_DOCID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TP_DOCID_ID" id="B1DBC466-283A-8D79-E65D-1DDAF2C1F4A2">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PREFIJOS_TIPO_DOCID</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>PREF_DOC_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="PREF_DOCID_ID" id="40B8D619-7B04-8355-70ED-59C65CC74BB4">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_PREFIJOS_TIPO_DOCID</sourceObjSchema>
+<sourceObjName>PREF_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Numero de Identificador interno del prefijo]]></comment>
+<commentInRDBMS><![CDATA[Numero de Identificador interno del prefijo]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="14B86D3B-8174-29CD-E1FB-1ECE986AA2D0" referredColumn="6B19AA91-2717-6221-E7A7-F17E4A4D5E1E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3926AD50-8E69-5EA3-CEF6-2291ED82EC79" name="GL_PREFIJOS_TIPO_DOCID_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_PREFIJOS_TIPO_DOCID_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40B8D619-7B04-8355-70ED-59C65CC74BB4"/>
+<colUsage columnID="B1DBC466-283A-8D79-E65D-1DDAF2C1F4A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73658EBB-F9E5-680D-4FD7-88FA5CAD0CC0" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="PREF_ID_TIPO_ID_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>PREF_ID_TIPO_ID_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1DBC466-283A-8D79-E65D-1DDAF2C1F4A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08FD5F88-9EEB-2AB9-43D2-F51DB4A90F23" name="PREF_TP_DOCID_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="40B8D619-7B04-8355-70ED-59C65CC74BB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

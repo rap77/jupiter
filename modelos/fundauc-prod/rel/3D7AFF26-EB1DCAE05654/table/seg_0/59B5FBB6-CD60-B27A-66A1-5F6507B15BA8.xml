@@ -1,0 +1,173 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="59B5FBB6-CD60-B27A-66A1-5F6507B15BA8" name="CONTROL_EVALUACION">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:40:48 UTC</createdTime>
+<comment><![CDATA[Tabla que guarda los controles de evaluación que aplica el profesor]]></comment>
+<commentInRDBMS><![CDATA[Tabla que guarda los controles de evaluación que aplica el profesor]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<ordsAlias>table_41</ordsAlias>
+<abbreviation>CTRL_EVA</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="E310C4A4-2B98-ECEC-DF93-7D6D37CE7147">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:45:52 UTC</createdTime>
+<comment><![CDATA[identificador unico de control de evaluaciones]]></comment>
+<commentInRDBMS><![CDATA[identificador unico de control de evaluaciones]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SECCION_ID" id="18DE5D88-3478-D084-EE8F-439713C2B8EC">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:48:22 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de Instancia de Seccion]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de Instancia de Seccion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6AF8EF08-BCA7-7AA3-A03D-BFB3E2BBB2AB" referredColumn="8D5D9927-6762-2AF9-D7E3-F8BD7E58E014"/>
+</associations>
+</Column>
+<Column name="INSCRIPCION_ID" id="F750F6B8-0FD5-6000-168C-2D06A776FCAA">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Identificador unico de la inscripcion]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de la inscripcion]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FFC06829-73CD-B6BA-B11B-54E212E682C6" referredColumn="B57EC28A-EC21-2995-9C12-E3FD8AEF3BB4"/>
+</associations>
+</Column>
+<Column name="ESTUDIANTE_ID" id="B5E890DA-2DF2-F785-1185-D5F2C586C66B">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Matricula del Estudiante]]></comment>
+<commentInRDBMS><![CDATA[Matricula del Estudiante]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DF262C2-8302-5C27-9C12-169CA0A363FC" referredColumn="6192FAD5-B295-6370-4E71-561F1B684FFF"/>
+</associations>
+</Column>
+<Column name="EVALUACION1" id="9B7BA08B-1D71-1DF6-4869-4235E2B2E536">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Primera Evaluacion sobre 100%]]></comment>
+<commentInRDBMS><![CDATA[Primera Evaluacion sobre 100%]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUACION2" id="41512187-A927-222F-EFF6-D20689D7F0E1">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Segunda Evaluacion sobre 100%]]></comment>
+<commentInRDBMS><![CDATA[Segunda Evaluacion sobre 100%]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUACION3" id="97CEA5C9-27E0-B80E-11B2-6C80A2F59BA3">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Tercera Evaluacion sobre 100%]]></comment>
+<commentInRDBMS><![CDATA[Tercera Evaluacion sobre 100%]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EVALUACION4" id="032EB221-5430-74AF-1A02-11B0A81C5935">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:58:24 UTC</createdTime>
+<comment><![CDATA[Cuarta Evaluacion sobre 100%]]></comment>
+<commentInRDBMS><![CDATA[Cuarta Evaluacion sobre 100%]]></commentInRDBMS>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="935435A7-311E-4EB3-2E02-EA9F982058DD" name="CONTROL_EVALUACION_PK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:45:53 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E310C4A4-2B98-ECEC-DF93-7D6D37CE7147"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C09D6AA-BE36-10EC-DDD8-BC156E62C717" name="CTR_EVA_INST_SEC_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:48:22 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18DE5D88-3478-D084-EE8F-439713C2B8EC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4041F22-4630-47F0-8ECF-C2C78A184105" name="CTR_EVA_INSC_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 17:00:57 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F750F6B8-0FD5-6000-168C-2D06A776FCAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3D61306F-2AA3-F176-F636-6EA4F417C67D" name="CTR_EVA_ESTUD_FK">
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 17:00:57 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5E890DA-2DF2-F785-1185-D5F2C586C66B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="FUNDAUC" directorySegmentName="seg_0" id="985340A0-FB1C-3A04-3B5C-0F0EBE81D8F1">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-03 17:48:30 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<ordsAlias>schema_1</ordsAlias>
+</SchemaObject>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="C4B3FFEE-196B-4CB6-369E-B690209A0514" name="IN_TIPO_FORMA_ADQUISICION">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipos de formas de adqusicion, Ej: Compra Directa, Concurso Abierto o Cerrado, Donacion, Etc.]]></comment>
+<commentInRDBMS><![CDATA[Tipos de formas de adqusicion, Ej: Compra Directa, Concurso Abierto o Cerrado, Donacion, Etc.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>547CA665-EE7F-1FC1-71B0-D827A9D34EE7</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="04CDA74E-327D-1AF4-413E-66360AE98166">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de forma de adquisición]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de forma de adquisición]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CE143ADA-1A8A-0F1C-E17E-F245BFAC1F08</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="99460B99-CE7C-B777-FF03-80262BFA7C27">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Codigo del Tipo de Forma de Adquisicion Sugerido por la SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo del Tipo de Forma de Adquisicion Sugerido por la SUDEBIP]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>006CF9C6-7B7D-6D22-481F-8304C61FE9D8</importedID>
+<constraintName>ENTERO_03}_694775047</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DE260B81-9939-841F-C400-6B0C308EBF64</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="02B05F46-F9E2-26D6-DE3E-2FCC9725DE81">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion de la Forma de Adquisición]]></comment>
+<commentInRDBMS><![CDATA[Descripcion de la Forma de Adquisición]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C9390713-97DF-6302-B0F0-377E668FFC80</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="59C6C5D7-27F4-93E6-B22E-47C452860809" name="IN_TIPO_FORMA_ADQUISICION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F7306B2D-8D27-B16C-92AE-78881192B90D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04CDA74E-327D-1AF4-413E-66360AE98166"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26DF2EFF-B89E-3A4A-9150-88EECF31EC81" name="IN_TIPO_FORMA_ADQUISICION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>104F3BC4-6255-AE6D-9B42-712A184E8A9C</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04CDA74E-327D-1AF4-413E-66360AE98166"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,375 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="CC47181D-D998-068E-BDD1-F05F5CB8E7A7" name="IN_PRODUCTO_ADQUIRIDO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Producto de Compra. 1 Resma de Papel. 2 Computador.]]></comment>
+<commentInRDBMS><![CDATA[Producto de Compra. 1 Resma de Papel. 2 Computador.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>02C38A71-EBE5-CBC6-DA7D-29271E653419</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="57B47050-1AFF-310E-8E6D-C5106B24AC48">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Producto.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>22B6AEE1-D47E-877C-F106-6E22B81F8CCE</importedID>
+<constraintName>ID}_236454578</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_PRODUCTO_PRINCIPAL" id="74D494E7-6128-5EF7-CC47-A34356AE969F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Producto.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7D158F5B-026C-5CA3-3379-75C2B43FD2F2</importedID>
+<constraintName>ID}_939855830</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="861ED708-D0C7-241F-8AB9-57781B7399DF" referredColumn="57B47050-1AFF-310E-8E6D-C5106B24AC48"/>
+</associations>
+</Column>
+<Column name="ID_TIPO_EMPAQUE" id="6F5243FC-4E19-51D6-2217-C9CECD1EC5A2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de empaque]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de empaque]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B6BEBC8C-E055-8AC0-8917-84F94163408A</importedID>
+<constraintName>ID}_1125594818</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="3FD7F9B1-5387-C01C-B229-99256371F985" referredColumn="D5922219-26FB-8E74-78FB-6A46083349DB"/>
+</associations>
+</Column>
+<Column name="ID_MARCA" id="6E673D14-1767-27A9-F48A-43472BA859E1">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de la Marca]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de la Marca]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AB5EC269-095B-DABB-FC50-ACD5D29724F6</importedID>
+<constraintName>ID}_1736222942</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="1B43F2E8-5AAA-4BD5-C105-AC552DD86C9C" referredColumn="2983FD65-BD7B-896D-2C5E-DCB891915CAE"/>
+</associations>
+</Column>
+<Column name="ID_PAIS" id="359254FC-6514-71B9-9E37-8D7877A5D52E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del País. Ej: VE, US.]]></comment>
+<commentInRDBMS><![CDATA[Código del País. Ej: VE, US.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>47F20A1F-9C92-0C5B-AEF8-1A91E5D86C52</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>A2BF0B42-8EBC-7034-A877-9691AA0C1C53</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="467FF394-2C42-9BF5-049B-EE1CC830FC8E" referredColumn="CFBEBCB8-2F7F-DF59-3905-F8F6D29AB21B"/>
+</associations>
+</Column>
+<Column name="ID_UNIDAD_MEDIDA" id="7449866D-BFE4-06A3-EC1A-2CF3406F61BA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Unidad de Medida.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Unidad de Medida.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EF365807-4A42-09FF-03EA-D0808D805164</importedID>
+<constraintName>ID}_911370385</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="ED156290-D8FF-4A2A-D617-624CC7F08BCF" referredColumn="91E99938-6661-F1DA-6CFC-B3D83801BAB4"/>
+</associations>
+</Column>
+<Column name="ID_DETALLE_PROD" id="75901458-FAC3-B5F5-F732-6EE408983AAA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1D3D7233-D51E-DA0D-7CE8-CB44CCA2BD01</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9CB72D44-883F-918C-287A-843DD709BFC9" referredColumn="669F63D6-487A-5707-EAC5-7B866A16545E"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="F6387237-6174-9FAA-CCCD-1D8821D7C104">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Producto.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FCDE32DD-0904-B339-E80F-8CB774370EEC</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1848C593-7964-79CC-A365-8317A300C17D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CODIGO" id="D4126464-7FE1-A47B-3E63-47A650ED85FC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código del Producto.]]></comment>
+<commentInRDBMS><![CDATA[Código del Producto.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7034A9C7-7DAD-C6D6-04A2-0D39FAE2A1F6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO" id="479CC3B8-D93E-5537-7E17-F45D178547AD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Está Activo el Producto?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Producto?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B428D5F4-0D01-2EFC-3822-5CAB6A1B16F2</importedID>
+<constraintName>SI_NO}_1615940120</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="UNIDADES_EMPAQUE" id="DCB4376E-1D8E-B5F3-4E13-717A030A0559">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Numero de unidades dentro del empaque]]></comment>
+<commentInRDBMS><![CDATA[Numero de unidades dentro del empaque]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9849139C-58BA-D9FE-E162-EFFDC15B6A77</importedID>
+<constraintName>ENTERO_10}_64800818</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="MANEJA_LOTE" id="7E5E06CA-FFF5-F536-6451-34FCD48DABA0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[si el producto se maneja por lotes o no]]></comment>
+<commentInRDBMS><![CDATA[si el producto se maneja por lotes o no]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>13EFD8E5-C3B1-864D-1D2A-410C5AD84DA5</importedID>
+<constraintName>SI_NO}_606080374</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USA_SERIALES" id="47008F87-DA5A-7A30-A3C9-B0433FB3C438">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[si el producto usa seriales]]></comment>
+<commentInRDBMS><![CDATA[si el producto usa seriales]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DC6531BD-9FC1-41E7-C43D-464E188786C9</importedID>
+<constraintName>SI_NO}_927151513</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E7F77A70-D03B-705B-68BD-A81B4AABD1FD" name="INF_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FB8E0D4A-EEEF-AFAC-F6EF-D1798E016858</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57B47050-1AFF-310E-8E6D-C5106B24AC48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CCC8C91D-8D23-F782-95F0-1FA1C5CF6369" name="INF_PRODUCTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A7A6499B-80C8-D5EE-0D18-24C2A0CCD7A8</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="57B47050-1AFF-310E-8E6D-C5106B24AC48"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7DBC2D9-B267-FC2E-6093-78FC0906A878" name="IN_PRODUCTO_ADQUIRIDO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="74D494E7-6128-5EF7-CC47-A34356AE969F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E3B3808A-AD78-C735-52B3-AED6ECEC39B3" name="IN_PRODUCTO_ADQUIRIDO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F5243FC-4E19-51D6-2217-C9CECD1EC5A2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="168CD5BC-CC95-D14F-5878-886080695D2B" name="IN_PRODUCTO_ADQUIRIDO_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6E673D14-1767-27A9-F48A-43472BA859E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="335F1A7C-E8D9-FE4C-2FC2-2E1ED9778105" name="IN_PRODUCTO_ADQUIRIDO_FK3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="359254FC-6514-71B9-9E37-8D7877A5D52E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="01B31D31-31DF-7154-B9F3-3B9DDA50D140" name="IN_PRODUCTO_ADQUIRIDO_FK4">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7449866D-BFE4-06A3-EC1A-2CF3406F61BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="05550CA0-E105-AD37-780E-1E920849D794" name="IN_PRODUCTO_ADQUIRIDO_FK5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75901458-FAC3-B5F5-F732-6EE408983AAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

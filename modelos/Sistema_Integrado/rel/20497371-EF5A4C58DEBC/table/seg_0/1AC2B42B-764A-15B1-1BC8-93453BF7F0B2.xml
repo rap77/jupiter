@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1AC2B42B-764A-15B1-1BC8-93453BF7F0B2" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_LETRAS_RIF">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_LETRAS_RIF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J Juridica, G Gobierno, V Venezolano, E Extranjero, P Pasaporte.]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J Juridica, G Gobierno, V Venezolano, E Extranjero, P Pasaporte.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="86D8C38E-F4B0-C1CD-0632-FE1F0AB4A5E4">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_LETRAS_RIF</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_LRIF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_LRIF_ID</notNullConstraintName>
+</Column>
+<Column name="TP_PER_ID" id="996F4AF9-F0D5-1B4C-3276-6FEAFB087458">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_LETRAS_RIF</sourceObjSchema>
+<sourceObjName>TP_PER_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Tipo de Persona de la Letra del Registro de Información Fiscal. Código del Tipo de Persona, Ej: N. J.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Persona de la Letra del Registro de Información Fiscal. Código del Tipo de Persona, Ej: N. J.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_LRIF_TPER_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_LRIF_TPER_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="62153F2C-883F-D844-543B-3E8C6C92F914" referredColumn="C3B7F110-304D-1B06-1C8F-6E0950A5220A"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="80840F85-7CF9-B87B-8DC1-26A463C6D05E">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_LETRAS_RIF</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Descripción de la Letra del Registro de Información Fiscal. Ej: Juridico, Gobierno, Venezolano, Extranjero, Pasaporte.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de la Letra del Registro de Información Fiscal. Ej: Juridico, Gobierno, Venezolano, Extranjero, Pasaporte.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_LRIF_DES</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FF947F86-3820-1EBE-3725-ECA6C29C930B" name="GL_LETRAS_RIF_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_LETRAS_RIF_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86D8C38E-F4B0-C1CD-0632-FE1F0AB4A5E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B3F9893-40DE-5A45-8567-7C0EE183D720" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="LETRA_RIF_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>LETRA_RIF_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86D8C38E-F4B0-C1CD-0632-FE1F0AB4A5E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D4601CA5-5E46-FDFB-7658-D22FAF88C9D5" name="LET_RIF_TP_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="996F4AF9-F0D5-1B4C-3276-6FEAFB087458"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

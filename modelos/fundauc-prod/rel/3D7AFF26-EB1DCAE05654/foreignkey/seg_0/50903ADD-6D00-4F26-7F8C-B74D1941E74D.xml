@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="50903ADD-6D00-4F26-7F8C-B74D1941E74D" containerWithKeyObject="DDFCBD8A-C751-4F05-3782-D0BE38FF1603" localFKIndex="8A3CFEF7-7F27-54DB-205D-ED600928AB04" name="ESTUDIANTE_OCUPACIONES_FK">
+<sourceConnName>fundauc</sourceConnName>
+<sourceObjSchema>FUNDAUC</sourceObjSchema>
+<sourceObjName>ESTUDIANTE_OCUPACIONES_FK</sourceObjName>
+<createdBy>rpadron</createdBy>
+<createdTime>2020-03-10 16:17:06 UTC</createdTime>
+<ownerDesignName>fundauc-prod</ownerDesignName>
+<referredTableLongName>FUNDAUC.OCUPACIONES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0EE873E9-7C41-0D7B-7139-71074D177FA2</referredTableID>
+<keyObject>6B036E7F-11EB-0A55-B188-EB5EF832ADD9</keyObject>
+<referredKeyID>6B036E7F-11EB-0A55-B188-EB5EF832ADD9</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_OCUPACION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

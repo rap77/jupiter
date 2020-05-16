@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="35BB8D97-5D7C-46A7-9C66-9EDFF7DEF283" containerWithKeyObject="4C68D048-AC7B-3697-3004-BD2EBF325239" localFKIndex="4043D410-8CCF-89B6-8522-BB124D6FA1DD" name="USU_ROL_ROL_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>478BF929-8930-5F13-34F2-C5AE466E49D9</importedID>
+<referredTableLongName>SG ROLES</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>C2BC0DCB-B086-7B69-D77C-0CF2DA13AEB7</referredTableID>
+<keyObject>D4EAAFF0-590E-1282-2ACA-548F814B990B</keyObject>
+<referredKeyID>D4EAAFF0-590E-1282-2ACA-548F814B990B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

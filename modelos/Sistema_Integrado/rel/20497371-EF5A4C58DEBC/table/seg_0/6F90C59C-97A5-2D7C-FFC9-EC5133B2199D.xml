@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F90C59C-97A5-2D7C-FFC9-EC5133B2199D" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_TRATAMIENTOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:39 UTC</createdTime>
+<comment><![CDATA[Tratamiento que se le da a una persona en una comunicación. Ej: Lic. Ing. Sr. Sra. Dr.]]></comment>
+<commentInRDBMS><![CDATA[Tratamiento que se le da a una persona en una comunicación. Ej: Lic. Ing. Sr. Sra. Dr.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>TTO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="532526C4-41C8-A2BA-9535-E570A2AD1FF8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<comment><![CDATA[Número de Idetificación Interno del Tratamiento.]]></comment>
+<commentInRDBMS><![CDATA[Número de Idetificación Interno del Tratamiento.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TRAT_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TRAT_ID</notNullConstraintName>
+</Column>
+<Column name="GENERO_ID" id="2A5E1C40-948C-FA22-F9BA-77A1FF2EE00C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<comment><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></comment>
+<commentInRDBMS><![CDATA[Código del Genero o Sexo. Ej: F, M.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TRAT_GEN_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TRAT_GEN_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="0D33A6ED-0201-A798-3E1D-8BE1516B3242" referredColumn="7FC06D50-13D3-24AB-6852-7E79C7991603"/>
+</associations>
+</Column>
+<Column name="TRATAMIENTO_ID" id="7DB0A973-527A-6776-52A7-23C7D0CE0A7C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tratamiento Masculino que hace pareja con Tratamiento Femenino.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tratamiento Masculino que hace pareja con Tratamiento Femenino.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TRAT_TRAT_ID</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TRAT_TRAT_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="0869B2D3-8A2D-01AD-21F8-52E50080E6A2" referredColumn="532526C4-41C8-A2BA-9535-E570A2AD1FF8"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="81FF842B-5F30-07DE-C149-D3D8A86DB90A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<comment><![CDATA[Desripcion del Tratamiento. Ej. Señor, Señora]]></comment>
+<commentInRDBMS><![CDATA[Desripcion del Tratamiento. Ej. Señor, Señora]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_TRAT_DES_ID</constraintName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_TRAT_DES_ID</notNullConstraintName>
+</Column>
+<Column name="ABREVIATURA" id="F26E4AF4-6918-1541-241A-6C207F812E1A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<comment><![CDATA[Abreviatura del Trataiento. Ej.  Sr. Sra. Ing. Ingra]]></comment>
+<commentInRDBMS><![CDATA[Abreviatura del Trataiento. Ej.  Sr. Sra. Ing. Ingra]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6C9DBE3C-04D6-AA5F-B262-690CF078AE64" name="TRATAMIENTOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="532526C4-41C8-A2BA-9535-E570A2AD1FF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3EBB7D5-FE37-9A56-52CC-E34E75692F20" name="TRATAMIENTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="532526C4-41C8-A2BA-9535-E570A2AD1FF8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEC4C980-9ABD-2812-6D78-83F267D4D203" name="TRAT_TRAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:34:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DB0A973-527A-6776-52A7-23C7D0CE0A7C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4FEED21D-3C76-D7F4-459E-B5E9AC46AAC3" name="TRAT_GENERO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:38:53 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A5E1C40-948C-FA22-F9BA-77A1FF2EE00C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

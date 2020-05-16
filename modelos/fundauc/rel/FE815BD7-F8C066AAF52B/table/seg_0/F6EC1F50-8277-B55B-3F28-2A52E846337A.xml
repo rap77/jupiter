@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F6EC1F50-8277-B55B-3F28-2A52E846337A" name="GL_FAMILIARES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Familiares de la Persona Natural.</comment>
+<commentInRDBMS>Familiares de la Persona Natural.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>50BEC7E4-0B79-DBA8-C0D7-FBA3FDF2EC32</importedID>
+<abbreviation>FAM</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="FAMILIAR_ID" id="453A9C3F-F85B-4B0B-E528-9A4168082357">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E914FFA4-3A38-A970-4D10-904B973A8EAF</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B58AA0C6-3EA6-89CF-2C59-F0952C9F8164" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="PER_NAT_PER_ID" id="56D99C4F-EF1B-2E3F-04F2-FFA7F3A0FA04">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>712EB669-C24D-1FA7-ECA9-163212E5DA77</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="161CBD3C-7BDB-455F-ADAF-83DC5B8C8BE6" referredColumn="3EB169CB-398D-1DCA-9211-21E89BA06B36"/>
+</associations>
+</Column>
+<Column name="PARENTESCO_ID" id="FBB4A772-B301-99CB-A50C-93AE11643D5A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Parentesco del Familiar. Número de Identificación Interno del Parentesco.</comment>
+<commentInRDBMS>Parentesco del Familiar. Número de Identificación Interno del Parentesco.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>46F52B87-ABDB-78F0-5F1F-7F33E1AF207D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACF71F4A-1C28-684C-3084-05084313FE7D" referredColumn="63D4AE7C-E668-3223-07A9-65E7DC4AFCC4"/>
+</associations>
+</Column>
+<Column name="FEC_INI_FAMILIAR" id="CF90E8DB-90CE-E3F3-E7C2-14C4B094C648">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de Inicio de Vigencia de la Incorporación del Familiar.</comment>
+<commentInRDBMS>Fecha de Inicio de Vigencia de la Incorporación del Familiar.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8C3A1173-1CA8-AB08-639D-019F44416B71</importedID>
+<constraintName>FECHA_1395078270</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FEC_FIN_FAMILIAR" id="5EE98E4F-8CA9-7894-FA7E-6AA420F1E9EF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha de Fin  de Vigencia de la Incorporación del Familiar.</comment>
+<commentInRDBMS>Fecha de Fin  de Vigencia de la Incorporación del Familiar.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6E2023EA-711E-CA0A-ACF8-EF827830B2E6</importedID>
+<constraintName>FECHA_1155940519</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;,&apos;DD/MM/YYYY&apos;)</beginValue>
+<endValue>TO_DATE(&apos;31/12/2100&apos;,&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2CC0587F-BC01-1E61-E913-3DFF9F6C0FC9" name="GL_FAMILIARES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>0FC2CB2D-258C-FFC5-5E23-A5F472893AE7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56D99C4F-EF1B-2E3F-04F2-FFA7F3A0FA04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF3090D2-C0F2-41D8-5F4C-6FD178F2615C" name="GL_FAMILIAR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B53F1A1C-65DB-149A-435E-4724D92305F5</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56D99C4F-EF1B-2E3F-04F2-FFA7F3A0FA04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="72340E35-FC4F-885E-A622-A77482F165ED" name="GL_FAMILIAR_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FBB4A772-B301-99CB-A50C-93AE11643D5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7C62C449-256F-4739-B6FE-F0D1C5801DA2" name="GL_FAMILIARES_PER_NAT_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="453A9C3F-F85B-4B0B-E528-9A4168082357"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC8D3547-FA7C-577A-0383-37FFFA78A2D4" name="GL_FAMILIARES_PER_NAT_FKv1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56D99C4F-EF1B-2E3F-04F2-FFA7F3A0FA04"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

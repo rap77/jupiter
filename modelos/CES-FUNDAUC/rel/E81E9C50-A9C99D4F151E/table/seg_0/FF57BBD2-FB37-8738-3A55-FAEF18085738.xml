@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FF57BBD2-FB37-8738-3A55-FAEF18085738" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="EDIFICIOS">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EDIFICIOS</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>EDIFICIOS</comment>
+<commentInRDBMS>EDIFICIOS</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EDIF" id="AE77E7A7-39C1-336A-95BF-B46E0310E72D">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>EDIFICIOS</sourceObjSchema>
+<sourceObjName>ID_EDIF</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>ID_EDIF</comment>
+<commentInRDBMS>ID_EDIF</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="49F9D026-9C5D-B26E-F4C9-25D3F31B713B">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>EDIFICIOS</sourceObjSchema>
+<sourceObjName>DESCRIPCION</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:54 UTC</createdTime>
+<comment>DESCRIPCION</comment>
+<commentInRDBMS>DESCRIPCION</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B3C2EFD-5198-E934-856A-68A2D7D445C8" name="EDIFICIOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:18:12 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE77E7A7-39C1-336A-95BF-B46E0310E72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E85FFE47-AB2A-6DDA-9C39-D44A3DFD4FD8" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="EDIFICIOS_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>EDIFICIOS_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-14 22:39:11 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<importedID>C775B685-0700-C1CC-50CD-D411C01CBF2B</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AE77E7A7-39C1-336A-95BF-B46E0310E72D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="4B4A5D43-1141-B3DA-EACE-DD1FC5CB3C1C" name="IN_TIPO_COBERTURA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tabla de Tipos de Cobertura de Seguros</comment>
+<commentInRDBMS>Tabla de Tipos de Cobertura de Seguros</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E98B89BB-D2F5-6243-B137-091D40EDC70A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2D48AB00-4E3D-4671-910E-C441F327B767">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del tipo de Cobertura</comment>
+<commentInRDBMS>Identificador único del tipo de Cobertura</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7F94DBCC-3BD9-8CB3-9E00-5BDABF449CED</importedID>
+<constraintName>ID}_1433096696</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="53C92575-AAD7-EFEA-50FB-04B1C59490C6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del Tipo de Cobertura</comment>
+<commentInRDBMS>Descripcion del Tipo de Cobertura</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>75CEA059-2DF0-A54F-857D-0B1659CE548C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="F0212BEC-E519-1A6C-704D-E5480C629A40">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Codigo Sugerido por la SUDEBIP</comment>
+<commentInRDBMS>Codigo Sugerido por la SUDEBIP</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7213D1CE-0A05-9F74-12D8-EDCB4765D87B</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>B138FE81-C5BA-4FED-688D-584C67E491CD</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2052A4CD-A651-7DB6-1AB0-385A7676F59F" name="IN_TIPO_COBERTURA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EA1898B0-1FD3-C52C-6C4E-510F67EE2289</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D48AB00-4E3D-4671-910E-C441F327B767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E695753-E602-AC87-91CE-69E2AEA56F53" name="IN_TIPO_COBERTURA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C448E80A-DCB8-2A1B-DD23-7672E2F7B5B4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2D48AB00-4E3D-4671-910E-C441F327B767"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

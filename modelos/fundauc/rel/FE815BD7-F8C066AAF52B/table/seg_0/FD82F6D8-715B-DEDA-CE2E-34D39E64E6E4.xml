@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD82F6D8-715B-DEDA-CE2E-34D39E64E6E4" name="CP_TIPO_ATRIBUTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Tipos de Atributo de Producto&lt;br&gt;Ej: 1. Comunes, 2. Individuales</comment>
+<commentInRDBMS>Tipos de Atributo de Producto&lt;br&gt;Ej: 1. Comunes, 2. Individuales</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>ABBE6115-9932-0966-AF7A-9CAE320692CB</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="DBA168C2-CC98-13F0-80A4-BD4B1567E97B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>identificador unico del tipo de atributo</comment>
+<commentInRDBMS>identificador unico del tipo de atributo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B10D04EC-414B-4F3F-01F6-30E3521AC8BF</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="DESCRIPCION_TIPO_ATR" id="88655D4F-8568-ADDC-4AD2-5C36E51BFE6F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Descripcion del tipo de Atributo&lt;br&gt;Ej: 1. Comunes, 2. Individuales</comment>
+<commentInRDBMS>Descripcion del tipo de Atributo&lt;br&gt;Ej: 1. Comunes, 2. Individuales</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>7BA237C5-0DFA-9CA2-5CFF-54654F8B569C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2FACFDBC-1EF2-C2EE-BC80-224C79860D1A" name="CP_TIPO_ATRIBUTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E7E5BB77-FE15-0B80-E72C-04C65B2080C0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBA168C2-CC98-13F0-80A4-BD4B1567E97B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D4038AE-55FB-23B1-FC92-33B4B4FA1DF4" name="CP_TIPO_ATRIBUTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E8B7EA39-96BD-015A-4C6D-72F7E7A7F93D</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBA168C2-CC98-13F0-80A4-BD4B1567E97B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

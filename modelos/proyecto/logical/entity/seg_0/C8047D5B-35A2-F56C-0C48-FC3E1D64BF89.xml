@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C8047D5B-35A2-F56C-0C48-FC3E1D64BF89" name="GL_TIPOS_ATRIBUTOS">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Tipos de Atributo de Informacion
+Ej: Contenedor, que puede agrupar varios atributos, Ejemplo: Nombre contiene los atributos primer nombre, segundo nombre, primer apellido y segundo apellido, hasta apellido de casada]]></comment>
+<commentInRDBMS><![CDATA[Tipos de Atributo de Informacion
+Ej: Contenedor, que puede agrupar varios atributos, Ejemplo: Nombre contiene los atributos primer nombre, segundo nombre, primer apellido y segundo apellido, hasta apellido de casada]]></commentInRDBMS>
+<generatorID>E8FD4D72-7CB4-0DDD-DFBD-775E9A4CB141</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>TP_ATR</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="C0985046-42F8-499C-40A4-5ADD3F303B2D">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[identificador unico del tipo de atributo]]></comment>
+<commentInRDBMS><![CDATA[identificador unico del tipo de atributo]]></commentInRDBMS>
+<generatorID>1B98D52C-3190-A451-1190-83CC442A3DFE</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<constraintName>ID}_1432448806</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="DES_TIPO_ATRIBUTO" id="A298079A-E1CF-57E7-97FD-063519A8595C">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment><![CDATA[Descripcion del tipo de Atributo
+Ej: 1. Comunes, 2. Individuales]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del tipo de Atributo
+Ej: 1. Comunes, 2. Individuales]]></commentInRDBMS>
+<generatorID>F076A91F-48B7-5EA1-859D-4CD6B6C78E41</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5C237EE3-709C-0257-28E8-88A5C38C6B33" name="CP_TIPOS_ATRIBUTOS_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>BE8B1A80-AD1D-3AC0-C4BC-00E123DCDD65</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C0985046-42F8-499C-40A4-5ADD3F303B2D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

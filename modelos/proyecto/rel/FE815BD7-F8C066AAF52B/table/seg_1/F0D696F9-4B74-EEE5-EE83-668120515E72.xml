@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F0D696F9-4B74-EEE5-EE83-668120515E72" name="CE_UNIDAD_ORG_CURSOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Relacion entre cursos y unidades funcionales]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre cursos y unidades funcionales]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C080FA7E-7BA7-D390-818D-58BF325E9B16</importedID>
+<ordsAlias>unidad_org_cursos</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UNI_ORG_ID" id="817029CF-22EF-12E0-CC4E-8401BD875BE8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F25116AB-E4D9-D304-6D37-99E37950AAAC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="FFD91EA1-330A-747C-5D34-D18B2BF2387E" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+<Column name="CURSO_ID" id="3AA672C6-8B75-D3F9-42D0-ADF6BE04A250">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BA92FDB9-9522-F6D3-6EB5-674EFCC18674</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="AFCA4503-C24E-4104-27A0-6F0DC4CD536C" referredColumn="0DFF38B8-34AA-F6DA-AE4E-0B6B0C69BCE3"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E5C88B5E-3557-3A9B-5BDC-0BF3CFA911BD" name="CE_UNIDAD_ORG_CURSOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>4420151B-375E-9A17-8FF8-E4F534569CB3</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="817029CF-22EF-12E0-CC4E-8401BD875BE8"/>
+<colUsage columnID="3AA672C6-8B75-D3F9-42D0-ADF6BE04A250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C328F1EB-4832-E75B-FEC6-564A34B9B5DE" name="UNI_ORG_CUR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>CEC566C1-6BCE-9B95-6E5C-2A0422DDAB07</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="817029CF-22EF-12E0-CC4E-8401BD875BE8"/>
+<colUsage columnID="3AA672C6-8B75-D3F9-42D0-ADF6BE04A250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C4B9F5F-EA5D-25E5-B3D0-5FC06AE9F284" name="UNIDAD_ORG_CURSOS_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="817029CF-22EF-12E0-CC4E-8401BD875BE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="153037DD-7CC1-DEDB-CDD0-A9BF8DF12885" name="UNIDAD_ORG_CURSOS_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3AA672C6-8B75-D3F9-42D0-ADF6BE04A250"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

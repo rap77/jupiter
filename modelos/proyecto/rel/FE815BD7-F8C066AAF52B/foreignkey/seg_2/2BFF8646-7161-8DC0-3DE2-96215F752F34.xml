@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_2" id="2BFF8646-7161-8DC0-3DE2-96215F752F34" containerWithKeyObject="4AA414AE-7E2B-FD55-8635-575D8A840228" localFKIndex="B640AC66-E584-5575-D791-69CE191FB745" name="GL_PERSONAS_CUENTASBAN_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-04-02 21:56:22 UTC</createdTime>
+<generatorID>1C4B16B7-00D0-E951-24BF-A7B6B368CAD5</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<referredTableLongName>GL_PERSONAS_JURIDICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>07F2F80E-7DEC-6595-64EE-6CE1F04C7836</referredTableID>
+<keyObject>2BD99E78-3468-233B-31DE-D9A823BA7D60</keyObject>
+<referredKeyID>2BD99E78-3468-233B-31DE-D9A823BA7D60</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

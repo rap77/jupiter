@@ -1,0 +1,492 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="67E49F5E-4D65-D017-9E1B-EDD9DA52A7EF" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_DIRECCIONES">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL_DIRECCIONES</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Dirección. Ej: 1 Avenidad Bolivar, Edficio Poliven, Piso 8, Oficina 4, Camoruco, San José, Valencia. Edo Carabobo]]></comment>
+<commentInRDBMS><![CDATA[Dirección. Ej: 1 Avenidad Bolivar, Edficio Poliven, Piso 8, Oficina 4, Camoruco, San José, Valencia. Edo Carabobo]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<abbreviation>DIR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2859C372-A3FF-E171-B582-8F78E14CFEF9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Dirección.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DIR_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_DIR_ID</notNullConstraintName>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="PERSONA_ID" id="81B2FAD2-AC05-B347-F014-AA4603D98A8B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>PERSONA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="6B39A196-09BF-BB5E-7E4F-6102BAA26B1D" referredColumn="0BE04BD5-B45C-0E3C-C7C9-246152D129F5"/>
+</associations>
+</Column>
+<Column name="TIPO_DIRECCION_ID" id="32AADDC3-8DA7-A026-DEB0-1E3C6D50603B">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>TIPO_DIRECCION_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección. Número de Identificación Interno del Tipo de Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección. Número de Identificación Interno del Tipo de Dirección.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="EC952C91-0215-DF0A-F04A-FC5E669F7620" referredColumn="8E7A9107-FB0D-D161-D999-9AF765D5F242"/>
+</associations>
+</Column>
+<Column name="TIPO_ZONA_ID" id="20A4A08F-5A52-1B34-AD1F-B4167D361EC6">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>TIPO_ZONA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[id del tipo de la zona]]></comment>
+<commentInRDBMS><![CDATA[id del tipo de la zona]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="038A7849-CBDD-3C4C-2CDC-F504750BEF1B" referredColumn="D66D2703-03FA-3E1B-B52E-1B77F8BB1DAC"/>
+</associations>
+</Column>
+<Column name="SECTOR_ID" id="7A8BB799-6D93-DD4F-302D-C64E98E4E925">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>SECTOR_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Urbanización o Barrio de la Dirección. Número de Identificación Interna de la Urbanización o Barrio.]]></comment>
+<commentInRDBMS><![CDATA[Urbanización o Barrio de la Dirección. Número de Identificación Interna de la Urbanización o Barrio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="D74159E9-73E9-20DD-93CC-CEC3049CAC5B" referredColumn="004DD498-53E8-FE6A-C3E6-0F85389A8A91"/>
+</associations>
+</Column>
+<Column name="TIPO_VIA_ID" id="455C4E0A-3657-4EAC-BBB4-EF2B28ABA37C">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>TIPO_VIA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Tipo de Via de la Dirección. Número de Identificación Interno del Tipo de Via.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Via de la Dirección. Número de Identificación Interno del Tipo de Via. eJ Avenida, Calle]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="81A83D85-705D-C695-855A-6C7BC30A2C46" referredColumn="A6905FAA-90A1-9CEC-B9D0-9364F4C964F8"/>
+</associations>
+</Column>
+<Column name="VIA" id="D03CA7C4-B489-6A38-3E27-C14B514C2B87">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>VIA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Via de la Dirección: Ej: Avenida Bolivar.]]></comment>
+<commentInRDBMS><![CDATA[Via de la Dirección: Ej: Avenida Bolivar. Calle 197]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIPO_EDIFICACION_ID" id="1B59789F-50BB-4AA4-CD37-B6C163675210">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>TIPO_EDIFICACION_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Tipo de Edificación de la Dirección. Número de Identificación Interna del Tipo de Edificación.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Edificación de la Dirección. Número de Identificación Interna del Tipo de Edificación.Ej Edificio, Casa]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="8B6A3922-4EAE-73F2-9469-2C4670CCEFFC" referredColumn="E64F0A05-0A3F-C786-7AD5-DEC04F89ED07"/>
+</associations>
+</Column>
+<Column name="EDIFICACION" id="29D3C83D-7694-410E-E578-05FC04D97D07">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>EDIFICACION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Edficación de la Dirección. Ej: Edificio La Estrella]]></comment>
+<commentInRDBMS><![CDATA[Edficación de la Dirección. Ej: Edificio La Estrella]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUMERO_EDIFICACION" id="5EF202CC-4297-D988-0AF2-2AC5CBACD4D9">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>NUMERO_EDIFICACION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de la Edificación de la Dirección. Ej: 120-34]]></comment>
+<commentInRDBMS><![CDATA[Número de la Edificación de la Dirección. Ej: 120-34]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PISO_EDIFICACION" id="A06E2E84-1A96-2952-670A-818BB14D1664">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>PISO_EDIFICACION</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de Piso de la Edificación. Ej: Piso 8.]]></comment>
+<commentInRDBMS><![CDATA[Número de Piso de la Edificación. Ej: Piso 8.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="APARTAMENTO" id="7FE697EC-ED4C-F76D-4CDD-F3C32AF5A343">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>APARTAMENTO</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Numero de Apartamento de la Dirección. Ej: Apertamento 8H.]]></comment>
+<commentInRDBMS><![CDATA[Numero de Apartamento de la Dirección. Ej: Apertamento 8H.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REFERENCIA" id="B4C56014-503C-C853-9D2F-BCDD4E235481">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>REFERENCIA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Referencias de la Dirección. Ej: Al lado de Supermercado XYZ.]]></comment>
+<commentInRDBMS><![CDATA[Referencias de la Dirección. Ej: Al lado de Supermercado XYZ.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CIUDAD_ID" id="385E5BFB-7F49-8DE6-E357-5F58F704E579">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>CIUDAD_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Ciudad, Población o Caserio de la Dirección. Número de Identificación Interno de la Ciudad Población o Caserio.]]></comment>
+<commentInRDBMS><![CDATA[Ciudad, Población o Caserio de la Dirección. Número de Identificación Interno de la Ciudad Población o Caserio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="MUNICIPIO_ID" id="B7CCA426-D5C8-4A4F-046D-A3F434E5E0A7">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>MUNICIPIO_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Municipio.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Municipio.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="3D32B62C-9889-411F-C5FE-DC88DC0A0A51" referredColumn="3070D1E0-47B8-AB72-2A08-DBF7DE36A467"/>
+</associations>
+</Column>
+<Column name="PARROQUIA_ID" id="47127B2B-9544-6287-FFB6-78F4945543AE">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>PARROQUIA_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Parroquia de la Dirección. Número de Identificación Interna de la Parroquia.]]></comment>
+<commentInRDBMS><![CDATA[Parroquia de la Dirección. Número de Identificación Interna de la Parroquia.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="6BB24E99-5874-F62B-E343-49C27575C98D" referredColumn="95854F39-A1B5-547A-FAA9-49FBE8576DDF"/>
+</associations>
+</Column>
+<Column name="ZONA_POSTAL_ID" id="82C9791B-219D-F8EE-27FE-2E6289F72972">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>ZONA_POSTAL_ID</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Zona Postal]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Zona Postal]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="23B959D9-3DED-891F-6DE4-A26743DCACC5" referredColumn="27399DB4-E3DD-5F5E-AAB9-60FF52B84238"/>
+</associations>
+</Column>
+<Column name="ACTIVA" id="52B381B7-3CCE-87B0-FBC0-15F0BECB9C1A">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL_DIRECCIONES</sourceObjSchema>
+<sourceObjName>ACTIVA</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<comment><![CDATA[Está activa la Dirección?. Ej: S,N.]]></comment>
+<commentInRDBMS><![CDATA[Está activa la Dirección?. Ej: S,N.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_DIR_ACTIVA</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NNC_DIR_ACTIVA</notNullConstraintName>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E3B0C739-9E71-8938-52B9-C461F0D44FFF" name="DIRECCIONES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DIRECCIONES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2859C372-A3FF-E171-B582-8F78E14CFEF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="580AB35C-3782-9116-4909-B8E1C0AAD34C" name="DIRECCIONES_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>DIRECCIONES_PK</sourceObjName>
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:12:55 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2859C372-A3FF-E171-B582-8F78E14CFEF9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2576DF29-88BF-D397-9FA9-60724ACBD2D3" name="DIR_PERSONA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:16:40 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="81B2FAD2-AC05-B347-F014-AA4603D98A8B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DB1647DC-CDF4-1870-BEE9-537B4E66D7A8" name="DIR_TIPO_DIR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:41:59 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32AADDC3-8DA7-A026-DEB0-1E3C6D50603B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B9B72713-F17C-847D-5424-1C0F330FD7C9" name="DIR_TIPO_VIA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:44:30 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="455C4E0A-3657-4EAC-BBB4-EF2B28ABA37C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6B741FA7-CB16-BCF3-E228-E0BF84BEAC11" name="DIR TIPO ZONA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:52:53 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="20A4A08F-5A52-1B34-AD1F-B4167D361EC6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7AA18336-7AE8-022E-D246-ED14E3FA0C0E" name="DIR_SECTOR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:28:29 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A8BB799-6D93-DD4F-302D-C64E98E4E925"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="81845B0D-7CED-F05F-83FC-6BA2A9574A86" name="DIR_ZONA_POS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:31:43 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82C9791B-219D-F8EE-27FE-2E6289F72972"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7838626-9270-5FDC-0950-494E13362A64" name="DIR MUNICIPIO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:31:43 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7CCA426-D5C8-4A4F-046D-A3F434E5E0A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C26097FF-C497-D232-48B8-D8D79701C38D" name="DIR_PARROQUIA_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:31:43 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47127B2B-9544-6287-FFB6-78F4945543AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4969FCC7-849D-EE0E-0491-50A15FEE90B4" name="DIR_TP_EDIF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:41:58 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1B59789F-50BB-4AA4-CD37-B6C163675210"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

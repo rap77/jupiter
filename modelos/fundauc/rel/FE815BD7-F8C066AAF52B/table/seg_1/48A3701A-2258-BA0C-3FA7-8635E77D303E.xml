@@ -1,0 +1,243 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="48A3701A-2258-BA0C-3FA7-8635E77D303E" name="TS_CUENTAS_BANCARIAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Cuenta Bancaria. Ej: 1 Provincial, 12345678901234567890.</comment>
+<commentInRDBMS>Cuenta Bancaria. Ej: 1 Provincial, 12345678901234567890.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>CC51E1B8-6BDC-8E3A-014E-E942739F2BF1</importedID>
+<abbreviation>CTA_BAN</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5B475642-0253-6220-8B04-4EB091C47705">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Cuenta Bancaria.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Cuenta Bancaria.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6AB28BCA-F3AF-80AB-2395-1AA7E8B2AD05</importedID>
+<constraintName>ID}_423447718</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TIP_CTA_ID" id="4B285C13-3B6A-1CB4-59E4-138614879EDC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Tipo de Cuenta Bancaria. Número de Identificación Interna del Tipo de Cuenta Bancaria.</comment>
+<commentInRDBMS>Tipo de Cuenta Bancaria. Número de Identificación Interna del Tipo de Cuenta Bancaria.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8954CF22-40DB-EAE6-BA8A-BF4C0B5B5DFA</importedID>
+<constraintName>ID}_687873256</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="5D35BB38-7525-5B4A-7EA4-A830C5D8B74F" referredColumn="3B8FEF37-4009-6F1A-722B-1787951DC2F7"/>
+</associations>
+</Column>
+<Column name="USO_CTA_ID" id="398980A7-D454-534B-124D-04A9897FAD55">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Uso de la Cuenta.</comment>
+<commentInRDBMS>Número de Identificación Interno del Uso de la Cuenta.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2D972358-E2C0-5EA0-3B1F-7E22AA3506FC</importedID>
+<constraintName>ID}_995232762</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="AE9054E7-EDB8-A079-FE40-D595B072D97E" referredColumn="C87661D6-7052-C037-4777-BDE1331DAE88"/>
+</associations>
+</Column>
+<Column name="BAN_PER_JUR_PER_ID" id="5153CF4B-3D40-E6F6-3406-E36520AFF4A0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>C3AB84AA-3AB8-B66C-86E8-6B06460423B3</importedID>
+<constraintName>ID}_774193858</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="78426A0A-DDE5-4A7F-AE61-58AA11AA79DA" referredColumn="4DA7388C-1C60-6BC5-822D-10DF0EA9D842"/>
+</associations>
+</Column>
+<Column name="PER_ID" id="CE6C9DBD-C462-AEDA-05BB-29C918F7C398">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F543DF54-7D95-D528-DA2D-BF8508D1AADF</importedID>
+<constraintName>ID}_1671332043</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="4C67ACD7-0237-34D4-3AC3-4F1AAC9B5279" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="NUM_CTA BANCARIA" id="742CEEB9-1EC7-F02A-23AE-3E3CF729FAD5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Cuenta Bancaria, Ej:12345678900987654321</comment>
+<commentInRDBMS>Número de Cuenta Bancaria, Ej:12345678900987654321</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>D7EE9FDC-B786-328D-C81E-8AC6B5E101DA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTI_CTA BANCARIA" id="BF4247B1-EC9D-2021-3217-C4452F437584">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Está Activa la Cuenta Bancaria?. Ej: S,N.</comment>
+<commentInRDBMS>Está Activa la Cuenta Bancaria?. Ej: S,N.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>3222BD9D-CE81-4E5E-E4B0-E5F3F7D898E3</importedID>
+<constraintName>SI_NO}_154662089</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="15C8C97F-5291-ECD9-A0C3-2341BE553796" name="TS_CUENTAS_BANCARIAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2F6F5857-814F-4AD9-6C8F-29E48064C558</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B475642-0253-6220-8B04-4EB091C47705"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A60B9FB0-72D3-0202-90B9-987E77EC89CF" name="TS_CUENTA_BANCARIA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>E615C55F-63DB-4D5B-579B-877F1F280086</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B475642-0253-6220-8B04-4EB091C47705"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0E252C2-B865-A761-97F6-F03C02C774BC" name="TS_CUENTAS_BANCARIAS_TS_TIPOS_CUENTAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B285C13-3B6A-1CB4-59E4-138614879EDC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DC98A70F-416C-6D13-9BB5-7D3EBA9CE3CA" name="TS_CUENTAS_BANCARIAS_TS_USOS_CUENTAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="398980A7-D454-534B-124D-04A9897FAD55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="751B9840-B3FC-CF9B-C411-92C0E9753EA2" name="TS_CUENTAS_BANCARIAS_TS_BANCOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5153CF4B-3D40-E6F6-3406-E36520AFF4A0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26FAE26C-D508-09C7-45DC-06113D54DCE8" name="TS_CUENTAS_BANCARIAS_PER_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CE6C9DBD-C462-AEDA-05BB-29C918F7C398"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

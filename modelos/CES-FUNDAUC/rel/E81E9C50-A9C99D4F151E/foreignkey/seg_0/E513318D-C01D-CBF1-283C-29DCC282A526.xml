@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="E513318D-C01D-CBF1-283C-29DCC282A526" containerWithKeyObject="92C9500D-835D-F376-2A31-C837F490EDE6" localFKIndex="1C2EA908-F42D-2454-37C1-831BB968C489" name="PROF_TP_PROF_FK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>SYS_C0018634</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>SYS_C0018634</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.TIPO_PROFESOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>1DB0696E-7538-61D3-6773-DF1DE341D332</referredTableID>
+<keyObject>18EFF0B8-C373-9350-E5CC-7A91D6CFD631</keyObject>
+<referredKeyID>18EFF0B8-C373-9350-E5CC-7A91D6CFD631</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_TIPO_PROF</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

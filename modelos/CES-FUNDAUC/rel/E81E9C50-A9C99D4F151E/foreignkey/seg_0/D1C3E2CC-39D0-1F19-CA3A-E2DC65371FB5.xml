@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D1C3E2CC-39D0-1F19-CA3A-E2DC65371FB5" containerWithKeyObject="3E9A40E5-0A57-AE37-7901-02E2BEE7E6C3" localFKIndex="040099FF-78BA-07EE-5C6B-530415182376" name="FK_CONCEPTOS_02">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FK_CONCEPTOS_02</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>FK_CONCEPTOS_02</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.CONCEPTOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3E9A40E5-0A57-AE37-7901-02E2BEE7E6C3</referredTableID>
+<keyObject>E3186CF8-AF4B-5FC4-F234-652C89D94881</keyObject>
+<referredKeyID>E3186CF8-AF4B-5FC4-F234-652C89D94881</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID_CONCEPTO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="777FC46A-A94F-78CF-5F14-1D60628B356B" containerWithKeyObject="4A938A47-1C93-37A9-9754-3452D5F14FD0" localFKIndex="147D64D1-650F-B63F-13BA-D02657DB47BD" name="FK_FICHA_CFP">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>FK_FICHA_CFP</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<comment>FK_FICHA_CFP</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.ESTUDIANTE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3A2CBE07-39BB-771B-22B6-55DCD560FDFD</referredTableID>
+<keyObject>BF0CE5FF-C93C-74EE-D227-9689A047D00A</keyObject>
+<referredKeyID>BF0CE5FF-C93C-74EE-D227-9689A047D00A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>MATRICULA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

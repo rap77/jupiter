@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="C15DF105-FEB8-D389-1FFC-94C6AE036124" containerWithKeyObject="BF2599E2-629A-9D28-944A-225321EA5694" localFKIndex="1371B627-C908-B3C7-A5BC-7034519CF4AF" name="GL_PROVEEDORES_PER_JUR_FK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B46C8A79-FA55-33B5-168E-F44CE11B3677</importedID>
+<referredTableLongName>GL_PERSONAS_JURIDICAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>07F2F80E-7DEC-6595-64EE-6CE1F04C7836</referredTableID>
+<keyObject>2BD99E78-3468-233B-31DE-D9A823BA7D60</keyObject>
+<referredKeyID>2BD99E78-3468-233B-31DE-D9A823BA7D60</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>PER_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07F2F80E-7DEC-6595-64EE-6CE1F04C7836" name="GL_PERSONAS_JURIDICAS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Persona Juridica. Ej: 1 Centro Clinico Guerra Mendez.]]></comment>
+<commentInRDBMS><![CDATA[Persona Juridica. Ej: 1 Centro Clinico Guerra Mendez.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>46A81A52-9D77-E658-58FE-AE3A6F8DA331</importedID>
+<abbreviation>PER_JUR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GL_PERSONAS_ID" id="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A419C298-489B-44BD-3195-578509A850AE</importedID>
+<constraintName>ID}_574693132</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="58478C24-0FE0-A815-2CA4-18948F860E80" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="NOMBRE_COMERCIAL" id="6036059F-2DBD-A6B6-A7B4-9439745BCA88">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Nombre Comercial de la Persona Juridica. Puede ser diferente de la Razón social de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Nombre Comercial de la Persona Juridica. Puede ser diferente de la Razón social de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E1ED644D-9173-6DAD-36C1-8A9774411004</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2BD99E78-3468-233B-31DE-D9A823BA7D60" name="GL_PERSONAS_JURIDICAS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>54B7512A-772F-68C8-0A6D-6E7413FEE5DF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A34E143A-D06F-9B8C-EC1C-A6EF652B3A68" name="GL_PERSONA_JURIDICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>42E92B04-A89E-40CE-6A19-C59B49780005</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D059417-114F-41BE-0F35-0C183D7DDD96" name="GL_PERSONAS_JURIDICAS_GL_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

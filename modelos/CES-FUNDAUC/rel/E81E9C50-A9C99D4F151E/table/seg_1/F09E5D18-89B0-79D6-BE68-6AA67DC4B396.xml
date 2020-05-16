@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="F09E5D18-89B0-79D6-BE68-6AA67DC4B396" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="TIPO_MAT_PROG">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TIPO_MAT_PROG</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:53 UTC</createdTime>
+<comment>TIPO_MAT_PROG</comment>
+<commentInRDBMS>TIPO_MAT_PROG</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TIPO_MATERIAL" id="9C42718D-BAFC-8A76-2584-120D43439140">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MAT_PROG</sourceObjSchema>
+<sourceObjName>ID_TIPO_MATERIAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_TIPO_MATERIAL</comment>
+<commentInRDBMS>ID_TIPO_MATERIAL</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5532882B-AC71-1B25-9B37-DECCF9404D28" referredColumn="87410C03-22A1-8BAC-5B55-9BD2C9188053"/>
+</associations>
+</Column>
+<Column name="ID_PROG_ACAD" id="A848145F-01A8-49D8-5FBC-EC25FD285697">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>TIPO_MAT_PROG</sourceObjSchema>
+<sourceObjName>ID_PROG_ACAD</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:55 UTC</createdTime>
+<comment>ID_PROG_ACAD</comment>
+<commentInRDBMS>ID_PROG_ACAD</commentInRDBMS>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E1C775A-A209-08CA-3DE0-0460AC91CEA1" referredColumn="91064678-669D-CB07-9D9D-8BBF912E88F0"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C0EAAFCA-3719-BD9D-C8F9-FAF5F53C1247" name="TIPO_MAT_PROG_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TIPO_MAT_PROG_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:58 UTC</createdTime>
+<comment>TIPO_MAT_PROG_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C42718D-BAFC-8A76-2584-120D43439140"/>
+<colUsage columnID="A848145F-01A8-49D8-5FBC-EC25FD285697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5813A2D9-8D4D-30BD-D8CA-CA3B3FDBF484" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="TIPO_MAT_PROG_PK">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>TIPO_MAT_PROG_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:57 UTC</createdTime>
+<comment>TIPO_MAT_PROG_PK</comment>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C42718D-BAFC-8A76-2584-120D43439140"/>
+<colUsage columnID="A848145F-01A8-49D8-5FBC-EC25FD285697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="207CCE1D-444E-ABA2-EA2B-E88A0E7F36FA" name="FK_PROG_ACAD">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A848145F-01A8-49D8-5FBC-EC25FD285697"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B4F044C3-6D9B-20EA-25FA-8F5C5F0C43C2" name="FK_TIPO_MATERIAL">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:59 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C42718D-BAFC-8A76-2584-120D43439140"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

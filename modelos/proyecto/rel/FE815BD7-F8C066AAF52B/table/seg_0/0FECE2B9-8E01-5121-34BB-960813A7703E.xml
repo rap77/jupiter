@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0FECE2B9-8E01-5121-34BB-960813A7703E" name="GL_SEDES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<commentInRDBMS><![CDATA[especifica las ubicaciones de las sedes de la Emplesa o Institución
+ej. sede rectorado, la morita maracay, campus barbula, etc]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2FD88EF4-E770-E6A6-A418-93DDFA32AEF8</importedID>
+<abbreviation>SDE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="AB31C30D-FC2D-3BE3-BE94-0C2D3E4D2DA6">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>713D69A3-CEB1-1D33-FDDB-F22B2D81F49D</importedID>
+<constraintName>ID}_254154471</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="0EB67295-7702-C254-FB85-0F5AFF7840B5" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="936DEA85-D494-6DEB-FF0D-177FB007BCE2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descripcion de la Sede]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A000F9A3-209B-06C8-E930-CECD2F7025AB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ES_NACIONAL" id="D3E333A3-9292-A71F-913D-1750E3FAE8B9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[Si la Sede es Nacional]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B53EDDAD-E879-2E20-6660-C36BE3707588</importedID>
+<constraintName>SI_NO}_605291823</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0A05AE8-0D1B-FED3-B2FC-A6C41C4B1811" name="GL_SEDES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9DA0FA27-9ABD-F959-78DE-C82769AB2EC1</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB31C30D-FC2D-3BE3-BE94-0C2D3E4D2DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7DE0C4C2-9677-4318-7A6C-427312DFA95C" name="GL_TIPO_UBICACION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>561F54B0-3CD5-8494-027B-14700EBDC0C3</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB31C30D-FC2D-3BE3-BE94-0C2D3E4D2DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D766B72A-B0DF-5368-DB5B-C973DAA857C0" name="SEDE_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AB31C30D-FC2D-3BE3-BE94-0C2D3E4D2DA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

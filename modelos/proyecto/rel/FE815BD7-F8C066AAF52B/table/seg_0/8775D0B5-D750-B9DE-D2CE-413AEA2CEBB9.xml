@@ -1,0 +1,171 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8775D0B5-D750-B9DE-D2CE-413AEA2CEBB9" name="GL_DIRECCIONES_ELEC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Dirección Electronica. Ej: 1 luis2010@hotmail.com.]]></comment>
+<commentInRDBMS><![CDATA[Dirección Electronica. Ej: 1 luis2010@hotmail.com.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>3DBC31ED-4718-B1E9-187A-5952CC85E17A</importedID>
+<abbreviation>DIR_ELE</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="4887B6D3-25E9-7FBF-9CDF-96BB5FDFEC82">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Dirección Electrónica.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Dirección Electrónica.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7CED1A42-C3F9-F902-0C12-7420BF829F13</importedID>
+<constraintName>ID}_790556811</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GL_TIPO_DIRECCION_ELEC_ID" id="8CACE2FB-EC96-66D2-F704-844EDB14A8C5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección Electronica. Número de Identificación Interno del Tipo de Dirección Electrónica.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección Electronica. Número de Identificación Interno del Tipo de Dirección Electrónica.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>83AD16F8-BA17-9A7D-AE71-4AE4E5B6151C</importedID>
+<constraintName>ID}_216724963</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="D07053BC-F0C8-A22B-62EC-0AE2A39A6A2E" referredColumn="AA9A9C40-1635-4773-0535-5D761764C864"/>
+</associations>
+</Column>
+<Column name="GL_PERSONAS_ID" id="9CC2A3EC-9BC6-DAD0-88CE-491AE8F26388">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A40B9712-C0BD-FD13-883D-8E1A1A4B8CFD</importedID>
+<constraintName>ID}_49393759</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="19AD598F-584C-4D3C-BB41-E7173B6F34BC" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="DIRECCION_ELE" id="80F0EC56-535B-24E6-6466-6EB90A8ED6DC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Dirección Electrónica. Ej: haroldvm@hotmail.com., @padron]]></comment>
+<commentInRDBMS><![CDATA[Dirección Electrónica. Ej: haroldvm@hotmail.com., @padron]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1014A4FB-64DA-B530-7384-E14A65A50918</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVA" id="1DBBED35-D0DE-F4FB-52FF-E356559C7735">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Está Activa la Dirección Electronica?. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activa la Dirección Electronica?. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9896ED3A-60EF-D77C-FF4C-4EE97A875342</importedID>
+<constraintName>SI_NO}_606212901</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;S&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A2A17975-2E7C-E288-7ABF-483ECA86D4FA" name="GL_DIRECCIONES_ELEC_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C8814DA5-3CAB-4648-850F-F3EC0B866073</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4887B6D3-25E9-7FBF-9CDF-96BB5FDFEC82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8895F27-21F8-D945-4BEC-F6AEEA7A2014" name="GL_DIRECCION_ELECTRONICA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>653F0F8D-FA85-EFCA-62A8-B0612211DC17</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4887B6D3-25E9-7FBF-9CDF-96BB5FDFEC82"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1C8C6D1B-6B0B-0798-B47B-2B4CFDA593E7" name="GL_DIRECCIONES_ELEC_GL_TIPO_DIRECCION_ELEC_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8CACE2FB-EC96-66D2-F704-844EDB14A8C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ACA891A1-CDA1-A862-E97F-FA57D8142D35" name="GL_DIRECCIONES_ELEC_GL_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9CC2A3EC-9BC6-DAD0-88CE-491AE8F26388"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

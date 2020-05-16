@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_SECTORES" directorySegmentName="seg_0" id="8CEB5F8B-FF64-30D3-D1AE-53F9AEC19817">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="004DD498-53E8-FE6A-C3E6-0F85389A8A91">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOMBRE" id="1970FC86-869D-60A1-FBEF-EC3142DE1BBE">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CIUDAD_ID" id="9D058CEF-41E8-C083-4043-C1F9004B6E47">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="SECTORES_PK" id="EC8A651B-158B-CBD0-C78A-64C57D177461">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="SEC_CIUDADES_FK" id="E2D550AF-30DA-8B02-6BEF-22453F0167C1">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:19:31 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SECTORES_PK" id="80D23A2E-653E-71FB-FB01-0FFE64E1E5FD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 15:56:50 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

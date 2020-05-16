@@ -1,0 +1,153 @@
+ALTER TABLE INSCRIPCIONES 
+ADD (HORARIO_ID NUMBER );
+
+ALTER TABLE INSCRIPCIONES 
+ADD (MODIFICADO_POR VARCHAR2(255) );
+
+ALTER TABLE INSCRIPCIONES 
+ADD (MODIFICADO_EL DATE );
+
+COMMENT ON COLUMN INSCRIPCIONES.PERIODO_ID IS 'Pediodo de Inscripcion';
+
+COMMENT ON COLUMN INSCRIPCIONES.ES_EXONERADO IS 'Si esestudiante es exonerado o no';
+
+COMMENT ON COLUMN INSCRIPCIONES.PROG_ACADEMICO IS 'Programa Academico';
+
+COMMENT ON COLUMN INSCRIPCIONES.ES_SUSPENDIDO IS 'Si el Estudiante Suspendio un curso o no';
+
+COMMENT ON COLUMN INSCRIPCIONES.HORARIO_ID IS 'Id del horario de Inscripcion';
+
+COMMENT ON COLUMN INSCRIPCIONES.MODIFICADO_POR IS 'Quien modifico el registro';
+
+COMMENT ON COLUMN INSCRIPCIONES.MODIFICADO_EL IS 'Cuando se Modifico el Registro';
+
+exec tapi_gen2.create_tapi_package (p_table_name => 'INSTANCIAS_SECCIONES', p_compile_table_api => TRUE);
+
+
+
+ALTER TABLE HOJA_VIDA_EST 
+RENAME TO HOJA_VIDA_EST_BK;
+
+ALTER TABLE HOJA_VIDA_EST_BK 
+RENAME CONSTRAINT HOJA_VIDA_PK TO HOJA_VIDA_BK_PK;
+
+ALTER INDEX HOJA_VIDA_PK 
+RENAME TO HOJA_VIDA_BK_PK;
+
+drop trigger "FUNDAUC"."HOJA_VIDA_EST_TRG";
+
+CREATE TABLE "FUNDAUC"."HOJA_VIDA_EST" 
+   ("ID" NUMBER NOT NULL ENABLE, 
+	"MATRICULA" NUMBER, 
+	"EVENTO_ID" NUMBER, 
+	"FECHA" TIMESTAMP (6) DEFAULT systimestamp, 
+	"METADATA" CLOB constraint cc_json_metadata check(METADATA is JSON), 
+	"OBSERVACION" VARCHAR2(4000 BYTE), 
+	 CONSTRAINT "HOJA_VIDA_PK" PRIMARY KEY ("ID"));
+
+insert into hoja_vida_est select * from hoja_vida_est_bk
+
+CREATE OR REPLACE EDITIONABLE TRIGGER "FUNDAUC"."HOJA_VIDA_EST_TRG" 
+BEFORE INSERT ON HOJA_VIDA_EST 
+FOR EACH ROW 
+BEGIN
+  <<COLUMN_SEQUENCES>>
+  BEGIN
+    IF INSERTING AND :NEW.ID IS NULL THEN
+      SELECT HOJA_VIDA_EST_SEQ.NEXTVAL INTO :NEW.ID FROM SYS.DUAL;
+    END IF;
+  END COLUMN_SEQUENCES;
+END;
+/
+ALTER TRIGGER "FUNDAUC"."HOJA_VIDA_EST_TRG" ENABLE;
+
+ALTER SEQUENCE HOJA_VIDA_EST_SEQ MINVALUE 11634 NOCACHE;
+
+update hoja_vida_est set metadata = arregla_jsonhv(metadata)
+where metadata is not null;
+
+update hoja_vida_est set metadata = ins_inscripcion_jsonhv(metadata)
+where metadata is not null;
+
+delete from hoja_vida_est where evento_id=2 and metadata is null;
+
+CREATE TABLE INSTANCIAS_SECCIONES 
+(
+  ID NUMBER NOT NULL 
+, SECCION_ID NUMBER 
+, CODIGO_SEC VARCHAR2(50)
+, METODO_ID  VARCHAR2(10)
+, NIVEL      NUMBER(2)
+, PERIODO_ID NUMBER 
+, HORARIO_ID NUMBER 
+, MODALIDAD_ID NUMBER 
+, CEDULA_PROF VARCHAR2(20) 
+, F_INICIO DATE 
+, F_FIN DATE 
+, ESTATUS VARCHAR2(20) 
+, CONSTRAINT INSTANCIAS_SECCIONES_PK PRIMARY KEY 
+  (
+    ID 
+  )
+  ENABLE 
+);
+
+CREATE SEQUENCE INSTANCIAS_SECCIONES_SEQ;
+
+create or replace TRIGGER INSTANCIAS_SECCIONES_TRG 
+BEFORE INSERT ON INSTANCIAS_SECCIONES 
+FOR EACH ROW 
+BEGIN
+  <<COLUMN_SEQUENCES>>
+  BEGIN
+    IF INSERTING AND :NEW.ID IS NULL THEN
+      SELECT INSTANCIAS_SECCIONES_SEQ.NEXTVAL INTO :NEW.ID FROM SYS.DUAL;
+    END IF;
+  END COLUMN_SEQUENCES;
+END;
+/
+
+update precios p set id=(select id from materiales m where m.id_mat=p.item)
+
+delete precios where id is null;
+
+ALTER TABLE PRECIOS 
+DROP CONSTRAINT PK_PRECIOS;
+
+ALTER TABLE PRECIOS 
+DROP COLUMN ITEM;
+
+DROP INDEX PK_PRECIOS;
+
+ALTER TABLE PRECIOS  
+MODIFY (ID NOT NULL);
+
+ALTER TABLE PRECIOS
+ADD CONSTRAINT PRECIOS_PK PRIMARY KEY 
+(
+  ID 
+)
+ENABLE;
+
+ALTER TABLE PRECIOS
+ADD CONSTRAINT PRECIOS_FK1 FOREIGN KEY
+(
+  ID 
+)
+REFERENCES MATERIALES
+(
+  ID 
+)
+ON DELETE CASCADE ENABLE;
+
+exec tapi_gen2.create_tapi_package (p_table_name => 'PRECIOS', p_compile_table_api => TRUE);
+
+
+update detalle_factura df set producto_id = (select id from materiales m where df.item=m.id_mat)
+
+exec tapi_gen2.create_tapi_package (p_table_name => 'DETALLE_FACTURA', p_compile_table_api => TRUE);
+
+exec tapi_gen2.create_tapi_package (p_table_name => 'COHORTES', p_compile_table_api => TRUE);
+
+exec tapi_gen2.create_tapi_package (p_table_name => 'INSTANCIAS_SECCIONES', p_compile_table_api => TRUE);
+

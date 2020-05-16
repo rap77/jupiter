@@ -1,0 +1,451 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CEB64686-FF82-1229-7995-3371ED36FF90" schemaObject="FCF41941-BA25-8770-CD3F-F4AB582A1881" name="MOVIMIENTO_CAJA">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>CES</sourceObjSchema>
+<sourceObjName>MOVIMIENTO_CAJA</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:49 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<userDefined>true</userDefined>
+<userDefinedSQL>CREATE OR REPLACE VIEW MOVIMIENTO_CAJA&lt;br/&gt;AS &lt;br/&gt;select decode(prog_academico,1,&apos;IDIOMAS&apos;,2,&apos;IDIOMAS&apos;,3,&apos;DIPLOMADOS&apos;,6,&apos;DIRECCION CENTRAL&apos;) prog_academico,orden, fec_fac,tipo_item,item,sum(total) total from&lt;br/&gt;(&lt;br/&gt;/* Libros y Guias paquetes*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,decode(m.tipo,&apos;G&apos;,165,&apos;L&apos;,325,0) p_venta, sum(decode(m.tipo,&apos;G&apos;,165,&apos;L&apos;,325,0)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1720 and m.tipo in (&apos;G&apos;,&apos;L&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,decode(m.tipo,&apos;G&apos;,165,&apos;L&apos;,325,0) p_venta, sum(decode(m.tipo,&apos;G&apos;,165,&apos;L&apos;,325,0)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1840 and m.tipo in (&apos;G&apos;,&apos;L&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;/* Guias paquetes */&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,264 p_venta, sum(264) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1990 and m.tipo=&apos;G&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,264 p_venta, sum(264) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2260 and m.tipo=&apos;G&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,m.id_curso curso,m.nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,m.descripcion,p_unidad p_venta, sum(decode(df.subtotal,0,df.p_unidad,df.subtotal)) total,decode(cantidad,0,1,cantidad) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item=&apos;G&apos; and f.status=&apos;V&apos; and df.item=m.id_mat&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,m.id_curso,m.nivel,f.fecha_emi,df.id_fact, df.tipo_item,df.item,m.descripcion,p_unidad, cantidad&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,264 p_venta, sum(264) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2500 and m.tipo=&apos;G&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,264 p_venta, sum(264) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2770 and m.tipo=&apos;G&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;/* Libros paquetes*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,510 p_venta, sum(510) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2500 and m.tipo=&apos;L&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,m.tipo tipo_item,m.id_mat item,m.descripcion,510 p_venta, sum(510) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2770 and m.tipo=&apos;L&apos;&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=m.id_curso and token(df.descripcion,3, &apos; &apos;)=lpad(m.nivel,2,&apos;0&apos;)&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=m.tipo&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, m.tipo,m.id_mat,m.descripcion&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,m.id_curso curso, m.nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,m.descripcion,p_unidad p_venta, sum(decode(df.subtotal,0,df.p_unidad,df.subtotal)) total,decode(cantidad,0,1,cantidad) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item=&apos;L&apos; and f.status=&apos;V&apos; and DF.P_UNIDAD&gt;0 and df.item=m.id_mat&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,m.id_curso, m.nivel,f.fecha_emi,df.id_fact, df.tipo_item,df.item,m.descripcion,p_unidad, cantidad&lt;br/&gt;/* libros monto negativo sin libro */&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,m.id_curso curso, m.nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,m.descripcion,decode(p_unidad,-395,-325,p_unidad)*-1 p_venta, sum(decode(df.subtotal,0,df.p_unidad,df.subtotal)) total,decode(cantidad,0,-1,cantidad*-1) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, materiales m, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item=&apos;L&apos; and f.status=&apos;V&apos; and DF.P_UNIDAD&lt;0 and df.item=m.id_mat&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,m.id_curso, m.nivel,f.fecha_emi,df.id_fact, df.tipo_item,df.item,m.descripcion,p_unidad, cantidad&lt;br/&gt;UNION&lt;br/&gt;/* Cursos de Libros y Guias paquetes*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (165+325) p_venta, sum(df.subtotal-(165+325)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1720&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (165+325)&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (165+325) p_venta, sum(df.subtotal-(165+325)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1840&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (165+325)&lt;br/&gt;/*Cursos con Guias paquetes */&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (264) p_venta, sum(df.subtotal-(264)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=1990&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (264)&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (264) p_venta, sum(df.subtotal-(264)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2260&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (264)&lt;br/&gt;UNION&lt;br/&gt;/* Curso nivel 10 con Guia Empaquetada */&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (264) p_venta, sum(df.subtotal-(264)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2500&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (264)&lt;br/&gt;UNION&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (264) p_venta, sum(df.subtotal-(264)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2770&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (264)&lt;br/&gt;UNION&lt;br/&gt;/* Cursos Libros paquetes*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)) curso,to_number(trim(token(df.descripcion,3, &apos; &apos;))) nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item tipo_item,df.item item,df.descripcion,p_unidad - (264) p_venta, sum(df.subtotal-(264)) total, count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, metodos mt, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact&lt;br/&gt;and df.tipo_item=tm.abrev and tipo_item in &apos;C&apos; and subtotal=2770&lt;br/&gt;and decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;))=mt.id_metodo and mt.idioma=&apos;INGLES&apos;&lt;br/&gt;and f.status=&apos;V&apos; and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1) and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,decode(token(df.descripcion, 1, &apos; &apos;),&apos;AEC-A&apos;,&apos;AEC&apos;,token(df.descripcion, 1, &apos; &apos;)),to_number(trim(token(df.descripcion,3, &apos; &apos;))),f.fecha_emi,df.id_fact, df.tipo_item,df.item,df.descripcion,p_unidad - (264)&lt;br/&gt;UNION&lt;br/&gt;/*Control de Notas*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;B&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Examenes*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;E&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Matriculas*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;M&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Aranceles de Graduacio y Ubicacion*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;A&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item and ct.id_mat=df.item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Ingresos Diferidos*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;ID&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Descuentos*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;D&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Constacia de Estudios*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;CO&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Reposicion de Factura*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;F&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Recargo Administrativo*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;R&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Colocacion de Nota*/&lt;br/&gt;select f.prog_academico,c.orden orden,c.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;O&apos; and df.item = &apos;CN&apos;&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,c.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Diplomados y Certificaciones*/&lt;br/&gt;select f.prog_academico,c.orden orden,d.descripcion concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct,&lt;br/&gt;(select distinct id,id_diplocer from &lt;br/&gt;(select id,id_diplomado id_diplocer from cohortes&lt;br/&gt;UNION&lt;br/&gt;select id, id_certi id_diplocer from cohorte_certi)) ch, &lt;br/&gt;(select distinct id, descripcion from&lt;br/&gt;(select id_diplomado id, descripcion, &apos;DIPLOMADO&apos; tipo from diplomados&lt;br/&gt;UNION&lt;br/&gt;select id_certi id,descripcion, &apos;CERTIFICACION&apos; tipo from diplo_certi)) d&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item in (&apos;CU&apos;,&apos;PC&apos;) and df.item=ch.id and ch.id_diplocer=d.id&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;group by f.prog_academico,c.orden,d.descripcion,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Diplomados Empresas*/&lt;br/&gt;select 3 prog_academico,c.orden orden,e.razon concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(nvl(df.subtotal,0)) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct, empresas e&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;DC&apos; and f.rif=e.rif &lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) in (select rif from empresa_tipo where tipo = 2)&lt;br/&gt;group by f.prog_academico,c.orden,e.razon,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Diplomados Empresas Cuentas x Cobrar*/&lt;br/&gt;select 3 prog_academico,c.orden orden,e.razon concepto,null curso,null nivel,f.fecha_emi fec_fac,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad p_venta, sum(df.subtotal*-1) total,count(*) cant&lt;br/&gt;from factura f,detalle_factura df,tipo_material tm, conceptos c, conceptos_tipo ct, empresas e, cuentas_por_cobrar cc&lt;br/&gt;where f.id_fact = df.id_fact &lt;br/&gt;and df.tipo_item=tm.abrev and f.status=&apos;V&apos; and tipo_item = &apos;DC&apos; and f.rif=e.rif and f.rif=cc.cliente and f.id_fact=cc.id_fact&lt;br/&gt;and c.id_concepto= ct.id_concepto and ct.tipo=df.tipo_item&lt;br/&gt;and nvl(f.rif,&apos; &apos;) in (select rif from empresa_tipo where tipo = 2)&lt;br/&gt;group by f.prog_academico,c.orden,e.razon,f.fecha_emi,df.id_fact,df.tipo_item,df.item,tm.descripcion,p_unidad&lt;br/&gt;UNION&lt;br/&gt;/*Bancos*/&lt;br/&gt;select distinct f.prog_academico,1 orden,fp.descripcion concepto,null curso, null nivel,f.fecha_emi fec_fac,to_number(fd.referencia) ID_FACT,decode(d.forma_pago,3,&apos;DEPOSITOS&apos;,&apos;PUNTO DE VENTA&apos;) tipo_item,to_char(fd.id_banco) item,b.nombre descripcion,0 P_VENTA,d.monto total, 1 cant&lt;br/&gt;from factura f,factura_deposito fd, bancos b, deposito d, forma_pago fp&lt;br/&gt;where f.id_fact=fd.id_fact&lt;br/&gt;AND f.status=&apos;V&apos;&lt;br/&gt;and b.id_banco=fd.id_banco and fd.id_banco=d.ID_BANCO and fd.referencia=d.referencia and d.forma_pago = fp.id_pago&lt;br/&gt;and nvl(f.rif,&apos; &apos;) not in (select rif from empresa_tipo where tipo = 1)&lt;br/&gt;)&lt;br/&gt;group by decode(prog_academico,1,&apos;IDIOMAS&apos;,2,&apos;IDIOMAS&apos;,3,&apos;DIPLOMADOS&apos;,6,&apos;DIRECCION CENTRAL&apos;),orden, fec_fac,tipo_item,item</userDefinedSQL>
+<validSQL>false</validSQL>
+<parsed>true</parsed>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="PROG_ACADEMICO" id="938AF9FD-96CA-92E5-A4F7-BA8A830EF8E4">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>PROG_ACADEMICO</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>PROG_ACADEMICO</alias>
+<dataType>VARCHAR2 (17 BYTE)</dataType>
+<headerAlias>PROG_ACADEMICO</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ORDEN" id="B5E2D9C8-300B-9B6E-A367-C70EA69DE3DF">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>ORDEN</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ORDEN</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>ORDEN</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="FEC_FAC" id="724A9B27-08FF-7EEC-E1CC-31A740149C2C">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>FEC_FAC</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>FEC_FAC</alias>
+<dataType>DATE</dataType>
+<headerAlias>FEC_FAC</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TIPO_ITEM" id="68569809-F31C-B3E0-65AA-AD2E88B2474E">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>TIPO_ITEM</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>TIPO_ITEM</alias>
+<dataType>VARCHAR2 (14 BYTE)</dataType>
+<headerAlias>TIPO_ITEM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="ITEM" id="2D2CE180-0139-AB23-67DF-2FDEAA183702">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>ITEM</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>ITEM</alias>
+<dataType>VARCHAR2 (40 BYTE)</dataType>
+<headerAlias>ITEM</headerAlias>
+<reference>false</reference>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="TOTAL" id="B26615A7-3139-644B-D141-DAB3338F9CAE">
+<sourceConnName>ces.local</sourceConnName>
+<sourceObjSchema>MOVIMIENTO_CAJA</sourceObjSchema>
+<sourceObjName>TOTAL</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2019-07-05 12:28:50 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>TOTAL</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>TOTAL</headerAlias>
+<reference>false</reference>
+</viewElement>
+</viewElements>
+<usedObjects>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4959CE5B-4974-9BEC-BF59-3BF50091AA02">
+<container>true</container>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0ECEDA07-1D70-850C-BB4A-98099A9DFB6E">
+<container>true</container>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BEE6FD5F-D905-E403-47FA-10B9BC6F55EB">
+<container>true</container>
+<schema>CES</schema>
+<tableName>TIPO_MATERIAL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="28643FAD-C875-08D9-3DCC-8486FA21A802">
+<container>true</container>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4BF0E7F6-DA35-84DB-837A-1450BFBB8814">
+<container>true</container>
+<schema>CES</schema>
+<tableName>METODOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3E9A40E5-0A57-AE37-7901-02E2BEE7E6C3">
+<container>true</container>
+<schema>CES</schema>
+<tableName>CONCEPTOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7E42ECB7-B95E-367B-15ED-4F92264B52E3">
+<container>true</container>
+<schema>CES</schema>
+<tableName>CONCEPTOS_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3E74F056-8F36-A6AE-2F59-0DD51FB27ADF">
+<container>true</container>
+<schema>CES</schema>
+<tableName>EMPRESA_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="02598BC8-87FD-EB2B-0ABA-F1262C9CAB65">
+<columnName>NIVEL</columnName>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AEDC7E12-0EED-C0EF-7E9B-F54B0D048E8A">
+<columnName>FECHA_EMI</columnName>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BCA070AF-00CC-0EA8-7B26-8B5FEAA8DDB2">
+<columnName>STATUS</columnName>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CDDA0D38-6698-F379-E3CC-9C641631A335">
+<columnName>ID_MAT</columnName>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9B983F71-C84B-E2B2-CCF1-07BB9B58C247">
+<columnName>ID_CURSO</columnName>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="A751F54D-D060-C58D-B6BF-77C27B415BF4">
+<columnName>IDIOMA</columnName>
+<schema>CES</schema>
+<tableName>METODOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="48A1653A-8756-1C84-C385-C6E5DB0B310E">
+<columnName>TIPO</columnName>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3901F183-0419-D13D-A32F-E977F3263A96">
+<columnName>PROG_ACADEMICO</columnName>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6D238BE9-53DD-67B0-4327-D143DBA42E6D">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>MATERIALES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7A9AADBE-8A30-4741-4A78-46DF394151AB">
+<columnName>CANTIDAD</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="87410C03-22A1-8BAC-5B55-9BD2C9188053">
+<columnName>ABREV</columnName>
+<schema>CES</schema>
+<tableName>TIPO_MATERIAL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C1DF80D7-81B9-D5C4-0392-1145BD7C668B">
+<columnName>ID_FACT</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0C2FCE29-EE8D-9929-754F-B30116AF7392">
+<columnName>ID_FACT</columnName>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="165BF125-C0FF-7BFF-18DA-70410D422C7A">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="BBB16672-FF1E-159A-8170-EEBD2145BE20">
+<columnName>TIPO</columnName>
+<schema>CES</schema>
+<tableName>EMPRESA_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEC23256-843A-4D04-86A2-4C096921063F">
+<columnName>ID_METODO</columnName>
+<schema>CES</schema>
+<tableName>METODOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="1A482C22-99BA-65A0-41E3-39FA42B2ABF1">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="92C15E0D-0AA7-6FB7-A6C6-D350787F1D78">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>TIPO_MATERIAL</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3E6F68D6-EEE6-86B1-6CBD-AD804307A2AB">
+<columnName>SUBTOTAL</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F1CC6ADE-20C5-1067-9BA2-8694F95779FF">
+<columnName>ID_MAT</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="CEC6FF89-5A13-307E-82D3-C2B0D74F8EB6">
+<columnName>ITEM</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="86C00D4C-00C1-313B-94C1-5AB58A463863">
+<columnName>P_UNIDAD</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="49791E7B-4FC3-95A6-B683-3DE7EF8753DE">
+<columnName>ID</columnName>
+<schema>CES</schema>
+<tableName>COHORTES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2F8B7E90-74CA-6DBB-E432-61E70174F1C8">
+<columnName>ID_DIPLOMADO</columnName>
+<schema>CES</schema>
+<tableName>COHORTES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="07F19799-EC32-84FC-5854-A69B82A0F8FA">
+<container>true</container>
+<schema>CES</schema>
+<tableName>COHORTES</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="8EB0220B-4F3F-D32A-808C-E2813809F255">
+<columnName>ID</columnName>
+<schema>CES</schema>
+<tableName>COHORTE_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="9F47EB93-F1C3-771C-B22C-803B3FABD491">
+<columnName>ID_CERTI</columnName>
+<schema>CES</schema>
+<tableName>COHORTE_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="58651FAC-2992-0875-7603-99D57934DEA3">
+<container>true</container>
+<schema>CES</schema>
+<tableName>COHORTE_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="62B73825-3885-7BE8-54D6-125CEE1CDD95">
+<columnName>ID_DIPLOMADO</columnName>
+<schema>CES</schema>
+<tableName>DIPLOMADOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7F153CD6-805D-8C03-72EE-F3ACAC3BFB7D">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>DIPLOMADOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="978679D0-3671-C663-B404-930C49F22590">
+<container>true</container>
+<schema>CES</schema>
+<tableName>DIPLOMADOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="821A6534-7262-EEE4-8202-8A2BEBFC1540">
+<columnName>ID_CERTI</columnName>
+<schema>CES</schema>
+<tableName>DIPLO_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3D7B45B8-73C8-B8C0-35A7-9532414922B6">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>DIPLO_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="233CE55F-8FD2-7876-871C-C920D8CE498B">
+<container>true</container>
+<schema>CES</schema>
+<tableName>DIPLO_CERTI</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AE2C9C09-B930-64E1-3B1E-EF378BE46D19">
+<container>true</container>
+<schema>CES</schema>
+<tableName>EMPRESAS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E152E985-0A25-1C4C-C395-7F59473AF5D2">
+<columnName>RIF</columnName>
+<schema>CES</schema>
+<tableName>EMPRESAS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="5E85FC1B-038B-66CA-05AF-56460422E039">
+<columnName>RIF</columnName>
+<schema>CES</schema>
+<tableName>FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="F4830111-D360-65D8-AE47-8CE2B06ACD6E">
+<columnName>ORDEN</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="FC3A336C-E346-C344-E7E6-BF54287F3663">
+<columnName>RIF</columnName>
+<schema>CES</schema>
+<tableName>EMPRESA_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="2D487484-F784-F78A-9974-DB329912A116">
+<container>true</container>
+<schema>CES</schema>
+<tableName>CUENTAS_POR_COBRAR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AC1C46AE-9B80-AC56-12A3-2A74B056E7C5">
+<columnName>TIPO_ITEM</columnName>
+<schema>CES</schema>
+<tableName>DETALLE_FACTURA</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7E65E9E7-7EF3-33EF-C083-0BBE74179384">
+<columnName>CLIENTE</columnName>
+<schema>CES</schema>
+<tableName>CUENTAS_POR_COBRAR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="80DBB8B2-7824-F831-F77A-B68BBBBED730">
+<columnName>ID_FACT</columnName>
+<schema>CES</schema>
+<tableName>CUENTAS_POR_COBRAR</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="6AA0BBFB-4D9A-7A17-0126-E2792BEAA7EE">
+<columnName>ID_CONCEPTO</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0810A715-11F6-6A74-60B6-772EB3CB6EFC">
+<columnName>ID_CONCEPTO</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="3F237E5A-9B3E-2CC8-400C-FB08118D882D">
+<columnName>TIPO</columnName>
+<schema>CES</schema>
+<tableName>CONCEPTOS_TIPO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="4E04E3B9-086D-CB56-5425-8EE0A6AFBD54">
+<columnName>RAZON</columnName>
+<schema>CES</schema>
+<tableName>EMPRESAS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="7DC27629-AC0D-C5F0-81C8-4670F021838A">
+<columnName>DESCRIPCION</columnName>
+<schema>CES</schema>
+<tableName>FORMA_PAGO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C5CC23DF-D542-15BF-AA2B-CDEEEA03B506">
+<columnName>NOMBRE</columnName>
+<schema>CES</schema>
+<tableName>BANCOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AC38F5F2-CECA-106E-CAA2-E46EF56FD5EE">
+<columnName>MONTO</columnName>
+<schema>CES</schema>
+<tableName>DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="AD291253-0627-9CCC-DA72-CAE57424567F">
+<container>true</container>
+<schema>CES</schema>
+<tableName>FACTURA_DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="DB125752-8157-CDA1-2DA3-B832239441CE">
+<container>true</container>
+<schema>CES</schema>
+<tableName>BANCOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="0B7F514E-7365-5829-2877-AB9D8323DF70">
+<container>true</container>
+<schema>CES</schema>
+<tableName>DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="18DEDA4C-965D-049B-BA24-D3E3492E1407">
+<container>true</container>
+<schema>CES</schema>
+<tableName>FORMA_PAGO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="28F4DEAF-4538-5D07-F26D-349FC1B47A58">
+<columnName>ID_FACT</columnName>
+<schema>CES</schema>
+<tableName>FACTURA_DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="C7921308-CE7F-114B-5EEB-EF09AB3CAD9C">
+<columnName>ID_BANCO</columnName>
+<schema>CES</schema>
+<tableName>BANCOS</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D4F1D8B9-95BE-2F8A-EC21-1D3AE1E6A663">
+<columnName>ID_BANCO</columnName>
+<schema>CES</schema>
+<tableName>FACTURA_DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="E90D5D93-05B2-D374-B6AA-7F29C706587D">
+<columnName>ID_BANCO</columnName>
+<schema>CES</schema>
+<tableName>DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="787318C7-1103-3F1C-38E4-BAABE9A25149">
+<columnName>REFERENCIA</columnName>
+<schema>CES</schema>
+<tableName>FACTURA_DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="93998D2D-18B4-052C-5C0C-08CC85913F86">
+<columnName>REFERENCIA</columnName>
+<schema>CES</schema>
+<tableName>DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="D2F1D9EF-BDC9-AF49-35DF-5AD4A65F1D5F">
+<columnName>FORMA_PAGO</columnName>
+<schema>CES</schema>
+<tableName>DEPOSITO</tableName>
+</UsedObject>
+<UsedObject class="oracle.dbtools.crest.swingui.editor.viewbuilder.SQLNameHelper" id="22035484-2BF9-4BDA-B525-C47D7431D8F8">
+<columnName>ID_PAGO</columnName>
+<schema>CES</schema>
+<tableName>FORMA_PAGO</tableName>
+</UsedObject>
+</usedObjects>
+</TableView>

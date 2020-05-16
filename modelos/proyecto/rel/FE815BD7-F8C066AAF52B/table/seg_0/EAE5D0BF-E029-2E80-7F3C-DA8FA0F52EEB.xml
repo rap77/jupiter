@@ -1,0 +1,174 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EAE5D0BF-E029-2E80-7F3C-DA8FA0F52EEB" name="GL_ASEGURADORA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Empresas Aseguradoras]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Empresas Aseguradoras]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6500A900-F2BC-34B0-6352-3B0733C83E8C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="5EFEA3FE-1377-536E-EA35-175DEE23F044">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>88E9E72F-4FF5-BC84-C668-C1F7E815DA09</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+<associations>
+<colAssociation fkAssociation="4F0D5D65-D4F7-7EE3-6B16-C98EA9F484C6" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+<Column name="RAMO_ASEGURADORA_ID" id="35031876-23DA-EFD1-79FF-55EB168A5F7E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Ramos de la Aseguradora]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Ramos de la Aseguradora]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E4177B74-4EFB-503C-9170-0DF86444B4B5</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E61A8E3-DB28-47BC-DC6B-6A4F0419E2C5" referredColumn="8EC60B7D-199C-CB2D-430D-6AE416682003"/>
+</associations>
+</Column>
+<Column name="TIPO_ASEGURADORA_ID" id="6A2A6B90-DACF-FFC1-BD91-CAAB38C378E8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Identificador Unico de Tipos de Aseguradora]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico de Tipos de Aseguradora]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0643A504-77F5-8047-95E2-7565F053B5FE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D9D4B02E-D5C6-9E7B-0931-B727D8835211" referredColumn="6C6809E4-676E-DE1A-3534-6DBB5DB08209"/>
+</associations>
+</Column>
+<Column name="NRO_GACETA" id="AEE7DF14-A82D-2512-0D07-262DE20D0741">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Numero de Gaceta en que se Constituyo la Empresa Aseguradora]]></comment>
+<commentInRDBMS><![CDATA[Numero de Gaceta en que se Constituyo la Empresa Aseguradora]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>31037C79-B84E-6C6A-6F15-89B5D77A9C90</importedID>
+<constraintName>ENTERO_10}_1466836493</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_GACETA" id="5DD58D4C-F639-37CD-D6C5-D2D9BEA017B0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Fecha en que se Publico la Gaceta]]></comment>
+<commentInRDBMS><![CDATA[Fecha en que se Publico la Gaceta]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>80D2EF5A-BB29-2013-0371-F7098E3E13CA</importedID>
+<constraintName>FECHA}_1584955950</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E3C23C3-DB23-9EB5-FA7A-A91DA40476F6" name="GL_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A1BB591C-F1CA-6CA3-83A2-7CEB67D837C2</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EFEA3FE-1377-536E-EA35-175DEE23F044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="246A22E6-A5AA-7DA7-45BD-170E2B416237" name="GL_ASEGURADORA_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>708D9402-BD01-AC47-C31B-9E7FF29082FC</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EFEA3FE-1377-536E-EA35-175DEE23F044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9B533017-7CC0-2904-EFE1-3C042054909B" name="GL_ASEGURADORA_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5EFEA3FE-1377-536E-EA35-175DEE23F044"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7F17EDD8-7F88-FC73-3F33-6F1095CB5DBA" name="GL_ASEGURADORA_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35031876-23DA-EFD1-79FF-55EB168A5F7E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="49FA6C0F-4E75-38CE-76EF-4A84A7320F41" name="GL_ASEGURADORA_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A2A6B90-DACF-FFC1-BD91-CAAB38C378E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

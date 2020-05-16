@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="35B9F41B-BD6C-5028-4D57-255497366BC3" containerWithKeyObject="BC254C15-D4AD-D9B2-D9AA-8F01044F8294" localFKIndex="D86C5943-FF1C-0F9C-0FBF-09B9DAD6AE58" name="SALONES_EDIFICIOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-07-09 14:18:18 UTC</createdTime>
+<ownerDesignName>CES-FUNDAUC</ownerDesignName>
+<referredTableLongName>CES.EDIFICIOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>FF57BBD2-FB37-8738-3A55-FAEF18085738</referredTableID>
+<keyObject>4B3C2EFD-5198-E934-856A-68A2D7D445C8</keyObject>
+<referredKeyID>4B3C2EFD-5198-E934-856A-68A2D7D445C8</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EDIF</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

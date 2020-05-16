@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="RH_TITULO_JEFE_FK0" directorySegmentName="seg_2" id="D700CAD1-D5AB-7801-7CD8-2F41DA97B3A5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>3E5E9B42-5172-B38B-D1C5-EAB782A84435</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>84962451-4510-1794-31B0-92412D285945</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2A736D02-8AB2-B251-03B1-67E38455EC46</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A3B29A56-0614-8071-4526-A773A19713AD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

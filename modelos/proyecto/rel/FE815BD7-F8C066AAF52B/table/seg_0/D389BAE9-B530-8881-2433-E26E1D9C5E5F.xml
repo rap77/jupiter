@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D389BAE9-B530-8881-2433-E26E1D9C5E5F" name="GL TIPOS DIRECCIONES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Dirección. Ej:1 Domicilio Fiscal, 2 Oficina, 3 Habitación.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>99F4369E-B300-6960-F233-13C17116FECB</importedID>
+<ordsAlias>gl_tipos_direcciones</ordsAlias>
+<abbreviation>TP_DIR</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="B0D1C07E-C4FC-612F-DA4B-B75596A7F694">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Dirección.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AFC38EE6-65EA-5F2E-6372-651D87D79DAF</importedID>
+<constraintName>ID}_1366185233</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="C23B1382-97D9-03E3-E35C-D1B4ECE3D537">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></comment>
+<commentInRDBMS><![CDATA[Descripción de Tipo de Dirección.  Dirección del Hogar, Dirección de la Oficina. Dirección del Domicilio Fiscal.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>87175577-AEED-BAAE-7087-1BACC81EE78A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E9E401B1-CD05-C2C8-4952-37E1731BD296" name="GL_TIPOS_DIRECCIONES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B64A9DE3-89DF-1DC6-AD14-05BA8E1FC285</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0D1C07E-C4FC-612F-DA4B-B75596A7F694"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A7523A1-99E2-C41B-B630-4EF275EB814D" name="GL_TIPO_DIRECCION_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B90B61B5-8D02-892A-4161-4462890F776F</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0D1C07E-C4FC-612F-DA4B-B75596A7F694"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BF2599E2-629A-9D28-944A-225321EA5694" name="GL_PROVEEDORES">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Proveedor.]]></comment>
+<commentInRDBMS><![CDATA[Proveedor.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2D8D3371-FCF8-6669-5186-9FFF8BF14FA1</importedID>
+<abbreviation>PRO</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PER_JUR_PER_ID" id="C43E68EB-A0D9-C950-6F12-09AF5F0706AE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9946F71E-D213-00BA-C291-322F10414017</importedID>
+<constraintName>ID}_1145973925</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C15DF105-FEB8-D389-1FFC-94C6AE036124" referredColumn="EFCB6DB6-A88D-0B02-33CA-45DF8E3A41B8"/>
+</associations>
+</Column>
+<Column name="GL_TIPOS_PROVEEDORES_ID" id="43B7065E-F0B5-17D3-6B93-FEFAA682BDB4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tipo de Proveedor]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Proveedor]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>157D1C7C-6BCE-3E40-9E4A-50A2827C0CC9</importedID>
+<constraintName>ID}_1177162754</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>9510A7FE-8694-2BF7-FD06-EF68165C8F3B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="1AA3D3C1-C707-F616-AC89-33E159CAE1CF" referredColumn="C27F0B9A-4670-E9C6-95C3-A7285472CC2F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0667E922-B607-8444-F93E-4E8A0AE27B8B" name="GL_PROVEEDORES_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8158D081-E7A0-9487-363A-5D5367D659B4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C43E68EB-A0D9-C950-6F12-09AF5F0706AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DD863606-D88C-2464-1599-45F455AF412E" name="GL_PROVEEDOR_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>AB1106D3-AF6D-4BD9-A85C-4FAE0061F2BA</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C43E68EB-A0D9-C950-6F12-09AF5F0706AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1371B627-C908-B3C7-A5BC-7034519CF4AF" name="GL_PROVEEDORES_PER_JUR_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C43E68EB-A0D9-C950-6F12-09AF5F0706AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A1C5D546-C22C-36FA-CF98-D6143E8781B5" name="PRO_TIP_PRO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43B7065E-F0B5-17D3-6B93-FEFAA682BDB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

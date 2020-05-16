@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="GL_MONEDA" directorySegmentName="seg_0" id="D677C058-9408-C92B-1CF9-DFC5D342249A">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<schemaObject>33962A9B-ED1D-9C59-154E-84F9E6AC029B</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ID" id="49B23D7F-9DE3-5DB5-34AE-061AFB6AFB36">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DENOMINACION" id="7AA62684-8596-279A-7F28-3437B21B96D3">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIMBOLO" id="9D870315-3D41-1FEB-071B-53F2C329BE74">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODIGO" id="D8502256-1410-2E39-E735-5367334BBAEF">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MONEDA_PK" id="AEA5A42E-0BB3-3606-83F4-DD2F964FD8AD">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<user>D6CEFF5F-722B-AD19-143B-1DB4A5350929</user>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MONEDA_PK" id="4C0B5B91-5C3A-9EDD-5039-083419B50BBB">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:06:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

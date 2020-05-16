@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82C3293E-F9FA-679A-CA03-FAA1FC061208" name="GL_GRADOS_ACADEMICOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Grado Acádemico Recibido. Ej: Philosophus Scientiarum.]]></comment>
+<commentInRDBMS><![CDATA[Grado Acádemico Recibido. Ej: Philosophus Scientiarum.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2B64DD51-0BE8-8B4E-1B72-2B319C406FD9</importedID>
+<abbreviation>GRD_ACAD</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="70C68A27-45F8-DADB-7E74-7BEF5980BB94">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Grado Acádemico Recibido.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Grado Acádemico Recibido.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>FD54CF67-5BBA-2A3E-51E1-8E16942381C2</importedID>
+<constraintName>ID}_187038348</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="DESCRIPCION" id="903C924A-A551-EC90-E55D-7E8E5FC2AA87">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del Grado Acádemico Rrecibido.]]></comment>
+<commentInRDBMS><![CDATA[Descripción del Grado Acádemico Rrecibido.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A5C23E64-C1C4-4952-63AD-3B1C9060C840</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>78673E82-63FD-97EE-9A07-1F070746CB19</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D3DD5816-ADD2-02A5-5BF5-0618A16BC4C6" name="GL_GRADOS_ACADEMICOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9CBE26FC-F682-6EAF-00E8-C5B5DE9A95B5</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70C68A27-45F8-DADB-7E74-7BEF5980BB94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9ECF2757-86A4-4604-7372-A93CAF28D4FA" name="GL_GRADO_ACADEMICO_RECIB_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B0911DA6-7991-7854-704E-95E24A9E6E75</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="70C68A27-45F8-DADB-7E74-7BEF5980BB94"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,157 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="5743BB17-7007-2394-F4D4-D20AA0DC5254" name="RH_TRABAJADOR_PUESTO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Relacion entre Trabajadores y Puestos de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre Trabajadores y Puestos de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>EBC9CF06-DCCE-9AB2-ACBD-C375C328099F</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_TRABAJADOR" id="AF4E7E4E-3548-B36C-A8A5-E1B0EDD20960">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona Natural. Es igual al de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5FD6FCBF-81AF-ACE6-58BE-7E6AABC68FC6</importedID>
+<constraintName>ID}_518911276</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="507B1B95-8D04-AA0E-5B5E-74743C2BC2C0" referredColumn="A9B1D90B-AD63-FE7E-DE80-2261176C75EF"/>
+</associations>
+</Column>
+<Column name="ID_PUESTO" id="AAE4D3BF-F7C9-F668-E0ED-F55EEBB40DAC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador Unico del Puesto de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Identificador Unico del Puesto de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>9719AAD5-F1E3-FA86-F3B0-C6FD21C2E53D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="69E33BD0-EEC8-EFFB-08DB-231DCFBA81FB" referredColumn="7CED5151-2193-E569-C90E-31D4705D55DC"/>
+</associations>
+</Column>
+<Column name="FECHA_INICIO" id="BCACF13F-3C1C-1340-7797-AFBE82BD4CED">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha en que se designo la persona en ese puesto de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Fecha en que se designo la persona en ese puesto de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>81C9CD17-F15B-C2A6-033F-8F21FA20A61C</importedID>
+<constraintName>FECHA}_468181145</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_FIN" id="A6752FB1-0924-4746-D5B7-0BB3E575A4C7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Fecha en que la Persona dejo de ocupar ese puesto de Trabajo]]></comment>
+<commentInRDBMS><![CDATA[Fecha en que la Persona dejo de ocupar ese puesto de Trabajo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>084EC5FA-1FC1-8ECD-800A-DCE94F8E6B3A</importedID>
+<constraintName>FECHA}_1629173258</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="55E60E8A-2EAE-8413-812D-AC1CE4C3CC1D" name="RH_TRABAJADOR_PUESTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A3688E6F-C632-40E1-425B-F2E4ADF25968</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF4E7E4E-3548-B36C-A8A5-E1B0EDD20960"/>
+<colUsage columnID="AAE4D3BF-F7C9-F668-E0ED-F55EEBB40DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AB0FF239-D1FC-A69A-7384-73764552DF83" name="RH_TRABAJADOR_PUESTO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>489F3495-F5CA-C43C-8B9C-217C399CC5E6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF4E7E4E-3548-B36C-A8A5-E1B0EDD20960"/>
+<colUsage columnID="AAE4D3BF-F7C9-F668-E0ED-F55EEBB40DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1F0959F3-9106-AA11-62D2-DA1006ED65C2" name="RH_TRABAJADOR_PUESTO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF4E7E4E-3548-B36C-A8A5-E1B0EDD20960"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A8EB062D-02C6-D42D-B79B-A3B9840EF1E6" name="RH_TRABAJADOR_PUESTO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAE4D3BF-F7C9-F668-E0ED-F55EEBB40DAC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

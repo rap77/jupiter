@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="24D44388-A479-DF9F-5639-084363F5DB25" containerWithKeyObject="0D530796-DDA2-B6E6-4708-C3B2643EE4F4" localFKIndex="C1483131-E440-E626-2CF7-DDE22B1321C5" name="PERCTABAN_CTA_BAN_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-08 15:11:32 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.TS_CUENTAS_BANCARIAS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>19BB9FF6-86DD-097B-2B1C-C56F0F9FD75E</referredTableID>
+<keyObject>0C64C204-9855-FD58-1E37-5511304FE03B</keyObject>
+<referredKeyID>0C64C204-9855-FD58-1E37-5511304FE03B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

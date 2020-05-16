@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="IN_FORMA_ADQUISICION_FK0" directorySegmentName="seg_1" id="15E0188E-13F1-402C-6F9B-CA945A4019FC">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>70B4B33E-8140-E812-1452-4C7A32DCFC91</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>D0C1C31D-D894-6884-DD87-C4C3BCFA0DCD</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CEA715BE-756E-6B89-426D-BA49602FDB68</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>94005B3C-C08F-5D16-29E4-4659F1EDB23B</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

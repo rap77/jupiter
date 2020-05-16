@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BC64DAE-23C6-BD78-6481-526C44E7768D" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="GL_LETRAS_RIF_TIPOS_ID">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>GL LETRAS RIF TIPOS ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></comment>
+<commentInRDBMS><![CDATA[Relacion entre las letras del rif y los tipos de identificacion]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LET_RIF_ID" id="321B5589-F73C-A1AD-50B5-6DCE537371E6">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL LETRAS RIF TIPOS ID</sourceObjSchema>
+<sourceObjName>LET_RIF_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P ]]></comment>
+<commentInRDBMS><![CDATA[Letra del Registro de Información Fiscal. Ej: J, G, V, E, P ]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_LRIF_TID_LRIF_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_LRIF_TID_LRIF_ID</notNullConstraintName>
+<associations>
+<colAssociation fkAssociation="BD22213E-515B-B7CD-88BB-40151225F383" referredColumn="86D8C38E-F4B0-C1CD-0632-FE1F0AB4A5E4"/>
+</associations>
+</Column>
+<Column name="TP_DOCID_ID" id="2B51092C-ECB5-DC30-96CB-18B3F07B54A1">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>GL LETRAS RIF TIPOS ID</sourceObjSchema>
+<sourceObjName>TP_DOCID_ID</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:35 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno del Tipo de Número o Código de Identificación.]]></commentInRDBMS>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<constraintName>CK_LRIF_TID_TDI_ID</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>NN_LRIF_TID_TDI_ID</notNullConstraintName>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="6C0B6E97-57D2-1FAF-B953-DD3F9997BE8B" referredColumn="5645E46B-E511-A7D9-2B97-01D47B91E5E5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2EEC5E9-1A22-199B-55E9-D2750E24E798" name="LET_RIF_TP_ID_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>LET_RIF_TP_ID_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="321B5589-F73C-A1AD-50B5-6DCE537371E6"/>
+<colUsage columnID="2B51092C-ECB5-DC30-96CB-18B3F07B54A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00979C2B-8C55-1047-4E59-BDE3E1528DFB" schemaObject="33962A9B-ED1D-9C59-154E-84F9E6AC029B" name="LET_RIF_TIPO_ID_PK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>LET_RIF_TIPO_ID_PK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:36 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="321B5589-F73C-A1AD-50B5-6DCE537371E6"/>
+<colUsage columnID="2B51092C-ECB5-DC30-96CB-18B3F07B54A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="086B6BC7-1A8E-0D21-588D-CE156B25EB48" name="LRIF_TID_LRIF_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-06 20:06:41 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="321B5589-F73C-A1AD-50B5-6DCE537371E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A066CB0C-3E9B-6B42-61EE-91AEA9DF57ED" name="LRIF_TID_TP_DOCID_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 00:53:25 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2B51092C-ECB5-DC30-96CB-18B3F07B54A1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

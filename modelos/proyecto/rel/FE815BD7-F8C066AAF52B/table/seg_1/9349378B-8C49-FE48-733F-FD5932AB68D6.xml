@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="9349378B-8C49-FE48-733F-FD5932AB68D6" name="IN_TIPO_ACTIVO">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Tabla de Tipos de Activos. BM Bienes Muebles, BI Bienes Inmuebles, AI Activos Intangibles, AF Activos Financierors.]]></comment>
+<commentInRDBMS><![CDATA[Tabla de Tipos de Activos. BM Bienes Muebles, BI Bienes Inmuebles, AI Activos Intangibles, AF Activos Financierors.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>D31CBFC8-C86D-2A03-5CDB-1A2A6CA84A78</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="2E716F09-9ADA-E8E1-BC53-69B4D22B0E9A">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador único del tipo de activo]]></comment>
+<commentInRDBMS><![CDATA[Identificador único del tipo de activo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>168FB591-C8EF-BCBA-CBB6-617781B5D9E1</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPCION" id="FC452611-D917-0784-DAC8-A53BC2D58839">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripción del tipo de activo]]></comment>
+<commentInRDBMS><![CDATA[Descripción del tipo de activo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>6E3BD7BE-A422-4559-1596-DB6DDDE363EC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COD_SUDEBIP" id="F9BFA875-43B9-EA25-A718-A3716305FB2B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Codigo sugerido por la SUDEBIP]]></comment>
+<commentInRDBMS><![CDATA[Codigo sugerido por la SUDEBIP]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>1155018F-30E4-C01A-8FE2-4959AAE20BB0</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>0387EC2C-BACD-D4A5-CFA8-4C146958289B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1BC94DB8-AD5B-8C02-E4E9-AF02903FDE94" name="IN_TIPO_ACTIVO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>C173A281-E29D-82DC-06AC-C974ECBE7360</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E716F09-9ADA-E8E1-BC53-69B4D22B0E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="18CAE710-0193-3394-670A-6B2769A6BA17" name="IN_TIPO_ACTIVO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E8B55325-B013-C4A0-1A96-0AA0C4F4DD07</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E716F09-9ADA-E8E1-BC53-69B4D22B0E9A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

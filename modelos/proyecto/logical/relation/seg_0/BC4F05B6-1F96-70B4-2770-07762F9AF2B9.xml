@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="GL_INF_NACIMIENTO_FK2" directorySegmentName="seg_0" id="BC4F05B6-1F96-70B4-2770-07762F9AF2B9">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>CE04DAD6-27EA-3751-3638-FE1C8AC261D2</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>DDB21446-10BC-80D8-968D-A258B1A446F6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BC433E46-5B3F-7210-B94B-03FD6697B8FB</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5127F9F6-DF07-6CDA-1F71-CE87C8CA36A7</targetEntity>
+<transferable>true</transferable>
+<deleteRule>SET NULL</deleteRule>
+</Relation>

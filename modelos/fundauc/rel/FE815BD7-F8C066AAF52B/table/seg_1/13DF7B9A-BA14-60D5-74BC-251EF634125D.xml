@@ -1,0 +1,379 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="13DF7B9A-BA14-60D5-74BC-251EF634125D" name="IN_BIEN">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Bienes Muebles e Inmuebles manejador por inventario</comment>
+<commentInRDBMS>Bienes Muebles e Inmuebles manejador por inventario</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>EE8BDB66-A99A-645A-EF45-6113B70B4C7D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del bien</comment>
+<commentInRDBMS>Identificador único del bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>F42849B1-2D26-43B4-2733-F6BF6F65D3E0</importedID>
+<constraintName>ID}_153292280</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="ID_PRODUCTO" id="9257DD46-F23E-6FF8-F763-FCD8C93E4486">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno del Producto.</comment>
+<commentInRDBMS>Número de Identificación Interno del Producto.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BA7547C7-3B6C-B763-DADB-5F26B197CABC</importedID>
+<constraintName>ID}_960715177</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="ED6837D2-AF45-81DE-FA0C-998963573704" referredColumn="57B47050-1AFF-310E-8E6D-C5106B24AC48"/>
+</associations>
+</Column>
+<Column name="ID_BIEN_COMPONENTE" id="CD57179E-7F1E-502A-95E4-BDB0D6C04BCA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador único del bien que es componente</comment>
+<commentInRDBMS>Identificador único del bien que es componente</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>367DCE72-ABF8-715C-C54F-9E17F22DF4F5</importedID>
+<constraintName>ID}_1619168615</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="0B9DCC6C-6EA8-A591-DDAB-8FC852A26B38" referredColumn="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</associations>
+</Column>
+<Column name="ID_MONEDA" id="DB9E37C3-6A3D-8669-9204-DA9B780BDB1E">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interna de la Moneda.</comment>
+<commentInRDBMS>Número de Identificación Interna de la Moneda.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>6AC4BD37-6F8E-29A0-D477-441E1D7EDF44</importedID>
+<constraintName>ID}_1554947292</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="960E6357-A65A-4386-9C9D-2833F161AD75" referredColumn="3D7244EE-B758-4708-8B23-9D67F31A5040"/>
+</associations>
+</Column>
+<Column name="ID_CATALOGO_BIENES" id="4C6A5EE1-D45C-ABEB-B6EA-C3020B15884F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>B2B05AC3-4D27-360A-436B-FD660A4A6243</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D22384C8-B688-F9F7-6CB6-335B3F911739" referredColumn="5ABEBB51-EF34-07EE-6FD2-090AB475CAD4"/>
+</associations>
+</Column>
+<Column name="NRO_INVENTARIO" id="7A0F9DA0-4C8D-44BE-949B-25D9F3263758">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Numero de Inventario o placa asignado al bien</comment>
+<commentInRDBMS>Numero de Inventario o placa asignado al bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8846515A-ADC4-A758-C6D7-3DB701FFA7EC</importedID>
+<constraintName>ENTERO_10}_1707975423</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>AB0A0267-61E6-17DE-8ABE-C485F8C67C43</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>9999999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="VALOR_ADQUISION" id="B92A7DD4-E83F-55D6-345D-6606F607F7DB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Valor en que se adquirio el bien</comment>
+<commentInRDBMS>Valor en que se adquirio el bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4B49FF2E-EEBA-0D99-4FE8-733616E717D5</importedID>
+<constraintName>MONTO_MONETARIO}_841185147</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7C297F8-0C08-6663-E04A-4C607CAAD892</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>&apos;0&apos;</beginValue>
+<endValue>&apos;9999999999.99&apos;</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="TIENE_GARANTIA" id="1B20FB70-950D-91C3-EF04-48F007444995">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Especifica si el Bien Tiene Garantia o No</comment>
+<commentInRDBMS>Especifica si el Bien Tiene Garantia o No</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>04D2E61A-E93D-659E-6037-BFCEA39789A6</importedID>
+<constraintName>SI_NO}_929845688</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIENE_COMPONENTES" id="42F7614C-529C-7779-AA3C-C1964E658A6F">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Indica si el Bien Tiene Componentes</comment>
+<commentInRDBMS>Indica si el Bien Tiene Componentes</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>8BEC0DCD-3764-4ADB-0C41-1F85C82F1C70</importedID>
+<constraintName>SI_NO}_1097802522</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIENE_SEGURO" id="4E573FF7-D4F0-CFD1-11BD-1053230ADAF4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Indica si el Bien Esta Asegurado o No</comment>
+<commentInRDBMS>Indica si el Bien Esta Asegurado o No</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A2BAA4FA-CCC0-DCCD-C463-F50926B6C588</importedID>
+<constraintName>SI_NO}_507446935</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VALOR_RESCATE" id="E5BB4752-CCBC-DD70-3994-AC9ABD1F51B3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4D5E2446-254C-AD12-71FC-92B898D2E5D3</importedID>
+<constraintName>MONTO_MONETARIO}_202295739</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7C297F8-0C08-6663-E04A-4C607CAAD892</domain>
+<defaultValue>0</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>&apos;0&apos;</beginValue>
+<endValue>&apos;9999999999.99&apos;</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_ADQUISICION" id="6D909876-BFF6-E7FC-A415-2C2ADD5077E7">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha en la que se adquirioel bien</comment>
+<commentInRDBMS>Fecha en la que se adquirioel bien</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>719D8D0B-15C8-52F4-3661-355542684D22</importedID>
+<constraintName>FECHA}_1602504755</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="FECHA_RECEPCION" id="AB92FD93-EE11-CE12-8A83-402BF6B87E9D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Fecha en que el bien ingresa al organo o ente a utilizarlo</comment>
+<commentInRDBMS>Fecha en que el bien ingresa al organo o ente a utilizarlo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>2D42104C-33D0-75A2-6C29-2B9AD37A2911</importedID>
+<constraintName>FECHA}_1869637241</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;01/01/1800&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>TO_DATE(&apos;31/12/2100&apos;</beginValue>
+<endValue>&apos;DD/MM/YYYY&apos;)</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7B75FE53-D263-BEEC-AF18-D022DF32D24C" name="IN_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>9B6E80E6-3F7F-CABC-A047-56446ED1DECC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC760F6E-F154-E2BC-AEF5-78508D2A7B8B" name="IN_BIEN_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>BB171588-2668-B117-5DAC-309D40727531</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1C24B5BF-40FA-B1BE-224B-FEBE24A1F73B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D261815A-87A2-2DF7-858F-5C6FB84A274F" name="IN_BIEN_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9257DD46-F23E-6FF8-F763-FCD8C93E4486"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="483B3B74-1065-C3F7-CC6A-950E614403F4" name="IN_BIEN_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD57179E-7F1E-502A-95E4-BDB0D6C04BCA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FD35CE5-68D2-055C-316E-3447C3756827" name="IN_BIEN_FK2">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DB9E37C3-6A3D-8669-9204-DA9B780BDB1E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E31E6FDA-CC4B-7365-72D9-ECE1D6F33B8D" name="IN_BIEN_FK3">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4C6A5EE1-D45C-ABEB-B6EA-C3020B15884F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

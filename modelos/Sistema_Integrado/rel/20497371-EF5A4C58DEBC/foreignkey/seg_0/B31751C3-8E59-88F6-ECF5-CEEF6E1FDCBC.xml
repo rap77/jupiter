@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B31751C3-8E59-88F6-ECF5-CEEF6E1FDCBC" containerWithKeyObject="B6A873D6-2A9A-8A48-024E-AFD3E6D3C38E" localFKIndex="909DF092-D46E-D1FB-B6F5-4339E695459D" name="ZON_POS_ESTADOS_FK">
+<sourceConnName>Oracle18c</sourceConnName>
+<sourceObjSchema>PROYECTO</sourceObjSchema>
+<sourceObjName>ZON_POS_ESTADOS_FK</sourceObjName>
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 16:22:01 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_ESTADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>92E03193-4D28-21AC-73BC-8E36F1B60BC8</referredTableID>
+<keyObject>AA8F4A81-4284-E611-0A96-E73203151D24</keyObject>
+<referredKeyID>AA8F4A81-4284-E611-0A96-E73203151D24</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

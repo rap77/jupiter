@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="84FA6059-79D2-6E31-A24B-CDB0979A390F" containerWithKeyObject="A7F9CAEC-7D85-0C23-B715-75032AE37FD1" localFKIndex="62104764-E4D2-1AB1-E350-FF71293656DD" name="ESC_ACAD_ESC_ACAD_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-09 20:02:56 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.CE_ESCALA_ACADEMICA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A7F9CAEC-7D85-0C23-B715-75032AE37FD1</referredTableID>
+<keyObject>833A5308-E73C-2764-E0AD-ABC494B1A517</keyObject>
+<referredKeyID>833A5308-E73C-2764-E0AD-ABC494B1A517</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

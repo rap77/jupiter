@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_1" id="FD2A41DA-C13C-852D-F921-DF239CB0B33F" containerWithKeyObject="C7F85CEC-F471-A905-CA86-EA8E4B92B66C" localFKIndex="5ED508EB-786D-1F3F-145F-EDE1A16A39D7" name="IM_TIPO_IMPUESTO_FK0">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>1517DE15-6F7D-64D9-D867-BB7C303FF2C2</importedID>
+<referredTableLongName>IM_GRUPO_IMPUESTO</referredTableLongName>
+<deleteRule>SET NULL</deleteRule>
+<referredTableID>1A4802D7-6EFC-857D-4C43-1A075CB38545</referredTableID>
+<keyObject>8EFCD7DC-611D-7D53-E6EE-989252DE2AFB</keyObject>
+<referredKeyID>8EFCD7DC-611D-7D53-E6EE-989252DE2AFB</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

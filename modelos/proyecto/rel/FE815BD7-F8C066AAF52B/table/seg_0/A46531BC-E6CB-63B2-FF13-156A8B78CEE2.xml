@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A46531BC-E6CB-63B2-FF13-156A8B78CEE2" name="GL_CONTINENTE">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Continente. Ej 1 America.]]></comment>
+<commentInRDBMS><![CDATA[Continente. Ej 1 America.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B153F205-3E86-1410-2DE6-1DAA4D896016</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="EA737C72-8745-D5DD-CCF9-2B94E8BAACC4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número de Identificación interna del Continente.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación interna del Continente.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>377BE0D5-68EE-CC8B-3C71-2C0186FC00C1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<generateConstraintInDDL>NO</generateConstraintInDDL>
+</Column>
+<Column name="NOMBRE" id="1E82E872-2174-3788-3CF5-48AAC6BE2EB9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Nombre del Continente. Ej: America, Europa.]]></comment>
+<commentInRDBMS><![CDATA[Nombre del Continente. Ej: America, Europa.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5FEE5E26-5BF0-2422-973B-867A31A10AAB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9CFAFDC-8C5C-0B47-C598-CA904DADEC1C</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DB85EC9-E26C-6ACA-E199-5647A56D1045" name="GL_CONTINENTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>96E23F76-0F6C-0038-4C6D-3F7774058FFF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA737C72-8745-D5DD-CCF9-2B94E8BAACC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9981B52-A205-E00F-905D-82BD5BD9423C" name="GL_CONTINENTE_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>2610E84C-B381-0328-16C2-B7B533CB0D46</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA737C72-8745-D5DD-CCF9-2B94E8BAACC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="UUO UNI ORG FK" directorySegmentName="seg_2" id="AD4CF835-8EB3-C180-FD62-C8ADB7197BA5">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:23 UTC</createdTime>
+<generatorID>5E8812A2-E1BD-1123-BD01-07B6AF995855</generatorID>
+<ownerDesignName>proyecto</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<sourcePk>2A39D73F-AABD-5F3B-3622-4C465BF7FC8F</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D05C36C9-766C-0876-9E5A-EC4861C075E0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>976FF54D-5135-C96F-4C22-84B886C98E31</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

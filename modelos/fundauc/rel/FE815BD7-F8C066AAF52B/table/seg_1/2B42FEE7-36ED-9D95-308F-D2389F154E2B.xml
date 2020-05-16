@@ -1,0 +1,135 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="2B42FEE7-36ED-9D95-308F-D2389F154E2B" name="RH PUESTOS TRABAJOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment>Puestos de Trabajos que puede ocupar un Trabajador</comment>
+<commentInRDBMS>Puestos de Trabajos que puede ocupar un Trabajador</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>A9C2AF36-D99C-E5F9-F05A-1ECE850640A1</importedID>
+<abbreviation>PTO_TRAB</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="7CED5151-2193-E569-C90E-31D4705D55DC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador Unico del Puesto de Trabajo</comment>
+<commentInRDBMS>Identificador Unico del Puesto de Trabajo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>62CD29B9-A7AD-A23A-78FF-612DB751F4DD</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RH_HORARIOS_ID" id="B3763D66-75F4-5212-EBFA-14CB2EE7ADC2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Identificador unico del Horario Aplicado al puesto de Trabajo</comment>
+<commentInRDBMS>Identificador unico del Horario Aplicado al puesto de Trabajo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>471CE96A-7A2B-C63D-75F5-BEC86BF07413</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="35EC6911-6808-08DA-5320-BF701BD4770B" referredColumn="092844A7-788B-C75D-724B-270538C25A50"/>
+</associations>
+</Column>
+<Column name="UNI_ORG_PER_ID" id="B8DC7B3D-6DED-116C-0C2B-42F49C107276">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Número de Identificación Interno de la Persona.</comment>
+<commentInRDBMS>Número de Identificación Interno de la Persona.</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>585F5D99-C7F7-8625-29CE-7588CFC6D76E</importedID>
+<constraintName>ID}_1264535995</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+<associations>
+<colAssociation fkAssociation="C40926B3-BFAD-B673-FAD2-D1BDA2208D78" referredColumn="021E9792-A8DF-1F94-982E-3CE0B87F2283"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="625B8343-F671-8233-6E08-8C5C0AD6A76C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment>Descripcion del Puesto de Trabajo</comment>
+<commentInRDBMS>Descripcion del Puesto de Trabajo</commentInRDBMS>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>AFB3DEE7-ED11-CC27-F7CC-E733588176AE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="12E88E45-24BB-AA27-5AB0-C0F620898459" name="RH_PUESTOS_TRABAJOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>4AA0CEAF-9E20-C881-5864-021E3FB7626A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CED5151-2193-E569-C90E-31D4705D55DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8D0EFCD-2FA2-22D0-E0AF-C048AA96B71B" name="RH_PUESTO_TRABAJO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<importedID>FC19A9F2-8B2A-302D-81C7-E114C03CC967</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CED5151-2193-E569-C90E-31D4705D55DC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="73E2858E-C518-259D-9648-2A1AC6AAC8B0" name="RH_PUESTO_TRABAJO_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3763D66-75F4-5212-EBFA-14CB2EE7ADC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03DA54D5-70D3-F5E1-59AD-0CA483C2BFDD" name="RH_PUESTOS_TRABAJOS_UNI_ORG_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>fundauc</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B8DC7B3D-6DED-116C-0C2B-42F49C107276"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

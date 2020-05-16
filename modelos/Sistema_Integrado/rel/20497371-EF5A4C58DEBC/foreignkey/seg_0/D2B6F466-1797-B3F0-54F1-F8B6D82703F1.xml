@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D2B6F466-1797-B3F0-54F1-F8B6D82703F1" containerWithKeyObject="308B20B9-4233-58A9-9293-074D0B9DEE5A" localFKIndex="6BAC9EB8-6FC1-1F0C-F705-E572D9BE6C36" name="FAM_PARENTESCO_FK">
+<createdBy>padron</createdBy>
+<createdTime>2020-02-07 22:29:55 UTC</createdTime>
+<ownerDesignName>Sistema_Integrado</ownerDesignName>
+<referredTableLongName>PROYECTO.GL_PARENTESCO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>E15CFE45-062A-53AE-3D8B-88ACBD22784C</referredTableID>
+<keyObject>18060556-DB5D-3DAB-D98E-06C468A9D23C</keyObject>
+<referredKeyID>18060556-DB5D-3DAB-D98E-06C468A9D23C</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

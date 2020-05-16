@@ -1,0 +1,290 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_1" id="70963669-0B2B-E525-A4FA-7B98824E00DB" name="RH_HORARIOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Contiene Horarios de Recursos Humanos]]></comment>
+<commentInRDBMS><![CDATA[Contiene Horarios de Recursos Humanos]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BA5B93E0-06FE-41F1-2652-ED69BD4B9C76</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="092844A7-788B-C75D-724B-270538C25A50">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador unico de Horarios de la institucion]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de Horarios de la institucion]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0295F601-8537-A86B-F090-ECB62CFB218E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORARIO_PADRE" id="4B1BA682-D798-5519-A743-EB8DE2972967">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Identificador unico de Horario Principal a manera de agrupar horarios]]></comment>
+<commentInRDBMS><![CDATA[Identificador unico de Horario Principal a manera de agrupar horarios]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8FA229B4-A71C-1565-5969-C54A2AC1B460</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C4FEF02-19EB-F1B1-C3F0-655D5847995B" referredColumn="092844A7-788B-C75D-724B-270538C25A50"/>
+</associations>
+</Column>
+<Column name="DESCRIPCION" id="19FC8760-4398-834D-9759-CE7204BD7084">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Descripcion del Horario]]></comment>
+<commentInRDBMS><![CDATA[Descripcion del Horario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>919DD05E-193B-1995-9CB9-B2A401CA24B7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FFC84B08-7711-C2AC-4E37-4EAE4ADF760F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LUNES" id="7D28860A-9989-3EDF-A231-292CFFC44C62">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Lunes]]></comment>
+<commentInRDBMS><![CDATA[Dia Lunes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>61A3D7FB-87CB-C1D5-996A-4F85D80055E1</importedID>
+<constraintName>SI_NO}_1196883170</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MARTES" id="E9A809F8-CFEE-1F97-619D-012570FA104B">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Martes]]></comment>
+<commentInRDBMS><![CDATA[Dia Martes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>BDA41662-EE78-D7AA-FD0D-384E45FCB1C3</importedID>
+<constraintName>SI_NO}_1391591634</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MIERCOLES" id="6D39326B-49F8-58EE-A6F6-7E01480BE8EC">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Miercoles]]></comment>
+<commentInRDBMS><![CDATA[Dia Miercoles]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0643DF52-BAA5-DB57-0BCD-03EC084C5455</importedID>
+<constraintName>SI_NO}_722298498</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JUEVES" id="EFE3B287-8E63-1639-ECEE-57EF62F710B2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Jueves]]></comment>
+<commentInRDBMS><![CDATA[Dia Jueves]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F66DD11E-F4DA-24B0-C5D1-76DD88895283</importedID>
+<constraintName>SI_NO}_1440615888</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VIERNES" id="9591EBDA-48EE-1BAD-303F-03D768D92FF4">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Viernes]]></comment>
+<commentInRDBMS><![CDATA[Dia Viernes]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>0DACFF94-80EE-D30D-A13F-9EC038613E88</importedID>
+<constraintName>SI_NO}_420546854</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SABADO" id="06DB7E79-5E53-FD04-B2FE-E2245CA440FD">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Sabado]]></comment>
+<commentInRDBMS><![CDATA[Dia Sabado]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>975EB1D7-E1C3-DB4F-B635-CD660FC8B47F</importedID>
+<constraintName>SI_NO}_1307971813</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOMINGO" id="31CE97A9-9B17-968C-59F6-1D54A9A3E0BA">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Dia Domingo]]></comment>
+<commentInRDBMS><![CDATA[Dia Domingo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>933B64C8-1189-D642-A3E2-B26212C16D98</importedID>
+<constraintName>SI_NO}_555024404</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>DFD01063-052C-BD22-8952-DFEE11325A3D</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA_INICIO" id="39D8DB07-59E8-7504-963E-57D94D828830">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Hora de Inicio del Horario]]></comment>
+<commentInRDBMS><![CDATA[Hora de Inicio del Horario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8C5302EF-39AB-CFB7-12BE-23DCC8D47DBB</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HORA_FIN" id="E57FCB7E-2B9B-FBBD-332E-D89E14814069">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Hora de Finalización del Horario]]></comment>
+<commentInRDBMS><![CDATA[Hora de Finalización del Horario]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>E94CD635-DB09-95F0-4890-DDE5859506E1</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIEMPO_DESCANSO" id="1B1EBAEB-4D2A-05DF-B05A-FFF9FD99F91C">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tiempo de descanso o almuerzo en minutos]]></comment>
+<commentInRDBMS><![CDATA[Tiempo de descanso o almuerzo en minutos]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B765F297-0088-A5CC-180D-DC3345053886</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>21767143-8DAE-0DE3-AF65-DFEF15927D9B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="27EA8486-30C3-8DAB-9515-B273BD7E6A35" name="RH_HORARIOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>143B7EAE-39FE-DDBA-597E-8E66664D3D75</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="092844A7-788B-C75D-724B-270538C25A50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A4541B7B-49ED-7166-3B0A-B17EB792D146" name="RH_HORARIOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>DB1B4879-07E9-9FB9-02BB-7D9B86D759D2</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="092844A7-788B-C75D-724B-270538C25A50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFDD675E-9EDB-0E81-1CA2-80C06BDA8ABF" name="RH_HORARIOS_FK0">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:26 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B1BA682-D798-5519-A743-EB8DE2972967"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

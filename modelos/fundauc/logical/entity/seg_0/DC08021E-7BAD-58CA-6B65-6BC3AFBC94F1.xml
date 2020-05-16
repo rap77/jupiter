@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DC08021E-7BAD-58CA-6B65-6BC3AFBC94F1" name="GL ESTADOS CIVILES">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Estado Civil. S Soltero(a), C Casado(a), D Divorciado(a), V Viudo(a), O Concubino(a).</comment>
+<commentInRDBMS>Estado Civil. S Soltero(a), C Casado(a), D Divorciado(a), V Viudo(a), O Concubino(a).</commentInRDBMS>
+<generatorID>30279D6F-3308-5EDE-3218-9D398B03BFB4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<shortName>EST_CIV</shortName>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ID" id="3FC4A290-AA4E-9811-2B19-1FC426B0D857">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Código del Estado Civil. Ej: S, C, D, V, O</comment>
+<commentInRDBMS>Código del Estado Civil. Ej: S, C, D, V, O</commentInRDBMS>
+<generatorID>CEBDF984-8B11-E002-B9B9-9522EF2CA9AC</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DESCRIPCION" id="338D74EE-663C-6601-7F0C-2606EB6F3CDA">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<comment>Descripción del Estado Civil. Ej: Soltero, Casado, Viudo, Divorciado, Concubino.</comment>
+<commentInRDBMS>Descripción del Estado Civil. Ej: Soltero, Casado, Viudo, Divorciado, Concubino.</commentInRDBMS>
+<generatorID>C65533E5-D16A-D67F-0EFC-D88B30E902A4</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="22D6FA05-9773-31FC-1A52-32297BDF7B58" name="GL_ESTADOS_CIVILES_PK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-29 15:22:22 UTC</createdTime>
+<generatorID>CDF83D58-38DC-33A4-22D7-70DA7102E57B</generatorID>
+<ownerDesignName>fundauc</ownerDesignName>
+<engineerTo>
+<item key="FE815BD7-F4FB-95B0-8CD8-F8C066AAF52B" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3FC4A290-AA4E-9811-2B19-1FC426B0D857</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

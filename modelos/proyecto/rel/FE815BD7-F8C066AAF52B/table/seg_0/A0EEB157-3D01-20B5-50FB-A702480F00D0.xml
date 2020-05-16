@@ -1,0 +1,214 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0EEB157-3D01-20B5-50FB-A702480F00D0" name="GL_TELEFONOS">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:24 UTC</createdTime>
+<comment><![CDATA[Número Teléfonico. Ej:1 0234567 2012 Directo]]></comment>
+<commentInRDBMS><![CDATA[Número Teléfonico. Ej:1 0234567 2012 Directo]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>39371123-64AA-1768-4004-FDF231FA9A6C</importedID>
+<abbreviation>TLF</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="91BA929F-52E5-F346-6D0B-6DD2DA898EF2">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interna del Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interna del Teléfono.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>70BF5CD4-ECCD-C2E9-F8FA-E4561690F397</importedID>
+<constraintName>ID}_1076901985</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>99999999</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="GL_TIPOS_TELEFONOS_ID" id="8A078F9A-5729-89B5-8AC3-19EB12B21FA5">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Tipo de Teléfono. Número de Identificación del Tipo de Teléfono.]]></comment>
+<commentInRDBMS><![CDATA[Tipo de Teléfono. Número de Identificación del Tipo de Teléfono.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>5FE0DC9F-0B60-CF3A-38E8-5C79B0A7D2FC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A087C793-13DD-448F-754D-F4C81C3DCC53" referredColumn="F7042281-8A83-B86C-4CB4-56B42B7D4F86"/>
+</associations>
+</Column>
+<Column name="GL_AREA_TELEFONICA_ID" id="020B4EB6-1780-CA06-AE12-325F958C23BB">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Código de Area del Teléfono. Número de Identificación Interno del Código de Area Teléfonica.]]></comment>
+<commentInRDBMS><![CDATA[Código de Area del Teléfono. Número de Identificación Interno del Código de Area Teléfonica.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>543BB3B9-5AAF-5832-FB89-1212334BD4C3</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E0B3197F-99EF-9096-9C8F-440CBEFDEE6E" referredColumn="00DBE3DC-D0BF-FA58-6772-902FB64646EF"/>
+</associations>
+</Column>
+<Column name="GL_PERSONAS_ID" id="48B09CC0-3300-3B3F-B738-308455CEEFC8">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Identificación Interno de la Persona.]]></comment>
+<commentInRDBMS><![CDATA[Número de Identificación Interno de la Persona.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>B710F0C8-2040-EC5C-71CE-CD8A6355F923</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>05B35573-8C9F-1F34-7252-3B2FF719CA6A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DBF75462-569D-98AF-D4B5-82E676C9C025" referredColumn="2AEDC292-441B-4730-EE53-2B8D0059CAEA"/>
+</associations>
+</Column>
+<Column name="NUM_TELEF" id="BE904827-7624-015F-55FA-AA127E4F464D">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Número de Teléfono. Ej: 7654321]]></comment>
+<commentInRDBMS><![CDATA[Número de Teléfono. Ej: 7654321]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>F039A284-BB6E-9EAF-E923-1B419FEFD647</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACTIVO_TELEFONO" id="E4FBBBC8-9F86-984D-CDFD-4EBD54F80CC9">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Está Activo el Teléfono. Ej: S, N.]]></comment>
+<commentInRDBMS><![CDATA[Está Activo el Teléfono. Ej: S, N.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>7619C7DF-EDF5-7704-D40A-6835BC19AFDC</importedID>
+<constraintName>SI_NO_388121875</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>17DCAFE7-53F8-530D-2A94-501D304A5376</domain>
+<listOfValues>
+<valueDef value="N" description=""/>
+<valueDef value="S" description=""/>
+</listOfValues>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EXTENSION_TELEFONO" id="41F5FD30-818D-AE98-7D41-7989CA6471DF">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Extensión del Telefono. Ej: Ext. 123.]]></comment>
+<commentInRDBMS><![CDATA[Extensión del Telefono. Ej: Ext. 123.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>82A58F40-EAD4-BD3E-69F4-D60098C8ADC4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BDE73B0E-53CD-AC87-E8FB-D79679172F97</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NOTA_TELEFONO" id="A11875EF-C154-A9AC-1598-17794E6BC4E3">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<comment><![CDATA[Nota del Teléfono. Ej: Llamar solo en horas laborales.]]></comment>
+<commentInRDBMS><![CDATA[Nota del Teléfono. Ej: Llamar solo en horas laborales.]]></commentInRDBMS>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>A8A680FC-3ED1-97AE-409A-FE24E9D585CC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>5F6B42F8-2A8D-0AD7-BCFA-803628850554</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E8FC0B1-62A9-A45E-7DA9-95374DD86C16" name="GL_TELEFONOS_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>98E97239-8CFE-792E-0EB3-3E62E4512FAC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91BA929F-52E5-F346-6D0B-6DD2DA898EF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8D0CD70E-BBAE-E911-AA24-9FB0C376EC05" name="GL_TELEFONO_PK">
+<sourceDDLFile>fundauc.sql</sourceDDLFile>
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<importedID>8F0F9B74-92A3-0AB2-7B1B-3BAA61693737</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91BA929F-52E5-F346-6D0B-6DD2DA898EF2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6D7D38DE-ED12-F22F-D588-157950461936" name="GL_TELEFONOS_GL_TIPOS_TELEFONOS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8A078F9A-5729-89B5-8AC3-19EB12B21FA5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03BB6811-7454-CE98-4C1D-13EFB71ED13C" name="GL_TELEFONO_FK1">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="020B4EB6-1780-CA06-AE12-325F958C23BB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A609EE6-79E5-0A2A-70C5-D2657853E1A2" name="GL_TELEFONOS_GL_PERSONAS_FK">
+<createdBy>padron</createdBy>
+<createdTime>2019-03-28 16:56:25 UTC</createdTime>
+<ownerDesignName>proyecto</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48B09CC0-3300-3B3F-B738-308455CEEFC8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
